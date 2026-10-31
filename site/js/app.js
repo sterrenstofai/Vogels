@@ -52,6 +52,12 @@ async function toon(navigatie = false) {
       else if (pad.startsWith("/soort/")) await soortPagina(decodeURIComponent(pad.slice(7)));
       else if (pad === "/soorten") await soortenIndex();
       else if (pad === "/ontdek") await ontdek();
+      else if (pad === "/onderzoekjes" || pad.startsWith("/onderzoekjes/")) {
+        const OZ = await import("./onderzoekjes.js");
+        document.title = `Onderzoekjes met Fos · ${TITEL}`;
+        if (pad === "/onderzoekjes") await OZ.overzicht(app);
+        else if (!(await OZ.onderzoekje(app, pad.slice(14), toestand, (d) => { G.koppelDoek(d); paginaDoeken.push(d); }))) nietGevonden();
+      }
       else if (pad === "/kaart") {
         kaartModule = kaartModule || await import("./kaartpagina.js");
         document.title = `Twente in vogels · ${TITEL}`;
@@ -224,6 +230,12 @@ async function home() {
     <section class="breed blok">
       <div class="blok-kop"><h2>Nu in Twente</h2><span class="mono zacht">meest gemeld in ${MAANDNAMEN[m]}</span></div>
       ${strip(nu, S, (x) => `${getal(x.c)} meldingen`)}
+    </section>
+    <section class="breed blok">
+      <a class="oz-teaser" href="/onderzoekjes" data-link>
+        <span class="oz-teaser-tekst"><span class="oz-boventitel">Voor zaterdagochtend</span><strong>Onderzoekjes met Fos</strong><span>Zes opdrachten om samen te doen: een geluidsquiz, je tuin tellen, een liedje tekenen en meer.</span></span>
+        <span class="knop-pil knop-accent">Begin</span>
+      </a>
     </section>
     <section class="breed blok">
       <a class="kaart-teaser" href="/kaart" data-link>
@@ -517,11 +529,13 @@ const speler = document.getElementById("speler");
 const spelerDoek = speler.querySelector("canvas");
 let spelerGekoppeld = false;
 
-document.addEventListener("click", async (e) => {
+// De soortenlijst staat al klaar, zodat afspelen synchroon in de tik gebeurt (anders blokkeert iOS het geluid).
+let SOORTEN = null;
+D.soorten().then((S) => (SOORTEN = S));
+document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-speel]");
-  if (!b) return;
-  const S = await D.soorten();
-  G.speel(metKey(S, b.dataset.speel), b.dataset.type);
+  if (!b || !SOORTEN) return;
+  G.speel(metKey(SOORTEN, b.dataset.speel), b.dataset.type);
 });
 speler.querySelector(".speler-knop").addEventListener("click", () => { const h = G.huidigeOpname(); if (h) G.speel(h.soort, h.type); });
 speler.querySelector(".speler-sluit").addEventListener("click", () => G.stop());
@@ -547,7 +561,8 @@ G.opVerandering((st) => {
     const img = speler.querySelector(".speler-plaat");
     if (h.soort.plaat) { img.src = h.soort.plaat.klein; img.hidden = false; } else img.hidden = true;
     const naam = speler.querySelector(".speler-naam");
-    naam.textContent = `${h.soort.nl} · ${h.type}`;
+    naam.textContent = st.fout || (st.laadt ? `${h.soort.nl} · laden…` : `${h.soort.nl} · ${h.type}`);
+    speler.classList.toggle("speler-fout", !!st.fout);
     naam.href = `/soort/${h.soort.slug}`;
     const k = speler.querySelector(".speler-knop");
     k.classList.toggle("speelt", st.speelt);

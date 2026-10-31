@@ -5,7 +5,8 @@ Regels, in volgorde van gewicht:
 - kwaliteit A, anders B
 - Nederland, dan België of Duitsland, dan de rest van Europa
 - geen playback gebruikt, weinig andere soorten op de achtergrond
-- lengte bij voorkeur 30 s tot 2 min
+- lengte bij voorkeur 30 s tot 2 min, nooit langer dan 4 min
+- alleen mp3: WAV-bestanden zijn groot en starten op een iPhone traag of niet
 
 Gebruik: XC_KEY=... python3 opnames.py ../data/namen.json > ../data/opnames.json
 """
@@ -62,7 +63,8 @@ def kort(r):
 def kies(item):
     k, n = item
     recs = [r for r in opnames(n["xc"])
-            if r["q"] in ("A", "B") and "-nd" not in r["lic"] and seconden(r["length"] or "0") >= 5]
+            if r["q"] in ("A", "B") and "-nd" not in r["lic"] and 5 <= seconden(r["length"] or "0") <= 240
+            and (r.get("file-name") or "").lower().endswith(".mp3")]
     zang = sorted((r for r in recs if "song" in r["type"].lower()), key=score)
     roep = sorted((r for r in recs if "call" in r["type"].lower() and "song" not in r["type"].lower()), key=score)
     return k, {"nl": n["nl"] or n["nl_gbif"], "wet": n["wet_ioc"] or n["wet_gbif"], "kandidaten": len(recs),

@@ -33,6 +33,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
       <p>Hoeveel stippen er in een vak zijn, komt uit de meldingen. Waar ze in het vak zitten en hoe ze bewegen, is verzonnen: ganzen vliegen in groepen, roofvogels cirkelen, zangvogels springen. Een stip verlaat zijn vak nooit.</p>
       <p><a href="/hoe-dit-werkt#simulatie">Meer in Hoe dit werkt</a></p>
     </div>
+    <p class="sim-ui sim-hint" aria-hidden="true">Sleep · knijp om te zoomen · tik op een stip</p>
     <div class="sim-ui sim-knoppen">
       <button class="knop-icoon" type="button" data-zoom="1.6" aria-label="Inzoomen">+</button>
       <button class="knop-icoon" type="button" data-zoom="0.625" aria-label="Uitzoomen">−</button>
@@ -50,6 +51,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
   </section>`;
 
   const wrap = app.querySelector(".sim");
+  setTimeout(() => wrap.querySelector(".sim-hint")?.classList.add("weg"), 6000);
   const labelLaag = wrap.querySelector(".sim-labels");
   const kaartje = wrap.querySelector(".sim-kaartje");
   const schuif = wrap.querySelector('input[type="range"]');

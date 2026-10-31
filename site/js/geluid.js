@@ -4,6 +4,7 @@
 const audio = new Audio();
 audio.crossOrigin = "anonymous";
 audio.preload = "none";
+audio.setAttribute("playsinline", "");
 
 let ctx = null, analyser = null, bins = null;
 let huidig = null; // { id, soort, opname }
@@ -46,10 +47,12 @@ function teken() {
       const c = doek.getContext("2d");
       const { width: b, height: h } = doek;
       const stap = Math.max(1, Math.round(b / 420));
+      // doorschuiven; het doek is doorzichtig, zodat het lijnenpapier eronder zichtbaar blijft
+      c.globalCompositeOperation = "copy";
       c.drawImage(doek, -stap, 0);
+      c.globalCompositeOperation = "source-over";
       const [r, g, bl] = doek._rgb;
-      c.fillStyle = doek._papier;
-      c.fillRect(b - stap, 0, stap, h);
+      c.clearRect(b - stap, 0, stap, h);
       for (let py = 0; py < h; py++) {
         const bin = Math.floor((1 - py / h) * maxBin);
         const v = bins[bin] / 255;
@@ -74,51 +77,79 @@ export function koppelDoek(doek) {
   const { inkt, papier } = inktKleur();
   doek._rgb = hexNaarRgb(inkt);
   doek._papier = papier;
-  const c = doek.getContext("2d");
-  c.fillStyle = papier;
-  c.fillRect(0, 0, doek.width, doek.height);
+  doek.getContext("2d").clearRect(0, 0, doek.width, doek.height);
   doeken.add(doek);
 }
 export function ontkoppelDoek(doek) { doeken.delete(doek); }
 
 export function opVerandering(fn) { luisteraars.add(fn); return () => luisteraars.delete(fn); }
+let fout = null, laadt = false, waakhond = null;
 function meldVoortgang() {
   const deel = audio.duration ? audio.currentTime / audio.duration : 0;
-  for (const fn of luisteraars) fn({ huidig, speelt: !audio.paused, deel });
+  for (const fn of luisteraars) fn({ huidig, speelt: !audio.paused, deel, fout, laadt });
 }
 for (const ev of ["play", "pause", "ended", "timeupdate", "emptied"]) audio.addEventListener(ev, meldVoortgang);
+audio.addEventListener("playing", () => { laadt = false; fout = null; clearTimeout(waakhond); meldVoortgang(); });
+audio.addEventListener("error", () => volgende("Deze opname laadt niet."));
 
 export function isHuidig(id) { return huidig && huidig.id === id; }
 export function speelt() { return !audio.paused; }
 
-// soort: object uit soorten.json (met key), soort: "zang" of "roep"
-export async function speel(soort, type) {
-  const opname = soort[type] || soort.roep || soort.zang;
-  if (!opname) return;
-  const id = `${soort.slug}:${opname.id}`;
-  startContext();
-  if (ctx.state === "suspended") await ctx.resume();
-  if (huidig && huidig.id === id) {
-    if (audio.paused) await audio.play(); else audio.pause();
+// Lukt een opname niet, probeer dan de reserve van dezelfde soort en hetzelfde type.
+function volgende(reden) {
+  clearTimeout(waakhond);
+  if (!huidig) return;
+  const rest = huidig.reserves;
+  if (rest.length) {
+    const o = rest.shift();
+    huidig.opname = o; huidig.id = `${huidig.soort.slug}:${o.id}`;
+    audio.src = o.bestand;
+    start();
     return;
   }
-  huidig = { id, soort, opname, type: soort[type] ? type : (soort.roep ? "roep" : "zang") };
+  laadt = false;
+  fout = `${reden} Probeer het later opnieuw of kies een andere soort.`;
+  meldVoortgang();
+}
+
+function start() {
+  laadt = true; fout = null;
+  meldVoortgang();
+  const p = audio.play();
+  if (p) p.catch((e) => { if (e.name !== "AbortError") volgende(e.name === "NotAllowedError" ? "Je browser blokkeerde het geluid." : "Deze opname speelt niet af."); });
+  clearTimeout(waakhond);
+  waakhond = setTimeout(() => { if (laadt) volgende("Deze opname laadt te traag."); }, 9000);
+}
+
+// Synchroon in de tik van de gebruiker: iOS staat geluid alleen toe als het direct uit een tik volgt.
+// soort: object uit soorten.json (met key), type: "zang" of "roep"
+export function speel(soort, type) {
+  const t = soort[type] ? type : (soort.zang ? "zang" : "roep");
+  const opname = soort[t];
+  if (!opname) return;
+  try { startContext(); if (ctx.state !== "running") ctx.resume(); } catch (e) { console.warn(e); }
+  if (huidig && huidig.soort.key === soort.key && huidig.type === t) {
+    if (audio.paused) start(); else audio.pause();
+    return;
+  }
+  huidig = { id: `${soort.slug}:${opname.id}`, soort, opname, type: t, reserves: [...(soort[`${t}_reserve`] || [])] };
   audio.src = opname.bestand;
   for (const doek of doeken) koppelDoek(doek);
   if ("mediaSession" in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: soort.nl, artist: `${huidig.type === "zang" ? "Zang" : "Roep"} · opname ${opname.opnemer}`, album: "xeno-canto",
+      title: soort.nl, artist: `${t === "zang" ? "Zang" : "Roep"} · opname ${opname.opnemer}`, album: "xeno-canto",
       artwork: soort.plaat ? [{ src: soort.plaat.klein, sizes: "480x600", type: "image/webp" }] : [],
     });
   }
-  try { await audio.play(); } catch (e) { console.warn(e); }
+  start();
 }
 
 export function stop() {
+  clearTimeout(waakhond);
   audio.pause();
   audio.removeAttribute("src");
   audio.load();
-  huidig = null;
+  huidig = null; fout = null; laadt = false;
   meldVoortgang();
 }
 

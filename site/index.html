@@ -10,6 +10,11 @@
   <meta name="referrer" content="no-referrer">
   <link rel="preload" href="/fonts/bodoni-moda-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:title" content="Voggels · vogels in Twente">
+  <meta property="og:description" content="Typ je adres in Twente en hoor welke vogels je daar kunt verwachten, per seizoen. Met historische platen, echte opnames en een simulatiekaart.">
+  <meta property="og:image" content="https://voggels.netlify.app/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/css/stijl.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="module" src="/js/app.js"></script>
@@ -25,6 +30,7 @@
       <nav class="balk-knoppen" aria-label="Hoofdmenu">
         <a class="knop-icoon" href="/kaart" data-link aria-label="Simulatiekaart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
         <a class="knop-icoon" href="/soorten" data-link aria-label="Alle soorten"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <a class="knop-icoon" href="/onderzoekjes" data-link aria-label="Onderzoekjes met Fos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 11.5h6M9 15h3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
         <a class="knop-tekst" href="/hoe-dit-werkt">Hoe dit werkt</a>
       </nav>
     </div>
@@ -45,6 +51,7 @@
   </header>
 
   <main id="app" tabindex="-1">
+    <p class="laden" aria-live="polite"><span></span>Even de vogels ophalen…</p>
     <noscript><p class="kolom">Deze site heeft JavaScript nodig om je adres op te zoeken en geluid af te spelen. Lees <a href="/hoe-dit-werkt">hoe dit werkt</a>.</p></noscript>
   </main>
 

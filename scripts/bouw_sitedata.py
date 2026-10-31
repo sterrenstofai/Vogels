@@ -134,6 +134,7 @@ def main(twente_pad, gemeenten_pad, uit):
             "twente": twente_maand[k], "n": sum(twente_maand[k]),
             "plaat": plaat, "geen_plaat": platen["lege_plaat"].get(k, {}).get("reden"),
             "zang": (o.get("zang") or [None])[0], "roep": (o.get("roep") or [None])[0],
+            "zang_reserve": (o.get("zang") or [])[1:3], "roep_reserve": (o.get("roep") or [])[1:3],
         }
 
     # Kaart: gemeenten en de vakken die ze raken
