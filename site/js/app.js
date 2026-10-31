@@ -11,6 +11,8 @@ const toestand = {
   laatsteVak: null,
 };
 let paginaDoeken = [];
+let SOORTEN_CACHE = {};
+D.soorten().then((S) => (SOORTEN_CACHE = S));
 let kaartModule = null;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -40,8 +42,13 @@ document.addEventListener("click", (e) => {
 });
 window.addEventListener("popstate", () => toon(true));
 
+let vorigPad = null;
 async function toon(navigatie = false) {
   const pad = location.pathname.replace(/\/+$/, "") || "/";
+  const anderPad = pad !== vorigPad;
+  vorigPad = pad;
+  SOORTEN_CACHE = await D.soorten();
+  document.body.classList.toggle("met-over", pad === "/" || pad.startsWith("/hier/") || pad.startsWith("/soort/"));
   const doe = async () => {
     for (const d of paginaDoeken) G.ontkoppelDoek(d);
     paginaDoeken = [];
@@ -73,7 +80,7 @@ async function toon(navigatie = false) {
   if (navigatie && document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
     await document.startViewTransition(doe).updateCallbackDone;
   } else await doe();
-  if (navigatie) { window.scrollTo(0, 0); app.focus({ preventScroll: true }); }
+  if (navigatie && anderPad) { window.scrollTo(0, 0); app.focus({ preventScroll: true }); }
 }
 
 function nietGevonden() {
@@ -127,74 +134,93 @@ function kaartje(soort, rij, maanden, telling) {
   </article>`;
 }
 
-// Strip met soorten om horizontaal doorheen te vegen
-function strip(lijst, S, telling) {
-  return `<div class="strip" role="list">${lijst.map((x) => {
-    const s = metKey(S, x.key);
-    return `<div class="strip-item" role="listitem">
-      <a class="strip-beeld" href="/soort/${s.slug}" data-link aria-label="${esc(s.nl)}">${s.plaat ? `<img src="${s.plaat.klein}" alt="" loading="lazy" width="480" height="600">` : legePlaat(s, true)}</a>
-      <div class="strip-tekst"><a href="/soort/${s.slug}" data-link>${esc(s.nl)}</a><span>${telling(x)}</span></div>
-      ${knop(s, "zang", "knop-klein")}
-    </div>`;
-  }).join("")}</div>`;
+/* ---------- Het scherm: één vogel, de weetjes, de strook en het kaartje ---------- */
+
+const PLAAT_KORT = { Naumann: "Naumann, 1896–1905", Sepp: "Nozeman & Sepp, 1770–1829", Gould: "Gould, 1832–1837" };
+function plaatKort(p) {
+  const k = Object.keys(PLAAT_KORT).find((b) => p.werk.includes(b === "Sepp" ? "Sepp" : b));
+  return k ? PLAAT_KORT[k] : p.werk.split(",")[0];
 }
 
-// Eén vogel centraal: plaat of geluid, met tabs, en een kop eronder
-function heldSoort(soort, { kop, sub, extra = "" }) {
+// opties: kop, sub, weetjes [[label, html]], strook {label, lijst [{key, tekst}], href(slug)}, omgeving {html, href, label}
+function scherm(soort, { kop, sub, weetjes = [], strook, omgeving }) {
   const types = ["zang", "roep"].filter((t) => soort[t]);
   const plaat = soort.plaat
-    ? `<div class="plaat-rand onthul"><img src="${soort.plaat.src}" alt="Historische plaat van de ${esc(klein(soort.nl))}${soort.plaat.ook.length ? `, samen met ${esc(soort.plaat.ook.join(", ").toLowerCase())}` : ""}" width="1200" height="1500" fetchpriority="high"></div>`
+    ? `<img src="${soort.plaat.src}" alt="Historische plaat van de ${esc(klein(soort.nl))}${soort.plaat.ook.length ? `, samen met ${esc(soort.plaat.ook.join(", ").toLowerCase())}` : ""}" width="1200" height="1500" fetchpriority="high">`
     : legePlaat(soort);
-  return `<section class="held-soort breed" data-held="${soort.key}">
-    <div class="held-beeld">
-      <div class="held-paneel" data-paneel="plaat">${plaat}</div>
-      <div class="held-paneel held-geluid" data-paneel="geluid" hidden>
-        ${types.length ? `<div class="spectro-vlak spectro-groot"><canvas aria-hidden="true"></canvas><div class="spectro-as"><span>11 kHz</span><span>5,5</span><span>0</span></div><div class="spectro-hint">Tik op afspelen en kijk mee</div></div>
-        <div class="held-typen" role="tablist">${types.map((t, i) => `<button type="button" role="tab" data-type-tab="${t}" aria-selected="${i === 0}">${t === "zang" ? "Zang" : "Roep"}</button>`).join("")}</div>
-        <p class="geluid-credit"></p>` : `<p class="geen-opname">Voor deze soort hebben we geen geschikte opname gevonden.</p>`}
+  return `<section class="scherm" data-held="${soort.key}">
+    <div class="podium">
+      <div class="podium-paneel podium-plaat onthul" data-paneel="plaat">${plaat}</div>
+      <div class="podium-paneel podium-geluid" data-paneel="geluid" hidden>
+        <div class="spectro-vlak"><canvas aria-hidden="true"></canvas><div class="spectro-as"><span>11 kHz</span><span>5,5</span><span>0</span></div><div class="spectro-hint">Even laden…</div></div>
       </div>
-      <div class="held-bediening">
-        <div class="pilgroep" role="tablist" aria-label="Weergave">
-          <button type="button" role="tab" data-held-tab="plaat" aria-selected="true">Plaat</button>
-          <button type="button" role="tab" data-held-tab="geluid" aria-selected="false">Geluid</button>
-        </div>
-        <span class="held-knop">${knop(soort, types[0] || "zang", "knop-groot")}</span>
+      <div class="weergave" role="tablist" aria-label="Weergave">
+        <button type="button" role="tab" data-weergave="plaat" aria-selected="true">Plaat</button>
+        ${types.map((t) => `<button type="button" role="tab" data-weergave="${t}" aria-selected="false">${t === "zang" ? "Zang" : "Roep"}</button>`).join("")}
       </div>
+      <div class="zoomknoppen"><button type="button" class="knop-rondje" data-zoom="-1" aria-label="Uitzoomen">−</button><button type="button" class="knop-rondje" data-zoom="1" aria-label="Inzoomen">+</button></div>
     </div>
-    <div class="held-tekst">
+    <div class="scherm-titel">
       <h1>${kop}</h1>
-      <p class="held-sub">${sub}</p>
-      ${soort.plaat ? `<p class="held-bron">${esc(soort.plaat.werk)}. Publiek domein, via <a href="${soort.plaat.pagina}">Wikimedia Commons</a>.${soort.plaat.ook.length ? ` Op deze plaat staan ook: ${esc(soort.plaat.ook.join(", ").toLowerCase())}.` : ""}</p>` : ""}
-      ${extra}
+      ${sub ? `<p class="scherm-sub">${sub}</p>` : ""}
+      <dl class="weetjes">${weetjes.filter(Boolean).map(([l, w]) => `<dt>${esc(l)}</dt><dd>${w}</dd>`).join("")}</dl>
     </div>
+    ${strook ? `<div class="scherm-strook">
+      <div class="strook" role="list" aria-label="${esc(strook.label)}">
+        ${strook.lijst.map((x) => { const s = SOORTEN_CACHE[x.key]; return `<a class="strook-item${x.key === soort.key ? " actief" : ""}" role="listitem" href="${strook.href(s.slug)}" data-link aria-label="${esc(s.nl)}">
+          <span class="strook-beeld">${s.plaat ? `<img src="${s.plaat.klein}" alt="" loading="lazy" width="480" height="600">` : `<i>${esc(s.nl.slice(0, 1))}</i>`}</span>
+          <span class="strook-naam">${esc(klein(s.nl))}${x.tekst ? ` · ${x.tekst}` : ""}</span></a>`; }).join("")}
+      </div>
+      ${omgeving ? `<div class="omgeving"><p class="omgeving-label">${esc(strook.label)}</p>${omgeving.html}<a class="knop-mini" href="${omgeving.href}" data-link>Grote kaart</a></div>` : ""}
+    </div>` : ""}
   </section>`;
 }
 
-function bindHeld(root, soort) {
-  const held = root.querySelector(".held-soort");
-  if (!held) return;
-  const doek = held.querySelector(".held-geluid canvas");
-  let type = ["zang", "roep"].find((t) => soort[t]);
-  const credit = held.querySelector(".geluid-credit");
-  const zetCredit = () => {
-    if (!credit || !type) return;
-    const o = soort[type];
-    const land = { Netherlands: "Nederland", Belgium: "België", Germany: "Duitsland" }[o.land] || o.land;
-    credit.innerHTML = `Opname <a href="${o.pagina}">XC${o.id}</a> door ${esc(o.opnemer)}, ${esc(o.plek)} (${esc(land)}), ${datum(o.datum)}. <a href="${o.licentie}">${licentieNaam(o.licentie)}</a>.`;
-    held.querySelector(".held-knop").innerHTML = knop(soort, type, "knop-groot");
-    held.querySelectorAll("[data-type-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.typeTab === type)));
-    werkKnoppenBij();
+function bindScherm(root, soort) {
+  const sch = root.querySelector(".scherm");
+  if (!sch) return;
+  const doek = sch.querySelector(".podium-geluid canvas");
+  const img = sch.querySelector(".podium-plaat img");
+  let zoom = 0;
+  const toon = (naam) => {
+    sch.querySelectorAll("[data-paneel]").forEach((p) => (p.hidden = p.dataset.paneel !== (naam === "plaat" ? "plaat" : "geluid")));
+    sch.querySelectorAll("[data-weergave]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.weergave === naam)));
+    sch.querySelector(".zoomknoppen").hidden = naam !== "plaat";
+    if (naam !== "plaat") {
+      if (doek && !paginaDoeken.includes(doek)) { G.koppelDoek(doek); paginaDoeken.push(doek); }
+      // in de tik zelf afspelen (iOS)
+      G.speel(soort, naam);
+      const o = soort[naam];
+      const geluidWeetje = sch.querySelector("[data-weetje-geluid]");
+      if (o && geluidWeetje) geluidWeetje.innerHTML = opnameTekst(o);
+    }
   };
-  const toonPaneel = (naam) => {
-    held.querySelectorAll("[data-paneel]").forEach((p) => (p.hidden = p.dataset.paneel !== naam));
-    held.querySelectorAll("[data-held-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.heldTab === naam)));
-    if (naam === "geluid" && doek && !paginaDoeken.includes(doek)) { G.koppelDoek(doek); paginaDoeken.push(doek); }
-  };
-  held.querySelectorAll("[data-held-tab]").forEach((b) => b.addEventListener("click", () => toonPaneel(b.dataset.heldTab)));
-  held.querySelectorAll("[data-type-tab]").forEach((b) => b.addEventListener("click", () => { type = b.dataset.typeTab; zetCredit(); }));
-  // afspelen vanuit de grote knop: laat meteen het spectrogram zien
-  held.querySelector(".held-knop").addEventListener("click", () => toonPaneel("geluid"), true);
-  zetCredit();
+  sch.querySelectorAll("[data-weergave]").forEach((b) => b.addEventListener("click", () => toon(b.dataset.weergave)));
+  sch.querySelectorAll("[data-zoom]").forEach((b) => b.addEventListener("click", () => {
+    zoom = Math.max(0, Math.min(2, zoom + +b.dataset.zoom));
+    if (img) img.style.transform = `scale(${[1, 1.6, 2.4][zoom]})`;
+  }));
+  // de gekozen vogel midden in de strook, zonder de pagina zelf te laten scrollen
+  const actief = sch.querySelector(".strook-item.actief"), strook = sch.querySelector(".strook");
+  if (actief && strook) requestAnimationFrame(() => { strook.scrollLeft = actief.offsetLeft - strook.clientWidth / 2 + actief.offsetWidth / 2; });
+}
+
+function opnameTekst(o) {
+  const land = { Netherlands: "Nederland", Belgium: "België", Germany: "Duitsland" }[o.land] || o.land;
+  return `<a href="${o.pagina}">XC${o.id}</a>, ${esc(o.opnemer)}, ${esc(land)} · <a href="${o.licentie}">${licentieNaam(o.licentie)}</a>`;
+}
+
+function weetjesVoor(soort, extra = []) {
+  const piek = soort.twente.indexOf(Math.max(...soort.twente));
+  const o = soort.zang || soort.roep;
+  return [
+    ["Soort", `<em>${esc(soort.wet)}</em>`],
+    soort.status ? ["Status", esc(soort.status.charAt(0).toUpperCase() + soort.status.slice(1))] : null,
+    ...extra,
+    ["Het vaakst", MAANDNAMEN[piek]],
+    o ? ["Geluid", `<span data-weetje-geluid>${opnameTekst(o)}</span>`] : null,
+    soort.plaat ? ["Plaat", `<a href="${soort.plaat.pagina}">${esc(plaatKort(soort.plaat))}</a>`] : null,
+  ];
 }
 
 function licentieNaam(url) {
@@ -207,30 +233,31 @@ function kernMetGeluid(S) {
   return Object.keys(S).filter((k) => S[k].n >= KERN_MIN && S[k].plaat && (S[k].zang || S[k].roep));
 }
 
+const kaartjeKlein = (K, V, opties) => tekenKaart(K, V, { ...opties, label: opties.label || "Kaartje van Twente" });
+
 /* ---------- Start ---------- */
 
 async function home() {
   document.title = `${TITEL} · ${ONDERTITEL}`;
-  const [S, M] = await Promise.all([D.soorten(), D.meta()]);
+  const [S, V, K, M] = await Promise.all([D.soorten(), D.vakken(), D.kaart(), D.meta()]);
   const m = new Date().getMonth();
-  // De soort die nu opvallend vaak gemeld wordt, vergeleken met de rest van het jaar
+  const gevraagd = new URLSearchParams(location.search).get("soort");
   const kandidaten = kernMetGeluid(S).filter((k) => !S[k].exoot && S[k].twente[m] >= 300);
   const score = (k) => { const r = S[k].twente; const gem = r.reduce((a, b) => a + b, 0) / 12; return (r[m] / (gem + 5)) * Math.log(1 + r[m]); };
-  const k = kandidaten.sort((a, b) => score(b) - score(a))[0];
+  const k = Object.keys(S).find((x) => S[x].slug === gevraagd) || kandidaten.sort((a, b) => score(b) - score(a))[0];
   const soort = metKey(S, k);
   const r = soort.twente, gem = r.reduce((a, b) => a + b, 0) / 12;
-  const nu = Object.keys(S).filter((x) => S[x].n >= KERN_MIN).map((x) => ({ key: x, c: S[x].twente[m] })).filter((x) => x.c > 0).sort((a, b) => b.c - a.c).slice(0, 18);
+  const nu = Object.keys(S).filter((x) => S[x].n >= KERN_MIN && S[x].plaat).map((x) => ({ key: x, c: S[x].twente[m] })).filter((x) => x.c > 0).sort((a, b) => b.c - a.c).slice(0, 40);
+  const waarden = Object.fromEntries(Object.entries(V).map(([v, d]) => [v, d.s[k]?.[m] || 0]));
 
   app.innerHTML = `
-    ${heldSoort(soort, {
-      kop: `De ${esc(klein(soort.nl))} <em>in ${MAANDNAMEN[m]}</em>`,
-      sub: `In ${MAANDNAMEN[m]} ${getal(r[m])} keer gemeld in Twente${r[m] > gem * 1.4 ? `, ${(r[m] / gem).toLocaleString("nl-NL", { maximumFractionDigits: 1 })} keer zo vaak als in een gemiddelde maand` : ""}. Typ je adres om te zien wat er bij jou in de buurt zit.`,
-      extra: `<p><a class="knop-pil" href="/soort/${soort.slug}" data-link>Meer over de ${esc(klein(soort.nl))}</a></p>`,
+    ${scherm(soort, {
+      kop: `De <em>${esc(klein(soort.nl))}</em> in <em>${MAANDNAMEN[m]}</em>`,
+      sub: `In ${MAANDNAMEN[m]} ${getal(r[m])} keer gemeld in Twente${r[m] > gem * 1.4 ? `, ${(r[m] / gem).toLocaleString("nl-NL", { maximumFractionDigits: 1 })} keer zo vaak als in een gemiddelde maand` : ""}.`,
+      weetjes: weetjesVoor(soort, [["In Twente", `${getal(soort.n)} meldingen in vijf jaar`]]),
+      strook: { label: `${nu.length} soorten nu in Twente`, lijst: nu.map((x) => ({ key: x.key })), href: (slug) => `/?soort=${slug}` },
+      omgeving: { html: kaartjeKlein(K, V, { waarden, label: `Waar de ${klein(soort.nl)} in ${MAANDNAMEN[m]} gemeld wordt` }), href: "/kaart" },
     })}
-    <section class="breed blok">
-      <div class="blok-kop"><h2>Nu in Twente</h2><span class="mono zacht">meest gemeld in ${MAANDNAMEN[m]}</span></div>
-      ${strip(nu, S, (x) => `${getal(x.c)} meldingen`)}
-    </section>
     <section class="breed blok">
       <a class="oz-teaser" href="/onderzoekjes" data-link>
         <span class="oz-teaser-tekst"><span class="oz-boventitel">Voor zaterdagochtend</span><strong>Onderzoekjes met Fos</strong><span>Zes opdrachten om samen te doen: een geluidsquiz, je tuin tellen, een liedje tekenen en meer.</span></span>
@@ -244,7 +271,7 @@ async function home() {
         <span class="knop-pil knop-licht">Open de kaart</span>
       </a>
     </section>`;
-  bindHeld(app, soort);
+  bindScherm(app, soort);
 }
 
 /* ---------- Zoeken (in de vaste balk) ---------- */
@@ -324,6 +351,7 @@ async function hier(vak) {
   const plekNaam = adres ? (adres.naam === "Je locatie" ? "jou in de buurt" : adres.naam.split(",")[0]) : `vak ${la.toFixed(2).replace(".", ",")} N · ${lo.toFixed(2).replace(".", ",")} O`;
   document.title = `${adres ? adres.naam : `Vak ${vak}`} · ${TITEL}`;
   const precies = adres ? await D.preciesRond(adres.lat, adres.lon, STRAAL_M) : null;
+  const gevraagd = new URLSearchParams(location.search).get("soort");
 
   const teken = () => {
     const maanden = SEIZOENEN[toestand.seizoen].maanden;
@@ -340,39 +368,38 @@ async function hier(vak) {
     const l5 = laag(Object.keys(V));
     const seizoenNaam = toestand.seizoen === "jaar" ? "in vijf jaar" : `in de ${SEIZOENEN[toestand.seizoen].naam.toLowerCase()}`;
     const waarden = Object.fromEntries(Object.entries(V).map(([v, d]) => [v, Object.values(d.s).filter((r) => D.inSeizoen(r, maanden) > 0).length]));
-    // de vogel centraal: de meest gemelde soort met plaat en geluid in dit vak, dit seizoen
-    const top = l2.nieuw.find((x) => S[x.key].plaat && (S[x.key].zang || S[x.key].roep) && !S[x.key].exoot) || l2.nieuw[0];
-    const soort = top ? metKey(S, top.key) : null;
+    // de vogel in beeld: gekozen via de strook, anders de meest gemelde soort met plaat en geluid
+    const gekozen = l2.nieuw.find((x) => S[x.key].slug === gevraagd)
+      || l2.nieuw.find((x) => S[x.key].plaat && (S[x.key].zang || S[x.key].roep) && !S[x.key].exoot) || l2.nieuw[0];
+    const soort = gekozen ? metKey(S, gekozen.key) : null;
+    const strookLijst = l2.nieuw.filter((x) => S[x.key].n >= KERN_MIN);
 
     app.innerHTML = `
-    ${soort ? heldSoort(soort, {
-      kop: `De ${esc(klein(soort.nl))} <em>bij ${esc(plekNaam)}</em>`,
-      sub: `De meest gemelde vogel in je vak ${seizoenNaam}: ${getal(top.s)} meldingen. Een van de ${l2.totaal} soorten die hier ${seizoenNaam} zijn gezien.`,
-      extra: `<p class="held-meta mono zacht">${adres && adres.naam !== "Je locatie" ? esc(adres.naam.split(",").slice(1).join(",").trim()) + " · " : ""}gemeente ${esc(gemeente)} · vak ${vak}</p>`,
+    ${soort ? scherm(soort, {
+      kop: `De <em>${esc(klein(soort.nl))}</em> bij <em>${esc(plekNaam)}</em>`,
+      sub: `Een van de ${l2.totaal} soorten die ${seizoenNaam} in je vak zijn gemeld.`,
+      weetjes: weetjesVoor(soort, [["In je vak", `${getal(gekozen.s)} meldingen ${seizoenNaam}`], ["Gemeente", `${esc(gemeente)} · vak ${vak}`]]),
+      strook: { label: `${strookLijst.length} soorten in je vak`, lijst: strookLijst.map((x) => ({ key: x.key })), href: (slug) => `/hier/${D.vakSlug(vak)}?soort=${slug}` },
+      omgeving: { html: kaartjeKlein(K, V, { waarden, eigen: vak, punt: adres ? [adres.lat, adres.lon] : null, label: "Je vak in Twente" }), href: `/kaart?vak=${D.vakSlug(vak)}` },
     }) : `<section class="breed plek"><h1>${esc(plekNaam)}</h1><p>Hier is ${seizoenNaam} niets gemeld.</p></section>`}
     <section class="breed blok">
-      <div class="seizoen" role="group" aria-label="Seizoen">${Object.entries(SEIZOENEN).map(([k, s]) => `<button type="button" data-seizoen="${k}" aria-pressed="${k === toestand.seizoen}">${s.naam}</button>`).join("")}</div>
-      <div class="blok-kop"><h2>In je vak</h2><span class="mono zacht">${l2.totaal} soorten ${seizoenNaam}</span></div>
-      ${strip(l2.nieuw.filter((x) => S[x.key].n >= KERN_MIN).slice(0, 20), S, (x) => `${getal(x.s)} meldingen`)}
-      <p class="blok-acties"><a class="knop-pil knop-donker" href="/kaart?vak=${D.vakSlug(vak)}" data-link>Bekijk je vak op de simulatiekaart</a></p>
-    </section>
-    <section class="breed blok">
       <div class="blok-kop"><h2>Van je straat tot heel Twente</h2></div>
+      <div class="seizoen" role="group" aria-label="Seizoen">${Object.entries(SEIZOENEN).map(([k, s]) => `<button type="button" data-seizoen="${k}" aria-pressed="${k === toestand.seizoen}">${s.naam}</button>`).join("")}</div>
       <div class="kaart-vak">${tekenKaart(K, V, { waarden, eigen: vak, buren: buren.filter((b) => b !== vak), gemeente, punt: adres ? [adres.lat, adres.lon] : null, klik: true,
         label: `Kaart van Twente met je vak, de buurvakken en de gemeente ${gemeente}`, titel: (v, w) => `${w} soorten ${seizoenNaam}` })}</div>
       ${legenda(Math.max(...Object.values(waarden)), "soorten")}
       ${laagStraat(adres, precies, S)}
       ${laagBlok(2, "Je vak", `ongeveer 4 × 6 km · ${getal(l2.n)} meldingen · ${l2.totaal} soorten ${seizoenNaam}`,
-        "Het rastervak waarin je adres ligt. Observation.org deelt meldingen alleen op dit raster; de vogels hieronder zijn ergens in dit vak gemeld, niet per se bij jou om de hoek.", l2.nieuw, S, maanden, 8, "in dit vak")}
+        "Het rastervak waarin je adres ligt. Observation.org deelt meldingen alleen op dit raster; de vogels hieronder zijn ergens in dit vak gemeld, niet per se bij jou om de hoek.", l2.nieuw, S, maanden, 12, "in dit vak")}
       ${laagBlok(3, "Eromheen", `${l3.vakken} vakken · ${getal(l3.n)} meldingen · ${l3.totaal} soorten`,
-        l3.nieuw.length ? "Deze soorten zijn in de vakken rond je vak gemeld, maar niet in je eigen vak." : "Rond je vak zijn geen andere soorten gemeld dan in je eigen vak.", l3.nieuw, S, maanden, 4, "in de buurt")}
+        l3.nieuw.length ? "Deze soorten zijn in de vakken rond je vak gemeld, maar niet in je eigen vak." : "Rond je vak zijn geen andere soorten gemeld dan in je eigen vak.", l3.nieuw, S, maanden, 6, "in de buurt")}
       ${laagBlok(4, `In en rond ${gemeente}`, `${l4.vakken} vakken · ${getal(l4.n)} meldingen · ${l4.totaal} soorten`,
-        `Alle vakken die de gemeente ${esc(gemeente)} raken. Dat is iets ruimer dan de gemeentegrens, want een vak is niet te splitsen. Hieronder alleen wat er nog bij komt.`, l4.nieuw, S, maanden, 4, "in en rond de gemeente")}
+        `Alle vakken die de gemeente ${esc(gemeente)} raken. Dat is iets ruimer dan de gemeentegrens, want een vak is niet te splitsen. Hieronder alleen wat er nog bij komt.`, l4.nieuw, S, maanden, 6, "in en rond de gemeente")}
       ${laagBlok(5, "Heel Twente", `${l5.vakken} vakken · ${getal(l5.n)} meldingen · ${l5.totaal} soorten`,
-        `De rest van wat ${seizoenNaam} in Twente is gemeld. Vaak zeldzaam, of gebonden aan één plek.`, l5.nieuw, S, maanden, 4, "in Twente")}
+        `De rest van wat ${seizoenNaam} in Twente is gemeld. Vaak zeldzaam, of gebonden aan één plek.`, l5.nieuw, S, maanden, 6, "in Twente")}
     </section>`;
 
-    if (soort) bindHeld(app, soort);
+    if (soort) bindScherm(app, soort);
     app.querySelectorAll("[data-seizoen]").forEach((b) => b.addEventListener("click", () => {
       toestand.seizoen = b.dataset.seizoen;
       const y = window.scrollY;
@@ -451,12 +478,14 @@ async function soortPagina(slug) {
   const max = Math.max(1, ...soort.twente);
   const waarden = Object.fromEntries(Object.entries(V).map(([v, d]) => [v, (d.s[soort.key] || []).reduce((a, b) => a + b, 0)]));
   const vakkenMet = Object.values(waarden).filter((w) => w > 0).length;
-  const piek = soort.twente.indexOf(max);
+  const groep = Object.keys(S).filter((k) => S[k].groep === soort.groep && S[k].n >= KERN_MIN && S[k].plaat).sort((a, b) => S[b].n - S[a].n);
   app.innerHTML = `
-  ${heldSoort(soort, {
-    kop: `De ${esc(klein(soort.nl))}`,
-    sub: `<em>${esc(soort.wet)}</em>. ${soort.status ? esc(soort.status.charAt(0).toUpperCase() + soort.status.slice(1)) + ". " : ""}${getal(soort.n)} meldingen in Twente in vijf jaar, in ${vakkenMet} van de ${Object.keys(V).length} vakken. Het vaakst in ${MAANDNAMEN[piek]}.`,
-    extra: `${labelVoor(soort)}<p class="held-acties">${toestand.laatsteVak ? `<a class="knop-pil" href="/hier/${D.vakSlug(toestand.laatsteVak)}" data-link>Terug naar je plek</a>` : ""}<a class="knop-pil" href="/kaart" data-link>Op de simulatiekaart</a></p>`,
+  ${scherm(soort, {
+    kop: `De <em>${esc(klein(soort.nl))}</em>`,
+    sub: `${getal(soort.n)} meldingen in Twente in vijf jaar, in ${vakkenMet} van de ${Object.keys(V).length} vakken.${soort.exoot ? " Ontsnapt of uitgezet." : ""}`,
+    weetjes: weetjesVoor(soort, [["In Twente", `${getal(soort.n)} meldingen`]]),
+    strook: { label: `${groep.length} ${GROEPNAMEN[soort.groep]?.toLowerCase() || "soorten"}`, lijst: groep.map((k) => ({ key: k })), href: (s) => `/soort/${s}` },
+    omgeving: { html: kaartjeKlein(K, V, { waarden, eigen: toestand.laatsteVak, label: `Waar de ${klein(soort.nl)} in Twente gemeld is` }), href: "/kaart" },
   })}
   <section class="breed blok twee">
     <div class="kalender">
@@ -472,7 +501,7 @@ async function soortPagina(slug) {
       ${legenda(Math.max(...Object.values(waarden)), "meldingen")}
     </div>
   </section>`;
-  bindHeld(app, soort);
+  bindScherm(app, soort);
 }
 
 /* ---------- Alle soorten ---------- */
@@ -550,7 +579,12 @@ function werkKnoppenBij(st) {
     const ring = b.querySelector(".ring");
     if (ring) ring.style.strokeDashoffset = dezelfde ? (125.7 * (1 - deel)).toFixed(1) : "125.7";
   });
-  document.querySelectorAll(".held-soort").forEach((el) => el.classList.toggle("speelt-hier", !!(h && speeltNu && h.soort.key === el.dataset.held)));
+  document.querySelectorAll(".scherm").forEach((el) => {
+    const hier = !!(h && h.soort.key === el.dataset.held);
+    el.classList.toggle("speelt-hier", hier && speeltNu && st?.spectro === "klaar");
+    const hint = el.querySelector(".spectro-hint");
+    if (hint && hier) hint.textContent = st?.fout || (st?.spectro === "geen" ? "Geen spectrogram voor deze opname. Het geluid speelt wel." : st?.laadt || st?.spectro === "laden" ? "Even laden…" : "");
+  });
 }
 
 G.opVerandering((st) => {
@@ -570,6 +604,36 @@ G.opVerandering((st) => {
     k.querySelector(".ring").style.strokeDashoffset = (125.7 * (1 - st.deel)).toFixed(1);
   } else if (spelerGekoppeld) { G.ontkoppelDoek(spelerDoek); spelerGekoppeld = false; }
   werkKnoppenBij(st);
+});
+
+/* ---------- Kop, overblok en voet ---------- */
+
+document.addEventListener("click", (e) => {
+  if (e.target.closest("[data-over]")) {
+    e.preventDefault();
+    const ga = () => document.getElementById("over").scrollIntoView({ behavior: "smooth" });
+    if (document.body.classList.contains("met-over")) ga(); else { naar("/"); setTimeout(ga, 400); }
+  }
+  if (e.target.closest("[data-naar-zoeken]")) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => document.getElementById("adres").focus(), 350);
+  }
+});
+
+// hoogte van de kop, voor de kaart die eronder begint
+const balk = document.querySelector(".balk");
+new ResizeObserver(() => document.documentElement.style.setProperty("--balk-h", `${balk.offsetHeight}px`)).observe(balk);
+
+// carrousel met platen in het overblok
+D.soorten().then((S) => {
+  const namen = ["roodborst", "merel", "boerenzwaluw", "ijsvogel", "koolmees", "kievit", "buizerd", "vink", "ekster", "grutto", "groene-specht", "putter"];
+  const k = document.querySelector(".over-karrousel");
+  k.innerHTML = namen.map((n) => Object.values(S).find((s) => s.slug === n)).filter((s) => s?.plaat).map((s) =>
+    `<figure><a href="/soort/${s.slug}" data-link><img src="${s.plaat.src}" alt="Plaat van de ${esc(klein(s.nl))}" loading="lazy" width="1200" height="1500"></a><figcaption>${esc(s.nl)} · ${esc(plaatKort(s.plaat))}</figcaption></figure>`).join("");
+  document.querySelectorAll("[data-karrousel]").forEach((b) => b.addEventListener("click", () => {
+    const f = k.querySelector("figure");
+    k.scrollBy({ left: (+b.dataset.karrousel) * ((f?.offsetWidth || 300) + 16), behavior: "smooth" });
+  }));
 });
 
 zoekveld(document.querySelector(".balk .zoek"));

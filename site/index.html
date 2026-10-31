@@ -22,32 +22,31 @@
 <body>
   <a class="naar-inhoud" href="#app">Naar de inhoud</a>
   <header class="balk">
-    <div class="balk-rij">
-      <a class="merk" href="/" data-link aria-label="Voggels, naar het begin">
-        <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 20c4-1 7-5 10-9 1.5-2 4-3 6-2 1 .5 2 1.5 2.5 2.5L27 12l-3 1c0 4-3 8-8 9-4 .8-8 0-11-2z" fill="currentColor"/><circle cx="20.5" cy="11.5" r="1" fill="var(--papier)"/></svg>
-        <span class="merk-naam">Voggels</span>
-      </a>
-      <nav class="balk-knoppen" aria-label="Hoofdmenu">
-        <a class="knop-icoon" href="/kaart" data-link aria-label="Simulatiekaart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
-        <a class="knop-icoon" href="/soorten" data-link aria-label="Alle soorten"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
-        <a class="knop-icoon" href="/onderzoekjes" data-link aria-label="Onderzoekjes met Fos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 11.5h6M9 15h3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
-        <a class="knop-tekst" href="/hoe-dit-werkt">Hoe dit werkt</a>
-      </nav>
-    </div>
+    <a class="merk" href="/" data-link aria-label="Voggels, naar het begin">
+      <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 20c4-1 7-5 10-9 1.5-2 4-3 6-2 1 .5 2 1.5 2.5 2.5L27 12l-3 1c0 4-3 8-8 9-4 .8-8 0-11-2z" fill="currentColor"/><circle cx="20.5" cy="11.5" r="1" fill="var(--papier)"/></svg>
+      <span class="merk-naam">Voggels</span>
+    </a>
     <div class="zoek" role="search">
-      <div class="zoek-pil">
-        <label class="sr" for="adres">Je adres in Twente</label>
-        <input id="adres" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
-          placeholder="Typ je adres in Twente" role="combobox" aria-expanded="false" aria-controls="adres-lijst" aria-autocomplete="list">
-        <button class="zoek-locatie" type="button" aria-label="Gebruik mijn locatie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4L4 11l7 2 2 7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
-        <ul id="adres-lijst" class="zoek-lijst" role="listbox" hidden></ul>
-      </div>
-      <div class="zoek-acties">
+      <div class="zoek-rij">
+        <div class="zoek-pil">
+          <label class="sr" for="adres">Je adres in Twente</label>
+          <input id="adres" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
+            placeholder="Typ je adres in Twente" role="combobox" aria-expanded="false" aria-controls="adres-lijst" aria-autocomplete="list">
+          <button class="zoek-locatie" type="button" aria-label="Gebruik mijn locatie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4L4 11l7 2 2 7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
+          <ul id="adres-lijst" class="zoek-lijst" role="listbox" hidden></ul>
+        </div>
         <button class="knop-pil knop-donker zoek-knop" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Zoeken</button>
         <a class="knop-pil knop-accent" href="/ontdek" data-link><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="9" r="1.3" fill="currentColor"/><circle cx="15" cy="15" r="1.3" fill="currentColor"/><circle cx="15" cy="9" r="1.3" fill="currentColor"/><circle cx="9" cy="15" r="1.3" fill="currentColor"/></svg>Ontdek een vogel</a>
       </div>
       <p class="zoek-melding" aria-live="polite"></p>
     </div>
+    <nav class="balk-nav" aria-label="Hoofdmenu">
+      <a class="nav-tekst" href="/onderzoekjes" data-link>Onderzoekjes met Fos</a>
+      <a class="nav-tekst" href="#over" data-over>Over dit project</a>
+      <a class="nav-knop nav-knop-fos" href="/onderzoekjes" data-link aria-label="Onderzoekjes met Fos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 11.5h6M9 15h3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+      <a class="nav-knop" href="/kaart" data-link aria-label="Kaart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Kaart</span></a>
+      <a class="nav-knop" href="/soorten" data-link aria-label="Index van alle soorten"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Index</span></a>
+    </nav>
   </header>
 
   <main id="app" tabindex="-1">
@@ -55,9 +54,43 @@
     <noscript><p class="kolom">Deze site heeft JavaScript nodig om je adres op te zoeken en geluid af te spelen. Lees <a href="/hoe-dit-werkt">hoe dit werkt</a>.</p></noscript>
   </main>
 
+  <section class="over" id="over" aria-labelledby="over-kop">
+    <div class="over-intro">
+      <h2 id="over-kop">Over dit project</h2>
+      <p><em>Voggels</em> laat zien welke vogels je in Twente kunt horen, op je eigen adres en per seizoen. Het gebruikt bijna 900.000 meldingen van vogelaars, platen uit oude vogelboeken en opnames van mensen die met een microfoon het veld in gingen.</p>
+    </div>
+    <div class="over-karrousel-wrap">
+      <div class="over-karrousel" tabindex="0" aria-label="Platen uit oude vogelboeken"></div>
+      <div class="over-karrousel-voet">
+        <p>Platen uit Naumann (1896–1905), Nozeman &amp; Sepp (1770–1829) en Gould (1832–1837). Publiek domein.</p>
+        <div class="over-pijlen"><button type="button" class="knop-icoon" data-karrousel="-1" aria-label="Vorige plaat">←</button><button type="button" class="knop-icoon" data-karrousel="1" aria-label="Volgende plaat">→</button></div>
+      </div>
+    </div>
+    <div class="over-twee">
+      <figure class="over-figuur"><img src="/platen/roodborst.webp" alt="Plaat van de roodborst uit Nederlandsche Vogelen, met een nest en eieren" loading="lazy" width="1200" height="1500"><figcaption>De roodborst uit <em>Nederlandsche Vogelen</em>, het eerste grote Nederlandse vogelboek.</figcaption></figure>
+      <div class="over-tekst">
+        <p>Vogels staan niet stil. Er is dus geen vogel voor je deur, alleen meldingen in de buurt. Daarom laat Voggels steeds wijder zien: je straat, je vak van ongeveer 4 bij 6 kilometer, de vakken eromheen, je gemeente en heel Twente.</p>
+        <p>Het grootste deel van de meldingen komt van Observation.org. Die deelt Nederlandse meldingen alleen op een grof raster. Precieser wordt het niet, en dat proberen we ook niet: gevoelige soorten en broedplekken blijven vervaagd.</p>
+        <p>De simulatiekaart is precies dat: een simulatie. Het aantal stippen komt uit de meldingen, waar ze zitten en hoe ze bewegen is verzonnen.</p>
+        <p>Op zaterdag doen we <a href="/onderzoekjes" data-link>onderzoekjes met Fos</a>: een geluidsquiz, de tuin tellen, een liedje tekenen.</p>
+        <p>De opbouw van deze site is geïnspireerd op <a href="https://bomeninamsterdam.nl">Bomen in Amsterdam</a> van Franklin de Bekker.</p>
+        <p><a class="knop-pil" href="/hoe-dit-werkt">Hoe dit werkt</a></p>
+      </div>
+    </div>
+  </section>
+
   <footer class="voet">
-    <p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen en je locatie worden niet bewaard.</p>
-    <p>Meldingen via <a href="https://www.gbif.org">GBIF</a>, vooral van Observation.org en eBird. Geluid van <a href="https://xeno-canto.org">xeno-canto</a>. Platen uit het publiek domein via <a href="https://commons.wikimedia.org">Wikimedia Commons</a>. <a href="/hoe-dit-werkt">Hoe dit werkt</a>.</p>
+    <div class="voet-kolommen">
+      <div><h3>Data</h3><p>Meldingen via <a href="https://www.gbif.org">GBIF</a>, vooral van Observation.org (CC BY-NC) en eBird (CC BY), 1 november 2021 tot en met 31 oktober 2026. Namen en status: Wikipedia, CC BY-SA. Kaart, grenzen en adressen: PDOK (Kadaster).</p></div>
+      <div><h3>Beeld</h3><p>Platen uit Naumann, Nozeman &amp; Sepp (Koninklijke Bibliotheek) en Gould, publiek domein, via <a href="https://commons.wikimedia.org">Wikimedia Commons</a>. We maken geen nieuwe vogelbeelden.</p></div>
+      <div><h3>Geluid</h3><p>Opnames van <a href="https://xeno-canto.org">xeno-canto</a>, meestal CC BY-NC-SA. De opnemer staat bij elke opname. Letters: Bodoni Moda, Source Serif 4 en Instrument Sans (OFL). <a href="/hoe-dit-werkt">Hoe dit werkt</a></p></div>
+      <div><h3>Privacy</h3><p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen en je locatie worden niet bewaard. Het logboek van de onderzoekjes blijft op je eigen apparaat.</p></div>
+    </div>
+    <div class="voet-acties">
+      <button class="knop-pil" type="button" data-naar-zoeken>Typ je adres</button>
+      <a class="knop-pil knop-accent" href="/ontdek" data-link>Ontdek een vogel</a>
+    </div>
+    <p class="voet-merk" aria-hidden="true">Voggels</p>
   </footer>
 
   <div class="speler" id="speler" hidden>
