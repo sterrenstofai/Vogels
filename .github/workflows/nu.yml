@@ -1,0 +1,36 @@
+name: Nu verversen
+
+# Elke ochtend de meldingen van de laatste 14 dagen ophalen voor de knop 'Nu' op de simulatiekaart.
+# Alleen als er iets veranderd is, komt er een commit; Netlify zet hem dan vanzelf live.
+on:
+  schedule:
+    - cron: "41 4 * * *"   # elke dag 04:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sitedata
+  cancel-in-progress: false
+
+jobs:
+  nu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verse meldingen ophalen
+        run: python3 scripts/nu.py
+      - name: Committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/nu.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Nu: meldingen van de laatste 14 dagen"
+          git pull --rebase origin main
+          git push

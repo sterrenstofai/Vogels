@@ -1,6 +1,8 @@
 // "Twente in vogels": een simulatie op een donkere kaart.
-// Elke stip staat voor een vast aantal meldingen van één soort in één vak in de gekozen maand.
-// De plek binnen het vak en de bewegingen zijn verzonnen; een stip verlaat zijn vak nooit.
+// Hoeveel stippen een vak krijgt, komt uit de meldingen (met de wortel, zodat een paar heel ijverige
+// vogelaars een vak niet laten ontploffen). Welke soorten, in welke verhouding, komt ook uit de meldingen.
+// Waar een stip zit, volgt zijn leefgebied op de kaart: eenden op het water, spechten in het bos.
+// Twee bronnen: een gemiddelde maand (vijf jaar) of 'nu' (de laatste 14 dagen).
 
 import { VAK } from "./data.js";
 
@@ -16,13 +18,25 @@ export const GROEPNAMEN = {
 const GEDRAG = { zang: "springen", specht: "springen", overig: "springen", kraai: "lopen", duif: "lopen", eend: "drijven",
   gans: "zwerm", steltloper: "zwerm", meeuw: "zweven", roof: "cirkelen", zwaluw: "jagen", reiger: "staan" };
 
+// voorkeur per groep voor: open land, bos, heide, moeras, bebouwd, water
+const LEEFGEBIED = {
+  zang: [0.5, 1, 0.6, 0.5, 0.9, 0.05], kraai: [0.8, 0.5, 0.3, 0.2, 1, 0.05], duif: [0.7, 0.6, 0.2, 0.1, 1, 0.05],
+  specht: [0.1, 1, 0.4, 0.2, 0.3, 0], eend: [0, 0, 0, 0.6, 0, 1], gans: [0.7, 0, 0.1, 0.6, 0, 1], meeuw: [0.5, 0, 0, 0.4, 0.4, 1],
+  steltloper: [0.6, 0, 0.3, 1, 0, 0.7], reiger: [0.5, 0, 0.1, 1, 0.1, 0.9], roof: [1, 0.6, 0.9, 0.6, 0.2, 0.2],
+  zwaluw: [0.7, 0.2, 0.3, 0.6, 0.9, 0.9], overig: [0.6, 0.6, 0.5, 0.5, 0.5, 0.4],
+};
+const KLASSEN = ["bos", "heide", "moeras", "bebouwd", "water"]; // index + 1; 0 is open land
+const DICHTHEID = 1; // stippen per wortel van een melding
+
 const COS = Math.cos(52.3 * Math.PI / 180);
 const rnd = (a, b) => a + Math.random() * (b - a);
 
 export class Simulatie {
-  constructor(wrap, { vakken, soorten, basis, kaart, schaal = 20, opTik, opLabels }) {
+  constructor(wrap, { vakken, soorten, basis, kaart, nu = null, schaal = 20, opTik, opLabels }) {
     this.wrap = wrap;
     this.vakken = vakken; this.soorten = soorten; this.basis = basis; this.kaart = kaart;
+    this.nu = nu; this.bron = "maand";
+    this.maakLeefgebied();
     this.schaal = schaal; this.opTik = opTik; this.opLabels = opLabels;
     this.maand = new Date().getMonth();
     this.uit = new Set();          // uitgeschakelde groepen
@@ -125,7 +139,60 @@ export class Simulatie {
 
   /* ---------- stippen ---------- */
 
+  /* ---------- leefgebied ---------- */
+
+  // de vlakken van de basiskaart als klein raster: per cel open land, bos, heide, moeras, bebouwd of water
+  maakLeefgebied() {
+    const vk = Object.keys(this.vakken).map((v) => v.split(",").map(Number));
+    const z = { s: Math.min(...vk.map((v) => v[0])), n: Math.max(...vk.map((v) => v[0])) + VAK, w: Math.min(...vk.map((v) => v[1])), o: Math.max(...vk.map((v) => v[1])) + VAK };
+    const stapLon = 0.0012, stapLat = 0.0008;
+    const B = Math.ceil((z.o - z.w) / stapLon), H = Math.ceil((z.n - z.s) / stapLat);
+    const c = document.createElement("canvas"); c.width = B; c.height = H;
+    const g = c.getContext("2d", { willReadFrequently: true });
+    g.imageSmoothingEnabled = false;
+    KLASSEN.forEach((naam, i) => {
+      g.fillStyle = `rgb(${(i + 1) * 40},0,0)`;
+      g.beginPath();
+      for (const poly of this.basis.vlakken[naam] || []) for (const ring of poly) {
+        ring.forEach(([lo, la], j) => { const x = (lo - z.w) / stapLon, y = (z.n - la) / stapLat; j ? g.lineTo(x, y) : g.moveTo(x, y); });
+        g.closePath();
+      }
+      g.fill("evenodd");
+    });
+    const d = g.getImageData(0, 0, B, H).data, raster = new Uint8Array(B * H);
+    for (let i = 0; i < raster.length; i++) raster[i] = Math.min(5, Math.round(d[i * 4] / 40));
+    this.leef = { z, B, H, stapLon, stapLat, raster };
+  }
+
+  klasse(lon, lat) {
+    const L = this.leef;
+    const x = Math.floor((lon - L.z.w) / L.stapLon), y = Math.floor((L.z.n - lat) / L.stapLat);
+    return x < 0 || y < 0 || x >= L.B || y >= L.H ? 0 : L.raster[y * L.B + x];
+  }
+
+  // een plek in het vak die bij de groep past: de beste van een handvol willekeurige plekken
+  plek(vak, groep) {
+    const [la, lo] = vak.split(",").map(Number);
+    const w = LEEFGEBIED[groep] || LEEFGEBIED.overig;
+    const pogingen = w[5] >= 0.9 && w[0] < 0.6 ? 40 : 14; // watervogels zoeken langer naar water
+    let beste = null, score = -1;
+    for (let i = 0; i < pogingen; i++) {
+      const x = lo + rnd(0.002, VAK - 0.002), y = la + rnd(0.002, VAK - 0.002);
+      const sc = w[this.klasse(x, y)] + Math.random() * 0.3;
+      if (sc > score) { score = sc; beste = [x, y]; }
+    }
+    return beste;
+  }
+
+  zetBron(bron) {
+    this.bron = bron === "nu" && this.nu ? "nu" : "maand";
+    for (const s of this.stippen) s.weg = true;
+    this.zwermen.clear();
+    this.vulStippen();
+  }
+
   telling(vak, soort, m) {
+    if (this.bron === "nu") return this.nu.vakken[vak]?.[soort] || 0;
     const rij = this.vakken[vak]?.s[soort];
     if (!rij) return 0;
     const i = Math.floor(m) % 12, j = (i + 1) % 12, f = m - Math.floor(m);
@@ -141,11 +208,18 @@ export class Simulatie {
       (bestaand.get(k) || bestaand.set(k, []).get(k)).push(s);
     }
     const nieuw = [];
+    // 'nu' is veel minder data dan vijf jaar dezelfde maand: zelfde beeldvulling door een vaste verhouding
+    const factor = this.bron === "nu" ? this.nuFactor() : 1;
     for (const [vak, v] of Object.entries(this.vakken)) {
-      for (const soort of Object.keys(v.s)) {
+      const soorten = this.bron === "nu" ? Object.keys(this.nu.vakken[vak] || {}) : Object.keys(v.s);
+      let totaal = 0;
+      for (const soort of soorten) totaal += this.telling(vak, soort, this.maand);
+      if (!totaal) continue;
+      const stippen = DICHTHEID * Math.sqrt(totaal * factor);
+      for (const soort of soorten) {
         const info = this.soorten[soort];
         if (!info) continue;
-        const exact = this.telling(vak, soort, this.maand) / this.schaal;
+        const exact = (stippen * this.telling(vak, soort, this.maand)) / totaal;
         let doel = Math.floor(exact);
         const k = vak + "|" + soort;
         const lijst = bestaand.get(k) || [];
@@ -159,18 +233,28 @@ export class Simulatie {
     this.stippen = this.stippen.filter((s) => !(s.weg && s.a <= 0)).concat(nieuw);
   }
 
+  nuFactor() {
+    if (this._nuFactor) return this._nuFactor;
+    let maand = 0, nu = 0;
+    const m = new Date().getMonth();
+    for (const v of Object.values(this.vakken)) for (const rij of Object.values(v.s)) maand += rij[m];
+    for (const v of Object.values(this.nu.vakken)) for (const n of Object.values(v)) nu += n;
+    return (this._nuFactor = nu ? maand / nu : 1);
+  }
+
   maakStip(vak, soort, info, direct) {
     const [la, lo] = vak.split(",").map(Number);
     const gedrag = info.zwerm ? "zwerm" : GEDRAG[info.groep] || "springen";
+    const [px, py] = this.plek(vak, info.groep);
     const s = {
       vak, soort, groep: info.groep, gedrag, la, lo,
-      x: lo + rnd(0.004, VAK - 0.004), y: la + rnd(0.004, VAK - 0.004),
+      x: px, y: py,
       vx: 0, vy: 0, a: direct ? 1 : 0, weg: false, t: rnd(0, 4), hoek: rnd(0, Math.PI * 2),
     };
     if (gedrag === "cirkelen") { s.cx = s.x; s.cy = s.y; s.r = rnd(0.0012, 0.0035); s.w = rnd(0.25, 0.5) * (Math.random() < 0.5 ? -1 : 1); }
     if (gedrag === "zwerm") {
       const zk = vak + "|" + soort;
-      if (!this.zwermen.has(zk)) this.zwermen.set(zk, { x: s.x, y: s.y, doelX: s.x, doelY: s.y, t: 0, la, lo });
+      if (!this.zwermen.has(zk)) this.zwermen.set(zk, { x: s.x, y: s.y, doelX: s.x, doelY: s.y, t: 0, la, lo, vak, groep: info.groep });
       s.dx = rnd(-0.0018, 0.0018); s.dy = rnd(-0.0012, 0.0012);
     }
     s.doelX = s.x; s.doelY = s.y;
@@ -181,7 +265,7 @@ export class Simulatie {
     // zwermen verplaatsen zich als groep
     for (const z of this.zwermen.values()) {
       z.t -= dt;
-      if (z.t <= 0) { z.doelX = z.lo + rnd(0.006, VAK - 0.006); z.doelY = z.la + rnd(0.006, VAK - 0.006); z.t = rnd(6, 16); }
+      if (z.t <= 0) { [z.doelX, z.doelY] = this.plek(z.vak, z.groep); z.t = rnd(6, 16); }
       z.x += (z.doelX - z.x) * Math.min(1, dt * 0.25);
       z.y += (z.doelY - z.y) * Math.min(1, dt * 0.25);
     }
@@ -197,12 +281,16 @@ export class Simulatie {
           if (s.t <= 0) { const ver = Math.random() < 0.15; s.doelX = klem(s.x + rnd(-1, 1) * (ver ? 0.008 : 0.0008), s.lo, s.lo + VAK); s.doelY = klem(s.y + rnd(-1, 1) * (ver ? 0.005 : 0.0005), s.la, s.la + VAK); s.t = rnd(2, 6); }
           s.x += (s.doelX - s.x) * Math.min(1, dt * 1.2); s.y += (s.doelY - s.y) * Math.min(1, dt * 1.2);
           break;
-        case "drijven":
+        case "drijven": {
           s.hoek += rnd(-0.3, 0.3) * dt;
-          s.x = klem(s.x + Math.cos(s.hoek) * 0.00006 * dt, s.lo, s.lo + VAK); s.y = klem(s.y + Math.sin(s.hoek) * 0.00004 * dt, s.la, s.la + VAK);
+          const nx = klem(s.x + Math.cos(s.hoek) * 0.00006 * dt, s.lo, s.lo + VAK), ny = klem(s.y + Math.sin(s.hoek) * 0.00004 * dt, s.la, s.la + VAK);
+          // wie op het water ligt, blijft op het water
+          if (this.klasse(s.x, s.y) === 5 && this.klasse(nx, ny) !== 5) s.hoek += Math.PI;
+          else { s.x = nx; s.y = ny; }
           break;
+        }
         case "staan":
-          if (s.t <= 0) { const vlieg = Math.random() < 0.2; if (vlieg) { s.doelX = s.lo + rnd(0.003, VAK - 0.003); s.doelY = s.la + rnd(0.003, VAK - 0.003); } s.t = rnd(6, 14); }
+          if (s.t <= 0) { const vlieg = Math.random() < 0.2; if (vlieg) [s.doelX, s.doelY] = this.plek(s.vak, s.groep); s.t = rnd(6, 14); }
           s.x += (s.doelX - s.x) * Math.min(1, dt * 0.5); s.y += (s.doelY - s.y) * Math.min(1, dt * 0.5);
           break;
         case "zweven":
@@ -227,6 +315,7 @@ export class Simulatie {
           break;
         case "zwerm": {
           const z = this.zwermen.get(s.vak + "|" + s.soort);
+          if (!z) break; // zwerm al weg na het wisselen van bron; deze stip vervaagt
           const tx = z.x + s.dx + Math.sin(performance.now() / 900 + s.hoek) * 0.0003;
           const ty = z.y + s.dy + Math.cos(performance.now() / 1100 + s.hoek) * 0.0002;
           s.x = klem(s.x + (tx - s.x) * Math.min(1, dt * 1.5), s.lo, s.lo + VAK);

@@ -573,3 +573,12 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 .sim-label-van { background: #2D4A2E; color: #F3EDE1; padding-left: .7rem; margin: -1.6rem 0 0 0; translate: -50% 0; }
 .sim-label-van::after { content: ""; position: absolute; left: 50%; margin-left: -6px; bottom: -6px; border: 6px solid transparent; border-bottom: 0; border-top-color: #2D4A2E; }
 .sim-van i { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; margin-right: .45rem; }
+
+/* Simulatie: Per maand / Nu */
+.sim-bron { display: inline-flex; padding: 3px; border-radius: 999px; background: rgb(255 255 255 / .08); border: 1px solid rgb(255 255 255 / .16); }
+.sim-bron button { border: 0; background: none; color: #EDE6D6; font: 500 .9rem var(--ui); height: 34px; padding: 0 .9rem; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: .45rem; }
+.sim-bron button[aria-pressed="true"] { background: #EDE6D6; color: #1F1B16; }
+.sim-live { width: .5rem; height: .5rem; border-radius: 50%; background: #FF6B5E; box-shadow: 0 0 0 0 rgb(255 107 94 / .7); animation: live 1.8s infinite; }
+@keyframes live { 70% { box-shadow: 0 0 0 7px rgb(255 107 94 / 0); } 100% { box-shadow: 0 0 0 0 rgb(255 107 94 / 0); } }
+.sim-nu .sim-maand input, .sim-nu .knop-speel { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .sim-live { animation: none; } }

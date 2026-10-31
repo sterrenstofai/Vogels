@@ -15,10 +15,11 @@ export function verlaatKaart() {
   document.body.classList.remove("kaartmodus");
 }
 
+const datumKort = (d) => { const [, m, dag] = d.split("-").map(Number); return `${dag} ${MAANDNAMEN[m - 1]}`; };
 const klein = (t) => (t.startsWith("IJ") ? "ij" + t.slice(2) : t.charAt(0).toLowerCase() + t.slice(1));
 
 export async function kaartPagina(app, toestand, opties = {}) {
-  const [S, V, K, B] = await Promise.all([D.soorten(), D.vakken(), D.kaart(), D.laad("/data/basiskaart.json")]);
+  const [S, V, K, B, NU] = await Promise.all([D.soorten(), D.vakken(), D.kaart(), D.laad("/data/basiskaart.json"), D.laad("/data/nu.json").catch(() => null)]);
   document.body.classList.add("kaartmodus");
   const vanAdres = toestand.adres;
   const vanVak = opties.vak || (vanAdres ? D.vakVan(vanAdres.lat, vanAdres.lon) : toestand.laatsteVak);
@@ -30,11 +31,12 @@ export async function kaartPagina(app, toestand, opties = {}) {
     <div class="sim-labels" aria-hidden="true"></div>
     <div class="sim-ui sim-boven">
       <button class="sim-chip sim-info-knop" type="button" aria-expanded="false" aria-controls="sim-info"><span class="sim-stip"></span>Simulatie</button>
+      ${NU ? `<div class="sim-bron" role="group" aria-label="Welke meldingen"><button type="button" data-bron="maand" aria-pressed="true">Per maand</button><button type="button" data-bron="nu" aria-pressed="false"><span class="sim-live"></span>Nu</button></div>` : ""}
       ${vanSoort ? `<span class="sim-chip sim-van"><i style="background:${KLEUREN[S[vanSoort].groep]}"></i>Je kwam van de ${esc(klein(S[vanSoort].nl))}</span>` : vanAdres ? `<span class="sim-chip sim-van">Je kwam van ${esc(vanAdres.naam.split(",")[0])}</span>` : ""}
     </div>
     <div class="sim-ui sim-info" id="sim-info" hidden>
-      <p><strong>Dit is een simulatie, geen kaart van echte vogels.</strong> Elke stip staat voor ongeveer ${SCHAAL} meldingen van één soort in één vak van ongeveer 4 × 6 km, in de gekozen maand, opgeteld over 2021–2026.</p>
-      <p>Hoeveel stippen er in een vak zijn, komt uit de meldingen. Waar ze in het vak zitten en hoe ze bewegen, is verzonnen: ganzen vliegen in groepen, roofvogels cirkelen, zangvogels springen. Een stip verlaat zijn vak nooit.</p>
+      <p><strong>Een simulatie, geen kaart van echte vogels.</strong> Welke soorten in een vak van ongeveer 4 × 6 km zitten, en in welke verhouding, komt uit de meldingen. Drukke vakken zijn wat gedempt: een paar vogelaars die elke dag tellen, maken een vak anders onleesbaar.</p>
+      <p>De vogels zoeken hun eigen plek: eenden op het water, spechten in het bos, kauwen in het dorp. <em>Per maand</em> is een gemiddelde over vijf jaar. <em>Nu</em> zijn de meldingen van de laatste twee weken${NU ? `, ${datumKort(NU.van)} tot en met ${datumKort(NU.tot)}` : ""}.</p>
       <p><a href="/hoe-dit-werkt#simulatie">Meer in Hoe dit werkt</a></p>
     </div>
     <p class="sim-ui sim-hint" aria-hidden="true">Sleep · knijp om te zoomen · tik op een stip</p>
@@ -49,7 +51,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
         <button class="knop-speel" type="button" aria-label="Speel het jaar af" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="ico-speel" d="M8 5l11 7-11 7z"/><path class="ico-pauze" d="M8 5v14M16 5v14"/></svg></button>
         <div class="sim-maand"><span class="sim-maandnaam"></span><input type="range" min="0" max="11.99" step="0.01" aria-label="Maand"></div>
       </div>
-      <p class="sim-noot">Eén stip ≈ ${SCHAAL} meldingen in deze maand. Waar in het vak is verzonnen.</p>
+      <p class="sim-noot">Twente in een gemiddelde maand, uit vijf jaar meldingen.</p>
       <div class="sim-groepen" role="group" aria-label="Vogelgroepen"></div>
     </div>
   </section>`;
@@ -67,7 +69,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
   verlaatKaart();
   document.body.classList.add("kaartmodus");
   sim = new Simulatie(wrap, {
-    vakken: V, soorten: S, basis: B, kaart: K, schaal: SCHAAL,
+    vakken: V, soorten: S, basis: B, kaart: K, nu: NU, schaal: SCHAAL,
     opTik: (stip, vak) => toonKaartje(stip, vak),
     opLabels: (lijst) => {
       // labels die elkaar overlappen laten we weg
@@ -91,7 +93,8 @@ export async function kaartPagina(app, toestand, opties = {}) {
     if (!vanAdres) sim.pin = { lat: la + D.VAK / 2, lon: lo + D.VAK / 2 };
   }
   // het doel iets boven het midden, zodat het vrij van de maandschuif staat
-  if (doel.z > passend) doel.lat -= (sim.vh * 0.2) / doel.z;
+  const smal = sim.vw < 600; // op een telefoon nemen kop en maandschuif meer ruimte in
+  doel.lat -= (sim.vh * (doel.z > passend ? (smal ? 0.27 : 0.2) : (smal ? 0.3 : 0.16))) / doel.z;
   herkomst = sim.pin ? { ...sim.pin, tekst: vanAdres ? vanAdres.naam.split(",")[0] : vanSoort ? `de ${klein(S[vanSoort].nl)}` : "dit vak" } : null;
   if (vanSoort && S[vanSoort]) sim.opGeland = () => sim.zetFocus(vanSoort);
   sim.opening(doel);
@@ -125,6 +128,20 @@ export async function kaartPagina(app, toestand, opties = {}) {
     sim.zetGroepen(uit); tekenGroepen();
   });
 
+  // Per maand of Nu
+  const noot = wrap.querySelector(".sim-noot"), tijd = wrap.querySelector(".sim-tijd");
+  wrap.querySelectorAll("[data-bron]").forEach((k) => k.addEventListener("click", () => {
+    const bron = k.dataset.bron;
+    wrap.querySelectorAll("[data-bron]").forEach((x) => x.setAttribute("aria-pressed", String(x === k)));
+    sim.speelt = false; speelKnop.setAttribute("aria-pressed", "false");
+    sim.zetBron(bron);
+    wrap.classList.toggle("sim-nu", bron === "nu");
+    noot.textContent = bron === "nu" ? `Meldingen van ${datumKort(NU.van)} tot en met ${datumKort(NU.tot)}: ${getal(NU.meldingen)} in heel Twente.` : "Twente in een gemiddelde maand, uit vijf jaar meldingen.";
+    maandNaam.textContent = bron === "nu" ? "Nu" : MAANDNAMEN[Math.floor(sim.maand) % 12];
+    kaartje.hidden = true; sim.zetFocus(null);
+    tekenGroepen();
+  }));
+
   wrap.querySelectorAll("[data-zoom]").forEach((b) => b.addEventListener("click", () => sim.zoom(+b.dataset.zoom)));
   wrap.querySelector("[data-kantel]").addEventListener("click", (e) => {
     const aan = sim.pitch < 5;
@@ -147,7 +164,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
       <div class="sim-kaartje-tekst">
         <a class="sim-kaartje-naam" href="/soort/${s.slug}" data-link>${esc(s.nl)}</a>
         <span class="wet">${esc(s.wet)}</span>
-        <p>${getal(inVak)} meldingen in dit vak in ${MAANDNAMEN[m]}, ${getal(inTwente)} in heel Twente.</p>
+        <p>${sim.bron === "nu" ? `${getal(inVak)} meldingen in dit vak in de laatste twee weken, ${getal(inTwente)} in heel Twente.` : `${getal(inVak)} meldingen in dit vak in ${MAANDNAMEN[m]}, ${getal(inTwente)} in heel Twente (vijf jaar).`}</p>
         <div class="sim-kaartje-acties">
           ${s[t] ? `<button class="knop-pil knop-donker" type="button" data-speel="${s.key}" data-type="${t}">▶ Hoor de ${t}</button>` : ""}
           <a class="knop-pil" href="/soort/${s.slug}" data-link>Meer</a>
