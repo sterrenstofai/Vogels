@@ -182,7 +182,7 @@ em, i, .wet { font-style: italic; }
   .zoomknoppen { bottom: 14.2rem; }
   .rondomknoppen { top: auto; bottom: 14.2rem; }
   .rondom-hint { top: auto; bottom: 8.4rem; left: 50%; transform: translateX(-50%); }
-  .rondom-bron { display: block; left: auto; right: var(--rand); bottom: 18rem; width: 15rem; text-align: right; }
+  .rondom-bron { display: block; left: auto; right: var(--rand); top: 6rem; width: 15rem; text-align: right; }
   .scherm-titel { position: absolute; left: 0; bottom: 10rem; z-index: 2; width: min(32rem, 38vw); padding: 0 0 0 var(--rand); pointer-events: none; }
   .scherm-titel a { pointer-events: auto; }
   .scherm-titel h1 { font-size: clamp(2.6rem, 3.6vw, 3.4rem); }
