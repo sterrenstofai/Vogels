@@ -17,8 +17,8 @@ from shapely.geometry.polygon import orient
 from shapely.ops import unary_union
 
 GBIF = "https://api.gbif.org/v1/occurrence/search"
-PERIODE = ("2021-11-01", "2026-10-31")
-PEILDATUM = "2026-10-31"
+PERIODE = tuple(os.environ.get("VOGGELS_PERIODE", "2021-11-01,2026-10-31").split(","))
+PEILDATUM = PERIODE[1]
 EBIRD = "4fa7b334-ce0d-4e88-aaae-2e0c138d049e"
 VAK = 0.05
 TWENTE = {"0141": "Almelo", "0147": "Borne", "1774": "Dinkelland", "0153": "Enschede", "0158": "Haaksbergen",

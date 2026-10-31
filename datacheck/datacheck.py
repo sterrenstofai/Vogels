@@ -2,12 +2,12 @@
 
 Alleen stdlib. Draaien: python3 -I datacheck.py > rapport.json
 """
-import json, math, sys, time, urllib.parse, urllib.request
+import json, math, os, sys, time, urllib.parse, urllib.request
 from collections import Counter
 
 GBIF = "https://api.gbif.org/v1"
 AVES = 212
-PERIODE = "2021-11-01,2026-10-31"  # laatste 5 jaar
+PERIODE = os.environ.get("VOGGELS_PERIODE", "2021-11-01,2026-10-31")  # laatste 5 jaar
 STRALEN = [500, 1000, 2000]
 OBS = "8a863029-f435-446a-821e-275f4f641165"  # Observation.org
 
