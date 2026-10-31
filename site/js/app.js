@@ -2,6 +2,7 @@ import { TITEL, ONDERTITEL, SEIZOENEN, MAANDLETTERS, MAANDNAMEN, STRAAL_M, KERN_
 import * as D from "./data.js";
 import { tekenKaart, legenda } from "./kaart.js";
 import * as G from "./geluid.js";
+import { Tekening } from "./tekening.js";
 import { GROEPNAMEN, KLEUREN } from "./simulatie.js";
 
 const app = document.getElementById("app");
@@ -151,13 +152,19 @@ function scherm(soort, { kop, sub, weetjes = [], strook, omgeving }) {
   return `<section class="scherm" data-held="${soort.key}">
     <div class="podium">
       <div class="podium-paneel podium-plaat onthul" data-paneel="plaat">${plaat}</div>
+      ${soort.plaat ? `<div class="podium-paneel podium-tekening" data-paneel="tekening" hidden>
+        <canvas role="img" aria-label="Pentekening van de ${esc(klein(soort.nl))}, opgebouwd uit streken in de kleuren van de plaat"></canvas>
+        <p class="tekening-hint" aria-hidden="true"><span class="hint-strijk">Strijk over de veren</span><span class="hint-laden">De tekening wordt opgezet…</span></p>
+      </div>` : ""}
       <div class="podium-paneel podium-geluid" data-paneel="geluid" hidden>
         <div class="spectro-vlak"><canvas aria-hidden="true"></canvas><div class="spectro-as"><span>11 kHz</span><span>5,5</span><span>0</span></div><div class="spectro-hint">Even laden…</div></div>
       </div>
       <div class="weergave" role="tablist" aria-label="Weergave">
         <button type="button" role="tab" data-weergave="plaat" aria-selected="true">Plaat</button>
+        ${soort.plaat ? `<button type="button" role="tab" data-weergave="tekening" aria-selected="false">Tekening</button>` : ""}
         ${types.map((t) => `<button type="button" role="tab" data-weergave="${t}" aria-selected="false">${t === "zang" ? "Zang" : "Roep"}</button>`).join("")}
       </div>
+      ${soort.plaat ? `<div class="tekenknoppen" hidden>${types.length ? `<button type="button" class="knop-mini" data-laat-zingen>Laat zingen</button>` : ""}<button type="button" class="knop-rondje" data-opnieuw aria-label="Teken opnieuw"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12a7 7 0 1 1-2.05-4.95M19 4.5V8h-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>` : ""}
       <div class="zoomknoppen"><button type="button" class="knop-rondje" data-zoom="-1" aria-label="Uitzoomen">−</button><button type="button" class="knop-rondje" data-zoom="1" aria-label="Inzoomen">+</button></div>
     </div>
     <div class="scherm-titel">
@@ -181,12 +188,18 @@ function bindScherm(root, soort) {
   if (!sch) return;
   const doek = sch.querySelector(".podium-geluid canvas");
   const img = sch.querySelector(".podium-plaat img");
-  let zoom = 0;
+  let zoom = 0, tekening = null;
+  const tekenknoppen = sch.querySelector(".tekenknoppen");
   const toon = (naam) => {
-    sch.querySelectorAll("[data-paneel]").forEach((p) => (p.hidden = p.dataset.paneel !== (naam === "plaat" ? "plaat" : "geluid")));
+    const paneel = naam === "plaat" || naam === "tekening" ? naam : "geluid";
+    sch.querySelectorAll("[data-paneel]").forEach((p) => (p.hidden = p.dataset.paneel !== paneel));
     sch.querySelectorAll("[data-weergave]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.weergave === naam)));
     sch.querySelector(".zoomknoppen").hidden = naam !== "plaat";
-    if (naam !== "plaat") {
+    if (tekenknoppen) tekenknoppen.hidden = naam !== "tekening";
+    if (naam === "tekening") {
+      if (!tekening) tekening = new Tekening(sch.querySelector(".podium-tekening"), soort);
+      tekening.start();
+    } else if (naam !== "plaat") {
       if (doek && !paginaDoeken.includes(doek)) { G.koppelDoek(doek); paginaDoeken.push(doek); }
       // in de tik zelf afspelen (iOS)
       G.speel(soort, naam);
@@ -196,6 +209,9 @@ function bindScherm(root, soort) {
     }
   };
   sch.querySelectorAll("[data-weergave]").forEach((b) => b.addEventListener("click", () => toon(b.dataset.weergave)));
+  sch.querySelector("[data-opnieuw]")?.addEventListener("click", () => tekening?.opnieuw());
+  // zingen zonder van tekening te wisselen: de veren trillen mee
+  sch.querySelector("[data-laat-zingen]")?.addEventListener("click", () => G.speel(soort, soort.zang ? "zang" : "roep"));
   sch.querySelectorAll("[data-zoom]").forEach((b) => b.addEventListener("click", () => {
     zoom = Math.max(0, Math.min(2, zoom + +b.dataset.zoom));
     if (img) img.style.transform = `scale(${[1, 1.6, 2.4][zoom]})`;
@@ -623,6 +639,10 @@ document.addEventListener("click", (e) => {
 // hoogte van de kop, voor de kaart die eronder begint
 const balk = document.querySelector(".balk");
 new ResizeObserver(() => document.documentElement.style.setProperty("--balk-h", `${balk.offsetHeight}px`)).observe(balk);
+// alleen het volle scherm schuift onder de kop; andere pagina's beginnen eronder
+const volgKop = () => document.body.classList.toggle("onder-kop", !app.firstElementChild?.classList.contains("scherm"));
+new MutationObserver(volgKop).observe(app, { childList: true });
+volgKop();
 
 // carrousel met platen in het overblok
 D.soorten().then((S) => {

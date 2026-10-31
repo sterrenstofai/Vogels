@@ -82,16 +82,20 @@ async function maakSpectrum(opname) {
     const beeld = document.createElement("canvas");
     beeld.width = n; beeld.height = BINS;
     const img = beeld.getContext("2d").createImageData(n, BINS);
+    const energie = new Float32Array(n); // hoe luid het per moment is, boven 900 Hz (de vogel, niet de wind)
     for (let c = 0; c < n; c++) {
       for (let b = 0; b < BINS; b++) {
         const v = Math.max(0, Math.min(1, (db[c * BINS + b] - (top - 55)) / 55));
         const a = Math.pow(v, 1.6);
+        if (b > 20) energie[c] = Math.max(energie[c], a);
         const p = ((BINS - 1 - b) * n + c) * 4;
         img.data[p] = r0; img.data[p + 1] = g0; img.data[p + 2] = b0; img.data[p + 3] = Math.round(a * 255);
       }
     }
     beeld.getContext("2d").putImageData(img, 0, 0);
-    Object.assign(s, { status: "klaar", beeld, kolommen: n, hop: hop / RATE });
+    const hoog = Array.from(energie).sort((a, b) => a - b)[Math.floor(n * 0.97)] || 1;
+    for (let c = 0; c < n; c++) energie[c] = Math.min(1, energie[c] / hoog);
+    Object.assign(s, { status: "klaar", beeld, kolommen: n, hop: hop / RATE, energie });
   } catch (e) {
     console.warn("spectrogram niet beschikbaar", e);
     s.status = "geen";
@@ -203,3 +207,10 @@ export function stop() {
 }
 
 export function huidigeOpname() { return huidig; }
+
+// Hoe luid de vogel nu zingt, van 0 tot 1. Nul als er niets speelt of het spectrogram er (nog) niet is.
+export function niveau() {
+  const s = huidig && !audio.paused && spectra.get(huidig.opname.id);
+  if (!s || s.status !== "klaar") return 0;
+  return s.energie[Math.floor(audio.currentTime / s.hop)] || 0;
+}

@@ -117,6 +117,8 @@ em, i, .wet { font-style: italic; }
   .nav-knop svg { width: 16px; height: 16px; }
   .nav-knop span { display: inline; }
   .zoek-melding { position: absolute; top: calc(100% + .4rem); left: 1rem; }
+  .onder-kop #app { padding-top: var(--balk-h, 5.5rem); }
+  .kaartmodus #app { padding-top: 0; }
 }
 
 /* ---------- Het scherm ---------- */
@@ -135,6 +137,14 @@ em, i, .wet { font-style: italic; }
 .weergave button[aria-selected="true"] { background: var(--papier); color: var(--inkt); box-shadow: 0 1px 4px rgb(0 0 0 / .14); }
 .zoomknoppen { position: absolute; right: var(--rand); bottom: .9rem; z-index: 2; display: flex; gap: .5rem; }
 .zoomknoppen[hidden] { display: none; }
+.podium-tekening canvas { width: 100%; height: 100%; touch-action: pan-y; cursor: crosshair; }
+.tekening-hint { position: absolute; top: .85rem; left: var(--rand); margin: 0; pointer-events: none; font: 500 .82rem var(--ui); color: var(--inkt-zacht); background: color-mix(in srgb, var(--papier-licht) 88%, transparent); border: 1px solid var(--lijn); border-radius: 999px; padding: .3rem .8rem; white-space: nowrap; }
+.tekening-hint .hint-laden, .podium-tekening.bezig .hint-strijk { display: none; }
+.podium-tekening.bezig .hint-laden { display: inline; }
+.podium-tekening.mislukt .tekening-hint { display: none; }
+.tekenknoppen { position: absolute; right: var(--rand); top: .6rem; z-index: 2; display: flex; align-items: center; gap: .5rem; }
+.tekenknoppen[hidden] { display: none; }
+.tekenknoppen svg { width: 18px; height: 18px; }
 .knop-rondje { width: 40px; height: 40px; border-radius: 50%; border: 0; background: color-mix(in srgb, var(--inkt) 9%, var(--papier)); cursor: pointer; font: 400 1.4rem/1 var(--ui); color: var(--inkt); }
 .knop-rondje:hover { background: var(--passe); }
 .scherm-titel { padding: 1rem var(--rand) 0; }
@@ -169,6 +179,8 @@ em, i, .wet { font-style: italic; }
   .podium-geluid { padding: 6rem var(--rand) 13.5rem calc(var(--rand) + min(32rem, 38vw) + 2rem); }
   .weergave { left: 50%; transform: translateX(-50%); bottom: 10.6rem; }
   .zoomknoppen { bottom: 14.2rem; }
+  .tekenknoppen { top: auto; bottom: 14.2rem; }
+  .tekening-hint { top: auto; bottom: 8.4rem; left: 50%; transform: translateX(-50%); }
   .scherm-titel { position: absolute; left: 0; bottom: 10rem; z-index: 2; width: min(32rem, 38vw); padding: 0 0 0 var(--rand); pointer-events: none; }
   .scherm-titel a { pointer-events: auto; }
   .scherm-titel h1 { font-size: clamp(2.6rem, 3.6vw, 3.4rem); }
@@ -529,3 +541,4 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 .oz-stempel-nieuw { animation: stempel 500ms cubic-bezier(.2, 1.6, .4, 1) both; }
 @keyframes stempel { from { transform: rotate(-9deg) scale(1.8); opacity: 0; } to { transform: rotate(-9deg) scale(1); opacity: 1; } }
 .oz-stempel-klein { width: 4.6rem; height: 4.6rem; font-size: 1rem; border-width: 2px; }
+.tekenknoppen .knop-mini { position: static; transform: none; padding: .55rem .95rem; font-size: .85rem; cursor: pointer; color: var(--inkt); }
