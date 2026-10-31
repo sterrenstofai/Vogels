@@ -12,6 +12,8 @@ def q(**p):
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 time.sleep(int(e.headers.get("retry-after", 15)) + 1); continue
+            if e.code >= 500:
+                time.sleep(10 * (poging + 1)); continue
             raise
     raise RuntimeError("te vaak 429")
 def leden(cat, soort="file|subcat"):

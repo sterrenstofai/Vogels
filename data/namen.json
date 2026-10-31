@@ -8,7 +8,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 18405
+  "waarnemingen_twente": 18405,
+  "synoniemen": [
+   "Buteo vulgaris",
+   "Falco buteo",
+   "Falco vulgaris"
+  ]
  },
  "2475532": {
   "wet_gbif": "Alcedo atthis",
@@ -19,7 +24,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 5139
+  "waarnemingen_twente": 5139,
+  "synoniemen": [
+   "Gracula spec"
+  ]
  },
  "2494422": {
   "wet_gbif": "Fringilla coelebs",
@@ -30,7 +38,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 26008
+  "waarnemingen_twente": 26008,
+  "synoniemen": []
  },
  "2477968": {
   "wet_gbif": "Dendrocopos major",
@@ -41,7 +50,14 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 13332
+  "waarnemingen_twente": 13332,
+  "synoniemen": [
+   "Dendrocopos anglicus",
+   "Dryobates major",
+   "Dryocopus major",
+   "Picoides major",
+   "Picus major"
+  ]
  },
  "2490719": {
   "wet_gbif": "Turdus merula",
@@ -52,7 +68,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 27626
+  "waarnemingen_twente": 27626,
+  "synoniemen": []
  },
  "2492462": {
   "wet_gbif": "Erithacus rubecula",
@@ -63,7 +80,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 24164
+  "waarnemingen_twente": 24164,
+  "synoniemen": [
+   "Motacilla rubecula",
+   "Motacilla spec"
+  ]
  },
  "2495455": {
   "wet_gbif": "Columba palumbus",
@@ -74,7 +95,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 31328
+  "waarnemingen_twente": 31328,
+  "synoniemen": []
  },
  "5229490": {
   "wet_gbif": "Pica pica",
@@ -85,7 +107,14 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 22893
+  "waarnemingen_twente": 22893,
+  "synoniemen": [
+   "Corvus pica",
+   "Corvus spec",
+   "Pica caudata",
+   "Pica galliae",
+   "Pica rusicola"
+  ]
  },
  "9797180": {
   "wet_gbif": "Ardea cinerea",
@@ -96,7 +125,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 14099
+  "waarnemingen_twente": 14099,
+  "synoniemen": []
  },
  "2493091": {
   "wet_gbif": "Phylloscopus collybita",
@@ -107,7 +137,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 28540
+  "waarnemingen_twente": 28540,
+  "synoniemen": [
+   "Sylvia collybita",
+   "Sylvia rufa"
+  ]
  },
  "9752149": {
   "wet_gbif": "Phasianus colchicus",
@@ -118,7 +152,8 @@
   "status_nl": "exoot, broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4460
+  "waarnemingen_twente": 4460,
+  "synoniemen": []
  },
  "5228199": {
   "wet_gbif": "Gallinula chloropus",
@@ -129,7 +164,13 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 11977
+  "waarnemingen_twente": 11977,
+  "synoniemen": [
+   "Fulica chloropus",
+   "Fulica spec",
+   "Gallinula brodkorbi",
+   "Gallinula ochropus"
+  ]
  },
  "9705453": {
   "wet_gbif": "Parus major",
@@ -140,7 +181,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 27449
+  "waarnemingen_twente": 27449,
+  "synoniemen": [
+   "Parus corsus",
+   "Parus newtoni"
+  ]
  },
  "9752617": {
   "wet_gbif": "Ardea alba",
@@ -151,7 +196,12 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 8992
+  "waarnemingen_twente": 8992,
+  "synoniemen": [
+   "Ardea alba",
+   "Casmerodius albus",
+   "Egretta alba"
+  ]
  },
  "9761484": {
   "wet_gbif": "Anas platyrhynchos",
@@ -162,7 +212,11 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 17637
+  "waarnemingen_twente": 17637,
+  "synoniemen": [
+   "Anas boschas",
+   "Anas oustaleti"
+  ]
  },
  "2487879": {
   "wet_gbif": "Cyanistes caeruleus",
@@ -173,7 +227,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 29475
+  "waarnemingen_twente": 29475,
+  "synoniemen": [
+   "Parus caeruleus"
+  ]
  },
  "9409796": {
   "wet_gbif": "Corvus corone",
@@ -184,7 +241,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 20972
+  "waarnemingen_twente": 20972,
+  "synoniemen": []
  },
  "2490310": {
   "wet_gbif": "Motacilla cinerea",
@@ -195,7 +253,13 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2447
+  "waarnemingen_twente": 2447,
+  "synoniemen": [
+   "Motacilla boarula",
+   "Motacilla caspica",
+   "Motacilla melanope",
+   "Parus caspicus"
+  ]
  },
  "2474377": {
   "wet_gbif": "Fulica atra",
@@ -206,7 +270,11 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 14692
+  "waarnemingen_twente": 14692,
+  "synoniemen": [
+   "Fulica prior",
+   "Fulicula atra"
+  ]
  },
  "7901064": {
   "wet_gbif": "Turdus philomelos",
@@ -217,7 +285,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 8167
+  "waarnemingen_twente": 8167,
+  "synoniemen": [
+   "Turdus clarkii",
+   "Turdus ericetorum"
+  ]
  },
  "2481890": {
   "wet_gbif": "Phalacrocorax carbo",
@@ -228,7 +300,14 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 7223
+  "waarnemingen_twente": 7223,
+  "synoniemen": [
+   "Australocorax gregorii",
+   "Carbo cormoranus",
+   "Pelecanus carbo",
+   "Pelecanus spec",
+   "Phalacrocorax gregorii"
+  ]
  },
  "5231763": {
   "wet_gbif": "Prunella modularis",
@@ -239,7 +318,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4829
+  "waarnemingen_twente": 4829,
+  "synoniemen": [
+   "Accentor modularis",
+   "Motacilla modularis",
+   "Sylvia modularis"
+  ]
  },
  "2495000": {
   "wet_gbif": "Aegithalos caudatus",
@@ -250,7 +334,10 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 8386
+  "waarnemingen_twente": 8386,
+  "synoniemen": [
+   "Parus caudatus"
+  ]
  },
  "4408759": {
   "wet_gbif": "Saxicola rubicola",
@@ -261,7 +348,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 13832
+  "waarnemingen_twente": 13832,
+  "synoniemen": [
+   "Motacilla rubicola",
+   "Pratincola rubicola"
+  ]
  },
  "2478523": {
   "wet_gbif": "Picus viridis",
@@ -272,7 +363,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 6134
+  "waarnemingen_twente": 6134,
+  "synoniemen": []
  },
  "5229493": {
   "wet_gbif": "Garrulus glandarius",
@@ -283,7 +375,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 12796
+  "waarnemingen_twente": 12796,
+  "synoniemen": [
+   "Corvus glandarius"
+  ]
  },
  "5231438": {
   "wet_gbif": "Troglodytes troglodytes",
@@ -294,7 +389,13 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 10273
+  "waarnemingen_twente": 10273,
+  "synoniemen": [
+   "Motacilla troglodytes",
+   "Nannus troglodytes",
+   "Troglodytes parvulus",
+   "Troglodytes vulgaris"
+  ]
  },
  "2498261": {
   "wet_gbif": "Aythya fuligula",
@@ -305,7 +406,13 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 10997
+  "waarnemingen_twente": 10997,
+  "synoniemen": [
+   "Anas fuligula",
+   "Fuligula cristata",
+   "Fuligula fuligula",
+   "Nyroca fuligula"
+  ]
  },
  "5845582": {
   "wet_gbif": "Chloris chloris",
@@ -316,7 +423,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2236
+  "waarnemingen_twente": 2236,
+  "synoniemen": [
+   "Carduelis chloris",
+   "Loxia spec"
+  ]
  },
  "7806848": {
   "wet_gbif": "Certhia brachydactyla",
@@ -327,7 +438,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 14766
+  "waarnemingen_twente": 14766,
+  "synoniemen": []
  },
  "2482054": {
   "wet_gbif": "Podiceps cristatus",
@@ -338,7 +450,10 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 8422
+  "waarnemingen_twente": 8422,
+  "synoniemen": [
+   "Podicipes cristatus"
+  ]
  },
  "9537647": {
   "wet_gbif": "Mergus merganser",
@@ -349,7 +464,10 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 762
+  "waarnemingen_twente": 762,
+  "synoniemen": [
+   "Mergus castor"
+  ]
  },
  "2481912": {
   "wet_gbif": "Ciconia ciconia",
@@ -360,7 +478,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 7215
+  "waarnemingen_twente": 7215,
+  "synoniemen": [
+   "Ardea ciconia",
+   "Ciconia alba"
+  ]
  },
  "9809229": {
   "wet_gbif": "Sturnus vulgaris",
@@ -371,7 +493,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 9798
+  "waarnemingen_twente": 9798,
+  "synoniemen": []
  },
  "2481047": {
   "wet_gbif": "Falco peregrinus",
@@ -382,7 +505,8 @@
   "status_nl": "schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 952
+  "waarnemingen_twente": 952,
+  "synoniemen": []
  },
  "5231190": {
   "wet_gbif": "Passer domesticus",
@@ -393,7 +517,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 15241
+  "waarnemingen_twente": 15241,
+  "synoniemen": [
+   "Fringilla domestica"
+  ]
  },
  "2495696": {
   "wet_gbif": "Streptopelia decaocto",
@@ -404,7 +531,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 9069
+  "waarnemingen_twente": 9069,
+  "synoniemen": [
+   "Columba decaocto"
+  ]
  },
  "2498343": {
   "wet_gbif": "Cygnus olor",
@@ -415,7 +545,10 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 10050
+  "waarnemingen_twente": 10050,
+  "synoniemen": [
+   "Anas olor"
+  ]
  },
  "9616058": {
   "wet_gbif": "Falco tinnunculus",
@@ -426,7 +559,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 9819
+  "waarnemingen_twente": 9819,
+  "synoniemen": [
+   "Cerchneis tinnunculus"
+  ]
  },
  "2492606": {
   "wet_gbif": "Ficedula hypoleuca",
@@ -437,7 +573,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2313
+  "waarnemingen_twente": 2313,
+  "synoniemen": [
+   "Motacilla hypoleuca",
+   "Muscicapa atricapilla",
+   "Muscicapa hypoleuca"
+  ]
  },
  "6100954": {
   "wet_gbif": "Coloeus monedula",
@@ -448,7 +589,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 19424
+  "waarnemingen_twente": 19424,
+  "synoniemen": [
+   "Coelus monedula",
+   "Corvus monedula"
+  ]
  },
  "2480242": {
   "wet_gbif": "Vanellus vanellus",
@@ -459,7 +604,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 12927
+  "waarnemingen_twente": 12927,
+  "synoniemen": [
+   "Tringa vanellus",
+   "Vanellus cristatus",
+   "Vanellus vulgaris"
+  ]
  },
  "2492956": {
   "wet_gbif": "Sylvia atricapilla",
@@ -470,7 +620,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 7175
+  "waarnemingen_twente": 7175,
+  "synoniemen": [
+   "Motacilla atricapilla"
+  ]
  },
  "6065824": {
   "wet_gbif": "Chroicocephalus ridibundus",
@@ -481,7 +634,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 10249
+  "waarnemingen_twente": 10249,
+  "synoniemen": [
+   "Larus ridibundus"
+  ]
  },
  "5231918": {
   "wet_gbif": "Cuculus canorus",
@@ -492,7 +648,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4625
+  "waarnemingen_twente": 4625,
+  "synoniemen": []
  },
  "8773033": {
   "wet_gbif": "Dendrocoptes medius",
@@ -503,7 +660,14 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3102
+  "waarnemingen_twente": 3102,
+  "synoniemen": [
+   "Dendrocopos medius",
+   "Dendropicos medius",
+   "Leiopicus medius",
+   "Picoides medius",
+   "Picus medius"
+  ]
  },
  "2482048": {
   "wet_gbif": "Tachybaptus ruficollis",
@@ -514,7 +678,13 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 11608
+  "waarnemingen_twente": 11608,
+  "synoniemen": [
+   "Colymbus ruficollis",
+   "Podiceps minor",
+   "Podiceps ruficollis",
+   "Podicipes fluviatilis"
+  ]
  },
  "2494686": {
   "wet_gbif": "Carduelis carduelis",
@@ -525,7 +695,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4736
+  "waarnemingen_twente": 4736,
+  "synoniemen": [
+   "Carduelis elegans",
+   "Fringilla carduelis"
+  ]
  },
  "9362027": {
   "wet_gbif": "Mareca strepera",
@@ -536,7 +710,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 9191
+  "waarnemingen_twente": 9191,
+  "synoniemen": []
  },
  "2480637": {
   "wet_gbif": "Accipiter nisus",
@@ -547,7 +722,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2645
+  "waarnemingen_twente": 2645,
+  "synoniemen": [
+   "Accipiter wolterstorffi",
+   "Falco nisus"
+  ]
  },
  "2484916": {
   "wet_gbif": "Sitta europaea",
@@ -558,7 +737,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 7064
+  "waarnemingen_twente": 7064,
+  "synoniemen": [
+   "Sitta caesia"
+  ]
  },
  "9687165": {
   "wet_gbif": "Motacilla alba",
@@ -569,7 +751,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 6848
+  "waarnemingen_twente": 6848,
+  "synoniemen": []
  },
  "2498036": {
   "wet_gbif": "Anser anser",
@@ -580,7 +763,11 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 14355
+  "waarnemingen_twente": 14355,
+  "synoniemen": [
+   "Anser cinereus",
+   "Anser ferus"
+  ]
  },
  "2495471": {
   "wet_gbif": "Columba oenas",
@@ -591,7 +778,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3871
+  "waarnemingen_twente": 3871,
+  "synoniemen": [
+   "Columba aenas"
+  ]
  },
  "7788295": {
   "wet_gbif": "Haematopus ostralegus",
@@ -602,7 +792,8 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 5732
+  "waarnemingen_twente": 5732,
+  "synoniemen": []
  },
  "2494329": {
   "wet_gbif": "Coccothraustes coccothraustes",
@@ -613,7 +804,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1628
+  "waarnemingen_twente": 1628,
+  "synoniemen": [
+   "Coccothraustes vulgaris",
+   "Loxia coccothraustes"
+  ]
  },
  "2487843": {
   "wet_gbif": "Poecile palustris",
@@ -624,7 +819,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 921
+  "waarnemingen_twente": 921,
+  "synoniemen": [
+   "Parus palustris"
+  ]
  },
  "2490266": {
   "wet_gbif": "Anthus pratensis",
@@ -635,7 +833,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 5706
+  "waarnemingen_twente": 5706,
+  "synoniemen": [
+   "Alauda pratensis"
+  ]
  },
  "5739317": {
   "wet_gbif": "Phoenicurus phoenicurus",
@@ -646,7 +847,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2924
+  "waarnemingen_twente": 2924,
+  "synoniemen": [
+   "Motacilla phoenicurus",
+   "Phoenicura ruticilla"
+  ]
  },
  "2492942": {
   "wet_gbif": "Sylvia borin",
@@ -657,7 +862,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2500
+  "waarnemingen_twente": 2500,
+  "synoniemen": [
+   "Motacilla borin",
+   "Motacilla spec"
+  ]
  },
  "2477872": {
   "wet_gbif": "Dryocopus martius",
@@ -668,7 +877,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 5569
+  "waarnemingen_twente": 5569,
+  "synoniemen": [
+   "Picus martius"
+  ]
  },
  "2482513": {
   "wet_gbif": "Corvus frugilegus",
@@ -679,7 +891,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1327
+  "waarnemingen_twente": 1327,
+  "synoniemen": []
  },
  "5229168": {
   "wet_gbif": "Milvus milvus",
@@ -690,7 +903,12 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1325
+  "waarnemingen_twente": 1325,
+  "synoniemen": [
+   "Falco milvus",
+   "Milvus ictinius",
+   "Milvus vulgaris"
+  ]
  },
  "2474831": {
   "wet_gbif": "Rallus aquaticus",
@@ -701,7 +919,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2741
+  "waarnemingen_twente": 2741,
+  "synoniemen": []
  },
  "2492943": {
   "wet_gbif": "Sylvia communis",
@@ -712,7 +931,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4978
+  "waarnemingen_twente": 4978,
+  "synoniemen": [
+   "Curruca cinerea",
+   "Curruca communis",
+   "Sylvia cinerea"
+  ]
  },
  "2494441": {
   "wet_gbif": "Fringilla montifringilla",
@@ -723,7 +947,8 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 973
+  "waarnemingen_twente": 973,
+  "synoniemen": []
  },
  "9701857": {
   "wet_gbif": "Motacilla flava",
@@ -734,7 +959,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1411
+  "waarnemingen_twente": 1411,
+  "synoniemen": [
+   "Budytes flavus",
+   "Budytes rayi",
+   "Motacilla rayi"
+  ]
  },
  "2474950": {
   "wet_gbif": "Grus grus",
@@ -745,7 +975,14 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 6121
+  "waarnemingen_twente": 6121,
+  "synoniemen": [
+   "Ardea grus",
+   "Grus cinereus",
+   "Grus communis",
+   "Grus lilfordi",
+   "Megalornis grus"
+  ]
  },
  "2488949": {
   "wet_gbif": "Oriolus oriolus",
@@ -756,7 +993,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1539
+  "waarnemingen_twente": 1539,
+  "synoniemen": [
+   "Coracias oriolus",
+   "Coracias spec",
+   "Oriolus galbula"
+  ]
  },
  "2491534": {
   "wet_gbif": "Emberiza citrinella",
@@ -767,7 +1009,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 9000
+  "waarnemingen_twente": 9000,
+  "synoniemen": []
  },
  "6093527": {
   "wet_gbif": "Regulus ignicapilla",
@@ -778,7 +1021,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1565
+  "waarnemingen_twente": 1565,
+  "synoniemen": [
+   "Sylvia ignicapilla"
+  ]
  },
  "6092830": {
   "wet_gbif": "Spinus spinus",
@@ -789,7 +1035,11 @@
   "status_nl": "schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1361
+  "waarnemingen_twente": 1361,
+  "synoniemen": [
+   "Carduelis spinus",
+   "Fringilla spinus"
+  ]
  },
  "2473958": {
   "wet_gbif": "Perdix perdix",
@@ -800,7 +1050,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2151
+  "waarnemingen_twente": 2151,
+  "synoniemen": [
+   "Perdix cinerea",
+   "Tetrao spec"
+  ]
  },
  "2498252": {
   "wet_gbif": "Alopochen aegyptiaca",
@@ -811,7 +1065,11 @@
   "status_nl": "exoot, broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4964
+  "waarnemingen_twente": 4964,
+  "synoniemen": [
+   "Anas aegyptiaca",
+   "Anser egyptiacus"
+  ]
  },
  "2498344": {
   "wet_gbif": "Cygnus atratus",
@@ -822,7 +1080,12 @@
   "status_nl": "exoot, schaarse broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 355
+  "waarnemingen_twente": 355,
+  "synoniemen": [
+   "Anas atrata",
+   "Chenopsis atratus",
+   "Cygnus atractus"
+  ]
  },
  "5228676": {
   "wet_gbif": "Apus apus",
@@ -833,7 +1096,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4643
+  "waarnemingen_twente": 4643,
+  "synoniemen": [
+   "Cypselus apus",
+   "Cypselus murarius",
+   "Hirundo apus"
+  ]
  },
  "2480482": {
   "wet_gbif": "Circus aeruginosus",
@@ -844,7 +1112,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2606
+  "waarnemingen_twente": 2606,
+  "synoniemen": [
+   "Circus rufus",
+   "Falco aeruginosus"
+  ]
  },
  "9515886": {
   "wet_gbif": "Hirundo rustica",
@@ -855,7 +1127,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4063
+  "waarnemingen_twente": 4063,
+  "synoniemen": [
+   "Chelidon rustica"
+  ]
  },
  "2490246": {
   "wet_gbif": "Anthus trivialis",
@@ -866,7 +1141,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 5609
+  "waarnemingen_twente": 5609,
+  "synoniemen": [
+   "Alauda trivialis",
+   "Anthus arboreus"
+  ]
  },
  "2490781": {
   "wet_gbif": "Turdus iliacus",
@@ -877,7 +1156,10 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1350
+  "waarnemingen_twente": 1350,
+  "synoniemen": [
+   "Turdus musicus"
+  ]
  },
  "2494543": {
   "wet_gbif": "Pyrrhula pyrrhula",
@@ -888,7 +1170,15 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2042
+  "waarnemingen_twente": 2042,
+  "synoniemen": [
+   "Emberiza coccinea",
+   "Loxia pyrrhula",
+   "Loxia spec",
+   "Pyrrhula europaea",
+   "Pyrrhula pileata",
+   "Pyrrhula vulgaris"
+  ]
  },
  "2487883": {
   "wet_gbif": "Lophophanes cristatus",
@@ -899,7 +1189,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2581
+  "waarnemingen_twente": 2581,
+  "synoniemen": [
+   "Parus cristatus",
+   "Parus scoticus"
+  ]
  },
  "2484596": {
   "wet_gbif": "Regulus regulus",
@@ -910,7 +1204,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3642
+  "waarnemingen_twente": 3642,
+  "synoniemen": [
+   "Motacilla regulus",
+   "Regulus cristatus",
+   "Regulus flavicapillus"
+  ]
  },
  "2497266": {
   "wet_gbif": "Athene noctua",
@@ -921,7 +1220,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3463
+  "waarnemingen_twente": 3463,
+  "synoniemen": [
+   "Noctua passerina",
+   "Strix noctua"
+  ]
  },
  "2481792": {
   "wet_gbif": "Numenius arquata",
@@ -932,7 +1235,12 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 5011
+  "waarnemingen_twente": 5011,
+  "synoniemen": [
+   "Scolopax arcuata",
+   "Scolopax spec",
+   "Tringa arquata"
+  ]
  },
  "2490774": {
   "wet_gbif": "Turdus viscivorus",
@@ -943,7 +1251,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3462
+  "waarnemingen_twente": 3462,
+  "synoniemen": []
  },
  "5231198": {
   "wet_gbif": "Passer montanus",
@@ -954,7 +1263,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 511
+  "waarnemingen_twente": 511,
+  "synoniemen": [
+   "Fringilla montana"
+  ]
  },
  "5231240": {
   "wet_gbif": "Oenanthe oenanthe",
@@ -965,7 +1277,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1799
+  "waarnemingen_twente": 1799,
+  "synoniemen": [
+   "Motacilla oeanthe",
+   "Motacilla oenanthe",
+   "Saxicola oenanthe"
+  ]
  },
  "8077224": {
   "wet_gbif": "Alauda arvensis",
@@ -976,7 +1293,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2684
+  "waarnemingen_twente": 2684,
+  "synoniemen": [
+   "Alauda cantarella"
+  ]
  },
  "2491557": {
   "wet_gbif": "Emberiza schoeniclus",
@@ -987,7 +1307,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 6906
+  "waarnemingen_twente": 6906,
+  "synoniemen": [
+   "Fringilla spec",
+   "Schoeniclus schoeniclus"
+  ]
  },
  "7340170": {
   "wet_gbif": "Anser serrirostris",
@@ -998,7 +1322,8 @@
   "status_nl": "wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 609
+  "waarnemingen_twente": 609,
+  "synoniemen": []
  },
  "2480487": {
   "wet_gbif": "Circus cyaneus",
@@ -1009,7 +1334,10 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2403
+  "waarnemingen_twente": 2403,
+  "synoniemen": [
+   "Falco cyaneus"
+  ]
  },
  "2481685": {
   "wet_gbif": "Limosa limosa",
@@ -1020,7 +1348,11 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3229
+  "waarnemingen_twente": 3229,
+  "synoniemen": [
+   "Limosa belgica",
+   "Scolopax spec"
+  ]
  },
  "2498017": {
   "wet_gbif": "Anser albifrons",
@@ -1031,7 +1363,8 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1569
+  "waarnemingen_twente": 1569,
+  "synoniemen": []
  },
  "8000602": {
   "wet_gbif": "Mareca penelope",
@@ -1042,7 +1375,10 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1883
+  "waarnemingen_twente": 1883,
+  "synoniemen": [
+   "Anas penelope"
+  ]
  },
  "2492576": {
   "wet_gbif": "Muscicapa striata",
@@ -1053,7 +1389,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 985
+  "waarnemingen_twente": 985,
+  "synoniemen": [
+   "Motacilla striata",
+   "Muscicapa grisola"
+  ]
  },
  "2493118": {
   "wet_gbif": "Acrocephalus scirpaceus",
@@ -1064,7 +1404,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3374
+  "waarnemingen_twente": 3374,
+  "synoniemen": [
+   "Acrocephalus scirpeus",
+   "Salicaria strepera",
+   "Turdus scirpaceus"
+  ]
  },
  "2498009": {
   "wet_gbif": "Tadorna tadorna",
@@ -1075,7 +1420,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3017
+  "waarnemingen_twente": 3017,
+  "synoniemen": [
+   "Anas tadorna",
+   "Tadorna cornuta",
+   "Tadorna vulpanser"
+  ]
  },
  "2498388": {
   "wet_gbif": "Aix galericulata",
@@ -1086,7 +1436,10 @@
   "status_nl": "exoot, schaarse broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1002
+  "waarnemingen_twente": 1002,
+  "synoniemen": [
+   "Anas galericulata"
+  ]
  },
  "9015784": {
   "wet_gbif": "Dryobates minor",
@@ -1097,7 +1450,13 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 609
+  "waarnemingen_twente": 609,
+  "synoniemen": [
+   "Dendrocopos minor",
+   "Dryobates comminutus",
+   "Picoides minor",
+   "Picus minor"
+  ]
  },
  "2481035": {
   "wet_gbif": "Falco subbuteo",
@@ -1108,7 +1467,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1691
+  "waarnemingen_twente": 1691,
+  "synoniemen": []
  },
  "2481728": {
   "wet_gbif": "Tringa ochropus",
@@ -1119,7 +1479,13 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1829
+  "waarnemingen_twente": 1829,
+  "synoniemen": [
+   "Helodromus ochropus",
+   "Rhyacophilus ochropus",
+   "Totanus ochropus",
+   "Tringa spec"
+  ]
  },
  "2489214": {
   "wet_gbif": "Delichon urbicum",
@@ -1130,7 +1496,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 604
+  "waarnemingen_twente": 604,
+  "synoniemen": [
+   "Hirundo urbica"
+  ]
  },
  "2492521": {
   "wet_gbif": "Saxicola rubetra",
@@ -1141,7 +1510,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 700
+  "waarnemingen_twente": 700,
+  "synoniemen": [
+   "Motacilla rubetra"
+  ]
  },
  "5232437": {
   "wet_gbif": "Branta canadensis",
@@ -1152,7 +1524,8 @@
   "status_nl": "exoot, broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2741
+  "waarnemingen_twente": 2741,
+  "synoniemen": []
  },
  "5739315": {
   "wet_gbif": "Phoenicurus ochruros",
@@ -1163,7 +1536,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1414
+  "waarnemingen_twente": 1414,
+  "synoniemen": [
+   "Motacilla ochruros",
+   "Motacilla spec",
+   "Ruticilla tithys"
+  ]
  },
  "7982160": {
   "wet_gbif": "Larus canus",
@@ -1174,7 +1552,10 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 939
+  "waarnemingen_twente": 939,
+  "synoniemen": [
+   "Larus heinei"
+  ]
  },
  "9282206": {
   "wet_gbif": "Strix aluco",
@@ -1185,7 +1566,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 842
+  "waarnemingen_twente": 842,
+  "synoniemen": [
+   "Strix stridula",
+   "Syrnium stridulum"
+  ]
  },
  "2479977": {
   "wet_gbif": "Nymphicus hollandicus",
@@ -1207,7 +1592,10 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 617
+  "waarnemingen_twente": 617,
+  "synoniemen": [
+   "Falco apivorus"
+  ]
  },
  "2481800": {
   "wet_gbif": "Actitis hypoleucos",
@@ -1218,7 +1606,12 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2681
+  "waarnemingen_twente": 2681,
+  "synoniemen": [
+   "Actites hypoleucos",
+   "Totanus hypoleucos",
+   "Tringa hypoleucos"
+  ]
  },
  "2481819": {
   "wet_gbif": "Gallinago gallinago",
@@ -1229,7 +1622,12 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3753
+  "waarnemingen_twente": 3753,
+  "synoniemen": [
+   "Capella gallinago",
+   "Gallinago coelestris",
+   "Gallino gallino"
+  ]
  },
  "2482492": {
   "wet_gbif": "Corvus corax",
@@ -1240,7 +1638,8 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 780
+  "waarnemingen_twente": 780,
+  "synoniemen": []
  },
  "2490604": {
   "wet_gbif": "Lullula arborea",
@@ -1251,7 +1650,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2882
+  "waarnemingen_twente": 2882,
+  "synoniemen": [
+   "Alauda arborea"
+  ]
  },
  "2495414": {
   "wet_gbif": "Columba livia",
@@ -1262,7 +1664,8 @@
   "status_nl": "exoot, broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 905
+  "waarnemingen_twente": 905,
+  "synoniemen": []
  },
  "2498387": {
   "wet_gbif": "Aix sponsa",
@@ -1273,7 +1676,11 @@
   "status_nl": "",
   "exoot": false,
   "koppeling": null,
-  "waarnemingen_twente": 130
+  "waarnemingen_twente": 130,
+  "synoniemen": [
+   "Anas spec",
+   "Anas sponsa"
+  ]
  },
  "5232464": {
   "wet_gbif": "Branta leucopsis",
@@ -1284,7 +1691,10 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3416
+  "waarnemingen_twente": 3416,
+  "synoniemen": [
+   "Anas leucopsis"
+  ]
  },
  "8109681": {
   "wet_gbif": "Caprimulgus europaeus",
@@ -1295,7 +1705,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 281
+  "waarnemingen_twente": 281,
+  "synoniemen": []
  },
  "2474156": {
   "wet_gbif": "Coturnix coturnix",
@@ -1306,7 +1717,13 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 335
+  "waarnemingen_twente": 335,
+  "synoniemen": [
+   "Coturnix communis",
+   "Coturnix corturnix",
+   "Coturnix vulgaris",
+   "Tetrao spec"
+  ]
  },
  "2480726": {
   "wet_gbif": "Pandion haliaetus",
@@ -1317,7 +1734,11 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 387
+  "waarnemingen_twente": 387,
+  "synoniemen": [
+   "Falco haliaetus",
+   "Falco spec"
+  ]
  },
  "2481784": {
   "wet_gbif": "Numenius phaeopus",
@@ -1328,7 +1749,8 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 108
+  "waarnemingen_twente": 108,
+  "synoniemen": []
  },
  "2481909": {
   "wet_gbif": "Ciconia nigra",
@@ -1339,7 +1761,10 @@
   "status_nl": "zomergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 363
+  "waarnemingen_twente": 363,
+  "synoniemen": [
+   "Ardea nigra"
+  ]
  },
  "2490737": {
   "wet_gbif": "Turdus pilaris",
@@ -1350,7 +1775,8 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1131
+  "waarnemingen_twente": 1131,
+  "synoniemen": []
  },
  "2497295": {
   "wet_gbif": "Asio flammeus",
@@ -1361,7 +1787,13 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 187
+  "waarnemingen_twente": 187,
+  "synoniemen": [
+   "Asio accipitrinus",
+   "Asio brachyotos",
+   "Strix flammea",
+   "Strix spec"
+  ]
  },
  "2497921": {
   "wet_gbif": "Tyto alba",
@@ -1372,7 +1804,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 344
+  "waarnemingen_twente": 344,
+  "synoniemen": [
+   "Strix alba",
+   "Strix flammea"
+  ]
  },
  "2498255": {
   "wet_gbif": "Aythya ferina",
@@ -1383,7 +1819,14 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3587
+  "waarnemingen_twente": 3587,
+  "synoniemen": [
+   "Anas ferina",
+   "Athya ferina",
+   "Fuligula ferina",
+   "Netta ferina",
+   "Nyroca ferina"
+  ]
  },
  "5228034": {
   "wet_gbif": "Chrysolophus pictus",
@@ -1405,7 +1848,15 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 96
+  "waarnemingen_twente": 96,
+  "synoniemen": [
+   "Accipiter korschun",
+   "Falco ater",
+   "Falco migrans",
+   "Milvus ater",
+   "Milvus korschun",
+   "Milvus korshun"
+  ]
  },
  "5231630": {
   "wet_gbif": "Acanthis flammea",
@@ -1416,7 +1867,14 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 134
+  "waarnemingen_twente": 134,
+  "synoniemen": [
+   "Carduelis flammea",
+   "Carduelis rufescens",
+   "Fringilla flammea",
+   "Fringilla linaria",
+   "Linota canescens"
+  ]
  },
  "5959092": {
   "wet_gbif": "Bubo bubo",
@@ -1427,7 +1885,12 @@
   "status_nl": "zeer schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 123
+  "waarnemingen_twente": 123,
+  "synoniemen": [
+   "Bubo maximus",
+   "Strix bubo",
+   "Strix spec"
+  ]
  },
  "8104397": {
   "wet_gbif": "Linaria cannabina",
@@ -1438,7 +1901,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3788
+  "waarnemingen_twente": 3788,
+  "synoniemen": [
+   "Acanthis cannabina",
+   "Carduelis cannabina",
+   "Fringilla cannabina"
+  ]
  },
  "8151548": {
   "wet_gbif": "Ichthyaetus melanocephalus",
@@ -1449,7 +1917,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 73
+  "waarnemingen_twente": 73,
+  "synoniemen": [
+   "Larus melanocephalus"
+  ]
  },
  "8214667": {
   "wet_gbif": "Anas crecca",
@@ -1460,7 +1931,13 @@
   "status_nl": "schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 6540
+  "waarnemingen_twente": 6540,
+  "synoniemen": [
+   "Anas circia",
+   "Nettion crecca",
+   "Nettium crecca",
+   "Querquedula crecca"
+  ]
  },
  "10124612": {
   "wet_gbif": null,
@@ -1482,7 +1959,11 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 107
+  "waarnemingen_twente": 107,
+  "synoniemen": [
+   "Charadrius altifrons",
+   "Charadrius apricarius"
+  ]
  },
  "2481174": {
   "wet_gbif": "Larus fuscus",
@@ -1493,7 +1974,8 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 926
+  "waarnemingen_twente": 926,
+  "synoniemen": []
  },
  "2498338": {
   "wet_gbif": "Cygnus columbianus",
@@ -1504,7 +1986,14 @@
   "status_nl": "wintergast",
   "exoot": false,
   "koppeling": "via GBIF-naam",
-  "waarnemingen_twente": 50
+  "waarnemingen_twente": 50,
+  "synoniemen": [
+   "Anas columbianus",
+   "Anas spec",
+   "Cygnus colombianus",
+   "Cygnus minor",
+   "Olor columbianus"
+  ]
  },
  "7865305": {
   "wet_gbif": "Turdus torquatus",
@@ -1515,7 +2004,8 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 221
+  "waarnemingen_twente": 221,
+  "synoniemen": []
  },
  "9274012": {
   "wet_gbif": "Spatula querquedula",
@@ -1526,7 +2016,11 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1394
+  "waarnemingen_twente": 1394,
+  "synoniemen": [
+   "Anas querquedula",
+   "Querquedula querquedula"
+  ]
  },
  "2480449": {
   "wet_gbif": "Haliaeetus albicilla",
@@ -1537,7 +2031,13 @@
   "status_nl": "zeer schaarse broedvogel, jaargast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 565
+  "waarnemingen_twente": 565,
+  "synoniemen": [
+   "Falco albicilla",
+   "Falco spec",
+   "Haliaeetus angustipes",
+   "Haliaetus albicilla"
+  ]
  },
  "2480863": {
   "wet_gbif": "Nycticorax nycticorax",
@@ -1559,7 +2059,8 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1318
+  "waarnemingen_twente": 1318,
+  "synoniemen": []
  },
  "2481700": {
   "wet_gbif": "Scolopax rusticola",
@@ -1570,7 +2071,10 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 71
+  "waarnemingen_twente": 71,
+  "synoniemen": [
+   "Scolopax scolopax"
+  ]
  },
  "2487866": {
   "wet_gbif": "Poecile montanus",
@@ -1581,7 +2085,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 53
+  "waarnemingen_twente": 53,
+  "synoniemen": []
  },
  "2487871": {
   "wet_gbif": "Periparus ater",
@@ -1592,7 +2097,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 208
+  "waarnemingen_twente": 208,
+  "synoniemen": [
+   "Parus ater",
+   "Periparus melanolophus"
+  ]
  },
  "2493052": {
   "wet_gbif": "Phylloscopus trochilus",
@@ -1603,7 +2112,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4152
+  "waarnemingen_twente": 4152,
+  "synoniemen": [
+   "Motacilla fitis",
+   "Motacilla trochilus"
+  ]
  },
  "2493136": {
   "wet_gbif": "Acrocephalus palustris",
@@ -1614,7 +2127,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 97
+  "waarnemingen_twente": 97,
+  "synoniemen": [
+   "Motacilla palustris",
+   "Motacilla spec",
+   "Sylvia palustris"
+  ]
  },
  "2498015": {
   "wet_gbif": "Tadorna ferruginea",
@@ -1625,7 +2143,14 @@
   "status_nl": "zeer schaarse broedvogel, zomergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1055
+  "waarnemingen_twente": 1055,
+  "synoniemen": [
+   "Anas ferruginea",
+   "Casarca ferruginea",
+   "Casarca rutila",
+   "Tadorna casarca",
+   "Tadorna rutila"
+  ]
  },
  "2498285": {
   "wet_gbif": "Mergellus albellus",
@@ -1636,7 +2161,11 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 186
+  "waarnemingen_twente": 186,
+  "synoniemen": [
+   "Mergullus albellus",
+   "Mergus albellus"
+  ]
  },
  "2498375": {
   "wet_gbif": "Mergus serrator",
@@ -1658,7 +2187,10 @@
   "status_nl": "",
   "exoot": false,
   "koppeling": null,
-  "waarnemingen_twente": 57
+  "waarnemingen_twente": 57,
+  "synoniemen": [
+   "Anas leucophrys"
+  ]
  },
  "8250742": {
   "wet_gbif": "Calidris pugnax",
@@ -1669,7 +2201,12 @@
   "status_nl": "zeer schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1125
+  "waarnemingen_twente": 1125,
+  "synoniemen": [
+   "Machetes pugnax",
+   "Philomachus pugnax",
+   "Tringa pugnax"
+  ]
  },
  "8332393": {
   "wet_gbif": "Spatula clypeata",
@@ -1680,7 +2217,11 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4609
+  "waarnemingen_twente": 4609,
+  "synoniemen": [
+   "Anas clypeata",
+   "Rhynchaspis clypeata"
+  ]
  },
  "9566659": {
   "wet_gbif": "Charadrius hiaticula",
@@ -1691,7 +2232,10 @@
   "status_nl": "schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 675
+  "waarnemingen_twente": 675,
+  "synoniemen": [
+   "Charadrus hiaticula"
+  ]
  },
  "2490255": {
   "wet_gbif": "Anthus spinoletta",
@@ -1702,7 +2246,11 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 391
+  "waarnemingen_twente": 391,
+  "synoniemen": [
+   "Alauda spec",
+   "Alauda spinoletta"
+  ]
  },
  "9751099": {
   "wet_gbif": "Cairina moschata",
@@ -1713,7 +2261,11 @@
   "status_nl": "",
   "exoot": false,
   "koppeling": null,
-  "waarnemingen_twente": 182
+  "waarnemingen_twente": 182,
+  "synoniemen": [
+   "Anas moschata",
+   "Cairina muschata"
+  ]
  },
  "9629160": {
   "wet_gbif": "Loxia curvirostra",
@@ -1724,7 +2276,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 158
+  "waarnemingen_twente": 158,
+  "synoniemen": []
  },
  "2490283": {
   "wet_gbif": "Anthus cervinus",
@@ -1746,7 +2299,10 @@
   "status_nl": "",
   "exoot": false,
   "koppeling": null,
-  "waarnemingen_twente": 62
+  "waarnemingen_twente": 62,
+  "synoniemen": [
+   "Numida ptilorhyncha"
+  ]
  },
  "2493548": {
   "wet_gbif": "Locustella naevia",
@@ -1757,7 +2313,11 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 51
+  "waarnemingen_twente": 51,
+  "synoniemen": [
+   "Motacilla naevia",
+   "Salicaria locustella"
+  ]
  },
  "2498112": {
   "wet_gbif": "Anas acuta",
@@ -1768,7 +2328,10 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 895
+  "waarnemingen_twente": 895,
+  "synoniemen": [
+   "Dafila acuta"
+  ]
  },
  "9413670": {
   "wet_gbif": "Larus michahellis",
@@ -1779,7 +2342,11 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 170
+  "waarnemingen_twente": 170,
+  "synoniemen": [
+   "Larus michaellis",
+   "Larus michahelles"
+  ]
  },
  "9444556": {
   "wet_gbif": "Lanius excubitor",
@@ -1790,7 +2357,11 @@
   "status_nl": "voormalige broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1898
+  "waarnemingen_twente": 1898,
+  "synoniemen": [
+   "Lamira excubitor",
+   "Lanius homeyeri"
+  ]
  },
  "9813242": {
   "wet_gbif": "Falco columbarius",
@@ -1801,7 +2372,8 @@
   "status_nl": "schaarse doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 121
+  "waarnemingen_twente": 121,
+  "synoniemen": []
  },
  "2480495": {
   "wet_gbif": "Circus pygargus",
@@ -1812,7 +2384,13 @@
   "status_nl": "schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 83
+  "waarnemingen_twente": 83,
+  "synoniemen": [
+   "Circus ater",
+   "Circus cineraceus",
+   "Circus montagui",
+   "Falco pygargus"
+  ]
  },
  "2481759": {
   "wet_gbif": "Calidris alpina",
@@ -1823,7 +2401,13 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 686
+  "waarnemingen_twente": 686,
+  "synoniemen": [
+   "Calidris variabilis",
+   "Erolia alpina",
+   "Pelidna alpina",
+   "Tringa variabilis"
+  ]
  },
  "5232446": {
   "wet_gbif": "Branta bernicla",
@@ -1845,7 +2429,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2792
+  "waarnemingen_twente": 2792,
+  "synoniemen": []
  },
  "10368935": {
   "wet_gbif": null,
@@ -1878,7 +2463,15 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 67
+  "waarnemingen_twente": 67,
+  "synoniemen": [
+   "Charadarius squatarola",
+   "Squatarola cinerea",
+   "Squatarola helvetica",
+   "Squatarola squatarola",
+   "Tringa spec",
+   "Vanellus melanogaster"
+  ]
  },
  "2480876": {
   "wet_gbif": "Egretta garzetta",
@@ -1889,7 +2482,10 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 76
+  "waarnemingen_twente": 76,
+  "synoniemen": [
+   "Ardea garzetta"
+  ]
  },
  "2481139": {
   "wet_gbif": "Larus argentatus",
@@ -1900,7 +2496,8 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1162
+  "waarnemingen_twente": 1162,
+  "synoniemen": []
  },
  "2490274": {
   "wet_gbif": "Anthus campestris",
@@ -1922,7 +2519,13 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "via Europa-lijst",
-  "waarnemingen_twente": 188
+  "waarnemingen_twente": 188,
+  "synoniemen": [
+   "Curruca curruca",
+   "Curruca sylviella",
+   "Motacilla curruca",
+   "Sylvia carruca"
+  ]
  },
  "2497306": {
   "wet_gbif": "Asio otus",
@@ -1933,7 +2536,11 @@
   "status_nl": "broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 411
+  "waarnemingen_twente": 411,
+  "synoniemen": [
+   "Asio vulgaris",
+   "Strix otus"
+  ]
  },
  "8012314": {
   "wet_gbif": "Jynx torquilla",
@@ -1944,7 +2551,8 @@
   "status_nl": "schaarse broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 261
+  "waarnemingen_twente": 261,
+  "synoniemen": []
  },
  "9465111": {
   "wet_gbif": "Anthus richardi",
@@ -1966,7 +2574,13 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 4151
+  "waarnemingen_twente": 4151,
+  "synoniemen": [
+   "Cyanecula svecica",
+   "Erithacus svecicus",
+   "Motacilla svecica",
+   "Phoenicura suecica"
+  ]
  },
  "2491719": {
   "wet_gbif": "Plectrophenax nivalis",
@@ -1977,7 +2591,11 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 180
+  "waarnemingen_twente": 180,
+  "synoniemen": [
+   "Calcarius nivalis",
+   "Emberiza nivalis"
+  ]
  },
  "2481714": {
   "wet_gbif": "Tringa totanus",
@@ -1988,7 +2606,11 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 3927
+  "waarnemingen_twente": 3927,
+  "synoniemen": [
+   "Totanus calidris",
+   "Tringa calidris"
+  ]
  },
  "2481726": {
   "wet_gbif": "Tringa nebularia",
@@ -1999,7 +2621,15 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 812
+  "waarnemingen_twente": 812,
+  "synoniemen": [
+   "Glottis nebularia",
+   "Scolopax glottis",
+   "Scolopax nebularia",
+   "Totanus glottis",
+   "Tringa canescens",
+   "Tringa glottis"
+  ]
  },
  "2493220": {
   "wet_gbif": "Hippolais icterina",
@@ -2010,7 +2640,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 222
+  "waarnemingen_twente": 222,
+  "synoniemen": [
+   "Sylvia icterina"
+  ]
  },
  "2480372": {
   "wet_gbif": "Elanus caeruleus",
@@ -2021,7 +2654,10 @@
   "status_nl": "jaargast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 556
+  "waarnemingen_twente": 556,
+  "synoniemen": [
+   "Falco caeruleus"
+  ]
  },
  "2481713": {
   "wet_gbif": "Tringa glareola",
@@ -2032,7 +2668,11 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 346
+  "waarnemingen_twente": 346,
+  "synoniemen": [
+   "Rhyacophilus glareola",
+   "Totanus glareolus"
+  ]
  },
  "5229126": {
   "wet_gbif": "Himantopus himantopus",
@@ -2054,7 +2694,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 202
+  "waarnemingen_twente": 202,
+  "synoniemen": [
+   "Recurvirostra avocetta"
+  ]
  },
  "2481725": {
   "wet_gbif": "Tringa erythropus",
@@ -2065,7 +2708,14 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 113
+  "waarnemingen_twente": 113,
+  "synoniemen": [
+   "Erythroscelus erythropus",
+   "Scolopax erythropus",
+   "Scolopax fusca",
+   "Totanus fuscus",
+   "Tringa fuscus"
+  ]
  },
  "2481110": {
   "wet_gbif": "Phoenicopterus chilensis",
@@ -2087,7 +2737,10 @@
   "status_nl": "schaarse doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 185
+  "waarnemingen_twente": 185,
+  "synoniemen": [
+   "Falco rufipes"
+  ]
  },
  "2493129": {
   "wet_gbif": "Acrocephalus schoenobaenus",
@@ -2098,7 +2751,12 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 273
+  "waarnemingen_twente": 273,
+  "synoniemen": [
+   "Acrocephalus scheonobaenus",
+   "Motacilla schoenobaenus",
+   "Salicaria phragmites"
+  ]
  },
  "2480445": {
   "wet_gbif": "Haliaeetus pelagicus",
@@ -2131,7 +2789,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1027
+  "waarnemingen_twente": 1027,
+  "synoniemen": [
+   "Platalea leucordia"
+  ]
  },
  "2480910": {
   "wet_gbif": "Botaurus stellaris",
@@ -2142,7 +2803,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 250
+  "waarnemingen_twente": 250,
+  "synoniemen": [
+   "Ardea stellaris"
+  ]
  },
  "2481831": {
   "wet_gbif": "Gallinago media",
@@ -2164,7 +2828,13 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 60
+  "waarnemingen_twente": 60,
+  "synoniemen": [
+   "Motacilla sibilatrix",
+   "Motacilla spec",
+   "Rhadina sibilatrix",
+   "Sylvia sylvicola"
+  ]
  },
  "10058735": {
   "wet_gbif": null,
@@ -2208,7 +2878,13 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 53
+  "waarnemingen_twente": 53,
+  "synoniemen": [
+   "Columba spec",
+   "Columba turtur",
+   "Stretopelia turtur",
+   "Turtur communis"
+  ]
  },
  "2498024": {
   "wet_gbif": "Anser brachyrhynchus",
@@ -2219,7 +2895,13 @@
   "status_nl": "wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 54
+  "waarnemingen_twente": 54,
+  "synoniemen": [
+   "Anas brachyrhynchus",
+   "Anser brachyrhynchos",
+   "Anser brachyrhyncus",
+   "Anser spec"
+  ]
  },
  "7660710": {
   "wet_gbif": "Luscinia megarhynchos",
@@ -2230,7 +2912,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 164
+  "waarnemingen_twente": 164,
+  "synoniemen": [
+   "Erithacus megarhynchos"
+  ]
  },
  "2498034": {
   "wet_gbif": "Anser cygnoides",
@@ -2241,7 +2926,12 @@
   "status_nl": "",
   "exoot": false,
   "koppeling": null,
-  "waarnemingen_twente": 67
+  "waarnemingen_twente": 67,
+  "synoniemen": [
+   "Anas cygnoid",
+   "Anas cygnoides",
+   "Anser cygnoid"
+  ]
  },
  "2480773": {
   "wet_gbif": "Plegadis falcinellus",
@@ -2274,7 +2964,12 @@
   "status_nl": "incidentele broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 103
+  "waarnemingen_twente": 103,
+  "synoniemen": [
+   "Cinclus meridionalis",
+   "Sturnus cinclus",
+   "Sturnus spec"
+  ]
  },
  "5739290": {
   "wet_gbif": "Phalaropus lobatus",
@@ -2318,7 +3013,8 @@
   "status_nl": "incidentele broedvogel, zomergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 83
+  "waarnemingen_twente": 83,
+  "synoniemen": []
  },
  "9305555": {
   "wet_gbif": "Spatula versicolor",
@@ -2373,7 +3069,14 @@
   "status_nl": "onregelmatige broedvogel, jaargast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 249
+  "waarnemingen_twente": 249,
+  "synoniemen": [
+   "Anas nyroca",
+   "Nyroca ferruginea",
+   "Nyroca leucophthalma",
+   "Nyroca nyroca",
+   "Nyroca rufa"
+  ]
  },
  "2498265": {
   "wet_gbif": "Aythya marila",
@@ -2384,7 +3087,11 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 100
+  "waarnemingen_twente": 100,
+  "synoniemen": [
+   "Fuligula marila",
+   "Nyroca marila"
+  ]
  },
  "2493012": {
   "wet_gbif": "Cettia cetti",
@@ -2395,7 +3102,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 125
+  "waarnemingen_twente": 125,
+  "synoniemen": [
+   "Sylvia cetti"
+  ]
  },
  "2498180": {
   "wet_gbif": "Netta rufina",
@@ -2406,7 +3116,10 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 263
+  "waarnemingen_twente": 263,
+  "synoniemen": [
+   "Anas rufina"
+  ]
  },
  "9508460": {
   "wet_gbif": "Mareca sibilatrix",
@@ -2428,7 +3141,12 @@
   "status_nl": "schaarse wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 192
+  "waarnemingen_twente": 192,
+  "synoniemen": [
+   "Archibuteo lagopus",
+   "Falco lagopus",
+   "Falco spec"
+  ]
  },
  "2489068": {
   "wet_gbif": "Leucopsar rothschildi",
@@ -2472,7 +3190,10 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 622
+  "waarnemingen_twente": 622,
+  "synoniemen": [
+   "Sterna fluviatilis"
+  ]
  },
  "2498326": {
   "wet_gbif": "Bucephala clangula",
@@ -2483,7 +3204,15 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 402
+  "waarnemingen_twente": 402,
+  "synoniemen": [
+   "Anas glaucion",
+   "Clangula chrysophthalmos",
+   "Clangula glaucion",
+   "Fuligula clangula",
+   "Glaucionetta clangula",
+   "Nyroca clangula"
+  ]
  },
  "2498247": {
   "wet_gbif": "Melanitta nigra",
@@ -2505,7 +3234,13 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 209
+  "waarnemingen_twente": 209,
+  "synoniemen": [
+   "Acrocephalus arundinacea",
+   "Acrocephalus turdoides",
+   "Sylvia turdoides",
+   "Turdus arundinaceus"
+  ]
  },
  "2481119": {
   "wet_gbif": "Chlidonias niger",
@@ -2516,7 +3251,13 @@
   "status_nl": "broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 105
+  "waarnemingen_twente": 105,
+  "synoniemen": [
+   "Childonias niger",
+   "Chilidonias niger",
+   "Chlidonias fissipes",
+   "Sterna niger"
+  ]
  },
  "2481240": {
   "wet_gbif": "Thalasseus sandvicensis",
@@ -2538,7 +3279,11 @@
   "status_nl": "onregelmatige broedvogel, doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 57
+  "waarnemingen_twente": 57,
+  "synoniemen": [
+   "Chroicocephalus minutus",
+   "Larus minutus"
+  ]
  },
  "2498347": {
   "wet_gbif": "Cygnus cygnus",
@@ -2549,7 +3294,15 @@
   "status_nl": "wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 92
+  "waarnemingen_twente": 92,
+  "synoniemen": [
+   "Anas cygnus",
+   "Anas musicus",
+   "Anas spec",
+   "Cygnus ferus",
+   "Cygnus musicus",
+   "Olor cygnus"
+  ]
  },
  "4352332": {
   "wet_gbif": "Phoenicopterus roseus",
@@ -2582,7 +3335,10 @@
   "status_nl": "schaarse doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 191
+  "waarnemingen_twente": 191,
+  "synoniemen": [
+   "Accipiter macrourus"
+  ]
  },
  "2480934": {
   "wet_gbif": "Ardea purpurea",
@@ -2604,7 +3360,12 @@
   "status_nl": "schaarse doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 50
+  "waarnemingen_twente": 50,
+  "synoniemen": [
+   "Erolia temminckii",
+   "Tringa spec",
+   "Tringa temminckii"
+  ]
  },
  "2494200": {
   "wet_gbif": "Serinus serinus",
@@ -2626,7 +3387,12 @@
   "status_nl": "zomergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 136
+  "waarnemingen_twente": 136,
+  "synoniemen": [
+   "Accipiter ferox",
+   "Circaetus ferox",
+   "Falco gallicus"
+  ]
  },
  "2498035": {
   "wet_gbif": "Anser indicus",
@@ -2637,7 +3403,11 @@
   "status_nl": "exoot, schaarse broedvogel",
   "exoot": true,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 67
+  "waarnemingen_twente": 67,
+  "synoniemen": [
+   "Anas indica",
+   "Eulabeia indica"
+  ]
  },
  "2481741": {
   "wet_gbif": "Calidris ferruginea",
@@ -2648,7 +3418,16 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 92
+  "waarnemingen_twente": 92,
+  "synoniemen": [
+   "Calidris ferruginea",
+   "Calidris testacea",
+   "Erolia ferruginea",
+   "Scolopax testacea",
+   "Tringa ferrugineus",
+   "Tringa spec",
+   "Tringa subarquata"
+  ]
  },
  "2498026": {
   "wet_gbif": "Anser erythropus",
@@ -2670,7 +3449,12 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 212
+  "waarnemingen_twente": 212,
+  "synoniemen": [
+   "Calidris arenaria",
+   "Crocethia alba",
+   "Tringa alba"
+  ]
  },
  "2489160": {
   "wet_gbif": "Riparia riparia",
@@ -2681,7 +3465,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 1244
+  "waarnemingen_twente": 1244,
+  "synoniemen": [
+   "Hirundo riparia"
+  ]
  },
  "2482065": {
   "wet_gbif": "Podiceps nigricollis",
@@ -2692,7 +3479,11 @@
   "status_nl": "schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 883
+  "waarnemingen_twente": 883,
+  "synoniemen": [
+   "Colymbus nigricollis",
+   "Podicipes nigricollis"
+  ]
  },
  "2481681": {
   "wet_gbif": "Limosa lapponica",
@@ -2725,7 +3516,13 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 97
+  "waarnemingen_twente": 97,
+  "synoniemen": [
+   "Galinago minima",
+   "Gallinago gallinula",
+   "Scolopax gallinula",
+   "Scolopax minima"
+  ]
  },
  "2493095": {
   "wet_gbif": "Phylloscopus inornatus",
@@ -2758,7 +3555,10 @@
   "status_nl": "broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 197
+  "waarnemingen_twente": 197,
+  "synoniemen": [
+   "Parus biarmicus"
+  ]
  },
  "2474627": {
   "wet_gbif": "Porzana parva",
@@ -2769,7 +3569,13 @@
   "status_nl": "onregelmatige broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 145
+  "waarnemingen_twente": 145,
+  "synoniemen": [
+   "Crex pusilla",
+   "Porzana minuta",
+   "Rallus parvus",
+   "Zapornia parva"
+  ]
  },
  "2491544": {
   "wet_gbif": "Emberiza pusilla",
@@ -2780,7 +3586,10 @@
   "status_nl": "schaarse doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 118
+  "waarnemingen_twente": 118,
+  "synoniemen": [
+   "Schoeniclus pusillus"
+  ]
  },
  "7668711": {
   "wet_gbif": "Linaria flavirostris",
@@ -2791,7 +3600,13 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 104
+  "waarnemingen_twente": 104,
+  "synoniemen": [
+   "Acanthis flavirostris",
+   "Carduelis flavirostris",
+   "Fringilla flavirostris",
+   "Linota montium"
+  ]
  },
  "2474621": {
   "wet_gbif": "Porzana porzana",
@@ -2802,7 +3617,12 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 150
+  "waarnemingen_twente": 150,
+  "synoniemen": [
+   "Porzana maruetta",
+   "Rallus porzana",
+   "Rallus spec"
+  ]
  },
  "2482059": {
   "wet_gbif": "Podiceps auritus",
@@ -2813,7 +3633,11 @@
   "status_nl": "schaarse doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 80
+  "waarnemingen_twente": 80,
+  "synoniemen": [
+   "Podiceps cornutus",
+   "Podicipes auritus"
+  ]
  },
  "2480830": {
   "wet_gbif": "Bubulcus ibis",
@@ -2824,7 +3648,14 @@
   "status_nl": "zeer schaarse broedvogel, jaargast",
   "exoot": false,
   "koppeling": "via Europa-lijst",
-  "waarnemingen_twente": 127
+  "waarnemingen_twente": 127,
+  "synoniemen": [
+   "Ardea bubulcus",
+   "Ardea ibis",
+   "Ardeola ibis",
+   "Bulbucus ibis",
+   "Egretta ibis"
+  ]
  },
  "2481749": {
   "wet_gbif": "Calidris minuta",
@@ -2835,7 +3666,11 @@
   "status_nl": "schaarse doortrekker",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 85
+  "waarnemingen_twente": 85,
+  "synoniemen": [
+   "Erolia minuta",
+   "Tringa minuta"
+  ]
  },
  "2481765": {
   "wet_gbif": "Calidris canutus",
@@ -2846,7 +3681,8 @@
   "status_nl": "doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 50
+  "waarnemingen_twente": 50,
+  "synoniemen": []
  },
  "2481263": {
   "wet_gbif": "Gelochelidon nilotica",
@@ -3000,7 +3836,12 @@
   "status_nl": "zeer schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 63
+  "waarnemingen_twente": 63,
+  "synoniemen": [
+   "Emberiza calandra",
+   "Emberiza miliaria",
+   "Miliaria calandra"
+  ]
  },
  "5232451": {
   "wet_gbif": "Branta ruficollis",
@@ -3011,7 +3852,12 @@
   "status_nl": "wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 52
+  "waarnemingen_twente": 52,
+  "synoniemen": [
+   "Anas ruficollis",
+   "Anser ruficollis",
+   "Rufibrenta ruficollis"
+  ]
  },
  "2492867": {
   "wet_gbif": "Lanius senator",
@@ -3022,7 +3868,11 @@
   "status_nl": "voormalige broedvogel, onregelmatige gast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 115
+  "waarnemingen_twente": 115,
+  "synoniemen": [
+   "Lanius pomeranus",
+   "Lanius rutilus"
+  ]
  },
  "2495494": {
   "wet_gbif": "Geopelia cuneata",
@@ -3044,7 +3894,8 @@
   "status_nl": "schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 185
+  "waarnemingen_twente": 185,
+  "synoniemen": []
  },
  "2481205": {
   "wet_gbif": "Rissa tridactyla",
@@ -3121,7 +3972,12 @@
   "status_nl": "schaarse wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 107
+  "waarnemingen_twente": 107,
+  "synoniemen": [
+   "? humei",
+   "Abrornis humei",
+   "Reguloides humei"
+  ]
  },
  "2492542": {
   "wet_gbif": "Luscinia luscinia",
@@ -3143,7 +3999,11 @@
   "status_nl": "doortrekker",
   "exoot": false,
   "koppeling": "via Europa-lijst",
-  "waarnemingen_twente": 63
+  "waarnemingen_twente": 63,
+  "synoniemen": [
+   "Charadrius morinellus",
+   "Eudromias morinellus"
+  ]
  },
  "2491678": {
   "wet_gbif": "Calcarius lapponicus",
@@ -3187,7 +4047,12 @@
   "status_nl": "zeer schaarse broedvogel, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 54
+  "waarnemingen_twente": 54,
+  "synoniemen": [
+   "Colymbus subcristatus",
+   "Podiceps griseigena",
+   "Podicipes grisegena"
+  ]
  },
  "5844449": {
   "wet_gbif": "Aquila fasciata",
@@ -3220,7 +4085,10 @@
   "status_nl": "zeer schaarse broedvogel",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 2108
+  "waarnemingen_twente": 2108,
+  "synoniemen": [
+   "Tetrao britannicus"
+  ]
  },
  "2481613": {
   "wet_gbif": "Stercorarius longicaudus",
@@ -3264,7 +4132,13 @@
   "status_nl": "schaarse wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 279
+  "waarnemingen_twente": 279,
+  "synoniemen": [
+   "Anas hyperboreus",
+   "Anser hyperboreus",
+   "Chen caerulescens",
+   "Chen hyperboreus"
+  ]
  },
  "2498238": {
   "wet_gbif": "Melanitta fusca",
@@ -3275,7 +4149,13 @@
   "status_nl": "schaarse doortrekker, wintergast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 61
+  "waarnemingen_twente": 61,
+  "synoniemen": [
+   "Anas fusca",
+   "Fuligula fusca",
+   "Oedemia fusca",
+   "Oidemia fusca"
+  ]
  },
  "2492081": {
   "wet_gbif": "Paroaria coronata",
@@ -3473,7 +4353,8 @@
   "status_nl": "onregelmatige gast",
   "exoot": false,
   "koppeling": "wetenschappelijk",
-  "waarnemingen_twente": 72
+  "waarnemingen_twente": 72,
+  "synoniemen": []
  },
  "2481776": {
   "wet_gbif": "Arenaria interpres",
