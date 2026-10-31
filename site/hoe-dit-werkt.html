@@ -12,9 +12,12 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <header class="kop">
-    <a class="merk" href="/"><span class="merk-naam">Voggels</span><span class="merk-sub">vogels in Twente</span></a>
-    <nav class="kop-nav"><a href="/hoe-dit-werkt" aria-current="page">Hoe dit werkt</a></nav>
+  <header class="kop-eenvoudig">
+    <a class="merk" href="/" aria-label="Voggels, naar het begin">
+      <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 20c4-1 7-5 10-9 1.5-2 4-3 6-2 1 .5 2 1.5 2.5 2.5L27 12l-3 1c0 4-3 8-8 9-4 .8-8 0-11-2z" fill="currentColor"/><circle cx="20.5" cy="11.5" r="1" fill="var(--papier)"/></svg>
+      <span class="merk-naam">Voggels</span>
+    </a>
+    <a class="knop-pil" href="/">Terug</a>
   </header>
   <main class="kolom tekst">
     <h1>Hoe dit werkt</h1>
@@ -36,10 +39,15 @@
     </ol>
     <p>Per laag zie je alleen wat er nog bij komt. De maandstrip onder elke soort telt de meldingen in die laag. Op de soortpagina staat de kalender voor heel Twente: trektijden verschillen binnen Twente nauwelijks.</p>
 
+    <h2 id="simulatie">De simulatiekaart</h2>
+    <p>"Twente in vogels" is een simulatie, geen kaart van echte vogels. Elke stip staat voor ongeveer 20 meldingen van één soort in één vak, in de gekozen maand, opgeteld over de vijf jaar. Hoeveel stippen er in een vak zijn, komt dus uit de meldingen. Tussen twee maanden in wordt het aantal geleidelijk aangepast.</p>
+    <p>Waar een stip in het vak zit en hoe hij beweegt, is verzonnen. We gebruiken een paar eenvoudige regels per groep: ganzen, spreeuwen, kieviten en kraanvogels vliegen in groepen, roofvogels cirkelen, zwaluwen jagen in snelle bogen, reigers staan vooral stil, zangvogels springen kort heen en weer. Een stip verlaat zijn vak nooit, zodat de simulatie niet preciezer lijkt dan de meldingen zijn. Je adres staat er als rode stip op, maar alleen in je browser.</p>
+    <p>De ondergrond komt uit de BRT-achtergrondkaart van het Kadaster (PDOK): bos, heide, moeras, bebouwing, water en wegen, vereenvoudigd en bij de site meegeleverd.</p>
+
     <h2>Het adres</h2>
     <p>Adressen komen van de PDOK Locatieserver, alleen voor adressen in de veertien Twentse gemeenten. Je browser vraagt ze zelf op terwijl je typt:</p>
     <pre>GET https://api.pdok.nl/bzk/locatieserver/search/v3_1/suggest?q=oude markt 3a enschede&amp;fq=gemeentecode:(0141 0147 …)</pre>
-    <p>Daarna rekent je browser zelf uit in welk vak je adres ligt. In de adresbalk staat alleen het vak, niet je adres. Deze site slaat geen ingetypt adres op en heeft geen server die dat ziet.</p>
+    <p>Je kunt ook je locatie gebruiken; die blijft in je browser. Daarna rekent je browser zelf uit in welk vak je adres ligt. In de adresbalk staat alleen het vak, niet je adres. Deze site slaat geen ingetypt adres op en heeft geen server die dat ziet.</p>
 
     <h2>De namen</h2>
     <p>Nederlandse namen en de status in Nederland (broedvogel, wintergast, exoot) komen uit de Wikipedia-lijst van vogels in de Benelux, bijgewerkt tot 17 april 2026. Soorten die daar niet op staan, zoals de barbarie-eend en de Carolina-eend, zijn ontsnapte of uitgezette vogels; die krijgen dat label. Kruisingen, zoals grauwe gans × Canadese gans, laten we weg.</p>
@@ -69,13 +77,13 @@
       <li>Geluid: xeno-canto, vooral CC BY-NC-SA. De opnemer staat bij elke opname.</li>
       <li>Platen: publiek domein, via Wikimedia Commons en de Koninklijke Bibliotheek.</li>
       <li>Namen: Wikipedia, CC BY-SA 4.0.</li>
-      <li>Grenzen en adressen: PDOK (Kadaster).</li>
-      <li>Letters: Bodoni Moda, Source Serif 4 en IBM Plex Mono, SIL Open Font License.</li>
+      <li>Grenzen, adressen en ondergrond van de kaart: PDOK (Kadaster), BRT-achtergrondkaart.</li>
+      <li>Letters: Bodoni Moda, Source Serif 4, Instrument Sans en IBM Plex Mono, SIL Open Font License.</li>
     </ul>
     <p>Omdat bijna alle meldingen en opnames niet-commercieel gedeeld zijn, heeft deze site geen advertenties of betaalde aanbiedingen.</p>
 
     <h2>Privacy</h2>
-    <p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen worden niet bewaard.</p>
+    <p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen en je locatie worden niet bewaard.</p>
   </main>
   <footer class="voet"><p><a href="/">Terug naar het begin</a></p></footer>
 </body>

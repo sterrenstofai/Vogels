@@ -11,12 +11,27 @@
   to = "/index.html"
   status = 200
 
+[[redirects]]
+  from = "/kaart"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/soorten"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ontdek"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
     Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.pdok.nl; media-src https://xeno-canto.org; frame-ancestors 'none'; base-uri 'self'; form-action 'none'"
     Referrer-Policy = "no-referrer"
-    Permissions-Policy = "geolocation=(), camera=(), microphone=(), interest-cohort=()"
+    Permissions-Policy = "geolocation=(self), camera=(), microphone=(), interest-cohort=()"
     X-Content-Type-Options = "nosniff"
 
 [[headers]]

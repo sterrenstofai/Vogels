@@ -6,6 +6,8 @@ Prototype: https://voggels.netlify.app (werktitel Voggels). De site staat in `si
 
 Lokaal bekijken: `python3 scripts/server.py` en open http://127.0.0.1:8080.
 
+Simulatiekaart: `/kaart`, met ondergrond uit `scripts/basiskaart.py` (BRT-achtergrondkaart, PDOK) en vogelgroepen uit `scripts/vogelgroepen.py`.
+
 Sitedata opnieuw bouwen: `python3 scripts/bouw_sitedata.py datacheck/twente_soorten.json datacheck/geo/gemeenten.json site/data`. Platen: `cd scripts && python3 platen_download.py ../data/platen.json ../data/soorten_slugs.json ../site/platen`.
 
 Vooronderzoek:

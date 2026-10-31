@@ -13,7 +13,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def send_head(self):
         pad = self.path.split("?")[0]
-        if pad.startswith(("/hier/", "/soort/")):
+        if pad.startswith(("/hier/", "/soort/")) or pad in ("/kaart", "/soorten", "/ontdek"):
             self.path = "/index.html"
         elif pad == "/hoe-dit-werkt":
             self.path = "/hoe-dit-werkt.html"

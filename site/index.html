@@ -4,21 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Voggels · Welke vogels hoor je hier, en wanneer?</title>
-  <meta name="description" content="Typ je adres in Twente en hoor welke vogels je daar kunt verwachten, per seizoen. Met historische platen en echte opnames.">
+  <meta name="description" content="Typ je adres in Twente en hoor welke vogels je daar kunt verwachten, per seizoen. Met historische platen, echte opnames en een simulatiekaart.">
   <meta name="theme-color" content="#F3EDE1" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
   <meta name="referrer" content="no-referrer">
   <link rel="preload" href="/fonts/bodoni-moda-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/stijl.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="module" src="/js/app.js"></script>
 </head>
 <body>
   <a class="naar-inhoud" href="#app">Naar de inhoud</a>
-  <header class="kop">
-    <a class="merk" href="/" data-link><span class="merk-naam">Voggels</span><span class="merk-sub">vogels in Twente</span></a>
-    <nav class="kop-nav"><a href="/hoe-dit-werkt">Hoe dit werkt</a></nav>
+  <header class="balk">
+    <div class="balk-rij">
+      <a class="merk" href="/" data-link aria-label="Voggels, naar het begin">
+        <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 20c4-1 7-5 10-9 1.5-2 4-3 6-2 1 .5 2 1.5 2.5 2.5L27 12l-3 1c0 4-3 8-8 9-4 .8-8 0-11-2z" fill="currentColor"/><circle cx="20.5" cy="11.5" r="1" fill="var(--papier)"/></svg>
+        <span class="merk-naam">Voggels</span>
+      </a>
+      <nav class="balk-knoppen" aria-label="Hoofdmenu">
+        <a class="knop-icoon" href="/kaart" data-link aria-label="Simulatiekaart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        <a class="knop-icoon" href="/soorten" data-link aria-label="Alle soorten"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <a class="knop-tekst" href="/hoe-dit-werkt">Hoe dit werkt</a>
+      </nav>
+    </div>
+    <div class="zoek" role="search">
+      <div class="zoek-pil">
+        <label class="sr" for="adres">Je adres in Twente</label>
+        <input id="adres" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
+          placeholder="Typ je adres in Twente" role="combobox" aria-expanded="false" aria-controls="adres-lijst" aria-autocomplete="list">
+        <button class="zoek-locatie" type="button" aria-label="Gebruik mijn locatie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4L4 11l7 2 2 7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
+        <ul id="adres-lijst" class="zoek-lijst" role="listbox" hidden></ul>
+      </div>
+      <div class="zoek-acties">
+        <button class="knop-pil knop-donker zoek-knop" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Zoeken</button>
+        <a class="knop-pil knop-accent" href="/ontdek" data-link><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="9" r="1.3" fill="currentColor"/><circle cx="15" cy="15" r="1.3" fill="currentColor"/><circle cx="15" cy="9" r="1.3" fill="currentColor"/><circle cx="9" cy="15" r="1.3" fill="currentColor"/></svg>Ontdek een vogel</a>
+      </div>
+      <p class="zoek-melding" aria-live="polite"></p>
+    </div>
   </header>
 
   <main id="app" tabindex="-1">
@@ -26,7 +49,7 @@
   </main>
 
   <footer class="voet">
-    <p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen worden niet bewaard.</p>
+    <p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen en je locatie worden niet bewaard.</p>
     <p>Meldingen via <a href="https://www.gbif.org">GBIF</a>, vooral van Observation.org en eBird. Geluid van <a href="https://xeno-canto.org">xeno-canto</a>. Platen uit het publiek domein via <a href="https://commons.wikimedia.org">Wikimedia Commons</a>. <a href="/hoe-dit-werkt">Hoe dit werkt</a>.</p>
   </footer>
 

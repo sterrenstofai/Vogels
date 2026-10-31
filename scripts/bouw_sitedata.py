@@ -182,6 +182,10 @@ def main(twente_pad, gemeenten_pad, uit):
             "precies_vakken": sorted(per_vak), "gemeentecodes": TWENTE, "vakgrootte": VAK}
     for naam, data in [("meta", meta), ("soorten", soorten), ("vakken", vakken), ("kaart", kaart)]:
         json.dump(data, open(os.path.join(uit, naam + ".json"), "w"), ensure_ascii=False, separators=(",", ":"))
+    # vogelgroep per soort (kleur en gedrag op de simulatiekaart)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from vogelgroepen import voeg_toe
+    voeg_toe(twente_pad, os.path.join(uit, "soorten.json"))
     print(json.dumps({k: v for k, v in meta.items() if k not in ("precies_vakken",)}, ensure_ascii=False))
 
 
