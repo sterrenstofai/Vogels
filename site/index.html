@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Voggels · Welke vogels hoor je hier, en wanneer?</title>
+  <meta name="description" content="Typ je adres in Twente en hoor welke vogels je daar kunt verwachten, per seizoen. Met historische platen en echte opnames.">
+  <meta name="theme-color" content="#F3EDE1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
+  <meta name="referrer" content="no-referrer">
+  <link rel="preload" href="/fonts/bodoni-moda-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/stijl.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <a class="naar-inhoud" href="#app">Naar de inhoud</a>
+  <header class="kop">
+    <a class="merk" href="/" data-link><span class="merk-naam">Voggels</span><span class="merk-sub">vogels in Twente</span></a>
+    <nav class="kop-nav"><a href="/hoe-dit-werkt">Hoe dit werkt</a></nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <noscript><p class="kolom">Deze site heeft JavaScript nodig om je adres op te zoeken en geluid af te spelen. Lees <a href="/hoe-dit-werkt">hoe dit werkt</a>.</p></noscript>
+  </main>
+
+  <footer class="voet">
+    <p>Geen cookies en geen bezoekersstatistiek. Ingetypte adressen worden niet bewaard.</p>
+    <p>Meldingen via <a href="https://www.gbif.org">GBIF</a>, vooral van Observation.org en eBird. Geluid van <a href="https://xeno-canto.org">xeno-canto</a>. Platen uit het publiek domein via <a href="https://commons.wikimedia.org">Wikimedia Commons</a>. <a href="/hoe-dit-werkt">Hoe dit werkt</a>.</p>
+  </footer>
+
+  <div class="speler" id="speler" hidden>
+    <img class="speler-plaat" alt="" width="48" height="60">
+    <div class="speler-midden">
+      <a class="speler-naam" data-link></a>
+      <canvas class="speler-spectro" aria-hidden="true"></canvas>
+    </div>
+    <button class="knop-rond speler-knop" type="button" aria-label="Pauzeer"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="ring-bg" cx="22" cy="22" r="20"/><circle class="ring" cx="22" cy="22" r="20"/><path class="ico-pauze" d="M17 15v14M27 15v14"/><path class="ico-speel" d="M18 14l12 8-12 8z"/></svg></button>
+    <button class="speler-sluit" type="button" aria-label="Stop en sluit">×</button>
+  </div>
+</body>
+</html>
