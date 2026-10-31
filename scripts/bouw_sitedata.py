@@ -34,6 +34,11 @@ WERKEN = {
     "Alphéraky": "S. Alphéraky, The Geese of Europe and Asia (1905)",
     "Recueil": "Recueil de divers oiseaux étrangers et peu communs (18e eeuw)",
     "Phillips": "J.C. Phillips, A Natural History of the Ducks (1922–1926)",
+    "NaumannOud": "J.A. & J.F. Naumann, Naturgeschichte der Vögel Deutschlands (1820–1844)",
+    "Ornithologia Neerlandica": "E.D. van Oort, Ornithologia Neerlandica (1918–1935), platen M.A. Koekkoek",
+    "Audubon": "J.J. Audubon, The Birds of America (1827–1838), gravure R. Havell",
+    "Description de l'Égypte": "Description de l'Égypte, Histoire naturelle (1809–1828)",
+    "Prževalski": "Wetenschappelijke resultaten van Prževalski's reizen in Centraal-Azië (1889)",
 }
 
 
