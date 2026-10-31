@@ -1,0 +1,30 @@
+name: Platen ophalen
+
+# Downloadt de gekozen platen van Wikimedia Commons, maakt er webbeelden van
+# en commit ze in site/platen. Handmatig te starten; al aanwezige platen worden overgeslagen.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  platen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Platen downloaden
+        working-directory: scripts
+        run: python3 platen_download.py ../data/platen.json ../data/soorten_slugs.json ../site/platen
+      - name: Committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/platen
+          git diff --cached --quiet || git commit -m "Platen bijgewerkt"
+          git push
