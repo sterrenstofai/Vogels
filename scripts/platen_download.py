@@ -76,6 +76,7 @@ def main(platen_pad, slugs_pad, uitmap):
         klein = img.copy(); klein.thumbnail((480, 640))
         klein.save(os.path.join(uitmap, slug + "-k.webp"), "WEBP", quality=74, method=6)
         print(slug, groot.size, flush=True)
+    # daarna: python3 platen_vrijstaand.py ../site/platen (papier wit, scanranden weg)
 
 
 if __name__ == "__main__":

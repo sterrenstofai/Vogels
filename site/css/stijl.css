@@ -7,9 +7,9 @@
 @font-face { font-family: "Instrument Sans"; src: url("/fonts/instrument-sans-latin-wght-normal.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
 
 :root {
-  --papier: #F3EDE1;
-  --papier-licht: #FAF6EE;
-  --passe: #E8DFCC;
+  --papier: #F0EFEA;
+  --papier-licht: #F8F7F3;
+  --passe: #E6E3DA;
   --inkt: #1F1B16;
   --inkt-zacht: #5A5246;
   --rood: #9A3B26;
@@ -122,13 +122,19 @@ em, i, .wet { font-style: italic; }
 .voet p { margin: 0 0 .5rem; max-width: 46rem; }
 
 /* ---------- Eén vogel centraal ---------- */
-.held-soort { display: grid; gap: 1.6rem; padding-top: .6rem; grid-template-columns: minmax(0, 1fr); }
-@media (min-width: 900px) { .held-soort { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 4rem; align-items: end; padding-top: 1.5rem; } }
-.held-beeld { position: relative; }
-.held-beeld .plaat-rand img { max-height: 46svh; }
-@media (min-width: 900px) { .held-beeld .plaat-rand img { max-height: 70svh; } }
+.held-soort { display: grid; gap: 1.4rem; grid-template-columns: minmax(0, 1fr); }
+/* beeldvullend: de plaat staat van rand tot rand vrij op de pagina, het papier valt weg door multiply */
+.held-beeld { position: relative; width: 100vw; margin-left: calc(50% - 50vw); }
+.held-paneel[data-paneel="plaat"] { --h: clamp(22rem, 62svh, 56rem); height: var(--h); padding: .4rem var(--rand) 0; display: flex; justify-content: center; align-items: flex-start; }
+@media (min-width: 900px) { .held-paneel[data-paneel="plaat"] { --h: clamp(30rem, 80svh, 60rem); } }
+.held-paneel .plaat-rand { background: var(--papier); padding: 0; outline: 0; display: flex; justify-content: center; } /* zelfde kleur als de pagina: multiply heeft binnen de clip-path een achtergrond nodig */
+.held-paneel .plaat-rand img { width: auto; height: auto; max-width: 100%; max-height: calc(var(--h) - 4.8rem); mix-blend-mode: multiply; }
+.held-paneel .lege-plaat { height: calc(var(--h) - 4.8rem); width: auto; max-width: 100%; }
+.held-tekst { max-width: 46rem; }
 .held-paneel[hidden] { display: none; }
-.held-bediening { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-top: -1.6rem; position: relative; z-index: 2; padding-inline: .8rem; }
+.held-bediening { position: absolute; left: 0; right: 0; bottom: 1rem; z-index: 2; display: flex; justify-content: center; align-items: center; padding-inline: var(--rand); pointer-events: none; }
+.held-bediening > * { pointer-events: auto; }
+.held-knop { position: absolute; right: var(--rand); top: 50%; transform: translateY(-50%); }
 .pilgroep { display: inline-flex; background: var(--papier-licht); border-radius: 999px; padding: 4px; box-shadow: 0 10px 24px -12px rgb(0 0 0 / .35); border: 1px solid var(--lijn); }
 .pilgroep button { border: 0; background: none; border-radius: 999px; padding: .55rem 1.15rem; min-height: 44px; cursor: pointer; font: 500 1rem/1 var(--ui); color: var(--inkt-zacht); }
 .pilgroep button[aria-selected="true"] { background: var(--papier); color: var(--inkt); box-shadow: 0 1px 4px rgb(0 0 0 / .14); }
@@ -138,8 +144,11 @@ em, i, .wet { font-style: italic; }
 .held-bron { font-size: .85rem; color: var(--inkt-zacht); margin: 1rem 0 0; max-width: 34rem; }
 .held-meta { margin-top: .8rem; }
 .held-acties { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.4rem; }
-.held-geluid { background: var(--passe); padding: clamp(12px, 2.4vw, 20px); min-height: 22rem; display: flex; flex-direction: column; gap: .9rem; padding-bottom: 2.8rem; }
+.held-geluid { min-height: clamp(22rem, 62svh, 56rem); padding: .4rem var(--rand) 5.2rem; display: flex; flex-direction: column; gap: .9rem; max-width: var(--breed); margin-inline: auto; }
+@media (min-width: 900px) { .held-geluid { min-height: clamp(30rem, 80svh, 60rem); } }
 .held-geluid .spectro-vlak { background-color: var(--papier-licht); }
+.held-geluid .spectro-vlak canvas { height: clamp(15rem, 40svh, 36rem); }
+@media (min-width: 900px) { .held-geluid .spectro-vlak canvas { height: clamp(18rem, 54svh, 42rem); } }
 .held-typen { display: flex; gap: 1rem; }
 .held-typen button { background: none; border: 0; padding: .3rem 0; min-height: 40px; cursor: pointer; font-family: var(--kop); font-size: 1.4rem; color: var(--inkt-zacht); border-bottom: 2px solid transparent; }
 .held-typen button[aria-selected="true"] { color: var(--inkt); border-bottom-color: var(--rood); }
@@ -377,7 +386,8 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 .kop-eenvoudig { display: flex; align-items: center; justify-content: space-between; padding: max(.8rem, env(safe-area-inset-top)) var(--rand) .8rem; max-width: var(--breed); margin-inline: auto; width: 100%; }
 
 @media (prefers-color-scheme: dark) {
-  .soort-beeld, .strip-beeld, .speler-plaat, .plaat-rand { background: #E8DFCC; }
+  .soort-beeld, .strip-beeld, .speler-plaat, .plaat-rand { background: #E6E3DA; }
+  .held-beeld, .held-paneel .plaat-rand { background: #F0EFEA; }
   .soort-beeld .lege-plaat, .strip-beeld .lege-plaat { color: #1F1B16; }
 }
 @view-transition { navigation: auto; }
