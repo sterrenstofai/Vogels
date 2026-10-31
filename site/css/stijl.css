@@ -144,7 +144,8 @@ em, i, .wet { font-style: italic; }
 .leeg-cirkel { width: 76px; height: 76px; border: 1.5px dashed var(--inkt-zacht); border-radius: 50%; display: grid; place-items: center; font-family: var(--mono); font-size: .75rem; color: var(--inkt-zacht); }
 
 .meldingen { list-style: none; padding: 0; margin: 1rem 0; max-width: 40rem; }
-.meldingen li { display: grid; grid-template-columns: 6.5rem 1fr auto; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--lijn); align-items: baseline; }
+.meldingen li { display: grid; grid-template-columns: 6.5rem 1fr auto; gap: .4rem 1rem; padding: .7rem 0; border-bottom: 1px solid var(--lijn); align-items: baseline; }
+@media (max-width: 560px) { .meldingen li { grid-template-columns: 1fr auto; } .meldingen li > span:nth-child(2) { grid-column: 1 / -1; grid-row: 2; } }
 .meldingen .mono { color: var(--inkt-zacht); }
 
 .raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(46%, 11.5rem), 1fr)); gap: 2rem 1.2rem; margin-top: 1.5rem; }

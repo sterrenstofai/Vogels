@@ -271,13 +271,22 @@ function laagStraat(adres, precies, S) {
     return `<section class="laag">${kop(`binnen ${STRAAL_M} m · 0 meldingen`)}
       <div class="leeg"><div class="leeg-cirkel">0</div><p>Hier is in vijf jaar niets precies gemeld. Dat zegt vooral iets over waar mensen tellen, niet over de vogels.</p></div></section>`;
   }
-  const rijen = precies.slice(0, 40).map((p) => {
-    const s = S[p.soort];
-    return `<li><span class="mono">${datum(p.datum)}</span><a href="/soort/${s.slug}" data-link>${esc(s.nl)}</a><span class="mono">${esc(p.bron)} · ${Math.round(p.d / 10) * 10} m</span></li>`;
+  // Meldingen van dezelfde dag, bron en plek zijn meestal één telling: samen tonen
+  const tellingen = new Map();
+  for (const p of precies) {
+    const k = `${p.datum}|${p.bron}|${Math.round(p.d / 10)}`;
+    if (!tellingen.has(k)) tellingen.set(k, { ...p, soorten: [] });
+    const t = tellingen.get(k);
+    if (!t.soorten.includes(p.soort)) t.soorten.push(p.soort);
+  }
+  const lijst = [...tellingen.values()];
+  const rijen = lijst.slice(0, 25).map((t) => {
+    const namen = t.soorten.map((k) => `<a href="/soort/${S[k].slug}" data-link>${esc(S[k].nl)}</a>`).join(", ");
+    return `<li><span class="mono">${datum(t.datum)}</span><span>${namen}</span><span class="mono">${esc(t.bron)} · ${Math.round(t.d / 10) * 10} m</span></li>`;
   }).join("");
-  return `<section class="laag">${kop(`binnen ${STRAAL_M} m · ${precies.length} meldingen · ${soortenSet.size} soorten · ${dagen} ${dagen === 1 ? "dag" : "dagen"}`)}
+  return `<section class="laag">${kop(`binnen ${STRAAL_M} m · ${precies.length} meldingen · ${soortenSet.size} soorten · ${lijst.length} ${lijst.length === 1 ? "telling" : "tellingen"} op ${dagen} ${dagen === 1 ? "dag" : "dagen"}`)}
     <p class="laag-tekst">Losse meldingen met een precieze plek, vooral van eBird en iNaturalist. Dit zijn momenten, geen vaste bewoners.</p>
-    <ul class="meldingen">${rijen}</ul>${precies.length > 40 ? `<p class="mono zacht">En nog ${precies.length - 40} oudere meldingen.</p>` : ""}</section>`;
+    <ul class="meldingen">${rijen}</ul>${lijst.length > 25 ? `<p class="mono zacht">En nog ${lijst.length - 25} oudere tellingen.</p>` : ""}</section>`;
 }
 
 function laagBlok(nr, titel, sub, tekst, lijst, S, maanden, eerst, waar) {
