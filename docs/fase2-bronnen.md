@@ -1,6 +1,6 @@
 # Fase 2: geluid, platen en opzet van de data
 
-Peildatum 31 oktober 2026. Uitgangspunt: de 227 soorten met minstens 50 Observation.org-waarnemingen in de 106 Twentse vakken (329 soorten in totaal). Scripts: `datacheck/soorten.py`, `datacheck/xc.py`, `datacheck/platen.py`.
+Peildatum 31 oktober 2026. Uitgangspunt: de 227 soorten met minstens 50 Observation.org-waarnemingen in de 106 Twentse vakken (329 in totaal: 325 soorten en 4 hybriden). Scripts: `datacheck/soorten.py`, `datacheck/xc.py`, `datacheck/platen.py`.
 
 ## Geluid (xeno-canto API v3)
 
