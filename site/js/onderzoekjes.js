@@ -85,8 +85,10 @@ export async function overzicht(app) {
       </a>`).join("")}
   </section>
   ${certificaatBlok(lb)}
+  <section class="breed">${opnieuwBlok(lb)}</section>
   <section class="breed oz-noot"><p class="zacht">Wat je invult, welke onderzoekjes klaar zijn en de naam op het certificaat blijven op dit apparaat. Het gaat niet naar ons of naar iemand anders.</p></section>`;
   bindCertificaat(app);
+  bindOpnieuw(app);
   if (location.hash === "#certificaat") requestAnimationFrame(() => document.getElementById("certificaat")?.scrollIntoView({ block: "start" }));
 }
 
@@ -100,6 +102,33 @@ function voortgang(lb, huidig = null) {
     <ol class="oz-voortgang-balk">${ONDERZOEKJES.map((o, i) => `<li class="${lb[o.slug]?.klaar ? "klaar" : ""}${o.slug === huidig ? " hier" : ""}" title="${esc(o.titel)}"><span class="sr">${i + 1}. ${esc(o.titel)}${lb[o.slug]?.klaar ? ", gedaan" : ""}</span></li>`).join("")}</ol>
     <p>${n === totaal ? `Alle ${totaal} gedaan. Tijd voor je certificaat!` : `${n} van de ${totaal} gedaan${n ? `, nog ${totaal - n} te gaan` : ""}.`}</p>
   </div>`;
+}
+
+// Opnieuw beginnen: stempels en notities weg, de naam voor het certificaat blijft staan
+function opnieuwBlok(lb) {
+  if (!ONDERZOEKJES.some((o) => lb[o.slug])) return "";
+  return `<div class="oz-opnieuw" data-opnieuw-blok>
+    <button class="knop-pil" type="button" data-opnieuw-vraag><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12a7 7 0 1 0 2.05-4.95M5 4.5V8h3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Opnieuw beginnen</button>
+    <div class="oz-opnieuw-vraag" hidden>
+      <p>Alle stempels en wat je in de logboeken schreef gaan weg. Zeker weten?</p>
+      <button class="knop-pil knop-accent" type="button" data-opnieuw-ja>Ja, opnieuw beginnen</button>
+      <button class="knop-pil" type="button" data-opnieuw-nee>Nee, toch niet</button>
+    </div>
+  </div>`;
+}
+
+function bindOpnieuw(app) {
+  const blok = app.querySelector("[data-opnieuw-blok]");
+  if (!blok) return;
+  const vraag = blok.querySelector(".oz-opnieuw-vraag"), knop = blok.querySelector("[data-opnieuw-vraag]");
+  knop.addEventListener("click", () => { vraag.hidden = false; knop.hidden = true; blok.querySelector("[data-opnieuw-nee]").focus(); });
+  blok.querySelector("[data-opnieuw-nee]").addEventListener("click", () => { vraag.hidden = true; knop.hidden = false; knop.focus(); });
+  blok.querySelector("[data-opnieuw-ja]").addEventListener("click", () => {
+    const naam = leesLogboek()._naam;
+    schrijfLogboek(naam ? { _naam: naam } : {});
+    overzicht(app);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 }
 
 function certificaatBlok(lb) {

@@ -564,3 +564,9 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 .oz-certificaat-dicht { grid-template-columns: 1fr auto; }
 .oz-slot { display: grid; place-items: center; width: 4.6rem; height: 4.6rem; border-radius: 50%; border: 2px dashed var(--lijn); font: 400 2rem var(--kop); color: var(--inkt-zacht); }
 @media (min-width: 900px) { .oz-certificaat:not(.oz-certificaat-dicht) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); } }
+.oz-opnieuw { margin-top: 1.6rem; }
+.oz-opnieuw .knop-pil svg { width: 18px; height: 18px; }
+.oz-opnieuw-vraag { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; background: var(--papier-licht); border: 1.5px solid var(--lijn); border-radius: 24px; padding: 1rem 1.3rem; }
+.oz-opnieuw-vraag[hidden] { display: none; }
+.oz-opnieuw-vraag p { margin: 0; flex-basis: 100%; font-size: 1.05rem; }
+.oz-opnieuw [hidden] { display: none; }
