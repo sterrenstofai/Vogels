@@ -15,18 +15,22 @@ export function verlaatKaart() {
   document.body.classList.remove("kaartmodus");
 }
 
+const klein = (t) => (t.startsWith("IJ") ? "ij" + t.slice(2) : t.charAt(0).toLowerCase() + t.slice(1));
+
 export async function kaartPagina(app, toestand, opties = {}) {
   const [S, V, K, B] = await Promise.all([D.soorten(), D.vakken(), D.kaart(), D.laad("/data/basiskaart.json")]);
   document.body.classList.add("kaartmodus");
   const vanAdres = toestand.adres;
   const vanVak = opties.vak || (vanAdres ? D.vakVan(vanAdres.lat, vanAdres.lon) : toestand.laatsteVak);
+  const vanSoort = opties.soort && S[opties.soort] ? opties.soort : null;
+  let herkomst = null;
 
   app.innerHTML = `
   <section class="sim" aria-label="Simulatiekaart van Twente">
     <div class="sim-labels" aria-hidden="true"></div>
     <div class="sim-ui sim-boven">
       <button class="sim-chip sim-info-knop" type="button" aria-expanded="false" aria-controls="sim-info"><span class="sim-stip"></span>Simulatie</button>
-      ${vanAdres ? `<span class="sim-chip sim-van">Je kwam van ${esc(vanAdres.naam.split(",")[0])}</span>` : ""}
+      ${vanSoort ? `<span class="sim-chip sim-van"><i style="background:${KLEUREN[S[vanSoort].groep]}"></i>Je kwam van de ${esc(klein(S[vanSoort].nl))}</span>` : vanAdres ? `<span class="sim-chip sim-van">Je kwam van ${esc(vanAdres.naam.split(",")[0])}</span>` : ""}
     </div>
     <div class="sim-ui sim-info" id="sim-info" hidden>
       <p><strong>Dit is een simulatie, geen kaart van echte vogels.</strong> Elke stip staat voor ongeveer ${SCHAAL} meldingen van één soort in één vak van ongeveer 4 × 6 km, in de gekozen maand, opgeteld over 2021–2026.</p>
@@ -72,15 +76,25 @@ export async function kaartPagina(app, toestand, opties = {}) {
         const b = S[l.soort].nl.length * 7.5 + 34, x0 = l.x - 8, y0 = l.y - 34;
         if (geplaatst.some((p) => x0 < p[0] + p[2] && p[0] < x0 + b && y0 < p[1] + 28 && p[1] < y0 + 28)) return false;
         geplaatst.push([x0, y0, b]); return true;
-      }).map((l) => `<span class="sim-label" style="transform:translate(${l.x.toFixed(0)}px,${(l.y - 14).toFixed(0)}px)"><i style="background:${KLEUREN[l.groep]}"></i>${esc(S[l.soort].nl)}</span>`).join("");
+      }).map((l) => `<span class="sim-label" style="transform:translate(${l.x.toFixed(0)}px,${(l.y - 14).toFixed(0)}px)"><i style="background:${KLEUREN[l.groep]}"></i>${esc(S[l.soort].nl)}</span>`).join("")
+        + (herkomst && sim ? (() => { const [x, y] = sim.naarScherm(herkomst.lon, herkomst.lat); return `<span class="sim-label sim-label-van" style="transform:translate(${x.toFixed(0)}px,${(y - 24).toFixed(0)}px)">Je kwam van ${esc(herkomst.tekst)}</span>`; })() : "");
     },
   });
   sim.vakEigen = vanVak || null;
   if (vanAdres) sim.pin = { lat: vanAdres.lat, lon: vanAdres.lon };
+  // openingsanimatie: van plat en ver naar schuin en dichtbij, op de plek waar je vandaan kwam
+  const passend = sim.cam.z;
+  let doel = { lat: 52.31, lon: 6.72, z: passend };
   if (vanVak && V[vanVak]) {
     const [la, lo] = vanVak.split(",").map(Number);
-    sim.vliegNaar(la + D.VAK / 2, lo + D.VAK / 2, sim.cam.z * 4.2, 1800);
+    doel = vanAdres ? { lat: vanAdres.lat, lon: vanAdres.lon, z: passend * 3.4 } : { lat: la + D.VAK / 2, lon: lo + D.VAK / 2, z: passend * 3.4 };
+    if (!vanAdres) sim.pin = { lat: la + D.VAK / 2, lon: lo + D.VAK / 2 };
   }
+  // het doel iets boven het midden, zodat het vrij van de maandschuif staat
+  if (doel.z > passend) doel.lat -= (sim.vh * 0.2) / doel.z;
+  herkomst = sim.pin ? { ...sim.pin, tekst: vanAdres ? vanAdres.naam.split(",")[0] : vanSoort ? `de ${klein(S[vanSoort].nl)}` : "dit vak" } : null;
+  if (vanSoort && S[vanSoort]) sim.opGeland = () => sim.zetFocus(vanSoort);
+  sim.opening(doel);
 
   const zetMaandLabel = (m) => {
     maandNaam.textContent = MAANDNAMEN[Math.floor(m) % 12];

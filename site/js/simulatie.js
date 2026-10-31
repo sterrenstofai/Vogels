@@ -438,6 +438,35 @@ export class Simulatie {
 
   zoom(factor) { this.zoomRond(this.vw / 2, this.vh * 0.6, { ...this.cam }, factor); this.basisVuil = true; }
 
+  // Openingsbeeld: plat en ver weg, dan kantelen en inzoomen op het doel, zoals een vogel die daalt
+  opening(doel, ms = 2600) {
+    const kantel = 38;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      Object.assign(this.cam, doel); this.zetPitch(kantel); this.basisVuil = true; return;
+    }
+    const van = { lat: 52.31, lon: 6.72, z: this.passendeZoom() * 0.62 };
+    Object.assign(this.cam, van);
+    this.zetPitch(0);
+    this.tekenBasis();
+    this.vlak.style.opacity = "0";
+    this.beweegt = true;
+    const t0 = performance.now();
+    const zacht = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    const stap = (nu) => {
+      const t = Math.min(1, (nu - t0) / ms), e = zacht(t);
+      this.vlak.style.opacity = String(Math.min(1, t * 5));
+      this.cam.lat = van.lat + (doel.lat - van.lat) * e;
+      this.cam.lon = van.lon + (doel.lon - van.lon) * e;
+      this.cam.z = van.z * Math.pow(doel.z / van.z, e);
+      this.zetPitch(kantel * zacht(Math.max(0, Math.min(1, (t - 0.12) / 0.88))));
+      // de ondergrond opnieuw tekenen zodra hij te veel is opgerekt, anders wordt hij wazig
+      if (this.basisCam && this.cam.z / this.basisCam.z > 1.8) this.tekenBasis();
+      if (t < 1) requestAnimationFrame(stap);
+      else { this.beweegt = false; this.basisVuil = true; this.vlak.style.opacity = ""; this.opGeland?.(); }
+    };
+    requestAnimationFrame(stap);
+  }
+
   vliegNaar(lat, lon, z, ms = 1400) {
     const van = { ...this.cam }, t0 = performance.now();
     this.beweegt = true;

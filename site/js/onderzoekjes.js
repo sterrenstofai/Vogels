@@ -5,7 +5,7 @@ import * as G from "./geluid.js";
 import { MAANDNAMEN, MAANDLETTERS, KERN_MIN } from "./config.js";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
-const klein = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+const klein = (s) => (s.startsWith("IJ") ? "ij" + s.slice(2) : s.charAt(0).toLowerCase() + s.slice(1)); // IJsvogel -> ijsvogel
 const getal = (n) => Math.round(n).toLocaleString("nl-NL");
 const schud = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
 

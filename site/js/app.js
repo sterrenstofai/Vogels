@@ -20,7 +20,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<
 const getal = (n) => Math.round(n).toLocaleString("nl-NL");
 const KORT = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
 const datum = (iso) => { const [j, m, d] = iso.split("-"); return d ? `${+d} ${KORT[+m - 1]} ${j}` : iso; };
-const klein = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+const klein = (s) => (s.startsWith("IJ") ? "ij" + s.slice(2) : s.charAt(0).toLowerCase() + s.slice(1)); // IJsvogel -> ijsvogel
 const metKey = (S, k) => ({ key: k, ...S[k] });
 
 function huidigSeizoen() {
@@ -69,8 +69,10 @@ async function toon(navigatie = false) {
       else if (pad === "/kaart") {
         kaartModule = kaartModule || await import("./kaartpagina.js");
         document.title = `Twente in vogels · ${TITEL}`;
-        const vak = new URLSearchParams(location.search).get("vak");
-        await kaartModule.kaartPagina(app, toestand, { vak: vak ? D.vakUitSlug(vak) : null });
+        const zoek = new URLSearchParams(location.search), vak = zoek.get("vak"), slug = zoek.get("soort");
+        const S = slug ? await D.soorten() : {};
+        const soortKey = slug ? Object.keys(S).find((k) => S[k].slug === slug) : null;
+        await kaartModule.kaartPagina(app, toestand, { vak: vak ? D.vakUitSlug(vak) : null, soort: soortKey });
       } else nietGevonden();
     } catch (err) {
       console.error(err);
@@ -295,7 +297,7 @@ async function home() {
       sub: `In ${MAANDNAMEN[m]} ${getal(r[m])} keer gemeld in Twente${r[m] > gem * 1.4 ? `, ${(r[m] / gem).toLocaleString("nl-NL", { maximumFractionDigits: 1 })} keer zo vaak als in een gemiddelde maand` : ""}.`,
       weetjes: weetjesVoor(soort, [["In Twente", `${getal(soort.n)} meldingen in vijf jaar`]]),
       strook: { label: `${nu.length} soorten nu in Twente`, lijst: nu.map((x) => ({ key: x.key })), href: (slug) => `/?soort=${slug}` },
-      omgeving: { html: kaartjeKlein(K, V, { waarden, label: `Waar de ${klein(soort.nl)} in ${MAANDNAMEN[m]} gemeld wordt` }), href: "/kaart" },
+      omgeving: { html: kaartjeKlein(K, V, { waarden, label: `Waar de ${klein(soort.nl)} in ${MAANDNAMEN[m]} gemeld wordt` }), href: `/kaart?soort=${soort.slug}` },
     })}
     <section class="breed blok">
       <a class="oz-teaser" href="/onderzoekjes" data-link>
@@ -524,7 +526,7 @@ async function soortPagina(slug) {
     sub: `${getal(soort.n)} meldingen in Twente in vijf jaar, in ${vakkenMet} van de ${Object.keys(V).length} vakken.${soort.exoot ? " Ontsnapt of uitgezet." : ""}`,
     weetjes: weetjesVoor(soort, [["In Twente", `${getal(soort.n)} meldingen`]]),
     strook: { label: `${groep.length} ${GROEPNAMEN[soort.groep]?.toLowerCase() || "soorten"}`, lijst: groep.map((k) => ({ key: k })), href: (s) => `/soort/${s}` },
-    omgeving: { html: kaartjeKlein(K, V, { waarden, eigen: toestand.laatsteVak, label: `Waar de ${klein(soort.nl)} in Twente gemeld is` }), href: "/kaart" },
+    omgeving: { html: kaartjeKlein(K, V, { waarden, eigen: toestand.laatsteVak, label: `Waar de ${klein(soort.nl)} in Twente gemeld is` }), href: `/kaart?soort=${soort.slug}` },
   })}
   <section class="breed blok twee">
     <div class="kalender">
