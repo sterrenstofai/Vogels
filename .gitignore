@@ -1,0 +1,7 @@
+__pycache__/
+.xc_key
+.env
+# grote tussenbestanden van de datacheck, opnieuw te maken met de scripts
+datacheck/twente_soorten.json
+datacheck/platen_raw.json
+datacheck/geo/

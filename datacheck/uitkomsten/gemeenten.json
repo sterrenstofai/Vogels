@@ -1,0 +1,722 @@
+{
+ "Almelo": {
+  "km2": 69,
+  "vakken": 9,
+  "obs_geschat": 47444,
+  "obs_aandeel_uit_gedeelde_vakken": 1.0,
+  "obs_maanden": {
+   "1": 6652,
+   "2": 3581,
+   "3": 6852,
+   "4": 6217,
+   "5": 4784,
+   "6": 2894,
+   "7": 2202,
+   "8": 2120,
+   "9": 2162,
+   "10": 2827,
+   "11": 3456,
+   "12": 3697
+  },
+  "obs_soorten_geschat_min1": 183,
+  "obs_soorten_bovengrens": 213,
+  "obs_soorten_ge50": 87,
+  "obs_soorten_kalender": 86,
+  "overig": {
+   "n": 2870,
+   "soorten": 163,
+   "maanden": {
+    "4": 744,
+    "1": 603,
+    "5": 308,
+    "3": 273,
+    "11": 257,
+    "12": 184,
+    "10": 141,
+    "2": 113,
+    "9": 85,
+    "7": 64,
+    "6": 55,
+    "8": 43
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 2808,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 29,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 23,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 10
+   },
+   "aandeel_grootste_waarnemer": 0.56
+  }
+ },
+ "Borne": {
+  "km2": 26,
+  "vakken": 6,
+  "obs_geschat": 6615,
+  "obs_aandeel_uit_gedeelde_vakken": 1.0,
+  "obs_maanden": {
+   "1": 592,
+   "2": 404,
+   "3": 925,
+   "4": 957,
+   "5": 726,
+   "6": 598,
+   "7": 318,
+   "8": 459,
+   "9": 424,
+   "10": 479,
+   "11": 385,
+   "12": 348
+  },
+  "obs_soorten_geschat_min1": 143,
+  "obs_soorten_bovengrens": 205,
+  "obs_soorten_ge50": 38,
+  "obs_soorten_kalender": 33,
+  "overig": {
+   "n": 490,
+   "soorten": 110,
+   "maanden": {
+    "6": 127,
+    "5": 98,
+    "1": 58,
+    "12": 58,
+    "4": 32,
+    "3": 31,
+    "8": 24,
+    "11": 22,
+    "2": 21,
+    "10": 12,
+    "9": 5,
+    "7": 2
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 405,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 73,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 6,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 5,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 1
+   },
+   "aandeel_grootste_waarnemer": 0.52
+  }
+ },
+ "Dinkelland": {
+  "km2": 177,
+  "vakken": 22,
+  "obs_geschat": 48899,
+  "obs_aandeel_uit_gedeelde_vakken": 0.8,
+  "obs_maanden": {
+   "1": 3927,
+   "2": 4322,
+   "3": 10575,
+   "4": 7301,
+   "5": 5488,
+   "6": 3019,
+   "7": 2670,
+   "8": 2470,
+   "9": 2295,
+   "10": 1815,
+   "11": 3028,
+   "12": 1989
+  },
+  "obs_soorten_geschat_min1": 202,
+  "obs_soorten_bovengrens": 233,
+  "obs_soorten_ge50": 111,
+  "obs_soorten_kalender": 111,
+  "overig": {
+   "n": 1941,
+   "soorten": 148,
+   "maanden": {
+    "7": 361,
+    "4": 267,
+    "5": 260,
+    "6": 246,
+    "8": 246,
+    "3": 173,
+    "11": 135,
+    "12": 101,
+    "10": 50,
+    "2": 46,
+    "9": 44,
+    "1": 12
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 1439,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 354,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 115,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 17,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 12,
+    "6ac3f774-d9fb-4796-b3e9-92bf6c81c084": 2,
+    "1711ea40-a09b-43e9-8a3d-8dbbf9bb6387": 1,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 1
+   },
+   "aandeel_grootste_waarnemer": 0.23
+  }
+ },
+ "Enschede": {
+  "km2": 142,
+  "vakken": 14,
+  "obs_geschat": 246529,
+  "obs_aandeel_uit_gedeelde_vakken": 0.71,
+  "obs_maanden": {
+   "1": 22825,
+   "2": 19305,
+   "3": 30242,
+   "4": 40693,
+   "5": 27772,
+   "6": 20997,
+   "7": 13068,
+   "8": 13049,
+   "9": 14085,
+   "10": 14356,
+   "11": 14866,
+   "12": 15270
+  },
+  "obs_soorten_geschat_min1": 237,
+  "obs_soorten_bovengrens": 257,
+  "obs_soorten_ge50": 149,
+  "obs_soorten_kalender": 149,
+  "overig": {
+   "n": 8804,
+   "soorten": 195,
+   "maanden": {
+    "12": 1361,
+    "4": 1227,
+    "10": 1041,
+    "3": 981,
+    "5": 744,
+    "11": 699,
+    "1": 660,
+    "9": 578,
+    "6": 428,
+    "8": 397,
+    "7": 368,
+    "2": 319
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 5970,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 2074,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 681,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 58,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 19,
+    "292a71df-588b-48fa-9ab5-29ae868ba88c": 1,
+    "39ca385b-6f25-402c-aa92-a76c89ecda0a": 1
+   },
+   "aandeel_grootste_waarnemer": 0.28
+  }
+ },
+ "Haaksbergen": {
+  "km2": 105,
+  "vakken": 12,
+  "obs_geschat": 52740,
+  "obs_aandeel_uit_gedeelde_vakken": 0.29,
+  "obs_maanden": {
+   "1": 2836,
+   "2": 2617,
+   "3": 7424,
+   "4": 12233,
+   "5": 10029,
+   "6": 6543,
+   "7": 2864,
+   "8": 1914,
+   "9": 1226,
+   "10": 1830,
+   "11": 1627,
+   "12": 1597
+  },
+  "obs_soorten_geschat_min1": 208,
+  "obs_soorten_bovengrens": 229,
+  "obs_soorten_ge50": 116,
+  "obs_soorten_kalender": 115,
+  "overig": {
+   "n": 3746,
+   "soorten": 168,
+   "maanden": {
+    "4": 908,
+    "5": 690,
+    "6": 535,
+    "3": 532,
+    "11": 263,
+    "8": 174,
+    "7": 168,
+    "10": 129,
+    "12": 111,
+    "9": 94,
+    "2": 80,
+    "1": 62
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 3128,
+    "6ac3f774-d9fb-4796-b3e9-92bf6c81c084": 398,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 157,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 35,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 26,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 2
+   },
+   "aandeel_grootste_waarnemer": 0.18
+  }
+ },
+ "Hellendoorn": {
+  "km2": 139,
+  "vakken": 18,
+  "obs_geschat": 47761,
+  "obs_aandeel_uit_gedeelde_vakken": 0.7,
+  "obs_maanden": {
+   "1": 5052,
+   "2": 4993,
+   "3": 7633,
+   "4": 8911,
+   "5": 5717,
+   "6": 3116,
+   "7": 2308,
+   "8": 1610,
+   "9": 1819,
+   "10": 2087,
+   "11": 1613,
+   "12": 2904
+  },
+  "obs_soorten_geschat_min1": 193,
+  "obs_soorten_bovengrens": 243,
+  "obs_soorten_ge50": 111,
+  "obs_soorten_kalender": 110,
+  "overig": {
+   "n": 4125,
+   "soorten": 178,
+   "maanden": {
+    "12": 533,
+    "3": 495,
+    "4": 465,
+    "6": 432,
+    "5": 409,
+    "1": 407,
+    "10": 328,
+    "11": 328,
+    "2": 246,
+    "9": 236,
+    "8": 133,
+    "7": 113
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 3540,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 306,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 114,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 82,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 81,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 2
+   },
+   "aandeel_grootste_waarnemer": 0.15
+  }
+ },
+ "Hengelo (O)": {
+  "km2": 62,
+  "vakken": 11,
+  "obs_geschat": 48771,
+  "obs_aandeel_uit_gedeelde_vakken": 1.0,
+  "obs_maanden": {
+   "1": 5424,
+   "2": 4229,
+   "3": 5324,
+   "4": 7172,
+   "5": 4782,
+   "6": 3504,
+   "7": 2563,
+   "8": 2881,
+   "9": 3539,
+   "10": 2758,
+   "11": 3057,
+   "12": 3537
+  },
+  "obs_soorten_geschat_min1": 199,
+  "obs_soorten_bovengrens": 249,
+  "obs_soorten_ge50": 98,
+  "obs_soorten_kalender": 96,
+  "overig": {
+   "n": 3156,
+   "soorten": 141,
+   "maanden": {
+    "11": 548,
+    "12": 512,
+    "1": 440,
+    "5": 389,
+    "4": 301,
+    "6": 196,
+    "3": 153,
+    "9": 147,
+    "10": 144,
+    "8": 139,
+    "7": 120,
+    "2": 67
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 2634,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 296,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 181,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 42,
+    "39ca385b-6f25-402c-aa92-a76c89ecda0a": 1,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 1,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 1
+   },
+   "aandeel_grootste_waarnemer": 0.56
+  }
+ },
+ "Hof van Twente": {
+  "km2": 215,
+  "vakken": 23,
+  "obs_geschat": 47803,
+  "obs_aandeel_uit_gedeelde_vakken": 0.71,
+  "obs_maanden": {
+   "1": 5379,
+   "2": 4605,
+   "3": 7942,
+   "4": 7450,
+   "5": 5557,
+   "6": 3250,
+   "7": 2449,
+   "8": 1972,
+   "9": 2440,
+   "10": 1842,
+   "11": 2377,
+   "12": 2539
+  },
+  "obs_soorten_geschat_min1": 205,
+  "obs_soorten_bovengrens": 239,
+  "obs_soorten_ge50": 104,
+  "obs_soorten_kalender": 104,
+  "overig": {
+   "n": 2653,
+   "soorten": 168,
+   "maanden": {
+    "3": 410,
+    "6": 356,
+    "4": 352,
+    "5": 350,
+    "1": 250,
+    "7": 234,
+    "12": 180,
+    "2": 162,
+    "11": 110,
+    "8": 92,
+    "10": 90,
+    "9": 67
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 1797,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 686,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 74,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 68,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 14,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 7,
+    "6ac3f774-d9fb-4796-b3e9-92bf6c81c084": 4,
+    "39ca385b-6f25-402c-aa92-a76c89ecda0a": 2,
+    "1711ea40-a09b-43e9-8a3d-8dbbf9bb6387": 1
+   },
+   "aandeel_grootste_waarnemer": 0.15
+  }
+ },
+ "Losser": {
+  "km2": 99,
+  "vakken": 14,
+  "obs_geschat": 45536,
+  "obs_aandeel_uit_gedeelde_vakken": 0.27,
+  "obs_maanden": {
+   "1": 3954,
+   "2": 4383,
+   "3": 7639,
+   "4": 5463,
+   "5": 4473,
+   "6": 2777,
+   "7": 2438,
+   "8": 2777,
+   "9": 2837,
+   "10": 2547,
+   "11": 2749,
+   "12": 3498
+  },
+  "obs_soorten_geschat_min1": 219,
+  "obs_soorten_bovengrens": 234,
+  "obs_soorten_ge50": 112,
+  "obs_soorten_kalender": 112,
+  "overig": {
+   "n": 8356,
+   "soorten": 135,
+   "maanden": {
+    "11": 1371,
+    "9": 1295,
+    "10": 1059,
+    "8": 854,
+    "4": 804,
+    "3": 587,
+    "12": 585,
+    "1": 528,
+    "2": 456,
+    "7": 373,
+    "5": 237,
+    "6": 207
+   },
+   "datasets": {
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 7337,
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 940,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 49,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 25,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 4,
+    "52f2051b-c47e-403a-8e32-04b2f2273c20": 1
+   },
+   "aandeel_grootste_waarnemer": 0.06
+  }
+ },
+ "Oldenzaal": {
+  "km2": 22,
+  "vakken": 4,
+  "obs_geschat": 6043,
+  "obs_aandeel_uit_gedeelde_vakken": 1.0,
+  "obs_maanden": {
+   "1": 607,
+   "2": 692,
+   "3": 1129,
+   "4": 654,
+   "5": 640,
+   "6": 585,
+   "7": 331,
+   "8": 256,
+   "9": 276,
+   "10": 366,
+   "11": 271,
+   "12": 237
+  },
+  "obs_soorten_geschat_min1": 134,
+  "obs_soorten_bovengrens": 181,
+  "obs_soorten_ge50": 38,
+  "obs_soorten_kalender": 33,
+  "overig": {
+   "n": 83,
+   "soorten": 45,
+   "maanden": {
+    "12": 32,
+    "5": 21,
+    "6": 13,
+    "7": 5,
+    "9": 5,
+    "4": 3,
+    "1": 2,
+    "8": 1,
+    "10": 1
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 71,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 8,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 4
+   },
+   "aandeel_grootste_waarnemer": 0.34
+  }
+ },
+ "Rijssen-Holten": {
+  "km2": 94,
+  "vakken": 14,
+  "obs_geschat": 58489,
+  "obs_aandeel_uit_gedeelde_vakken": 0.93,
+  "obs_maanden": {
+   "1": 5382,
+   "2": 6348,
+   "3": 11501,
+   "4": 11409,
+   "5": 7274,
+   "6": 3436,
+   "7": 2503,
+   "8": 1762,
+   "9": 2253,
+   "10": 2136,
+   "11": 2285,
+   "12": 2200
+  },
+  "obs_soorten_geschat_min1": 199,
+  "obs_soorten_bovengrens": 228,
+  "obs_soorten_ge50": 112,
+  "obs_soorten_kalender": 112,
+  "overig": {
+   "n": 1751,
+   "soorten": 132,
+   "maanden": {
+    "5": 273,
+    "6": 238,
+    "4": 207,
+    "11": 194,
+    "12": 178,
+    "3": 137,
+    "1": 123,
+    "7": 118,
+    "9": 95,
+    "10": 74,
+    "8": 67,
+    "2": 47
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 1095,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 523,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 105,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 22,
+    "6ac3f774-d9fb-4796-b3e9-92bf6c81c084": 6
+   },
+   "aandeel_grootste_waarnemer": 0.13
+  }
+ },
+ "Tubbergen": {
+  "km2": 147,
+  "vakken": 18,
+  "obs_geschat": 24598,
+  "obs_aandeel_uit_gedeelde_vakken": 0.72,
+  "obs_maanden": {
+   "1": 2167,
+   "2": 1678,
+   "3": 3773,
+   "4": 3671,
+   "5": 3105,
+   "6": 2737,
+   "7": 1896,
+   "8": 972,
+   "9": 1402,
+   "10": 1147,
+   "11": 1247,
+   "12": 803
+  },
+  "obs_soorten_geschat_min1": 189,
+  "obs_soorten_bovengrens": 264,
+  "obs_soorten_ge50": 78,
+  "obs_soorten_kalender": 78,
+  "overig": {
+   "n": 1231,
+   "soorten": 115,
+   "maanden": {
+    "6": 267,
+    "5": 254,
+    "7": 161,
+    "4": 128,
+    "1": 126,
+    "8": 75,
+    "12": 67,
+    "11": 54,
+    "2": 46,
+    "9": 26,
+    "3": 18,
+    "10": 9
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 998,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 142,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 55,
+    "6ac3f774-d9fb-4796-b3e9-92bf6c81c084": 19,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 14,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 3
+   },
+   "aandeel_grootste_waarnemer": 0.22
+  }
+ },
+ "Twenterand": {
+  "km2": 108,
+  "vakken": 15,
+  "obs_geschat": 75801,
+  "obs_aandeel_uit_gedeelde_vakken": 0.76,
+  "obs_maanden": {
+   "1": 5166,
+   "2": 4094,
+   "3": 8917,
+   "4": 14423,
+   "5": 14034,
+   "6": 4277,
+   "7": 3744,
+   "8": 4499,
+   "9": 7135,
+   "10": 3939,
+   "11": 2615,
+   "12": 2957
+  },
+  "obs_soorten_geschat_min1": 242,
+  "obs_soorten_bovengrens": 265,
+  "obs_soorten_ge50": 139,
+  "obs_soorten_kalender": 139,
+  "overig": {
+   "n": 6219,
+   "soorten": 216,
+   "maanden": {
+    "4": 1196,
+    "5": 1062,
+    "10": 748,
+    "3": 595,
+    "9": 561,
+    "6": 533,
+    "1": 386,
+    "11": 303,
+    "12": 286,
+    "8": 228,
+    "7": 178,
+    "2": 142
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 5961,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 128,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 83,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 35,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 6,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 5,
+    "292a71df-588b-48fa-9ab5-29ae868ba88c": 1
+   },
+   "aandeel_grootste_waarnemer": 0.36
+  }
+ },
+ "Wierden": {
+  "km2": 95,
+  "vakken": 12,
+  "obs_geschat": 70815,
+  "obs_aandeel_uit_gedeelde_vakken": 0.61,
+  "obs_maanden": {
+   "1": 7039,
+   "2": 7144,
+   "3": 11387,
+   "4": 11031,
+   "5": 7565,
+   "6": 5210,
+   "7": 3775,
+   "8": 3118,
+   "9": 3761,
+   "10": 2936,
+   "11": 3483,
+   "12": 4365
+  },
+  "obs_soorten_geschat_min1": 214,
+  "obs_soorten_bovengrens": 241,
+  "obs_soorten_ge50": 125,
+  "obs_soorten_kalender": 124,
+  "overig": {
+   "n": 1850,
+   "soorten": 160,
+   "maanden": {
+    "4": 375,
+    "5": 301,
+    "9": 245,
+    "6": 215,
+    "3": 202,
+    "12": 113,
+    "7": 79,
+    "8": 74,
+    "10": 66,
+    "11": 64,
+    "1": 60,
+    "2": 56
+   },
+   "datasets": {
+    "4fa7b334-ce0d-4e88-aaae-2e0c138d049e": 1678,
+    "6efaa343-80d2-4581-866a-eaa27bf5e352": 117,
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 44,
+    "6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b": 5,
+    "b1047888-ae52-4179-9dd5-5448ea342a24": 3,
+    "e2fb42ca-e408-4aa2-a7bd-a9bb4ddcc83a": 2,
+    "39ca385b-6f25-402c-aa92-a76c89ecda0a": 1
+   },
+   "aandeel_grootste_waarnemer": 0.17
+  }
+ },
+ "_Twente": {
+  "vakken": 106,
+  "obs_geschat": 827844,
+  "soorten_min1": 319,
+  "soorten_ge50": 219,
+  "soorten_ge500": 139
+ }
+}

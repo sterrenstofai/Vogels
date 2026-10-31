@@ -1,0 +1,814 @@
+{
+ "Rossum, Oranjestraat 1": {
+  "lat": 52.35197,
+  "lon": 6.92325,
+  "stralen": {
+   "500": {
+    "gbif_count": 25,
+    "alles": {
+     "waarnemingen": 25,
+     "soorten": 20,
+     "maanden": {
+      "1": 0,
+      "2": 0,
+      "3": 19,
+      "4": 0,
+      "5": 6,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 19,
+      "501-1000 m": 2,
+      "1-5 km": 4
+     },
+     "licenties": {
+      "by/4.0/legalcode": 19,
+      "by-nc/4.0/legalcode": 6
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 19,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 6
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 25
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 25,
+     "soorten": 20,
+     "maanden": {
+      "1": 0,
+      "2": 0,
+      "3": 19,
+      "4": 0,
+      "5": 6,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 19,
+      "501-1000 m": 2,
+      "1-5 km": 4
+     },
+     "licenties": {
+      "by/4.0/legalcode": 19,
+      "by-nc/4.0/legalcode": 6
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 19,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 6
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 25
+     }
+    },
+    "observation_org_rasterhoeken": []
+   },
+   "1000": {
+    "gbif_count": 29,
+    "alles": {
+     "waarnemingen": 29,
+     "soorten": 21,
+     "maanden": {
+      "1": 0,
+      "2": 0,
+      "3": 19,
+      "4": 0,
+      "5": 6,
+      "6": 4,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 19,
+      "501-1000 m": 2,
+      "1-5 km": 8
+     },
+     "licenties": {
+      "by/4.0/legalcode": 19,
+      "by-nc/4.0/legalcode": 10
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 19,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 10
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 29
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 29,
+     "soorten": 21,
+     "maanden": {
+      "1": 0,
+      "2": 0,
+      "3": 19,
+      "4": 0,
+      "5": 6,
+      "6": 4,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 19,
+      "501-1000 m": 2,
+      "1-5 km": 8
+     },
+     "licenties": {
+      "by/4.0/legalcode": 19,
+      "by-nc/4.0/legalcode": 10
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 19,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 10
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 29
+     }
+    },
+    "observation_org_rasterhoeken": []
+   },
+   "2000": {
+    "gbif_count": 4177,
+    "alles": {
+     "waarnemingen": 4177,
+     "soorten": 111,
+     "maanden": {
+      "1": 273,
+      "2": 428,
+      "3": 958,
+      "4": 421,
+      "5": 618,
+      "6": 268,
+      "7": 383,
+      "8": 228,
+      "9": 106,
+      "10": 93,
+      "11": 248,
+      "12": 153
+     },
+     "uncertainty": {
+      "1-5 km": 4006,
+      "onbekend": 158,
+      "501-1000 m": 13
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 4158,
+      "by/4.0/legalcode": 19
+     },
+     "datasets": {
+      "Observation.org, Nature data from around the World": 4118,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 40,
+      "EOD – eBird Observation Dataset": 19
+     },
+     "vervaagd_volgens_bron": {
+      "WGS84 coordinates generalized with formula: `coord = floor(coord * 20) / 20`": 4094
+     },
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 4177
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 59,
+     "soorten": 22,
+     "maanden": {
+      "1": 0,
+      "2": 0,
+      "3": 19,
+      "4": 0,
+      "5": 11,
+      "6": 26,
+      "7": 3,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 19,
+      "501-1000 m": 13,
+      "1-5 km": 27
+     },
+     "licenties": {
+      "by/4.0/legalcode": 19,
+      "by-nc/4.0/legalcode": 40
+     },
+     "datasets": {
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 40,
+      "EOD – eBird Observation Dataset": 19
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 59
+     }
+    },
+    "observation_org_rasterhoeken": [
+     [
+      52.35,
+      6.9
+     ],
+     [
+      52.35,
+      6.95
+     ]
+    ]
+   }
+  },
+  "observation_org_vak": {
+   "hoek": [
+    52.35,
+    6.9
+   ],
+   "afmeting_km": [
+    5.56,
+    3.4
+   ],
+   "waarnemingen": 1349,
+   "soorten": 90,
+   "maanden": {
+    "1": 51,
+    "2": 49,
+    "3": 395,
+    "4": 136,
+    "5": 192,
+    "6": 74,
+    "7": 148,
+    "8": 113,
+    "9": 31,
+    "10": 13,
+    "11": 108,
+    "12": 39
+   }
+  }
+ },
+ "Enschede, Oude Markt 3A": {
+  "lat": 52.2205,
+  "lon": 6.89491,
+  "stralen": {
+   "500": {
+    "gbif_count": 122,
+    "alles": {
+     "waarnemingen": 122,
+     "soorten": 38,
+     "maanden": {
+      "1": 0,
+      "2": 1,
+      "3": 26,
+      "4": 12,
+      "5": 9,
+      "6": 52,
+      "7": 6,
+      "8": 3,
+      "9": 2,
+      "10": 11,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 77,
+      "<=100 m": 3,
+      ">5 km": 41,
+      "101-500 m": 1
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 92,
+      "by/4.0/legalcode": 30
+     },
+     "datasets": {
+      "iNaturalist Research-grade Observations": 93,
+      "EOD – eBird Observation Dataset": 21,
+      "Birda - Global Observation Dataset": 8
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 122
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 122,
+     "soorten": 38,
+     "maanden": {
+      "1": 0,
+      "2": 1,
+      "3": 26,
+      "4": 12,
+      "5": 9,
+      "6": 52,
+      "7": 6,
+      "8": 3,
+      "9": 2,
+      "10": 11,
+      "11": 0,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 77,
+      "<=100 m": 3,
+      ">5 km": 41,
+      "101-500 m": 1
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 92,
+      "by/4.0/legalcode": 30
+     },
+     "datasets": {
+      "iNaturalist Research-grade Observations": 93,
+      "EOD – eBird Observation Dataset": 21,
+      "Birda - Global Observation Dataset": 8
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 122
+     }
+    },
+    "observation_org_rasterhoeken": []
+   },
+   "1000": {
+    "gbif_count": 332,
+    "alles": {
+     "waarnemingen": 332,
+     "soorten": 53,
+     "maanden": {
+      "1": 2,
+      "2": 2,
+      "3": 81,
+      "4": 45,
+      "5": 46,
+      "6": 68,
+      "7": 38,
+      "8": 12,
+      "9": 12,
+      "10": 21,
+      "11": 2,
+      "12": 3
+     },
+     "uncertainty": {
+      "<=100 m": 23,
+      "onbekend": 245,
+      ">5 km": 41,
+      "101-500 m": 2,
+      "501-1000 m": 21
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 254,
+      "by/4.0/legalcode": 78
+     },
+     "datasets": {
+      "iNaturalist Research-grade Observations": 234,
+      "EOD – eBird Observation Dataset": 69,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 21,
+      "Birda - Global Observation Dataset": 8
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 332
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 332,
+     "soorten": 53,
+     "maanden": {
+      "1": 2,
+      "2": 2,
+      "3": 81,
+      "4": 45,
+      "5": 46,
+      "6": 68,
+      "7": 38,
+      "8": 12,
+      "9": 12,
+      "10": 21,
+      "11": 2,
+      "12": 3
+     },
+     "uncertainty": {
+      "<=100 m": 23,
+      "onbekend": 245,
+      ">5 km": 41,
+      "101-500 m": 2,
+      "501-1000 m": 21
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 254,
+      "by/4.0/legalcode": 78
+     },
+     "datasets": {
+      "iNaturalist Research-grade Observations": 234,
+      "EOD – eBird Observation Dataset": 69,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 21,
+      "Birda - Global Observation Dataset": 8
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 332
+     }
+    },
+    "observation_org_rasterhoeken": []
+   },
+   "2000": {
+    "gbif_count": 1209,
+    "alles": {
+     "waarnemingen": 1209,
+     "soorten": 68,
+     "maanden": {
+      "1": 70,
+      "2": 6,
+      "3": 385,
+      "4": 156,
+      "5": 167,
+      "6": 123,
+      "7": 74,
+      "8": 45,
+      "9": 60,
+      "10": 24,
+      "11": 30,
+      "12": 69
+     },
+     "uncertainty": {
+      "<=100 m": 171,
+      "onbekend": 972,
+      ">5 km": 41,
+      "101-500 m": 4,
+      "501-1000 m": 21
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 1063,
+      "by/4.0/legalcode": 146
+     },
+     "datasets": {
+      "iNaturalist Research-grade Observations": 1043,
+      "EOD – eBird Observation Dataset": 119,
+      "Birda - Global Observation Dataset": 22,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 21,
+      "Xeno-canto - Bird sounds from around the world": 4
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 1209
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 1209,
+     "soorten": 68,
+     "maanden": {
+      "1": 70,
+      "2": 6,
+      "3": 385,
+      "4": 156,
+      "5": 167,
+      "6": 123,
+      "7": 74,
+      "8": 45,
+      "9": 60,
+      "10": 24,
+      "11": 30,
+      "12": 69
+     },
+     "uncertainty": {
+      "<=100 m": 171,
+      "onbekend": 972,
+      ">5 km": 41,
+      "101-500 m": 4,
+      "501-1000 m": 21
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 1063,
+      "by/4.0/legalcode": 146
+     },
+     "datasets": {
+      "iNaturalist Research-grade Observations": 1043,
+      "EOD – eBird Observation Dataset": 119,
+      "Birda - Global Observation Dataset": 22,
+      "Vogeltrekstation (NL) - Longterm data on biometrics of ringed birds": 21,
+      "Xeno-canto - Bird sounds from around the world": 4
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 1209
+     }
+    },
+    "observation_org_rasterhoeken": []
+   }
+  },
+  "observation_org_vak": {
+   "hoek": [
+    52.2,
+    6.85
+   ],
+   "afmeting_km": [
+    5.56,
+    3.41
+   ],
+   "waarnemingen": 52278,
+   "soorten": 143,
+   "maanden": {
+    "1": 3186,
+    "2": 4421,
+    "3": 6632,
+    "4": 8598,
+    "5": 6724,
+    "6": 6022,
+    "7": 3097,
+    "8": 2698,
+    "9": 2920,
+    "10": 3146,
+    "11": 2457,
+    "12": 2377
+   }
+  }
+ },
+ "Engbertsdijksvenen": {
+  "lat": 52.475,
+  "lon": 6.66806,
+  "stralen": {
+   "500": {
+    "gbif_count": 58,
+    "alles": {
+     "waarnemingen": 58,
+     "soorten": 40,
+     "maanden": {
+      "1": 4,
+      "2": 0,
+      "3": 8,
+      "4": 17,
+      "5": 14,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 6,
+      "10": 7,
+      "11": 2,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 56,
+      "101-500 m": 1,
+      "1-5 km": 1
+     },
+     "licenties": {
+      "by/4.0/legalcode": 51,
+      "by-nc/4.0/legalcode": 7
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 51,
+      "Xeno-canto - Bird sounds from around the world": 5,
+      "iNaturalist Research-grade Observations": 2
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 58
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 58,
+     "soorten": 40,
+     "maanden": {
+      "1": 4,
+      "2": 0,
+      "3": 8,
+      "4": 17,
+      "5": 14,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 6,
+      "10": 7,
+      "11": 2,
+      "12": 0
+     },
+     "uncertainty": {
+      "onbekend": 56,
+      "101-500 m": 1,
+      "1-5 km": 1
+     },
+     "licenties": {
+      "by/4.0/legalcode": 51,
+      "by-nc/4.0/legalcode": 7
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 51,
+      "Xeno-canto - Bird sounds from around the world": 5,
+      "iNaturalist Research-grade Observations": 2
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 58
+     }
+    },
+    "observation_org_rasterhoeken": []
+   },
+   "1000": {
+    "gbif_count": 2943,
+    "alles": {
+     "waarnemingen": 2943,
+     "soorten": 182,
+     "maanden": {
+      "1": 201,
+      "2": 9,
+      "3": 294,
+      "4": 802,
+      "5": 620,
+      "6": 130,
+      "7": 44,
+      "8": 59,
+      "9": 297,
+      "10": 358,
+      "11": 60,
+      "12": 69
+     },
+     "uncertainty": {
+      "<=100 m": 14,
+      "onbekend": 2923,
+      ">5 km": 2,
+      "1-5 km": 3,
+      "101-500 m": 1
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 26,
+      "by/4.0/legalcode": 2917
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 2917,
+      "iNaturalist Research-grade Observations": 21,
+      "Xeno-canto - Bird sounds from around the world": 5
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 2943
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 2943,
+     "soorten": 182,
+     "maanden": {
+      "1": 201,
+      "2": 9,
+      "3": 294,
+      "4": 802,
+      "5": 620,
+      "6": 130,
+      "7": 44,
+      "8": 59,
+      "9": 297,
+      "10": 358,
+      "11": 60,
+      "12": 69
+     },
+     "uncertainty": {
+      "<=100 m": 14,
+      "onbekend": 2923,
+      ">5 km": 2,
+      "1-5 km": 3,
+      "101-500 m": 1
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 26,
+      "by/4.0/legalcode": 2917
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 2917,
+      "iNaturalist Research-grade Observations": 21,
+      "Xeno-canto - Bird sounds from around the world": 5
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 2943
+     }
+    },
+    "observation_org_rasterhoeken": []
+   },
+   "2000": {
+    "gbif_count": 3404,
+    "alles": {
+     "waarnemingen": 3404,
+     "soorten": 186,
+     "maanden": {
+      "1": 214,
+      "2": 11,
+      "3": 313,
+      "4": 830,
+      "5": 752,
+      "6": 141,
+      "7": 62,
+      "8": 75,
+      "9": 339,
+      "10": 528,
+      "11": 61,
+      "12": 78
+     },
+     "uncertainty": {
+      "<=100 m": 33,
+      "onbekend": 3351,
+      ">5 km": 2,
+      "101-500 m": 3,
+      "1-5 km": 15
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 61,
+      "by/4.0/legalcode": 3343
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 3338,
+      "iNaturalist Research-grade Observations": 56,
+      "Birda - Global Observation Dataset": 5,
+      "Xeno-canto - Bird sounds from around the world": 5
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 3404
+     }
+    },
+    "zonder_observation_org": {
+     "waarnemingen": 3404,
+     "soorten": 186,
+     "maanden": {
+      "1": 214,
+      "2": 11,
+      "3": 313,
+      "4": 830,
+      "5": 752,
+      "6": 141,
+      "7": 62,
+      "8": 75,
+      "9": 339,
+      "10": 528,
+      "11": 61,
+      "12": 78
+     },
+     "uncertainty": {
+      "<=100 m": 33,
+      "onbekend": 3351,
+      ">5 km": 2,
+      "101-500 m": 3,
+      "1-5 km": 15
+     },
+     "licenties": {
+      "by-nc/4.0/legalcode": 61,
+      "by/4.0/legalcode": 3343
+     },
+     "datasets": {
+      "EOD – eBird Observation Dataset": 3338,
+      "iNaturalist Research-grade Observations": 56,
+      "Birda - Global Observation Dataset": 5,
+      "Xeno-canto - Bird sounds from around the world": 5
+     },
+     "vervaagd_volgens_bron": {},
+     "basisOfRecord": {
+      "HUMAN_OBSERVATION": 3404
+     }
+    },
+    "observation_org_rasterhoeken": []
+   }
+  },
+  "observation_org_vak": {
+   "hoek": [
+    52.45,
+    6.65
+   ],
+   "afmeting_km": [
+    5.56,
+    3.39
+   ],
+   "waarnemingen": 46808,
+   "soorten": 226,
+   "maanden": {
+    "1": 1768,
+    "2": 1533,
+    "3": 5159,
+    "4": 11293,
+    "5": 11495,
+    "6": 2797,
+    "7": 1913,
+    "8": 2734,
+    "9": 3685,
+    "10": 2122,
+    "11": 1262,
+    "12": 1047
+   }
+  }
+ }
+}

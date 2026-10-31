@@ -1,0 +1,982 @@
+[
+ {
+  "gemeente": "Dinkelland",
+  "adres": "Goudkampsweg 13, 7637PR Oud Ootmarsum",
+  "n": 41,
+  "soorten": 34,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Parallelstraat 52, 7575AN Oldenzaal",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Diepenheimseweg 104, 7475MN Markelo",
+  "n": 26,
+  "soorten": 20,
+  "dagen": 9
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "Nijverdalsestraat 165, 7642LE Wierden",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Schalmedenweg 22, 7559RB Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Dokter de Bruynstraat 49, 7576BJ Oldenzaal",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Ruhenbergerweg 35, 7586RE Overdinkel",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Burgemeester Stroinkstraat 395, 7547RH Enschede",
+  "n": 4,
+  "soorten": 4,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Oelerweg 6, 7495PW Ambt Delden",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Zeilkerweg 12, 7625SJ Zenderen",
+  "n": 15,
+  "soorten": 15,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Robert Scottstraat 76, 7534ZT Enschede",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Dinkelland",
+  "adres": "Boschweg 3, 7596PH Rossum",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Wewwelstad 3, 7587PE de Lutte",
+  "n": 7,
+  "soorten": 5,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Stadsweg 18, 7587NZ de Lutte",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "Rijssensestraat 91, 7642NK Wierden",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Beuningerstraat 50, 7588RH Beuningen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Jacob van Lennepstraat 18, 7523BC Enschede",
+  "n": 3,
+  "soorten": 3,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Gravenallee 20a, 7607TB Almelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Dinkelland",
+  "adres": "Oldenzaalsestraat 22, 7596KA Rossum",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Aamsveenweg 100, 7534PN Enschede",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "De Stikker 4, 7462RK Rijssen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Ruwerstraat 12, 7481KV Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Baltinkweg 60, 7548RW Enschede",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Balktsweg 10, 7553ZA Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Oortjesweg 21-Z, 7481PS Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Erve Klöpper 20, 7577SB Oldenzaal",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Burgemeester van der Borchstraat 3, 7451CE Holten",
+  "n": 12,
+  "soorten": 10,
+  "dagen": 10
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Westermaatweg 9, 7610AH Almelo",
+  "n": 3,
+  "soorten": 3,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Deventerweg 91, 7451MC Holten",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Winkelbergweg 28, 7451SH Holten",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Achterhoeksweg 10a, 7608RE Almelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Belvedereweg 5, 7587LV de Lutte",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Everloweg 1, 7587MA de Lutte",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Deventerstraat 7a-TR, Oldenzaal",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Elhorsterweg 4, 7625RX Zenderen",
+  "n": 18,
+  "soorten": 17,
+  "dagen": 4
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Kleine Linderesweg 54, 7531HH Enschede",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Holsmanweg 5, 7667PE Reutum",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Laan '40-'45 56, 7671ML Vriezenveen",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Oldenzaalseweg 84a, 7666LH Fleringen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Höftendiek 6, 7626LL Hertme",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Borgweg 75, 7546PC Enschede",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Schapendijk 43, 7574PG Oldenzaal",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Bavinkelsweg 2, 7601PM Almelo",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Langeloseveenweg 7, 7481VG Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Benteloseweg 7, 7482PN Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "Kartelaarsdijk 6, 7468RZ Enter",
+  "n": 26,
+  "soorten": 20,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Beldhuismolenweg 6, 7562PC Deurningen",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Ververstraat 38, 7481KP Haaksbergen",
+  "n": 25,
+  "soorten": 25,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "De Pol 43, 7581CZ Losser",
+  "n": 14,
+  "soorten": 13,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Klarinet 5, 7651HE Tubbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Dalweg 18a, 7676SC Westerhaar-Vriezenveensewijk",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Dinkelland",
+  "adres": "Laagsestraat 68, 7637PC Oud Ootmarsum",
+  "n": 9,
+  "soorten": 9,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Helhuizerweg 40, 7451KD Holten",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Hammerdijk 14, 7681SJ Vroomshoop",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "De Bleek 9, 7468DK Enter",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Motieweg 21, 7451JG Holten",
+  "n": 17,
+  "soorten": 13,
+  "dagen": 4
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Oude Kalkdijk 40a, 7481SL Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Flierveldsweg 41, 7554SP Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Vosseboerweg 6b, 7683SH Den Ham",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Oude Hengelosedijk 10A, Enschede",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Hengelosestraat 252, 7562PK Deurningen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Beckummerweg 27, 7482ST Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Hertmerweg 39, 7625RH Zenderen",
+  "n": 27,
+  "soorten": 25,
+  "dagen": 8
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Nijenhaerweg 19, 7588RA Beuningen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hellendoorn",
+  "adres": "Hancateweg-Oost 22, 7447TL Hellendoorn",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Vriezenveenseweg 62, 7678VC Geesteren",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Oude Almeloseweg 13, 7576PE Oldenzaal",
+  "n": 26,
+  "soorten": 26,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Koningin Wilhelminastraat 15, 7451DZ Holten",
+  "n": 6,
+  "soorten": 6,
+  "dagen": 4
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Smederijstraat 2a, 7482PZ Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Rijnstraat 42, 7555WK Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Oude Postweg 13, 7495SB Ambt Delden",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Haarweg 3, 7555PC Hengelo",
+  "n": 30,
+  "soorten": 30,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Goedharthof 6, 7604BX Almelo",
+  "n": 6,
+  "soorten": 6,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Oude Buurserdijk 2, 7481PT Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Invalsweg 9A, 7586RB Overdinkel",
+  "n": 25,
+  "soorten": 25,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Hertmerweg 38, 7625RH Zenderen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Paardebloem 14, 7463EL Rijssen",
+  "n": 12,
+  "soorten": 10,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Dennenhof 15, 7679WD Langeveen",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Rondeelweg 32a, 7482RC Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Daarleseweg 34-rw22, 7683RG Den Ham",
+  "n": 15,
+  "soorten": 15,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Munsterdijk 13a, 7481SJ Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Schollinksweg 4, 7678SL Geesteren",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "Het Wendelgoor 3, 7604PJ Almelo",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "De Kalder 35, 7576WD Oldenzaal",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Stegmanweg 2A, 7595MV Weerselo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Steenmorsweg 8b, 7478PM Diepenheim",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Vermolenweg 10, 7678TL Geesteren",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Voortsweg 9, 7663TV Mander",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Schapendrift 11b, 7627RA Bornerbroek",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Julekesweg 5, 7451PB Holten",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Teesinklandenweg 150, 7548PG Enschede",
+  "n": 7,
+  "soorten": 7,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Wilgenkamp 88, 7581HD Losser",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Twickelerblokweg 20, 7621BK Borne",
+  "n": 141,
+  "soorten": 65,
+  "dagen": 87
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Stokkumerweg 17a, Markelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Darwin 10, 7609RL Almelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Ir. Hanlostraat 9A, 7547RD Enschede",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Harmsenweg 15a, 7671EE Vriezenveen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Violenstraat 7, 7572XE Oldenzaal",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Wateregge 6, 7607TH Almelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Okkenbroekseweg 9W, 7451KR Holten",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Zendvelderweg 17a, 7481SH Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Beuningerstraat 57A, 7588RG Beuningen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Ambachtsweg 6, 7451PM Holten",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Stokkumbrink 101, 7544EB Enschede",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Hellendoorn",
+  "adres": "Jipkesbeltweg 30, 7443PN Nijverdal",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Mekkelhorsterstraat 24, 7588PK Beuningen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Schreursweg 5, 7451RG Holten",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Borne",
+  "adres": "Bornerbroeksestraat 103g, 7621AE Borne",
+  "n": 5,
+  "soorten": 5,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Linderweg 3b, 7683PT Den Ham",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Postweg 15, 7574PD Oldenzaal",
+  "n": 3,
+  "soorten": 3,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Broekerveld 1, 7627LB Bornerbroek",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Goorsestraat 49, 7496AC Hengevelde",
+  "n": 4,
+  "soorten": 4,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Enschede",
+  "adres": "Calslaan 60-166, 7522MG Enschede",
+  "n": 145,
+  "soorten": 47,
+  "dagen": 32
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Lutterzandweg 7B, 7587LH de Lutte",
+  "n": 76,
+  "soorten": 38,
+  "dagen": 6
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Lutterzandweg 32, 7588PB Beuningen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Lädderken 10, 7668TC Haarle",
+  "n": 19,
+  "soorten": 17,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Dennenlaan 91, 7461XG Rijssen",
+  "n": 8,
+  "soorten": 8,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Landuwerweg 17-346, 7451SP Holten",
+  "n": 72,
+  "soorten": 37,
+  "dagen": 6
+ },
+ {
+  "gemeente": "Hof van Twente",
+  "adres": "Roudaalterweg 10a, 7475RM Markelo",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Almeloseweg 73-traf, Vriezenveen",
+  "n": 12,
+  "soorten": 12,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Bovenbroeksweg 8a, 7678SP Geesteren",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Dinkelland",
+  "adres": "Bornsedijk 16A, 7561RA Deurningen",
+  "n": 3,
+  "soorten": 2,
+  "dagen": 2
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Molenbinnenweg 7, 7666LR Fleringen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Klaverstraat 33, 7552EV Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Hellendoorn",
+  "adres": "Bonteweg 65, 7441GN Nijverdal",
+  "n": 44,
+  "soorten": 29,
+  "dagen": 4
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Geurdsweg 52, 7554PH Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Twenterand",
+  "adres": "Vierde Blokweg 6, 7681RJ Vroomshoop",
+  "n": 3,
+  "soorten": 3,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Rijssen-Holten",
+  "adres": "Boterbloem 10, 7463EH Rijssen",
+  "n": 12,
+  "soorten": 10,
+  "dagen": 3
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Rozenstraat 81, 7601AN Almelo",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "Goorseweg 8, 7468SJ Enter",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Hengelo (O)",
+  "adres": "Dalmedenweg 12, 7559RA Hengelo",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Aaftinksweg 8a, 7481VV Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Oldenzaal",
+  "adres": "Lindestraat 44, 7572TV Oldenzaal",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Huyerenseweg 33, 7678SC Geesteren",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Tubbergen",
+  "adres": "Broekzijdeweg 9, 7665TB Albergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Haaksbergen",
+  "adres": "Marktvelderweg 2, 7482PC Haaksbergen",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Losser",
+  "adres": "Postweg 23, 7587PB de Lutte",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Wierden",
+  "adres": "Fleuweweg 4, 7468AG Enter",
+  "n": 0,
+  "soorten": 0,
+  "dagen": 0
+ },
+ {
+  "gemeente": "Almelo",
+  "adres": "Ambtstraat 115, 7605ER Almelo",
+  "n": 1,
+  "soorten": 1,
+  "dagen": 1
+ },
+ {
+  "gemeente": "Hellendoorn",
+  "adres": "Boomcateweg 92a, 7442BL Nijverdal",
+  "n": 2,
+  "soorten": 2,
+  "dagen": 2
+ }
+]
