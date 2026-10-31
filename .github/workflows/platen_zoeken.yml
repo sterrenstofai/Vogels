@@ -1,0 +1,29 @@
+name: Platen zoeken
+
+# Zoekt kandidaat-platen op Wikimedia Commons voor soorten zonder plaat
+# en zet de resultaten (json + contactbladen) op de tak 'platen-zoeken', zodat main schoon blijft.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  zoeken:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python3 scripts/platen_zoeken.py werk
+      - name: Op tak platen-zoeken zetten
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B platen-zoeken
+          git add -f werk
+          git commit -m "Kandidaat-platen"
+          git push -f origin platen-zoeken
