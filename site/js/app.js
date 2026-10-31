@@ -598,6 +598,8 @@ async function ontdek() {
 const speler = document.getElementById("speler");
 const spelerDoek = speler.querySelector("canvas");
 let spelerGekoppeld = false;
+const VRAAGTEKEN = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><rect width="48" height="60" fill="#E6E3DA"/><text x="24" y="40" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#9A3B26">?</text></svg>')}`;
+const LEEG_VAKJE = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><rect width="48" height="60" fill="#E6E3DA"/></svg>')}`;
 
 // De soortenlijst staat al klaar, zodat afspelen synchroon in de tik gebeurt (anders blokkeert iOS het geluid).
 let SOORTEN = null;
@@ -605,9 +607,9 @@ D.soorten().then((S) => (SOORTEN = S));
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-speel]");
   if (!b || !SOORTEN) return;
-  G.speel(metKey(SOORTEN, b.dataset.speel), b.dataset.type);
+  G.speel(metKey(SOORTEN, b.dataset.speel), b.dataset.type, { geheim: b.hasAttribute("data-geheim") });
 });
-speler.querySelector(".speler-knop").addEventListener("click", () => { const h = G.huidigeOpname(); if (h) G.speel(h.soort, h.type); });
+speler.querySelector(".speler-knop").addEventListener("click", () => { const h = G.huidigeOpname(); if (h) G.speel(h.soort, h.type, { geheim: h.geheim }); });
 speler.querySelector(".speler-sluit").addEventListener("click", () => G.stop());
 
 function werkKnoppenBij(st) {
@@ -634,11 +636,14 @@ G.opVerandering((st) => {
   if (h) {
     if (!spelerGekoppeld) { G.koppelDoek(spelerDoek); spelerGekoppeld = true; }
     const img = speler.querySelector(".speler-plaat");
-    if (h.soort.plaat) { img.src = h.soort.plaat.klein; img.hidden = false; } else img.hidden = true;
+    // het vakje blijft altijd staan (het hoort bij het raster van de balk); geheim toont een vraagteken
+    img.src = h.geheim ? VRAAGTEKEN : h.soort.plaat ? h.soort.plaat.klein : LEEG_VAKJE;
     const naam = speler.querySelector(".speler-naam");
-    naam.textContent = st.fout || (st.laadt ? `${h.soort.nl} · laden…` : `${h.soort.nl} · ${h.type}`);
+    const wie = h.geheim ? "Welke vogel is dit?" : `${h.soort.nl} · ${h.type}`;
+    naam.textContent = st.fout || (st.laadt ? `${h.geheim ? "Geheime vogel" : h.soort.nl} · laden…` : wie);
     speler.classList.toggle("speler-fout", !!st.fout);
-    naam.href = `/soort/${h.soort.slug}`;
+    speler.classList.toggle("speler-geheim", !!h.geheim);
+    if (h.geheim) naam.removeAttribute("href"); else naam.href = `/soort/${h.soort.slug}`;
     const k = speler.querySelector(".speler-knop");
     k.classList.toggle("speelt", st.speelt);
     k.setAttribute("aria-label", st.speelt ? "Pauzeer" : "Speel verder");

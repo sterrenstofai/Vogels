@@ -44,10 +44,10 @@ export const ONDERZOEKJES = [
 
 /* ---------- Gedeelde stukjes ---------- */
 
-function speelKnop(s, type, tekst = "") {
+function speelKnop(s, type, tekst = "", geheim = false) {
   const t = s[type] ? type : s.zang ? "zang" : "roep";
   if (!s[t]) return "";
-  return `<button class="knop-pil knop-donker knop-groot-pil" type="button" data-speel="${s.key}" data-type="${t}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z" fill="currentColor"/></svg>${tekst || `Luister`}</button>`;
+  return `<button class="knop-pil knop-donker knop-groot-pil" type="button" data-speel="${s.key}" data-type="${t}"${geheim ? " data-geheim" : ""}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z" fill="currentColor"/></svg>${tekst || `Luister`}</button>`;
 }
 function plaatje(s) {
   return s.plaat ? `<img src="${s.plaat.klein}" alt="" loading="lazy" width="480" height="600">` : `<span class="oz-geen">${esc(s.nl)}</span>`;
@@ -308,7 +308,7 @@ async function quiz(werk, toestand) {
     const juist = { key: k, ...S[k] };
     werk.innerHTML = `<div class="oz-quiz">
       <p class="oz-boventitel">Vogel ${ronde + 1} van ${RONDES}${uitVak ? " · uit je eigen vak" : ""}</p>
-      <div class="oz-luister">${speelKnop(juist, "zang", "Luister naar de vogel")}</div>
+      <div class="oz-luister">${speelKnop(juist, "zang", "Luister naar de vogel", true)}</div>
       <div class="oz-keuzes">${keuzes.map((c) => `<button type="button" class="oz-keuze" data-keuze="${c.key}"><span class="oz-keuze-beeld">${plaatje(c)}</span><span class="oz-keuze-naam">${esc(c.nl)}</span></button>`).join("")}</div>
       <p class="oz-feedback"></p></div>`;
     werk.querySelectorAll("[data-keuze]").forEach((b) => b.addEventListener("click", () => {
@@ -365,7 +365,7 @@ async function tekenen(werk, toestand, koppelDoek) {
   koppelDoek(werk.querySelector("canvas"));
   werk.querySelector("[data-geheim]").addEventListener("click", () => {
     geheim = lijst[Math.floor(Math.random() * lijst.length)];
-    G.speel(geheim, geheim.zang ? "zang" : "roep");
+    G.speel(geheim, geheim.zang ? "zang" : "roep", { geheim: true });
     const r = werk.querySelector(".oz-raad"); r.hidden = false; r.querySelector(".oz-feedback").textContent = "";
   });
   werk.querySelectorAll("[data-raad]").forEach((b) => b.addEventListener("click", () => {

@@ -177,7 +177,8 @@ function start() {
 
 // Synchroon in de tik van de gebruiker: iOS staat geluid alleen toe als het direct uit een tik volgt.
 // soort: object uit soorten.json (met key), type: "zang" of "roep"
-export function speel(soort, type) {
+// geheim: de speler en het vergrendelscherm tonen geen naam en geen plaat (voor de quiz)
+export function speel(soort, type, { geheim = false } = {}) {
   const t = soort[type] ? type : (soort.zang ? "zang" : "roep");
   const opname = soort[t];
   if (!opname) return;
@@ -185,10 +186,10 @@ export function speel(soort, type) {
     if (audio.paused) start(); else audio.pause();
     return;
   }
-  huidig = { id: `${soort.slug}:${opname.id}`, soort, opname, type: t, reserves: [...(soort[`${t}_reserve`] || [])] };
+  huidig = { id: `${soort.slug}:${opname.id}`, soort, opname, type: t, geheim, reserves: [...(soort[`${t}_reserve`] || [])] };
   audio.src = opname.bestand;
   if ("mediaSession" in navigator) {
-    navigator.mediaSession.metadata = new MediaMetadata({
+    navigator.mediaSession.metadata = geheim ? new MediaMetadata({ title: "Welke vogel is dit?", artist: "Voggels" }) : new MediaMetadata({
       title: soort.nl, artist: `${t === "zang" ? "Zang" : "Roep"} · opname ${opname.opnemer}`, album: "xeno-canto",
       artwork: soort.plaat ? [{ src: soort.plaat.klein, sizes: "480x600", type: "image/webp" }] : [],
     });

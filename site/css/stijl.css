@@ -40,6 +40,7 @@ body {
 main { flex: 1; outline: none; }
 main:focus, main:focus-visible { outline: none; }
 img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; } /* ook als een stijl display zet */
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .18em; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
 a:hover { text-decoration-color: var(--rood); }
 :focus-visible { outline: 2px solid var(--rood); outline-offset: 3px; border-radius: 4px; }
@@ -582,3 +583,4 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 @keyframes live { 70% { box-shadow: 0 0 0 7px rgb(255 107 94 / 0); } 100% { box-shadow: 0 0 0 0 rgb(255 107 94 / 0); } }
 .sim-nu .sim-maand input, .sim-nu .knop-speel { visibility: hidden; }
 @media (prefers-reduced-motion: reduce) { .sim-live { animation: none; } }
+.speler-geheim .speler-naam { font-style: italic; pointer-events: none; }
