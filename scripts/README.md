@@ -16,3 +16,6 @@ https://nl.wikipedia.org/w/api.php?action=parse&page=Lijst_van_vogels_in_Europa&
 ```
 
 `opnames.py` leest de xeno-canto-sleutel uit `XC_KEY`. Zet de sleutel nooit in de repo.
+
+## vogelmaten.py
+Koppelt lichaamsmaten uit AVONET (Tobias et al. 2022, CC BY 4.0, figshare 16586228) aan onze soorten voor de 3D-schets. Download "AVONET Supplementary dataset 1.xlsx" en draai `python3 scripts/vogelmaten.py pad/naar/bestand.xlsx`. Schrijft site/data/maten.json.
