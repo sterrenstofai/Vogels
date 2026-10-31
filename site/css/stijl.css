@@ -180,6 +180,8 @@ em, i, .wet { font-style: italic; }
   .podium-geluid { padding: 6rem var(--rand) 13.5rem calc(var(--rand) + min(32rem, 38vw) + 2rem); }
   .weergave { left: 50%; transform: translateX(-50%); bottom: 10.6rem; }
   .zoomknoppen { bottom: 14.2rem; }
+  .podium-plaat .lege-plaat { height: 78%; }
+  .podium-plaat.liggend { padding-left: calc(var(--rand) + min(32rem, 38vw) + 2rem); padding-right: calc(var(--rand) + 4.5rem); }
   .rondomknoppen { top: auto; bottom: 14.2rem; }
   .rondom-hint { top: auto; bottom: 8.4rem; left: 50%; transform: translateX(-50%); }
   .rondom-bron { display: block; left: auto; right: var(--rand); top: 6rem; width: 15rem; text-align: right; }

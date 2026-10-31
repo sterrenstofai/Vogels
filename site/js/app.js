@@ -137,10 +137,13 @@ function kaartje(soort, rij, maanden, telling) {
 
 /* ---------- Het scherm: één vogel, de weetjes, de strook en het kaartje ---------- */
 
-const PLAAT_KORT = { Naumann: "Naumann, 1896–1905", Sepp: "Nozeman & Sepp, 1770–1829", Gould: "Gould, 1832–1837" };
+// korte bron voor de weetjes: maker of boek, met de jaren uit de volledige bronregel
+const PLAAT_KORT = [["Sepp", "Nozeman & Sepp"], ["Naumann", "Naumann"], ["Gould", "Gould"], ["Audubon", "Audubon"], ["van Oort", "Ornithologia Neerlandica"],
+  ["Alphéraky", "Alphéraky"], ["Phillips", "Phillips"], ["Égypte", "Description de l'Égypte"], ["Prževalski", "Prževalski"], ["Recueil", "Recueil"]];
 function plaatKort(p) {
-  const k = Object.keys(PLAAT_KORT).find((b) => p.werk.includes(b === "Sepp" ? "Sepp" : b));
-  return k ? PLAAT_KORT[k] : p.werk.split(",")[0];
+  const naam = (PLAAT_KORT.find(([b]) => p.werk.includes(b)) || [, p.werk.split(",")[0]])[1];
+  const jaren = p.werk.match(/\((\d{4}[^)]*|\d{2}e eeuw)\)/);
+  return jaren ? `${naam}, ${jaren[1]}` : naam;
 }
 
 // opties: kop, sub, weetjes [[label, html]], strook {label, lijst [{key, tekst}], href(slug)}, omgeving {html, href, label}
@@ -189,6 +192,11 @@ function bindScherm(root, soort) {
   if (!sch) return;
   const doek = sch.querySelector(".podium-geluid canvas");
   const img = sch.querySelector(".podium-plaat img");
+  // liggende platen schuiven op een breed scherm naast de titel, staande blijven in het midden
+  if (img) {
+    const meet = () => img.closest(".podium-plaat").classList.toggle("liggend", img.naturalWidth > img.naturalHeight * 1.05);
+    if (img.complete && img.naturalWidth) meet(); else img.addEventListener("load", meet, { once: true });
+  }
   let zoom = 0, rondom = null;
   const rondomknoppen = sch.querySelector(".rondomknoppen");
   const toon = (naam) => {
