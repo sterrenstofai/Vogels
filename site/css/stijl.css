@@ -24,18 +24,10 @@
   --ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "Instrument Sans", system-ui, sans-serif;
   --kolom: 38rem;
-  --breed: 76rem;
-  --rand: clamp(1rem, 4vw, 2.5rem);
+  --breed: 100%; /* beeldvullend: geen maximale breedte, alleen een marge aan de zijkant */
+  --rand: clamp(1rem, 3.5vw, 3.5rem);
   --snel: 180ms;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --papier: #15130F; --papier-licht: #1E1B16; --passe: #211E18; --inkt: #E9E1D0; --inkt-zacht: #B3A993; --rood: #D9765C; --rood-licht: #3A231C;
-    --heide: #9FB07F; --arcering: #3A352C;
-    --schaal-0: #211E18; --schaal-1: #2E3326; --schaal-2: #46523A; --schaal-3: #6C7E55; --schaal-4: #9FB07F;
-    color-scheme: dark;
-  }
+  color-scheme: only light; /* altijd licht, ook als het toestel op donker staat */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -385,11 +377,6 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 .tekst li { margin-bottom: .4rem; }
 .kop-eenvoudig { display: flex; align-items: center; justify-content: space-between; padding: max(.8rem, env(safe-area-inset-top)) var(--rand) .8rem; max-width: var(--breed); margin-inline: auto; width: 100%; }
 
-@media (prefers-color-scheme: dark) {
-  .soort-beeld, .strip-beeld, .speler-plaat, .plaat-rand { background: #E6E3DA; }
-  .held-beeld, .held-paneel .plaat-rand { background: #F0EFEA; }
-  .soort-beeld .lege-plaat, .strip-beeld .lege-plaat { color: #1F1B16; }
-}
 @view-transition { navigation: auto; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 
