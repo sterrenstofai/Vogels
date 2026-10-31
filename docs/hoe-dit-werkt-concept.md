@@ -40,7 +40,7 @@ De opnames komen van xeno-canto. Per soort kiezen we een zang- en een roepopname
 
 ## De platen
 
-De platen komen uit Naumann, *Naturgeschichte der Vögel Mitteleuropas* (1896–1905), en waar Naumann ontbreekt of te klein is uit Gould, *The Birds of Europe* (1832–1837). Ze zijn publiek domein en staan op Wikimedia Commons. We hosten ze zelf, zodat je browser daarvoor niet naar Wikimedia hoeft. Een plaat toont soms meer soorten; het onderschrift zegt dan welke.
+De platen komen uit Naumann, *Naturgeschichte der Vögel Mitteleuropas* (1896–1905). Waar Naumann ontbreekt of te klein is, komen ze uit Nozeman & Sepp, *Nederlandsche Vogelen* (1770–1829), in scans van de Koninklijke Bibliotheek, en anders uit Gould, *The Birds of Europe* (1832–1837). Voor een paar soorten gebruiken we een ander oud vogelboek; het onderschrift zegt welk. Alle platen zijn publiek domein en staan op Wikimedia Commons. Heeft een soort geen historische plaat, dan zie je een lege plaat met de reden, bijvoorbeeld omdat de vogel toen nog niet in Nederland voorkwam. We maken geen nieuwe beelden. We hosten ze zelf, zodat je browser daarvoor niet naar Wikimedia hoeft. Een plaat toont soms meer soorten; het onderschrift zegt dan welke.
 
 ## Wat de site niet kan
 

@@ -1086,6 +1086,18 @@
    "ook_op_plaat": [],
    "alternatieven": 1
   },
+  "7340170": {
+   "nl": "Toendrarietgans",
+   "bestand": "File:The geese of Europe and Asia (Plate 13) (7006265416).jpg",
+   "bron": "Alphéraky",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/The_geese_of_Europe_and_Asia_%28Plate_13%29_%287006265416%29.jpg",
+   "breedte": 1720,
+   "hoogte": 1279,
+   "licentie": "Public domain",
+   "notitie": "Alphéraky, The Geese of Europe and Asia (1905), plaat 13 \"Thick-billed Goose\". Bekeken 31-10-2026",
+   "handmatig": true,
+   "pagina": "https://commons.wikimedia.org/wiki/File:The_geese_of_Europe_and_Asia_(Plate_13)_(7006265416).jpg"
+  },
   "2480487": {
    "nl": "Blauwe kiekendief",
    "bestand": "File:Henharrier.jpg",
@@ -1171,6 +1183,18 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Nederlandsche_vogelen_(KB)_-_Tadorna_tadorna_(190b).jpg",
    "ook_op_plaat": [],
    "alternatieven": 2
+  },
+  "2498388": {
+   "nl": "Mandarijneend",
+   "bestand": "File:Recueil de divers oiseaux étrangers et peu communs (Tab. XCIX) BHL41947786.jpg",
+   "bron": "Recueil",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Recueil_de_divers_oiseaux_%C3%A9trangers_et_peu_communs_%28Tab._XCIX%29_BHL41947786.jpg",
+   "breedte": 3302,
+   "hoogte": 5720,
+   "licentie": "Public domain",
+   "notitie": "Recueil de divers oiseaux étrangers et peu communs (18e eeuw). Bekeken 31-10-2026",
+   "handmatig": true,
+   "pagina": "https://commons.wikimedia.org/wiki/File:Recueil_de_divers_oiseaux_étrangers_et_peu_communs_(Tab._XCIX)_BHL41947786.jpg"
   },
   "9015784": {
    "nl": "Kleine bonte specht",
@@ -1758,6 +1782,18 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Anthus_sp.jpg",
    "ook_op_plaat": [],
    "alternatieven": 0
+  },
+  "9751099": {
+   "nl": "Barbarie-eend",
+   "bestand": "File:A natural history of the ducks (Plate 3) (8230109696).jpg",
+   "bron": "Phillips",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/A_natural_history_of_the_ducks_%28Plate_3%29_%288230109696%29.jpg",
+   "breedte": 1744,
+   "hoogte": 1303,
+   "licentie": "Public domain",
+   "notitie": "Phillips, A Natural History of the Ducks, plaat 3 \"Muscovy Duck\". Zwart-wit. Bekeken 31-10-2026",
+   "handmatig": true,
+   "pagina": "https://commons.wikimedia.org/wiki/File:A_natural_history_of_the_ducks_(Plate_3)_(8230109696).jpg"
   },
   "9629160": {
    "nl": "Kruisbek",
@@ -2353,6 +2389,18 @@
    "ook_op_plaat": [],
    "alternatieven": 3
   },
+  "2498035": {
+   "nl": "Indische gans",
+   "bestand": "File:A century of birds from the Himalaya Mountains (TAB. LXXX) (9240085888).jpg",
+   "bron": "Gould",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/A_century_of_birds_from_the_Himalaya_Mountains_%28TAB._LXXX%29_%289240085888%29.jpg",
+   "breedte": 1752,
+   "hoogte": 2732,
+   "licentie": "Public domain",
+   "notitie": "Gould, A Century of Birds from the Himalaya Mountains (1831), \"Anser indica\". Bekeken 31-10-2026",
+   "handmatig": true,
+   "pagina": "https://commons.wikimedia.org/wiki/File:A_century_of_birds_from_the_Himalaya_Mountains_(TAB._LXXX)_(9240085888).jpg"
+  },
   "2481741": {
    "nl": "Krombekstrandloper",
    "bestand": "File:Three Calidris Species by Naumann.jpg",
@@ -2627,15 +2675,21 @@
    "alternatieven": 1
   }
  },
- "lege_plaat": {},
- "gaten": [
-  {
-   "soort": "2495696",
+ "lege_plaat": {
+  "2495696": {
    "nl": "Turkse tortel",
-   "wet": "Streptopelia decaocto",
-   "exoot_of_ontsnapt": false,
-   "waarnemingen_twente": 9069
+   "reden": "De Turkse tortel kwam pas rond 1950 naar Nederland. Naumann en Sepp hebben hem nooit gezien."
   },
+  "2481181": {
+   "nl": "Pontische meeuw",
+   "reden": "In de tijd van Naumann gold deze meeuw nog als zilvermeeuw. Een eigen plaat bestaat niet."
+  },
+  "9413670": {
+   "nl": "Geelpootmeeuw",
+   "reden": "In de tijd van Naumann gold deze meeuw nog als zilvermeeuw. Een eigen plaat bestaat niet."
+  }
+ },
+ "gaten": [
   {
    "soort": "9752617",
    "nl": "Grote zilverreiger",
@@ -2651,27 +2705,6 @@
    "waarnemingen_twente": 2741
   },
   {
-   "soort": "2481181",
-   "nl": "Pontische meeuw",
-   "wet": "Larus cachinnans",
-   "exoot_of_ontsnapt": false,
-   "waarnemingen_twente": 1318
-  },
-  {
-   "soort": "2498388",
-   "nl": "Mandarijneend",
-   "wet": "Aix galericulata",
-   "exoot_of_ontsnapt": true,
-   "waarnemingen_twente": 1002
-  },
-  {
-   "soort": "7340170",
-   "nl": "Toendrarietgans",
-   "wet": "Anser serrirostris",
-   "exoot_of_ontsnapt": false,
-   "waarnemingen_twente": 609
-  },
-  {
    "soort": "2498344",
    "nl": "Zwarte zwaan",
    "wet": "Cygnus atratus",
@@ -2684,20 +2717,6 @@
    "wet": "Anser caerulescens",
    "exoot_of_ontsnapt": false,
    "waarnemingen_twente": 279
-  },
-  {
-   "soort": "9751099",
-   "nl": "Barbarie-eend",
-   "wet": "Cairina moschata",
-   "exoot_of_ontsnapt": true,
-   "waarnemingen_twente": 182
-  },
-  {
-   "soort": "9413670",
-   "nl": "Geelpootmeeuw",
-   "wet": "Larus michahellis",
-   "exoot_of_ontsnapt": false,
-   "waarnemingen_twente": 170
   },
   {
    "soort": "2498387",
@@ -2731,13 +2750,6 @@
    "soort": "2498034",
    "nl": "Zwaangans",
    "wet": "Anser cygnoides",
-   "exoot_of_ontsnapt": true,
-   "waarnemingen_twente": 67
-  },
-  {
-   "soort": "2498035",
-   "nl": "Indische gans",
-   "wet": "Anser indicus",
    "exoot_of_ontsnapt": true,
    "waarnemingen_twente": 67
   },

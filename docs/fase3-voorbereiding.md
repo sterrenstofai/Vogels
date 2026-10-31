@@ -38,18 +38,36 @@ Per soort maximaal drie zang- en drie roepopnames, de eerste is de keuze. Regels
 
 ## Platen (`data/platen.json`)
 
-Regel: minstens 800 px breed; Naumann boven Gould; een plaat met alleen deze soort; publiek domein of "no restrictions"; de grootste.
+Regel: minstens 800 px breed; Naumann, dan Nozeman & Sepp, dan Gould; een plaat met alleen deze soort; publiek domein of "no restrictions"; de grootste. Handmatig gecontroleerde keuzes en lege platen staan in `data/platen_handmatig.json` en gaan voor.
 
-- Met plaat: 184 soorten (156 Naumann, 28 Gould). 14 smaller dan 800 px, 73 smaller dan 1.000 px. 28 platen tonen meer soorten.
-- Steekproef bekeken (merel, buizerd, boerenzwaluw): echte platen. Naumann tekent in een landschap, Gould op een witte achtergrond.
-- Zonder plaat, inheems (33, met waarnemingen in Twente): zwarte kraai (20.972), blauwe reiger (14.099), dodaars (11.608), kuifeend (10.997), Turkse tortel (9.069), geelgors (9.000), grote zilverreiger (8.992), aalscholver (7.223), kraanvogel (6.121), zwarte specht (5.569), gierzwaluw (4.643), kneu (3.788), tafeleend (3.587), veldleeuwerik (2.684), patrijs (2.151), smient (1.883), Pontische meeuw (1.318), kramsvogel (1.131), grote zaagbek (762), visdief (622), toendrarietgans (609), brilduiker (402), sneeuwgans (279), krooneend (263), witoogeend (249), geelpootmeeuw (170), koereiger (127), Humes bladkoning (107), frater (104), topper (100), kleine zilverreiger (76), grote zee-eend (61), roodhalsfuut (54).
-- Zonder plaat, exoot of ontsnapt (10): fazant, grote Canadese gans, mandarijneend, zwarte zwaan, barbarie-eend, Carolina-eend, zwaangans, Indische gans, helmparelhoen, ringtaling.
+| Bron | Soorten |
+|---|---|
+| Naumann, *Naturgeschichte der Vögel Mitteleuropas* (1896–1905) | 146 |
+| Nozeman & Sepp, *Nederlandsche Vogelen* (1770–1829), KB-scans | 52 |
+| Gould, *The Birds of Europe* (1832–37) en *A Century of Birds from the Himalaya* (1831) | 13 |
+| Alphéraky, *The Geese of Europe and Asia* (1905): toendrarietgans | 1 |
+| *Recueil de divers oiseaux étrangers* (18e eeuw): mandarijneend | 1 |
+| Phillips, *A Natural History of the Ducks*: barbarie-eend (zwart-wit) | 1 |
+| **Totaal met plaat** | **214** |
+| Lege plaat met reden: Turkse tortel, Pontische meeuw, geelpootmeeuw | 3 |
+| Nog open | 10 |
+
+- De Sepp-platen hebben oude namen (smient = *Anas penelope*). Daarom staan in `data/namen.json` nu ook GBIF-synoniemen (`scripts/synoniemen.py`).
+- Steekproeven bekeken: merel, buizerd, boerenzwaluw, tafeleend, krooneend, toendrarietgans, mandarijneend, Indische gans, barbarie-eend. Afgekeurd na bekijken: een boekband, een rat ("Mus humii"), een Amerikaanse blauwe reiger, een vol vel met eenden.
+- Nog open: grote zilverreiger, kleine zilverreiger, koereiger, sneeuwgans, Humes bladkoning, grote Canadese gans, zwarte zwaan, Carolina-eend, zwaangans, ringtaling. Voor de Amerikaanse soorten bestaan Audubon-platen (publiek domein); voor de reigers heeft Naumann platen, maar die staan op Commons zonder naam. Met een BHL-API-sleutel zijn ze gericht te vinden.
+- Geen AI-beelden voor ontbrekende soorten: zie `docs/ontwerprichting.md`.
 
 ## Open punten
 
-1. **Platen voor de 33 inheemse gaten.** Naumann heeft vrijwel al deze soorten. Opties: de 188 naamloze Naumann-scans op Commons met de hand koppelen; de Biodiversity Heritage Library (biodiversitylibrary.org op de netwerklijst); of Nozeman & Sepp, *Nederlandsche Vogelen*, als Nederlandse aanvulling.
-2. **Stijlverschil Naumann en Gould.** Accepteren, of alleen Naumann gebruiken en de rest als gat behandelen.
-3. **"Zang" bij eenden, ganzen en andere niet-zangvogels.** xeno-canto noemt sommige opnames "song". Tonen als zang, of bij die groepen alleen "geluid".
-4. **Exoten zonder plaat.** Geen plaat tonen, of een neutrale tekening.
-5. **GBIF-account** voor de maandelijkse download met DOI.
-6. **Werktitel** van de site.
+Besloten op 31 oktober 2026:
+
+1. Bronnen toegevoegd: Nederlandsche Vogelen (KB) en gerichte zoektochten op Commons. BHL vraagt een API-sleutel.
+2. Stijl: Naumann, dan Sepp, dan Gould, verenigd met papiertint en passe-partout (`docs/ontwerprichting.md`).
+3. "Zang" mag ook bij eenden en ganzen.
+4. Geen AI-beelden; soorten zonder historische plaat krijgen een lege plaat met reden.
+
+Nog open:
+
+5. GBIF-account in de GitHub-secrets en de omgeving.
+6. Titel van de site.
+7. De 10 resterende platen.
