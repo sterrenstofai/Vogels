@@ -543,3 +543,22 @@ button.sim-chip { cursor: pointer; min-height: 40px; }
 .oz-stempel-nieuw { animation: stempel 500ms cubic-bezier(.2, 1.6, .4, 1) both; }
 @keyframes stempel { from { transform: rotate(-9deg) scale(1.8); opacity: 0; } to { transform: rotate(-9deg) scale(1); opacity: 1; } }
 .oz-stempel-klein { width: 4.6rem; height: 4.6rem; font-size: 1rem; border-width: 2px; }
+
+/* Onderzoekjes: voortgang, buiten, certificaat */
+.oz-voortgang { margin-top: 1.4rem; display: grid; gap: .5rem; max-width: 34rem; }
+.oz-voortgang-balk { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; }
+.oz-voortgang-balk li { height: 12px; border-radius: 999px; background: var(--passe); position: relative; overflow: hidden; }
+.oz-voortgang-balk li.klaar { background: var(--rood); }
+.oz-voortgang-balk li.hier { box-shadow: 0 0 0 2px var(--papier), 0 0 0 3.5px var(--inkt); }
+.oz-voortgang p { margin: 0; font: 500 .92rem var(--ui); color: var(--inkt-zacht); }
+.oz-buiten { margin-top: 1rem; background: var(--rood-licht); border-radius: 24px; padding: 1.3rem 1.5rem; }
+.oz-buiten h2 { font-size: 1.7rem; margin-bottom: .6rem; }
+.oz-buiten ul { margin: 0; padding-left: 1.2rem; font-size: 1.1rem; }
+.oz-buiten li { margin-bottom: .45rem; }
+.oz-certificaat { margin-top: 2.5rem; display: grid; gap: 1.4rem; align-items: center; background: var(--papier-licht); border: 1.5px solid var(--lijn); border-radius: 28px; padding: 1.6rem; }
+.oz-certificaat h2 { font-size: 2rem; margin-bottom: .4rem; }
+.oz-certificaat .oz-veld { max-width: 24rem; margin: 1rem 0 .4rem; }
+.oz-certificaat-voorbeeld { width: 100%; height: auto; border-radius: 6px; box-shadow: 0 18px 40px -24px rgb(0 0 0 / .45); background: #F8F7F3; }
+.oz-certificaat-dicht { grid-template-columns: 1fr auto; }
+.oz-slot { display: grid; place-items: center; width: 4.6rem; height: 4.6rem; border-radius: 50%; border: 2px dashed var(--lijn); font: 400 2rem var(--kop); color: var(--inkt-zacht); }
+@media (min-width: 900px) { .oz-certificaat:not(.oz-certificaat-dicht) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); } }

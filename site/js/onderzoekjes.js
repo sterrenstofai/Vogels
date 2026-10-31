@@ -1,4 +1,4 @@
-// Onderzoekjes met Fos: zaterdagopdrachten voor kinderen (en hun ouders) rond Voggels.
+// Onderzoekjes met Fos: elke week samen op onderzoek. Een begin op de site, daarna naar buiten.
 // Het logboek staat alleen in de browser van dit apparaat (localStorage), nergens anders.
 import * as D from "./data.js";
 import * as G from "./geluid.js";
@@ -18,22 +18,28 @@ function bewaar(slug, veld, waarde) { const lb = leesLogboek(); lb[slug] = { ...
 export const ONDERZOEKJES = [
   { slug: "wie-zingt-daar", titel: "Wie zingt daar?", kort: "Een geluidsquiz met vogels uit je eigen buurt.",
     nodig: ["Een telefoon of tablet met geluid", "Tien minuten"],
-    stappen: ["Druk op de grote knop en luister goed.", "Kies welke vogel je hoort. Drie platen, één is goed.", "Na vijf vogels zie je je score. Kun je ze daarna ook buiten horen?"] },
+    stappen: ["Druk op de grote knop en luister goed.", "Kies welke vogel je hoort. Drie platen, één is goed.", "Na vijf vogels zie je je score. Kun je ze daarna ook buiten horen?"],
+    buiten: ["Ga samen op een bankje zitten en doe je ogen dicht. Steek een vinger op voor elke vogel die je hoort.", "Waar komt het geluid vandaan? Wijs het aan, en ga dan samen kijken.", "Hoor je een vogel uit de quiz? Dan heb je hem gevonden."] },
   { slug: "tel-je-tuin", titel: "Tel de vogels in je tuin", kort: "Een kwartier stil zitten en turven.",
     nodig: ["Een raam of een plek in de tuin", "Een kwartier", "Een verrekijker als je die hebt"],
-    stappen: ["Ga ergens zitten waar je de tuin of straat goed ziet.", "Tel een kwartier lang hoeveel vogels je van elke soort tegelijk ziet. Tik op + bij elke vogel.", "Vergelijk daarna met wat de site verwacht. Zag je iets dat niet in de lijst staat?"] },
+    stappen: ["Ga ergens zitten waar je de tuin of straat goed ziet.", "Tel een kwartier lang hoeveel vogels je van elke soort tegelijk ziet. Tik op + bij elke vogel.", "Vergelijk daarna met wat de site verwacht. Zag je iets dat niet in de lijst staat?"],
+    buiten: ["Leg een halve appel of wat zaadjes neer en ga op afstand zitten. Wie komt er eten?", "Fos zet een streepje op papier voor elke vogel, jij schrijft de naam erbij.", "Welke vogel is de grootste? En welke de kleinste?"] },
   { slug: "teken-een-liedje", titel: "Teken een liedje", kort: "Vogelgeluid kun je zien. Teken het na.",
     nodig: ["Papier en een potlood", "Geluid aan"],
-    stappen: ["Kies een vogel en kijk naar de vlekjes die verschijnen. Hoog is een hoge toon, donker is hard.", "Teken het liedje na op papier. Is het een streepje, een boogje of een hoop puntjes?", "Daarna het raadspel: papa of mama verstopt de naam, jij raadt welke vogel het is aan het plaatje van het geluid."] },
+    stappen: ["Kies een vogel en kijk naar de vlekjes die verschijnen. Hoog is een hoge toon, donker is hard.", "Teken het liedje na op papier. Is het een streepje, een boogje of een hoop puntjes?", "Daarna het raadspel: papa of mama verstopt de naam, jij raadt welke vogel het is aan het plaatje van het geluid."],
+    buiten: ["Fluit samen een vogel na. Hoog en snel, of laag en langzaam?", "Teken het liedje met stoepkrijt op de stoep: puntjes voor korte tonen, strepen voor lange.", "Luister of een echte vogel antwoordt."] },
   { slug: "wanneer-komen-ze", titel: "Wanneer komt de gierzwaluw?", kort: "Sommige vogels zijn er maar een paar maanden. Raad welke.",
     nodig: ["Vijf minuten", "Een beetje lef om te gokken"],
-    stappen: ["Kijk naar de vogel en raad in welke maand hij het meest in Twente gezien wordt.", "Tik op een maand. Dan zie je het echte antwoord uit vijf jaar meldingen.", "Weet je waar hij de rest van het jaar is?"] },
+    stappen: ["Kijk naar de vogel en raad in welke maand hij het meest in Twente gezien wordt.", "Tik op een maand. Dan zie je het echte antwoord uit vijf jaar meldingen.", "Weet je waar hij de rest van het jaar is?"],
+    buiten: ["Kijk in mei en juni 's avonds omhoog. Hoor je hoog gegil boven de daken? Dat zijn gierzwaluwen.", "Zie je in de herfst vogels in een lange rij of een V vliegen? Die gaan op reis.", "Hang een kalender op en zet een tekening bij de dag dat je een vogel voor het eerst ziet."] },
   { slug: "detective-op-de-kaart", titel: "Detective op de kaart", kort: "Los drie raadsels op met de simulatiekaart.",
     nodig: ["De simulatiekaart", "Een kwartier"],
-    stappen: ["Open de kaart en speel het jaar af.", "Zoek het antwoord op elke vraag. Schrijf je gok op.", "Kijk daarna wat de meldingen zeggen."] },
+    stappen: ["Open de kaart en speel het jaar af.", "Zoek het antwoord op elke vraag. Schrijf je gok op.", "Kijk daarna wat de meldingen zeggen."],
+    buiten: ["Ga op sporenjacht: een veer, een pluk dons, poep op een tak, een leeg eitje.", "Zie je een nest in een heg of boom? Kijken mag, aanraken niet.", "Neem een veer mee naar huis en leg hem bij je logboek."] },
   { slug: "het-oudste-vogelboek", titel: "Het oudste vogelboek", kort: "Deze plaat is meer dan tweehonderd jaar oud. Klopt hij nog?",
     nodig: ["Een merel of roodborst in het echt, of een foto", "Kleurpotloden"],
-    stappen: ["Kijk goed naar de oude plaat. Hij is getekend in de tijd dat er nog geen fototoestellen waren.", "Zoek een echte merel of roodborst in de tuin of het park.", "Schrijf op wat hetzelfde is en wat anders. Teken daarna zelf een plaat voor een nieuw vogelboek."] },
+    stappen: ["Kijk goed naar de oude plaat. Hij is getekend in de tijd dat er nog geen fototoestellen waren.", "Zoek een echte merel of roodborst in de tuin of het park.", "Schrijf op wat hetzelfde is en wat anders. Teken daarna zelf een plaat voor een nieuw vogelboek."],
+    buiten: ["Zoek een merel. Is hij zwart met een gele snavel? Dan is het een meneer. Bruin? Dan een mevrouw.", "Tel hoeveel kleuren je op een roodborst ziet.", "Teken thuis samen de vogel van vandaag. Fos kleurt."] },
 ];
 
 /* ---------- Gedeelde stukjes ---------- */
@@ -65,9 +71,10 @@ export async function overzicht(app) {
   const klaar = ONDERZOEKJES.filter((o) => lb[o.slug]?.klaar).length;
   app.innerHTML = `
   <section class="breed oz-held">
-    <p class="oz-boventitel">Voor zaterdagochtend</p>
+    <p class="oz-boventitel">Elke week op onderzoek</p>
     <h1>Onderzoekjes <em>met Fos</em></h1>
-    <p class="held-sub">Zes opdrachten om samen te doen, buiten en op deze site. Je hebt geen verrekijker nodig, wel oren en een beetje geduld. ${klaar ? `Al ${klaar} van de ${ONDERZOEKJES.length} gedaan.` : "Begin waar je wilt."}</p>
+    <p class="held-sub">Elke week gaan Fos (4) en ik samen op onderzoek. Deze zes opdrachten zijn ons begin: eerst even luisteren of kijken op de site, dan naar buiten om het echt te horen en te zien. Je hebt geen verrekijker nodig, wel oren, ogen en een beetje geduld. Begin waar je wilt.</p>
+    ${voortgang(lb)}
   </section>
   <section class="breed oz-lijst">
     ${ONDERZOEKJES.map((o, i) => `
@@ -77,7 +84,132 @@ export async function overzicht(app) {
         ${lb[o.slug]?.klaar ? `<span class="oz-stempel oz-stempel-klein" aria-label="Gedaan">Gedaan</span>` : `<span class="oz-pijl" aria-hidden="true">→</span>`}
       </a>`).join("")}
   </section>
-  <section class="breed oz-noot"><p class="zacht">Wat je invult en welke onderzoekjes klaar zijn, blijft op dit apparaat. Het gaat niet naar ons of naar iemand anders.</p></section>`;
+  ${certificaatBlok(lb)}
+  <section class="breed oz-noot"><p class="zacht">Wat je invult, welke onderzoekjes klaar zijn en de naam op het certificaat blijven op dit apparaat. Het gaat niet naar ons of naar iemand anders.</p></section>`;
+  bindCertificaat(app);
+  if (location.hash === "#certificaat") requestAnimationFrame(() => document.getElementById("certificaat")?.scrollIntoView({ block: "start" }));
+}
+
+/* ---------- Voortgang en certificaat ---------- */
+
+function aantalKlaar(lb) { return ONDERZOEKJES.filter((o) => lb[o.slug]?.klaar).length; }
+
+function voortgang(lb, huidig = null) {
+  const n = aantalKlaar(lb), totaal = ONDERZOEKJES.length;
+  return `<div class="oz-voortgang" role="progressbar" aria-label="Voortgang" aria-valuemin="0" aria-valuemax="${totaal}" aria-valuenow="${n}">
+    <ol class="oz-voortgang-balk">${ONDERZOEKJES.map((o, i) => `<li class="${lb[o.slug]?.klaar ? "klaar" : ""}${o.slug === huidig ? " hier" : ""}" title="${esc(o.titel)}"><span class="sr">${i + 1}. ${esc(o.titel)}${lb[o.slug]?.klaar ? ", gedaan" : ""}</span></li>`).join("")}</ol>
+    <p>${n === totaal ? `Alle ${totaal} gedaan. Tijd voor je certificaat!` : `${n} van de ${totaal} gedaan${n ? `, nog ${totaal - n} te gaan` : ""}.`}</p>
+  </div>`;
+}
+
+function certificaatBlok(lb) {
+  const n = aantalKlaar(lb), totaal = ONDERZOEKJES.length;
+  if (n < totaal) {
+    return `<section class="breed" id="certificaat"><div class="oz-certificaat oz-certificaat-dicht">
+      <div><h2>Certificaat</h2><p>Zet bij alle ${totaal} onderzoekjes de stempel, dan krijg je hier een certificaat met je naam. Om te printen en op te hangen.</p></div>
+      <span class="oz-slot" aria-hidden="true">${totaal - n}</span>
+    </div></section>`;
+  }
+  return `<section class="breed" id="certificaat"><div class="oz-certificaat">
+    <div><h2>Je certificaat</h2><p>Alle onderzoekjes zijn gedaan. Vul de naam van de onderzoeker in en download het certificaat.</p>
+    <label class="oz-veld"><span>Naam</span><input type="text" maxlength="40" autocomplete="off" value="${esc(lb._naam || "")}" placeholder="Bijvoorbeeld Fos"></label>
+    <p><button class="knop-pil knop-accent" type="button" data-certificaat>Download certificaat</button></p></div>
+    <canvas class="oz-certificaat-voorbeeld" width="1240" height="877" aria-label="Voorbeeld van het certificaat"></canvas>
+  </div></section>`;
+}
+
+function bindCertificaat(app) {
+  const knop = app.querySelector("[data-certificaat]");
+  if (!knop) return;
+  const veld = app.querySelector(".oz-certificaat input"), voorbeeld = app.querySelector(".oz-certificaat-voorbeeld");
+  const ververs = () => tekenCertificaat(voorbeeld, veld.value.trim(), leesLogboek());
+  veld.addEventListener("input", () => {
+    const lb = leesLogboek(); lb._naam = veld.value.trim(); schrijfLogboek(lb);
+    ververs();
+  });
+  ververs();
+  knop.addEventListener("click", async () => {
+    const naam = veld.value.trim();
+    if (!naam) { veld.focus(); veld.placeholder = "Eerst een naam invullen"; return; }
+    const doek = document.createElement("canvas");
+    doek.width = 3508; doek.height = 2480; // A4 liggend, 300 dpi
+    await tekenCertificaat(doek, naam, leesLogboek());
+    doek.toBlob((blob) => {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `certificaat-vogelonderzoeker-${naam.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "voggels"}.png`;
+      document.body.append(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    }, "image/png");
+  });
+}
+
+let plaatBeeld = null;
+function laadPlaat() {
+  if (!plaatBeeld) plaatBeeld = new Promise((ok) => { const i = new Image(); i.onload = () => ok(i); i.onerror = () => ok(null); i.src = "/platen/roodborst.webp"; });
+  return plaatBeeld;
+}
+
+async function tekenCertificaat(doek, naam, lb) {
+  await Promise.all([
+    document.fonts.load('400 100px "Bodoni Moda"'), document.fonts.load('italic 400 100px "Bodoni Moda"'),
+    document.fonts.load('400 40px "Source Serif 4"'), document.fonts.load('600 40px "Instrument Sans"'),
+  ]).catch(() => {});
+  const plaat = await laadPlaat();
+  const W = doek.width, H = doek.height, u = W / 1000, c = doek.getContext("2d");
+  const inkt = "#1F1B16", rood = "#9A3B26", zacht = "#5E564C";
+  c.fillStyle = "#F8F7F3"; c.fillRect(0, 0, W, H);
+  // dubbele rand
+  c.strokeStyle = rood; c.lineWidth = 2.4 * u; c.strokeRect(22 * u, 22 * u, W - 44 * u, H - 44 * u);
+  c.lineWidth = 0.8 * u; c.strokeRect(30 * u, 30 * u, W - 60 * u, H - 60 * u);
+  // plaat rechts
+  if (plaat) {
+    const ph = H - 150 * u, pw = (ph * plaat.naturalWidth) / plaat.naturalHeight;
+    c.globalCompositeOperation = "multiply";
+    c.drawImage(plaat, W - 60 * u - pw, 75 * u, pw, ph);
+    c.globalCompositeOperation = "source-over";
+  }
+  const x = 80 * u;
+  c.fillStyle = rood; c.textBaseline = "alphabetic";
+  c.font = `600 ${13 * u}px "Instrument Sans", sans-serif`;
+  c.fillText("VOGGELS · ONDERZOEKJES MET FOS", x, 120 * u);
+  c.fillStyle = inkt;
+  c.font = `400 ${74 * u}px "Bodoni Moda", serif`;
+  c.fillText("Certificaat", x, 205 * u);
+  c.font = `400 ${22 * u}px "Source Serif 4", serif`; c.fillStyle = zacht;
+  c.fillText("Dit certificaat is voor", x, 268 * u);
+  // naam, kleiner als hij lang is
+  c.fillStyle = rood;
+  let maat = 92;
+  do { c.font = `italic 400 ${maat * u}px "Bodoni Moda", serif`; maat -= 4; } while (c.measureText(naam || " ").width > 470 * u && maat > 30);
+  c.fillText(naam || "", x, 360 * u);
+  c.strokeStyle = inkt; c.lineWidth = 0.8 * u;
+  c.beginPath(); c.moveTo(x, 385 * u); c.lineTo(x + 470 * u, 385 * u); c.stroke();
+  c.fillStyle = inkt; c.font = `400 ${19 * u}px "Source Serif 4", serif`;
+  const regels = ["heeft als echte vogelonderzoeker alle zes", "onderzoekjes gedaan: luisteren, tellen, tekenen,", "raden, speuren en vergelijken."];
+  regels.forEach((r, i) => c.fillText(r, x, 425 * u + i * 27 * u));
+  // de zes onderzoekjes met datum
+  c.font = `400 ${15 * u}px "Source Serif 4", serif`;
+  ONDERZOEKJES.forEach((o, i) => {
+    const kol = i % 2, rij = Math.floor(i / 2), bx = x + kol * 245 * u, by = 535 * u + rij * 38 * u;
+    c.fillStyle = rood; c.font = `400 ${24 * u}px "Bodoni Moda", serif`; c.fillText(String(i + 1), bx, by);
+    c.fillStyle = inkt; c.font = `400 ${15 * u}px "Source Serif 4", serif`; c.fillText(o.titel, bx + 26 * u, by - 4 * u);
+    c.fillStyle = zacht; c.font = `500 ${11 * u}px "Instrument Sans", sans-serif`; c.fillText(lb[o.slug]?.klaar || "", bx + 26 * u, by + 12 * u);
+  });
+  // stempel
+  const sx = W - 330 * u, sy = H - 150 * u;
+  c.save(); c.translate(sx, sy); c.rotate(-0.16);
+  c.strokeStyle = rood; c.fillStyle = rood; c.lineWidth = 2 * u;
+  c.beginPath(); c.arc(0, 0, 58 * u, 0, Math.PI * 2); c.stroke();
+  c.lineWidth = 0.8 * u; c.beginPath(); c.arc(0, 0, 51 * u, 0, Math.PI * 2); c.stroke();
+  c.textAlign = "center";
+  c.font = `italic 500 ${26 * u}px "Bodoni Moda", serif`; c.fillText("Gedaan", 0, 6 * u);
+  c.font = `600 ${8.5 * u}px "Instrument Sans", sans-serif`; c.fillText("VOGELONDERZOEKER", 0, 26 * u);
+  c.restore();
+  c.textAlign = "left";
+  c.fillStyle = zacht; c.font = `500 ${11 * u}px "Instrument Sans", sans-serif`;
+  const d = new Date();
+  c.fillText(`Twente, ${d.getDate()} ${MAANDNAMEN[d.getMonth()]} ${d.getFullYear()} · voggels.netlify.app · plaat: roodborst uit Nederlandsche Vogelen (1770–1829)`, x, H - 62 * u);
 }
 
 /* ---------- Eén onderzoekje ---------- */
@@ -93,11 +225,16 @@ export async function onderzoekje(app, slug, toestand, koppelDoek) {
     <p class="oz-boventitel">Onderzoekje ${i + 1} van ${ONDERZOEKJES.length}</p>
     <h1>${esc(o.titel)}</h1>
     <p class="held-sub">${esc(o.kort)}</p>
+    ${voortgang(leesLogboek(), slug)}
   </section>
   <section class="breed oz-twee">
     <div class="oz-blok"><h2>Wat heb je nodig?</h2><ul>${o.nodig.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>
     <div class="oz-blok"><h2>Zo doe je het</h2><ol>${o.stappen.map((n) => `<li>${esc(n)}</li>`).join("")}</ol></div>
   </section>
+  <section class="breed"><div class="oz-buiten">
+    <h2>En dan naar buiten</h2>
+    <ul>${o.buiten.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
+  </div></section>
   <section class="breed oz-werk" aria-live="polite"></section>
   <section class="breed oz-logboek">
     <h2>Logboek</h2>
@@ -112,7 +249,9 @@ export async function onderzoekje(app, slug, toestand, koppelDoek) {
     const d = new Date();
     const tekst = `${d.getDate()} ${MAANDNAMEN[d.getMonth()]} ${d.getFullYear()}`;
     bewaar(slug, "klaar", tekst);
-    app.querySelector(".oz-klaar").innerHTML = `<span class="oz-stempel oz-stempel-nieuw">Gedaan<small>${tekst}</small></span>`;
+    const alles = aantalKlaar(leesLogboek()) === ONDERZOEKJES.length;
+    app.querySelector(".oz-klaar").innerHTML = `<span class="oz-stempel oz-stempel-nieuw">Gedaan<small>${tekst}</small></span>${alles ? `<a class="knop-pil knop-accent" href="/onderzoekjes#certificaat" data-link>Alles gedaan! Haal je certificaat</a>` : ""}`;
+    app.querySelector(".oz-voortgang").outerHTML = voortgang(leesLogboek(), slug);
   });
   const werk = app.querySelector(".oz-werk");
   const doe = { "wie-zingt-daar": quiz, "tel-je-tuin": telling, "teken-een-liedje": tekenen, "wanneer-komen-ze": raadMaand, "detective-op-de-kaart": detective, "het-oudste-vogelboek": oudBoek }[slug];

@@ -291,7 +291,7 @@ async function home() {
     })}
     <section class="breed blok">
       <a class="oz-teaser" href="/onderzoekjes" data-link>
-        <span class="oz-teaser-tekst"><span class="oz-boventitel">Voor zaterdagochtend</span><strong>Onderzoekjes met Fos</strong><span>Zes opdrachten om samen te doen: een geluidsquiz, je tuin tellen, een liedje tekenen en meer.</span></span>
+        <span class="oz-teaser-tekst"><span class="oz-boventitel">Elke week op onderzoek</span><strong>Onderzoekjes met Fos</strong><span>Zes opdrachten om samen met een kleine onderzoeker te doen: eerst op de site, dan buiten. Met een certificaat als alles af is.</span></span>
         <span class="knop-pil knop-accent">Begin</span>
       </a>
     </section>
