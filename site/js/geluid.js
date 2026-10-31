@@ -42,7 +42,7 @@ function fft(re, im) {
 }
 
 function inktRgb() {
-  const v = getComputedStyle(document.documentElement).getPropertyValue("--inkt").trim() || "#1F1B16";
+  const v = getComputedStyle(document.documentElement).getPropertyValue("--inkt").trim() || "#232323";
   const h = v.replace("#", "");
   return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
 }

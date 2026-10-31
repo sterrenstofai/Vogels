@@ -173,9 +173,9 @@ export class Rondom {
     this.rustSinds = 0;
     this.loopt = false;
     this.maten = true;
-    this.inkt = getComputedStyle(document.documentElement).getPropertyValue("--inkt").trim() || "#1F1B16";
-    this.papier = getComputedStyle(document.documentElement).getPropertyValue("--papier").trim() || "#F0EFEA";
-    this.rood = getComputedStyle(document.documentElement).getPropertyValue("--rood").trim() || "#9A3B26";
+    this.inkt = getComputedStyle(document.documentElement).getPropertyValue("--inkt").trim() || "#232323";
+    this.papier = getComputedStyle(document.documentElement).getPropertyValue("--papier").trim() || "#FFFFFF";
+    this.rood = getComputedStyle(document.documentElement).getPropertyValue("--rood").trim() || "#232323";
     new ResizeObserver(() => { this.maat(); this.wek(); }).observe(paneel);
 
     let vorige = null;
@@ -324,10 +324,10 @@ export class Rondom {
       c.stroke();
     }
 
-    // maatlijnen in rood, zoals op een bouwtekening
+    // maatlijnen gestippeld, zoals op een bouwtekening
     if (this.maten) {
-      c.globalAlpha = 0.9; c.strokeStyle = this.rood; c.fillStyle = this.rood; c.lineWidth = dpr;
-      c.font = `500 ${11 * dpr}px "Instrument Sans", system-ui, sans-serif`;
+      c.globalAlpha = 0.9; c.strokeStyle = this.rood; c.fillStyle = this.rood; c.lineWidth = dpr; c.setLineDash([3 * dpr, 3 * dpr]);
+      c.font = `500 ${11 * dpr}px "Geist Mono", ui-monospace, monospace`;
       for (const ml of maatlijnen) {
         if (!ml) continue;
         const [x0, y0] = proj(ml.van), [x1, y1] = proj(ml.naar);
@@ -347,6 +347,7 @@ export class Rondom {
       }
     }
 
+    c.setLineDash([]);
     // liniaal rechts, vast op het scherm: echte centimeters
     c.globalAlpha = 0.55; c.strokeStyle = this.inkt; c.fillStyle = this.inkt; c.lineWidth = dpr;
     const lx = smal ? W - 18 * dpr : Math.min(W - 40 * dpr, cx + maxR * schaal * 1.25);
@@ -354,7 +355,7 @@ export class Rondom {
     const stap = [5, 10, 20, 50, 100, 200, 500].find((s) => (s * schaal) / dpr > 9) || 1000;
     const label = stap * 5;
     c.beginPath(); c.moveTo(lx, cy); c.lineTo(lx, cy - Math.min(hoogteMm, maxY * 1.25) * schaal); c.stroke();
-    c.font = `500 ${10 * dpr}px "Instrument Sans", system-ui, sans-serif`; c.textAlign = "left"; c.textBaseline = "middle";
+    c.font = `500 ${10 * dpr}px "Geist Mono", ui-monospace, monospace`; c.textAlign = "left"; c.textBaseline = "middle";
     for (let mm = 0; mm <= Math.min(hoogteMm, maxY * 1.25); mm += stap) {
       const y = cy - mm * schaal, groot = mm % label === 0;
       c.beginPath(); c.moveTo(lx, y); c.lineTo(lx - (groot ? 8 : 4) * dpr, y); c.stroke();

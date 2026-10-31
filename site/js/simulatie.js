@@ -332,7 +332,7 @@ export class Simulatie {
     const c = this.basisDoek.getContext("2d");
     const d = this.dpr;
     c.setTransform(d, 0, 0, d, 0, 0);
-    c.fillStyle = "#0E120E";
+    c.fillStyle = "#1A1A1A";
     c.fillRect(0, 0, this.vw, this.ch);
     const pad = (ringen) => {
       for (const r of ringen) {
@@ -391,7 +391,7 @@ export class Simulatie {
     if (bc) {
       const sch = this.cam.z / bc.z;
       const [bx, by] = [this.vw / 2 + (bc.lon - this.cam.lon) * COS * this.cam.z, this.oy + (this.cam.lat - bc.lat) * this.cam.z];
-      c.fillStyle = "#0E120E"; c.fillRect(0, 0, this.doek.width, this.doek.height);
+      c.fillStyle = "#1A1A1A"; c.fillRect(0, 0, this.doek.width, this.doek.height);
       c.setTransform(d * sch, 0, 0, d * sch, d * (bx - this.vw / 2 * sch), d * (by - this.oy * sch));
       c.drawImage(this.basisDoek, 0, 0, this.vw, this.ch);
     }
@@ -412,8 +412,8 @@ export class Simulatie {
     c.globalAlpha = 1;
     if (this.pin) {
       const [x, y] = this.naarDoek(this.pin.lon, this.pin.lat);
-      c.beginPath(); c.arc(x, y, 7, 0, Math.PI * 2); c.fillStyle = "#9A3B26"; c.fill();
-      c.lineWidth = 2.5; c.strokeStyle = "#F3EDE1"; c.stroke();
+      c.beginPath(); c.arc(x, y, 7, 0, Math.PI * 2); c.fillStyle = "#A1FFCB"; c.fill();
+      c.lineWidth = 2.5; c.strokeStyle = "#232323"; c.stroke();
     }
   }
 

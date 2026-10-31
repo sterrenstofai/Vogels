@@ -598,8 +598,8 @@ async function ontdek() {
 const speler = document.getElementById("speler");
 const spelerDoek = speler.querySelector("canvas");
 let spelerGekoppeld = false;
-const VRAAGTEKEN = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><rect width="48" height="60" fill="#E6E3DA"/><text x="24" y="40" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#9A3B26">?</text></svg>')}`;
-const LEEG_VAKJE = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><rect width="48" height="60" fill="#E6E3DA"/></svg>')}`;
+const VRAAGTEKEN = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><rect width="48" height="60" fill="#D9D9D9"/><text x="24" y="40" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="28" fill="#232323">?</text></svg>')}`;
+const LEEG_VAKJE = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><rect width="48" height="60" fill="#D9D9D9"/></svg>')}`;
 
 // De soortenlijst staat al klaar, zodat afspelen synchroon in de tik gebeurt (anders blokkeert iOS het geluid).
 let SOORTEN = null;
