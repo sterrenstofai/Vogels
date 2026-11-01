@@ -805,3 +805,4 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 @keyframes nee { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
 .kids-ballon.gehoord::before { content: ""; display: inline-block; width: .7em; height: .7em; margin-right: .3em; border-radius: 50%; background: var(--inkt); vertical-align: .05em; }
 @media (prefers-reduced-motion: reduce) { .kids-oor.aan .kids-oor-golf, .kids-oor.nee { animation: none; } }
+.kids-oor.aan:not(.laadt) { transform: scale(calc(1 + var(--niveau, 0) * .22)); box-shadow: 0 0 0 calc(var(--niveau, 0) * 14px) rgb(161 255 203 / .55); transition: transform 80ms linear, box-shadow 80ms linear; }

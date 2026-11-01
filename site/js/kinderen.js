@@ -20,8 +20,11 @@ if ("speechSynthesis" in window) {
   speechSynthesis.addEventListener?.("voiceschanged", laadStemmen);
 }
 
+// tot wanneer de stem (ongeveer) praat; iOS meldt 'speaking' niet altijd goed
+let spreektTot = 0;
 function zeg(tekst) {
   if (!("speechSynthesis" in window)) return false;
+  spreektTot = Date.now() + 1200 + tekst.length * 110;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(tekst);
   u.lang = "nl-NL";
@@ -174,14 +177,22 @@ export function kinderPagina(app, S) {
   /* -- meeluisteren: hoort het oor een vogel, dan springt de plaat erheen en zegt de stem de naam -- */
   const oorKnop = wrap.querySelector(".kids-oor"), laadRing = wrap.querySelector(".kids-laad circle");
   const laatstGezegd = new Map(); // key -> tijd, zodat de stem niet steeds hetzelfde roept
+  let luisterSinds = 0, stilGezegd = false, oorFrame = 0;
+  // het oor beweegt mee met het geluid: zo zie je dat het echt luistert
+  const oorBeweeg = () => {
+    if (!oor.actief) { oorKnop.style.removeProperty("--niveau"); return; }
+    oorKnop.style.setProperty("--niveau", oor.niveau().toFixed(3));
+    oorFrame = requestAnimationFrame(oorBeweeg);
+  };
   const oorUit = () => { oorKnop.classList.remove("aan", "laadt"); oorKnop.setAttribute("aria-pressed", "false"); };
   const oor = new Oor({
-    pauze: () => G.speelt() || ("speechSynthesis" in window && speechSynthesis.speaking), // niet naar onszelf luisteren
+    pauze: () => G.speelt() || Date.now() < spreektTot, // niet naar onszelf luisteren
     opVoortgang: (f) => laadRing.style.strokeDashoffset = (125.7 * (1 - f)).toFixed(1),
     opStatus: (code) => {
       oorKnop.classList.toggle("laadt", code === "laden");
       if (code === "geen-microfoon" || code === "laadfout") { oorUit(); oorKnop.classList.add("nee"); setTimeout(() => oorKnop.classList.remove("nee"), 700); }
       if (code === "gestopt") oorUit();
+      if (code === "luistert") { luisterSinds = Date.now(); stilGezegd = false; cancelAnimationFrame(oorFrame); oorBeweeg(); }
     },
     opGok: (p, m) => {
       let beste = null, kans = 0.5; // voor kinderen alleen als BirdNET het vrij zeker weet
@@ -189,7 +200,12 @@ export function kinderPagina(app, S) {
         const k = m.koppel[n];
         if (k && p[n] >= kans && S[k]?.plaat) { beste = k; kans = p[n]; }
       }
-      if (!beste) return;
+      if (!beste) {
+        // na 20 seconden zonder vogel één keer zeggen dat er (nog) niets te horen is
+        if (!stilGezegd && Date.now() - luisterSinds > 20000) { stilGezegd = true; zeg("Ik luister, maar ik hoor nog geen vogel."); }
+        return;
+      }
+      stilGezegd = true;
       if (Date.now() - (laatstGezegd.get(beste) || 0) < 15000) {
         plaatKnop.classList.remove("wiebel"); void plaatKnop.offsetWidth; plaatKnop.classList.add("wiebel");
         return;

@@ -135,12 +135,21 @@ export class Oor {
     this.ring = new Float32Array(Math.ceil(ctx.sampleRate * 3)); this.schrijf = 0; this.gevuld = 0;
     this.proc.onaudioprocess = (e) => {
       const d = e.inputBuffer.getChannelData(0), ring = this.ring;
-      if (!ring) return; // net gestopt
+      if (!ring || this.polt) return; // net gestopt, of we gebruiken de tweede route
+      this.viaProc = true;
       for (let i = 0; i < d.length; i++) { ring[this.schrijf] = d[i]; this.schrijf = (this.schrijf + 1) % ring.length; }
       this.gevuld = Math.min(ring.length, this.gevuld + d.length);
     };
     const stil = ctx.createGain(); stil.gain.value = 0;
     this.bron.connect(this.analyser); this.bron.connect(this.proc); this.proc.connect(stil); stil.connect(ctx.destination);
+    // iOS kan het geluid pauzeren zodra de microfoon aangaat: opnieuw aanzetten, en blijven aanzetten
+    if (ctx.state !== "running") ctx.resume().catch(() => {});
+    ctx.onstatechange = () => { if (this.actief && this.ctx && this.ctx.state !== "running") this.ctx.resume().catch(() => {}); };
+    // tweede route: komt er via de processor niets binnen, dan halen we het geluid uit een analyser
+    this.taps = ctx.createAnalyser(); this.taps.fftSize = 32768;
+    this.bron.connect(this.taps);
+    this.viaProc = false;
+    this.vangst = setTimeout(() => { if (this.actief && !this.viaProc) this.pollen(); }, 2000);
     if (!this.model) {
       this.opStatus?.("laden");
       try { this.model = await laadModel((f) => this.opVoortgang?.(f)); }
@@ -152,6 +161,33 @@ export class Oor {
     return true;
   }
 
+  // elke 200 ms de nieuwste stukjes uit de analyser in de ring zetten
+  pollen() {
+    this.polt = true;
+    const buf = new Float32Array(this.taps.fftSize);
+    let vorige = this.ctx.currentTime;
+    this.pollTimer = setInterval(() => {
+      if (!this.actief || !this.ctx) return;
+      const nu = this.ctx.currentTime, n = Math.min(buf.length, Math.round((nu - vorige) * this.ctx.sampleRate));
+      vorige = nu;
+      if (n <= 0) return;
+      this.taps.getFloatTimeDomainData(buf);
+      const ring = this.ring;
+      for (let i = buf.length - n; i < buf.length; i++) { ring[this.schrijf] = buf[i]; this.schrijf = (this.schrijf + 1) % ring.length; }
+      this.gevuld = Math.min(ring.length, this.gevuld + n);
+    }, 200);
+  }
+
+  // hoe hard het nu is, van 0 tot 1 (voor een oor dat meebeweegt)
+  niveau() {
+    if (!this.analyser) return 0;
+    const d = this.niveauBuf || (this.niveauBuf = new Float32Array(this.analyser.fftSize));
+    this.analyser.getFloatTimeDomainData(d);
+    let som = 0;
+    for (let i = 0; i < d.length; i++) som += d[i] * d[i];
+    return Math.min(1, Math.sqrt(som / d.length) * 8);
+  }
+
   async stap() {
     if (this.bezig || !this.ring || this.gevuld < this.ring.length * 0.9 || this.pauze?.()) return;
     this.bezig = true;
@@ -160,16 +196,20 @@ export class Oor {
     try {
       const p = await raad(this.model, naar48k(venster, this.ctx.sampleRate));
       if (this.actief) this.opGok?.(p, this.model);
+    } catch (e) {
+      console.warn("BirdNET", e);
+      this.opStatus?.("fout", e);
     } finally { this.bezig = false; }
   }
 
   stop(stil = false) {
     this.actief = false;
-    clearInterval(this.timer);
+    clearInterval(this.timer); clearInterval(this.pollTimer); clearTimeout(this.vangst);
+    this.polt = false;
     this.stroom?.getTracks().forEach((t) => t.stop());
-    try { this.proc?.disconnect(); this.bron?.disconnect(); this.analyser?.disconnect(); } catch {}
+    try { this.proc?.disconnect(); this.bron?.disconnect(); this.analyser?.disconnect(); this.taps?.disconnect(); } catch {}
     this.ctx?.close().catch(() => {});
-    this.ctx = this.stroom = this.bron = this.proc = this.analyser = this.ring = null;
+    this.ctx = this.stroom = this.bron = this.proc = this.analyser = this.taps = this.ring = null;
     if (!stil) this.opStatus?.("gestopt");
   }
 }
@@ -266,6 +306,7 @@ export function luisterPagina(app, S) {
       else if (code === "luistert") { zetStatus("Ik luister…"); doek.hidden = false; tekenSpectro(); }
       else if (code === "geen-microfoon") { uit(); zetStatus("Zonder microfoon kan ik niet meeluisteren. Je kunt het toestaan in de instellingen van je browser, of hieronder een opname openen."); }
       else if (code === "laadfout") { uit(); zetStatus("BirdNET laadt niet. Probeer het later opnieuw, of op wifi."); }
+      else if (code === "fout") zetStatus("Er ging iets mis bij het raden. Ik probeer het opnieuw…");
       else if (code === "gestopt") { uit(); zetStatus(gezien.size ? `Gestopt. ${gezien.size} ${gezien.size === 1 ? "soort" : "soorten"} gehoord.` : "Tik om opnieuw te luisteren."); }
     },
     opGok: (p, m) => {
