@@ -135,6 +135,7 @@ export class Oor {
     this.ring = new Float32Array(Math.ceil(ctx.sampleRate * 3)); this.schrijf = 0; this.gevuld = 0;
     this.proc.onaudioprocess = (e) => {
       const d = e.inputBuffer.getChannelData(0), ring = this.ring;
+      if (!ring) return; // net gestopt
       for (let i = 0; i < d.length; i++) { ring[this.schrijf] = d[i]; this.schrijf = (this.schrijf + 1) % ring.length; }
       this.gevuld = Math.min(ring.length, this.gevuld + d.length);
     };
