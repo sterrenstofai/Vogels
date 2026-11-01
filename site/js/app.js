@@ -15,7 +15,7 @@ const toestand = {
 let paginaDoeken = [];
 let SOORTEN_CACHE = {};
 D.soorten().then((S) => (SOORTEN_CACHE = S));
-let kaartModule = null, kinderModule = null;
+let kaartModule = null, kinderModule = null, luisterModule = null;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const getal = (n) => Math.round(n).toLocaleString("nl-NL");
@@ -33,7 +33,7 @@ function huidigSeizoen() {
 
 // Waar je vandaan komt, voor de terugknop: de vorige pagina, met zijn naam en hoe ver je had gescrold
 const TERUG_NAMEN = [["/soorten", "Alle vogels"], ["/gespot", "Mijn vogels"], ["/hier/", "Je vak"], ["/soort/", "Vorige vogel"],
-  ["/kaart", "De kaart"], ["/onderzoekjes", "Onderzoekjes"], ["/ontdek", "Ontdekken"], ["/", "Begin"]];
+  ["/kaart", "De kaart"], ["/onderzoekjes", "Onderzoekjes"], ["/luister", "Luister mee"], ["/ontdek", "Ontdekken"], ["/", "Begin"]];
 function terugNaam(pad) { return (TERUG_NAMEN.find(([p]) => (p.endsWith("/") && p.length > 1 ? pad.startsWith(p) : pad === p)) || [, "Terug"])[1]; }
 
 function naar(pad, vervang = false) {
@@ -69,6 +69,7 @@ async function toon(navigatie = false, terug = false) {
     paginaDoeken = [];
     kaartModule?.verlaatKaart();
     kinderModule?.verlaat();
+    luisterModule?.verlaat();
     try {
       if (pad === "/") await home();
       else if (pad.startsWith("/hier/")) await hier(D.vakUitSlug(pad.slice(6)));
@@ -76,6 +77,11 @@ async function toon(navigatie = false, terug = false) {
       else if (pad === "/soorten") await soortenIndex();
       else if (pad === "/ontdek") await ontdek();
       else if (pad === "/gespot") await mijnVogels();
+      else if (pad === "/luister") {
+        luisterModule = luisterModule || await import("./luister.js");
+        document.title = `Luister mee · ${TITEL}`;
+        luisterModule.luisterPagina(app, SOORTEN_CACHE);
+      }
       else if (pad === "/kinderen") {
         kinderModule = kinderModule || await import("./kinderen.js");
         document.title = `Voggels voor kinderen`;

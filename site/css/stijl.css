@@ -93,8 +93,8 @@ em, i, .wet { font-style: normal; }
 .zoek-pil input { flex: 1; min-width: 0; border: 0; background: transparent; padding: 0 0 0 1.15rem; height: 100%; font: 400 1rem var(--ui); -webkit-appearance: none; appearance: none; }
 .zoek-pil input:focus { outline: none; }
 .zoek-pil input::placeholder { color: color-mix(in srgb, var(--inkt-zacht) 80%, transparent); }
-.zoek-locatie { border: 0; background: none; width: 42px; height: 42px; display: grid; place-items: center; cursor: pointer; color: var(--inkt); border-radius: 50%; flex: none; }
-.zoek-locatie svg { width: 22px; height: 22px; }
+.zoek-locatie, .zoek-icoon { border: 0; background: none; width: 42px; height: 42px; display: grid; place-items: center; cursor: pointer; color: var(--inkt); border-radius: 50%; flex: none; }
+.zoek-locatie svg, .zoek-icoon svg { width: 22px; height: 22px; }
 .zoek-rij .knop-pil { min-height: 46px; padding: 0 1.1rem; }
 .zoek-lijst { list-style: none; margin: 0; padding: .35rem; position: absolute; inset-inline: 0; top: calc(100% + .35rem); background: var(--papier-licht); border-radius: 22px; z-index: 40; box-shadow: 0 24px 40px -20px rgb(0 0 0 / .35); border: 1px solid var(--lijn); }
 .zoek-lijst li { padding: .75rem 1rem; cursor: pointer; min-height: 44px; border-radius: 14px; font-family: var(--ui); }
@@ -751,3 +751,39 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 .scherm-terug svg { width: 18px; height: 18px; }
 .scherm-terug:hover { background: var(--mint); border-color: var(--mint); }
 @media (min-width: 1000px) { .scherm-terug { top: calc(var(--balk-h, 5.5rem) + .4rem); } }
+
+/* ---------- Luister mee ---------- */
+.zoek-luister { color: var(--inkt); }
+.luister { padding-top: 1.4rem; }
+.luister .held-sub { max-width: 40rem; }
+.luister-midden { display: grid; justify-items: center; gap: .9rem; margin: 2rem 0 1.5rem; }
+.luister-knop { position: relative; width: clamp(128px, 34vw, 168px); aspect-ratio: 1; border-radius: 50%; border: 0; background: var(--mint); color: var(--inkt); display: grid; place-items: center; cursor: pointer; box-shadow: 0 16px 36px -18px rgb(0 0 0 / .5); }
+.luister-knop svg { width: 42%; height: 42%; position: relative; z-index: 1; }
+.luister-knop .ico-stop, .luister-knop.aan .ico-mic { display: none; }
+.luister-knop.aan .ico-stop { display: block; }
+.luister-knop.aan { background: var(--inkt); color: var(--mint); }
+.luister-golf { position: absolute; inset: 0; border-radius: 50%; border: 3px solid var(--mint); opacity: 0; }
+.luister-knop.aan .luister-golf { animation: golf 2s ease-out infinite; }
+.luister-knop.aan .luister-golf + .luister-golf { animation-delay: 1s; }
+.luister-status { margin: 0; text-align: center; max-width: 30rem; font: 400 1rem/1.45 var(--ui); min-height: 2.9em; }
+.luister-laad { width: min(20rem, 80%); height: 6px; background: var(--passe); }
+.luister-laad i { display: block; height: 100%; width: 0; background: var(--inkt); transition: width 200ms; }
+.luister-spectro { width: 100%; height: 110px; background: var(--papier-licht); }
+.luister-lijst { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.luister-rij { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: .6rem; border: 1.5px solid var(--passe); background: #FFFFFF; transition: border-color 300ms, background 300ms; }
+.luister-rij.nu { border-color: var(--inkt); background: color-mix(in srgb, var(--mint) 35%, #FFFFFF); }
+.luister-plaat { display: block; width: 64px; height: 80px; background: var(--passe); overflow: hidden; }
+.luister-plaat img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.luister-tekst { display: grid; gap: .35rem; min-width: 0; }
+.luister-naam { font: 450 1.35rem/1.1 var(--kop); letter-spacing: -0.03em; text-decoration: none; }
+.luister-zeker { height: 6px; background: var(--passe); }
+.luister-zeker i { display: block; height: 100%; background: var(--inkt); }
+.luister-woord { font: 400 .72rem var(--mono); text-transform: uppercase; color: var(--inkt-zacht); }
+.luister-acties { display: flex; gap: .4rem; align-items: center; }
+.luister-acties .gespot-klein { position: static; box-shadow: none; }
+.luister-anders { margin-top: .8rem; }
+.luister-bestand { margin-top: 1.4rem; }
+.luister-bestand label { cursor: pointer; }
+.luister-noot { margin-top: 2rem; font-size: .9rem; max-width: 46rem; }
+.luister .index-kop { margin-top: .5rem; }
+.luister-spectro[hidden] { display: none; }

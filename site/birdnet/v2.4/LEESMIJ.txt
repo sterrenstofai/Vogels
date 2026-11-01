@@ -1,0 +1,10 @@
+BirdNET v2.4 (TensorFlow.js), zoals gebruikt door de browserdemo van het Cornell Lab of Ornithology
+(https://birdnet.cornell.edu/demo/). Gedownload op 1 november 2026.
+
+BirdNET: Stefan Kahl, Connor M. Wood, Maximilian Eibl, Holger Klinck (2021).
+BirdNET: A deep learning solution for avian diversity monitoring. Ecological Informatics 61: 101236.
+K. Lisa Yang Center for Conservation Bioacoustics, Cornell Lab of Ornithology, en Technische Universität Chemnitz.
+
+Licentie van het model: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Voggels gebruikt het model ongewijzigd en niet-commercieel. Labels: labels/en_us.txt en labels/nl.txt.
