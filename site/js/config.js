@@ -16,3 +16,11 @@ export const MAANDNAMEN = ["januari", "februari", "maart", "april", "mei", "juni
 export const PDOK = "https://api.pdok.nl/bzk/locatieserver/search/v3_1";
 export const STRAAL_M = 500;
 export const KERN_MIN = 50; // soorten met minder meldingen in Twente: geen kaart, alleen een regel
+
+// Lidwoord bij een vogelnaam: verkleinwoorden (paapje, goudhaantje), namen op -hoen (waterhoen) en het smelleken zijn het-woorden.
+export function lidwoord(naam, hoofdletter = false) {
+  const n = naam.toLowerCase();
+  const het = /je$/.test(n) || /hoen$/.test(n) || n === "smelleken";
+  const lw = het ? "het" : "de";
+  return hoofdletter ? lw.charAt(0).toUpperCase() + lw.slice(1) : lw;
+}

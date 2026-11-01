@@ -1,4 +1,4 @@
-import { TITEL, ONDERTITEL, SEIZOENEN, MAANDLETTERS, MAANDNAMEN, STRAAL_M, KERN_MIN } from "./config.js";
+import { TITEL, ONDERTITEL, SEIZOENEN, MAANDLETTERS, MAANDNAMEN, STRAAL_M, KERN_MIN, lidwoord } from "./config.js";
 import * as D from "./data.js";
 import { tekenKaart, legenda } from "./kaart.js";
 import * as G from "./geluid.js";
@@ -105,7 +105,7 @@ function nietGevonden() {
 function knop(soort, type, extraKlasse = "") {
   const t = soort[type] ? type : soort.zang ? "zang" : "roep";
   if (!soort[t]) return "";
-  return `<button class="knop-rond ${extraKlasse}" type="button" data-speel="${soort.key}" data-type="${t}" aria-label="Speel de ${t} van de ${esc(klein(soort.nl))}">
+  return `<button class="knop-rond ${extraKlasse}" type="button" data-speel="${soort.key}" data-type="${t}" aria-label="Speel de ${t} van ${lidwoord(soort.nl)} ${esc(klein(soort.nl))}">
     <svg viewBox="0 0 44 44" aria-hidden="true"><circle class="ring-bg" cx="22" cy="22" r="20"/><circle class="ring" cx="22" cy="22" r="20"/><path class="ico-pauze" d="M17 15v14M27 15v14"/><path class="ico-speel" d="M18 14l12 8-12 8z"/></svg></button>`;
 }
 
@@ -148,7 +148,7 @@ const erIn = (t, m) => t[m] >= 0.15 * Math.max(...t) && t[m] > 0;
 // de plus: een vogel die je zelf gezien of gehoord hebt
 function gespotKnop(soort, klein = false) {
   const n = SP.aantalVan(soort.key);
-  return `<button type="button" class="gespot${klein ? " gespot-klein" : ""}${n ? " ja" : ""}" data-gespot="${soort.key}" aria-label="${n ? `${esc(soort.nl)}: ${n}× gespot. Nog een keer gespot` : `Ik heb de ${esc(klein ? soort.nl.toLowerCase() : soort.nl.toLowerCase())} gespot`}"><span class="gespot-plus" aria-hidden="true">+</span>${klein ? (n ? `<span class="gespot-n">${n}</span>` : "") : `<span class="gespot-tekst">${n ? `Gespot <b>${n}×</b>` : "Gespot"}</span>`}</button>`;
+  return `<button type="button" class="gespot${klein ? " gespot-klein" : ""}${n ? " ja" : ""}" data-gespot="${soort.key}" aria-label="${n ? `${esc(soort.nl)}: ${n}× gespot. Nog een keer gespot` : `Ik heb ${lidwoord(soort.nl)} ${esc(soort.nl.toLowerCase())} gespot`}"><span class="gespot-plus" aria-hidden="true">+</span>${klein ? (n ? `<span class="gespot-n">${n}</span>` : "") : `<span class="gespot-tekst">${n ? `Gespot <b>${n}×</b>` : "Gespot"}</span>`}</button>`;
 }
 
 function kaartje(soort, rij, maanden, telling) {
@@ -182,13 +182,13 @@ function plaatKort(p) {
 function scherm(soort, { kop, sub, weetjes = [], strook, omgeving }) {
   const types = ["zang", "roep"].filter((t) => soort[t]);
   const plaat = soort.plaat
-    ? `<img src="${soort.plaat.src}" alt="Historische plaat van de ${esc(klein(soort.nl))}${soort.plaat.ook.length ? `, samen met ${esc(soort.plaat.ook.join(", ").toLowerCase())}` : ""}" width="1200" height="1500" fetchpriority="high">`
+    ? `<img src="${soort.plaat.src}" alt="Historische plaat van ${lidwoord(soort.nl)} ${esc(klein(soort.nl))}${soort.plaat.ook.length ? `, samen met ${esc(soort.plaat.ook.join(", ").toLowerCase())}` : ""}" width="1200" height="1500" fetchpriority="high">`
     : legePlaat(soort);
   return `<section class="scherm" data-held="${soort.key}">
     <div class="podium">
       <div class="podium-paneel podium-plaat onthul" data-paneel="plaat">${plaat}</div>
       <div class="podium-paneel podium-rondom" data-paneel="rondom" hidden>
-        <canvas role="img" aria-label="Draaibare schets van de ${esc(klein(soort.nl))} in 3D, opgebouwd uit gemeten maten"></canvas>
+        <canvas role="img" aria-label="Draaibare schets van ${lidwoord(soort.nl)} ${esc(klein(soort.nl))} in 3D, opgebouwd uit gemeten maten"></canvas>
         <p class="rondom-hint" aria-hidden="true">Schets uit gemeten maten · sleep om te draaien</p>
         <p class="rondom-bron"></p>
       </div>
@@ -325,11 +325,11 @@ async function home() {
 
   app.innerHTML = `
     ${scherm(soort, {
-      kop: `De <em>${esc(klein(soort.nl))}</em> in <em>${MAANDNAMEN[m]}</em>`,
+      kop: `${lidwoord(soort.nl, true)} <em>${esc(klein(soort.nl))}</em> in <em>${MAANDNAMEN[m]}</em>`,
       sub: `In ${MAANDNAMEN[m]} ${getal(r[m])} keer gemeld in Twente${r[m] > gem * 1.4 ? `, ${(r[m] / gem).toLocaleString("nl-NL", { maximumFractionDigits: 1 })} keer zo vaak als in een gemiddelde maand` : ""}.`,
       weetjes: weetjesVoor(soort, [["In Twente", `${getal(soort.n)} meldingen in vijf jaar`]]),
       strook: { label: `${nu.length} soorten nu in Twente`, lijst: nu.map((x) => ({ key: x.key })), href: (slug) => `/?soort=${slug}` },
-      omgeving: { html: kaartjeKlein(K, V, { waarden, label: `Waar de ${klein(soort.nl)} in ${MAANDNAMEN[m]} gemeld wordt` }), href: `/kaart?soort=${soort.slug}` },
+      omgeving: { html: kaartjeKlein(K, V, { waarden, label: `Waar ${lidwoord(soort.nl)} ${klein(soort.nl)} in ${MAANDNAMEN[m]} gemeld wordt` }), href: `/kaart?soort=${soort.slug}` },
     })}
     <section class="breed blok">
       <a class="oz-teaser" href="/onderzoekjes" data-link>
@@ -449,7 +449,7 @@ async function hier(vak) {
 
     app.innerHTML = `
     ${soort ? scherm(soort, {
-      kop: `De <em>${esc(klein(soort.nl))}</em> bij <em>${esc(plekNaam)}</em>`,
+      kop: `${lidwoord(soort.nl, true)} <em>${esc(klein(soort.nl))}</em> bij <em>${esc(plekNaam)}</em>`,
       sub: `Een van de ${l2.totaal} soorten die ${seizoenNaam} in je vak zijn gemeld.`,
       weetjes: weetjesVoor(soort, [["In je vak", `${getal(gekozen.s)} meldingen ${seizoenNaam}`], ["Gemeente", `${esc(gemeente)} · vak ${vak}`]]),
       strook: { label: `${strookLijst.length} soorten in je vak`, lijst: strookLijst.map((x) => ({ key: x.key })), href: (slug) => `/hier/${D.vakSlug(vak)}?soort=${slug}` },
@@ -554,11 +554,11 @@ async function soortPagina(slug) {
   const groep = Object.keys(S).filter((k) => S[k].groep === soort.groep && S[k].n >= KERN_MIN && S[k].plaat).sort((a, b) => S[b].n - S[a].n);
   app.innerHTML = `
   ${scherm(soort, {
-    kop: `De <em>${esc(klein(soort.nl))}</em>`,
+    kop: `${lidwoord(soort.nl, true)} <em>${esc(klein(soort.nl))}</em>`,
     sub: `${getal(soort.n)} meldingen in Twente in vijf jaar, in ${vakkenMet} van de ${Object.keys(V).length} vakken.${soort.exoot ? " Ontsnapt of uitgezet." : ""}`,
     weetjes: weetjesVoor(soort, [["In Twente", `${getal(soort.n)} meldingen`]]),
     strook: { label: `${groep.length} ${GROEPNAMEN[soort.groep]?.toLowerCase() || "soorten"}`, lijst: groep.map((k) => ({ key: k })), href: (s) => `/soort/${s}` },
-    omgeving: { html: kaartjeKlein(K, V, { waarden, eigen: toestand.laatsteVak, label: `Waar de ${klein(soort.nl)} in Twente gemeld is` }), href: `/kaart?soort=${soort.slug}` },
+    omgeving: { html: kaartjeKlein(K, V, { waarden, eigen: toestand.laatsteVak, label: `Waar ${lidwoord(soort.nl)} ${klein(soort.nl)} in Twente gemeld is` }), href: `/kaart?soort=${soort.slug}` },
   })}
   <section class="breed blok twee">
     <div class="kalender">
@@ -570,7 +570,7 @@ async function soortPagina(slug) {
     <div class="waar">
       <h2>Waar in Twente</h2>
       <p class="mono zacht">Meldingen per vak van ongeveer 4 × 6 km</p>
-      ${tekenKaart(K, V, { waarden, eigen: toestand.laatsteVak, label: `Kaart: waar de ${klein(soort.nl)} in Twente is gemeld`, titel: (v, w) => `${w} meldingen` })}
+      ${tekenKaart(K, V, { waarden, eigen: toestand.laatsteVak, label: `Kaart: waar ${lidwoord(soort.nl)} ${klein(soort.nl)} in Twente is gemeld`, titel: (v, w) => `${w} meldingen` })}
       ${legenda(Math.max(...Object.values(waarden)), "meldingen")}
     </div>
   </section>`;
@@ -827,7 +827,7 @@ D.soorten().then((S) => {
   const namen = ["roodborst", "merel", "boerenzwaluw", "ijsvogel", "koolmees", "kievit", "buizerd", "vink", "ekster", "grutto", "groene-specht", "putter"];
   const k = document.querySelector(".over-karrousel");
   k.innerHTML = namen.map((n) => Object.values(S).find((s) => s.slug === n)).filter((s) => s?.plaat).map((s) =>
-    `<figure><a href="/soort/${s.slug}" data-link><img src="${s.plaat.src}" alt="Plaat van de ${esc(klein(s.nl))}" loading="lazy" width="1200" height="1500"></a><figcaption>${esc(s.nl)} · ${esc(plaatKort(s.plaat))}</figcaption></figure>`).join("");
+    `<figure><a href="/soort/${s.slug}" data-link><img src="${s.plaat.src}" alt="Plaat van ${lidwoord(s.nl)} ${esc(klein(s.nl))}" loading="lazy" width="1200" height="1500"></a><figcaption>${esc(s.nl)} · ${esc(plaatKort(s.plaat))}</figcaption></figure>`).join("");
   document.querySelectorAll("[data-karrousel]").forEach((b) => b.addEventListener("click", () => {
     const f = k.querySelector("figure");
     k.scrollBy({ left: (+b.dataset.karrousel) * ((f?.offsetWidth || 300) + 16), behavior: "smooth" });

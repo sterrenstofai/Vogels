@@ -2,7 +2,7 @@
 // Het logboek staat alleen in de browser van dit apparaat (localStorage), nergens anders.
 import * as D from "./data.js";
 import * as G from "./geluid.js";
-import { MAANDNAMEN, MAANDLETTERS, KERN_MIN } from "./config.js";
+import { MAANDNAMEN, MAANDLETTERS, KERN_MIN, lidwoord } from "./config.js";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const klein = (s) => (s.startsWith("IJ") ? "ij" + s.slice(2) : s.charAt(0).toLowerCase() + s.slice(1)); // IJsvogel -> ijsvogel
@@ -370,7 +370,7 @@ async function tekenen(werk, toestand, koppelDoek) {
   });
   werk.querySelectorAll("[data-raad]").forEach((b) => b.addEventListener("click", () => {
     if (!geheim) return;
-    werk.querySelector(".oz-raad .oz-feedback").innerHTML = b.dataset.raad === geheim.key ? `Goed geraden! Het was de ${esc(klein(geheim.nl))}.` : `Het was de ${esc(klein(geheim.nl))}. Luister nog eens en kijk naar de vorm.`;
+    werk.querySelector(".oz-raad .oz-feedback").innerHTML = b.dataset.raad === geheim.key ? `Goed geraden! Het was ${lidwoord(geheim.nl)} ${esc(klein(geheim.nl))}.` : `Het was ${lidwoord(geheim.nl)} ${esc(klein(geheim.nl))}. Luister nog eens en kijk naar de vorm.`;
   }));
 }
 
@@ -387,8 +387,8 @@ async function raadMaand(werk) {
     }
     const s = lijst[i];
     werk.innerHTML = `<div class="oz-maand">
-      <div class="oz-maand-vogel"><span class="oz-keuze-beeld">${plaatje(s)}</span><div><p class="oz-boventitel">Vogel ${i + 1} van ${lijst.length}</p><h2>De ${esc(klein(s.nl))}</h2>${speelKnop(s, "zang")}</div></div>
-      <p>In welke maand wordt de ${esc(klein(s.nl))} in Twente het vaakst gezien?</p>
+      <div class="oz-maand-vogel"><span class="oz-keuze-beeld">${plaatje(s)}</span><div><p class="oz-boventitel">Vogel ${i + 1} van ${lijst.length}</p><h2>${lidwoord(s.nl, true)} ${esc(klein(s.nl))}</h2>${speelKnop(s, "zang")}</div></div>
+      <p>In welke maand wordt ${lidwoord(s.nl)} ${esc(klein(s.nl))} in Twente het vaakst gezien?</p>
       <div class="oz-maanden">${["Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"].map((n, m) => `<button type="button" data-maand="${m}" aria-label="${MAANDNAMEN[m]}">${n}</button>`).join("")}</div>
       <div class="oz-antwoord" hidden></div></div>`;
     werk.querySelectorAll("[data-maand]").forEach((b) => b.addEventListener("click", () => {
@@ -439,10 +439,10 @@ async function oudBoek(werk) {
   const s = sepp.find((x) => x.nl === "Roodborst") || sepp[0];
   if (!s) { werk.innerHTML = ""; return; }
   werk.innerHTML = `<div class="oz-boek">
-    <figure class="plaat"><div class="plaat-rand"><img src="${s.plaat.src}" alt="Oude plaat van de ${esc(klein(s.nl))}" loading="lazy" width="1200" height="1500"></div>
+    <figure class="plaat"><div class="plaat-rand"><img src="${s.plaat.src}" alt="Oude plaat van ${lidwoord(s.nl)} ${esc(klein(s.nl))}" loading="lazy" width="1200" height="1500"></div>
       <figcaption>${esc(s.plaat.werk)}. Het eerste grote Nederlandse vogelboek. De platen zijn met de hand ingekleurd.</figcaption></figure>
     <div><h2>Kijkvragen</h2>
       <ol><li>Hoe oud is dit boek ongeveer? (Het begon in 1770.)</li><li>Welke kleur heeft de borst? Klopt dat met een echte ${esc(klein(s.nl))}?</li><li>Wat staat er nog meer op de plaat? Een nest, eieren, een tak?</li><li>Wat zou jij anders tekenen?</li></ol>
-      <p>${speelKnop(s, "zang", `Hoor de ${esc(klein(s.nl))}`)}</p>
+      <p>${speelKnop(s, "zang", `Hoor ${lidwoord(s.nl)} ${esc(klein(s.nl))}`)}</p>
       <p class="zacht">Andere oude platen uit hetzelfde boek: ${sepp.filter((x) => x !== s).map((x) => `<a href="/soort/${x.slug}" data-link>${esc(klein(x.nl))}</a>`).join(", ")}.</p></div></div>`;
 }

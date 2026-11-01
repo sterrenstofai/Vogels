@@ -2,7 +2,7 @@
 import * as D from "./data.js";
 import * as G from "./geluid.js";
 import { Simulatie, KLEUREN, GROEPNAMEN } from "./simulatie.js";
-import { MAANDNAMEN } from "./config.js";
+import { MAANDNAMEN, lidwoord } from "./config.js";
 
 const SCHAAL = 20; // meldingen per stip
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -32,7 +32,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
     <div class="sim-ui sim-boven">
       <button class="sim-chip sim-info-knop" type="button" aria-expanded="false" aria-controls="sim-info"><span class="sim-stip"></span>Simulatie</button>
       ${NU ? `<div class="sim-bron" role="group" aria-label="Welke meldingen"><button type="button" data-bron="maand" aria-pressed="true">Per maand</button><button type="button" data-bron="nu" aria-pressed="false"><span class="sim-live"></span>Nu</button></div>` : ""}
-      ${vanSoort ? `<span class="sim-chip sim-van"><i style="background:${KLEUREN[S[vanSoort].groep]}"></i>Je kwam van de ${esc(klein(S[vanSoort].nl))}</span>` : vanAdres ? `<span class="sim-chip sim-van">Je kwam van ${esc(vanAdres.naam.split(",")[0])}</span>` : ""}
+      ${vanSoort ? `<span class="sim-chip sim-van"><i style="background:${KLEUREN[S[vanSoort].groep]}"></i>Je kwam van ${lidwoord(S[vanSoort].nl)} ${esc(klein(S[vanSoort].nl))}</span>` : vanAdres ? `<span class="sim-chip sim-van">Je kwam van ${esc(vanAdres.naam.split(",")[0])}</span>` : ""}
     </div>
     <div class="sim-ui sim-info" id="sim-info" hidden>
       <p><strong>Een simulatie, geen kaart van echte vogels.</strong> Welke soorten in een vak van ongeveer 4 × 6 km zitten, en in welke verhouding, komt uit de meldingen. Drukke vakken zijn wat gedempt: een paar vogelaars die elke dag tellen, maken een vak anders onleesbaar.</p>
@@ -95,7 +95,7 @@ export async function kaartPagina(app, toestand, opties = {}) {
   // het doel iets boven het midden, zodat het vrij van de maandschuif staat
   const smal = sim.vw < 600; // op een telefoon nemen kop en maandschuif meer ruimte in
   doel.lat -= (sim.vh * (doel.z > passend ? (smal ? 0.27 : 0.2) : (smal ? 0.3 : 0.16))) / doel.z;
-  herkomst = sim.pin ? { ...sim.pin, tekst: vanAdres ? vanAdres.naam.split(",")[0] : vanSoort ? `de ${klein(S[vanSoort].nl)}` : "dit vak" } : null;
+  herkomst = sim.pin ? { ...sim.pin, tekst: vanAdres ? vanAdres.naam.split(",")[0] : vanSoort ? `${lidwoord(S[vanSoort].nl)} ${klein(S[vanSoort].nl)}` : "dit vak" } : null;
   if (vanSoort && S[vanSoort]) sim.opGeland = () => sim.zetFocus(vanSoort);
   sim.opening(doel);
 
