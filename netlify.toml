@@ -32,6 +32,11 @@
   status = 200
 
 [[redirects]]
+  from = "/kinderen"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
   from = "/ontdek"
   to = "/index.html"
   status = 200

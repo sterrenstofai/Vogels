@@ -14,7 +14,7 @@ const toestand = {
 let paginaDoeken = [];
 let SOORTEN_CACHE = {};
 D.soorten().then((S) => (SOORTEN_CACHE = S));
-let kaartModule = null;
+let kaartModule = null, kinderModule = null;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const getal = (n) => Math.round(n).toLocaleString("nl-NL");
@@ -50,16 +50,23 @@ async function toon(navigatie = false) {
   vorigPad = pad;
   SOORTEN_CACHE = await D.soorten();
   document.body.classList.toggle("met-over", pad === "/" || pad.startsWith("/hier/") || pad.startsWith("/soort/"));
+  document.body.classList.toggle("kindermodus", pad === "/kinderen");
   const doe = async () => {
     for (const d of paginaDoeken) G.ontkoppelDoek(d);
     paginaDoeken = [];
     kaartModule?.verlaatKaart();
+    kinderModule?.verlaat();
     try {
       if (pad === "/") await home();
       else if (pad.startsWith("/hier/")) await hier(D.vakUitSlug(pad.slice(6)));
       else if (pad.startsWith("/soort/")) await soortPagina(decodeURIComponent(pad.slice(7)));
       else if (pad === "/soorten") await soortenIndex();
       else if (pad === "/ontdek") await ontdek();
+      else if (pad === "/kinderen") {
+        kinderModule = kinderModule || await import("./kinderen.js");
+        document.title = `Voggels voor kinderen`;
+        kinderModule.kinderPagina(app, SOORTEN_CACHE);
+      }
       else if (pad === "/onderzoekjes" || pad.startsWith("/onderzoekjes/")) {
         const OZ = await import("./onderzoekjes.js");
         document.title = `Onderzoekjes met Fos · ${TITEL}`;

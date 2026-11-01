@@ -620,3 +620,51 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 .gemeente-eigen { stroke: var(--inkt); }
 .speler-fout .speler-naam { color: #B3261E; }
 ::selection { background: var(--mint); color: var(--inkt); }
+
+/* ---------- Voor kinderen: een plaat, een knop, een stem ---------- */
+.kindermodus .balk, .kindermodus .voet, .kindermodus .over, .kindermodus .speler, .kindermodus .naar-inhoud { display: none !important; }
+.kindermodus #app { padding-top: 0 !important; }
+.kids { position: relative; height: 100svh; display: grid; grid-template-rows: 1fr auto auto; background: #FFFFFF; overflow: hidden; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.kids-weg { position: absolute; top: max(.8rem, env(safe-area-inset-top)); left: .8rem; z-index: 3; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: var(--papier-licht); color: var(--inkt-zacht); }
+.kids-weg svg { width: 18px; height: 18px; }
+.kids-podium { min-height: 0; height: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); align-items: center; gap: .5rem; padding: 3.4rem .6rem .4rem; }
+.kids-vogel { margin: 0; height: 100%; min-height: 0; position: relative; display: grid; place-items: center; touch-action: pan-y; }
+.kids-plaat { position: relative; border: 0; background: none; padding: 0; height: 100%; width: 100%; min-height: 0; display: grid; place-items: center; cursor: pointer; }
+.kids-plaat img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; pointer-events: none; }
+.kids-in { animation: kids-in 420ms cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes kids-in { from { opacity: 0; transform: translateX(calc(var(--richting, 0) * 60px)) scale(.97); } }
+.kids-plaat.wiebel img { animation: wiebel 700ms cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes wiebel { 0% { transform: scale(1); } 25% { transform: scale(1.05) rotate(-2.5deg); } 50% { transform: scale(1.04) rotate(2deg); } 75% { transform: scale(1.02) rotate(-1deg); } }
+.kids-ballon { position: absolute; left: 50%; top: 4%; transform: translate(-50%, -8px) scale(.9); opacity: 0; pointer-events: none; background: var(--mint); color: var(--inkt); font: 450 clamp(1.8rem, 7vw, 3.4rem)/1 var(--kop); letter-spacing: -0.04em; padding: .35em .55em .4em; border-radius: 999px; white-space: nowrap; transition: opacity 200ms, transform 300ms cubic-bezier(.2, 1.6, .4, 1); box-shadow: 0 10px 30px -14px rgb(0 0 0 / .4); }
+.kids-ballon.zichtbaar { opacity: 1; transform: translate(-50%, 0) scale(1); }
+.kids-pijl { width: 64px; height: 64px; border-radius: 50%; border: 0; background: var(--papier-licht); color: var(--inkt); display: grid; place-items: center; cursor: pointer; }
+.kids-pijl svg { width: 30px; height: 30px; }
+.kids-pijl:active { transform: scale(.94); }
+.kids-speel { position: relative; justify-self: center; width: clamp(108px, 30vw, 148px); aspect-ratio: 1; border-radius: 50%; border: 0; background: var(--mint); color: var(--inkt); display: grid; place-items: center; cursor: pointer; margin: .4rem 0 .8rem; box-shadow: 0 14px 34px -16px rgb(0 0 0 / .45); }
+.kids-speel svg { width: 44%; height: 44%; position: relative; z-index: 1; }
+.kids-speel .ico-pauze, .kids-speel.speelt .ico-speel { display: none; }
+.kids-speel.speelt .ico-pauze { display: block; }
+.kids-speel:active { transform: scale(.95); }
+.kids-golf { position: absolute; inset: 0; border-radius: 50%; border: 3px solid var(--mint); opacity: 0; }
+.kids-speel.speelt .kids-golf { animation: golf 1.8s ease-out infinite; }
+.kids-speel.speelt .kids-golf + .kids-golf { animation-delay: .9s; }
+@keyframes golf { from { transform: scale(1); opacity: .9; } to { transform: scale(1.7); opacity: 0; } }
+.kids-strook { display: flex; gap: .5rem; overflow-x: auto; padding: .2rem .8rem max(.8rem, env(safe-area-inset-bottom)); scrollbar-width: none; scroll-behavior: smooth; }
+.kids-strook::-webkit-scrollbar { display: none; }
+.kids-duim { flex: none; width: 64px; height: 80px; border: 0; padding: 0; border-radius: 12px; overflow: hidden; background: var(--papier-licht); cursor: pointer; opacity: .55; transition: opacity var(--snel), transform var(--snel); }
+.kids-duim img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.kids-duim[aria-current] { opacity: 1; outline: 3px solid var(--inkt); outline-offset: -3px; transform: translateY(-3px); }
+@media (max-width: 899px) {
+  .kids-podium { position: relative; grid-template-columns: minmax(0, 1fr); padding: 3.2rem .4rem .2rem; }
+  .kids-pijl { position: absolute; top: 50%; z-index: 2; width: 52px; height: 52px; margin-top: -26px; background: rgb(244 244 244 / .88); box-shadow: 0 6px 18px -10px rgb(0 0 0 / .35); }
+  .kids-vorige { left: .4rem; }
+  .kids-volgende { right: .4rem; }
+}
+@media (min-width: 900px) {
+  .kids-podium { padding: 2rem 2rem .4rem; gap: 2rem; }
+  .kids-pijl { width: 84px; height: 84px; }
+  .kids-duim { width: 76px; height: 96px; }
+}
+@media (prefers-reduced-motion: reduce) { .kids-in, .kids-plaat.wiebel img, .kids-speel.speelt .kids-golf { animation: none; } }
+/* knop in de kop */
+.nav-knop-kids { background: var(--mint); border-color: var(--mint); }
