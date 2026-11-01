@@ -745,3 +745,9 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 }
 @media (min-width: 1700px) { .nav-knop-mijn { width: 40px; padding: 0; } .nav-knop-mijn span { display: none; } }
 .soort-naam { overflow-wrap: anywhere; hyphens: auto; }
+
+/* Terug naar waar je vandaan kwam */
+.scherm-terug { position: absolute; z-index: 4; top: .7rem; left: var(--rand); display: inline-flex; align-items: center; gap: .3rem; height: 38px; padding: 0 .9rem 0 .55rem; border-radius: 999px; background: #FFFFFF; border: 1.5px solid var(--inkt); color: var(--inkt); text-decoration: none; font: 500 .9rem var(--ui); box-shadow: 0 6px 16px -10px rgb(0 0 0 / .4); }
+.scherm-terug svg { width: 18px; height: 18px; }
+.scherm-terug:hover { background: var(--mint); border-color: var(--mint); }
+@media (min-width: 1000px) { .scherm-terug { top: calc(var(--balk-h, 5.5rem) + .4rem); } }

@@ -31,21 +31,33 @@ function huidigSeizoen() {
 
 /* ---------- Router ---------- */
 
+// Waar je vandaan komt, voor de terugknop: de vorige pagina, met zijn naam en hoe ver je had gescrold
+const TERUG_NAMEN = [["/soorten", "Alle vogels"], ["/gespot", "Mijn vogels"], ["/hier/", "Je vak"], ["/soort/", "Vorige vogel"],
+  ["/kaart", "De kaart"], ["/onderzoekjes", "Onderzoekjes"], ["/ontdek", "Ontdekken"], ["/", "Begin"]];
+function terugNaam(pad) { return (TERUG_NAMEN.find(([p]) => (p.endsWith("/") && p.length > 1 ? pad.startsWith(p) : pad === p)) || [, "Terug"])[1]; }
+
 function naar(pad, vervang = false) {
-  if (vervang) history.replaceState({}, "", pad); else history.pushState({}, "", pad);
+  const hier = location.pathname + location.search;
+  if (vervang) history.replaceState({ ...(history.state || {}) }, "", pad);
+  else {
+    history.replaceState({ ...(history.state || {}), scroll: window.scrollY }, "", hier); // plek onthouden
+    history.pushState({ van: { url: hier, naam: terugNaam(location.pathname.replace(/\/+$/, "") || "/") } }, "", pad);
+  }
   toon(true);
 }
 
 document.addEventListener("click", (e) => {
+  const t = e.target.closest("a[data-terug]");
+  if (t && !e.metaKey && !e.ctrlKey && history.state?.van) { e.preventDefault(); history.back(); return; }
   const a = e.target.closest("a[data-link]");
   if (!a || e.metaKey || e.ctrlKey || e.shiftKey || a.target) return;
   e.preventDefault();
   naar(a.getAttribute("href"));
 });
-window.addEventListener("popstate", () => toon(true));
+window.addEventListener("popstate", () => toon(true, true));
 
 let vorigPad = null;
-async function toon(navigatie = false) {
+async function toon(navigatie = false, terug = false) {
   const pad = location.pathname.replace(/\/+$/, "") || "/";
   const anderPad = pad !== vorigPad;
   vorigPad = pad;
@@ -92,7 +104,8 @@ async function toon(navigatie = false) {
   if (navigatie && document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
     await document.startViewTransition(doe).updateCallbackDone;
   } else await doe();
-  if (navigatie && anderPad) { window.scrollTo(0, 0); app.focus({ preventScroll: true }); }
+  if (terug && history.state?.scroll != null) requestAnimationFrame(() => window.scrollTo(0, history.state.scroll));
+  else if (navigatie && anderPad) { window.scrollTo(0, 0); app.focus({ preventScroll: true }); }
 }
 
 function nietGevonden() {
@@ -184,7 +197,11 @@ function scherm(soort, { kop, sub, weetjes = [], strook, omgeving }) {
   const plaat = soort.plaat
     ? `<img src="${soort.plaat.src}" alt="Historische plaat van ${lidwoord(soort.nl)} ${esc(klein(soort.nl))}${soort.plaat.ook.length ? `, samen met ${esc(soort.plaat.ook.join(", ").toLowerCase())}` : ""}" width="1200" height="1500" fetchpriority="high">`
     : legePlaat(soort);
+  const van = history.state?.van;
+  const terug = van && van.url !== location.pathname + location.search
+    ? `<a class="scherm-terug" href="${esc(van.url)}" data-terug><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>${esc(van.naam)}</a>` : "";
   return `<section class="scherm" data-held="${soort.key}">
+    ${terug}
     <div class="podium">
       <div class="podium-paneel podium-plaat onthul" data-paneel="plaat">${plaat}</div>
       <div class="podium-paneel podium-rondom" data-paneel="rondom" hidden>
@@ -582,7 +599,17 @@ async function soortPagina(slug) {
 async function soortenIndex() {
   const S = await D.soorten();
   document.title = `Alle soorten · ${TITEL}`;
-  const st = { groep: null, sort: "meest", q: "", wanneer: "" };
+  const zp = new URLSearchParams(location.search);
+  const st = { groep: zp.get("groep") || null, sort: zp.get("sort") || "meest", q: (zp.get("q") || "").toLowerCase(), wanneer: zp.get("wanneer") || "" };
+  // filters in het adres, zodat terug van een vogel dezelfde lijst geeft
+  const bewaarFilters = () => {
+    const u = new URLSearchParams();
+    if (st.groep) u.set("groep", st.groep);
+    if (st.wanneer) u.set("wanneer", st.wanneer);
+    if (st.sort !== "meest") u.set("sort", st.sort);
+    if (st.q) u.set("q", st.q);
+    history.replaceState(history.state, "", `/soorten${u.toString() ? `?${u}` : ""}`);
+  };
   const groepen = Object.keys(GROEPNAMEN).filter((g) => Object.values(S).some((s) => s.groep === g && s.n >= KERN_MIN));
   app.innerHTML = `
   <section class="breed blok">
@@ -627,6 +654,7 @@ async function soortenIndex() {
     lijst = lijst.sort(sorteer);
     raster.innerHTML = lijst.map((k) => kaartje(metKey(S, k), S[k].twente, [m], `${getal(S[k].n)} meldingen`)).join("") || `<p>Geen soorten gevonden.</p>`;
     teller.textContent = `${lijst.length} ${lijst.length === 1 ? "soort" : "soorten"}`;
+    bewaarFilters();
     werkKnoppenBij();
   };
   app.querySelectorAll("[data-groep]").forEach((b) => b.addEventListener("click", () => {
@@ -636,11 +664,11 @@ async function soortenIndex() {
   }));
   app.querySelector("input.veld").addEventListener("input", (e) => { st.q = e.target.value.trim().toLowerCase(); teken(); });
   app.querySelector("select.veld").addEventListener("change", (e) => { st.sort = e.target.value; teken(); });
-  const startWanneer = new URLSearchParams(location.search).get("wanneer");
-  if (startWanneer && app.querySelector(`[data-wanneer="${CSS.escape(startWanneer)}"]`)) {
-    st.wanneer = startWanneer;
-    app.querySelectorAll("[data-wanneer]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.wanneer === startWanneer)));
-  }
+  if (!app.querySelector(`[data-wanneer="${CSS.escape(st.wanneer)}"]`)) st.wanneer = "";
+  app.querySelectorAll("[data-wanneer]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.wanneer === st.wanneer)));
+  app.querySelectorAll("[data-groep]").forEach((x) => x.setAttribute("aria-pressed", String((x.dataset.groep || null) === st.groep)));
+  app.querySelector("input.veld").value = st.q;
+  app.querySelector("select.veld").value = st.sort;
   teken();
 }
 
