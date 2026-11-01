@@ -1,0 +1,510 @@
+{
+ "drumstel": {
+  "treffers": 540,
+  "bekeken": 5,
+  "cc0_met_foto": 1,
+  "voorbeelden": [
+   {
+    "id": 506721,
+    "titel": "Drum",
+    "datum": "300–200 BCE",
+    "cultuur": "Paracas"
+   }
+  ]
+ },
+ "snaredrum": {
+  "treffers": 12,
+  "bekeken": 5,
+  "cc0_met_foto": 4,
+  "voorbeelden": [
+   {
+    "id": 501206,
+    "titel": "Snare Drum",
+    "datum": "mid to late 19th century",
+    "cultuur": "American"
+   },
+   {
+    "id": 505326,
+    "titel": "Side (Snare) Drum",
+    "datum": "First half 19th century",
+    "cultuur": "American"
+   },
+   {
+    "id": 504262,
+    "titel": "Bass Drum",
+    "datum": "1860–80",
+    "cultuur": "American"
+   }
+  ]
+ },
+ "basgitaar": {
+  "treffers": 19,
+  "bekeken": 5,
+  "cc0_met_foto": 1,
+  "voorbeelden": [
+   {
+    "id": 506867,
+    "titel": "Style U Harp Guitar (serial no 26084)",
+    "datum": "1917",
+    "cultuur": "American"
+   }
+  ]
+ },
+ "elektrische gitaar": {
+  "treffers": 28,
+  "bekeken": 5,
+  "cc0_met_foto": 0,
+  "voorbeelden": []
+ },
+ "gitaar": {
+  "treffers": 137,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 506864,
+    "titel": "L-4 Archtop Guitar (serial no.",
+    "datum": "ca. 1918",
+    "cultuur": "American"
+   },
+   {
+    "id": 506866,
+    "titel": "L-3 Archtop Guitar (serial no. 32544)",
+    "datum": "1917",
+    "cultuur": "American"
+   },
+   {
+    "id": 506865,
+    "titel": "Style O Artist Model Archtop Guitar (serial no. 51670)",
+    "datum": "1919",
+    "cultuur": "American"
+   }
+  ]
+ },
+ "piano": {
+  "treffers": 108,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 501783,
+    "titel": "Square Piano",
+    "datum": "ca. 1800",
+    "cultuur": "Austrian"
+   },
+   {
+    "id": 503267,
+    "titel": "Grand Piano",
+    "datum": "1868",
+    "cultuur": "American"
+   },
+   {
+    "id": 504496,
+    "titel": "Upright Piano",
+    "datum": "1831",
+    "cultuur": "American"
+   }
+  ]
+ },
+ "viool": {
+  "treffers": 190,
+  "bekeken": 5,
+  "cc0_met_foto": 3,
+  "voorbeelden": [
+   {
+    "id": 503057,
+    "titel": "Violin",
+    "datum": "1669",
+    "cultuur": "Italian (Cremona)"
+   },
+   {
+    "id": 504515,
+    "titel": "Violin",
+    "datum": "1803",
+    "cultuur": "French"
+   },
+   {
+    "id": 501965,
+    "titel": "Violin",
+    "datum": "late 19th century",
+    "cultuur": "Melanesian (New Ireland, Papua New Guinean)"
+   }
+  ]
+ },
+ "altviool": {
+  "treffers": 54,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 504948,
+    "titel": "Viola",
+    "datum": "1884",
+    "cultuur": "American"
+   },
+   {
+    "id": 503931,
+    "titel": "Viola",
+    "datum": "1791",
+    "cultuur": "British"
+   },
+   {
+    "id": 624385,
+    "titel": "Viola",
+    "datum": "ca. 1660",
+    "cultuur": "Austrian"
+   }
+  ]
+ },
+ "cello": {
+  "treffers": 18,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 505461,
+    "titel": "Violoncello",
+    "datum": "mid-19th century",
+    "cultuur": "French"
+   },
+   {
+    "id": 505459,
+    "titel": "Violoncello",
+    "datum": "18th century",
+    "cultuur": "Austrian"
+   },
+   {
+    "id": 502455,
+    "titel": "Violoncello",
+    "datum": "18th century",
+    "cultuur": "German"
+   }
+  ]
+ },
+ "contrabas": {
+  "treffers": 73,
+  "bekeken": 5,
+  "cc0_met_foto": 3,
+  "voorbeelden": [
+   {
+    "id": 503176,
+    "titel": "Double Bass",
+    "datum": "18th century",
+    "cultuur": "Italian"
+   },
+   {
+    "id": 504228,
+    "titel": "Double Bass",
+    "datum": "1734",
+    "cultuur": "Czech"
+   },
+   {
+    "id": 501551,
+    "titel": "Double Bass and Bow",
+    "datum": "mid to late 18th century",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "harp": {
+  "treffers": 152,
+  "bekeken": 5,
+  "cc0_met_foto": 2,
+  "voorbeelden": [
+   {
+    "id": 503991,
+    "titel": "Pedal Harp",
+    "datum": "1891–95",
+    "cultuur": "American"
+   },
+   {
+    "id": 503899,
+    "titel": "Hooked Harp",
+    "datum": "18th century",
+    "cultuur": "Austrian"
+   }
+  ]
+ },
+ "trompet": {
+  "treffers": 268,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 505009,
+    "titel": "Trumpet",
+    "datum": "200 BCE–600 CE",
+    "cultuur": "Moche"
+   },
+   {
+    "id": 503544,
+    "titel": "Trumpet",
+    "datum": "ca. 400–700",
+    "cultuur": "Teotihuacan"
+   },
+   {
+    "id": 501853,
+    "titel": "Trumpet",
+    "datum": "ca. 1000",
+    "cultuur": "Mochica"
+   }
+  ]
+ },
+ "trombone": {
+  "treffers": 161,
+  "bekeken": 5,
+  "cc0_met_foto": 2,
+  "voorbeelden": [
+   {
+    "id": 504686,
+    "titel": "Trombone",
+    "datum": "mid-19th century",
+    "cultuur": "European"
+   },
+   {
+    "id": 652387,
+    "titel": "Tenor valve trombone",
+    "datum": "ca. 1863",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "altsaxofoon": {
+  "treffers": 13,
+  "bekeken": 5,
+  "cc0_met_foto": 3,
+  "voorbeelden": [
+   {
+    "id": 504626,
+    "titel": "Alto Saxophone",
+    "datum": "after 1887",
+    "cultuur": "French"
+   },
+   {
+    "id": 504201,
+    "titel": "Soprano saxophone in B-Flat",
+    "datum": "1882",
+    "cultuur": "French"
+   },
+   {
+    "id": 503909,
+    "titel": "Alto saxophone in E-flat",
+    "datum": "ca. 1855",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "tenorsaxofoon": {
+  "treffers": 13,
+  "bekeken": 5,
+  "cc0_met_foto": 3,
+  "voorbeelden": [
+   {
+    "id": 504626,
+    "titel": "Alto Saxophone",
+    "datum": "after 1887",
+    "cultuur": "French"
+   },
+   {
+    "id": 504201,
+    "titel": "Soprano saxophone in B-Flat",
+    "datum": "1882",
+    "cultuur": "French"
+   },
+   {
+    "id": 503909,
+    "titel": "Alto saxophone in E-flat",
+    "datum": "ca. 1855",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "baritonsaxofoon": {
+  "treffers": 13,
+  "bekeken": 5,
+  "cc0_met_foto": 3,
+  "voorbeelden": [
+   {
+    "id": 504626,
+    "titel": "Alto Saxophone",
+    "datum": "after 1887",
+    "cultuur": "French"
+   },
+   {
+    "id": 504201,
+    "titel": "Soprano saxophone in B-Flat",
+    "datum": "1882",
+    "cultuur": "French"
+   },
+   {
+    "id": 503909,
+    "titel": "Alto saxophone in E-flat",
+    "datum": "ca. 1855",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "dwarsfluit": {
+  "treffers": 757,
+  "bekeken": 5,
+  "cc0_met_foto": 3,
+  "voorbeelden": [
+   {
+    "id": 504487,
+    "titel": "Flute",
+    "datum": "ca. 1852",
+    "cultuur": "French"
+   },
+   {
+    "id": 503254,
+    "titel": "Flute",
+    "datum": "1300–1500",
+    "cultuur": "Tairona People; La Aguja Style"
+   },
+   {
+    "id": 503159,
+    "titel": "Flute",
+    "datum": "1300–1500",
+    "cultuur": "Tairona People; Gayraca style"
+   }
+  ]
+ },
+ "hobo": {
+  "treffers": 42,
+  "bekeken": 5,
+  "cc0_met_foto": 4,
+  "voorbeelden": [
+   {
+    "id": 500533,
+    "titel": "Oboe",
+    "datum": "ca. 1806–13",
+    "cultuur": "German"
+   },
+   {
+    "id": 506049,
+    "titel": "Oboe",
+    "datum": "1870–75",
+    "cultuur": "French"
+   },
+   {
+    "id": 506048,
+    "titel": "Oboe",
+    "datum": "1837–38",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "klarinet": {
+  "treffers": 99,
+  "bekeken": 5,
+  "cc0_met_foto": 2,
+  "voorbeelden": [
+   {
+    "id": 505208,
+    "titel": "Clarinet",
+    "datum": "ca. 1830",
+    "cultuur": "British"
+   },
+   {
+    "id": 506724,
+    "titel": "Clarinet in D",
+    "datum": "1750–70",
+    "cultuur": "German"
+   }
+  ]
+ },
+ "fagot": {
+  "treffers": 32,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 503528,
+    "titel": "Bassoon",
+    "datum": "1790–1800",
+    "cultuur": "French"
+   },
+   {
+    "id": 503660,
+    "titel": "Bassoon",
+    "datum": "ca. 1750",
+    "cultuur": "German"
+   },
+   {
+    "id": 503615,
+    "titel": "Bassoon",
+    "datum": "1881",
+    "cultuur": "Italian"
+   }
+  ]
+ },
+ "hoorn": {
+  "treffers": 381,
+  "bekeken": 5,
+  "cc0_met_foto": 2,
+  "voorbeelden": [
+   {
+    "id": 501075,
+    "titel": "Horn",
+    "datum": "late 19th century",
+    "cultuur": "Tanzanian (Zanzibar)"
+   },
+   {
+    "id": 501085,
+    "titel": "Horn",
+    "datum": "late 19th century",
+    "cultuur": "Xhosa"
+   }
+  ]
+ },
+ "celesta": {
+  "treffers": 4,
+  "bekeken": 4,
+  "cc0_met_foto": 4,
+  "voorbeelden": [
+   {
+    "id": 501658,
+    "titel": "Harp Celeste",
+    "datum": "ca. 1900",
+    "cultuur": "American"
+   },
+   {
+    "id": 504189,
+    "titel": "Reed Organ (Physharmonika)",
+    "datum": "early 19th century",
+    "cultuur": "French"
+   },
+   {
+    "id": 504397,
+    "titel": "Harmonium",
+    "datum": "after 1886",
+    "cultuur": "French"
+   }
+  ]
+ },
+ "tamboerijn": {
+  "treffers": 15,
+  "bekeken": 5,
+  "cc0_met_foto": 5,
+  "voorbeelden": [
+   {
+    "id": 919103,
+    "titel": "Tambourine",
+    "datum": "19th century",
+    "cultuur": "American"
+   },
+   {
+    "id": 501170,
+    "titel": "Tambourine",
+    "datum": "mid 19th century",
+    "cultuur": "United States"
+   },
+   {
+    "id": 501455,
+    "titel": "Pandereta (tambourine)",
+    "datum": "19th century",
+    "cultuur": "Spanish"
+   }
+  ]
+ }
+}

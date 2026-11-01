@@ -1,0 +1,406 @@
+{
+ "air-tonight": {
+  "master": 553,
+  "release": 10775348,
+  "release_titel": "Face Value",
+  "jaar": 1981,
+  "versies_van_master": 100,
+  "track": "A1",
+  "credits_totaal": 34,
+  "spelcredits": 27,
+  "productiecredits": 6,
+  "rollen": {
+   "Drum Machine [Roland]": 1,
+   "Drums": 1,
+   "Electric Piano [Rhodes]": 1,
+   "Synthesizer [Prophet]": 1,
+   "Violin": 9,
+   "Vocoder": 1,
+   "Arranged By [Horns]": 1,
+   "Bass": 1,
+   "Cello": 3,
+   "Conductor [Strings]": 1,
+   "Double Bass": 1,
+   "Guitar": 1,
+   "Musical Assistance [Preparation - Horns]": 1,
+   "Viola": 3,
+   "Violin [Leader]": 1
+  },
+  "voorbeeld": [
+   [
+    "Drum Machine [Roland]",
+    "Phil Collins",
+    "track"
+   ],
+   [
+    "Drums",
+    "Phil Collins",
+    "track"
+   ],
+   [
+    "Electric Piano [Rhodes]",
+    "Phil Collins",
+    "track"
+   ],
+   [
+    "Synthesizer [Prophet]",
+    "Phil Collins",
+    "track"
+   ],
+   [
+    "Violin",
+    "Shankar",
+    "track"
+   ],
+   [
+    "Vocoder",
+    "Phil Collins",
+    "track"
+   ],
+   [
+    "Arranged By [Horns]",
+    "Tom Tom 84",
+    "release (alle tracks)"
+   ],
+   [
+    "Bass",
+    "John Giblin",
+    "release"
+   ],
+   [
+    "Cello",
+    "Anthony Pleeth",
+    "release (alle tracks)"
+   ],
+   [
+    "Cello",
+    "Clive Anstee",
+    "release (alle tracks)"
+   ],
+   [
+    "Cello",
+    "Nigel Warren-Green",
+    "release (alle tracks)"
+   ],
+   [
+    "Conductor [Strings]",
+    "Martyn Ford",
+    "release (alle tracks)"
+   ]
+  ],
+  "notities_lengte": 56
+ },
+ "billie-jean": {
+  "master": 8883,
+  "release": 152946,
+  "release_titel": "Thriller",
+  "jaar": 1982,
+  "versies_van_master": 100,
+  "track": "B2",
+  "credits_totaal": 28,
+  "spelcredits": 10,
+  "productiecredits": 10,
+  "rollen": {
+   "Arranged By [String Arrangement]": 1,
+   "Arranged By [Vocal, Rhythm And Synthesizer Arrangement]": 1,
+   "Bass": 1,
+   "Conductor [Strings]": 1,
+   "Drums": 1,
+   "Electric Piano [Rhodes], Synthesizer": 1,
+   "Guitar": 1,
+   "Sampler [Emulator]": 1,
+   "Synthesizer": 1,
+   "Synthesizer, Programmed By [Synthesizer Programming]": 1
+  },
+  "voorbeeld": [
+   [
+    "Arranged By [String Arrangement]",
+    "Jerry Hey",
+    "track"
+   ],
+   [
+    "Arranged By [Vocal, Rhythm And Synthesizer Arrangement]",
+    "Michael Jackson",
+    "track"
+   ],
+   [
+    "Bass",
+    "Louis Johnson",
+    "track"
+   ],
+   [
+    "Conductor [Strings]",
+    "Jeremy Lubbock",
+    "track"
+   ],
+   [
+    "Drums",
+    "Leon Ndugu Chancler",
+    "track"
+   ],
+   [
+    "Electric Piano [Rhodes], Synthesizer",
+    "Greg Phillinganes",
+    "track"
+   ],
+   [
+    "Guitar",
+    "Dean Parks",
+    "track"
+   ],
+   [
+    "Sampler [Emulator]",
+    "Michael Boddicker",
+    "track"
+   ],
+   [
+    "Synthesizer",
+    "Greg Smith",
+    "track"
+   ],
+   [
+    "Synthesizer, Programmed By [Synthesizer Programming]",
+    "Bill Wolfer",
+    "track"
+   ]
+  ],
+  "notities_lengte": 3481
+ },
+ "under-pressure": {
+  "master": 8150,
+  "release": 505097,
+  "release_titel": "Hot Space",
+  "jaar": 1982,
+  "versies_van_master": 100,
+  "track": "B6",
+  "credits_totaal": 15,
+  "spelcredits": 0,
+  "productiecredits": 6,
+  "rollen": {},
+  "voorbeeld": [],
+  "notities_lengte": 890
+ },
+ "one-more-time": {
+  "master": 26647,
+  "release": 2879,
+  "release_titel": "Discovery",
+  "jaar": 2001,
+  "versies_van_master": 100,
+  "track": "A1",
+  "credits_totaal": 20,
+  "spelcredits": 2,
+  "productiecredits": 7,
+  "rollen": {
+   "Vocals": 1,
+   "Photography By [Piano Photo]": 1
+  },
+  "voorbeeld": [
+   [
+    "Vocals",
+    "Romanthony",
+    "track"
+   ],
+   [
+    "Photography By [Piano Photo]",
+    "Luis Sanchis",
+    "release (alle tracks)"
+   ]
+  ],
+  "notities_lengte": 2144
+ },
+ "juicy": {
+  "master": 57970,
+  "release": 8489209,
+  "release_titel": "Ready To Die",
+  "jaar": 1994,
+  "versies_van_master": 100,
+  "track": "10",
+  "credits_totaal": 11,
+  "spelcredits": 1,
+  "productiecredits": 6,
+  "rollen": {
+   "Vocals": 1
+  },
+  "voorbeeld": [
+   [
+    "Vocals",
+    "Total",
+    "track"
+   ]
+  ],
+  "notities_lengte": 68
+ },
+ "not-like-us": {
+  "master": 3517387,
+  "release": 30982453,
+  "release_titel": "Not Like Us",
+  "jaar": 2024,
+  "versies_van_master": 4,
+  "track": "1",
+  "credits_totaal": 0,
+  "spelcredits": 0,
+  "productiecredits": 0,
+  "rollen": {},
+  "voorbeeld": [],
+  "notities_lengte": 68
+ },
+ "rehab": {
+  "master": 51256,
+  "release": 825438,
+  "release_titel": "Back To Black",
+  "jaar": 2006,
+  "versies_van_master": 100,
+  "track": "1",
+  "credits_totaal": 53,
+  "spelcredits": 36,
+  "productiecredits": 11,
+  "rollen": {
+   "Alto Saxophone": 2,
+   "Baritone Saxophone": 2,
+   "Bass Guitar": 1,
+   "Cello": 3,
+   "Drums": 1,
+   "Guitar": 2,
+   "Handclaps": 2,
+   "Harp": 1,
+   "Percussion": 1,
+   "Piano, Electric Piano [Wurlitzer], Handclaps": 1,
+   "Tenor Saxophone": 3,
+   "Tenor Trombone": 1,
+   "Trumpet": 2,
+   "Viola": 4,
+   "Violin": 10
+  },
+  "voorbeeld": [
+   [
+    "Alto Saxophone",
+    "Andy Mackintosh",
+    "track"
+   ],
+   [
+    "Alto Saxophone",
+    "Snake Davis",
+    "track"
+   ],
+   [
+    "Baritone Saxophone",
+    "Dave Bishop",
+    "track"
+   ],
+   [
+    "Baritone Saxophone",
+    "Ian Hendrickson-Smith",
+    "track"
+   ],
+   [
+    "Bass Guitar",
+    "Nick Movshon",
+    "track"
+   ],
+   [
+    "Cello",
+    "Anthony Pleeth",
+    "track"
+   ],
+   [
+    "Cello",
+    "Joely Koos",
+    "track"
+   ],
+   [
+    "Cello",
+    "John Heley",
+    "track"
+   ],
+   [
+    "Drums",
+    "Homer Steinweiss",
+    "track"
+   ],
+   [
+    "Guitar",
+    "Binky Griptite",
+    "track"
+   ],
+   [
+    "Guitar",
+    "Thomas Brenneck",
+    "track"
+   ],
+   [
+    "Handclaps",
+    "Mark Ronson",
+    "track"
+   ]
+  ],
+  "notities_lengte": 900
+ },
+ "bad-guy": {
+  "master": 1524311,
+  "release": 14552503,
+  "release_titel": "When We All Fall Asleep, Where Do We Go?",
+  "jaar": 2019,
+  "versies_van_master": 74,
+  "track": "2",
+  "credits_totaal": 11,
+  "spelcredits": 0,
+  "productiecredits": 4,
+  "rollen": {},
+  "voorbeeld": [],
+  "notities_lengte": 1756
+ },
+ "de-bom": {
+  "master": 47447,
+  "release": 401816,
+  "release_titel": "4US",
+  "jaar": 1983,
+  "versies_van_master": 30,
+  "track": null,
+  "credits_totaal": 11,
+  "spelcredits": 4,
+  "productiecredits": 2,
+  "rollen": {
+   "Bass": 1,
+   "Drums": 1,
+   "Guitar": 1,
+   "Keyboards": 1
+  },
+  "voorbeeld": [
+   [
+    "Bass",
+    "Henny Vrienten",
+    "release (alle tracks)"
+   ],
+   [
+    "Drums",
+    "René Van Collem",
+    "release (alle tracks)"
+   ],
+   [
+    "Guitar",
+    "Jan Hendriks",
+    "release (alle tracks)"
+   ],
+   [
+    "Keyboards",
+    "Ernst Jansz",
+    "release (alle tracks)"
+   ]
+  ],
+  "notities_lengte": 657
+ },
+ "bolero": {
+  "master": 1721943,
+  "release": 12088603,
+  "release_titel": "Boléro",
+  "jaar": 1961,
+  "versies_van_master": 2,
+  "track": null,
+  "credits_totaal": 1,
+  "spelcredits": 0,
+  "productiecredits": 0,
+  "rollen": {},
+  "voorbeeld": [],
+  "notities_lengte": 0
+ }
+}

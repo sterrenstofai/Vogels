@@ -1,0 +1,219 @@
+{
+ "piano": {
+  "item": "Q5994",
+  "sites": 173,
+  "nl": "piano",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Piano_(instrument)",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Steinway%20%26%20Sons%20concert%20grand%20piano%2C%20model%20D-274%2C%20manufactured%20at%20Steinway%27s%20factory%20in%20Hamburg%2C%20Germany.png"
+ },
+ "guitar": {
+  "item": "Q6607",
+  "sites": 212,
+  "nl": "gitaar",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Gitaar",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Classical%20Guitar%20two%20views.jpg"
+ },
+ "electric guitar": {
+  "item": "Q78987",
+  "sites": 88,
+  "nl": "elektrische gitaar",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Elektrische_gitaar",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Yngwie%20Malmsteen%27s%20electric%20guitar.jpg"
+ },
+ "drum kit": {
+  "item": "Q128309",
+  "sites": 81,
+  "nl": "drumstel",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Drumstel",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Bateria.jpg"
+ },
+ "double bass": {
+  "item": "Q80019",
+  "sites": 87,
+  "nl": "contrabas",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Contrabas",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/AGK%20bass1%20full.jpg"
+ },
+ "Sequential Circuits Prophet-5": {
+  "item": "Q2387433",
+  "sites": 13,
+  "nl": "Sequential Circuits Prophet 5",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Sequential_Circuits_Prophet_5",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Sequential%20Circuits%20Prophet%205.jpg"
+ },
+ "LinnDrum": {
+  "item": "Q3241627",
+  "sites": 9,
+  "nl": "LinnDrum",
+  "nlwiki": "https://nl.wikipedia.org/wiki/LinnDrum",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/LinnDrum%20digital%20drum%20machine%20front%20panel%20.jpg"
+ },
+ "vocoder": {
+  "item": "Q908562",
+  "sites": 29,
+  "nl": "vocoder",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Vocoder",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Korg%20VC-10%20Vocoder.jpg"
+ },
+ "E-mu Emulator": {
+  "item": "Q1273173",
+  "sites": 9,
+  "nl": "E-mu Emulator",
+  "nlwiki": "https://nl.wikipedia.org/wiki/E-mu_Emulator",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/E-mu%20Emulator%20I.jpg"
+ },
+ "Akai MPC": {
+  "item": "Q1327157",
+  "sites": 14,
+  "nl": "Akai MPC",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Akai_MPC",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Akai%20MPC2000XL.jpg"
+ },
+ "Roland TR-808": {
+  "item": "Q1414221",
+  "sites": 27,
+  "nl": "Roland TR-808",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Roland_TR-808",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Roland%20TR-808%20%28large%29.jpg"
+ },
+ "tenor saxophone": {
+  "item": "Q1414932",
+  "sites": 25,
+  "nl": "tenorsaxofoon",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Tenorsaxofoon",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Amati-Kraslice%20tenor%20saxophone.jpg"
+ },
+ "trumpet": {
+  "item": "Q8338",
+  "sites": 141,
+  "nl": "trompet",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Trompet",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Trumpet%201.png"
+ },
+ "clarinet": {
+  "item": "Q8343",
+  "sites": 107,
+  "nl": "klarinet",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Klarinet",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Klarinetten%20von%20Herbert%20Wurlitzer%202.jpg"
+ },
+ "trombone": {
+  "item": "Q8350",
+  "sites": 90,
+  "nl": "trombone",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Trombone",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Yamaha%20Tenor%20trombone%20YSL-891Z.tif"
+ },
+ "snare drum": {
+  "item": "Q208421",
+  "sites": 50,
+  "nl": "kleine trom",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Kleine_trom",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/2006-07-06%20snare%2014.jpg"
+ },
+ "celesta": {
+  "item": "Q320341",
+  "sites": 44,
+  "nl": "celesta",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Celesta",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Celesta.jpg"
+ },
+ "alto saxophone": {
+  "item": "Q445275",
+  "sites": 33,
+  "nl": "altsaxofoon",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Altsaxofoon",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Dinant%20altsax%202-02-2013%2014-11-00.jpg"
+ },
+ "Rhodes piano": {
+  "item": "Q743659",
+  "sites": 29,
+  "nl": "Rhodes",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Rhodes_(piano)",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Rhodes%20Mk%20II%2073%20cropped.jpg"
+ },
+ "baritone saxophone": {
+  "item": "Q808218",
+  "sites": 22,
+  "nl": "baritonsaxofoon",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Baritonsaxofoon",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Baritone%20Saxophone%20Amati.png"
+ },
+ "viola": {
+  "item": "Q80284",
+  "sites": 93,
+  "nl": "altviool",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Altviool",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Bratsche.jpg"
+ },
+ "violin": {
+  "item": "Q8355",
+  "sites": 170,
+  "nl": "viool",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Viool",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Violin%20VL100.png"
+ },
+ "cello": {
+  "item": "Q8371",
+  "sites": 106,
+  "nl": "cello",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Cello",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Cello%20front%20side.png"
+ },
+ "bassoon": {
+  "item": "Q159998",
+  "sites": 76,
+  "nl": "fagot",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Fagot",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Bassoon%20001.jpg"
+ },
+ "oboe": {
+  "item": "Q8377",
+  "sites": 89,
+  "nl": "hobo",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Hobo_(muziekinstrument)",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B6nnig%2C%20Oboe%20Modell%20155%20Albrecht%20Mayer.jpg"
+ },
+ "French horn": {
+  "item": "Q89204011",
+  "sites": 0,
+  "nl": null,
+  "nlwiki": null,
+  "img": null
+ },
+ "harp": {
+  "item": "Q47369",
+  "sites": 104,
+  "nl": "harp",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Harp_(tokkelinstrument)",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/A%20musical%20instrument.%20A%20harp.jpg"
+ },
+ "Technics SL-1200": {
+  "item": "Q371601",
+  "sites": 13,
+  "nl": null,
+  "nlwiki": null,
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/ALEX%20NILSON.jpg"
+ },
+ "Roland CR-78": {
+  "item": "Q2162697",
+  "sites": 7,
+  "nl": "Roland CR-78",
+  "nlwiki": null,
+  "img": null
+ },
+ "tambourine": {
+  "item": "Q193666",
+  "sites": 71,
+  "nl": "tamboerijn",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Tamboerijn",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Deff%20-%20Tambourine%2C%20p.%20579%20in%20Thomson%2C%201859.jpg"
+ },
+ "bass guitar": {
+  "item": "Q46185",
+  "sites": 88,
+  "nl": "basgitaar",
+  "nlwiki": "https://nl.wikipedia.org/wiki/Basgitaar",
+  "img": "http://commons.wikimedia.org/wiki/Special:FilePath/MusicmanStingray.jpg"
+ }
+}

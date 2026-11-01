@@ -1,0 +1,252 @@
+{
+ "air-tonight": {
+  "itunes": {
+   "titel": "In the Air Tonight",
+   "artiest": "Phil Collins",
+   "album": "The Singles (Deluxe Edition)",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 1025,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "In the Air Tonight (2015 Remaster)",
+   "artiest": "Phil Collins",
+   "album": "The Singles (Expanded)",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "USAT21502120",
+   "bpm": 94.83,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "billie-jean": {
+  "itunes": {
+   "titel": "Billie Jean (Single Version)",
+   "artiest": "Michael Jackson",
+   "album": "Number Ones",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 1062,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "Billie Jean",
+   "artiest": "Michael Jackson",
+   "album": "Michael Jackson's This Is It",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "USSM19902991",
+   "bpm": 117.1,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "under-pressure": {
+  "itunes": {
+   "titel": "Under Pressure (Single Version) [2017 Remastered Version]",
+   "artiest": "Queen & David Bowie",
+   "album": "Re:Call 3",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 1014,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "Under Pressure (feat. David Bowie)",
+   "artiest": "Queen",
+   "album": "Hot Space (Deluxe Edition)",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "GBUM71029622",
+   "bpm": 0,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "one-more-time": {
+  "itunes": {
+   "titel": "One More Time",
+   "artiest": "Daft Punk",
+   "album": "Discovery",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 980,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "One More Time",
+   "artiest": "Daft Punk",
+   "album": "Discovery",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "GBDUW0000053",
+   "bpm": 0,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "juicy": {
+  "itunes": {
+   "titel": "Juicy",
+   "artiest": "The Notorious B.I.G.",
+   "album": "Ready To Die the Remaster",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 983,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "Juicy (2005 Remaster)",
+   "artiest": "The Notorious B.I.G.",
+   "album": "Ready to Die (The Remaster)",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "USBB40580814",
+   "bpm": 95.9,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "not-like-us": {
+  "itunes": {
+   "titel": "Not Like Us",
+   "artiest": "Kendrick Lamar",
+   "album": "Not Like Us - Single",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 1000,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "Not Like Us",
+   "artiest": "Kendrick Lamar",
+   "album": "Not Like Us",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "USUG12400910",
+   "bpm": 0,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "rehab": {
+  "itunes": {
+   "titel": "Rehab",
+   "artiest": "Amy Winehouse",
+   "album": "Back to Black",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 977,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "Rehab",
+   "artiest": "Amy Winehouse",
+   "album": "Back To Black",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "GBUM70603730",
+   "bpm": 145.6,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "bad-guy": {
+  "itunes": {
+   "titel": "bad guy",
+   "artiest": "Billie Eilish",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 1035,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "bad guy",
+   "artiest": "Billie Eilish",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "USUM71900764",
+   "bpm": 135.11,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "de-bom": {
+  "itunes": {
+   "titel": "De bom",
+   "artiest": "Doe Maar",
+   "album": "Doe maar - De singles (Het complete singles overzicht)",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 1089,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "De Bom",
+   "artiest": "Doe Maar",
+   "album": "Doe Maar - De Singles (Het Complete Singles Overzicht)",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "NLA340000021",
+   "bpm": 0,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ },
+ "bolero": {
+  "itunes": {
+   "titel": "Boléro",
+   "artiest": "Boston Symphony Orchestra & Seiji Ozawa",
+   "album": "Ravel: Bolero",
+   "url_host": "audio-ssl.itunes.apple.com",
+   "isrc": null,
+   "sec": 30.0,
+   "kB": 985,
+   "formaat": "mov,mp4,m4a,3gp,3g2,mj2",
+   "cors": "*"
+  },
+  "deezer": {
+   "titel": "Ravel Boléro (ft. Axelle Saint-Cirel) (Ravel)",
+   "artiest": "Argos",
+   "album": "Masterworks",
+   "url_host": "cdnt-preview.dzcdn.net",
+   "isrc": "FR59R2500004",
+   "bpm": 0,
+   "sec": 30.0,
+   "kB": 468,
+   "formaat": "mp3",
+   "cors": "*"
+  }
+ }
+}
