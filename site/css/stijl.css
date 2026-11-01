@@ -668,3 +668,9 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 @media (prefers-reduced-motion: reduce) { .kids-in, .kids-plaat.wiebel img, .kids-speel.speelt .kids-golf { animation: none; } }
 /* knop in de kop */
 .nav-knop-kids { background: var(--mint); border-color: var(--mint); }
+.kids-tip { position: absolute; left: 50%; top: 50%; z-index: 2; width: 104px; height: 104px; margin: -52px 0 0 -52px; border-radius: 50%; border: 3px solid var(--inkt); background: #FFFFFF; color: var(--inkt); display: grid; place-items: center; cursor: pointer; box-shadow: 0 0 0 0 rgb(161 255 203 / .8), 0 14px 30px -14px rgb(0 0 0 / .5); animation: tip 1.6s ease-out infinite; transition: opacity 250ms, transform 250ms; }
+.kids-tip svg { width: 60px; height: 60px; animation: tik 1.6s ease-in-out infinite; }
+.kids-tip.weg { opacity: 0; transform: scale(.6); }
+@keyframes tip { 0% { box-shadow: 0 0 0 0 rgb(161 255 203 / .85), 0 14px 30px -14px rgb(0 0 0 / .5); } 70% { box-shadow: 0 0 0 26px rgb(161 255 203 / 0), 0 14px 30px -14px rgb(0 0 0 / .5); } 100% { box-shadow: 0 0 0 0 rgb(161 255 203 / 0), 0 14px 30px -14px rgb(0 0 0 / .5); } }
+@keyframes tik { 0%, 100% { transform: translate(0, 0) scale(1); } 40% { transform: translate(0, 5px) scale(.92); } 55% { transform: translate(0, 5px) scale(.92); } }
+@media (prefers-reduced-motion: reduce) { .kids-tip, .kids-tip svg { animation: none; } }

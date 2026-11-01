@@ -57,6 +57,12 @@ export function kinderPagina(app, S) {
       <figure class="kids-vogel">
         <button class="kids-plaat" type="button"><img alt="" draggable="false"></button>
         <figcaption class="kids-ballon" aria-live="polite"></figcaption>
+        <button class="kids-tip" type="button" aria-label="Tik op de vogel, dan hoor je zijn naam" hidden>
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M19 26V12.5a3 3 0 0 1 6 0V23l8.2 1.6a4 4 0 0 1 3.2 4.5l-1.3 8.2a5 5 0 0 1-4.9 4.2H22.6a5 5 0 0 1-4-2l-6.2-8.3a2.8 2.8 0 0 1 4.2-3.7z" fill="#A1FFCB" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M31 9.5c1.6 1.4 2.5 3.3 2.5 5.4M35 6c2.6 2.3 4.2 5.4 4.2 8.9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </button>
       </figure>
       <button class="kids-pijl kids-volgende" type="button" aria-label="Volgende vogel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
@@ -75,6 +81,19 @@ export function kinderPagina(app, S) {
   const ballon = wrap.querySelector(".kids-ballon"), speel = wrap.querySelector(".kids-speel");
   const strook = wrap.querySelector(".kids-strook");
   let ballonTimer = 0, geveegd = false;
+  // de eerste keer wijst een knop op de plaat: hier tikken. Daarna onthouden we (alleen op dit toestel) dat het bekend is.
+  const tip = wrap.querySelector(".kids-tip");
+  const TIP = "voggels-kinderen-tik";
+  let tipGezien = false;
+  try { tipGezien = localStorage.getItem(TIP) === "1"; } catch {}
+  tip.hidden = tipGezien;
+  const tipWeg = () => {
+    if (tip.hidden) return;
+    tip.classList.add("weg");
+    setTimeout(() => (tip.hidden = true), 300);
+    try { localStorage.setItem(TIP, "1"); } catch {}
+  };
+  tip.addEventListener("click", () => plaatKnop.click());
 
   const huidige = () => lijst[i];
   const type = (s) => (s.zang ? "zang" : "roep");
@@ -114,6 +133,7 @@ export function kinderPagina(app, S) {
     zeg(s.nl);
     ballon.textContent = s.nl;
     ballon.classList.add("zichtbaar");
+    tipWeg();
     plaatKnop.classList.remove("wiebel"); void plaatKnop.offsetWidth; plaatKnop.classList.add("wiebel");
     clearTimeout(ballonTimer);
     ballonTimer = setTimeout(() => ballon.classList.remove("zichtbaar"), 2600);
