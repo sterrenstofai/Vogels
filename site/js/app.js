@@ -4,6 +4,7 @@ import { tekenKaart, legenda } from "./kaart.js";
 import * as G from "./geluid.js";
 import { Rondom, maten as vogelmaten } from "./rondom.js";
 import { GROEPNAMEN, KLEUREN } from "./simulatie.js";
+import * as SP from "./gespot.js";
 
 const app = document.getElementById("app");
 const toestand = {
@@ -62,6 +63,7 @@ async function toon(navigatie = false) {
       else if (pad.startsWith("/soort/")) await soortPagina(decodeURIComponent(pad.slice(7)));
       else if (pad === "/soorten") await soortenIndex();
       else if (pad === "/ontdek") await ontdek();
+      else if (pad === "/gespot") await mijnVogels();
       else if (pad === "/kinderen") {
         kinderModule = kinderModule || await import("./kinderen.js");
         document.title = `Voggels voor kinderen`;
@@ -129,14 +131,35 @@ function labelVoor(soort) {
   return soort.exoot ? `<span class="label">${soort.status.includes("exoot") ? "exoot" : "ontsnapt"}</span>` : "";
 }
 
+// Wanneer is een vogel in Twente? Uit de meldingen per maand: mei-juli tegen december-februari, en de trekmaanden.
+const AARD = { jaarrond: "Het hele jaar", zomergast: "Zomergast", wintergast: "Wintergast", doortrekker: "Doortrekker" };
+const AARD_UITLEG = { jaarrond: "Het hele jaar in Twente", zomergast: "Zomergast: komt in het voorjaar, vertrekt in de nazomer", wintergast: "Wintergast: komt in de herfst, vertrekt in het voorjaar", doortrekker: "Doortrekker: vooral in het voor- en najaar, op weg naar elders" };
+function aardVan(t) {
+  const gem = (ms) => ms.reduce((a, m) => a + t[m], 0) / ms.length;
+  const Z = gem([4, 5, 6]), W = gem([11, 0, 1]), T = Math.max(gem([2, 3]), gem([8, 9])), mx = Math.max(Z, W, T) || 1;
+  if (Z < 0.15 * mx && W < 0.15 * mx) return "doortrekker";
+  if (W < 0.12 * Z) return "zomergast";
+  if (Z < 0.12 * W) return "wintergast";
+  return "jaarrond";
+}
+// is de soort in maand m in Twente: minstens 15% van zijn drukste maand
+const erIn = (t, m) => t[m] >= 0.15 * Math.max(...t) && t[m] > 0;
+
+// de plus: een vogel die je zelf gezien of gehoord hebt
+function gespotKnop(soort, klein = false) {
+  const n = SP.aantalVan(soort.key);
+  return `<button type="button" class="gespot${klein ? " gespot-klein" : ""}${n ? " ja" : ""}" data-gespot="${soort.key}" aria-label="${n ? `${esc(soort.nl)}: ${n}× gespot. Nog een keer gespot` : `Ik heb de ${esc(klein ? soort.nl.toLowerCase() : soort.nl.toLowerCase())} gespot`}"><span class="gespot-plus" aria-hidden="true">+</span>${klein ? (n ? `<span class="gespot-n">${n}</span>` : "") : `<span class="gespot-tekst">${n ? `Gespot <b>${n}×</b>` : "Gespot"}</span>`}</button>`;
+}
+
 function kaartje(soort, rij, maanden, telling) {
   const beeld = soort.plaat
     ? `<img src="${soort.plaat.klein}" alt="" loading="lazy" decoding="async" width="480" height="600">`
     : legePlaat(soort, true);
   return `<article class="soort">
     <a class="soort-beeld" href="/soort/${soort.slug}" data-link tabindex="-1" aria-hidden="true">${beeld}</a>
+    ${soort.key ? gespotKnop(soort, true) : ""}
     <div class="soort-tekst">
-      <div><a class="soort-naam" href="/soort/${soort.slug}" data-link>${esc(soort.nl)}</a><span class="wet">${esc(soort.wet)}</span>${labelVoor(soort)}</div>
+      <div><a class="soort-naam" href="/soort/${soort.slug}" data-link>${esc(soort.nl)}</a><span class="wet">${esc(soort.wet)}</span>${labelVoor(soort)}<span class="label label-aard">${AARD[aardVan(soort.twente)]}</span></div>
       ${knop(soort, "zang")}
     </div>
     ${maandStrip(rij, maanden)}
@@ -182,6 +205,7 @@ function scherm(soort, { kop, sub, weetjes = [], strook, omgeving }) {
     </div>
     <div class="scherm-titel">
       <h1>${kop}</h1>
+      ${gespotKnop(soort)}
       ${sub ? `<p class="scherm-sub">${sub}</p>` : ""}
       <dl class="weetjes">${weetjes.filter(Boolean).map(([l, w]) => `<dt>${esc(l)}</dt><dd>${w}</dd>`).join("")}</dl>
     </div>
@@ -264,6 +288,7 @@ function weetjesVoor(soort, extra = []) {
   return [
     ["Soort", `<em>${esc(soort.wet)}</em>`],
     soort.status ? ["Status", esc(soort.status.charAt(0).toUpperCase() + soort.status.slice(1))] : null,
+    ["Wanneer", esc(AARD_UITLEG[aardVan(soort.twente)])],
     ...extra,
     ["Het vaakst", MAANDNAMEN[piek]],
     o ? ["Geluid", `<span data-weetje-geluid>${opnameTekst(o)}</span>`] : null,
@@ -557,7 +582,7 @@ async function soortPagina(slug) {
 async function soortenIndex() {
   const S = await D.soorten();
   document.title = `Alle soorten · ${TITEL}`;
-  const st = { groep: null, sort: "meest", q: "" };
+  const st = { groep: null, sort: "meest", q: "", wanneer: "" };
   const groepen = Object.keys(GROEPNAMEN).filter((g) => Object.values(S).some((s) => s.groep === g && s.n >= KERN_MIN));
   app.innerHTML = `
   <section class="breed blok">
@@ -567,20 +592,41 @@ async function soortenIndex() {
         <button type="button" class="chip" data-groep="" aria-pressed="true">Alle</button>
         ${groepen.map((g) => `<button type="button" class="chip" data-groep="${g}" aria-pressed="false"><i style="background:${KLEUREN[g]}"></i>${GROEPNAMEN[g]}</button>`).join("")}
       </div>
+      <div class="chips chips-wanneer" role="group" aria-label="Wanneer in Twente">
+        <button type="button" class="chip" data-wanneer="" aria-pressed="true">Altijd</button>
+        <button type="button" class="chip" data-wanneer="nu" aria-pressed="false"><span class="chip-live"></span>Nu, in ${MAANDNAMEN[new Date().getMonth()]}</button>
+        <button type="button" class="chip" data-wanneer="jaarrond" aria-pressed="false">Het hele jaar</button>
+        <button type="button" class="chip" data-wanneer="zomergast" aria-pressed="false">Zomergasten</button>
+        <button type="button" class="chip" data-wanneer="wintergast" aria-pressed="false">Wintergasten</button>
+        <button type="button" class="chip" data-wanneer="doortrekker" aria-pressed="false">Doortrekkers</button>
+        <button type="button" class="chip chip-gespot" data-wanneer="gespot" aria-pressed="false">+ Mijn vogels</button>
+        <button type="button" class="chip" data-wanneer="niet" aria-pressed="false">Nog niet gespot</button>
+      </div>
       <div class="index-rij">
         <input class="veld" type="search" placeholder="Zoek een soort" aria-label="Zoek een soort">
         <select class="veld" aria-label="Sorteer"><option value="meest">Meest gemeld</option><option value="zeldzaam">Zeldzaamst</option><option value="az">A–Z</option><option value="nu">Nu het meest</option></select>
       </div>
     </div>
+    <p class="index-teller mono zacht"></p>
     <div class="raster index-raster"></div>
   </section>`;
   const raster = app.querySelector(".index-raster");
+  const teller = app.querySelector(".index-teller");
   const m = new Date().getMonth();
+  app.querySelectorAll("[data-wanneer]").forEach((b) => b.addEventListener("click", () => {
+    st.wanneer = b.dataset.wanneer;
+    app.querySelectorAll("[data-wanneer]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    teken();
+  }));
+
   const teken = () => {
-    let lijst = Object.keys(S).filter((k) => S[k].n >= KERN_MIN && (!st.groep || S[k].groep === st.groep) && (!st.q || S[k].nl.toLowerCase().includes(st.q) || S[k].wet.toLowerCase().includes(st.q)));
+    const mijn = SP.lees();
+    const wanneer = (k) => !st.wanneer || (st.wanneer === "nu" ? erIn(S[k].twente, m) : st.wanneer === "gespot" ? !!mijn[k] : st.wanneer === "niet" ? !mijn[k] : aardVan(S[k].twente) === st.wanneer);
+    let lijst = Object.keys(S).filter((k) => S[k].n >= KERN_MIN && (!st.groep || S[k].groep === st.groep) && wanneer(k) && (!st.q || S[k].nl.toLowerCase().includes(st.q) || S[k].wet.toLowerCase().includes(st.q)));
     const sorteer = { meest: (a, b) => S[b].n - S[a].n, zeldzaam: (a, b) => S[a].n - S[b].n, az: (a, b) => S[a].nl.localeCompare(S[b].nl, "nl"), nu: (a, b) => S[b].twente[m] - S[a].twente[m] }[st.sort];
     lijst = lijst.sort(sorteer);
     raster.innerHTML = lijst.map((k) => kaartje(metKey(S, k), S[k].twente, [m], `${getal(S[k].n)} meldingen`)).join("") || `<p>Geen soorten gevonden.</p>`;
+    teller.textContent = `${lijst.length} ${lijst.length === 1 ? "soort" : "soorten"}`;
     werkKnoppenBij();
   };
   app.querySelectorAll("[data-groep]").forEach((b) => b.addEventListener("click", () => {
@@ -590,8 +636,62 @@ async function soortenIndex() {
   }));
   app.querySelector("input.veld").addEventListener("input", (e) => { st.q = e.target.value.trim().toLowerCase(); teken(); });
   app.querySelector("select.veld").addEventListener("change", (e) => { st.sort = e.target.value; teken(); });
+  const startWanneer = new URLSearchParams(location.search).get("wanneer");
+  if (startWanneer && app.querySelector(`[data-wanneer="${CSS.escape(startWanneer)}"]`)) {
+    st.wanneer = startWanneer;
+    app.querySelectorAll("[data-wanneer]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.wanneer === startWanneer)));
+  }
   teken();
 }
+
+/* ---------- Mijn vogels: wat je zelf gespot hebt ---------- */
+
+function datumLang(iso) {
+  const [j, mm, d] = iso.slice(0, 10).split("-").map(Number);
+  return `${d} ${MAANDNAMEN[mm - 1]}${j !== new Date().getFullYear() ? ` ${j}` : ""}`;
+}
+
+async function mijnVogels() {
+  const S = await D.soorten();
+  document.title = `Mijn vogels · ${TITEL}`;
+  const teken = () => {
+    const mijn = SP.lees();
+    const keys = Object.keys(mijn).filter((k) => S[k]).sort((a, b) => mijn[b].at(-1).localeCompare(mijn[a].at(-1)) || mijn[b].length - mijn[a].length);
+    const totaal = Object.values(S).filter((s) => s.n >= KERN_MIN).length;
+    const keer = keys.reduce((a, k) => a + mijn[k].length, 0);
+    const m = new Date().getMonth();
+    // tips: nu in Twente, veel gemeld, nog niet door jou gespot
+    const tips = Object.keys(S).filter((k) => !mijn[k] && S[k].n >= KERN_MIN && S[k].plaat && !S[k].exoot && erIn(S[k].twente, m)).sort((a, b) => S[b].twente[m] - S[a].twente[m]).slice(0, 6);
+    app.innerHTML = `
+    <section class="breed blok mijn">
+      <p class="oz-boventitel">Op dit apparaat</p>
+      <h1 class="index-kop">Mijn <em>vogels</em></h1>
+      <div class="mijn-cijfers">
+        <div><strong>${keys.length}</strong><span>van de ${totaal} soorten gespot</span></div>
+        <div><strong>${keer}</strong><span>${keer === 1 ? "keer" : "keer"} een plusje gezet</span></div>
+        ${keys.length ? `<div><strong>${datumLang(mijn[keys[0]].at(-1))}</strong><span>laatst: ${esc(klein(S[keys[0]].nl))}</span></div>` : ""}
+      </div>
+      <div class="mijn-balk" aria-hidden="true"><i style="width:${Math.max(keys.length ? 1.2 : 0, (100 * keys.length) / totaal).toFixed(1)}%"></i></div>
+      ${keys.length ? `<div class="raster mijn-raster">${keys.map((k) => {
+        const s = metKey(S, k), d = mijn[k];
+        return `<article class="soort">
+          <a class="soort-beeld" href="/soort/${s.slug}" data-link tabindex="-1" aria-hidden="true">${s.plaat ? `<img src="${s.plaat.klein}" alt="" loading="lazy" width="480" height="600">` : legePlaat(s, true)}</a>
+          ${gespotKnop(s, true)}
+          <div class="soort-tekst"><div><a class="soort-naam" href="/soort/${s.slug}" data-link>${esc(s.nl)}</a><span class="wet">${esc(s.wet)}</span></div>${knop(s, "zang")}</div>
+          <p class="mijn-data">${d.length}× · ${d.length > 1 ? `eerst ${datumLang(d[0])}, laatst ${datumLang(d.at(-1))}` : datumLang(d[0])}</p>
+          <button type="button" class="mijn-min" data-gespot-min="${k}">Eén weghalen</button>
+        </article>`; }).join("")}</div>` : `<div class="mijn-leeg"><p>Nog niets gespot. Zie of hoor je een vogel? Zoek hem op en tik op het plusje bij de naam.</p><p><a class="knop-pil knop-accent" href="/soorten?wanneer=nu" data-link>Vogels die nu in Twente zijn</a></p></div>`}
+      ${tips.length ? `<h2 class="mijn-tips-kop">Nu in Twente, nog niet door jou gezien</h2>
+      <div class="raster mijn-tips">${tips.map((k) => kaartje(metKey(S, k), S[k].twente, [m], `${getal(S[k].twente[m])} meldingen in ${MAANDNAMEN[m]}`)).join("")}</div>` : ""}
+      <p class="zacht mijn-noot">Wat je spot, blijft op dit apparaat. Het gaat niet naar ons of naar iemand anders, en het telt niet mee in de meldingen van de site. Wil je je waarneming delen met vogelaars? Dat kan op <a href="https://waarneming.nl">waarneming.nl</a>.</p>
+    </section>`;
+    app.querySelectorAll("[data-gespot-min]").forEach((b) => b.addEventListener("click", () => { SP.haalWeg(b.dataset.gespotMin); teken(); }));
+    werkKnoppenBij();
+  };
+  teken();
+  mijnHertekenen = teken;
+}
+let mijnHertekenen = null;
 
 async function ontdek() {
   const S = await D.soorten();
@@ -618,6 +718,47 @@ document.addEventListener("click", (e) => {
 });
 speler.querySelector(".speler-knop").addEventListener("click", () => { const h = G.huidigeOpname(); if (h) G.speel(h.soort, h.type, { geheim: h.geheim }); });
 speler.querySelector(".speler-sluit").addEventListener("click", () => G.stop());
+
+// plusje: één keer gespot erbij; de knoppen en de teller in de kop lopen mee
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-gespot]");
+  if (!b) return;
+  e.preventDefault();
+  const n = SP.voegToe(b.dataset.gespot);
+  b.classList.remove("plop"); void b.offsetWidth; b.classList.add("plop");
+  meldGespot(b.dataset.gespot, n);
+});
+
+let meldTimer = 0;
+function meldGespot(key, n) {
+  let m = document.querySelector(".gespot-melding");
+  if (!m) { m = document.createElement("div"); m.className = "gespot-melding"; m.setAttribute("role", "status"); document.body.append(m); }
+  const s = SOORTEN_CACHE[key];
+  m.innerHTML = `<span><b>${esc(s.nl)}</b> gespot${n > 1 ? ` · ${n}×` : ""}</span><button type="button">Ongedaan</button><a href="/gespot" data-link>Mijn vogels</a>`;
+  m.querySelector("button").onclick = () => { SP.haalWeg(key); m.classList.remove("zichtbaar"); };
+  m.classList.add("zichtbaar");
+  clearTimeout(meldTimer);
+  meldTimer = setTimeout(() => m.classList.remove("zichtbaar"), 4500);
+}
+
+function werkGespotBij() {
+  const mijn = SP.lees();
+  document.querySelectorAll("[data-gespot]").forEach((b) => {
+    const n = mijn[b.dataset.gespot]?.length || 0;
+    b.classList.toggle("ja", n > 0);
+    const t = b.querySelector(".gespot-tekst");
+    if (t) t.innerHTML = n ? `Gespot <b>${n}×</b>` : "Gespot";
+    else {
+      let c = b.querySelector(".gespot-n");
+      if (n && !c) { c = document.createElement("span"); c.className = "gespot-n"; b.append(c); }
+      if (c) { if (n) c.textContent = n; else c.remove(); }
+    }
+  });
+  const aantal = Object.keys(mijn).length;
+  document.querySelectorAll(".nav-mijn-n").forEach((x) => { x.textContent = aantal || ""; x.hidden = !aantal; });
+}
+SP.opVerandering(() => { werkGespotBij(); if (location.pathname === "/gespot") mijnHertekenen?.(); });
+werkGespotBij();
 
 function werkKnoppenBij(st) {
   const h = G.huidigeOpname();
