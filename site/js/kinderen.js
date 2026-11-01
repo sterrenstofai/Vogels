@@ -2,6 +2,8 @@
 // Geen tekst die je moet kunnen lezen. Vegen of de pijlen gaan naar de volgende vogel.
 // De stem komt van het toestel zelf (Web Speech); we kiezen een Nederlandse stem die op het toestel draait.
 import * as G from "./geluid.js";
+import { Oor } from "./luister.js";
+import { lidwoord } from "./config.js";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 let opruimen = null;
@@ -66,11 +68,19 @@ export function kinderPagina(app, S) {
       </figure>
       <button class="kids-pijl kids-volgende" type="button" aria-label="Volgende vogel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
-    <button class="kids-speel" type="button" aria-label="Luister naar de vogel">
-      <span class="kids-golf"></span><span class="kids-golf"></span>
-      <svg class="ico-speel" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg>
-      <svg class="ico-pauze" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
-    </button>
+    <div class="kids-knoppen">
+      <button class="kids-oor" type="button" aria-label="Luister mee: welke vogel hoor ik buiten?" aria-pressed="false">
+        <span class="kids-oor-golf"></span><span class="kids-oor-golf"></span>
+        <svg class="kids-laad" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20"/></svg>
+        <svg class="ico-oor" viewBox="0 0 48 48" aria-hidden="true"><path d="M15 20a10 10 0 1 1 20 0c0 5-3 7-5.5 9.5S27 34 27 37a5 5 0 0 1-9.4 2.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M21 20.5a4 4 0 1 1 8 0c0 2-1.4 3-2.6 4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M38 12c2 2.4 3 5.2 3 8.4M42.5 8c3 3.4 4.5 7.6 4.5 12.4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      </button>
+      <button class="kids-speel" type="button" aria-label="Luister naar de vogel">
+        <span class="kids-golf"></span><span class="kids-golf"></span>
+        <svg class="ico-speel" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg>
+        <svg class="ico-pauze" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      </button>
+      <span class="kids-knoppen-vulling" aria-hidden="true"></span>
+    </div>
     <div class="kids-strook" role="list" aria-label="Kies een vogel">
       ${lijst.map((s, k) => `<button class="kids-duim" type="button" role="listitem" data-i="${k}" aria-label="${esc(s.nl)}"><img src="${s.plaat.klein}" alt="" loading="lazy" draggable="false"></button>`).join("")}
     </div>
@@ -161,6 +171,56 @@ export function kinderPagina(app, S) {
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) { geveegd = true; toon(i + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1); }
   });
 
+  /* -- meeluisteren: hoort het oor een vogel, dan springt de plaat erheen en zegt de stem de naam -- */
+  const oorKnop = wrap.querySelector(".kids-oor"), laadRing = wrap.querySelector(".kids-laad circle");
+  const laatstGezegd = new Map(); // key -> tijd, zodat de stem niet steeds hetzelfde roept
+  const oorUit = () => { oorKnop.classList.remove("aan", "laadt"); oorKnop.setAttribute("aria-pressed", "false"); };
+  const oor = new Oor({
+    pauze: () => G.speelt() || ("speechSynthesis" in window && speechSynthesis.speaking), // niet naar onszelf luisteren
+    opVoortgang: (f) => laadRing.style.strokeDashoffset = (125.7 * (1 - f)).toFixed(1),
+    opStatus: (code) => {
+      oorKnop.classList.toggle("laadt", code === "laden");
+      if (code === "geen-microfoon" || code === "laadfout") { oorUit(); oorKnop.classList.add("nee"); setTimeout(() => oorKnop.classList.remove("nee"), 700); }
+      if (code === "gestopt") oorUit();
+    },
+    opGok: (p, m) => {
+      let beste = null, kans = 0.5; // voor kinderen alleen als BirdNET het vrij zeker weet
+      for (let n = 0; n < p.length; n++) {
+        const k = m.koppel[n];
+        if (k && p[n] >= kans && S[k]?.plaat) { beste = k; kans = p[n]; }
+      }
+      if (!beste) return;
+      if (Date.now() - (laatstGezegd.get(beste) || 0) < 15000) {
+        plaatKnop.classList.remove("wiebel"); void plaatKnop.offsetWidth; plaatKnop.classList.add("wiebel");
+        return;
+      }
+      laatstGezegd.set(beste, Date.now());
+      let n = lijst.findIndex((s) => s.key === beste);
+      if (n < 0) { // een vogel die niet in de rij stond: vooraan erbij
+        lijst.unshift({ key: beste, ...S[beste] });
+        strook.insertAdjacentHTML("afterbegin", `<button class="kids-duim" type="button" role="listitem" aria-label="${esc(S[beste].nl)}"><img src="${S[beste].plaat.klein}" alt="" draggable="false"></button>`);
+        strook.querySelectorAll(".kids-duim").forEach((d, k) => (d.dataset.i = k));
+        n = 0;
+      }
+      const s = lijst[n];
+      toon(n, 1);
+      setTimeout(() => {
+        zeg(`Ik hoor ${lidwoord(s.nl)} ${s.nl.toLowerCase()}!`);
+        ballon.textContent = s.nl;
+        ballon.classList.add("zichtbaar", "gehoord");
+        plaatKnop.classList.remove("wiebel"); void plaatKnop.offsetWidth; plaatKnop.classList.add("wiebel");
+        clearTimeout(ballonTimer);
+        ballonTimer = setTimeout(() => ballon.classList.remove("zichtbaar", "gehoord"), 4000);
+      }, 350);
+    },
+  });
+  oorKnop.addEventListener("click", () => {
+    if (oor.actief) { oor.stop(); return; }
+    G.stop();
+    oorKnop.classList.add("aan"); oorKnop.setAttribute("aria-pressed", "true");
+    oor.start(); // in de tik: iOS
+  });
+
   const toets = (e) => {
     if (e.key === "ArrowRight") toon(i + 1, 1);
     else if (e.key === "ArrowLeft") toon(i - 1, -1);
@@ -174,6 +234,7 @@ export function kinderPagina(app, S) {
     clearTimeout(ballonTimer);
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     if (G.speelt()) G.stop();
+    if (oor.actief) oor.stop(true);
   };
 
   toon(i);

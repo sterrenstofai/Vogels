@@ -103,6 +103,76 @@ function naar48k(bron, rate) {
   return uit;
 }
 
+/* ---------- het oor: microfoon, de laatste 3 seconden, en elke 1,5 s een gok ---------- */
+
+export class Oor {
+  // opStatus(code): "microfoon" | "geen-microfoon" | "laden" | "laadfout" | "luistert" | "gestopt"
+  // opGok(kansen, model) na elke gok; pauze() true = deze ronde overslaan (bijvoorbeeld als er zelf geluid speelt)
+  constructor({ opStatus, opVoortgang, opGok, pauze } = {}) {
+    Object.assign(this, { opStatus, opVoortgang, opGok, pauze });
+    this.actief = false;
+    this.model = null;
+  }
+
+  // roep aan in de tik zelf: iOS zet geluid alleen aan vanuit een tik
+  async start() {
+    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    this.ctx.resume();
+    this.actief = true;
+    this.opStatus?.("microfoon");
+    try {
+      this.stroom = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+    } catch {
+      this.stop(true);
+      this.opStatus?.("geen-microfoon");
+      return false;
+    }
+    if (!this.actief) return false;
+    const ctx = this.ctx;
+    this.bron = ctx.createMediaStreamSource(this.stroom);
+    this.analyser = ctx.createAnalyser(); this.analyser.fftSize = 1024; this.analyser.smoothingTimeConstant = 0;
+    this.proc = ctx.createScriptProcessor(4096, 1, 1);
+    this.ring = new Float32Array(Math.ceil(ctx.sampleRate * 3)); this.schrijf = 0; this.gevuld = 0;
+    this.proc.onaudioprocess = (e) => {
+      const d = e.inputBuffer.getChannelData(0), ring = this.ring;
+      for (let i = 0; i < d.length; i++) { ring[this.schrijf] = d[i]; this.schrijf = (this.schrijf + 1) % ring.length; }
+      this.gevuld = Math.min(ring.length, this.gevuld + d.length);
+    };
+    const stil = ctx.createGain(); stil.gain.value = 0;
+    this.bron.connect(this.analyser); this.bron.connect(this.proc); this.proc.connect(stil); stil.connect(ctx.destination);
+    if (!this.model) {
+      this.opStatus?.("laden");
+      try { this.model = await laadModel((f) => this.opVoortgang?.(f)); }
+      catch { this.stop(true); this.opStatus?.("laadfout"); return false; }
+    }
+    if (!this.actief) return false;
+    this.opStatus?.("luistert");
+    this.timer = setInterval(() => this.stap(), STAP_S * 1000);
+    return true;
+  }
+
+  async stap() {
+    if (this.bezig || !this.ring || this.gevuld < this.ring.length * 0.9 || this.pauze?.()) return;
+    this.bezig = true;
+    const r = this.ring, venster = new Float32Array(r.length);
+    venster.set(r.subarray(this.schrijf)); venster.set(r.subarray(0, this.schrijf), r.length - this.schrijf);
+    try {
+      const p = await raad(this.model, naar48k(venster, this.ctx.sampleRate));
+      if (this.actief) this.opGok?.(p, this.model);
+    } finally { this.bezig = false; }
+  }
+
+  stop(stil = false) {
+    this.actief = false;
+    clearInterval(this.timer);
+    this.stroom?.getTracks().forEach((t) => t.stop());
+    try { this.proc?.disconnect(); this.bron?.disconnect(); this.analyser?.disconnect(); } catch {}
+    this.ctx?.close().catch(() => {});
+    this.ctx = this.stroom = this.bron = this.proc = this.analyser = this.ring = null;
+    if (!stil) this.opStatus?.("gestopt");
+  }
+}
+
 /* ---------- de pagina ---------- */
 
 let opruimen = null;
@@ -138,9 +208,7 @@ export function luisterPagina(app, S) {
   const laadBalk = app.querySelector(".luister-laad"), lijst = app.querySelector(".luister-lijst");
   const anders = app.querySelector(".luister-anders"), doek = app.querySelector(".luister-spectro");
   const gezien = new Map(); // key -> { max, laatst, keer }
-  let ctx = null, stroom = null, bron = null, proc = null, analyser = null;
-  let ring = null, schrijf = 0, gevuld = 0, timer = 0, bezig = false, actief = false, frame = 0;
-  let model = null;
+  let actief = false, frame = 0, model = null;
 
   const zetStatus = (t) => (status.textContent = t);
 
@@ -186,83 +254,50 @@ export function luisterPagina(app, S) {
   }
 
   /* -- live meeluisteren -- */
-  async function start() {
+  const balk = (f) => { laadBalk.hidden = false; laadBalk.firstElementChild.style.width = `${Math.round(f * 100)}%`; zetStatus(`BirdNET laden… ${Math.round(f * 49)} van 49 MB`); };
+  const oor = new Oor({
+    opVoortgang: balk,
+    pauze: () => G.speelt(), // niet naar de eigen speaker luisteren
+    opStatus: (code) => {
+      laadBalk.hidden = code !== "laden";
+      if (code === "microfoon") zetStatus("Mag Voggels de microfoon gebruiken?");
+      else if (code === "laden") zetStatus("BirdNET laden…");
+      else if (code === "luistert") { zetStatus("Ik luister…"); doek.hidden = false; tekenSpectro(); }
+      else if (code === "geen-microfoon") { uit(); zetStatus("Zonder microfoon kan ik niet meeluisteren. Je kunt het toestaan in de instellingen van je browser, of hieronder een opname openen."); }
+      else if (code === "laadfout") { uit(); zetStatus("BirdNET laadt niet. Probeer het later opnieuw, of op wifi."); }
+      else if (code === "gestopt") { uit(); zetStatus(gezien.size ? `Gestopt. ${gezien.size} ${gezien.size === 1 ? "soort" : "soorten"} gehoord.` : "Tik om opnieuw te luisteren."); }
+    },
+    opGok: (p, m) => {
+      model = m;
+      const { nu, besteGeen } = verwerk(p);
+      zetStatus(nu.size ? `Ik hoor ${[...nu].map((k) => `${lidwoord(S[k].nl)} ${klein(S[k].nl)}`).join(" en ")}.` : besteGeen >= 0.5 ? "Ik hoor vooral mensen of lawaai." : "Ik luister… (nog geen vogel)");
+    },
+  });
+  function uit() {
+    actief = false;
+    cancelAnimationFrame(frame);
+    knop.setAttribute("aria-pressed", "false");
+    knop.classList.remove("aan");
+  }
+  function start() {
     G.stop();
-    // in de tik: geluid aanzetten (iOS)
-    ctx = new (window.AudioContext || window.webkitAudioContext)();
-    ctx.resume();
     actief = true;
     knop.setAttribute("aria-pressed", "true");
     knop.classList.add("aan");
-    zetStatus("Mag Voggels de microfoon gebruiken?");
-    try {
-      stroom = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
-    } catch {
-      stop();
-      zetStatus("Zonder microfoon kan ik niet meeluisteren. Je kunt het toestaan in de instellingen van je browser, of hieronder een opname openen.");
-      return;
-    }
-    if (!actief) return;
-    bron = ctx.createMediaStreamSource(stroom);
-    analyser = ctx.createAnalyser(); analyser.fftSize = 1024; analyser.smoothingTimeConstant = 0;
-    proc = ctx.createScriptProcessor(4096, 1, 1);
-    ring = new Float32Array(Math.ceil(ctx.sampleRate * 3)); schrijf = 0; gevuld = 0;
-    proc.onaudioprocess = (e) => {
-      const d = e.inputBuffer.getChannelData(0);
-      for (let i = 0; i < d.length; i++) { ring[schrijf] = d[i]; schrijf = (schrijf + 1) % ring.length; }
-      gevuld = Math.min(ring.length, gevuld + d.length);
-    };
-    const stil = ctx.createGain(); stil.gain.value = 0;
-    bron.connect(analyser); bron.connect(proc); proc.connect(stil); stil.connect(ctx.destination);
-    doek.hidden = false;
-    tekenSpectro();
-    if (!model) {
-      zetStatus("BirdNET laden…");
-      laadBalk.hidden = false;
-      try { model = await laadModel((f) => { laadBalk.firstElementChild.style.width = `${Math.round(f * 100)}%`; zetStatus(`BirdNET laden… ${Math.round(f * 49)} van 49 MB`); }); }
-      catch { stop(); zetStatus("BirdNET laadt niet. Probeer het later opnieuw, of op wifi."); laadBalk.hidden = true; return; }
-      laadBalk.hidden = true;
-    }
-    if (!actief) return;
-    zetStatus("Ik luister…");
-    timer = setInterval(stapLive, STAP_S * 1000);
+    oor.start(); // in de tik
   }
-
-  async function stapLive() {
-    if (bezig || gevuld < ring.length * 0.9) return;
-    bezig = true;
-    const venster = new Float32Array(ring.length);
-    venster.set(ring.subarray(schrijf)); venster.set(ring.subarray(0, schrijf), ring.length - schrijf);
-    try {
-      const p = await raad(model, naar48k(venster, ctx.sampleRate));
-      if (!actief) return;
-      const { nu, besteGeen } = verwerk(p);
-      zetStatus(nu.size ? `Ik hoor ${[...nu].map((k) => `${lidwoord(S[k].nl)} ${klein(S[k].nl)}`).join(" en ")}.` : besteGeen >= 0.5 ? "Ik hoor vooral mensen of lawaai." : "Ik luister… (nog geen vogel)");
-    } finally { bezig = false; }
-  }
-
-  function stop() {
-    actief = false;
-    clearInterval(timer);
-    cancelAnimationFrame(frame);
-    stroom?.getTracks().forEach((t) => t.stop());
-    try { proc?.disconnect(); bron?.disconnect(); analyser?.disconnect(); } catch {}
-    ctx?.close().catch(() => {});
-    ctx = stroom = bron = proc = analyser = null;
-    knop.setAttribute("aria-pressed", "false");
-    knop.classList.remove("aan");
-    if (gezien.size) zetStatus(`Gestopt. ${gezien.size} ${gezien.size === 1 ? "soort" : "soorten"} gehoord.`);
-    else zetStatus("Tik om opnieuw te luisteren.");
-  }
+  function stop() { oor.stop(); }
 
   // een scrollend spectrogram van wat de microfoon hoort
   function tekenSpectro() {
     const c = doek.getContext("2d"), dpr = Math.min(2, devicePixelRatio || 1);
     doek.width = Math.round(doek.clientWidth * dpr); doek.height = Math.round(doek.clientHeight * dpr);
+    const analyser = oor.analyser;
+    if (!analyser) return;
     const data = new Uint8Array(analyser.frequencyBinCount);
-    const bins = Math.floor(data.length * (11000 / (ctx.sampleRate / 2)));
+    const bins = Math.floor(data.length * (11000 / (oor.ctx.sampleRate / 2)));
     const stap = () => {
-      if (!analyser) return;
+      if (!oor.analyser) return;
       analyser.getByteFrequencyData(data);
       c.drawImage(doek, -2, 0);
       c.clearRect(doek.width - 2, 0, 2, doek.height);
@@ -289,8 +324,7 @@ export function luisterPagina(app, S) {
       const data = await new Promise((ok, fout) => { const pr = new OAC(1, RATE, RATE).decodeAudioData(buf, ok, fout); if (pr?.then) pr.then(ok, fout); });
       const pcm = data.getChannelData(0);
       if (!model) {
-        laadBalk.hidden = false;
-        model = await laadModel((v) => { laadBalk.firstElementChild.style.width = `${Math.round(v * 100)}%`; zetStatus(`BirdNET laden… ${Math.round(v * 49)} van 49 MB`); });
+        model = oor.model = await laadModel(balk);
         laadBalk.hidden = true;
       }
       const stap = Math.round(STAP_S * RATE), max = Math.min(pcm.length, RATE * 120);

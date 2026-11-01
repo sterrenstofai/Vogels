@@ -787,3 +787,21 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 .luister-noot { margin-top: 2rem; font-size: .9rem; max-width: 46rem; }
 .luister .index-kop { margin-top: .5rem; }
 .luister-spectro[hidden] { display: none; }
+
+/* Kinderen: het oor */
+.kids-knoppen { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; justify-items: center; gap: 1rem; padding: 0 1rem; }
+.kids-knoppen .kids-speel { grid-column: 2; }
+.kids-oor { grid-column: 1; justify-self: end; position: relative; width: clamp(72px, 20vw, 96px); aspect-ratio: 1; border-radius: 50%; border: 3px solid var(--inkt); background: #FFFFFF; color: var(--inkt); display: grid; place-items: center; cursor: pointer; }
+.kids-oor .ico-oor { width: 56%; height: 56%; position: relative; z-index: 1; }
+.kids-oor.aan { background: var(--inkt); color: var(--mint); }
+.kids-oor:active { transform: scale(.95); }
+.kids-oor-golf { position: absolute; inset: -3px; border-radius: 50%; border: 3px solid var(--inkt); opacity: 0; }
+.kids-oor.aan:not(.laadt) .kids-oor-golf { animation: golf 2s ease-out infinite; }
+.kids-oor.aan:not(.laadt) .kids-oor-golf + .kids-oor-golf { animation-delay: 1s; }
+.kids-laad { position: absolute; inset: -9px; width: calc(100% + 18px); height: calc(100% + 18px); transform: rotate(-90deg); display: none; }
+.kids-laad circle { fill: none; stroke: var(--mint); stroke-width: 3; stroke-dasharray: 125.7; stroke-dashoffset: 125.7; transition: stroke-dashoffset 200ms; }
+.kids-oor.laadt .kids-laad { display: block; }
+.kids-oor.nee { animation: nee 500ms; }
+@keyframes nee { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+.kids-ballon.gehoord::before { content: ""; display: inline-block; width: .7em; height: .7em; margin-right: .3em; border-radius: 50%; background: var(--inkt); vertical-align: .05em; }
+@media (prefers-reduced-motion: reduce) { .kids-oor.aan .kids-oor-golf, .kids-oor.nee { animation: none; } }
