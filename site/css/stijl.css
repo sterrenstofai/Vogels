@@ -109,7 +109,7 @@ em, i, .wet { font-style: normal; }
 .nav-knop span { display: none; }
 .nav-knop:hover { background: var(--passe); }
 @media (min-width: 1000px) {
-  .balk { position: absolute; inset: 0 0 auto 0; grid-template-columns: auto minmax(0, 44rem) 1fr; grid-template-areas: "merk zoek nav"; gap: 1.75rem; padding-block: 1.1rem; }
+  .balk { position: absolute; inset: 0 0 auto 0; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "merk zoek nav"; gap: 1.75rem; padding-block: 1.1rem; }
   .zoek-rij { grid-template-columns: minmax(0, 1fr) auto auto; }
   .zoek-pil { grid-column: auto; }
   .balk-nav { justify-self: end; }
@@ -674,3 +674,16 @@ h1 em, h2 em, .scherm-titel h1 em, .oz-held h1 em { color: inherit; font-weight:
 @keyframes tip { 0% { box-shadow: 0 0 0 0 rgb(161 255 203 / .85), 0 14px 30px -14px rgb(0 0 0 / .5); } 70% { box-shadow: 0 0 0 26px rgb(161 255 203 / 0), 0 14px 30px -14px rgb(0 0 0 / .5); } 100% { box-shadow: 0 0 0 0 rgb(161 255 203 / 0), 0 14px 30px -14px rgb(0 0 0 / .5); } }
 @keyframes tik { 0%, 100% { transform: translate(0, 0) scale(1); } 40% { transform: translate(0, 5px) scale(.92); } 55% { transform: translate(0, 5px) scale(.92); } }
 @media (prefers-reduced-motion: reduce) { .kids-tip, .kids-tip svg { animation: none; } }
+
+/* Liggende iPad en kleine laptops: het menu alleen als icoontjes, zodat het zoekveld ruimte houdt */
+@media (min-width: 1000px) and (max-width: 1499px) {
+  .balk { gap: 1rem; }
+  .nav-tekst { display: none; }
+  .nav-knop-fos { display: inline-flex; }
+  .nav-knop { width: 40px; height: 40px; padding: 0; }
+  .nav-knop svg { width: 20px; height: 20px; }
+  .nav-knop span { display: none; }
+  .zoek-rij { gap: .5rem; }
+}
+@media (min-width: 1000px) { .zoek { max-width: 50rem; } .zoek-pil { min-width: 13rem; } }
+@media (min-width: 1000px) { .zoek-lijst { min-width: min(30rem, calc(100vw - 2 * var(--rand))); } }
