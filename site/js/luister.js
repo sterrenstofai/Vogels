@@ -346,7 +346,7 @@ export function luisterPagina(app, S) {
       for (let y = 0; y < doek.height; y++) {
         const v = data[Math.floor((1 - y / doek.height) * bins)] / 255;
         if (v < 0.25) continue;
-        c.fillStyle = `rgba(35,35,35,${Math.pow((v - 0.25) / 0.75, 1.5).toFixed(3)})`;
+        c.fillStyle = `rgba(31,27,24,${Math.pow((v - 0.25) / 0.75, 1.5).toFixed(3)})`;
         c.fillRect(doek.width - 2, y, 2, 1);
       }
       frame = requestAnimationFrame(stap);

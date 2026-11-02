@@ -64,7 +64,7 @@ export function kinderPagina(app, S) {
         <figcaption class="kids-ballon" aria-live="polite"></figcaption>
         <button class="kids-tip" type="button" aria-label="Tik op de vogel, dan hoor je zijn naam" hidden>
           <svg viewBox="0 0 48 48" aria-hidden="true">
-            <path d="M19 26V12.5a3 3 0 0 1 6 0V23l8.2 1.6a4 4 0 0 1 3.2 4.5l-1.3 8.2a5 5 0 0 1-4.9 4.2H22.6a5 5 0 0 1-4-2l-6.2-8.3a2.8 2.8 0 0 1 4.2-3.7z" fill="#A1FFCB" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M19 26V12.5a3 3 0 0 1 6 0V23l8.2 1.6a4 4 0 0 1 3.2 4.5l-1.3 8.2a5 5 0 0 1-4.9 4.2H22.6a5 5 0 0 1-4-2l-6.2-8.3a2.8 2.8 0 0 1 4.2-3.7z" fill="#FCBC96" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
             <path d="M31 9.5c1.6 1.4 2.5 3.3 2.5 5.4M35 6c2.6 2.3 4.2 5.4 4.2 8.9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
           </svg>
         </button>

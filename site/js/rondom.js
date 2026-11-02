@@ -173,9 +173,9 @@ export class Rondom {
     this.rustSinds = 0;
     this.loopt = false;
     this.maten = true;
-    this.inkt = getComputedStyle(document.documentElement).getPropertyValue("--inkt").trim() || "#232323";
-    this.papier = getComputedStyle(document.documentElement).getPropertyValue("--papier").trim() || "#FFFFFF";
-    this.rood = getComputedStyle(document.documentElement).getPropertyValue("--rood").trim() || "#232323";
+    this.inkt = getComputedStyle(document.documentElement).getPropertyValue("--inkt").trim() || "#1F1B18";
+    this.papier = getComputedStyle(document.documentElement).getPropertyValue("--papier").trim() || "#FBFAF7";
+    this.rood = getComputedStyle(document.documentElement).getPropertyValue("--rood").trim() || "#1F1B18";
     new ResizeObserver(() => { this.maat(); this.wek(); }).observe(paneel);
 
     let vorige = null;

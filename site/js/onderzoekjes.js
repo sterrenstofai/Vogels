@@ -185,9 +185,9 @@ async function tekenCertificaat(doek, naam, lb) {
   ]).catch(() => {});
   const plaat = await laadPlaat();
   const W = doek.width, H = doek.height, u = W / 1000, c = doek.getContext("2d");
-  const inkt = "#232323", mint = "#A1FFCB", zacht = "#6E6E6E", lijn = "#D9D9D9";
+  const inkt = "#1F1B18", mint = "#FCBC96", zacht = "#5E554D", lijn = "#E0D9CE";
   const spatie = (px, em) => { if ("letterSpacing" in c) c.letterSpacing = `${(px * em).toFixed(2)}px`; };
-  c.fillStyle = "#FFFFFF"; c.fillRect(0, 0, W, H);
+  c.fillStyle = "#FBFAF7"; c.fillRect(0, 0, W, H);
   // raster: een dunne rand en een middenlijn, zoals een technisch blad
   const rand = 30 * u, midden = W * 0.56;
   c.strokeStyle = inkt; c.lineWidth = 1.2 * u; c.strokeRect(rand, rand, W - 2 * rand, H - 2 * rand);
