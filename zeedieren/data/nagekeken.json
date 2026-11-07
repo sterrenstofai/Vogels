@@ -1,0 +1,405 @@
+{
+ "alikruik": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "blauwe-haarkwal": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "blauwe-vinvis": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "bruinvis": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "bultrug": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "garnaal": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "gewone-zeehond": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "grijze-zeehond": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "grote-pieterman": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "haring": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "heremietkreeft": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "hondshaai": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "japanse-oester": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "kabeljauw": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "kleine-pieterman": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "kokkel": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "kompaskwal": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "makreel": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "mossel": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "nonnetje": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "noordzeekrab": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "octopus": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "oorkwal": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "orka": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "potvis": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "reuzenhaai": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "schol": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "stekelrog": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "strandkrab": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "wadpier": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "wulk": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "zeekat": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "zeeklit": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "zeepaardje": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "zeepaddenstoel": {
+  "weetjes": [
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "zeester": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ },
+ "zwaardschede": {
+  "weetjes": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "alles": true,
+  "datum": "2026-11-07"
+ }
+}
