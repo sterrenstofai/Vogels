@@ -1,0 +1,39 @@
+{
+  "kort": "Een zeehond die bij vloed jaagt en bij eb uitrust op zandbanken.",
+  "lengte_cm": 195,
+  "lengte_tekst": "120 tot 195 cm",
+  "lengte_kort": "1,95 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De gewone zeehond wordt 120 tot 195 centimeter lang en 45 tot 130 kilo zwaar.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeehond",
+      "controle": "Gewone zeehonden worden 120 tot 195 centimeter lang en 45 tot 130 kilogram zwaar"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "In Nederland eet de gewone zeehond vooral de vis bot.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeehond",
+      "controle": "In de Nederlandse wateren is bot de belangrijkste voedselbron"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "Bij vloed gaat de zeehond jagen. Bij eb rust hij uit op een zandbank of rots.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeehond",
+      "controle": "bij vloed wordt er gejaagd, bij eb, wanneer zandbanken en rotseilandjes droog komen te liggen, wordt er gerust"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "Een pasgeboren zeehondje zwemt bij de volgende vloed al met zijn moeder mee.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeehond",
+      "controle": "Met de daaropvolgende vloed zwemmen ze al met de moeder mee"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Jonge zeehonden die hun moeder kwijt zijn, heten huilers. In Nederland worden ze opgevangen.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeehond",
+      "controle": "Huilers, door hun moeder verlaten jonge zeehonden, worden in Nederland opgevangen in zeehondencrèches"
+    }
+  ]
+}

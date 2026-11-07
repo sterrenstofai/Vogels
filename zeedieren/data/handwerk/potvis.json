@@ -1,0 +1,39 @@
+{
+  "kort": "Een grote walvis met een dikke kop, die heel diep kan duiken.",
+  "lengte_cm": 1800,
+  "lengte_tekst": "tot ongeveer 18 meter",
+  "lengte_kort": "18 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Een potvismannetje kan ongeveer 18 meter lang worden en 45 ton wegen.",
+      "bron": "https://nl.wikipedia.org/wiki/Potvis",
+      "controle": "Mannetjes kunnen een lichaamslengte bereiken van ongeveer achttien meter en een gewicht van 45 ton"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De potvis eet vooral pijlinktvissen.",
+      "bron": "https://nl.wikipedia.org/wiki/Potvis",
+      "controle": "Op het menu staan voornamelijk pijlinktvissen en andere zeedieren"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De potvis heeft de grootste hersenen van alle dieren.",
+      "bron": "https://nl.wikipedia.org/wiki/Potvis",
+      "controle": "Hiermee zijn het de grootste hersenen van alle dieren, inclusief alle bekende uitgestorven soorten"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "Een volwassen potvis kan ruim een uur onder water blijven.",
+      "bron": "https://nl.wikipedia.org/wiki/Potvis",
+      "controle": "Een volwassen potvis kan ruim een uur onder water blijven"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "In de Noordzee leven normaal geen potvissen. Het water is daar te ondiep.",
+      "bron": "https://nl.wikipedia.org/wiki/Potvis",
+      "controle": "In de Noordzee komen normaal gesproken geen potvissen voor omdat het water te ondiep is"
+    }
+  ]
+}

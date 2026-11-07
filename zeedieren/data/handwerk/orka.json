@@ -1,0 +1,39 @@
+{
+  "kort": "De grootste dolfijn, zwart met wit en met een hoge rugvin.",
+  "lengte_cm": 980,
+  "lengte_tekst": "tot 9,8 meter",
+  "lengte_kort": "9,8 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Een volwassen orkamannetje is meestal 6,7 tot 8 meter lang, hoogstens 9,8 meter.",
+      "bron": "https://nl.wikipedia.org/wiki/Orka",
+      "controle": "Volwassen mannetjes zijn doorgaans 6,7 tot 8 meter lang (maximaal 9,8 meter)"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De orka is van boven zwart en van onderen wit. Boven zijn ogen heeft hij een witte vlek.",
+      "bron": "https://nl.wikipedia.org/wiki/Orka",
+      "controle": "ze zijn van boven zwart, van onderen wit, en hebben een witte vlek net boven de ogen"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "Orka's jagen samen in groepen, op open zee en bij de kust.",
+      "bron": "https://nl.wikipedia.org/wiki/Orka",
+      "controle": "Orka's jagen in groepen op volle zee en aan de kust"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "In een groep orka's heeft het oudste vrouwtje vaak de leiding.",
+      "bron": "https://nl.wikipedia.org/wiki/Orka",
+      "controle": "In een orka-pod heeft het oudste vrouwtje vaak de leiding"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Een orka slaapt nooit helemaal. De twee helften van zijn hersenen slapen om de beurt.",
+      "bron": "https://nl.wikipedia.org/wiki/Orka",
+      "controle": "Ze rusten uit door de twee hersenhelften om de beurt te laten slapen"
+    }
+  ]
+}

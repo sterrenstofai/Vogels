@@ -1,0 +1,39 @@
+{
+  "kort": "Een vis met een groenblauwe rug vol donkere golflijnen, die in scholen zwemt.",
+  "lengte_cm": 50,
+  "lengte_tekst": "30 tot 50 cm",
+  "lengte_kort": "50 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De makreel wordt 30 tot 50 centimeter lang.",
+      "bron": "https://nl.wikipedia.org/wiki/Makreel",
+      "controle": "De makreel wordt 30 tot 50 cm lang"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De makreel heeft een groenblauwe rug met donkere golvende lijnen.",
+      "bron": "https://nl.wikipedia.org/wiki/Makreel",
+      "controle": "De makreel heeft een groenblauwe rug die wordt onderbroken door donkere golvende lijnen"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "De makreel zwemt in een school, dicht bij het wateroppervlak.",
+      "bron": "https://nl.wikipedia.org/wiki/Makreel",
+      "controle": "De makreel is een schoolvis die dicht bij het wateroppervlak zwemt"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De makreel zwemt met zijn bek open door wolken plankton. Zo zeeft hij er kleine kreeftjes uit.",
+      "bron": "https://nl.wikipedia.org/wiki/Makreel",
+      "controle": "Ze zwemmen daarbij met geopende bek door de wolken plankton en filteren de kleine kreeftjes"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De makreel heeft geen zwemblaas. Daaraan kun je deze vis herkennen.",
+      "bron": "https://nl.wikipedia.org/wiki/Makreel",
+      "controle": "Het ontbreken van een zwemblaas is karakteristiek voor deze vis"
+    }
+  ]
+}

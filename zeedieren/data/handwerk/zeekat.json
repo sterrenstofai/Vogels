@@ -1,0 +1,39 @@
+{
+  "kort": "Een inktvis met acht armen en twee lange vangarmen, die van kleur kan veranderen.",
+  "lengte_cm": 60,
+  "lengte_tekst": "tot 60 cm",
+  "lengte_kort": "60 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Het lijf van een volwassen zeekat kan wel 60 centimeter groot worden.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeekat",
+      "controle": "Volwassen exemplaren in gematigde gebieden ontwikkelen een mantel die wel 60 centimeter groot kan worden"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "Tussen zijn acht armen zitten twee langere vangarmen. Die zie je alleen als de zeekat een prooi grijpt.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeekat",
+      "controle": "Tussen de acht gewone tentakels zitten twee langere vangarmen die alleen te zien zijn als de zeekat een prooi grijpt"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De zeekat kan van kleur veranderen. Zo lijkt hij op zijn omgeving.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeekat",
+      "controle": "Een zeekat heeft pigmentcellen in zijn huid zitten waarmee hij van kleur kan veranderen en zijn uiterlijk aan de omgeving aan kan passen"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De zeekat jaagt 's nachts. Hij eet vooral krabben en garnalen.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeekat",
+      "controle": "Zeekatten zijn echte nachtdieren die 's nachts jagen op krabben en garnalen , die de basis vormen van hun hoofdvoedsel"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "De zeekat heeft een schelp binnen in zijn lijf. Die schelp spoelt vooral in de zomer veel aan op stranden in Nederland en België.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_zeekat",
+      "controle": "Het materiaal spoelt vooral in de zomer volop aan op Nederlandse en Belgische stranden"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kort": "Een enorme haai die met zijn kieuwen plankton uit het water zeeft.",
+  "lengte_cm": 980,
+  "lengte_tekst": "tot 9,8 meter",
+  "lengte_kort": "9,8 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Een reuzenhaai is meestal 6 tot 8 meter lang, hoogstens 9,8 meter.",
+      "bron": "https://nl.wikipedia.org/wiki/Reuzenhaai",
+      "controle": "De gemiddelde lengte van een reuzenhaai ligt tussen de 6 en 8 meter, met een maximum van 9,8 meter"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Alleen de walvishaai is groter. De reuzenhaai is de op een na grootste vis die er leeft.",
+      "bron": "https://nl.wikipedia.org/wiki/Reuzenhaai",
+      "controle": "is de op een na grootste levende vis , na de walvishaai . Deze haai behoort tot de familie"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De reuzenhaai zeeft plankton uit het water met zijn kieuwen.",
+      "bron": "https://nl.wikipedia.org/wiki/Reuzenhaai",
+      "controle": "De reuzenhaai zeeft met zijn kieuwzeven plankton uit het water"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "De reuzenhaai leeft ook in de Noordzee, maar langs de kust van Nederland en België zie je hem maar heel af en toe.",
+      "bron": "https://nl.wikipedia.org/wiki/Reuzenhaai",
+      "controle": "De reuzenhaai komt voor in de Noordzee, hoewel slechts sporadisch langs de Belgische en Nederlandse kust"
+    }
+  ]
+}

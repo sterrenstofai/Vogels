@@ -1,0 +1,39 @@
+{
+  "kort": "Een grote zeehond met een rechte snuit en een dikke laag spek.",
+  "lengte_cm": 330,
+  "lengte_tekst": "165 tot 330 cm",
+  "lengte_kort": "3,3 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De grijze zeehond wordt 165 tot 330 centimeter lang en 105 tot 350 kilo zwaar.",
+      "bron": "https://nl.wikipedia.org/wiki/Grijze_zeehond",
+      "controle": "De grijze zeehond wordt 165 tot 330 centimeter lang en 105 tot 350 kilogram zwaar"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "Je herkent de grijze zeehond aan zijn rechte snuit.",
+      "bron": "https://nl.wikipedia.org/wiki/Grijze_zeehond",
+      "controle": "De dieren zijn van andere zeehonden te onderscheiden door hun rechte snuit"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "Een grijze zeehond eet gemiddeld bijna 6 kilo per dag.",
+      "bron": "https://nl.wikipedia.org/wiki/Grijze_zeehond",
+      "controle": "Gemiddeld eet een grijze zeehond 5,7 kilogram per dag"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "Een pasgeboren grijze zeehond heeft een wollige vacht, wit tot lichtgrijs.",
+      "bron": "https://nl.wikipedia.org/wiki/Grijze_zeehond",
+      "controle": "Het heeft bij de geboorte een wollige witte tot lichtgrijze vacht"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Een dikke laag spek beschermt de grijze zeehond tegen het koude zeewater.",
+      "bron": "https://nl.wikipedia.org/wiki/Grijze_zeehond",
+      "controle": "Dankzij een dikke speklaag is de grijze zeehond goed beschermd tegen het koude zeewater"
+    }
+  ]
+}

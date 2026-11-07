@@ -1,0 +1,33 @@
+{
+  "kort": "Een vis die soms gevangen wordt in de zee langs de Nederlandse kust.",
+  "lengte_cm": null,
+  "lengte_tekst": null,
+  "lengte_kort": null,
+  "lengte_weetje": null,
+  "weetjes": [
+    {
+      "sectie": "waar",
+      "tekst": "Het zeepaardje leeft in het oosten van de Atlantische Oceaan, van de Waddenzee tot langs de kust van Afrika.",
+      "bron": "https://nl.wikipedia.org/wiki/Kortsnuitzeepaardje",
+      "controle": "voorkomt in het oosten van de Atlantische Oceaan van de Waddenzee tot de Golf van Guinee , Canarische Eilanden en langs de Afrikaanse kust"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "Soms wordt het zeepaardje gevangen in de zee langs de Nederlandse kust.",
+      "bron": "https://nl.wikipedia.org/wiki/Kortsnuitzeepaardje",
+      "controle": "Deze soort wordt net als het langsnuitzeepaardje soms gevangen in de Nederlandse kustwateren"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "Sinds 2008 wordt het zeepaardje regelmatig gevonden in de zee bij België.",
+      "bron": "https://nl.wikipedia.org/wiki/Kortsnuitzeepaardje",
+      "controle": "In Belgische wateren wordt dit zeepaardje sinds 2008 met enige regelmaat aangetroffen"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "In Engeland zijn in 2007 in de rivier de Theems zeepaardjes gevonden die zich voortplantten.",
+      "bron": "https://nl.wikipedia.org/wiki/Kortsnuitzeepaardje",
+      "controle": "In het Verenigd Koninkrijk zijn in 2007 in de Theems zich voortplantende"
+    }
+  ]
+}

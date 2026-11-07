@@ -1,0 +1,433 @@
+[build]
+  publish = "site"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'none'; object-src 'none'"
+    Referrer-Policy = "no-referrer"
+    Permissions-Policy = "geolocation=(self), camera=(), microphone=(), interest-cohort=()"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fotos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/platen/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[redirects]]
+  from = "/kinderen"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/onderzoekjes"
+  to = "/onderzoekjes.html"
+  status = 200
+
+[[redirects]]
+  from = "/onderzoekjes/*"
+  to = "/onderzoekjes.html"
+  status = 200
+
+[[redirects]]
+  from = "/mijn"
+  to = "/mijn.html"
+  status = 200
+
+[[redirects]]
+  from = "/strand"
+  to = "/strand.html"
+  status = 200
+
+[[redirects]]
+  from = "/ontdek"
+  to = "/ontdek.html"
+  status = 200
+
+[[redirects]]
+  from = "/hoe-dit-werkt"
+  to = "/hoe-dit-werkt.html"
+  status = 200
+
+# BEGIN dieren (gebouwd door scripts/bouw_site_data.py)
+[[redirects]]
+  from = "/kokkel"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/kokkel"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/mossel"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/mossel"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/zwaardschede"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/zwaardschede"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/nonnetje"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/nonnetje"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/wulk"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/wulk"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/alikruik"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/alikruik"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/japanse-oester"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/japanse-oester"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/strandkrab"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/strandkrab"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/noordzeekrab"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/noordzeekrab"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/heremietkreeft"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/heremietkreeft"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/garnaal"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/garnaal"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/zeester"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/zeester"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/zeeklit"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/zeeklit"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/oorkwal"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/oorkwal"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/kompaskwal"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/kompaskwal"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/blauwe-haarkwal"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/blauwe-haarkwal"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/zeepaddenstoel"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/zeepaddenstoel"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/wadpier"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/wadpier"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/zeekat"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/zeekat"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/schol"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/schol"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/haring"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/haring"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/kabeljauw"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/kabeljauw"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/makreel"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/makreel"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/zeepaardje"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/zeepaardje"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/kleine-pieterman"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/kleine-pieterman"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/grote-pieterman"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/grote-pieterman"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/stekelrog"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/stekelrog"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/hondshaai"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/hondshaai"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/reuzenhaai"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/reuzenhaai"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/bruinvis"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/bruinvis"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/gewone-zeehond"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/gewone-zeehond"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/grijze-zeehond"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/grijze-zeehond"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/bultrug"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/bultrug"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/potvis"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/potvis"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/blauwe-vinvis"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/blauwe-vinvis"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/orka"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/orka"
+  to = "/kinderen.html"
+  status = 200
+
+[[redirects]]
+  from = "/octopus"
+  to = "/dier.html"
+  status = 200
+
+[[redirects]]
+  from = "/kinderen/octopus"
+  to = "/kinderen.html"
+  status = 200
+
+# EINDE dieren

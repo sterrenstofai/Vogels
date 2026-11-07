@@ -1,0 +1,39 @@
+{
+  "kort": "Een grote vis met een gevlekte rug en een draadje aan zijn kin.",
+  "lengte_cm": 150,
+  "lengte_tekst": "tot 1,5 meter",
+  "lengte_kort": "1,5 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De kabeljauw kan 150 centimeter lang worden. Meestal is hij 80 tot 90 centimeter.",
+      "bron": "https://nl.wikipedia.org/wiki/Kabeljauw",
+      "controle": "De kabeljauw heeft een lengte tot 150 centimeter, maar meet gemiddeld 80 à 90 centimeter"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De kabeljauw heeft een olijfgroene rug met bruine vlekken, een witte buik en een lang draadje aan zijn kin.",
+      "bron": "https://nl.wikipedia.org/wiki/Kabeljauw",
+      "controle": "De volwassen vis heeft een olijfgroene en bruingevlekte rug, een witte buik en een lange kindraad"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "De kabeljauw leeft dicht bij de bodem, op 20 tot 600 meter diepte.",
+      "bron": "https://nl.wikipedia.org/wiki/Kabeljauw",
+      "controle": "De vissoort leeft op diepten van 20 tot 600 meter, dicht bij de bodem"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De kabeljauw eet vooral kreeftjes, krabbetjes, garnalen en vissen. Hij eet zelfs haring en andere kabeljauwen.",
+      "bron": "https://nl.wikipedia.org/wiki/Kabeljauw",
+      "controle": "De kabeljauw voedt zich voornamelijk met kreeftjes , krabjes , garnalen , vissen (waaronder haring en kabeljauw)"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Een kabeljauw kan een tocht van meer dan 800 kilometer zwemmen.",
+      "bron": "https://nl.wikipedia.org/wiki/Kabeljauw",
+      "controle": "Hij overbrugt een afstand van meer dan 800 km met etappes van minstens 20 km"
+    }
+  ]
+}

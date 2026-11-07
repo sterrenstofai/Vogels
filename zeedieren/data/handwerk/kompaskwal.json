@@ -1,0 +1,39 @@
+{
+  "kort": "Een kwal met gele tot roodbruine strepen op zijn hoed, die lijken op een kompas.",
+  "lengte_cm": 30,
+  "lengte_tekst": "ongeveer 30 cm",
+  "lengte_kort": "30 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De hoed van de kompaskwal kan ongeveer 30 centimeter breed worden.",
+      "bron": "https://nl.wikipedia.org/wiki/Kompaskwal",
+      "controle": "De hoed kan een doorsnede bereiken van ongeveer 30 centimeter"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "Op de hoed zitten zestien gele tot roodbruine strepen. Ze wijzen allemaal naar buiten.",
+      "bron": "https://nl.wikipedia.org/wiki/Kompaskwal",
+      "controle": "de hoed heeft zestien meestal duidelijke gele tot roodbruine strepen die straalsgewijs naar buiten wijzen"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De strepen lijken op de kompasroos van een kompas. Daar komt de naam kompaskwal vandaan.",
+      "bron": "https://nl.wikipedia.org/wiki/Kompaskwal",
+      "controle": "De tekening doet enigszins denken aan een kompasroos waaraan de Nederlandse naam te danken is"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De kompaskwal eet kleine visjes en andere zeedieren. Die vangt hij met zijn tentakels.",
+      "bron": "https://nl.wikipedia.org/wiki/Kompaskwal",
+      "controle": "De kompaskwal leeft van kleine visjes en andere zeedieren, die met de tentakels worden gevangen"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Een steek van de kompaskwal kan erg veel pijn doen.",
+      "bron": "https://nl.wikipedia.org/wiki/Kompaskwal",
+      "controle": "Een steek van de kompaskwal kan bij de mens zeer pijnlijk zijn"
+    }
+  ]
+}

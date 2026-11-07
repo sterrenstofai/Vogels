@@ -1,0 +1,27 @@
+{
+  "kort": "Een grote lichtblauwe kwal die onder andere in de Noordzee leeft.",
+  "lengte_cm": 60,
+  "lengte_tekst": "30 tot 60 cm",
+  "lengte_kort": "60 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De zeepaddenstoel is een lichtblauwe kwal. Zijn scherm kan 30 tot 60 centimeter breed worden.",
+      "bron": "https://nl.wikipedia.org/wiki/Bloemkoolkwal",
+      "controle": "De lichtblauwe kwal kan een diameter van 30-60 cm bereiken"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "De zeepaddenstoel leeft in de Noordzee, de Atlantische Oceaan, de Middellandse Zee en de Zwarte Zee.",
+      "bron": "https://nl.wikipedia.org/wiki/Bloemkoolkwal",
+      "controle": "die voorkomt in de Middellandse Zee , de Zwarte Zee , de Atlantische Oceaan en de Noordzee . De lichtblauwe kwal"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "In 2019 werd bij Engeland een zeepaddenstoel gefilmd van naar schatting anderhalve meter.",
+      "bron": "https://nl.wikipedia.org/wiki/Bloemkoolkwal",
+      "controle": "In juli 2019 werd bij de kust van Engeland een exemplaar van naar schatting 1,5 meter op film vastgelegd"
+    }
+  ]
+}

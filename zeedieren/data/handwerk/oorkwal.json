@@ -1,0 +1,39 @@
+{
+  "kort": "Een kwal met vier ronde vormen in het midden, die op oren lijken.",
+  "lengte_cm": 40,
+  "lengte_tekst": "10 tot 40 cm",
+  "lengte_kort": "40 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De oorkwal wordt 10 tot 40 centimeter groot.",
+      "bron": "https://nl.wikipedia.org/wiki/Oorkwal",
+      "controle": "kan 10 tot 40 cm groot worden"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "Midden op de oorkwal zie je vier ronde vormen. Dat zijn de 'oren'.",
+      "bron": "https://nl.wikipedia.org/wiki/Oorkwal",
+      "controle": "zijn vier ronde of min of meer halvemaanvormige structuren zichtbaar ('oren')"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "Met zijn tentakels vangt de oorkwal plankton, kleine kreeftachtigen en visjes.",
+      "bron": "https://nl.wikipedia.org/wiki/Oorkwal",
+      "controle": "Met behulp van met netelcellen bezette tentakels vangen ze plankton, kleine kreeftachtigen en visjes"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "Kwallen drijven vaak met heel veel tegelijk in de zee.",
+      "bron": "https://nl.wikipedia.org/wiki/Oorkwal",
+      "controle": "Kwallen drijven vaak in grote zwermen in zee"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "Een klein kwalletje groeit in een half jaar uit tot een volwassen kwal.",
+      "bron": "https://nl.wikipedia.org/wiki/Oorkwal",
+      "controle": "Dit zijn de nieuwe kwalletjes die binnen een half jaar uitgroeien tot een volwassen kwal"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+ "_bronnen": {
+  "pieterburen": ["Zeehondencentrum Pieterburen: zeehond tegenkomen", "https://www.zeehondencentrum.nl/help-mee/zeehond-tegenkomen/"],
+  "aseal": ["A Seal: zeehond gevonden", "https://www.aseal.nl/zeehond-gevonden/"],
+  "anemoon-pieterman": ["Stichting ANEMOON, Zoekbeeld 2022: de pieterman (pdf)", "https://www.vliz.be/imisdocs/publications/ocrd/391126.pdf"],
+  "henw-pieterman": ["Huisarts en Wetenschap 2023: steek van een pieterman (pdf)", "https://henw.org/system/files/download/2287_OnlinePDF.pdf"],
+  "wadlopen": ["Wadloopverordening 2023 (Rijksoverheid)", "https://wetten.overheid.nl/BWBR0048391/"]
+ },
+ "groepen": {
+  "zeehond": {"zinnen": ["Zie je een zeehond op het strand? Blijf minstens 30 meter weg en houd een hond aan de lijn.", "Aai hem niet en jaag hem niet het water in: een zeehond kan hard bijten.", "Denk je dat hij hulp nodig heeft, bel dan het zeehondencentrum in de buurt, bijvoorbeeld Pieterburen: 0595 526 526 (dag en nacht), of 144 (dieren in nood)."], "bronnen": ["pieterburen", "aseal"]},
+  "pieterman": {"zinnen": ["De pieterman heeft giftige stekels op zijn rug. Raak hem niet aan, ook niet als hij op het strand ligt.", "In zee lopen? Doe waterschoenen aan: de kleine pieterman ligt soms ingegraven in het zand, vlak bij de kust.", "Gestoken? Houd de voet zo lang mogelijk in zo heet mogelijk water, niet heter dan 45 graden. Laat een volwassene het water eerst voelen. Is de pijn na een paar uur nog erg, ga dan naar de dokter."], "bronnen": ["anemoon-pieterman", "henw-pieterman"]},
+  "kwal-steekt": {"zinnen": ["Deze kwal kan flink steken, ook als hij al op het strand ligt. Niet aanraken, ook niet met je voet."], "bronnen": []},
+  "kwal": {"zinnen": ["Raak kwallen niet aan, ook niet als ze op het strand liggen. Je weet niet altijd welke kwal het is, en sommige steken."], "bronnen": []},
+  "wad": {"zinnen": ["Wadlopen doe je alleen met een gids. Zonder gids mag je alleen vlak bij de kust blijven. Let op eb en vloed: het water komt snel terug."], "bronnen": ["wadlopen"]},
+  "emmertje": {"zinnen": ["Doe je hem in een emmertje met zeewater om te kijken? Zet hem daarna terug waar je hem vond. Neem geen dieren mee naar huis."], "bronnen": []},
+  "water": {"zinnen": ["Bij het water ben je altijd samen met een volwassene. Ga je dicht bij het water, doe dan een zwemvest aan."], "bronnen": []}
+ },
+ "dieren": {
+  "gewone-zeehond": ["zeehond", "water"], "grijze-zeehond": ["zeehond", "water"],
+  "kleine-pieterman": ["pieterman"], "grote-pieterman": ["pieterman"],
+  "kompaskwal": ["kwal-steekt"], "blauwe-haarkwal": ["kwal-steekt"], "oorkwal": ["kwal"], "zeepaddenstoel": ["kwal"],
+  "wadpier": ["wad"], "kokkel": ["wad"], "alikruik": ["wad", "emmertje"], "japanse-oester": ["wad"],
+  "strandkrab": ["emmertje", "water"], "garnaal": ["emmertje", "water"], "heremietkreeft": ["emmertje"], "zeester": ["emmertje"], "noordzeekrab": ["emmertje"]
+ }
+}

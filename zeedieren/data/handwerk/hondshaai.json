@@ -1,0 +1,39 @@
+{
+  "kort": "Een kleine, slanke haai met een lichtbruine rug vol donkere vlekjes.",
+  "lengte_cm": 76,
+  "lengte_tekst": "tot 76 cm",
+  "lengte_kort": "76 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De hondshaai is een slanke haai van hoogstens 76 centimeter lang.",
+      "bron": "https://nl.wikipedia.org/wiki/Hondshaai",
+      "controle": "Het lichaam van de hondshaai is glad, langgerekt en slank en wordt tot 76 centimeter lang"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "Zijn rug is lichtbruin met kleine donkerbruine vlekjes.",
+      "bron": "https://nl.wikipedia.org/wiki/Hondshaai",
+      "controle": "De bovenzijde is lichtbruin met opvallende kleine donkerbruine vlekken"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De hondshaai zoekt zijn eten op de bodem. Hij eet vooral schaaldieren, schelpdieren, wormen en kleine visjes.",
+      "bron": "https://nl.wikipedia.org/wiki/Hondshaai",
+      "controle": "Zijn voedsel zoekt hij op de bodem en bestaat voornamelijk uit schaal- en schelpdieren, wormen en kleine visjes"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "De eikapsels van de hondshaai spoelen vaak aan op het strand. Soms zit er nog een levend jong in.",
+      "bron": "https://nl.wikipedia.org/wiki/Hondshaai",
+      "controle": "De eikapsels spoelen regelmatig aan op het strand, soms met een nog levend embryo erin"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "Van alle haaien in Europa kom je de hondshaai het vaakst tegen.",
+      "bron": "https://nl.wikipedia.org/wiki/Hondshaai",
+      "controle": "Het is de meest algemene haaiensoort van Europa"
+    }
+  ]
+}

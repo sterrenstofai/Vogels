@@ -1,0 +1,39 @@
+{
+  "kort": "Een grote zeeslak met een puntig huisje, die in de Noordzee leeft.",
+  "lengte_cm": 12,
+  "lengte_tekst": "meer dan 12 cm",
+  "lengte_kort": "12 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Het huisje van de wulk kan meer dan 12 centimeter hoog worden.",
+      "bron": "https://nl.wikipedia.org/wiki/Buccinum_undatum",
+      "controle": "Bij goede levensomstandigheden kan de schelphoogte groter dan 12 centimeter worden"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Zo'n grote wulk is waarschijnlijk 20 tot 30 jaar oud.",
+      "bron": "https://nl.wikipedia.org/wiki/Buccinum_undatum",
+      "controle": "Deze exemplaren zijn waarschijnlijk 20 tot 30 jaar oud"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De wulk heeft twee lange, dunne voelsprieten. Daarmee kan hij heel goed ruiken.",
+      "bron": "https://nl.wikipedia.org/wiki/Buccinum_undatum",
+      "controle": "twee lange dunne tasters waarmee zeer goed geuren waargenomen kunnen worden"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De wulk eet het liefst wormen.",
+      "bron": "https://nl.wikipedia.org/wiki/Buccinum_undatum",
+      "controle": "De soort prefereert echter bovenal borstelwormen (Polychaeta), vooral de schelpkokerworm"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "De jonge wulkjes groeien op in eikapsels. Als ze eruit zijn, blijven lichte kluwens over. Die spoelen vaak aan op het strand.",
+      "bron": "https://nl.wikipedia.org/wiki/Buccinum_undatum",
+      "controle": "Als de slakjes de kapsels hebben verlaten, blijven de lichte en moeilijk afbreekbare kluwens achter, die vaak op het strand aanspoelen"
+    }
+  ]
+}

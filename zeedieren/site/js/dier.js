@@ -83,7 +83,7 @@ function tekenScherm(lijst) {
   <section class="breed weetjes-blok" id="weetjes" aria-labelledby="weetjes-kop">
     <div class="blok-kop"><h2 id="weetjes-kop">Weetjes over ${esc(D.naam)}</h2><span class="label">nagekeken</span></div>
     ${gevonden.length ? `<ul class="weetjes-lijst">${gevonden.map((w) => `<li><p class="etiket">${esc(SECTIE[w.sectie] || w.sectie)}</p><p>${esc(w.tekst)}</p><small>Bron: <a href="${esc(w.bron)}" rel="noopener">${esc(w.bron_titel)}</a>, Wikipedia (CC BY-SA). De zin “${esc(w.controle)}” staat op die pagina; nagekeken op ${esc(w.datum || D.nagekeken || "")}.</small></li>`).join("")}</ul>` : `<p class="noot">Voor dit dier hebben we nog geen weetjes die we bij de bron kunnen nakijken.</p>`}
-    ${D.veiligheid ? `<div class="veilig"><h2>Let op</h2>${D.veiligheid.map((z) => `<p>${esc(z)}</p>`).join("")}</div>` : ""}
+    ${D.veiligheid ? `<div class="veilig"><h2>Let op</h2>${D.veiligheid.zinnen.map((z) => `<p>${esc(z)}</p>`).join("")}${D.veiligheid.bronnen.length ? `<p class="fijn">Bron: ${D.veiligheid.bronnen.map(([t, u]) => `<a href="${esc(u)}" rel="noopener">${esc(t)}</a>`).join(", ")}.</p>` : ""}</div>` : ""}
     <p class="noot">Namen en indeling: <a href="${esc(D.worms)}" rel="noopener">WoRMS</a>. Meldingen: GBIF en OBIS (zie <a href="/hoe-dit-werkt">hoe dit werkt</a>).${D.wikipedia ? ` Meer lezen: <a href="${esc(D.wikipedia)}" rel="noopener">Wikipedia</a>.` : ""}</p>
   </section>`;
 

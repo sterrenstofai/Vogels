@@ -1,0 +1,39 @@
+{
+  "kort": "Een paarsrode worm die in een gang in het zand van het wad woont.",
+  "lengte_cm": 22.5,
+  "lengte_tekst": "tot 22,5 cm",
+  "lengte_kort": "22,5 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De wadpier wordt tot 22,5 centimeter lang en 1 centimeter dik.",
+      "bron": "https://nl.wikipedia.org/wiki/Zeepier",
+      "controle": "De wadpier kan tot 22,5 cm lang, 1 cm dik en 6 jaar oud worden"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De wadpier is paarsrood met een groenige glans.",
+      "bron": "https://nl.wikipedia.org/wiki/Zeepier",
+      "controle": "De dieren zijn paarsrood van kleur met een groenachtige weerschijn"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "De wadpier woont in een gang in de vorm van een U, tot ongeveer 30 centimeter diep.",
+      "bron": "https://nl.wikipedia.org/wiki/Zeepier",
+      "controle": "Het dier leeft in een U-vormige gang die tot ongeveer 30 centimeter diep gaat"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De wadpier eet zand en haalt daar het voedsel uit.",
+      "bron": "https://nl.wikipedia.org/wiki/Zeepier",
+      "controle": "Dit zand wordt op deze wijze met voedsel verrijkt en gegeten door het dier"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De kronkelige zandhoopjes op het wad, die op tandpasta lijken, zijn de poep van de wadpier.",
+      "bron": "https://nl.wikipedia.org/wiki/Zeepier",
+      "controle": "De hoopjes opgerolde zandslierten ('tandpastahoopjes') op het wad zijn hun uitwerpselen"
+    }
+  ]
+}

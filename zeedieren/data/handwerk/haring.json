@@ -1,0 +1,39 @@
+{
+  "kort": "Een zilveren vis die met heel veel tegelijk in grote scholen zwemt.",
+  "lengte_cm": 45,
+  "lengte_tekst": "ongeveer 45 cm",
+  "lengte_kort": "45 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Een haring wordt ongeveer 45 centimeter lang en weegt hoogstens een kilo.",
+      "bron": "https://nl.wikipedia.org/wiki/Haring_(soort)",
+      "controle": "Haringen worden circa 45 centimeter lang en kunnen maximaal één kilogram wegen"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De haring heeft een zilveren lijf en een grijsgroene of blauwgroene rug.",
+      "bron": "https://nl.wikipedia.org/wiki/Haring_(soort)",
+      "controle": "De vis heeft een zilverkleurig lichaam met een grijsgroene of blauwgroene rug"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "Haringen zwemmen in grote scholen, soms wel met miljoenen tegelijk.",
+      "bron": "https://nl.wikipedia.org/wiki/Haring_(soort)",
+      "controle": "Haringen komen voor in grote scholen van soms miljoenen dieren"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "Een volwassen haring eet plankton, garnalen en kleinere vissen.",
+      "bron": "https://nl.wikipedia.org/wiki/Haring_(soort)",
+      "controle": "de volwassen dieren van groter plankton (zoals roeipootkreeftjes ), garnalen en kleinere vissen"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Haringen maken geluiden om elkaar iets te laten weten. Die geluiden heten haringscheten.",
+      "bron": "https://nl.wikipedia.org/wiki/Haring_(soort)",
+      "controle": "Het geluid dat haringen maken, de zogenaamde haringscheten, die ze gebruiken om te communiceren"
+    }
+  ]
+}

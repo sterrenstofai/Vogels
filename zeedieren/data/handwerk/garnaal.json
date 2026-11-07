@@ -1,0 +1,39 @@
+{
+  "kort": "Een klein grijs tot bruin diertje dat zich ingraaft in het zand van de kust.",
+  "lengte_cm": 9,
+  "lengte_tekst": "tot 9 cm",
+  "lengte_kort": "9 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De garnaal is meestal 5 tot 7 centimeter lang, hoogstens 9 centimeter. Hij is grijs tot bruin met vlekjes.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_garnaal",
+      "controle": "De lengte is ongeveer 50 tot 70, maximaal 90 millimeter en de kleur is grijs tot bruin met een onregelmatige vlekjestekening"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De garnaal kan van kleur veranderen. Zo past hij bij de bodem.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_garnaal",
+      "controle": "De garnaal kan van kleur veranderen om zich aan te passen aan de ondergrond"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "De garnaal zoekt 's nachts eten op de bodem. Overdag graaft hij zich in. Dan steken alleen zijn ogen en voelsprieten uit.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_garnaal",
+      "controle": "De garnaal foerageert 's nachts over de bodem en graaft zich overdag in zodat alleen de ogen en voelsprieten uitsteken"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De garnaal eet van alles: stukjes plant, dode dieren en wormen.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_garnaal",
+      "controle": "Het is een alleseter die zowel plantaardig materiaal en aas, maar ook prooidieren als borstelwormen eet"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "De garnaal leeft veel in de zee bij de kust, op een bodem van zand of slik.",
+      "bron": "https://nl.wikipedia.org/wiki/Gewone_garnaal",
+      "controle": "De gewone garnaal komt veel voor in kustwateren met een zanderige tot slibbige ondergrond"
+    }
+  ]
+}

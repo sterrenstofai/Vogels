@@ -1,0 +1,39 @@
+{
+  "kort": "Een platte, bruingrijze rog met stekels, die op de zeebodem ligt.",
+  "lengte_cm": 85,
+  "lengte_tekst": "ongeveer 85 cm",
+  "lengte_kort": "85 cm",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "Een stekelrog wordt ongeveer 85 centimeter lang. Hij heeft stekels op zijn rug, zijn staart en zijn buik.",
+      "bron": "https://nl.wikipedia.org/wiki/Stekelrog",
+      "controle": "Hij heeft stekels op de rug en de staart, en ook de buik is stekelig. Een stekelrog wordt ongeveer 85 cm lang"
+    },
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De stekelrog is bruingrijs met donkere vlekken en stipjes. Zijn buik is lichter.",
+      "bron": "https://nl.wikipedia.org/wiki/Stekelrog",
+      "controle": "Deze rog is bruingrijs met donkere vlekken en stipjes, de buikzijde is lichter"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "De stekelrog ligt meestal op de bodem te wachten tot er een prooi langskomt. Je ziet hem dan bijna niet.",
+      "bron": "https://nl.wikipedia.org/wiki/Stekelrog",
+      "controle": "Deze dieren liggen meestal op de zeebodem te wachten op een passerende prooi. Ze zijn nagenoeg onzichtbaar dankzij hun camouflage"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "In de Noordzee leeft de stekelrog op 2 tot 60 meter diepte.",
+      "bron": "https://nl.wikipedia.org/wiki/Stekelrog",
+      "controle": "Stekelroggen komen voor op een diepte tussen de 2 en 60 m in de Noordzee"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "De zwarte eikapsels van de stekelrog kun je vinden langs de kust van Nederland en België.",
+      "bron": "https://nl.wikipedia.org/wiki/Stekelrog",
+      "controle": "De zwarte eikapsels van de stekelrog kan men langs de Belgische en Nederlandse kust aantreffen"
+    }
+  ]
+}

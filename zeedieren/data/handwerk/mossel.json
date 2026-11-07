@@ -1,0 +1,39 @@
+{
+  "kort": "Een schelpdier met een paarsblauwe schelp, dat met sterke draadjes vastzit.",
+  "lengte_cm": null,
+  "lengte_tekst": null,
+  "lengte_kort": null,
+  "lengte_weetje": null,
+  "weetjes": [
+    {
+      "sectie": "uiterlijk",
+      "tekst": "De schelp van de mossel is aan de buitenkant paarsblauw.",
+      "bron": "https://nl.wikipedia.org/wiki/Mossel_(weekdier)",
+      "controle": "De buitenkant van de schelp heeft een paarsblauwe kleur"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "Bij vloed gaat de mossel open om eten uit het water te filteren.",
+      "bron": "https://nl.wikipedia.org/wiki/Mossel_(weekdier)",
+      "controle": "Bij vloed staat de mossel onder water, de sluitspier ontspant en de kleppen openen zich om voedsel uit het water te filteren"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "De mossel is een van de gewoonste dieren aan de kust van Nederland en België.",
+      "bron": "https://nl.wikipedia.org/wiki/Mossel_(weekdier)",
+      "controle": "De mossel is een van de meest algemene diersoorten aan de Nederlandse en Belgische kust"
+    },
+    {
+      "sectie": "leefwijze",
+      "tekst": "Bij eb kan een mossel ongeveer zes uur zonder water.",
+      "bron": "https://nl.wikipedia.org/wiki/Mossel_(weekdier)",
+      "controle": "Een mossel kan bij eb ongeveer zes uur boven water blijven"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "Een mossel zit vast met taaie, sterke draadjes. Zo zit hij stevig op zijn plek.",
+      "bron": "https://nl.wikipedia.org/wiki/Mossel_(weekdier)",
+      "controle": "Deze byssusdraden zijn taai en elastisch en hebben een zeer hoge sterkte waardoor de schelp stevig verankerd wordt"
+    }
+  ]
+}

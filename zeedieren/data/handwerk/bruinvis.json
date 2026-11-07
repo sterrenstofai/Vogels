@@ -1,0 +1,39 @@
+{
+  "kort": "Een kleine walvis, die je van alle walvissen het vaakst ziet in de Noordzee.",
+  "lengte_cm": 150,
+  "lengte_tekst": "ongeveer 1,5 meter",
+  "lengte_kort": "1,5 m",
+  "lengte_weetje": 0,
+  "weetjes": [
+    {
+      "sectie": "grootte",
+      "tekst": "De bruinvis is ongeveer anderhalve meter lang en weegt hoogstens 60 kilo.",
+      "bron": "https://nl.wikipedia.org/wiki/Bruinvis",
+      "controle": "Het dier heeft een lengte van ongeveer 1,50 m en een gewicht van maximaal 60 kilogram"
+    },
+    {
+      "sectie": "waar",
+      "tekst": "Na 1985 zag je weer bruinvissen bij de kust. Sinds het jaar 2000 zijn het er in het zuiden van de Noordzee snel meer geworden.",
+      "bron": "https://nl.wikipedia.org/wiki/Bruinvis",
+      "controle": "kleine aantallen bruinvissen in de kustwateren gezien, en vanaf het jaar 2000 nam het aantal in het zuidelijk deel van de Noordzee snel toe"
+    },
+    {
+      "sectie": "eten",
+      "tekst": "De bruinvis zoekt visjes op de zeebodem en zuigt ze naar binnen.",
+      "bron": "https://nl.wikipedia.org/wiki/Bruinvis",
+      "controle": "Hiermee 'grazen' ze de zeebodem af, waarna ze de gevonden visjes naar binnen zuigen"
+    },
+    {
+      "sectie": "jongen",
+      "tekst": "Een jonge bruinvis drinkt acht maanden melk bij zijn moeder. Daarna moet hij zelf eten zoeken.",
+      "bron": "https://nl.wikipedia.org/wiki/Bruinvis",
+      "controle": "De zoogtijd duurt acht maanden, daarna moet het jong zelf voor zijn eten zorgen"
+    },
+    {
+      "sectie": "bijzonder",
+      "tekst": "De naam is gek: de bruinvis is geen vis en hij is ook niet bruin.",
+      "bron": "https://nl.wikipedia.org/wiki/Bruinvis",
+      "controle": "De naam bruinvis lijkt vreemd, omdat deze dieren geen vissen zijn en ook geen bruine kleur hebben"
+    }
+  ]
+}
