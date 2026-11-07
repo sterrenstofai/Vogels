@@ -15,16 +15,16 @@
  },
  "kokk2": {
   "slug": "kokkel",
-  "bestand": "Croissance de la coque commune (Cerastoderma edule) (Ifremer 00784-89636).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Romain (1) Elleboode",
+  "bestand": "Cerastoderma edule (Linnaeus, 1758) - Dautzenberg, Ph. (1913) Wh.jpg",
+  "licentie": "Public domain",
+  "maker": "Dautzenberg, Ph.",
   "p18": false
  },
  "kokk3": {
   "slug": "kokkel",
-  "bestand": "Cerastoderma edule (Linnaeus, 1758) - Dautzenberg, Ph. (1913) Wh.jpg",
-  "licentie": "Public domain",
-  "maker": "Dautzenberg, Ph.",
+  "bestand": "Croissance de la coque commune (Cerastoderma edule) (Ifremer 00784-89636).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Romain (1) Elleboode",
   "p18": false
  },
  "kokk4": {
@@ -36,16 +36,16 @@
  },
  "kokk5": {
   "slug": "kokkel",
-  "bestand": "Shells of the Brazilian Berbigão.jpg",
+  "bestand": "Cerastoderma edule 175258702.jpg",
   "licentie": "CC BY-SA 4.0",
-  "maker": "Mário NET",
+  "maker": "Michel Langeveld",
   "p18": false
  },
  "kokk6": {
   "slug": "kokkel",
-  "bestand": "Cerastoderma edule 175258702.jpg",
+  "bestand": "Shells of the Brazilian Berbigão.jpg",
   "licentie": "CC BY-SA 4.0",
-  "maker": "Michel Langeveld",
+  "maker": "Mário NET",
   "p18": false
  },
  "kokk7": {
@@ -71,42 +71,42 @@
  },
  "moss2": {
   "slug": "mossel",
-  "bestand": "Campagne SUCHI-Med - Poche de moules et mouillage en station artificielle (Ifremer 00735-84738 - 40587).jpg",
+  "bestand": "Blue mussel (Ifremer 00617-72906 - 28835).jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay",
+  "maker": "Lionel Dégremont",
   "p18": false
  },
  "moss3": {
-  "slug": "mossel",
-  "bestand": "Moules (Mytilus edulis) (Ifremer 00562-67403 - 23061).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay",
-  "p18": false
- },
- "moss4": {
   "slug": "mossel",
   "bestand": "Moulière (Ifremer 00565-67675 - 40688).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
  },
- "moss5": {
+ "moss4": {
   "slug": "mossel",
-  "bestand": "Biodiversité marine en Bretagne (Ifremer 00562-67431 - 40690).jpg",
+  "bestand": "Campagne SUCHI-Med - Poche de moules et mouillage en station artificielle (Ifremer 00735-84738 - 40587).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
  },
- "moss6": {
+ "moss5": {
   "slug": "mossel",
   "bestand": "Eponges, moules et anémones corynactis (Ifremer 00562-67404 - 23064).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
  },
- "moss7": {
+ "moss6": {
   "slug": "mossel",
   "bestand": "Campagne SUCHI-Med - Poche de moules et mouillage en station artificielle (Ifremer 00735-84738 - 40582).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "moss7": {
+  "slug": "mossel",
+  "bestand": "Moules (Mytilus edulis) (Ifremer 00562-67403 - 23061).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
@@ -141,16 +141,16 @@
  },
  "stra4": {
   "slug": "strandkrab",
-  "bestand": "Gemeine Strandkrabbe auf Sylt 03.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Jürgen Hamann",
+  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43037).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (Ifremer)",
   "p18": false
  },
  "stra5": {
   "slug": "strandkrab",
-  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43037).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay (Ifremer)",
+  "bestand": "Gemeine Strandkrabbe auf Sylt 03.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Jürgen Hamann",
   "p18": false
  },
  "stra6": {
@@ -183,44 +183,44 @@
  },
  "zees2": {
   "slug": "zeester",
-  "bestand": "Asterias rubens 179263738.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Michel Langeveld",
-  "p18": false
- },
- "zees3": {
-  "slug": "zeester",
   "bestand": "Asterias rubens 311930010.jpg",
   "licentie": "CC BY 4.0",
   "maker": "Drew T",
   "p18": false
  },
- "zees4": {
+ "zees3": {
   "slug": "zeester",
   "bestand": "Asterias rubens 307854603.jpg",
   "licentie": "CC0",
   "maker": "Rob Wallace",
   "p18": false
  },
- "zees5": {
+ "zees4": {
   "slug": "zeester",
   "bestand": "Asterias rubens 247485837.jpg",
   "licentie": "CC BY-SA 4.0",
   "maker": "Micha Baum",
   "p18": false
  },
- "zees6": {
+ "zees5": {
   "slug": "zeester",
   "bestand": "Asterias rubens 410375762.jpg",
   "licentie": "CC BY 4.0",
   "maker": "Julien Renoult",
   "p18": false
  },
+ "zees6": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 179263738.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Michel Langeveld",
+  "p18": false
+ },
  "zees7": {
   "slug": "zeester",
-  "bestand": "Asterias rubens 04 Espen Rekdal.jpg",
+  "bestand": "Asterias rubens 355875091.jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Espen Rekdal / Espen Rekdal Photography",
+  "maker": "Bernard Picton",
   "p18": false
  },
  "oork0": {
@@ -288,15 +288,15 @@
  },
  "wadp1": {
   "slug": "wadpier",
-  "bestand": "Lugworm casts on Gullmarsviken mudflats 1.jpg",
-  "licentie": "Public domain",
+  "bestand": "Fisherman at Gullmarsvik mudflats.jpg",
+  "licentie": "CC0",
   "maker": "W.carter",
   "p18": false
  },
  "wadp2": {
   "slug": "wadpier",
-  "bestand": "Fisherman at Gullmarsvik mudflats.jpg",
-  "licentie": "CC0",
+  "bestand": "Lugworm casts on Gullmarsviken mudflats 1.jpg",
+  "licentie": "Public domain",
   "maker": "W.carter",
   "p18": false
  },
@@ -316,15 +316,15 @@
  },
  "wadp5": {
   "slug": "wadpier",
-  "bestand": "Lugworm casts on mudflats of Gullmarsviken, Gullmarn 4.jpg",
-  "licentie": "CC0",
+  "bestand": "Jetty at Gullmarsvik on a rainy day.jpg",
+  "licentie": "Public domain",
   "maker": "W.carter",
   "p18": false
  },
  "wadp6": {
   "slug": "wadpier",
-  "bestand": "Jetty at Gullmarsvik on a rainy day.jpg",
-  "licentie": "Public domain",
+  "bestand": "Lugworm casts on mudflats of Gullmarsviken, Gullmarn 4.jpg",
+  "licentie": "CC0",
   "maker": "W.carter",
   "p18": false
  },
@@ -358,16 +358,16 @@
  },
  "scho3": {
   "slug": "schol",
-  "bestand": "Pleuronectidae Pleuronectes platessa 1.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "NasserHalaweh",
+  "bestand": "Carrelet (Pleuronectes platessa) (Ifremer 00382-49316 - 2344).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
   "p18": false
  },
  "scho4": {
   "slug": "schol",
-  "bestand": "Carrelet (Pleuronectes platessa) (Ifremer 00382-49316 - 2344).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay",
+  "bestand": "Pleuronectidae Pleuronectes platessa 1.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "NasserHalaweh",
   "p18": false
  },
  "scho5": {
@@ -428,14 +428,14 @@
  },
  "hari5": {
   "slug": "haring",
-  "bestand": "Larves de hareng (Clupea harengus) (Ifremer 00728-83996 - 37122).jpg",
+  "bestand": "Juvéniles de hareng (Clupea harengus) à 70 jours post-éclosion (Ifremer 00614-72593 - 28693).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
  },
  "hari6": {
   "slug": "haring",
-  "bestand": "Juvéniles de hareng (Clupea harengus) à 70 jours post-éclosion (Ifremer 00614-72593 - 28693).jpg",
+  "bestand": "Larves de hareng (Clupea harengus) (Ifremer 00728-83996 - 37122).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
@@ -589,16 +589,16 @@
  },
  "grot4": {
   "slug": "grote-pieterman",
-  "bestand": "Ichthyologie; ou, Histoire naturelle des poissons (Plate 61) (6918345830).jpg",
-  "licentie": "Public domain",
-  "maker": "Bloch, Marcus Elieser",
+  "bestand": "Trachinus draco 08-08 9.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Erling Svensen/Ocean Photo",
   "p18": false
  },
  "grot5": {
   "slug": "grote-pieterman",
-  "bestand": "Trachinus draco 08-08 9.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Erling Svensen/Ocean Photo",
+  "bestand": "Ichthyologie; ou, Histoire naturelle des poissons (Plate 61) (6918345830).jpg",
+  "licentie": "Public domain",
+  "maker": "Bloch, Marcus Elieser",
   "p18": false
  },
  "grot6": {
@@ -659,9 +659,9 @@
  },
  "brui6": {
   "slug": "bruinvis",
-  "bestand": "Adriaen Coenen's Visboeck - KB 78 E 54 - folio 337v.jpg",
+  "bestand": "Common bottlenose dolphin harbor porpoise comparison graphic NOAA Fisheries.jpg",
   "licentie": "Public domain",
-  "maker": "",
+  "maker": "NOAA Fisheries",
   "p18": false
  },
  "brui7": {
