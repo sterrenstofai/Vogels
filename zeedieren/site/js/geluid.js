@@ -65,7 +65,7 @@ export function tekenSpectrogram(canvas, sp, voortgang = 0) {
   const L = 44, B = 18, w = W - L, h = H - B, fmin = 50, fmax = sp.nyquist, logmin = Math.log10(fmin), logmax = Math.log10(fmax);
   let max = -Infinity, min = Infinity;
   for (const k of sp.kolommen) for (let i = 2; i < k.length; i++) { if (k[i] > max) max = k[i]; if (k[i] < min) min = k[i]; }
-  min = Math.max(min, max - 6);
+  min = Math.max(min, max - 4.5);
   const img = c.createImageData(Math.max(1, Math.round(w)), Math.max(1, Math.round(h)));
   const nb = sp.kolommen[0]?.length || 1;
   for (let x = 0; x < img.width; x++) {

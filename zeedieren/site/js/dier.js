@@ -69,7 +69,7 @@ function tekenScherm(lijst) {
         ${D.lengte_tekst ? `<dt>Hoe groot</dt><dd>${esc(D.lengte_tekst)}</dd>` : ""}
         ${D.vaakst != null && metMaand ? `<dt>Het vaakst</dt><dd>${MAANDEN[D.vaakst]}</dd>` : ""}
         ${D.foto ? `<dt>Foto</dt><dd>${bron(D.foto)}</dd>` : ""}
-        ${D.plaat ? `<dt>Plaat</dt><dd>${esc(D.plaat.werk || D.plaat.maker)}${D.plaat.jaar ? ", " + esc(D.plaat.jaar) : ""}</dd>` : ""}
+        ${D.plaat ? `<dt>Plaat</dt><dd>${esc(hoofd(D.plaat.werk || D.plaat.maker))}${D.plaat.jaar ? ", " + esc(D.plaat.jaar) : ""}</dd>` : ""}
         <dt>Weetjes</dt><dd>${gevonden.length ? `<a href="#weetjes">${gevonden.length}, nagekeken bij de bron</a>` : "nog geen"}</dd>
       </dl>
     </div>
@@ -78,7 +78,7 @@ function tekenScherm(lijst) {
       ${kaartSvg(true)}
       <p>${D.vakken.length ? `${D.vakken.length} vakken met meldingen` : "Geen meldingen bij Nederland"} (OBIS)</p>
     </a>
-    <nav class="dier-strook" aria-label="Alle dieren"><div class="strook">${lijst.map((d) => `<a class="strook-item" href="${pad(d)}"${d.slug === D.slug ? ' aria-current="true"' : ""}><span class="strook-beeld">${d.klein ? `<img src="${d.klein}" alt="" loading="lazy" width="168" height="128">` : ""}</span><span class="strook-naam">${esc(kaal(d.naam))}</span></a>`).join("")}</div></nav>
+    <nav class="dier-strook" aria-label="Alle dieren"><div class="strook">${lijst.map((d) => `<a class="strook-item" href="${pad(d)}"${d.slug === D.slug ? ' aria-current="true"' : ""}><span class="strook-beeld">${d.klein ? `<img src="${d.klein}" alt="" loading="lazy" width="168" height="128">` : `<span class="mono zacht">geen beeld</span>`}</span><span class="strook-naam">${esc(kaal(d.naam))}</span></a>`).join("")}</div></nav>
   </section>
   <section class="breed weetjes-blok" id="weetjes" aria-labelledby="weetjes-kop">
     <div class="blok-kop"><h2 id="weetjes-kop">Weetjes over ${esc(D.naam)}</h2><span class="label">nagekeken</span></div>
@@ -122,7 +122,7 @@ function toonTab(k) {
       ? `<figure class="beeld"><div class="beeld-vak"><img src="${D.foto.pad}" alt="${esc(D.foto.alt || "Foto van " + D.naam)}" width="${D.foto.breed}" height="${D.foto.hoog}"></div><figcaption><span class="label">foto</span><span>${bron(D.foto)}${D.foto.waar ? " · " + esc(D.foto.waar) : ""}</span></figcaption></figure>`
       : `<div class="leeg"><strong>Geen goede foto</strong>${esc(D.foto_niet || "We vonden geen vrije foto van dit dier in het wild. Liever niets dan een foto uit een bak, een tekening die doet alsof, of een gemaakt beeld.")}</div>`;
   } else if (k === "plaat") {
-    vlak.innerHTML = `<figure class="beeld plaat"><div class="beeld-vak"><img src="${D.plaat.pad}" alt="${esc("Oude plaat van " + D.naam)}" width="${D.plaat.breed}" height="${D.plaat.hoog}"></div><figcaption><span class="label">tekening</span><span>${esc(D.plaat.werk || "")}${D.plaat.jaar ? ", " + esc(D.plaat.jaar) : ""} · ${bron(D.plaat)}</span></figcaption></figure>`;
+    vlak.innerHTML = `<figure class="beeld plaat"><div class="beeld-vak"><img src="${D.plaat.pad}" alt="${esc("Oude plaat van " + D.naam)}" width="${D.plaat.breed}" height="${D.plaat.hoog}"></div><figcaption><span class="label">tekening</span><span>${esc(hoofd(D.plaat.werk || ""))}${D.plaat.jaar ? ", " + esc(D.plaat.jaar) : ""} · ${bron(D.plaat)}</span></figcaption></figure>`;
   } else if (k === "schaal") {
     tekenSchaal(vlak);
   } else if (k === "geluid") {
@@ -136,11 +136,12 @@ function toonTab(k) {
 function kaartSvg(klein = false) {
   const [lon0, lon1, lat0, lat1] = kust.kader, B = kust.breed, H = kust.hoog;
   const max = Math.max(1, ...D.vakken.map((v) => v[2]));
+  const cel = 0.0439, cb = (cel / (lon1 - lon0)) * B, ch = (cel / (lat1 - lat0)) * H, lmax = Math.log10(max + 1);
   const vakken = D.vakken.map(([lon, lat, n]) => {
-    const x = ((lon - lon0) / (lon1 - lon0)) * B, y = ((lat1 - lat) / (lat1 - lat0)) * H, r = (klein ? 3 : 2.2) + (klein ? 5 : 7) * Math.sqrt(Math.log10(n + 1) / Math.log10(max + 1));
-    return `<circle class="vak" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" opacity="${(0.35 + 0.55 * Math.log10(n + 1) / Math.log10(max + 1)).toFixed(2)}"/>`;
+    const x = ((lon - lon0) / (lon1 - lon0)) * B - cb / 2, y = ((lat1 - lat) / (lat1 - lat0)) * H - ch / 2;
+    return `<rect class="vak" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${(cb + 0.6).toFixed(1)}" height="${(ch + 0.6).toFixed(1)}" opacity="${(0.18 + 0.82 * Math.log10(n + 1) / lmax).toFixed(2)}"/>`;
   }).join("");
-  return `<svg class="kaart-svg" viewBox="0 0 ${B} ${H}" role="img" aria-label="Kaart van de Nederlandse kust met ${D.vakken.length} vakken waar ${esc(D.naam)} gemeld is"><rect class="zee" width="${B}" height="${H}"/><path class="land" d="${kust.land}"/>${vakken}</svg>`;
+  return `<svg class="kaart-svg" viewBox="0 0 ${B} ${H}" role="img" aria-label="Kaart van de Nederlandse kust met ${D.vakken.length} vakken waar ${esc(D.naam)} gemeld is"><rect class="zee" width="${B}" height="${H}"/>${vakken}<path class="land" d="${kust.land}"/></svg>`;
 }
 function tekenWaar(vlak) {
   const m = D.maanden?.kust?.map((x, i) => x + (D.maanden.ncp?.[i] || 0)) || [];
@@ -156,7 +157,7 @@ function tekenWaar(vlak) {
       ${strand ? `<h2>Gevonden aan het strand</h2><div class="maandstrip" aria-hidden="true">${strand.map((x, i) => `<span style="height:${Math.max(2, x * 100)}%"${i === maand ? ' class="nu"' : ""}></span>`).join("")}</div><div class="maandletters" aria-hidden="true">${MAAND_KORT.map((x) => `<span>${x[0]}</span>`).join("")}</div><p>Deel van de strandbezoeken waarbij strandwachters van Stichting ANEMOON ${esc(D.hem)} vonden, per maand (100% = elke keer), ${esc(D.strand_jaren || "1978–2021")}.</p>` : ""}
       <table class="sr"><caption>Meldingen per maand</caption><tr>${MAANDEN.map((x, i) => `<th>${x}</th><td>${m[i] || 0}</td>`).join("")}</tr></table>
     </div></div>
-    <div class="beeld-voet" style="background:var(--vlak);color:var(--zacht)"><span class="label">echte meldingen</span><span>Kaart: OBIS, vakken van ongeveer 5 bij 5 km (hoe donkerder, hoe meer meldingen). Kust: Natural Earth. Meldingen per maand: GBIF.</span></div></div>`;
+    <div class="beeld-voet" style="background:var(--vlak);color:var(--zacht)"><span class="label">echte meldingen</span><span>Kaart: OBIS, vakken van ongeveer 5 bij 5 km (hoe donkerder, hoe meer meldingen); meldingen op land laten we weg. Kust: Natural Earth. Meldingen per maand: GBIF.</span></div></div>`;
 }
 
 /* ---------- op schaal ---------- */
@@ -184,38 +185,30 @@ function vormVan() {
   return GROEPVORM[D.groep] || "vis";
 }
 const KIND = 105; // cm: een kind van vier, ongeveer
+const HOOG_VORM = { ster: 0.95, schelp: 0.8, krab: 0.7, kwal: 0.9, slak: 0.75, worm: 0.25, inktvis: 0.9, rog: 0.9, garnaal: 0.5, zeehond: 0.35, walvis: 0.32, vis: 0.36 };
 function tekenSchaal(vlak, keuze) {
   const L = D.lengte_cm;
   const opties = L < 30 ? ["hand", "kind"] : L > 400 ? ["kind", "bus"] : ["kind", "hand"];
   keuze ||= opties[0];
-  const ref = { hand: { cm: 18, naam: "een hand van een volwassene (ongeveer 18 cm)" }, kind: { cm: KIND, naam: "een kind van vier (ongeveer 1,05 m)" }, bus: { cm: 1200, naam: "een bus (ongeveer 12 m)" } }[keuze];
-  const breedte = Math.max(L, keuze === "bus" ? ref.cm : ref.cm * 0.5) * 1.25, schaal = 900 / breedte;
-  const vorm = vormVan(), dierB = L * schaal, dierH = Math.max(8, dierB * (["ster", "schelp", "krab", "kwal", "slak"].includes(vorm) ? 0.95 : vorm === "worm" ? 0.25 : 0.42));
-  const grond = 360, x0 = 60;
-  const refB = ref.cm * schaal;
-  let refSvg = "";
-  if (keuze === "kind") {
-    const h = refB, b = h * 0.32, x = x0 + dierB + 60;
-    refSvg = `<g transform="translate(${x} ${grond - h}) scale(${b / 32} ${h / 100})"><circle class="vergelijk" cx="16" cy="9" r="8"/><path class="vergelijk" d="M16 17 V60 M16 60 L6 100 M16 60 L26 100 M16 28 L2 50 M16 28 L30 50"/></g>`;
-    refSvg += `<text x="${x + b / 2}" y="${grond - h - 10}" text-anchor="middle">kind</text>`;
-  } else if (keuze === "hand") {
-    const h = refB, x = x0 + dierB + 50;
-    refSvg = `<g transform="translate(${x} ${grond - h}) scale(${h / 100})"><path class="vergelijk" d="M20 100 L20 55 L8 35 C5 30 12 26 15 31 L22 42 L22 8 C22 3 30 3 30 8 L30 40 L32 2 C32 -3 40 -3 40 2 L40 40 L43 6 C43 1 51 1 51 6 L50 42 L54 14 C54 9 62 9 62 14 L58 62 C56 80 50 92 48 100"/></g><text x="${x + h * 0.35}" y="${grond - h - 10}" text-anchor="middle">hand</text>`;
-  } else {
-    const h = refB * 0.26, x = x0 + dierB + 40;
-    refSvg = `<rect class="vergelijk" x="${x}" y="${grond - h}" width="${refB}" height="${h * 0.86}" rx="8"/><circle class="vergelijk" cx="${x + refB * 0.18}" cy="${grond - h * 0.12}" r="${h * 0.12}"/><circle class="vergelijk" cx="${x + refB * 0.82}" cy="${grond - h * 0.12}" r="${h * 0.12}"/><text x="${x + refB / 2}" y="${grond - h - 10}" text-anchor="middle">bus</text>`;
-  }
-  const W = Math.max(1040, x0 + dierB + 80 + (keuze === "bus" ? refB : refB * 0.6) + 40);
-  const pad = VORM[vorm];
+  const REF = { hand: { b: 11, h: 18, naam: "een hand van een volwassene (ongeveer 18 cm)", kort: "hand" }, kind: { b: 34, h: KIND, naam: "een kind van vier (ongeveer 1,05 m)", kort: "kind" }, bus: { b: 1200, h: 300, naam: "een bus (ongeveer 12 m)", kort: "bus" } }[keuze];
+  const vorm = vormVan(), dierH = L * (HOOG_VORM[vorm] ?? 0.4);
+  const W = 1000, grond = 340, x0 = 50, gat = Math.max(L, REF.b) * 0.18;
+  const s = Math.min((W - 2 * x0) / (L + gat + REF.b), 290 / Math.max(dierH, REF.h));   // px per cm
+  const dB = L * s, dH = dierH * s, rx = x0 + dB + gat * s, rB = REF.b * s, rH = REF.h * s;
+  let ref = "";
+  if (keuze === "kind") ref = `<g transform="translate(${rx} ${grond - rH}) scale(${rB / 32} ${rH / 100})"><circle class="vergelijk" cx="16" cy="9" r="8" vector-effect="non-scaling-stroke"/><path class="vergelijk" vector-effect="non-scaling-stroke" d="M16 17 V60 M16 60 L6 100 M16 60 L26 100 M16 28 L2 50 M16 28 L30 50"/></g>`;
+  else if (keuze === "hand") ref = `<g transform="translate(${rx} ${grond - rH}) scale(${rB / 64} ${rH / 100})"><path class="vergelijk" vector-effect="non-scaling-stroke" d="M20 100 L20 55 L8 35 C5 30 12 26 15 31 L22 42 L22 8 C22 3 30 3 30 8 L30 40 L32 2 C32 -3 40 -3 40 2 L40 40 L43 6 C43 1 51 1 51 6 L50 42 L54 14 C54 9 62 9 62 14 L58 62 C56 80 50 92 48 100"/></g>`;
+  else ref = `<rect class="vergelijk" x="${rx}" y="${grond - rH}" width="${rB}" height="${rH * 0.86}" rx="6"/><circle class="vergelijk" cx="${rx + rB * 0.18}" cy="${grond - rH * 0.12}" r="${rH * 0.12}"/><circle class="vergelijk" cx="${rx + rB * 0.82}" cy="${grond - rH * 0.12}" r="${rH * 0.12}"/>`;
+  ref += `<text x="${rx + rB / 2}" y="${grond - rH - 10}" text-anchor="middle">${REF.kort}</text>`;
   const open = ["krab", "kwal", "worm", "inktvis", "garnaal"].includes(vorm);
-  vlak.innerHTML = `<div class="schaal"><svg viewBox="0 0 ${W} 420" role="img" aria-label="${esc(hoofd(D.naam))} op schaal naast ${ref.naam}">
+  vlak.innerHTML = `<div class="schaal"><svg viewBox="0 0 ${W} 420" role="img" aria-label="${esc(hoofd(D.naam))} op schaal naast ${REF.naam}">
       <line class="grond" x1="20" y1="${grond}" x2="${W - 20}" y2="${grond}"/>
-      <g transform="translate(${x0} ${grond - dierH}) scale(${dierB / 100} ${dierH / 100})"><path class="dier" d="${pad}" ${open ? 'style="fill:none;stroke-width:' + (300 / dierB).toFixed(2) + '"' : 'style="stroke-width:' + (150 / Math.max(dierB, dierH)).toFixed(2) + '"'} vector-effect="non-scaling-stroke"/></g>
-      <line class="maatlijn" x1="${x0}" y1="${grond + 22}" x2="${x0 + dierB}" y2="${grond + 22}"/><line class="maatlijn" x1="${x0}" y1="${grond + 14}" x2="${x0}" y2="${grond + 30}"/><line class="maatlijn" x1="${x0 + dierB}" y1="${grond + 14}" x2="${x0 + dierB}" y2="${grond + 30}"/>
-      <text x="${x0 + dierB / 2}" y="${grond + 50}" text-anchor="middle">${esc(kaal(D.naam))} ${esc(D.lengte_kort || "")}</text>
-      ${refSvg}
+      <g transform="translate(${x0} ${grond - dH}) scale(${dB / 100} ${dH / 100})"><path class="dier" d="${VORM[vorm]}" vector-effect="non-scaling-stroke"${open ? ' style="fill:none;stroke-width:3"' : ""}/></g>
+      <line class="maatlijn" x1="${x0}" y1="${grond + 22}" x2="${x0 + dB}" y2="${grond + 22}"/><line class="maatlijn" x1="${x0}" y1="${grond + 14}" x2="${x0}" y2="${grond + 30}"/><line class="maatlijn" x1="${x0 + dB}" y1="${grond + 14}" x2="${x0 + dB}" y2="${grond + 30}"/>
+      <text x="${x0 + Math.max(dB / 2, 60)}" y="${grond + 52}" text-anchor="middle">${esc(kaal(D.naam))} ${esc(D.lengte_kort || "")}</text>
+      ${ref}
     </svg>
-    <div class="schaal-voet"><span><span class="label">tekening</span> Op schaal: ${esc(D.lengte_tekst)}${D.lengte_bron ? ` (<a href="#weetjes">weetje</a>)` : ""}. De vorm is een eenvoudige tekening, niet het echte dier.</span>
+    <div class="schaal-voet"><span><span class="label">tekening</span> Op schaal: ${esc(D.lengte_tekst)} (uit een <a href="#weetjes">weetje</a>), naast ${REF.naam}. De vorm is een eenvoudige tekening, niet het echte dier.</span>
       <span class="schaal-kies" role="group" aria-label="Vergelijk met">${opties.map((o) => `<button type="button" data-ref="${o}" aria-pressed="${o === keuze}">${o === "hand" ? "Hand" : o === "kind" ? "Kind" : "Bus"}</button>`).join("")}</span></div></div>`;
   for (const b of vlak.querySelectorAll("[data-ref]")) b.addEventListener("click", () => tekenSchaal(vlak, b.dataset.ref));
 }

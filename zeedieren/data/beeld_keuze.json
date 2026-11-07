@@ -121,7 +121,8 @@
   "geluid": {
    "bestand": "Artis, jonge zeehond op het wad - SoundCloud - Beeld en Geluid.ogg",
    "wat": "Een jonge zeehond, opgenomen door Artis.",
-   "noot": null
+   "noot": null,
+   "maker": "Artis, via Beeld en Geluid"
   }
  },
  "grijze-zeehond": {
@@ -133,7 +134,8 @@
   "geluid": {
    "bestand": "Humpback whale moo.ogg",
    "wat": "Bultruggen bij Glacier Bay, Alaska, opgenomen met een microfoon onder water.",
-   "noot": null
+   "noot": null,
+   "maker": "National Park Service (VS)"
   }
  },
  "potvis": {
@@ -142,7 +144,8 @@
   "geluid": {
    "bestand": "Sperm Whale Normal Clicks.ogg",
    "wat": "Het klikken van een potvis.",
-   "noot": null
+   "noot": null,
+   "maker": "NOAA (VS)"
   }
  },
  "blauwe-vinvis": {
@@ -150,7 +153,8 @@
   "geluid": {
    "bestand": "Blue Whale NE Pacific.ogg",
    "wat": "Een blauwe vinvis in het noordoosten van de Stille Oceaan.",
-   "noot": "Dit geluid is tien keer versneld, zoals NOAA het aanbiedt. De echte roep is veel lager."
+   "noot": "Dit geluid is tien keer versneld, zoals NOAA het aanbiedt. De echte roep is veel lager.",
+   "maker": "NOAA, PMEL (VS)"
   }
  },
  "orka": {
@@ -158,7 +162,8 @@
   "geluid": {
    "bestand": "Killer whale.ogg",
    "wat": "Roepen en klikken van orka's die vis eten, bij Glacier Bay in Alaska.",
-   "noot": null
+   "noot": null,
+   "maker": "National Park Service (VS)"
   }
  },
  "octopus": {

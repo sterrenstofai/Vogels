@@ -30,6 +30,7 @@ function speel(lijst, i) {
   app.innerHTML = `
   <section class="kids" aria-label="Dieren in zee voor kinderen">
     <a class="kids-weg" href="/kinderen" aria-label="Terug naar de keuze"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a>
+    <h1 class="sr" data-kids-naam></h1>
     <p class="kids-bron"></p>
     <div class="kids-podium">
       <button class="kids-pijl kids-vorige" type="button" aria-label="Vorig dier"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -47,7 +48,7 @@ function speel(lijst, i) {
       <svg class="ico-speel" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg>
       <svg class="ico-pauze" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
     </button>
-    <div class="kids-strook" role="list" aria-label="Kies een dier">${lijst.map((d, k) => `<button class="kids-duim" type="button" role="listitem" data-i="${k}" aria-label="${esc(d.naam)}"><img src="${d.klein}" alt="" loading="lazy" draggable="false"></button>`).join("")}</div>
+    <div class="kids-strook" role="group" aria-label="Kies een dier">${lijst.map((d, k) => `<button class="kids-duim" type="button" data-i="${k}" aria-label="${esc(d.naam)}"><img src="${d.klein}" alt="" loading="lazy" draggable="false"></button>`).join("")}</div>
   </section>`;
   const wrap = app.querySelector(".kids"), img = wrap.querySelector(".kids-plaat img"), plaatKnop = wrap.querySelector(".kids-plaat");
   const ballon = wrap.querySelector(".kids-ballon"), knop = wrap.querySelector(".kids-speel"), strook = wrap.querySelector(".kids-strook"), bron = wrap.querySelector(".kids-bron");
@@ -68,6 +69,7 @@ function speel(lijst, i) {
     img.classList.remove("kids-in"); void img.offsetWidth; img.classList.add("kids-in");
     img.src = d.beeld;
     plaatKnop.setAttribute("aria-label", `${d.naam}. Tik om de naam te horen.`);
+    wrap.querySelector("[data-kids-naam]").textContent = hoofd(kaal(d.naam));
     bron.innerHTML = d.bron_kind ? `${d.beeld_soort === "foto" ? "Foto" : "Plaat"}: <a href="${esc(d.bron_kind_url)}" rel="noopener">${esc(d.bron_kind)}</a>` : "";
     ballon.classList.remove("zichtbaar");
     for (const b of wrap.querySelectorAll(".kids-duim")) b.toggleAttribute("aria-current", +b.dataset.i === i);

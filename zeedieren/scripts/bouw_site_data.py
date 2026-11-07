@@ -21,9 +21,9 @@ PLAAT_WERK = [
     (r"Iconographia Zoologica", "Iconographia Zoologica (Artis-bibliotheek, Universiteit van Amsterdam)", "1700–1880"),
     (r"Bloch|Ichthyologie|Ichtyologie|Oeconomische Naturgeschichte|Ökonomische Naturgeschichte", "Marcus Elieser Bloch, Ichthyologie", "1782–1795"),
     (r"Haeckel|Kunstformen", "Ernst Haeckel, Kunstformen der Natur", "1904"),
-    (r"LCCN", "Prent uit de Library of Congress", ""),
-    (r"Octopusvulgaris", "Comingio Merculiano, Fauna und Flora des Golfes von Neapel", "1896"),
-    (r"Sperm whale and Bottlenose", "Oude prent van een potvis (en een butskop)", ""),
+    (r"LCCN", "een oude prent (Library of Congress)", ""),
+    (r"Octopusvulgaris", "een oude plaat", ""),
+    (r"Sperm whale and Bottlenose", "een oude prent van een potvis en een butskop", ""),
 ]
 
 def plaat_werk(titel):
@@ -74,7 +74,7 @@ def main():
                      "licentie": p["licentie"], "pagina": p["pagina"], "werk": werk, "jaar": jaar}
         if bl.get("geluid") and kz.get("geluid"):
             g = bl["geluid"]
-            geluid = {"pad": f"/klanken/{slug}.m4a", "maker": g["maker"] or "onbekend", "licentie": g["licentie"], "pagina": g["pagina"],
+            geluid = {"pad": f"/klanken/{slug}.m4a", "maker": kz["geluid"].get("maker") or g["maker"] or "onbekend", "licentie": g["licentie"], "pagina": g["pagina"],
                       "wat": kz["geluid"].get("wat"), "noot": kz["geluid"].get("noot")}
         gb = ruw.get("gbif", {})
         kust = (gb.get("kust") or {}).get("per_maand") or [0] * 12
