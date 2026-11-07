@@ -1,0 +1,898 @@
+{
+ "kokk0": {
+  "slug": "kokkel",
+  "bestand": "Coque blanche (Cerastoderma edule).jpg",
+  "licentie": "CC BY-SA 2.0",
+  "maker": "Féron Benjamin",
+  "p18": true
+ },
+ "kokk1": {
+  "slug": "kokkel",
+  "bestand": "Cerastoderma edule (Linnaeus, 1758) - iNaturalist.org.jpg",
+  "licentie": "CC0",
+  "maker": "McWilliam, Stephen James",
+  "p18": false
+ },
+ "kokk2": {
+  "slug": "kokkel",
+  "bestand": "Cerastoderma edule 175258694.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Michel Langeveld",
+  "p18": false
+ },
+ "kokk3": {
+  "slug": "kokkel",
+  "bestand": "Shells of the Brazilian Berbigão.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Mário NET",
+  "p18": false
+ },
+ "kokk4": {
+  "slug": "kokkel",
+  "bestand": "Croissance de la coque commune (Cerastoderma edule) (Ifremer 00784-89636).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Romain (1) Elleboode",
+  "p18": false
+ },
+ "kokk5": {
+  "slug": "kokkel",
+  "bestand": "Cerastoderma edule (Linnaeus, 1758) - Dautzenberg, Ph. (1913) Wh.jpg",
+  "licentie": "Public domain",
+  "maker": "Dautzenberg, Ph.",
+  "p18": false
+ },
+ "kokk6": {
+  "slug": "kokkel",
+  "bestand": "Specimen at Natural History Museum, Gothenburg 64 (cropped).jpg",
+  "licentie": "CC0",
+  "maker": "Netha Hussain",
+  "p18": false
+ },
+ "kokk7": {
+  "slug": "kokkel",
+  "bestand": "Cerastoderma edule 175258702.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Michel Langeveld",
+  "p18": false
+ },
+ "moss0": {
+  "slug": "mossel",
+  "bestand": "Miesmuscheln Mytilus 2.jpg",
+  "licentie": "CC BY-SA 2.0",
+  "maker": "Benutzer:Darkone , 26. Oktober 2003",
+  "p18": true
+ },
+ "moss1": {
+  "slug": "mossel",
+  "bestand": "Moules (Mytilus edulis) (Ifremer 00562-67403 - 23060).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "moss2": {
+  "slug": "mossel",
+  "bestand": "Campagne SUCHI-Med - Poche de moules et mouillage en station artificielle (Ifremer 00735-84738 - 40587).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "moss3": {
+  "slug": "mossel",
+  "bestand": "Blue mussel (Ifremer 00617-72906 - 28835).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Lionel Dégremont",
+  "p18": false
+ },
+ "moss4": {
+  "slug": "mossel",
+  "bestand": "Moulière (Ifremer 00565-67675 - 40688).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "moss5": {
+  "slug": "mossel",
+  "bestand": "Biodiversité marine en Bretagne (Ifremer 00562-67431 - 40690).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "moss6": {
+  "slug": "mossel",
+  "bestand": "Moulière (Ifremer 00565-67675 - 24473).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "moss7": {
+  "slug": "mossel",
+  "bestand": "Moules (Mytilus edulis) (Ifremer 00562-67403 - 23061).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "stra0": {
+  "slug": "strandkrab",
+  "bestand": "Carcinus maenas.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": true
+ },
+ "stra1": {
+  "slug": "strandkrab",
+  "bestand": "Carcinus maenas 265985941.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Josh Boe",
+  "p18": false
+ },
+ "stra2": {
+  "slug": "strandkrab",
+  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43039).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (Ifremer)",
+  "p18": false
+ },
+ "stra3": {
+  "slug": "strandkrab",
+  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43037).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (Ifremer)",
+  "p18": false
+ },
+ "stra4": {
+  "slug": "strandkrab",
+  "bestand": "Gemeine Strandkrabbe auf Sylt 03.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Jürgen Hamann",
+  "p18": false
+ },
+ "stra5": {
+  "slug": "strandkrab",
+  "bestand": "Carcinus maenas white background.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Lycaon",
+  "p18": false
+ },
+ "stra6": {
+  "slug": "strandkrab",
+  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43034).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (Ifremer)",
+  "p18": false
+ },
+ "stra7": {
+  "slug": "strandkrab",
+  "bestand": "Gemeine Strandkrabbe auf Sylt 02.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Jürgen Hamann",
+  "p18": false
+ },
+ "zees0": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": true
+ },
+ "zees1": {
+  "slug": "zeester",
+  "bestand": "White Sea StarFish, Russia.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Vermonter",
+  "p18": false
+ },
+ "zees2": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 311930010.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Drew T",
+  "p18": false
+ },
+ "zees3": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 179263738.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Michel Langeveld",
+  "p18": false
+ },
+ "zees4": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 307854603.jpg",
+  "licentie": "CC0",
+  "maker": "Rob Wallace",
+  "p18": false
+ },
+ "zees5": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 247485837.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Micha Baum",
+  "p18": false
+ },
+ "zees6": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 410375762.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Julien Renoult",
+  "p18": false
+ },
+ "zees7": {
+  "slug": "zeester",
+  "bestand": "Asterias rubens 355875091.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Bernard Picton",
+  "p18": false
+ },
+ "oork0": {
+  "slug": "oorkwal",
+  "bestand": "Moon Jellyfish (14278816210).jpg",
+  "licentie": "CC BY 2.0",
+  "maker": "Paul VanDerWerf from Brunswick, Maine, USA",
+  "p18": true
+ },
+ "oork1": {
+  "slug": "oorkwal",
+  "bestand": "Vandmaend.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "",
+  "p18": true
+ },
+ "oork2": {
+  "slug": "oorkwal",
+  "bestand": "Aurelia Aurita 20071019 Fnac 1.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Georges Seguin ( Okki )",
+  "p18": false
+ },
+ "oork3": {
+  "slug": "oorkwal",
+  "bestand": "Moon jellyfish at Gota Sagher.JPG",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Alexander Vasenin",
+  "p18": false
+ },
+ "oork4": {
+  "slug": "oorkwal",
+  "bestand": "Aurelia aurita (Cnidaria) Luc Viatour.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Luc Viatour",
+  "p18": false
+ },
+ "oork5": {
+  "slug": "oorkwal",
+  "bestand": "Flensburg 2015-08 img13 jellyfish in bay water.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "A.Savin",
+  "p18": false
+ },
+ "oork6": {
+  "slug": "oorkwal",
+  "bestand": "Aurelia Aurita 20071019 Fnac 2.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Georges Seguin ( Okki )",
+  "p18": false
+ },
+ "oork7": {
+  "slug": "oorkwal",
+  "bestand": "Moon Jellyfish, SEALIFE Sydney (Ank Kumar, Infosys Limited) 02.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Ank Kumar",
+  "p18": false
+ },
+ "wadp0": {
+  "slug": "wadpier",
+  "bestand": "Arenicola marina.JPG",
+  "licentie": "CC BY 3.0",
+  "maker": "Auguste Le Roux",
+  "p18": true
+ },
+ "wadp1": {
+  "slug": "wadpier",
+  "bestand": "Fisherman at Gullmarsvik mudflats.jpg",
+  "licentie": "CC0",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "wadp2": {
+  "slug": "wadpier",
+  "bestand": "Lugworm casts on Gullmarsviken mudflats 1.jpg",
+  "licentie": "Public domain",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "wadp3": {
+  "slug": "wadpier",
+  "bestand": "Wetland grass at the edge of Gullmarsvik mudflats 2.jpg",
+  "licentie": "Public domain",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "wadp4": {
+  "slug": "wadpier",
+  "bestand": "Lugworm casts on Gullmarsviken mudflats 2.jpg",
+  "licentie": "Public domain",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "wadp5": {
+  "slug": "wadpier",
+  "bestand": "Lugworm casts on mudflats of Gullmarsviken, Gullmarn 4.jpg",
+  "licentie": "CC0",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "wadp6": {
+  "slug": "wadpier",
+  "bestand": "Jetty at Gullmarsvik on a rainy day.jpg",
+  "licentie": "Public domain",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "wadp7": {
+  "slug": "wadpier",
+  "bestand": "Lugworm casts at Gullmarsvik 1.jpg",
+  "licentie": "Public domain",
+  "maker": "W.carter",
+  "p18": false
+ },
+ "scho0": {
+  "slug": "schol",
+  "bestand": "Pleuronectes platessa.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": true
+ },
+ "scho1": {
+  "slug": "schol",
+  "bestand": "Otolithes de plie (Pleuronectes platessa) (Ifremer 00784-89644 - 49940).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Romain (1) Elleboode",
+  "p18": false
+ },
+ "scho2": {
+  "slug": "schol",
+  "bestand": "Otolithes de plie (Pleuronectes platessa) (Ifremer 00784-89644 - 49923).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Romain (1) Elleboode",
+  "p18": false
+ },
+ "scho3": {
+  "slug": "schol",
+  "bestand": "Pleuronectidae Pleuronectes platessa 1.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "NasserHalaweh",
+  "p18": false
+ },
+ "scho4": {
+  "slug": "schol",
+  "bestand": "Carrelet (Pleuronectes platessa) (Ifremer 00382-49316 - 2344).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "scho5": {
+  "slug": "schol",
+  "bestand": "Campagne IBTS 2010 - Prélèvement d'otolithes d'une plie (Pleuronectes platessa) (Ifremer 00782-89372 - 49411).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (IFREMER, Pôle Images, Centre Bretagne - ZI de la Pointe du Diable - CS 10070 - 29280 Plouzané, France)",
+  "p18": false
+ },
+ "scho6": {
+  "slug": "schol",
+  "bestand": "Campagne IBTS 2010 - Prélèvement d'otolithes d'une plie (Pleuronectes platessa) (Ifremer 00782-89372 - 49410).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (IFREMER, Pôle Images, Centre Bretagne - ZI de la Pointe du Diable - CS 10070 - 29280 Plouzané, France)",
+  "p18": false
+ },
+ "scho7": {
+  "slug": "schol",
+  "bestand": "Carrelet (Pleuronectes platessa) (Ifremer 00382-49316 - 2343).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "hari0": {
+  "slug": "haring",
+  "bestand": "Clupea harengus Atlantic.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "savoieju",
+  "p18": true
+ },
+ "hari1": {
+  "slug": "haring",
+  "bestand": "Clupea harengus New Jersey.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "zakqaryroy",
+  "p18": true
+ },
+ "hari2": {
+  "slug": "haring",
+  "bestand": "Clupea harengus alive.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "asiafuoco",
+  "p18": true
+ },
+ "hari3": {
+  "slug": "haring",
+  "bestand": "Herring2.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "No machine-readable author provided. Uwe kils assumed (based on copyright claims).",
+  "p18": false
+ },
+ "hari4": {
+  "slug": "haring",
+  "bestand": "Clupea harengus Gervais.flipped.jpg",
+  "licentie": "Public domain",
+  "maker": "Gervais et Boulart, 1877",
+  "p18": false
+ },
+ "hari5": {
+  "slug": "haring",
+  "bestand": "Juvéniles de hareng (Clupea harengus) à 70 jours post-éclosion (Ifremer 00614-72593 - 28693).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "hari6": {
+  "slug": "haring",
+  "bestand": "Larves de hareng (Clupea harengus) (Ifremer 00728-83996 - 37122).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "hari7": {
+  "slug": "haring",
+  "bestand": "Juvéniles de hareng (Clupea harengus) à 70 jours post-éclosion (Ifremer 00614-72593 - 28690).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay",
+  "p18": false
+ },
+ "zeep0": {
+  "slug": "zeepaardje",
+  "bestand": "Hippocampus hippocampus (on Ascophyllum nodosum).jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": true
+ },
+ "zeep1": {
+  "slug": "zeepaardje",
+  "bestand": "Ichthyologie; ou, Histoire naturelle des poissons (Plate 109) (6918375298).jpg",
+  "licentie": "Public domain",
+  "maker": "Bloch, Marcus Elieser",
+  "p18": false
+ },
+ "zeep2": {
+  "slug": "zeepaardje",
+  "bestand": "Time in mind neural architecture.webp",
+  "licentie": "CC BY 4.0",
+  "maker": "Jeffery R. L. Pendleton & Nicola S. Clayton",
+  "p18": false
+ },
+ "zeep3": {
+  "slug": "zeepaardje",
+  "bestand": "Hippo TWIK1 TREK1 MAP2 ab42 3hr exp4 15th Aprl Treated SLIDE N DAY1 S1.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Kunalkumarbharat",
+  "p18": false
+ },
+ "zeep4": {
+  "slug": "zeepaardje",
+  "bestand": "The Hippocampus - By Callie Smulsky.png",
+  "licentie": "CC0",
+  "maker": "CallieSmulsky",
+  "p18": false
+ },
+ "zeep5": {
+  "slug": "zeepaardje",
+  "bestand": "The Hippocampus Infographic Diagram.png",
+  "licentie": "CC BY 4.0",
+  "maker": "Pastel.360m",
+  "p18": false
+ },
+ "zeep6": {
+  "slug": "zeepaardje",
+  "bestand": "Sabella pavonina - Hippocampus hippocampus - Porto Cesareo, Italy (DSC2314M).jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Romano Gianluca",
+  "p18": false
+ },
+ "zeep7": {
+  "slug": "zeepaardje",
+  "bestand": "Caballito de mar común (Hippocampus hippocampus), Parque natural de la Arrábida, Portugal, 2020-07-21, DD 74.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Diego Delso",
+  "p18": false
+ },
+ "klei0": {
+  "slug": "kleine-pieterman",
+  "bestand": "Echiichthys vipera.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": true
+ },
+ "klei1": {
+  "slug": "kleine-pieterman",
+  "bestand": "Trachinus vipera.jpg",
+  "licentie": "Public domain",
+  "maker": "",
+  "p18": true
+ },
+ "klei2": {
+  "slug": "kleine-pieterman",
+  "bestand": "Echiichthys vipera (lateral).jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": false
+ },
+ "klei3": {
+  "slug": "kleine-pieterman",
+  "bestand": "FMIB 46138 Viper Weever.jpeg",
+  "licentie": "Public domain",
+  "maker": "Jonathan Couch",
+  "p18": false
+ },
+ "klei4": {
+  "slug": "kleine-pieterman",
+  "bestand": "Mackerel, dab, sole and sea bass.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Hans Hillewaert",
+  "p18": false
+ },
+ "klei5": {
+  "slug": "kleine-pieterman",
+  "bestand": "Echiichthys vipera map.png",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Etrusko25",
+  "p18": false
+ },
+ "klei6": {
+  "slug": "kleine-pieterman",
+  "bestand": "Quelques espèces de poissons (Ifremer 00401-51291 - 3023).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Severine Tourbot (Ifremer)",
+  "p18": false
+ },
+ "klei7": {
+  "slug": "kleine-pieterman",
+  "bestand": "Kleine Pieterman een heel gemeen visje met scherpe stekels.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Peter van der Sluijs",
+  "p18": false
+ },
+ "grot0": {
+  "slug": "grote-pieterman",
+  "bestand": "Trachinus draco Stefano Guerrieri.jpg",
+  "licentie": "Public domain",
+  "maker": "Etrusko25",
+  "p18": true
+ },
+ "grot1": {
+  "slug": "grote-pieterman",
+  "bestand": "Trachinus draco.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Hans Hillewaert",
+  "p18": false
+ },
+ "grot2": {
+  "slug": "grote-pieterman",
+  "bestand": "Fjæsing halvt nedgravet i sand.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "P.a.klahn",
+  "p18": false
+ },
+ "grot3": {
+  "slug": "grote-pieterman",
+  "bestand": "Trachinus draco 08-2010 11.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Erling Svensen/Ocean Photo",
+  "p18": false
+ },
+ "grot4": {
+  "slug": "grote-pieterman",
+  "bestand": "Ichthyologie; ou, Histoire naturelle des poissons (Plate 61) (6918345830).jpg",
+  "licentie": "Public domain",
+  "maker": "Bloch, Marcus Elieser",
+  "p18": false
+ },
+ "grot5": {
+  "slug": "grote-pieterman",
+  "bestand": "Trachinus draco 08-08 9.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Erling Svensen/Ocean Photo",
+  "p18": false
+ },
+ "grot6": {
+  "slug": "grote-pieterman",
+  "bestand": "Trachinus draco 78174375.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Julien Renoult",
+  "p18": false
+ },
+ "grot7": {
+  "slug": "grote-pieterman",
+  "bestand": "D. Marcus Elieser Bloch's, ausübenden Arztes zu Berlin ... Ökonomische Naturgeschichte der Fische Deutschlands (Tafel 61) (6032450391).jpg",
+  "licentie": "Public domain",
+  "maker": "Berger, F. G.; Bloch, Marcus Elieser; Bodenehr, G.; Darchow, C.; Gursch, C. F.; Krüger; Schmidt, A. F.; Schmidt, F. G.; Schmidt, Friedrich Wilhelm; Schmidt, Johann Gottlieb; Schmidt, Ludwig",
+  "p18": false
+ },
+ "brui0": {
+  "slug": "bruinvis",
+  "bestand": "Daan Close Up.PNG",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "AVampireTear",
+  "p18": true
+ },
+ "brui1": {
+  "slug": "bruinvis",
+  "bestand": "Marsvin (Phocoena phocoena).jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Malene Thyssen",
+  "p18": true
+ },
+ "brui2": {
+  "slug": "bruinvis",
+  "bestand": "Phocoena phocoena.2.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Erik Christensen",
+  "p18": false
+ },
+ "brui3": {
+  "slug": "bruinvis",
+  "bestand": "Ichthyologie; ou, Histoire naturelle des poissons (Plate 92) (7064442695).jpg",
+  "licentie": "Public domain",
+  "maker": "Bloch, Marcus Elieser",
+  "p18": false
+ },
+ "brui4": {
+  "slug": "bruinvis",
+  "bestand": "Porpoise touching.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Fjord&Bælt",
+  "p18": false
+ },
+ "brui5": {
+  "slug": "bruinvis",
+  "bestand": "Marsvin (Phocoena phocoena) light.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Malene Thyssen",
+  "p18": false
+ },
+ "brui6": {
+  "slug": "bruinvis",
+  "bestand": "Phocoena phocoena Borth 2024 Posterior.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Kieran Roy Powell",
+  "p18": false
+ },
+ "brui7": {
+  "slug": "bruinvis",
+  "bestand": "Lacépède - Histoire naturelle des cétacées (1804) pl. 13.jpg",
+  "licentie": "Public domain",
+  "maker": "",
+  "p18": false
+ },
+ "gewo0": {
+  "slug": "gewone-zeehond",
+  "bestand": "Common Seal Phoca vitulina.jpg",
+  "licentie": "CC BY-SA 2.5",
+  "maker": "Andreas Trepte",
+  "p18": true
+ },
+ "gewo1": {
+  "slug": "gewone-zeehond",
+  "bestand": "Harbor Seal, Phoca vitulina - Flickr - GregTheBusker.jpg",
+  "licentie": "CC BY 2.0",
+  "maker": "Greg Schechter from San Francisco, USA",
+  "p18": true
+ },
+ "gewo2": {
+  "slug": "gewone-zeehond",
+  "bestand": "Harbor seal in Holyoke, MA. Connecticut River. 01.jpg",
+  "licentie": "CC0",
+  "maker": "LufkinF",
+  "p18": true
+ },
+ "gewo3": {
+  "slug": "gewone-zeehond",
+  "bestand": "Harbor seal (Phoca vitulina) at Magdalen fjord, Svalbard (1).jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "AWeith",
+  "p18": false
+ },
+ "gewo4": {
+  "slug": "gewone-zeehond",
+  "bestand": "021 Wild smiling harbor seal at Jökulsárlón (Iceland) Photo by Giles Laurent.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Giles Laurent",
+  "p18": false
+ },
+ "gewo5": {
+  "slug": "gewone-zeehond",
+  "bestand": "Common seal (Phoca vitulina).jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Charles J. Sharp",
+  "p18": false
+ },
+ "gewo6": {
+  "slug": "gewone-zeehond",
+  "bestand": "Seehund.jpg",
+  "licentie": "CC BY-SA 2.0 de",
+  "maker": "Marcel Burkhard",
+  "p18": false
+ },
+ "gewo7": {
+  "slug": "gewone-zeehond",
+  "bestand": "Seehunde auf einer Sandbank 03.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "SimonWaldherr",
+  "p18": false
+ },
+ "grij0": {
+  "slug": "grijze-zeehond",
+  "bestand": "Halichoerus grypus male.jpg",
+  "licentie": "CC BY-SA 2.5",
+  "maker": "Andreas Trepte",
+  "p18": true
+ },
+ "grij1": {
+  "slug": "grijze-zeehond",
+  "bestand": "Two seals in the water.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Lucc77",
+  "p18": true
+ },
+ "grij2": {
+  "slug": "grijze-zeehond",
+  "bestand": "Halichoerus grypus June 2014 01.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Arild Vågen",
+  "p18": false
+ },
+ "grij3": {
+  "slug": "grijze-zeehond",
+  "bestand": "Szarytka morska.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Aneta p",
+  "p18": false
+ },
+ "grij4": {
+  "slug": "grijze-zeehond",
+  "bestand": "Grey Seal, Brodtener Winkel, German Baltic Sea 2.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Atemue",
+  "p18": false
+ },
+ "grij5": {
+  "slug": "grijze-zeehond",
+  "bestand": "Grey Seal on seaweed, Iceland.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Waitblock This is a retouched picture , which means that it has been digitally altered from its original version. Modifications: Removed seaweed in background .",
+  "p18": false
+ },
+ "grij6": {
+  "slug": "grijze-zeehond",
+  "bestand": "Kegelrobben auf Helgoland.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "T meltzer",
+  "p18": false
+ },
+ "grij7": {
+  "slug": "grijze-zeehond",
+  "bestand": "Foka szara mateusz wlodarczyk.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Mateusz Włodarczyk",
+  "p18": false
+ },
+ "bult0": {
+  "slug": "bultrug",
+  "bestand": "202312 Humpback whale.svg",
+  "licentie": "CC BY 4.0",
+  "maker": "DataBase Center for Life Science (DBCLS)",
+  "p18": true
+ },
+ "bult1": {
+  "slug": "bultrug",
+  "bestand": "Humpback whales in singing position.jpg",
+  "licentie": "Public domain",
+  "maker": "Dr. Louis M. Herman.",
+  "p18": true
+ },
+ "bult2": {
+  "slug": "bultrug",
+  "bestand": "Baleine à bosse et son baleineau 2.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Jérémie Silvestro (If you can improve this photo development, ask me the RAW .)",
+  "p18": false
+ },
+ "bult3": {
+  "slug": "bultrug",
+  "bestand": "073 Humpback whale tail in Ballena Marine National Park Photo by Giles Laurent.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Giles Laurent",
+  "p18": false
+ },
+ "bult4": {
+  "slug": "bultrug",
+  "bestand": "001 Humpback whale breaching in Ballena Marine National Park Photo by Giles Laurent.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Giles Laurent",
+  "p18": false
+ },
+ "bult5": {
+  "slug": "bultrug",
+  "bestand": "031 Humpback whale lobtailing Photo by Giles Laurent.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Giles Laurent",
+  "p18": false
+ },
+ "bult6": {
+  "slug": "bultrug",
+  "bestand": "026b Humpback whale jump and splash Photo by Giles Laurent.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Giles Laurent",
+  "p18": false
+ },
+ "bult7": {
+  "slug": "bultrug",
+  "bestand": "Humpback Whales - Flickr - Christopher.Michel (38).jpg",
+  "licentie": "CC BY 2.0",
+  "maker": "Christopher Michel",
+  "p18": false
+ },
+ "octo0": {
+  "slug": "octopus",
+  "bestand": "Octopus vulgaris Merculiano.jpg",
+  "licentie": "Public domain",
+  "maker": "Comingio Merculiano (1845-1915) in Jatta Giuseppe (1860-1903)",
+  "p18": true
+ },
+ "octo1": {
+  "slug": "octopus",
+  "bestand": "Octopus vulgaris2.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Beckmannjan",
+  "p18": true
+ },
+ "octo2": {
+  "slug": "octopus",
+  "bestand": "Octopus vulgaris 03.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "H. Zell",
+  "p18": false
+ },
+ "octo3": {
+  "slug": "octopus",
+  "bestand": "Pulpo común (Octopus vulgaris), Parque natural de la Arrábida, Portugal, 2020-07-31, DD 111.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Diego Delso",
+  "p18": false
+ },
+ "octo4": {
+  "slug": "octopus",
+  "bestand": "Pulpo común (Octopus vulgaris), Parque natural de la Arrábida, Portugal, 2020-07-31, DD 108.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Diego Delso",
+  "p18": false
+ },
+ "octo5": {
+  "slug": "octopus",
+  "bestand": "Octopus vulgaris 0.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Emanuele Santarelli",
+  "p18": false
+ },
+ "octo6": {
+  "slug": "octopus",
+  "bestand": "Poulpe de roche (Octopus vulgaris) (Ifremer 00634-74611 - 29809).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Isabelle Cheret",
+  "p18": false
+ },
+ "octo7": {
+  "slug": "octopus",
+  "bestand": "OBSPOULP - Observation scientifique de la pêche du poulpe (Octopus vulgaris) (Ifremer 00814-92636 - 53600).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Isabelle Cheret (IFREMER, Laboratoire Halieutique Mediterranee, Station de Sète, 34203 Sète Cedex, France)",
+  "p18": false
+ }
+}
