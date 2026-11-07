@@ -13,6 +13,7 @@ on:
       - ".github/workflows/zeedieren_datacheck.yml"
   workflow_dispatch:
 
+concurrency: zeedieren
 permissions:
   contents: write
 
