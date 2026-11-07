@@ -7,6 +7,7 @@ on:
     branches: [claude/new-session-ulffx4]
     paths:
       - "zeedieren/datacheck/wikimedia.py"
+      - "zeedieren/datacheck/contactblad.py"
       - "zeedieren/datacheck/weetjes.json"
       - "zeedieren/datacheck/platen_zoekvragen.json"
       - ".github/workflows/zeedieren_datacheck.yml"
@@ -24,7 +25,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install pillow
       - run: cd zeedieren/datacheck && python3 wikimedia.py
+      - run: cd zeedieren/datacheck && python3 contactblad.py
       - name: Uitkomsten terugzetten
         run: |
           git config user.name "github-actions[bot]"
