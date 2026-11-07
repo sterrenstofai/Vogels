@@ -15,44 +15,44 @@
  },
  "kokk2": {
   "slug": "kokkel",
-  "bestand": "Cerastoderma edule 175258694.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Michel Langeveld",
-  "p18": false
- },
- "kokk3": {
-  "slug": "kokkel",
-  "bestand": "Shells of the Brazilian Berbigão.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Mário NET",
-  "p18": false
- },
- "kokk4": {
-  "slug": "kokkel",
   "bestand": "Croissance de la coque commune (Cerastoderma edule) (Ifremer 00784-89636).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Romain (1) Elleboode",
   "p18": false
  },
- "kokk5": {
+ "kokk3": {
   "slug": "kokkel",
   "bestand": "Cerastoderma edule (Linnaeus, 1758) - Dautzenberg, Ph. (1913) Wh.jpg",
   "licentie": "Public domain",
   "maker": "Dautzenberg, Ph.",
   "p18": false
  },
- "kokk6": {
+ "kokk4": {
   "slug": "kokkel",
-  "bestand": "Specimen at Natural History Museum, Gothenburg 64 (cropped).jpg",
-  "licentie": "CC0",
-  "maker": "Netha Hussain",
+  "bestand": "Cerastoderma edule 175258694.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Michel Langeveld",
   "p18": false
  },
- "kokk7": {
+ "kokk5": {
+  "slug": "kokkel",
+  "bestand": "Shells of the Brazilian Berbigão.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Mário NET",
+  "p18": false
+ },
+ "kokk6": {
   "slug": "kokkel",
   "bestand": "Cerastoderma edule 175258702.jpg",
   "licentie": "CC BY-SA 4.0",
   "maker": "Michel Langeveld",
+  "p18": false
+ },
+ "kokk7": {
+  "slug": "kokkel",
+  "bestand": "Specimen at Natural History Museum, Gothenburg 64 (cropped).jpg",
+  "licentie": "CC0",
+  "maker": "Netha Hussain",
   "p18": false
  },
  "moss0": {
@@ -78,9 +78,9 @@
  },
  "moss3": {
   "slug": "mossel",
-  "bestand": "Blue mussel (Ifremer 00617-72906 - 28835).jpg",
+  "bestand": "Moules (Mytilus edulis) (Ifremer 00562-67403 - 23061).jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Lionel Dégremont",
+  "maker": "Olivier Dugornay",
   "p18": false
  },
  "moss4": {
@@ -99,14 +99,14 @@
  },
  "moss6": {
   "slug": "mossel",
-  "bestand": "Moulière (Ifremer 00565-67675 - 24473).jpg",
+  "bestand": "Eponges, moules et anémones corynactis (Ifremer 00562-67404 - 23064).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
  },
  "moss7": {
   "slug": "mossel",
-  "bestand": "Moules (Mytilus edulis) (Ifremer 00562-67403 - 23061).jpg",
+  "bestand": "Campagne SUCHI-Med - Poche de moules et mouillage en station artificielle (Ifremer 00735-84738 - 40582).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
@@ -120,21 +120,21 @@
  },
  "stra1": {
   "slug": "strandkrab",
+  "bestand": "Zoé de crabe vert (Carcinus maenas) (Ifremer 00557-66882 - 20151).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (Ifremer)",
+  "p18": false
+ },
+ "stra2": {
+  "slug": "strandkrab",
   "bestand": "Carcinus maenas 265985941.jpg",
   "licentie": "CC BY 4.0",
   "maker": "Josh Boe",
   "p18": false
  },
- "stra2": {
-  "slug": "strandkrab",
-  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43039).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay (Ifremer)",
-  "p18": false
- },
  "stra3": {
   "slug": "strandkrab",
-  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43037).jpg",
+  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43039).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay (Ifremer)",
   "p18": false
@@ -148,23 +148,23 @@
  },
  "stra5": {
   "slug": "strandkrab",
+  "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43037).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Olivier Dugornay (Ifremer)",
+  "p18": false
+ },
+ "stra6": {
+  "slug": "strandkrab",
   "bestand": "Carcinus maenas white background.jpg",
   "licentie": "CC BY-SA 3.0",
   "maker": "Lycaon",
   "p18": false
  },
- "stra6": {
+ "stra7": {
   "slug": "strandkrab",
   "bestand": "Juvénile de crabe vert (Carcinus maenas) enfoui dans le sable (Ifremer 00565-67747 - 43034).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay (Ifremer)",
-  "p18": false
- },
- "stra7": {
-  "slug": "strandkrab",
-  "bestand": "Gemeine Strandkrabbe auf Sylt 02.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Jürgen Hamann",
   "p18": false
  },
  "zees0": {
@@ -183,16 +183,16 @@
  },
  "zees2": {
   "slug": "zeester",
-  "bestand": "Asterias rubens 311930010.jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Drew T",
+  "bestand": "Asterias rubens 179263738.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Michel Langeveld",
   "p18": false
  },
  "zees3": {
   "slug": "zeester",
-  "bestand": "Asterias rubens 179263738.jpg",
-  "licentie": "CC BY-SA 4.0",
-  "maker": "Michel Langeveld",
+  "bestand": "Asterias rubens 311930010.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Drew T",
   "p18": false
  },
  "zees4": {
@@ -218,9 +218,9 @@
  },
  "zees7": {
   "slug": "zeester",
-  "bestand": "Asterias rubens 355875091.jpg",
+  "bestand": "Asterias rubens 04 Espen Rekdal.jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Bernard Picton",
+  "maker": "Espen Rekdal / Espen Rekdal Photography",
   "p18": false
  },
  "oork0": {
@@ -288,15 +288,15 @@
  },
  "wadp1": {
   "slug": "wadpier",
-  "bestand": "Fisherman at Gullmarsvik mudflats.jpg",
-  "licentie": "CC0",
+  "bestand": "Lugworm casts on Gullmarsviken mudflats 1.jpg",
+  "licentie": "Public domain",
   "maker": "W.carter",
   "p18": false
  },
  "wadp2": {
   "slug": "wadpier",
-  "bestand": "Lugworm casts on Gullmarsviken mudflats 1.jpg",
-  "licentie": "Public domain",
+  "bestand": "Fisherman at Gullmarsvik mudflats.jpg",
+  "licentie": "CC0",
   "maker": "W.carter",
   "p18": false
  },
@@ -372,23 +372,23 @@
  },
  "scho5": {
   "slug": "schol",
-  "bestand": "Campagne IBTS 2010 - Prélèvement d'otolithes d'une plie (Pleuronectes platessa) (Ifremer 00782-89372 - 49411).jpg",
+  "bestand": "Campagne IBTS 2010 - Prélèvement d'otolithes d'une plie (Pleuronectes platessa) (Ifremer 00782-89372 - 49410).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay (IFREMER, Pôle Images, Centre Bretagne - ZI de la Pointe du Diable - CS 10070 - 29280 Plouzané, France)",
   "p18": false
  },
  "scho6": {
   "slug": "schol",
-  "bestand": "Campagne IBTS 2010 - Prélèvement d'otolithes d'une plie (Pleuronectes platessa) (Ifremer 00782-89372 - 49410).jpg",
+  "bestand": "Carrelet (Pleuronectes platessa) (Ifremer 00382-49316 - 2343).jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay (IFREMER, Pôle Images, Centre Bretagne - ZI de la Pointe du Diable - CS 10070 - 29280 Plouzané, France)",
+  "maker": "Olivier Dugornay",
   "p18": false
  },
  "scho7": {
   "slug": "schol",
-  "bestand": "Carrelet (Pleuronectes platessa) (Ifremer 00382-49316 - 2343).jpg",
+  "bestand": "Campagne IBTS 2010 - Prélèvement d'otolithes d'une plie (Pleuronectes platessa) (Ifremer 00782-89372 - 49411).jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Olivier Dugornay",
+  "maker": "Olivier Dugornay (IFREMER, Pôle Images, Centre Bretagne - ZI de la Pointe du Diable - CS 10070 - 29280 Plouzané, France)",
   "p18": false
  },
  "hari0": {
@@ -428,14 +428,14 @@
  },
  "hari5": {
   "slug": "haring",
-  "bestand": "Juvéniles de hareng (Clupea harengus) à 70 jours post-éclosion (Ifremer 00614-72593 - 28693).jpg",
+  "bestand": "Larves de hareng (Clupea harengus) (Ifremer 00728-83996 - 37122).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
  },
  "hari6": {
   "slug": "haring",
-  "bestand": "Larves de hareng (Clupea harengus) (Ifremer 00728-83996 - 37122).jpg",
+  "bestand": "Juvéniles de hareng (Clupea harengus) à 70 jours post-éclosion (Ifremer 00614-72593 - 28693).jpg",
   "licentie": "CC BY 4.0",
   "maker": "Olivier Dugornay",
   "p18": false
@@ -463,30 +463,30 @@
  },
  "zeep2": {
   "slug": "zeepaardje",
-  "bestand": "Time in mind neural architecture.webp",
-  "licentie": "CC BY 4.0",
-  "maker": "Jeffery R. L. Pendleton & Nicola S. Clayton",
-  "p18": false
- },
- "zeep3": {
-  "slug": "zeepaardje",
   "bestand": "Hippo TWIK1 TREK1 MAP2 ab42 3hr exp4 15th Aprl Treated SLIDE N DAY1 S1.jpg",
   "licentie": "CC BY 4.0",
   "maker": "Kunalkumarbharat",
   "p18": false
  },
- "zeep4": {
+ "zeep3": {
   "slug": "zeepaardje",
   "bestand": "The Hippocampus - By Callie Smulsky.png",
   "licentie": "CC0",
   "maker": "CallieSmulsky",
   "p18": false
  },
- "zeep5": {
+ "zeep4": {
   "slug": "zeepaardje",
   "bestand": "The Hippocampus Infographic Diagram.png",
   "licentie": "CC BY 4.0",
   "maker": "Pastel.360m",
+  "p18": false
+ },
+ "zeep5": {
+  "slug": "zeepaardje",
+  "bestand": "Time in mind neural architecture.webp",
+  "licentie": "CC BY 4.0",
+  "maker": "Jeffery R. L. Pendleton & Nicola S. Clayton",
   "p18": false
  },
  "zeep6": {
@@ -540,16 +540,16 @@
  },
  "klei5": {
   "slug": "kleine-pieterman",
-  "bestand": "Echiichthys vipera map.png",
-  "licentie": "CC BY-SA 3.0",
-  "maker": "Etrusko25",
+  "bestand": "Quelques espèces de poissons (Ifremer 00401-51291 - 3023).jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Severine Tourbot (Ifremer)",
   "p18": false
  },
  "klei6": {
   "slug": "kleine-pieterman",
-  "bestand": "Quelques espèces de poissons (Ifremer 00401-51291 - 3023).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Severine Tourbot (Ifremer)",
+  "bestand": "Echiichthys vipera map.png",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Etrusko25",
   "p18": false
  },
  "klei7": {
@@ -659,9 +659,9 @@
  },
  "brui6": {
   "slug": "bruinvis",
-  "bestand": "Phocoena phocoena Borth 2024 Posterior.jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Kieran Roy Powell",
+  "bestand": "Adriaen Coenen's Visboeck - KB 78 E 54 - folio 337v.jpg",
+  "licentie": "Public domain",
+  "maker": "",
   "p18": false
  },
  "brui7": {
@@ -883,16 +883,16 @@
  },
  "octo6": {
   "slug": "octopus",
-  "bestand": "Poulpe de roche (Octopus vulgaris) (Ifremer 00634-74611 - 29809).jpg",
+  "bestand": "OBSPOULP - Observation scientifique de la pêche du poulpe (Octopus vulgaris) (Ifremer 00814-92636 - 53600).jpg",
   "licentie": "CC BY 4.0",
-  "maker": "Isabelle Cheret",
+  "maker": "Isabelle Cheret (IFREMER, Laboratoire Halieutique Mediterranee, Station de Sète, 34203 Sète Cedex, France)",
   "p18": false
  },
  "octo7": {
   "slug": "octopus",
-  "bestand": "OBSPOULP - Observation scientifique de la pêche du poulpe (Octopus vulgaris) (Ifremer 00814-92636 - 53600).jpg",
-  "licentie": "CC BY 4.0",
-  "maker": "Isabelle Cheret (IFREMER, Laboratoire Halieutique Mediterranee, Station de Sète, 34203 Sète Cedex, France)",
+  "bestand": "Octopus2.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "albert kok",
   "p18": false
  }
 }

@@ -1,0 +1,424 @@
+{
+ "bruinvis": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "Het dier heeft een lengte van ongeveer 1,50 m en een gewicht van maximaal 60 kilogram"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "Het is de meest voorkomende walvissoort in de Noordzee"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Hiermee 'grazen' ze de zeebodem af, waarna ze de gevonden visjes naar binnen zuigen"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "De zoogtijd duurt acht maanden, daarna moet het jong zelf voor zijn eten zorgen"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "De naam bruinvis lijkt vreemd, omdat deze dieren geen vissen zijn en ook geen bruine kleur hebben"
+  }
+ ],
+ "bultrug": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "Volwassen bultruggen variëren in lichaamslengte van 12–16 meter en wegen zo'n 25 à 30 ton"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De borstvinnen van de bultrug zijn de langste ledematen in het dierenrijk"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "De bultrug voedt zich met vis en kreeftachtigen zoals krill , die hij uit het water zeeft met zijn 270 tot 400 zwarte baleinplaten"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "De bultrug staat bekend om het gezang dat de mannetjes in de paartijd laten horen en dat dagenlang kan duren"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "Pasgeboren kalveren wegen gemiddeld 1800 kilo en zijn zo'n zes meter lang"
+  }
+ ],
+ "gewone-zeehond": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "Gewone zeehonden worden 120 tot 195 centimeter lang en 45 tot 130 kilogram zwaar"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "In de Nederlandse wateren is bot de belangrijkste voedselbron"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "bij vloed wordt er gejaagd, bij eb, wanneer zandbanken en rotseilandjes droog komen te liggen, wordt er gerust"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "Met de daaropvolgende vloed zwemmen ze al met de moeder mee"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Huilers, door hun moeder verlaten jonge zeehonden, worden in Nederland opgevangen in zeehondencrèches"
+  }
+ ],
+ "grijze-zeehond": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "De grijze zeehond wordt 165 tot 330 centimeter lang en 105 tot 350 kilogram zwaar"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De dieren zijn van andere zeehonden te onderscheiden door hun rechte snuit"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Gemiddeld eet een grijze zeehond 5,7 kilogram per dag"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "Het heeft bij de geboorte een wollige witte tot lichtgrijze vacht"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Dankzij een dikke speklaag is de grijze zeehond goed beschermd tegen het koude zeewater"
+  }
+ ],
+ "grote-pieterman": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "De grote pieterman is een tot 40 centimeter lange, slanke vis"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "Hij heeft een in verhouding grote kop met een opwaarts gerichte bek"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "De grote pieterman jaagt voornamelijk 's nachts op kleine vissen en kreeftachtigen die op de zeebodem leven"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Overdag houdt hij zich schuil onder het zand"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Zijn gifstekel dient enkel ter verdediging"
+  }
+ ],
+ "haring": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "Haringen worden circa 45 centimeter lang en kunnen maximaal één kilogram wegen"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De vis heeft een zilverkleurig lichaam met een grijsgroene of blauwgroene rug"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Haringen komen voor in grote scholen van soms miljoenen dieren"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "de volwassen dieren van groter plankton (zoals roeipootkreeftjes ), garnalen en kleinere vissen"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Het geluid dat haringen maken, de zogenaamde haringscheten, die ze gebruiken om te communiceren"
+  }
+ ],
+ "kleine-pieterman": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "De kleine pieterman wordt 10 tot 18 cm lang en heeft een aantal doornige stekels op zijn rugvin"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Het visje eet garnalen , viseitjes en kleine bodemdiertjes"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "De kleine pieterman leeft in ondiepe wateren en op zandbanken, waar hij zich ingraaft"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "De visjes komen steeds meer voor aan de Belgische en Nederlandse Noordzeekust"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Wandelaars of zwemmers raken meestal gewond doordat ze per ongeluk op een ingegraven visje trappen"
+  }
+ ],
+ "kokkel": [
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "Wit, geelbruin of bruin. Jonge exemplaren hebben bij de top een vlekkenpatroon"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Ze leven dicht onder de oppervlakte van het zand, waarbij alleen de twee sifo's boven het zand uitsteken"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "De kokkel is een filtervoeder en leeft van plankton en ander in het water zwevend voedsel"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Ze zijn heel goed in staat zich te verplaatsen door binnen hun schelp een gasbelletje te vormen waardoor ze wat lichter zijn"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Deze komen overeen met een periode van weinig of geen groei gedurende het koude seizoen en kunnen dus als 'jaarring' gezien worden"
+  }
+ ],
+ "mossel": [
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De buitenkant van de schelp heeft een paarsblauwe kleur"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Het voedsel van de mossel bestaat voornamelijk uit plankton"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "De mossel is een van de meest algemene diersoorten aan de Nederlandse en Belgische kust"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Een mossel kan bij eb ongeveer zes uur boven water blijven"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Deze byssusdraden zijn taai en elastisch en hebben een zeer hoge sterkte waardoor de schelp stevig verankerd wordt"
+  }
+ ],
+ "octopus": [
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De lange armen zijn bezet met twee rijen zuignappen"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "jaagt vooral 's nachts en leeft van voornamelijk schaaldieren"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Het dier kan zijn kleur en huid aanpassen aan de kleur en vorm van de achtergrond"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Bij dreigend gevaar ledigt hij zijn inktzak, mogelijk om achtervolgers in de war te brengen"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "Het vrouwtje zet haar eitjes af in lange, geleiachtige rijen in grotten en spleten en bewaakt ze ook"
+  }
+ ],
+ "oorkwal": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "kan 10 tot 40 cm groot worden"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "zijn vier ronde of min of meer halvemaanvormige structuren zichtbaar ('oren')"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Met behulp van met netelcellen bezette tentakels vangen ze plankton, kleine kreeftachtigen en visjes"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Kwallen drijven vaak in grote zwermen in zee"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "Dit zijn de nieuwe kwalletjes die binnen een half jaar uitgroeien tot een volwassen kwal"
+  }
+ ],
+ "schol": [
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De huid van de schol is aan de rechterkant groenbruin en heeft oranje stippen"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "De ogen van de schol zitten aan de rechterkant"
+  },
+  {
+   "sectie": "jongen",
+   "gevonden": true,
+   "controle": "Na ongeveer zes weken ondergaat de schol een gedaanteverwisseling, waarbij een van de ogen naar de andere kant groeit"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "De schol voedt zich voornamelijk met borstelwormen, tweekleppige schelpdieren en kleine kreeftachtigen"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "De vis leeft vooral veel op de bodem van de zee en niet ver van de kust"
+  }
+ ],
+ "strandkrab": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "De strandkrab blijft veel kleiner dan de noordzeekrab en heeft een carapaxbreedte tot 9 centimeter"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De kleur is erg variabel en varieert van bruin tot groenachtig"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Strandkrabben leven op zanderige en rotsachtige kusten en lopen zoals de meeste krabben zijwaarts"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Het voedsel bestaat uit kleine kreeftachtigen , borstelwormen , tweekleppigen en andere zeedieren"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Afgeworpen of afgebroken ledematen groeien later weer aan door vervelling"
+  }
+ ],
+ "wadpier": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "De wadpier kan tot 22,5 cm lang, 1 cm dik en 6 jaar oud worden"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De dieren zijn paarsrood van kleur met een groenachtige weerschijn"
+  },
+  {
+   "sectie": "leefwijze",
+   "gevonden": true,
+   "controle": "Het dier leeft in een U-vormige gang die tot ongeveer 30 centimeter diep gaat"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "Dit zand wordt op deze wijze met voedsel verrijkt en gegeten door het dier"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "De hoopjes opgerolde zandslierten ('tandpastahoopjes') op het wad zijn hun uitwerpselen"
+  }
+ ],
+ "zeepaardje": [
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "voorkomt in het oosten van de Atlantische Oceaan van de Waddenzee"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "Deze soort wordt net als het langsnuitzeepaardje soms gevangen in de Nederlandse kustwateren"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "In Belgische wateren wordt dit zeepaardje sinds 2008 met enige regelmaat aangetroffen"
+  }
+ ],
+ "zeester": [
+  {
+   "sectie": "grootte",
+   "gevonden": true,
+   "controle": "De diameter verschilt van 10 tot 30 centimeter, maar uitschieters tot meer dan 50 cm zijn ook bekend"
+  },
+  {
+   "sectie": "uiterlijk",
+   "gevonden": true,
+   "controle": "De kleur kan eveneens verschillen; meestal rood tot oranje, soms paars"
+  },
+  {
+   "sectie": "waar",
+   "gevonden": true,
+   "controle": "De soort wordt aangetroffen in het getijdengebied op stenen en rotsen"
+  },
+  {
+   "sectie": "eten",
+   "gevonden": true,
+   "controle": "maar vooral schelpdieren als mosselen worden gegeten"
+  },
+  {
+   "sectie": "bijzonder",
+   "gevonden": true,
+   "controle": "Een dergelijk 'gevecht', wat in wezen een traag proces is, kan vele uren in beslag nemen"
+  }
+ ]
+}
