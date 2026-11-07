@@ -1,0 +1,18 @@
+[
+ {"slug":"kokkel","nl":"kokkel","wet":"Cerastoderma edule","plek":"strand"},
+ {"slug":"mossel","nl":"mossel","wet":"Mytilus edulis","plek":"strand"},
+ {"slug":"strandkrab","nl":"strandkrab","wet":"Carcinus maenas","plek":"strand"},
+ {"slug":"zeester","nl":"gewone zeester","wet":"Asterias rubens","plek":"strand"},
+ {"slug":"oorkwal","nl":"oorkwal","wet":"Aurelia aurita","plek":"strand"},
+ {"slug":"wadpier","nl":"wadpier","wet":"Arenicola marina","plek":"wad"},
+ {"slug":"schol","nl":"schol","wet":"Pleuronectes platessa","plek":"noordzee"},
+ {"slug":"haring","nl":"haring","wet":"Clupea harengus","plek":"noordzee"},
+ {"slug":"zeepaardje","nl":"kortsnuitzeepaardje","wet":"Hippocampus hippocampus","plek":"noordzee"},
+ {"slug":"kleine-pieterman","nl":"kleine pieterman","wet":"Echiichthys vipera","plek":"noordzee"},
+ {"slug":"grote-pieterman","nl":"grote pieterman","wet":"Trachinus draco","plek":"noordzee"},
+ {"slug":"bruinvis","nl":"bruinvis","wet":"Phocoena phocoena","plek":"noordzee"},
+ {"slug":"gewone-zeehond","nl":"gewone zeehond","wet":"Phoca vitulina","plek":"wad"},
+ {"slug":"grijze-zeehond","nl":"grijze zeehond","wet":"Halichoerus grypus","plek":"noordzee"},
+ {"slug":"bultrug","nl":"bultrug","wet":"Megaptera novaeangliae","plek":"oceaan"},
+ {"slug":"octopus","nl":"gewone octopus","wet":"Octopus vulgaris","plek":"oceaan"}
+]
