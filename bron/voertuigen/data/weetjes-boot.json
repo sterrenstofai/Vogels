@@ -1,0 +1,199 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "boot": [
+   {
+    "tekst": "Een binnenvaartschip vervoert spullen en mensen over rivieren en kanalen. Het gaat niet de zee op.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "dat goederen en personen over de binnenwateren (zoals rivieren en kanalen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Voor zo'n klein land heeft Nederland heel veel binnenvaartschepen: de grootste vloot van West-Europa.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "nederland heeft relatief de grootste binnenvaartvloot in west-europa.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vroeger hadden binnenschepen geen motor. Ze voeren met de wind, of ze werden getrokken door paarden en soms door mensen.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaart",
+    "controle": "de schepen werden eeuwenlang aangedreven door de wind, of getrokken door paarden en soms met menskracht",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een zwemvest houdt je hoofd en je mond boven water. Bij het water doe je er een aan, en je gaat er samen met een volwassene heen.",
+    "bron": "https://en.wikipedia.org/wiki/Personal_flotation_device",
+    "controle": "the device will keep the wearer afloat with their head and mouth above the surface",
+    "gevonden": true
+   }
+  ],
+  "romp": [
+   {
+    "tekst": "Een schip drijft omdat het water omhoog duwt. Het water duwt even hard als het water weegt dat het schip opzij duwt.",
+    "bron": "https://nl.wikipedia.org/wiki/Wet_van_Archimedes",
+    "controle": "ondervindt een opwaartse kracht die gelijk is aan het gewicht van de verplaatste vloeistof",
+    "gevonden": true
+   },
+   {
+    "tekst": "Hoe diep een schip in het water ligt, heet de diepgang.",
+    "bron": "https://nl.wikipedia.org/wiki/Diepgang",
+    "controle": "de diepgang van een vaartuig geeft aan hoe diep het in het water ligt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met meer lading zakt het schip dieper in het water.",
+    "bron": "https://nl.wikipedia.org/wiki/Diepgang",
+    "controle": "als een schip zwaarder beladen wordt, zal het dieper komen te liggen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De waterlijn is de grens tussen het stuk van de romp onder water en het stuk erboven.",
+    "bron": "https://nl.wikipedia.org/wiki/Waterlijn",
+    "controle": "tussen het gedeelte van de scheepsromp onder water en dat van het gedeelte erboven.",
+    "gevonden": true
+   }
+  ],
+  "ruim": [
+   {
+    "tekst": "Het ruim is de ruimte in het schip waar de lading in gaat.",
+    "bron": "https://nl.wikipedia.org/wiki/Ruim_(schip)",
+    "controle": "is de ruimte van een schip of vliegtuig waarin de lading wordt vervoerd.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De platte vloer van het ruim heet de buikdenning.",
+    "bron": "https://nl.wikipedia.org/wiki/Ruim_(schip)",
+    "controle": "de vlakke vloer van het ruim heet buikdenning",
+    "gevonden": true
+   },
+   {
+    "tekst": "De luiken zijn van aluminium. Ze kunnen schuiven, of een luikenwagen zet ze op een stapel.",
+    "bron": "https://nl.wikipedia.org/wiki/Luikenkap",
+    "controle": "in de huidige binnenvaart zijn de luiken van aluminium en zijn ze schuifbaar of met een elektrische luikenwagen stapelbaar.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een schipper kan de luiken in zijn eentje open en dicht doen.",
+    "bron": "https://nl.wikipedia.org/wiki/Luikenkap",
+    "controle": "een geoefende schipper legt bovendien zo'n kap gemakkelijk alleen open en dicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Schepen voor zand en grind hebben vaak helemaal geen luiken. Het zand wordt er nat in gespoten.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "zand- en grindschepen worden zelfs volgespoten en kennen geen luiken.",
+    "gevonden": true
+   }
+  ],
+  "stuurhuis": [
+   {
+    "tekst": "Op een groot schip heet de plek waar gestuurd wordt de brug.",
+    "bron": "https://nl.wikipedia.org/wiki/Stuurhuis",
+    "controle": "de brug is op een schip de plaats van waaruit het schip bestuurd wordt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Links op een schip heet bakboord, rechts heet stuurboord. Je kijkt dan naar voren, naar de neus.",
+    "bron": "https://nl.wikipedia.org/wiki/Stuurboord",
+    "controle": "en stuurboord is de rechterzijde, gezien in de normale vaar- of vliegrichting",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het lampje aan bakboord is rood, het lampje aan stuurboord is groen. Zo zien andere schippers in het donker welke kant je op vaart.",
+    "bron": "https://nl.wikipedia.org/wiki/Stuurboord",
+    "controle": "deze lichten helpen andere schippers de beweegrichting en bak- en stuurboordzijde van een naderend schip te bepalen in het donker.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een radar zoekt met radiogolven naar wat er om het schip heen is, zoals andere schepen.",
+    "bron": "https://nl.wikipedia.org/wiki/Radar",
+    "controle": "is een installatie die gemaakt is om met behulp van radiogolven de omgeving af te zoeken naar objecten",
+    "gevonden": true
+   }
+  ],
+  "woning": [
+   {
+    "tekst": "Voor de schipper en het gezin is het schip ook hun huis: een huis dat vaart.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "voor schippers en hun gezin is het schip tevens een varend huis",
+    "gevonden": true
+   },
+   {
+    "tekst": "Veel binnenschepen zijn van de schipper zelf.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "veel binnenvaartschepen zijn eigendom van de schipper zelf.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Schippers noemen elkaar van oudsher buurman of buurvrouw.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "de onder elkaar gebezigde aanspreektitel is van oudsher: buurman of buurvrouw",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bijna alle binnenschepen varen op gasolie, een soort diesel.",
+    "bron": "https://nl.wikipedia.org/wiki/Binnenvaartschip",
+    "controle": "bijna alle binnenvaartschepen maken gebruik van gasolie als brandstof voor de motoren.",
+    "gevonden": true
+   }
+  ],
+  "schroef": [
+   {
+    "tekst": "Bijna elk schip gaat vooruit met een schroef.",
+    "bron": "https://nl.wikipedia.org/wiki/Scheepsschroef",
+    "controle": "een scheepsschroef is de meest gebruikte manier van voortstuwing van een schip",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een scheepsschroef lijkt op een ventilator: bladen rond een as in het midden.",
+    "bron": "https://nl.wikipedia.org/wiki/Scheepsschroef",
+    "controle": "vergelijkbaar met een ventilator of een vliegtuigschroef.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een scheepsschroef heeft hoogstens zeven bladen.",
+    "bron": "https://nl.wikipedia.org/wiki/Scheepsschroef",
+    "controle": "het maximaal aantal bladen is zeven.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het roer is een plaat die kan draaien. Zo blijft het schip op koers, of gaat het een andere kant op.",
+    "bron": "https://nl.wikipedia.org/wiki/Roer_(schip)",
+    "controle": "een roer van een vaartuig is een beweegbaar stuurvlak, dat dient om een schip op koers te houden of gecontroleerd van koers te doen veranderen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De ring om de schroef heet een straalbuis. Die draait zelf niet mee.",
+    "bron": "https://en.wikipedia.org/wiki/Kort_nozzle",
+    "controle": "is a marine propeller shrouded with a non-rotating nozzle",
+    "gevonden": true
+   }
+  ],
+  "voorschip": [
+   {
+    "tekst": "Met het anker ligt het schip stil op een plek waar het niet aan de kant kan.",
+    "bron": "https://nl.wikipedia.org/wiki/Anker_(schip)",
+    "controle": "dat overboord wordt geworpen om het schip vast te leggen op plaatsen waar niet aangemeerd kan worden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een ketting is zwaarder dan een staalkabel. Daarom gebruikt een schip een ketting aan het anker.",
+    "bron": "https://nl.wikipedia.org/wiki/Ankerketting",
+    "controle": "een voordeel van een ketting ten opzichte van een staalkabel is dat een ketting zwaarder is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In de binnenvaart heet de boegschroef meestal de kopschroef.",
+    "bron": "https://nl.wikipedia.org/wiki/Boegschroef",
+    "controle": "in de binnenvaart meestal kopschroef genoemd",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het schroefje in de boegschroef kan twee kanten op draaien. Zo gaat de neus naar links of naar rechts.",
+    "bron": "https://nl.wikipedia.org/wiki/Boegschroef",
+    "controle": "de schroef kan in die constructie twee kanten opdraaien.",
+    "gevonden": true
+   }
+  ]
+ }
+}

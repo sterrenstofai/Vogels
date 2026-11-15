@@ -1,0 +1,287 @@
+{
+ "datum": "2026-11-03",
+ "secties": {
+  "fiets": [
+   {
+    "tekst": "De allereerste fiets had nog geen trappers. Je duwde jezelf vooruit met je voeten op de grond.",
+    "bron": "https://nl.wikipedia.org/wiki/Fiets",
+    "controle": "de berijder bewoog zich voort door zich af te zetten tegen de grond.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De loopfiets werd bedacht door Karl Drais. De eerste was er in 1817, meer dan 200 jaar geleden.",
+    "bron": "https://nl.wikipedia.org/wiki/Fiets",
+    "controle": "het eerste exemplaar ontstond in 1817.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Kleine kinderen leren nu vaak fietsen op een loopfiets, al vanaf ongeveer 2 jaar.",
+    "bron": "https://nl.wikipedia.org/wiki/Loopfiets",
+    "controle": "populair als speelgoed en oefenmiddel voor jonge kinderen (vanaf ca. 2 jaar oud)",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Nederland zijn ongeveer 18 miljoen fietsen. Dat zijn er meer dan er mensen zijn die kunnen fietsen.",
+    "bron": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands",
+    "controle": "the country's 18 million bicycles (1.3 per citizen old enough to ride)",
+    "gevonden": true
+   }
+  ],
+  "frame": [
+   {
+    "tekst": "Het frame van een racefiets is gemaakt van twee driehoeken: een grote voor en een kleinere achter.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_frame",
+    "controle": "a main triangle and a paired rear triangle",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een frame moet sterk, stijf en licht zijn.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_frame",
+    "controle": "frames are required to be strong, stiff and light",
+    "gevonden": true
+   },
+   {
+    "tekst": "Veel racefietsen hebben een frame van carbon. Carbon is licht en sterk, maar duur.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_frame",
+    "controle": "although expensive, it is light-weight, corrosion-resistant and strong",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een frame kan ook van aluminium zijn. Dat is lichter dan staal.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_frame",
+    "controle": "giving them notable weight advantages over steel",
+    "gevonden": true
+   }
+  ],
+  "motor": [
+   {
+    "tekst": "Een elektrische fiets helpt alleen als je zelf trapt. Je moet altijd meetrappen.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets/vraag-en-antwoord/fiets/welke-regels-gelden-voor-mijn-elektrische-fiets-e-bike",
+    "controle": "u moet meetrappen om vooruit te komen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Stop je met trappen, dan moet de motor meteen stoppen met helpen.",
+    "bron": "https://nl.wikipedia.org/wiki/Elektrische_fiets",
+    "controle": "de motor moet dan ook direct stil vallen als de gebruiker stopt met trappen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De motor helpt tot 25 kilometer per uur. Wil je harder, dan moet je dat zelf doen.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets/vraag-en-antwoord/fiets/welke-regels-gelden-voor-mijn-elektrische-fiets-e-bike",
+    "controle": "een elektrische fiets heeft trapondersteuning tot maximaal 25 kilometer per uur.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De motor is niet heel sterk: hoogstens 250 watt.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets/vraag-en-antwoord/fiets/welke-regels-gelden-voor-mijn-elektrische-fiets-e-bike",
+    "controle": "de elektromotor van een elektrische fiets heeft een vermogen van maximaal 250 watt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De accu moet goed vastzitten aan de fiets.",
+    "bron": "https://wetten.overheid.nl/BWBR0025798/",
+    "controle": "de accu, indien aanwezig, van fietsen moet deugdelijk zijn bevestigd.",
+    "gevonden": true
+   }
+  ],
+  "aandrijving": [
+   {
+    "tekst": "De ketting brengt de kracht van de trappers naar het achterwiel.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsketting",
+    "controle": "zorgt voor de krachtoverbrenging van het pedaal naar het achterwiel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Achter zitten tandwielen van verschillende maten. De derailleur duwt de ketting van het ene tandwiel naar het andere. Zo schakel je.",
+    "bron": "https://nl.wikipedia.org/wiki/Derailleur",
+    "controle": "de fietsketting van het ene kettingwiel naar het andere kettingwiel kan worden gebracht",
+    "gevonden": true
+   },
+   {
+    "tekst": "De derailleur heeft twee kleine wieltjes. Daar loopt de ketting overheen.",
+    "bron": "https://nl.wikipedia.org/wiki/Derailleur",
+    "controle": "deze derailleur heeft vrijwel altijd twee kettingwieltjes waarover de ketting geleid wordt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het woord derailleur komt uit het Frans.",
+    "bron": "https://en.wikipedia.org/wiki/Derailleur_gears",
+    "controle": "the word \"derailleur\" is derived from the french word dérailleur",
+    "gevonden": true
+   },
+   {
+    "tekst": "De schakels van de ketting zitten een halve inch uit elkaar: 12,7 millimeter.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsketting",
+    "controle": "hebben fietskettingen een steek (de afstand tussen de asjes) van een halve inch (12,7 mm).",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Een fietswiel heeft dunne spaken, vaak 24, 28, 32 of 36. Tel ze maar eens.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_wheel",
+    "controle": "conventional metallic bicycle wheels have 24, 28, 32 or 36 spokes.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In de band zit lucht. Die lucht draagt bijna al het gewicht, de band zelf de rest.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchtband",
+    "controle": "de spanning van de lucht in een band draagt 90% van de last die erop rust.",
+    "gevonden": true
+   },
+   {
+    "tekst": "John Boyd Dunlop zag dat zijn zoontje moeilijk reed op een driewieler met harde banden. Daarom maakte hij een band vol lucht.",
+    "bron": "https://nl.wikipedia.org/wiki/John_Boyd_Dunlop",
+    "controle": "hij zag hoe zijn zoontje moeite had om op zijn driewieler met harde rubberbanden te rijden",
+    "gevonden": true
+   },
+   {
+    "tekst": "Dunlop vroeg in 1888 patent aan op zijn band met lucht.",
+    "bron": "https://nl.wikipedia.org/wiki/John_Boyd_Dunlop",
+    "controle": "hij vroeg in 1888 patent hierop aan.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De allereerste fietsen hadden geen rubber banden, maar ijzeren banden om houten wielen.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_tire",
+    "controle": "the first bicycle \"tires\" were iron bands on the wooden wheels",
+    "gevonden": true
+   }
+  ],
+  "remmen": [
+   {
+    "tekst": "Een fiets in Nederland moet een rem hebben die goed werkt.",
+    "bron": "https://wetten.overheid.nl/BWBR0025798/",
+    "controle": "fietsen moeten zijn voorzien van een goed werkende rem.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij een schijfrem draait een schijf mee met het wiel. Remblokken knijpen ertegen, en dan gaat de fiets langzamer.",
+    "bron": "https://nl.wikipedia.org/wiki/Schijfrem",
+    "controle": "door het aandrukken van remblokken tegen een remschijf, wrijving ontstaat.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Door het remmen wordt de schijf warm. Niet aankomen dus.",
+    "bron": "https://nl.wikipedia.org/wiki/Schijfrem",
+    "controle": "de bewegingsenergie van het voertuig waarop de rem gemonteerd is, wordt in warmte omgezet.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bijna alle racefietsen hebben nu schijfremmen.",
+    "bron": "https://en.wikipedia.org/wiki/Disc_brake",
+    "controle": "by 2024, almost all road bikes are equipped with disc brakes",
+    "gevonden": true
+   },
+   {
+    "tekst": "De remschijven van een fiets zijn meestal van staal.",
+    "bron": "https://en.wikipedia.org/wiki/Disc_brake",
+    "controle": "most bicycle brake discs are made of steel.",
+    "gevonden": true
+   }
+  ],
+  "cockpit": [
+   {
+    "tekst": "Een fiets in Nederland moet een bel hebben die goed werkt.",
+    "bron": "https://wetten.overheid.nl/BWBR0025798/",
+    "controle": "fietsen moeten zijn voorzien van een goed werkende bel.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Die bel is al verplicht sinds 1906.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsbel",
+    "controle": "in nederland is het hebben van een fietsbel op een fiets vanaf 1906 verplicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De bel zit meestal links op het stuur. Je belt met je duim.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsbel",
+    "controle": "een fietsbel is een kleine bel die over het algemeen links op het stuur van een fiets is gemonteerd, en die meestal met de duim wordt bediend.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In het donker moet je licht aan op de fiets: voor en achter.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets/vraag-en-antwoord/fiets/wat-zijn-de-regels-voor-fietsverlichting-en-reflectie-op-een-fiets",
+    "controle": "als fietser moet u in het donker en bij slecht zicht een voorlicht en achterlicht aan hebben.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het lampje voor is wit of geel. Het lampje achter is rood. Ze mogen niet knipperen.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets/vraag-en-antwoord/fiets/wat-zijn-de-regels-voor-fietsverlichting-en-reflectie-op-een-fiets",
+    "controle": "vaste verlichting op de fiets mag niet knipperen: het achterlicht is rood, het voorlicht is wit of geel.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Dat rode achterlicht staat ook in de verkeersregels.",
+    "bron": "https://wetten.overheid.nl/BWBR0004825/",
+    "controle": "een fiets moet zijn voorzien van een rood achterlicht dat aan de achterzijde wordt gevoerd",
+    "gevonden": true
+   }
+  ],
+  "geometrie": [
+   {
+    "tekst": "Een racefiets is gemaakt om hard te gaan. Hij moet licht zijn en weinig last hebben van de wind.",
+    "bron": "https://nl.wikipedia.org/wiki/Racefiets",
+    "controle": "twee zaken zijn hierbij van belang: de luchtweerstand en het gewicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het stuur zit lager dan het zadel. Dan zit je voorovergebogen en heb je minder last van de wind.",
+    "bron": "https://en.wikipedia.org/wiki/Racing_bicycle",
+    "controle": "the drop handlebars are positioned lower than the saddle to put the rider in a more aerodynamic posture.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een racefiets zit minder lekker dan een gewone fiets, maar hij gaat wel sneller.",
+    "bron": "https://en.wikipedia.org/wiki/Racing_bicycle",
+    "controle": "racing bicycles sacrifice comfort for speed compared to non-racing bicycles.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De wielen staan dicht bij elkaar. Daardoor stuurt een racefiets snel.",
+    "bron": "https://en.wikipedia.org/wiki/Racing_bicycle",
+    "controle": "the front and back wheels are close together so the bicycle has quick handling",
+    "gevonden": true
+   },
+   {
+    "tekst": "De wielen van een racefiets heten 700C. De velg is 622 millimeter groot.",
+    "bron": "https://en.wikipedia.org/wiki/Racing_bicycle",
+    "controle": "most road bicycles use 700c bicycle wheels (622 mm bead seat diameter)",
+    "gevonden": true
+   }
+  ],
+  "veiligheid": [
+   {
+    "tekst": "Een fietshelm is in Nederland niet verplicht, maar wel slim.",
+    "bron": "https://vvn.nl/fietshelm",
+    "controle": "een fietshelm dragen is in nederland niet verplicht, maar wel raadzaam.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met een helm is de kans op ernstig hoofdletsel ongeveer 60 procent kleiner.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets",
+    "controle": "draag daarom een helm en verklein daarmee de kans op ernstig hoofdletsel met ongeveer 60%.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De helm zit vast met een riempje onder je kin.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietshelm",
+    "controle": "de helm wordt met een riempje links en rechts onder de kin aan het hoofd vastgemaakt",
+    "gevonden": true
+   },
+   {
+    "tekst": "Ben je gevallen met je helm op? Dan heb je een nieuwe helm nodig, ook als je niets ziet.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietshelm",
+    "controle": "na een dergelijk voorval moet de helm worden vervangen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Zit je achterop bij een grote? Dan heb je steuntjes voor je voeten nodig, zodat ze niet tussen de spaken komen.",
+    "bron": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/fiets/vraag-en-antwoord/voertuigen-op-de-weg/moet-mijn-kind-achterop-een-fiets-snorfiets-of-bromfiets-in-een-fietsstoeltje",
+    "controle": "als een kind achter op een fiets zit, kan een voet tussen de spaken komen.",
+    "gevonden": true
+   }
+  ]
+ }
+}

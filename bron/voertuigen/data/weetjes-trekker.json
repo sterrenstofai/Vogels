@@ -1,0 +1,199 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "trekker": [
+   {
+    "tekst": "Trekker en tractor betekenen hetzelfde. In Nederland zeg je meestal trekker, in Vlaanderen vaker tractor.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "in nederland zegt men meestal 'trekker', in nederlands-limburg en vlaanderen is 'tractor' meer gangbaar.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De trekker is bedacht voor de boerderij, om het werk van het paard over te nemen.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "een voertuig dat oorspronkelijk werd ontwikkeld voor gebruik in de landbouw ter vervanging van het paard",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op de weg rijdt een trekker zo'n 50 tot 60 kilometer per uur. Op het land gaat hij veel langzamer.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "op de weg kan een trekker wel zo'n 50 à 60 kilometer per uur rijden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Nederland mag je vanaf je 16e met een trekker op de weg rijden. Je hebt dan wel een speciaal rijbewijs nodig.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "iedereen mag vanaf 16-jarige leeftijd met een tractor op de openbare weg rijden, mits hij in het bezit is van een t-rijbewijs",
+    "gevonden": true
+   }
+  ],
+  "motor": [
+   {
+    "tekst": "Bijna alle trekkers van nu rijden op een dieselmotor.",
+    "bron": "https://en.wikipedia.org/wiki/Tractor",
+    "controle": "modern farm tractors usually employ diesel engines",
+    "gevonden": true
+   },
+   {
+    "tekst": "In een dieselmotor gaat de brandstof vanzelf branden, zonder vonkje. Dat heet zelfontbranding.",
+    "bron": "https://nl.wikipedia.org/wiki/Dieselmotor",
+    "controle": "een dieselmotor is een verbrandingsmotor die werkt volgens het principe van zelfontbranding",
+    "gevonden": true
+   },
+   {
+    "tekst": "Water koelt de motor. In de radiator voorin geeft dat water zijn warmte af aan de lucht.",
+    "bron": "https://en.wikipedia.org/wiki/Radiator_(engine_cooling)",
+    "controle": "then through a radiator where it loses heat to the atmosphere, and then returned to the engine.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op een rechtopstaande uitlaat zit vaak een klepje. Dat houdt regen, vuil en vogels buiten.",
+    "bron": "https://en.wikipedia.org/wiki/Exhaust_system",
+    "controle": "the end of the exhaust pipe often has a hinged metal flap to stop debris, birds, and rainwater from falling inside.",
+    "gevonden": true
+   }
+  ],
+  "banden": [
+   {
+    "tekst": "Bij de meeste trekkers zijn de achterwielen groter dan de voorwielen.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "over het algemeen zijn de achterwielen groter dan de voorwielen",
+    "gevonden": true
+   },
+   {
+    "tekst": "De noppen op de banden zorgen dat de trekker grip heeft op de grond.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "de banden hebben ook een tap, zodat ze beter grip hebben op de grondlaag.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er zijn trekkerbanden van wel een meter breed. Dan drukt de trekker minder hard op de grond.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "tegenwoordig wordt meer gebruikgemaakt van extra brede banden, tot zelfs een meter breed, om de druk te verminderen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Banden met lucht erin kwamen rond 1932 op trekkers.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "de luchtbanden (1932)",
+    "gevonden": true
+   }
+  ],
+  "cabine": [
+   {
+    "tekst": "Bijna alle nieuwe trekkers hebben een dichte cabine. Dat is veiliger en fijner voor de bestuurder.",
+    "bron": "https://en.wikipedia.org/wiki/Tractor",
+    "controle": "enclosed cabs are fitted on almost all modern models, for operator safety and comfort.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De cabine beschermt de bestuurder als de trekker omvalt. Dat is verplicht.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "die de inzittende(n) beschermt wanneer de tractor kantelt (dit is een wettelijke verplichting).",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een trekker heeft drie pedalen: een koppeling, een rem en een gaspedaal.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "zo heeft een trekker een koppelings-, een rem- en een gaspedaal.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De rem heeft vaak twee helften. Zo kan de bestuurder één wiel remmen en een korte bocht maken.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "veel trekkers hebben echter een rem die uit twee delen bestaat, waardoor het mogelijk is een afzonderlijk wiel te remmen voor het maken van korte bochten",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met gps kan een trekker zelfs zelf sturen.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "in combinatie met gps is een trekker zelfs volledig zelfrijdend en -sturend te maken.",
+    "gevonden": true
+   }
+  ],
+  "hefinrichting": [
+   {
+    "tekst": "De hefinrichting heeft twee hefarmen en een topstang. Daarmee til je een machine op en laat je hem weer zakken.",
+    "bron": "https://nl.wikipedia.org/wiki/Driepuntsophanging",
+    "controle": "het bestaat uit twee hydraulisch bediende hefarmen en een (in de lengte verstelbare) topstang om werktuigen op te lichten en weer te laten zakken.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een Iers-Britse uitvinder kreeg in 1926 een octrooi op de hefinrichting met drie punten.",
+    "bron": "https://nl.wikipedia.org/wiki/Driepuntsophanging",
+    "controle": "de driepuntsophanging is in 1926 in groot-brittannië gepatenteerd door de iers-britse uitvinder harry ferguson",
+    "gevonden": true
+   },
+   {
+    "tekst": "De meeste machines aan de aftakas zijn gemaakt voor 540 rondjes per minuut.",
+    "bron": "https://nl.wikipedia.org/wiki/Aftakas",
+    "controle": "de meeste werktuigen die een aftakas nodig hebben zijn ontworpen op een toerental van 540 omwentelingen per minuut (tpm).",
+    "gevonden": true
+   },
+   {
+    "tekst": "Om de draaiende aftakas moet een kap die zelf niet meedraait. Zo kunnen kleren er niet aan blijven haken.",
+    "bron": "https://nl.wikipedia.org/wiki/Aftakas",
+    "controle": "nu is het wettelijk verplicht om het geheel af te schermen met een harde kunststof bescherming die niet meedraait, om deze ongelukken te voorkomen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een kar die hoog vastzit en blijft hangen, kan de trekker achterover laten slaan. Daarom zit de trekhaak laag.",
+    "bron": "https://nl.wikipedia.org/wiki/Tractor",
+    "controle": "bevindt de koppeling zich hoger, dan bestaat het gevaar dat de tractor achteroverslaat als de wagen blijft vastzitten",
+    "gevonden": true
+   }
+  ],
+  "voorkant": [
+   {
+    "tekst": "Een gewicht dat iets in balans houdt, heet een contragewicht.",
+    "bron": "https://nl.wikipedia.org/wiki/Contragewicht",
+    "controle": "een contragewicht of tegengewicht is een gewicht dat een systeem in balans houdt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Contragewichten zijn van zwaar spul, zoals gietijzer of beton. Dan hoeven ze niet groot te zijn.",
+    "bron": "https://nl.wikipedia.org/wiki/Contragewicht",
+    "controle": "zodat met een relatief klein volume kan worden volstaan.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er kan ook voorop een hefinrichting zitten, voor een machine voor de trekker.",
+    "bron": "https://nl.wikipedia.org/wiki/Driepuntsophanging",
+    "controle": "deze ophanging voor werktuigen kan zich zowel aan de voor- als achterzijde van de tractor bevinden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met stuurbekrachtiging kost sturen minder kracht.",
+    "bron": "https://nl.wikipedia.org/wiki/Stuurbekrachtiging",
+    "controle": "bedoeld om met minder krachtsinspanning te kunnen sturen",
+    "gevonden": true
+   }
+  ],
+  "lampen": [
+   {
+    "tekst": "Een oranje zwaailicht zie je op voertuigen die groot zijn of langzaam rijden.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "voertuigen die moeten opvallen in het verkeer, omdat ze bijvoorbeeld extreem groot zijn, of langzaam rijden omdat ze werkzaamheden op de weg verrichten, voeren een oranje of geel zwaailicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In een zwaailicht draait een lamp of een spiegel rond. Zo zie je het licht van alle kanten.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "hierdoor is een felle lichtflits te zien die naar alle kanten zichtbaar is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Achter het lampje in een koplamp zit een spiegel. Die maakt van het licht een bundel.",
+    "bron": "https://nl.wikipedia.org/wiki/Koplamp",
+    "controle": "het licht van de lichtbron wordt door middel van een reflector tot een bundel gevormd die de weg voor het voertuig verlicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met je lampen aan, ook overdag, zien anderen je beter op de weg.",
+    "bron": "https://nl.wikipedia.org/wiki/Koplamp",
+    "controle": "het voeren van verlichting overdag blijkt de verkeersveiligheid te bevorderen.",
+    "gevonden": true
+   }
+  ]
+ }
+}

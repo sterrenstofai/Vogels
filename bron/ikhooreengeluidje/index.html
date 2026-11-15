@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ikhooreengeluidje · Hoor hoe een nummer in elkaar zit</title>
+  <meta name="description" content="Kies een nummer en zie het uit elkaar gehaald: welke instrumenten en apparaten erin zitten, wie wat speelt en welke samples erin verstopt zitten.">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="referrer" content="no-referrer">
+  <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:title" content="ikhooreengeluidje">
+  <meta property="og:description" content="Hoor hoe een nummer in elkaar zit: instrumenten, apparaten, wie wat speelt en welke samples erin zitten.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/stijl.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body class="onder-kop">
+  <a class="naar-inhoud" href="#app">Naar de inhoud</a>
+  <header class="balk">
+    <a class="merk" href="/" data-link aria-label="ikhooreengeluidje, naar het begin">
+      <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 13v6M11.5 9.5v13M16 6v20M20.5 10.5v11M25 14v4" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span class="merk-naam">ikhooreengeluidje</span>
+    </a>
+    <div class="zoek" role="search">
+      <div class="zoek-rij">
+        <div class="zoek-pil">
+          <label class="sr" for="zoek">Zoek een nummer</label>
+          <input id="zoek" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
+            placeholder="Zoek een nummer of artiest" role="combobox" aria-expanded="false" aria-controls="zoek-lijst" aria-autocomplete="list">
+          <ul id="zoek-lijst" class="zoek-lijst" role="listbox" hidden></ul>
+        </div>
+        <button class="knop-pil knop-donker zoek-knop" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Zoeken</button>
+        <a class="knop-pil knop-accent" href="/ontdek" data-link><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="9" r="1.3" fill="currentColor"/><circle cx="15" cy="15" r="1.3" fill="currentColor"/><circle cx="15" cy="9" r="1.3" fill="currentColor"/><circle cx="9" cy="15" r="1.3" fill="currentColor"/></svg>Ontdek een nummer</a>
+      </div>
+      <p class="zoek-melding" aria-live="polite"></p>
+    </div>
+    <nav class="balk-nav" aria-label="Hoofdmenu">
+      <a class="nav-knop" href="/onderzoekjes" data-link aria-label="Onderzoekjes met Fos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 11.5h6M9 15h3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Onderzoekjes</span></a>
+      <a class="nav-knop nav-knop-kids" href="/kinderen" data-link aria-label="Voor kinderen"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10.5" r="1.1" fill="currentColor"/><circle cx="15" cy="10.5" r="1.1" fill="currentColor"/><path d="M8.5 14.2c1.9 2.2 5.1 2.2 7 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Kinderen</span></a>
+      <a class="nav-knop nav-knop-mijn" href="/mijn" data-link aria-label="Mijn nummers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Mijn nummers</span><b class="nav-mijn-n" hidden></b></a>
+      <a class="nav-knop" href="/instrumenten" data-link aria-label="Instrumenten"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="16" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Instrumenten</span></a>
+      <a class="nav-knop" href="/nummers" data-link aria-label="Index van alle nummers"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Index</span></a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <p class="laden" aria-live="polite"><span></span>Even de nummers ophalen…</p>
+    <noscript><p class="kolom">Deze site heeft JavaScript nodig. Lees <a href="/hoe-dit-werkt">hoe dit werkt</a>.</p></noscript>
+  </main>
+
+  <footer class="voet">
+    <div class="voet-kolommen">
+      <div><h3>Data</h3><p>Credits en samples uit <a href="https://musicbrainz.org">MusicBrainz</a> en <a href="https://www.discogs.com">Discogs</a> (allebei CC0). Weetjes met de hand, met een bron per weetje, meestal Wikipedia. Credits uit een database kunnen onvolledig zijn.</p></div>
+      <div><h3>Beeld</h3><p>Hoezen via iTunes. Foto's van instrumenten uit Wikimedia Commons, onder een vrije licentie; de maker staat bij elke foto. Geen AI-beelden. Letters: Geist en Geist Mono (OFL).</p></div>
+      <div><h3>Geluid</h3><p>Fragmenten van 30 seconden, provided courtesy of iTunes. Ze worden alleen gestreamd, niet bewaard. Het hele nummer luister je in Apple Music. Klanken van losse instrumenten: University of Iowa Musical Instrument Samples. <a href="/hoe-dit-werkt">Hoe dit werkt</a></p></div>
+      <div><h3>Privacy</h3><p>Geen cookies en geen bezoekersstatistiek. Wat je zoekt, wordt niet bewaard. Het logboek van de onderzoekjes blijft op je eigen apparaat.</p></div>
+    </div>
+    <div class="voet-acties">
+      <a class="knop-pil" href="/nummers" data-link>Alle nummers</a>
+      <a class="knop-pil knop-accent" href="/ontdek" data-link>Ontdek een nummer</a>
+    </div>
+    <p class="voet-merk" aria-hidden="true">ikhoor<wbr>eengeluidje</p>
+  </footer>
+
+  <div class="speler" id="speler" hidden>
+    <img class="speler-hoes" alt="" width="48" height="48" referrerpolicy="no-referrer">
+    <div class="speler-midden">
+      <a class="speler-naam" data-link></a>
+      <canvas class="speler-spectro" aria-hidden="true"></canvas>
+    </div>
+    <button class="knop-rond speler-knop" type="button" aria-label="Pauzeer"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="ring-bg" cx="22" cy="22" r="20"/><circle class="ring" cx="22" cy="22" r="20"/><path class="ico-pauze" d="M17 15v14M27 15v14"/><path class="ico-speel" d="M18 14l12 8-12 8z"/></svg></button>
+    <button class="speler-sluit" type="button" aria-label="Stop en sluit">×</button>
+  </div>
+</body>
+</html>

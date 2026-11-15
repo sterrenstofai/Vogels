@@ -1,0 +1,254 @@
+{
+ "dwarsfluit": {
+  "pad": "/klanken/dwarsfluit.mp3",
+  "duur": 3.9,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Flute/Flute.vib.ff.C4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Flute/Flute.vib.ff.E4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Flute/Flute.vib.ff.G4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Flute/Flute.vib.ff.C5.stereo.aif"
+  ]
+ },
+ "hobo": {
+  "pad": "/klanken/hobo.mp3",
+  "duur": 3.9,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Oboe/Oboe.ff.C4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Oboe/Oboe.ff.E4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Oboe/Oboe.ff.G4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Oboe/Oboe.ff.C5.stereo.aif"
+  ]
+ },
+ "klarinet": {
+  "pad": "/klanken/klarinet.mp3",
+  "duur": 3.9,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bb Clarinet//BbClarinet.ff.C4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bb Clarinet//BbClarinet.ff.E4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bb Clarinet//BbClarinet.ff.G4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bb Clarinet//BbClarinet.ff.C5.stereo.aif"
+  ]
+ },
+ "fagot": {
+  "pad": "/klanken/fagot.mp3",
+  "duur": 3.9,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bassoon/Bassoon.ff.C3.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bassoon/Bassoon.ff.E3.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bassoon/Bassoon.ff.G3.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Bassoon/Bassoon.ff.C4.stereo.aif"
+  ]
+ },
+ "saxofoon": {
+  "pad": "/klanken/saxofoon.mp3",
+  "duur": 3.9,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Eb Alto Saxophone/AltoSax.vib.ff.C4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Eb Alto Saxophone/AltoSax.vib.ff.E4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Eb Alto Saxophone/AltoSax.vib.ff.G4.stereo.aif",
+   "https://theremin.music.uiowa.edu/sound files/MIS Pitches - 2014/Woodwinds/Eb Alto Saxophone/AltoSax.vib.ff.C5.stereo.aif"
+  ]
+ },
+ "hoorn": {
+  "pad": "/klanken/hoorn.mp3",
+  "duur": 1.6,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Brass/frenchhorn/Horn.mf.C4B4.aiff"
+  ]
+ },
+ "trompet": {
+  "pad": "/klanken/trompet.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Brass/Bbtrumpet/Trumpet.vib.mf.C4B4.aiff"
+  ]
+ },
+ "trombone": {
+  "pad": "/klanken/trombone.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Brass/tenortrombone/TenorTrombone.mf.C3B3.aiff"
+  ]
+ },
+ "viool": {
+  "pad": "/klanken/viool.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Strings/violin2012/Violin.arco.mf.sulG.C4B5.stereo.aif"
+  ]
+ },
+ "altviool": {
+  "pad": "/klanken/altviool.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Strings/viola2012/Viola.arco.sulG.mf.C4B4.stereo.aif"
+  ]
+ },
+ "cello": {
+  "pad": "/klanken/cello.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Strings/cello2012/Cello.arco.mf.sulC.C3C4.stereo.aif"
+  ]
+ },
+ "contrabas": {
+  "pad": "/klanken/contrabas.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Strings/doublebass2012/Bass.arco.sulG.mf.C3B3.stereo.aif"
+  ]
+ },
+ "piano": {
+  "pad": "/klanken/piano.mp3",
+  "duur": 3.9,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C4.aiff",
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.E4.aiff",
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.G4.aiff",
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C5.aiff"
+  ]
+ },
+ "gitaar": {
+  "pad": "/klanken/gitaar.mp3",
+  "duur": 3.1,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/guitar/Guitar.mf.sulA.C3B3.stereo.aif"
+  ]
+ },
+ "tamboerijn": {
+  "pad": "/klanken/tamboerijn.mp3",
+  "duur": 2.2,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Percussion/tambourines/tambourine1.normal.mf.aif"
+  ]
+ },
+ "toon-c2": {
+  "pad": "/klanken/toon-c2.mp3",
+  "duur": 1.8,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C2.aiff"
+  ]
+ },
+ "toon-c3": {
+  "pad": "/klanken/toon-c3.mp3",
+  "duur": 1.8,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C3.aiff"
+  ]
+ },
+ "toon-c4": {
+  "pad": "/klanken/toon-c4.mp3",
+  "duur": 1.8,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C4.aiff"
+  ]
+ },
+ "toon-c5": {
+  "pad": "/klanken/toon-c5.mp3",
+  "duur": 1.8,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C5.aiff"
+  ]
+ },
+ "toon-c6": {
+  "pad": "/klanken/toon-c6.mp3",
+  "duur": 1.8,
+  "bron": "University of Iowa Musical Instrument Samples",
+  "bron_url": "https://theremin.music.uiowa.edu/MIS.html",
+  "bestanden": [
+   "https://theremin.music.uiowa.edu/sound files/MIS/Piano_Other/piano/Piano.mf.C6.aiff"
+  ]
+ },
+ "drumstel": {
+  "pad": "/klanken/drumstel.mp3",
+  "duur": 5.0,
+  "bron": "Wikimedia Commons",
+  "bron_url": "https://commons.wikimedia.org/wiki/File:Rock_beat_ride_cymbal.ogg",
+  "bestand": "Rock beat ride cymbal.ogg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "maker: zie de bestandspagina"
+ },
+ "basgitaar": {
+  "pad": "/klanken/basgitaar.mp3",
+  "duur": 5.0,
+  "bron": "Wikimedia Commons",
+  "bron_url": "https://commons.wikimedia.org/wiki/File:Bassline_played_on_a_bass_guitar_using_a_pick.ogg",
+  "bestand": "Bassline played on a bass guitar using a pick.ogg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "OVRDRIVN32"
+ },
+ "elektrische-gitaar": {
+  "pad": "/klanken/elektrische-gitaar.mp3",
+  "duur": 5.0,
+  "bron": "Wikimedia Commons",
+  "bron_url": "https://commons.wikimedia.org/wiki/File:Electric_guitar_lick_in_the_style_of_Chuck_Berry.wav",
+  "bestand": "Electric guitar lick in the style of Chuck Berry.wav",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Include.aliment"
+ },
+ "synthesizer": {
+  "pad": "/klanken/synthesizer.mp3",
+  "duur": 5.0,
+  "bron": "Wikimedia Commons",
+  "bron_url": "https://commons.wikimedia.org/wiki/File:Synth_filter_sweeps.ogg",
+  "bestand": "Synth filter sweeps.ogg",
+  "licentie": "Public domain",
+  "maker": "maker: zie de bestandspagina"
+ },
+ "drumcomputer": {
+  "pad": "/klanken/drumcomputer.mp3",
+  "duur": 5.0,
+  "bron": "Wikimedia Commons",
+  "bron_url": "https://commons.wikimedia.org/wiki/File:RelaxedElectro@100BPM.wav",
+  "bestand": "RelaxedElectro@100BPM.wav",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Wil Sinclair"
+ },
+ "kleine-trom": {
+  "pad": "/klanken/kleine-trom.mp3",
+  "duur": 5.0,
+  "bron": "Wikimedia Commons",
+  "bron_url": "https://commons.wikimedia.org/wiki/File:Snare_drum_unmuffled.ogg",
+  "bestand": "Snare drum unmuffled.ogg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "maker: zie de bestandspagina"
+ }
+}

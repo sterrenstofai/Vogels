@@ -1,0 +1,229 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "vliegtuig": [
+   {
+    "tekst": "Een vliegtuig vliegt door zijn vleugels. De vleugel duwt de lucht naar beneden, en dan gaat het vliegtuig omhoog. Dat heet lift.",
+    "bron": "https://nl.wikipedia.org/wiki/Vliegtuig",
+    "controle": "de vleugel buigt de lucht die er langs stroomt af, en veroorzaakt \"lift\".",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een vliegtuig moet hard genoeg gaan. Zolang het hard genoeg gaat, blijft het in de lucht.",
+    "bron": "https://nl.wikipedia.org/wiki/Vliegtuig",
+    "controle": "zolang het vliegtuig dus voldoende snelheid heeft, blijft het in de lucht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De broers Wright vlogen als eerste mensen met een vliegtuig met een motor. Dat was in 1903, meer dan 120 jaar geleden.",
+    "bron": "https://nl.wikipedia.org/wiki/Vliegtuig",
+    "controle": "in 1903 wisten de amerikaanse gebroeders wright als eerste mensen met hun zelf gebouwde en gemotoriseerde vliegtuig",
+    "gevonden": true
+   },
+   {
+    "tekst": "Schiphol is het grootste vliegveld van Nederland.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchthaven_Schiphol",
+    "controle": "is de grootste nederlandse luchthaven en een belangrijke luchthaven in europa",
+    "gevonden": true
+   },
+   {
+    "tekst": "In 2025 telde Schiphol 68,8 miljoen passagiers.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchthaven_Schiphol",
+    "controle": "in 2025 verwerkte schiphol 68,8 miljoen passagiers.",
+    "gevonden": true
+   }
+  ],
+  "romp": [
+   {
+    "tekst": "Hoog in de lucht is de lucht te dun. Daar krijg je niet genoeg zuurstof om goed te ademen.",
+    "bron": "https://nl.wikipedia.org/wiki/Drukcabine",
+    "controle": "de luchtdruk in de atmosfeer op grotere hoogte voor mensen te laag is om voldoende zuurstof op te kunnen nemen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Daarom wordt er steeds lucht in de romp gepompt. Zo kun je binnen gewoon ademen. Dat heet een drukcabine.",
+    "bron": "https://en.wikipedia.org/wiki/Cabin_pressurization",
+    "controle": "cabin pressurization is a process in which conditioned air is pumped into the cabin of an aircraft",
+    "gevonden": true
+   },
+   {
+    "tekst": "Binnen in de romp is de lucht zoals op een berg van ongeveer 2 kilometer hoog.",
+    "bron": "https://nl.wikipedia.org/wiki/Drukcabine",
+    "controle": "in een modern verkeersvliegtuig komt de cabinedruk op kruishoogte overeen met de atmosferische druk op een hoogte tussen 5500 en de 8000 voet (ca. 1600-2400 meter).",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een vliegtuig met één gangpad heeft plaats voor 100 tot 240 passagiers.",
+    "bron": "https://en.wikipedia.org/wiki/Airliner",
+    "controle": "generally used for medium-haul flights with 100 to 240 passengers.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een vliegtuig is vaak gemaakt van aluminium, gemengd met een beetje ander metaal. Dat is sterk en toch licht.",
+    "bron": "https://en.wikipedia.org/wiki/Aluminium_alloy",
+    "controle": "aluminium alloys are used extensively in aircraft due to their high strength",
+    "gevonden": true
+   }
+  ],
+  "vleugels": [
+   {
+    "tekst": "Bij het opstijgen en landen schuiven er kleppen uit de vleugel. Dan kan het vliegtuig langzaam vliegen en blijft het toch in de lucht.",
+    "bron": "https://nl.wikipedia.org/wiki/Welvingsklep",
+    "controle": "bij het opstijgen en het landen worden de welvingskleppen uitgeschoven of omlaag gezet, waardoor de draagkracht groter wordt",
+    "gevonden": true
+   },
+   {
+    "tekst": "In de vleugels zit de brandstof. Soms ook in de romp en in de staart.",
+    "bron": "https://en.wikipedia.org/wiki/Aircraft_fuel_tank",
+    "controle": "most large transport aircraft use this system to store fuel in the wings, fuselage and empennage of the aircraft.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De brandstof van een vliegtuig heet kerosine.",
+    "bron": "https://nl.wikipedia.org/wiki/Kerosine",
+    "controle": "het staat bekend als brandstof voor vliegtuigen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan het eind van de vleugel staat vaak een stukje rechtop: de winglet. Die zorgt dat de lucht het vliegtuig minder tegenhoudt.",
+    "bron": "https://nl.wikipedia.org/wiki/Winglet",
+    "controle": "winglets beperken plaatselijk deze wervels, zodat de luchtweerstand afneemt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het idee van de winglet komt van vogels. Die buigen de veren aan het eind van hun vleugels omhoog.",
+    "bron": "https://nl.wikipedia.org/wiki/Winglet",
+    "controle": "de techniek is afgekeken van vogels die aan het eind van hun vleugels waaiervormig opgestelde slagpennen kennen, die naar boven kunnen worden gekruld.",
+    "gevonden": true
+   }
+  ],
+  "motoren": [
+   {
+    "tekst": "Voorin de motor zit een grote ventilator. Die blaast lucht naar achteren.",
+    "bron": "https://en.wikipedia.org/wiki/Turbofan",
+    "controle": "a ducted fan that accelerates air rearward from the front of the engine.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Die grote ventilator geeft de motor de meeste duwkracht.",
+    "bron": "https://en.wikipedia.org/wiki/Turbofan",
+    "controle": "in a high-bypass design, the ducted fan and nozzle produce most of the thrust.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Zo'n motor heet een turbofan. Het is een straalmotor die vrij stil is.",
+    "bron": "https://nl.wikipedia.org/wiki/Turbofan",
+    "controle": "een turbofan is een relatief stille straalmotor met een hoog rendement",
+    "gevonden": true
+   },
+   {
+    "tekst": "De motor zuigt voor lucht naar binnen. Binnenin wordt brandstof verbrand, en de hete lucht gaat er achter uit.",
+    "bron": "https://nl.wikipedia.org/wiki/Straalmotor",
+    "controle": "lucht wordt ingezogen aan de voorkant en door de compressor samengeperst.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Duw je iets weg, dan duwt het even hard terug. Dat schreef Isaac Newton op. De motor duwt lucht naar achteren, en de lucht duwt het vliegtuig naar voren.",
+    "bron": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+    "controle": "to every action there is always opposed an equal reaction",
+    "gevonden": true
+   }
+  ],
+  "staart": [
+   {
+    "tekst": "Achter op het vliegtuig staat een groot rechtop vlak. Dat heet het kielvlak.",
+    "bron": "https://nl.wikipedia.org/wiki/Kielvlak",
+    "controle": "het kielvlak of staartvlak is het verticale vlak van de staart van een vliegtuig",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan het kielvlak zit het richtingsroer. Daarmee draait de neus van het vliegtuig naar links of naar rechts. Dat heet gieren.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingsroer",
+    "controle": "deze beweging wordt gieren genoemd.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De piloot beweegt het richtingsroer met pedalen, met zijn voeten.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingsroer",
+    "controle": "besturing ervan vindt plaats door middel van pedalen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Achteraan zitten ook twee kleine vleugeltjes. Samen heten ze het stabilo.",
+    "bron": "https://nl.wikipedia.org/wiki/Stabilo",
+    "controle": "het bevindt zich meestal aan de achterzijde en ziet eruit als kleine vleugels.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan het stabilo zit het hoogteroer. Daarmee gaat de neus omhoog of omlaag. Dat heet stampen.",
+    "bron": "https://nl.wikipedia.org/wiki/Hoogteroer",
+    "controle": "dit noemt men stampen",
+    "gevonden": true
+   }
+  ],
+  "landingsgestel": [
+   {
+    "tekst": "Het landingsgestel zijn de wielen onder het vliegtuig. Daar staat het vliegtuig op als het niet vliegt.",
+    "bron": "https://nl.wikipedia.org/wiki/Landingsgestel",
+    "controle": "het landingsgestel of onderstel is dat deel van een vliegtuig dat het toestel ondersteunt als het niet in de lucht is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Na het opstijgen gaan de wielen naar binnen, achter luikjes in de romp. Dan houdt de lucht het vliegtuig minder tegen.",
+    "bron": "https://nl.wikipedia.org/wiki/Landingsgestel",
+    "controle": "om de luchtweerstand te verminderen wordt het landingsgestel doorgaans ingetrokken tot achter luiken in de romp die vervolgens worden gesloten.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op de grond stuurt het vliegtuig met het neuswiel. Dat is het wiel onder de neus. Het kan draaien.",
+    "bron": "https://nl.wikipedia.org/wiki/Landingsgestel",
+    "controle": "bij grote toestellen wordt dit gedaan door een draaibaar neuswiel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Voor een scherpe bocht op de grond heeft de piloot een hendel. Die heet de tiller.",
+    "bron": "https://nl.wikipedia.org/wiki/Landingsgestel",
+    "controle": "gebruikgemaakt van een hendel aangeduid met de engelse naam \"tiller\".",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan de wielen zitten remmen. Daarmee stopt het vliegtuig na de landing.",
+    "bron": "https://nl.wikipedia.org/wiki/Landingsgestel",
+    "controle": "de belangrijkste manier waarop dit bereikt wordt zijn de remmen op de wielen.",
+    "gevonden": true
+   }
+  ],
+  "cockpit": [
+   {
+    "tekst": "Voorin het vliegtuig zit de cockpit. Daar zitten de piloten en besturen ze het vliegtuig.",
+    "bron": "https://nl.wikipedia.org/wiki/Cockpit",
+    "controle": "de ruimte vóór in een vliegtuig van waaruit de piloten het toestel besturen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er zijn twee piloten: de gezagvoerder en de eerste officier. Ze wisselen het vliegen af.",
+    "bron": "https://nl.wikipedia.org/wiki/Eerste_officier",
+    "controle": "het daadwerkelijke vliegen (van start tot en met landing) wordt normaal gesproken tussen de gezagvoerder en de eerste officier verdeeld",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan de linkervleugel brandt een rood lampje, aan de rechtervleugel een groen lampje.",
+    "bron": "https://en.wikipedia.org/wiki/Navigation_light",
+    "controle": "with a red navigation light located on the left wingtip leading edge and a green light on the right wingtip leading edge.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Helemaal achteraan brandt een wit lampje.",
+    "bron": "https://en.wikipedia.org/wiki/Navigation_light",
+    "controle": "a white navigation light is as far aft as possible on the tail or each wing tip.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er zijn ook knipperlichten, boven en onder op de romp. Die knipperen als de motoren draaien, zodat iedereen het ziet.",
+    "bron": "https://en.wikipedia.org/wiki/Navigation_light",
+    "controle": "their purpose is to alert others when something is happening that ground crew and other aircraft need to be aware of, such as running engines",
+    "gevonden": true
+   }
+  ]
+ }
+}

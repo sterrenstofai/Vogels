@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hoe dit werkt · De Ruimte</title>
+  <meta name="description" content="Waar de gegevens vandaan komen, wat de site niet weet en wat er met je gegevens gebeurt.">
+  <meta name="color-scheme" content="only light">
+  <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/stijl.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="kop-eenvoudig">
+    <a class="merk" href="/" aria-label="De Ruimte, naar het begin">
+      <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><ellipse cx="16" cy="16" rx="13.5" ry="5" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-20 16 16)"/></svg>
+      <span class="merk-naam">de ruimte</span>
+    </a>
+    <a class="knop-pil" href="/">Naar de hemel</a>
+  </header>
+  <main class="kolom tekst">
+    <p class="etiket">Hoe dit werkt</p>
+    <h1>Wat de site weet, en wat <span class="accent">niet</span></h1>
+
+    <h2>Wat de site niet kan</h2>
+    <ul>
+      <li><b>Niet weten of het bij jou bewolkt is.</b> We rekenen uit wat er boven de horizon staat. Of je het ook ziet, hangt af van wolken, licht van lantaarnpalen, bomen en huizen. Op de pagina Vanavond kun je een weersverwachting opvragen, maar die zit er vaak naast.</li>
+      <li><b>Geen foto's van sterren laten zien.</b> Een ster is zo ver weg dat je op een foto alleen een stip ziet, ook met de grootste telescoop. Alleen van Betelgeuze bestaat een foto waarop je zijn oppervlak een beetje ziet. Bij de andere sterren laten we zien waar ze aan de hemel staan.</li>
+      <li><b>Geen geluid uit de ruimte laten horen.</b> In de ruimte is geen lucht, dus ook geen geluid. Wat je hier hoort, zijn metingen die hoorbaar zijn gemaakt, of opnames op een planeet met lucht (Mars).</li>
+      <li><b>Dwergplaneten en kleine manen precies aanwijzen.</b> Ceres en Eris rekenen we uit met een eenvoudige baan, zonder de trek van de planeten; ze kunnen er een klein stukje naast zitten. Kleine manen van andere planeten zetten we op de plek van hun planeet: ze zijn toch te zwak om te zien.</li>
+      <li><b>Het aantal manen zeker weten.</b> Er worden steeds nieuwe kleine manen gevonden. Het getal bij een planeet is wat NASA op dat moment noemt.</li>
+    </ul>
+
+    <h2>Waar staat het aan de hemel?</h2>
+    <p>Dat rekent je eigen browser uit, met het open programma <a href="https://github.com/cosinekitty/astronomy">astronomy-engine</a> (zon, maan, planeten, de manen van Jupiter en sterren). Er gaat niets naar een server. We hebben de uitkomsten vergeleken met JPL Horizons, het programma waarmee NASA de banen van ruimtesondes uitrekent: voor de zon, de maan en de planeten scheelt het minder dan een honderdste van de breedte van de maan, en op- en ondergang kloppen op de minuut.</p>
+    <p>Alles wat zo is uitgerekend, heeft het label <span class="label">simulatie</span>.</p>
+
+    <h2>De hemel op het hele scherm</h2>
+    <p>Op <a href="/hemelkaart">de hemel boven je</a> kun je op twee manieren kijken. <b>Om je heen</b>: je staat buiten en kijkt rond, door te slepen of door je telefoon omhoog te houden. <b>Kaart</b>: de hele hemel op een rondje, zoals je hem ziet als je op je rug ligt.</p>
+    <p>Wat daar niet echt is: de rand met bomen, huizen, een kerk en een molen is getekend (bij jou staat er iets anders), de maan, de zon en de planeten zijn groter getekend dan je ze ziet, en de kleur van de lucht en de schemering zijn een benadering. Wat wel klopt: waar de sterren, de planeten en de maan staan, de schijngestalte van de maan, en wanneer het donker wordt. De Melkweg komt uit de kaarten van d3-celestial. In de stad zie je hem niet: daarvoor is de lucht te licht.</p>
+    <p>Het kompas van een telefoon kan een paar graden afwijken, vooral bij metaal of een magneet in de buurt. Je telefoon geeft zijn stand alleen door aan je eigen browser; er gaat niets naar ons.</p>
+
+    <h2>Bollen in 3D</h2>
+    <p>In het overzicht staan de hemellichamen als bol; met de muis erover draait hij. Op de pagina van een hemellichaam zie je hem groot, en kun je hem zelf draaien. Zo'n bol is geen foto: het is een kaart, om een bol gevouwen.</p>
+    <p><b>Kaarten van echte beelden.</b> Gemaakt van honderden foto's van ruimtesondes, van de ruimtetelescoop Hubble, of van metingen (radar bij Venus, ultraviolet bij de zon). Op de bol staat wat voor kaart het is. Wat nooit gezien of gemeten is, krijgt een gedempte kleur: daar verzinnen we niets.</p>
+    <ul>
+      <li><b>Zon</b> (valse kleur): NASA/SDO en de teams van AIA, EVE en HMI (Courtesy of NASA/SDO and the AIA, EVE, and HMI science teams), publiek domein (SDO: niet auteursrechtelijk beschermd). <a href="https://sdo.gsfc.nasa.gov/data/synoptic/">Bron</a></li>
+      <li><b>Venus</b> (radar): NASA/JPL, radar van Magellan; PDS Geosciences Node; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/venus_magellan_global_c3_mdir_mosaic_2025m">Bron</a></li>
+      <li><b>Maan</b> (echte kleur): NASA Scientific Visualization Studio, foto's van Lunar Reconnaissance Orbiter, publiek domein. <a href="https://svs.gsfc.nasa.gov/4720">Bron</a></li>
+      <li><b>Aarde</b> (echte kleur): NASA Earth Observatory (Reto Stöckli), Blue Marble, publiek domein (NASA). <a href="https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/">Bron</a></li>
+      <li><b>Mars</b> (kleur benaderd): NASA Ames en USGS, foto's van Viking, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/mars_viking_colorized_global_mosaic_232m">Bron</a></li>
+      <li><b>Jupiter</b> (kleur benaderd): NASA/JPL/Space Science Institute, foto's van Cassini, publiek domein (NASA). <a href="https://photojournal.jpl.nasa.gov/catalog/PIA07782">Bron</a></li>
+      <li><b>Mercurius</b> (zwart-wit): NASA/JHUAPL/Carnegie Institution, foto's van MESSENGER; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/mercury_messenger_mdis_global_mosaic_250m">Bron</a></li>
+      <li><b>Ceres</b> (zwart-wit): NASA/JPL/DLR, foto's van Dawn; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/ceres_dawn_fc_global_mosaic_140m">Bron</a></li>
+      <li><b>Pluto</b> (zwart-wit): NASA/JHUAPL/SwRI, foto's van New Horizons; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/pluto_new_horizons_lorri_mvic_global_mosaic_300m">Bron</a></li>
+      <li><b>Charon</b> (zwart-wit): NASA/JHUAPL/SwRI, foto's van New Horizons; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/charon_new_horizons_lorri_mvic_global_mosaic_300m">Bron</a></li>
+      <li><b>Io</b> (kleur versterkt): NASA/JPL, foto's van Galileo en Voyager; USGS, publiek domein (NASA). <a href="https://astrogeology.usgs.gov/search/map/io_galileo_ssi_voyager_color_merged_global_mosaic_1km">Bron</a></li>
+      <li><b>Europa</b> (zwart-wit): NASA/JPL, foto's van Voyager en Galileo; USGS, publiek domein (NASA). <a href="https://astrogeology.usgs.gov/search/map/europa_voyager_galileo_ssi_global_mosaic_500m">Bron</a></li>
+      <li><b>Ganymedes</b> (valse kleur): NASA/JPL, foto's van Voyager en Galileo; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/ganymede_voyager_galileo_ssi_color_global_mosaic_1_4km">Bron</a></li>
+      <li><b>Callisto</b> (zwart-wit): NASA/JPL, foto's van Galileo en Voyager; USGS, publiek domein. <a href="https://astrogeology.usgs.gov/search/map/callisto_galileo_voyager_global_mosaic_1km">Bron</a></li>
+      <li><b>Enceladus</b> (zwart-wit): NASA/JPL/Space Science Institute, foto's van Cassini; P. Schenk en W. McKinnon; USGS, publiek domein (NASA). <a href="https://astrogeology.usgs.gov/search/map/enceladus-cassini-global-mosaic-100m-schenk">Bron</a></li>
+      <li><b>Triton</b> (kleur benaderd): NASA/JPL-Caltech/Lunar and Planetary Institute (Paul Schenk), foto's van Voyager 2; USGS, publiek domein. <a href="https://photojournal.jpl.nasa.gov/catalog/PIA18668">Bron</a></li>
+      <li><b>Saturnus</b> (kleur benaderd): NASA, ESA, A. Simon (NASA GSFC), M. H. Wong (UC Berkeley) en het OPAL-team, Hubble (Simon et al. 2015, doi:10.17909/T9G593); ringen: dichtheid gemeten door Cassini (NASA PDS), CC BY 4.0. <a href="https://archive.stsci.edu/hlsp/opal">Bron</a></li>
+      <li><b>Uranus</b> (kleur benaderd): NASA, ESA, A. Simon (NASA GSFC), M. H. Wong (UC Berkeley) en het OPAL-team, Hubble (Simon et al. 2015, doi:10.17909/T9G593), CC BY 4.0. <a href="https://archive.stsci.edu/hlsp/opal">Bron</a></li>
+      <li><b>Neptunus</b> (kleur benaderd): NASA, ESA, A. Simon (NASA GSFC), M. H. Wong (UC Berkeley) en het OPAL-team, Hubble (Simon et al. 2015, doi:10.17909/T9G593), CC BY 4.0. <a href="https://archive.stsci.edu/hlsp/opal">Bron</a></li>
+    </ul>
+    <p><b>Egaal.</b> Waar geen kaart bestaat: één kleur, uit een echte foto of uit metingen van het licht.</p>
+    <ul>
+      <li><b>Titan</b>: Egaal, in de echte kleur van een Cassini-foto: je ziet alleen de oranje nevel, niet de grond. <span class="zacht">kleur uit een foto van Cassini (NASA/JPL-Caltech/Space Science Institute).</span> <a href="https://images.nasa.gov/details/PIA14602">Bron</a></li>
+      <li><b>Eris</b>: Niemand weet hoe Eris eruitziet: er is nooit een ruimtesonde geweest. Wel dat ze heel licht is. Daarom een egale, lichte bol. <span class="zacht">geen beeld bekend.</span> <a href="https://science.nasa.gov/dwarf-planets/eris/">Bron</a></li>
+      <li><b>Sirius</b>: Een gloeiende bol in de kleur van zijn licht. Het oppervlak van Sirius heeft niemand gezien. <span class="zacht">kleur uit de gemeten kleurindex (Hipparcos, via d3-celestial).</span> <a href="https://github.com/ofrohn/d3-celestial">Bron</a></li>
+      <li><b>Betelgeuze</b>: Een gloeiende bol in de kleur van haar licht. Van Betelgeuze bestaan een paar wazige foto's van het oppervlak (zie Foto); een kaart niet. <span class="zacht">kleur uit de gemeten kleurindex (Hipparcos, via d3-celestial).</span> <a href="https://github.com/ofrohn/d3-celestial">Bron</a></li>
+      <li><b>Wega</b>: Een gloeiende bol in de kleur van haar licht. Het oppervlak van Wega heeft niemand gezien. <span class="zacht">kleur uit de gemeten kleurindex (Hipparcos, via d3-celestial).</span> <a href="https://github.com/ofrohn/d3-celestial">Bron</a></li>
+    </ul>
+    <p><b>De rand van licht</b> om planeten met een dampkring (de aarde, Venus, Mars, de reuzenplaneten en Titan) en de gloed om de zon en de sterren tekenen we erbij, zodat de bol rond oogt. Dat is een benadering, geen foto. Geen AI-beelden: ook niet om een bol mooier te maken.</p>
+
+    <h2>Je plek</h2>
+    <p>Om te weten wat er boven jouw huis staat, hebben we je plek nodig. Die kun je kiezen: je browser je locatie laten geven, of een woonplaats intikken. De woonplaats zoeken we bij de Locatieserver van PDOK (de overheid). Je plek blijft in het geheugen van je browser en wordt nergens bewaard: niet bij ons, niet in je browser. Kies je niets, dan rekenen we voor het midden van Nederland (De Bilt). Tussen Groningen en Maastricht scheelt dat hooguit een paar minuten.</p>
+
+    <h2>Getallen en weetjes</h2>
+    <p>De getallen komen uit de <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA Planetary Fact Sheet</a>, de tabellen van JPL voor <a href="https://ssd.jpl.nasa.gov/sats/phys_par/">manen</a> en de <a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html">Small-Body Database</a> voor dwergplaneten. Afstanden van sterren komen uit Wikidata (gemeten door de satelliet Hipparcos). Bij elk getal staat de bron.</p>
+    <p>De weetjes zijn met de hand geschreven, elk met een bron (meestal NASA). Bij het label <span class="label">nagekeken</span> heeft een script daarna gecontroleerd dat de zin waar het weetje op rust, letterlijk op die bronpagina staat. Dat gebeurt elke maand opnieuw, zodat we merken als een bron verandert.</p>
+    <p>Wikidata, de open database achter Wikipedia, gebruiken we voor de Nederlandse namen en als controle. De getallen daar nemen we niet zomaar over: in Wikidata stond bijvoorbeeld de zwaartekracht op Io honderd keer te klein.</p>
+
+    <h2>Zoeken buiten de lijst</h2>
+    <p>De vaste lijst is met de hand gekozen. Zoek je iets anders, dan vraagt je browser het rechtstreeks aan Wikidata. Dat is <span class="label label-zacht">niet nagekeken</span>: getallen kunnen fout zijn, en de afbeelding die Wikidata noemt is niet altijd een foto. Bij Betelgeuze was het bijvoorbeeld een kaartje, bij het sterrenbeeld de Zwaan een foto van een berg.</p>
+
+    <h2>Foto's</h2>
+    <p>Alle foto's zijn echte foto's van ruimtesondes en telescopen, van NASA, ESA en ESO. Geen AI-beelden en geen tekeningen die op een foto lijken. Bij elke foto staat wie hem maakte. Veel ruimtefoto's zijn bewerkt; daarom staat erbij:</p>
+    <ul>
+      <li><span class="label">echte kleur</span> ongeveer zoals je het met je eigen ogen zou zien;</li>
+      <li><span class="label label-zacht">kleur benaderd</span> samengesteld uit foto's door verschillende filters, in ongeveer echte kleur;</li>
+      <li><span class="label label-zacht">kleur versterkt</span> de verschillen zijn sterker gemaakt dan je ze zou zien;</li>
+      <li><span class="label label-zacht">valse kleur</span> gemaakt met licht dat je ogen niet zien (ultraviolet, infrarood), met kleuren die mensen kozen.</li>
+    </ul>
+
+    <h2>Geluid</h2>
+    <p>In de ruimte is geen geluid. Toch kun je hier iets horen. Bij elk geluid staat wat het is:</p>
+    <ul>
+      <li><span class="label">echte opname</span> met een microfoon, in de lucht van een planeet. Alleen van Mars (de robotauto Perseverance, NASA/JPL-Caltech).</li>
+      <li><span class="label label-zacht">meting, hoorbaar gemaakt</span> elektrische golven in de ruimte, opgevangen met een antenne en afgespeeld als geluid. Van de University of Iowa (CC BY 4.0): "Original space audio recordings provided courtesy of NASA and The University of Iowa."</li>
+      <li><span class="label label-zacht">sonificatie</span> metingen omgezet in muziek. Daar linken we naar (Chandra).</li>
+      <li><span class="label label-zacht">reconstructie</span> in een lab nagemaakt. Het bekende geluid van de landing op Titan is zo'n reconstructie (ESA); daar linken we naar.</li>
+    </ul>
+
+    <h2>Sterren en sterrenbeelden</h2>
+    <p>De sterren op de kaart (tot helderheid 5) en de lijnen van de sterrenbeelden komen van <a href="https://github.com/ofrohn/d3-celestial">d3-celestial</a> van Olaf Frohn (BSD-licentie). De Nederlandse namen van de sterrenbeelden komen uit Wikidata. De lijnen zijn een afspraak, geen natuur: andere culturen tekenen andere figuren.</p>
+
+    <h2>Privacy</h2>
+    <p>Geen cookies, geen bezoekersstatistiek, geen advertenties. Mijn hemel, de onderzoekjes en de naam op het certificaat staan alleen in de browser van je eigen apparaat (localStorage). Wij krijgen ze niet te zien. Je browser praat alleen met andere diensten als dat nodig is: PDOK als je een woonplaats zoekt, Wikidata als je buiten de lijst zoekt, Open-Meteo als je de weersverwachting opvraagt.</p>
+
+    <h2>Gemaakt met</h2>
+    <p>Een statische site: HTML, CSS en JavaScript, zonder framework. De letters zijn Geist en Geist Mono (SIL Open Font License). De opzet is overgenomen van <a href="https://voggels.nl">Voggels</a> en ikhooreengeluidje.</p>
+  </main>
+</body>
+</html>

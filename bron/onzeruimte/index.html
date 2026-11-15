@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>De Ruimte · Wat staat er vanavond boven je huis?</title>
+  <meta name="description" content="De zon, de maan, de planeten, manen en sterren. Met echte foto's, en uitgerekend in je browser: wat zie je vanavond aan de hemel?">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="referrer" content="no-referrer">
+  <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:title" content="De Ruimte">
+  <meta property="og:description" content="Wat staat er vanavond boven je huis? De planeten, de maan en de sterren, uitgerekend in je browser.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/stijl.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body class="onder-kop">
+  <a class="naar-inhoud" href="#app">Naar de inhoud</a>
+  <header class="balk">
+    <a class="merk" href="/" data-link aria-label="De Ruimte, naar het begin">
+      <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><ellipse cx="16" cy="16" rx="13.5" ry="5" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-20 16 16)"/></svg>
+      <span class="merk-naam">de ruimte</span>
+    </a>
+    <div class="zoek" role="search">
+      <div class="zoek-rij">
+        <div class="zoek-pil">
+          <label class="sr" for="zoek">Zoek een hemellichaam</label>
+          <input id="zoek" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
+            placeholder="Zoek een planeet, maan of ster" role="combobox" aria-expanded="false" aria-controls="zoek-lijst" aria-autocomplete="list">
+          <ul id="zoek-lijst" class="zoek-lijst" role="listbox" hidden></ul>
+        </div>
+        <button class="knop-pil knop-donker zoek-knop" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Zoeken</button>
+        <a class="knop-pil knop-accent" href="/ontdek" data-link><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 6.3L20.5 12l-6.3 2.2L12 21l-2.2-6.8L3.5 12l6.3-2.7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Ontdek een hemellichaam</a>
+      </div>
+      <p class="zoek-melding" aria-live="polite"></p>
+    </div>
+    <nav class="balk-nav" aria-label="Hoofdmenu">
+      <a class="nav-knop" href="/vanavond" data-link aria-label="Wat zie je vanavond?"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Vanavond</span></a>
+      <a class="nav-knop" href="/onderzoekjes" data-link aria-label="Onderzoekjes met Fos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 11.5h6M9 15h3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Onderzoekjes</span></a>
+      <a class="nav-knop nav-knop-kids" href="/kinderen" data-link aria-label="Voor kinderen"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10.5" r="1.1" fill="currentColor"/><circle cx="15" cy="10.5" r="1.1" fill="currentColor"/><path d="M8.5 14.2c1.9 2.2 5.1 2.2 7 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Kinderen</span></a>
+      <a class="nav-knop nav-knop-mijn" href="/mijn" data-link aria-label="Mijn hemel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Mijn hemel</span><b class="nav-mijn-n" hidden></b></a>
+      <a class="nav-knop" href="/hemellichamen" data-link aria-label="Index van alle hemellichamen"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Index</span></a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <p class="laden" aria-live="polite"><span></span>Even de hemel ophalen…</p>
+    <noscript><p class="kolom">Deze site heeft JavaScript nodig om uit te rekenen wat er aan de hemel staat. Lees <a href="/hoe-dit-werkt">hoe dit werkt</a>.</p></noscript>
+  </main>
+
+  <footer class="voet">
+    <div class="voet-kolommen">
+      <div><h3>Data</h3><p>Getallen uit de NASA Planetary Fact Sheet, JPL en Wikidata, met een bron bij elk getal. Weetjes met de hand, elk met een bron die we nakijken. Posities uitgerekend in je browser met astronomy-engine. <a href="/hoe-dit-werkt">Hoe dit werkt</a></p></div>
+      <div><h3>Beeld</h3><p>Echte foto's van NASA, ESA en ESO, met de maker bij elke foto. Waar de kleuren versterkt of nagemaakt zijn, staat dat erbij. Geen AI-beelden. Sterren en lijnen van sterrenbeelden: d3-celestial. Letters: Geist en Geist Mono (OFL).</p></div>
+      <div><h3>Geluid</h3><p>In de ruimte is geen geluid. Wat je hier hoort, zijn metingen die hoorbaar zijn gemaakt (University of Iowa, CC BY 4.0) en één echte opname met een microfoon op Mars (NASA/JPL-Caltech).</p></div>
+      <div><h3>Privacy</h3><p>Geen cookies en geen bezoekersstatistiek. Je plek blijft in het geheugen van je browser en wordt niet bewaard. Mijn hemel en de onderzoekjes staan alleen op je eigen apparaat.</p></div>
+    </div>
+    <div class="voet-acties">
+      <a class="knop-pil" href="/hemellichamen" data-link>Alle hemellichamen</a>
+      <a class="knop-pil knop-accent" href="/vanavond" data-link>Wat zie je vanavond?</a>
+    </div>
+    <p class="voet-merk" aria-hidden="true">de ruimte</p>
+  </footer>
+
+  <div class="speler" id="speler" hidden>
+    <img class="speler-hoes" alt="" width="48" height="48">
+    <div class="speler-midden">
+      <a class="speler-naam" data-link></a>
+      <canvas class="speler-spectro" aria-hidden="true"></canvas>
+    </div>
+    <button class="knop-rond speler-knop" type="button" aria-label="Pauzeer"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="ring-bg" cx="22" cy="22" r="20"/><circle class="ring" cx="22" cy="22" r="20"/><path class="ico-pauze" d="M17 15v14M27 15v14"/><path class="ico-speel" d="M18 14l12 8-12 8z"/></svg></button>
+    <button class="speler-sluit" type="button" aria-label="Stop en sluit">×</button>
+  </div>
+</body>
+</html>

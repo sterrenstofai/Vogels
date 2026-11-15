@@ -1,0 +1,199 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "vrachtwagen": [
+   {
+    "tekst": "Een vrachtwagen is gemaakt om spullen te vervoeren. Met lading mag hij meer dan 3500 kilo wegen.",
+    "bron": "https://nl.wikipedia.org/wiki/Vrachtauto",
+    "controle": "is een motorvoertuig gemaakt voor het vervoeren van goederen en waarvan de maximaal toegestane massa meer dan 3.500 kilogram bedraagt",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Europa zie je het vaakst een trekker met een oplegger.",
+    "bron": "https://nl.wikipedia.org/wiki/Vrachtauto",
+    "controle": "de trekker met oplegger is in europa de meest voorkomende configuratie.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Voor een vrachtwagen heb je een eigen rijbewijs nodig: rijbewijs C, of CE als er een aanhanger of oplegger achter zit.",
+    "bron": "https://nl.wikipedia.org/wiki/Vrachtauto",
+    "controle": "voor het besturen van een vrachtauto is een europees rijbewijs nodig: rijbewijs c of rijbewijs ce",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een vrachtwagen met lading mag in Europa meestal hoogstens 40 ton wegen. Dat is zo zwaar als ongeveer 30 auto's.",
+    "bron": "https://nl.wikipedia.org/wiki/Vrachtauto",
+    "controle": "zo is bijvoorbeeld 40 ton het maximum.",
+    "gevonden": true
+   }
+  ],
+  "cabine": [
+   {
+    "tekst": "Bij deze vrachtwagen zit de chauffeur boven de motor. Dat heet frontstuur.",
+    "bron": "https://nl.wikipedia.org/wiki/Frontstuur",
+    "controle": "waarbij de bestuurder boven, naast of voor de motor is gepositioneerd.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De cabine kan naar voren kantelen. Dan kan de monteur goed bij de motor.",
+    "bron": "https://nl.wikipedia.org/wiki/Frontstuur",
+    "controle": "dit maakte de motor een stuk beter bereikbaar voor onderhoud",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een vrachtwagen heeft geen achterruit. Daarom kijkt de chauffeur in de spiegels buiten.",
+    "bron": "https://nl.wikipedia.org/wiki/Achteruitkijkspiegel",
+    "controle": "auto's zonder achterruit, zoals vracht- en sommige bestelauto's, hebben vaak alleen maar buitenspiegels.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Rond een vrachtwagen zijn plekken die de chauffeur niet kan zien. Dat heet de dode hoek. Blijf daar uit de buurt.",
+    "bron": "https://nl.wikipedia.org/wiki/Dode_hoek_(auto)",
+    "controle": "dode hoeken zijn die ruimten rond een voertuig die de chauffeur vanuit het voertuig niet kan waarnemen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een kastje in de cabine houdt bij hoe lang en hoe hard de chauffeur rijdt. Dat heet een tachograaf.",
+    "bron": "https://nl.wikipedia.org/wiki/Tachograaf_(wegvervoer)",
+    "controle": "een instrument dat de rijtijd en rijsnelheid van een vrachtauto of bus registreert",
+    "gevonden": true
+   }
+  ],
+  "motor": [
+   {
+    "tekst": "De motor is een dieselmotor. Daarin gaat de brandstof vanzelf branden, zonder vonkje.",
+    "bron": "https://nl.wikipedia.org/wiki/Dieselmotor",
+    "controle": "een dieselmotor is een verbrandingsmotor die werkt volgens het principe van zelfontbranding",
+    "gevonden": true
+   },
+   {
+    "tekst": "Lucht wordt warm als je hem samenperst. Pers je hem heel hard samen, dan wordt hij zo heet dat de brandstof vanzelf gaat branden.",
+    "bron": "https://nl.wikipedia.org/wiki/Dieselmotor",
+    "controle": "wordt lucht bij compressie warmer; bij grote compressie zelfs heet genoeg om brandstof spontaan te laten ontbranden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De dieselmotor is in 1893 bedacht door Rudolf Diesel.",
+    "bron": "https://nl.wikipedia.org/wiki/Dieselmotor",
+    "controle": "het dieselprincipe is uitgevonden in 1893 door rudolf diesel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een trekker heeft een sterke motor en veel versnellingen: 10, 13 of zelfs 18.",
+    "bron": "https://nl.wikipedia.org/wiki/Trekker_(vrachtwagen)",
+    "controle": "een transmissie met veel overbrengingen (10, 13 of 18 versnellingen)",
+    "gevonden": true
+   }
+  ],
+  "chassis": [
+   {
+    "tekst": "De koppelschotel is een ronde plaat met een sleuf in de vorm van een wig.",
+    "bron": "https://nl.wikipedia.org/wiki/Koppelschotel",
+    "controle": "een koppelschotel is een schotelvormige plaat, voorzien van een wigvormige sleuf",
+    "gevonden": true
+   },
+   {
+    "tekst": "Onder de oplegger zit een dikke pen. Die heet de kingpin en schuift in de sleuf van de koppelschotel.",
+    "bron": "https://nl.wikipedia.org/wiki/Koppelschotel",
+    "controle": "de oplegger is voorzien van een plaat met daarop een pen die men kingpin noemt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Zit de oplegger goed vast, dan hoor je vaak een klik.",
+    "bron": "https://nl.wikipedia.org/wiki/Koppelschotel",
+    "controle": "is vaak een klik hoorbaar van de koppelschotel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op de koppelschotel zit vet. Zo kan de oplegger soepel draaien in de bocht.",
+    "bron": "https://nl.wikipedia.org/wiki/Koppelschotel",
+    "controle": "om het scharnieren soepel te laten verlopen wordt de koppelschotel voorzien van een laag vet",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een vrachtwagen remt met lucht. Een pomp perst lucht samen en bewaart die in tanks onder de wagen.",
+    "bron": "https://en.wikipedia.org/wiki/Air_brake_(road_vehicle)",
+    "controle": "the air compressor draws filtered air from the atmosphere and compresses it, storing the compressed air in high-pressure reservoirs.",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Dubbellucht betekent: aan elke kant van de as twee wielen, dus vier in plaats van twee.",
+    "bron": "https://nl.wikipedia.org/wiki/Dubbellucht",
+    "controle": "waar vier in plaats van twee wielen op gemonteerd zijn: aan elke kant een stel.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Al meer dan honderd jaar zetten mensen vrachtwagenbanden in paren naast elkaar.",
+    "bron": "https://nl.wikipedia.org/wiki/Dubbellucht",
+    "controle": "vanaf het begin van de twintigste eeuw werden banden paarsgewijs op één velg gemonteerd",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Europa heeft meestal alleen de as die de trekker aandrijft dubbele wielen. De andere assen hebben enkele wielen.",
+    "bron": "https://en.wikipedia.org/wiki/Semi-trailer_truck",
+    "controle": "in europe, usually only the driven tractor axle has dual wheels, while single wheels are used for every other axle on the tractor and the trailer.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De assen van een vrachtwagen zijn stevige, rechte assen. Die zijn erg sterk.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchtvering",
+    "controle": "starre assen zijn over het algemeen een sterkere constructie vandaar de toepassing bij vrachtwagens",
+    "gevonden": true
+   }
+  ],
+  "oplegger": [
+   {
+    "tekst": "Een oplegger heeft voor geen wielen. Een groot deel van zijn gewicht rust op de trekker.",
+    "bron": "https://nl.wikipedia.org/wiki/Oplegger",
+    "controle": "die geen eigen vooras heeft en waarvan dus een belangrijk deel van het gewicht op het trekkend voertuig",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een gewone oplegger is 13,60 meter lang.",
+    "bron": "https://nl.wikipedia.org/wiki/Oplegger",
+    "controle": "de standaard lengte (13,60 meter)",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een trekker kan met elke oplegger rijden. Zo hoeft de chauffeur niet te wachten tot een oplegger geladen is.",
+    "bron": "https://nl.wikipedia.org/wiki/Oplegger",
+    "controle": "een trekker kan met elke oplegger rijden, zodat chauffeur en trekker niet op het laden en lossen hoeven te wachten.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Staat de oplegger los, dan staat hij op steunpoten.",
+    "bron": "https://en.wikipedia.org/wiki/Semi-trailer_truck",
+    "controle": "landing gear – legs for when semi-trailer is detached",
+    "gevonden": true
+   }
+  ],
+  "lichten": [
+   {
+    "tekst": "Een knipperlicht knippert ongeveer 90 keer per minuut.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingaanwijzer",
+    "controle": "de knipperfrequentie moet 90 per minuut zijn met een tolerantie van 30.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan de zijkant knippert het knipperlicht oranjegeel.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingaanwijzer",
+    "controle": "in de zijflanken moet de richtingaanwijzer oranjegeel knipperen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Knipperen links en rechts tegelijk? Dan waarschuwt de chauffeur voor gevaar.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingaanwijzer",
+    "controle": "ze knipperen dan gelijktijdig links en rechts.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Achter zit een rood remlicht. Dat gaat aan als de chauffeur remt.",
+    "bron": "https://nl.wikipedia.org/wiki/Remlicht",
+    "controle": "dat gaat branden als de rem in werking treedt.",
+    "gevonden": true
+   }
+  ]
+ }
+}

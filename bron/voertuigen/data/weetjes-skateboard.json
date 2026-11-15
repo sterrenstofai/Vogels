@@ -1,0 +1,209 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "skateboard": [
+   {
+    "tekst": "Een skateboard is een kleine plank op twee asjes die een beetje kunnen bewegen.",
+    "bron": "https://nl.wikipedia.org/wiki/Skateboard",
+    "controle": "is een kleine plank op twee flexibel bevestigde asjes",
+    "gevonden": true
+   },
+   {
+    "tekst": "Skateboarden is bedacht door surfers in Amerika, in de jaren vijftig. Ze wilden ook op het land kunnen surfen. Onder hun plank zetten ze wieltjes van rolschaatsen.",
+    "bron": "https://nl.wikipedia.org/wiki/Skateboarden",
+    "controle": "de sport werd in de jaren vijftig aan de westkust van de vs door surfers bedacht, door op land te surfen met onder hun surfboard gemonteerde rolschaatswielen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In het begin heette skateboarden 'stoepsurfen'.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "skateboarding was initially called \"sidewalk surfing,\"",
+    "gevonden": true
+   },
+   {
+    "tekst": "Staat je linkervoet voorop, dan rijd je 'regular'. Staat je rechtervoet voorop, dan rijd je 'goofy'.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "if the rider's leading foot is their left foot, they are said to ride \"regular\"",
+    "gevonden": true
+   },
+   {
+    "tekst": "Skateboarden was in 2020 voor het eerst een sport op de Olympische Spelen.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboarding",
+    "controle": "skateboarding made its olympic debut in 2020 and was included in the 2024 games.",
+    "gevonden": true
+   }
+  ],
+  "plank": [
+   {
+    "tekst": "De meeste planken zijn van esdoornhout. Dat hout is sterk, licht en het kan een beetje buigen.",
+    "bron": "https://nl.wikipedia.org/wiki/Skateboard",
+    "controle": "de meeste decks zoals we die nu kennen worden gemaakt van esdoornhout (maple), simpelweg omdat het sterk, licht en flexibel is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een plank bestaat meestal uit 7 of 8 dunne laagjes hout, op elkaar gelijmd.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "it is usually made of a specially designed 7–8-ply maple plywood deck",
+    "gevonden": true
+   },
+   {
+    "tekst": "De laagjes liggen kriskras over elkaar. Daardoor is de plank sterker dan een gewoon stuk hout dat even zwaar is.",
+    "bron": "https://nl.wikipedia.org/wiki/Multiplex_(plaatmateriaal)",
+    "controle": "door de gekruiste lagen is de plaat in sommige richtingen sterker dan massief hout van dezelfde afmetingen en hetzelfde gewicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De plank is in de breedte een beetje hol. Dat is nodig om trucjes te doen.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "the skateboard must be concave to perform tricks.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De meeste planken zijn 76 tot 81 centimeter lang.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboarding",
+    "controle": "30 to 32 inches (760 to 810 mm) long.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij een sprong (een ollie) trap je de staart hard op de grond. Dan wipt het bord omhoog.",
+    "bron": "https://en.wikipedia.org/wiki/Ollie_(skateboarding)",
+    "controle": "it is the combination of stomping (also known as popping) the tail of the skateboard off the ground",
+    "gevonden": true
+   }
+  ],
+  "griptape": [
+   {
+    "tekst": "Griptape zorgt ervoor dat je niet van je plank af glijdt.",
+    "bron": "https://nl.wikipedia.org/wiki/Skateboard",
+    "controle": "dit zorgt ervoor dat je niet van je board af glijdt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Griptape is ruw, net als schuurpapier. Aan de onderkant zit lijm.",
+    "bron": "https://en.wikipedia.org/wiki/Grip_tape",
+    "controle": "is a coarse, sandpaper-like material with an adhesive backing used on the deck of a skateboard",
+    "gevonden": true
+   },
+   {
+    "tekst": "Meestal is griptape helemaal zwart.",
+    "bron": "https://en.wikipedia.org/wiki/Grip_tape",
+    "controle": "the most common type of grip tape is a solid black color with a texture that resembles sandpaper.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Griptape koop je als een vel dat iets groter is dan de plank. Wat over is, snijd je eraf.",
+    "bron": "https://en.wikipedia.org/wiki/Grip_tape",
+    "controle": "skateboard grip tape comes as smooth sheets that are slightly longer and wider than an average skateboard deck.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er is ook griptape in andere kleuren, als versiering.",
+    "bron": "https://en.wikipedia.org/wiki/Grip_tape",
+    "controle": "grip tape is sometimes used decoratively, since it can come in many different styles and colors.",
+    "gevonden": true
+   }
+  ],
+  "trucks": [
+   {
+    "tekst": "Een truck heeft een hanger, die de as en de wielen vasthoudt, en een voet die aan de plank vastzit.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "they are made up of a hanger that holds the axle and wheels and a baseplate that is mounted to the board.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De kingpin houdt de hanger en de voet bij elkaar. Zo kan de truck draaien.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "the hanger and baseplate are joined by a kingpin, allowing the truck to swivel and turn.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Harde rubbertjes maken het bord stabiel. Met zachte rubbertjes maak je makkelijk een bocht.",
+    "bron": "https://nl.wikipedia.org/wiki/Skateboard",
+    "controle": "harde rubbers voor veel stabiliteit en weinig wendbaarheid",
+    "gevonden": true
+   },
+   {
+    "tekst": "Veel skaters kiezen trucks die even breed zijn als hun plank.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "many skateboarders choose trucks with width approximately equal to the width of the deck",
+    "gevonden": true
+   },
+   {
+    "tekst": "Tussen de plank en de truck zit soms een rubber plaatje van ongeveer 5 millimeter. Dat vangt de schok een beetje op.",
+    "bron": "https://nl.wikipedia.org/wiki/Skateboard",
+    "controle": "dit zijn hardrubberen plaatjes van ongeveer 5 mm dik die tussen het board en de baseplate worden gemonteerd.",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Een skateboard heeft meestal vier wielen, vast aan de trucks.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "there are typically four wheels on a skateboard that are attached to the trucks.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De wielen zijn ongeveer 5 centimeter groot. Kleine wielen zijn licht en handig voor trucjes.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "ranging in size from around 48mm to around 60mm, smaller wheels are lighter in weight and are used for shorter distances and tricks.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De wielen zijn van polyurethaan: een taai materiaal dat een beetje op rubber lijkt.",
+    "bron": "https://nl.wikipedia.org/wiki/Polyurethaan",
+    "controle": "dit wordt bijvoorbeeld toegepast in wieltjes van skateboards",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vroeger waren de wielen van metaal of van klei. Wielen van polyurethaan houden veel beter grip.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboarding",
+    "controle": "prior to this new material, skateboards wheels were metal or \"clay\" wheels.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Wielen groter dan 6 centimeter zitten meestal onder een longboard, een lang skateboard.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "wheels that are larger than 60mm are typically used for longboards.",
+    "gevonden": true
+   }
+  ],
+  "lagers": [
+   {
+    "tekst": "In elk wiel zitten twee kogellagers.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "each skateboard wheel is mounted on its axle via two ball bearings",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een kogellager is 22 millimeter groot en 7 millimeter breed.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "an outer diameter of 22 mm (0.866 inches) , and a width of 7 mm",
+    "gevonden": true
+   },
+   {
+    "tekst": "In een kogellager van een skateboard zitten meestal zeven kogeltjes.",
+    "bron": "https://en.wikipedia.org/wiki/Skateboard",
+    "controle": "skateboard bearings are typically 7-balled",
+    "gevonden": true
+   },
+   {
+    "tekst": "De kogeltjes rollen rond. Daardoor is er weinig wrijving en draait het wiel makkelijk.",
+    "bron": "https://nl.wikipedia.org/wiki/Kogellager",
+    "controle": "een kogellager is een rollend lager dat de wrijving van een draaibeweging vermindert door gebruik te maken van bolvormige kogels.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De kogeltjes zitten in een ring met gaatjes, de kooi. Zo blijven ze uit elkaar.",
+    "bron": "https://nl.wikipedia.org/wiki/Kogellager",
+    "controle": "een kooi is een ring met holtes die de kogels uit elkaar houdt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In 1869 bedacht een fietsenmaker in Parijs een nieuw soort kogellager. Het zat in de fiets die de eerste wegwedstrijd won.",
+    "bron": "https://en.wikipedia.org/wiki/Ball_bearing",
+    "controle": "which was then fitted to the winning bicycle ridden by james moore in the world's first bicycle road race",
+    "gevonden": true
+   }
+  ]
+ }
+}

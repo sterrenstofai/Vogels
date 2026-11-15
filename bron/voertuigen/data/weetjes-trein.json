@@ -1,0 +1,199 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "trein": [
+   {
+    "tekst": "Een trein bestaat uit delen op rails die aan elkaar vastzitten. Een of meer van die delen zorgen dat de trein rijdt.",
+    "bron": "https://nl.wikipedia.org/wiki/Trein",
+    "controle": "een trein is in de dagelijkse betekenis een voertuig bestaande uit een aantal aan elkaar gekoppelde kortere delen op rails",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een treinstel heeft een eigen motor en aan beide kanten een cabine.",
+    "bron": "https://nl.wikipedia.org/wiki/Treinstel",
+    "controle": "het geheel heeft eigen aandrijving en twee stuurstanden",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aan het eind van de rit kan een treinstel makkelijk de andere kant op rijden.",
+    "bron": "https://nl.wikipedia.org/wiki/Treinstel",
+    "controle": "treinstellen kunnen bij het eindstation gemakkelijk kopmaken",
+    "gevonden": true
+   },
+   {
+    "tekst": "De remmen van een trein werken met luchtdruk.",
+    "bron": "https://nl.wikipedia.org/wiki/Trein",
+    "controle": "bij treinen wordt de rem pneumatisch (door luchtdruk) bediend",
+    "gevonden": true
+   }
+  ],
+  "cabine": [
+   {
+    "tekst": "Een machinist hoeft niet te sturen zoals in een auto. De wielen op de rails houden de trein vanzelf op de goede weg.",
+    "bron": "https://nl.wikipedia.org/wiki/Machinist_(treinbestuurder)",
+    "controle": "een machinist hoeft de trein niet als een auto te sturen, want de trein wordt vanzelf in de juiste richting geleid door de wielen die over de rails rijden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Collega's noemen een machinist in Nederland 'meester'.",
+    "bron": "https://nl.wikipedia.org/wiki/Machinist_(treinbestuurder)",
+    "controle": "een nederlandse machinist wordt door zijn collega's aangesproken als 'meester'",
+    "gevonden": true
+   },
+   {
+    "tekst": "De machinist laat steeds met een knop zien dat hij oplet. Doet hij dat niet, dan remt de trein vanzelf tot hij stilstaat.",
+    "bron": "https://nl.wikipedia.org/wiki/Machinist_(treinbestuurder)",
+    "controle": "doet de machinist dat niet, of niet op de juiste wijze, dan komt de trein automatisch met een snelremming tot stilstand.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Achteraan een trein branden in Nederland een of twee rode lampen: het sluitsein.",
+    "bron": "https://nl.wikipedia.org/wiki/Sluitsein",
+    "controle": "een sluitsein bestaat in nederland normaal uit een of twee rode lichten op gelijke hoogte.",
+    "gevonden": true
+   }
+  ],
+  "wagen": [
+   {
+    "tekst": "Treinmensen noemen een wagen ook wel een bak.",
+    "bron": "https://nl.wikipedia.org/wiki/Spoorwegrijtuig",
+    "controle": "soms wordt het woord bak gebruikt om een rijtuig aan te duiden",
+    "gevonden": true
+   },
+   {
+    "tekst": "Eigenlijk is de bak alleen de kast van de wagen, zonder de wielen en de draaistellen.",
+    "bron": "https://nl.wikipedia.org/wiki/Spoorwegrijtuig",
+    "controle": "formeel is een bak een rijtuig of locomotief zonder de wielen en draaistellen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vroeger hadden veel treinwagens bij elk hokje een eigen deur naar buiten.",
+    "bron": "https://nl.wikipedia.org/wiki/Spoorwegrijtuig",
+    "controle": "veel spoorwegrijtuigen hadden bij elke coupé (elk compartiment) een buitendeur",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Amerika kwam de wagen met één lange ruimte met rijen stoelen, en deuren aan de uiteinden.",
+    "bron": "https://en.wikipedia.org/wiki/Passenger_railroad_car",
+    "controle": "a single long cabin with rows of seats, with doors located at the ends of the car.",
+    "gevonden": true
+   }
+  ],
+  "draaistel": [
+   {
+    "tekst": "Een draaistel is een klein wagentje onder de trein dat om een rechtopstaande as kan draaien.",
+    "bron": "https://nl.wikipedia.org/wiki/Draaistel",
+    "controle": "een draaistel is een klein wagentje, rond een verticale as",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij elektrische treinen zitten de motoren in het draaistel.",
+    "bron": "https://nl.wikipedia.org/wiki/Draaistel",
+    "controle": "worden de elektrische tractiemotoren in het draaistel ingebouwd.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De flens raakt de rail bijna alleen in scherpe bochten.",
+    "bron": "https://nl.wikipedia.org/wiki/Spoorstaaf",
+    "controle": "de flens raakt de rail eigenlijk alleen bij krappe bogen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een gewoon treinwiel is 92 centimeter hoog.",
+    "bron": "https://en.wikipedia.org/wiki/Train_wheel",
+    "controle": "has defined a standard wheel diameter of 920 mm",
+    "gevonden": true
+   }
+  ],
+  "stroomafnemer": [
+   {
+    "tekst": "In de bovenleiding zit een heel hoge spanning. Bij bruggen over het spoor hangen borden: draden aanraken is levensgevaarlijk. Kom er nooit aan en kom er niet in de buurt.",
+    "bron": "https://nl.wikipedia.org/wiki/Bovenleiding",
+    "controle": "aanraken draden levensgevaarlijk",
+    "gevonden": true
+   },
+   {
+    "tekst": "De stroomafnemer heet ook pantograaf, naar een oud tekenapparaat dat er een beetje op lijkt.",
+    "bron": "https://nl.wikipedia.org/wiki/Stroomafnemer",
+    "controle": "een pantograaf is genoemd naar de pantograaf",
+    "gevonden": true
+   },
+   {
+    "tekst": "De rijdraad hangt in een zigzag. Zo slijt de stroomafnemer overal even veel.",
+    "bron": "https://nl.wikipedia.org/wiki/Stroomafnemer",
+    "controle": "hiermee wordt bereikt dat de pantograaf gelijkmatig afslijt tijdens het rijden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De rijdraad hangt met hangdraden aan de draagkabel. Zo zakt hij bijna niet door.",
+    "bron": "https://nl.wikipedia.org/wiki/Bovenleiding",
+    "controle": "met hangdraden wordt de rijdraad aan de draagkabel opgehangen",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Nederland hangt de rijdraad tussen 5,10 en 5,50 meter boven de rails.",
+    "bron": "https://nl.wikipedia.org/wiki/Bovenleiding",
+    "controle": "in nederland tussen 5,10 meter en 5,50 meter boven de kop van de spoorstaaf.",
+    "gevonden": true
+   }
+  ],
+  "spoor": [
+   {
+    "tekst": "Een rail is een stalen staaf waar de wielen van de trein overheen rijden.",
+    "bron": "https://nl.wikipedia.org/wiki/Spoorstaaf",
+    "controle": "een rail of spoorstaaf is een stalen staaf waarover de wielen van een spoorvoertuig rijden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bijna overal liggen de rails 1435 millimeter uit elkaar. Dat heet normaalspoor.",
+    "bron": "https://nl.wikipedia.org/wiki/Spoorwijdte",
+    "controle": "verreweg de meest voorkomende spoorwijdte is 1435 mm.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De dwarsliggers dragen de rails en houden ze precies even ver uit elkaar.",
+    "bron": "https://nl.wikipedia.org/wiki/Dwarsligger_(spoor)",
+    "controle": "de dwarsliggers dragen de spoorstaven en de treinen die daar overheen rijden en houden de beide spoorstaven in de gewenste spoorwijdte uit elkaar.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De stenen van de ballast houden het spoor stevig, dempen het trillen en laten regenwater weglopen.",
+    "bron": "https://nl.wikipedia.org/wiki/Ballastbed",
+    "controle": "het ballastbed zorgt voor stabiliteit, het dempen van de trillingen en voor de afvoer van overtollig regenwater.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het woord ballast komt van schepen: daar gebruikte men stenen om het schip stabiel te houden.",
+    "bron": "https://en.wikipedia.org/wiki/Track_ballast",
+    "controle": "comes from a nautical term for the stones used to stabilize a ship.",
+    "gevonden": true
+   }
+  ],
+  "koppeling": [
+   {
+    "tekst": "Een automatische koppeling kan de machinist vanuit de cabine vastmaken en losmaken.",
+    "bron": "https://nl.wikipedia.org/wiki/Scharfenbergkoppeling",
+    "controle": "deze koppeling maakt het mogelijk om materieel vanuit de machinistencabine automatisch te koppelen en ontkoppelen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In Nederland zit die koppeling sinds 1964 op 1 meter hoogte.",
+    "bron": "https://nl.wikipedia.org/wiki/Scharfenbergkoppeling",
+    "controle": "bij de nederlandse spoorwegen is sinds 1964 de hoogte 1 meter",
+    "gevonden": true
+   },
+   {
+    "tekst": "Omdat koppelen snel gaat, kan een trein voor de spits langer worden gemaakt en daarna weer korter.",
+    "bron": "https://nl.wikipedia.org/wiki/Treinstel",
+    "controle": "dankzij de vlotte koppeling en ontkoppeling kan voor en na het spitsuur de treinlengte worden aangepast aan de drukte.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met de balg tussen de wagens kun je van wagen naar wagen lopen zonder dat je uit de trein kunt vallen.",
+    "bron": "https://en.wikipedia.org/wiki/Gangway_connection",
+    "controle": "enabling passengers to move between coaches without danger of falling from the train.",
+    "gevonden": true
+   }
+  ]
+ }
+}

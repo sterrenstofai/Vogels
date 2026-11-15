@@ -1,0 +1,211 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "step": [
+   {
+    "tekst": "Een step heeft twee wielen en geen motor. Je zet af met je been.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "is een ongemotoriseerd tweewielig vervoermiddel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op een goede step kun je lang 30 kilometer per uur rijden.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "op een goed ontworpen step kunnen langdurig snelheden van 30 km/h gehaald worden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In een film uit 1922 over de straten van Amsterdam zie je al kinderen op een step.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "from 1922 shows several children on scooters.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Na de Tweede Wereldoorlog werd de step vooral speelgoed voor kinderen.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "na de tweede wereldoorlog is de step meer bekend geworden als kinderspeelgoed.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In de oorlog reden veel mensen op een step, omdat er bijna geen onderdelen voor fietsen waren.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "veel gebruikt in verband met de schaarste aan fietsonderdelen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vroeger maakten kinderen zelf een step: wieltjes van een rolschaats onder een plank, met een oude kist als stuur.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "one common home-made version is made by attaching roller skate wheelsets to a board with some kind of handle, usually an old box.",
+    "gevonden": true
+   }
+  ],
+  "plank": [
+   {
+    "tekst": "Bij een step is het belangrijk hoe hoog de plank boven de weg zit.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "maar juist voor de step geldt dat de plankhoogte boven het wegdek belangrijk is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De meeste steps zijn nu van aluminium, titanium of staal.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "today the most common scooters are made of aluminum",
+    "gevonden": true
+   },
+   {
+    "tekst": "Aluminium is licht: het weegt maar een derde van staal.",
+    "bron": "https://nl.wikipedia.org/wiki/Aluminium",
+    "controle": "aluminium is licht (slechts een derde van het gewicht van staal of brons",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een standaard is een stukje metaal dat je uitklapt tot op de grond. Dan blijft de step staan.",
+    "bron": "https://en.wikipedia.org/wiki/Kickstand",
+    "controle": "a kickstand is usually a piece of metal that flips down from the frame and makes contact with the ground.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij een fiets zit de standaard meestal links, net als bij deze step.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsstandaard",
+    "controle": "meestal bevindt de standaard zich aan de linkerkant van de fiets",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een standaard werkt niet goed als het hard waait.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsstandaard",
+    "controle": "een standaard werkt niet goed als het hard waait.",
+    "gevonden": true
+   }
+  ],
+  "stuur": [
+   {
+    "tekst": "Een stuur is vaak een buis van staal of aluminium.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsstuur",
+    "controle": "veelgebruikte materialen zijn een pijp van staal of aluminium",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op het stuur zitten handvatten van zacht materiaal. Dat zit fijner en je hebt meer grip.",
+    "bron": "https://nl.wikipedia.org/wiki/Fietsstuur",
+    "controle": "schuimrubberachtige materialen of stuurlinten zodat het comfort met de grip verbetert",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een step met drie wielen voor kleine kinderen stuur je soms door te leunen.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "uses a spring-loaded system to translate lateral force on the handbars (child leaning) into turning motion on the wheels",
+    "gevonden": true
+   }
+  ],
+  "stuurstang": [
+   {
+    "tekst": "In 1990 werd in Zwitserland een step van aluminium gemaakt die je kunt inklappen.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "a foldable aluminium scooter with inline skates wheels was created by wim ouboter",
+    "gevonden": true
+   },
+   {
+    "tekst": "Daarna werden kleine inklapbare steps over de hele wereld populair, vooral als speelgoed.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "it later became a worldwide fad and these small scooters also became popular toys for children.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De klem met het hendeltje heet een snelspanner. Die zit ook op fietsen, bijvoorbeeld bij het zadel.",
+    "bron": "https://en.wikipedia.org/wiki/Quick_release_skewer",
+    "controle": "similar quick-release mechanisms are also used to operate seatpost clamps, and the collapsing stem of folding bicycles and kick scooters",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een step neemt weinig ruimte in om weg te zetten.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "omdat er relatief weinig ruimte nodig is voor stalling en opstappen.",
+    "gevonden": true
+   }
+  ],
+  "vork": [
+   {
+    "tekst": "De voorvork houdt het voorwiel vast, bij een step en bij een fiets.",
+    "bron": "https://nl.wikipedia.org/wiki/Voorvork",
+    "controle": "vormt de voorwielophanging van een step",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bovenaan draait de voorvork in het balhoofd.",
+    "bron": "https://nl.wikipedia.org/wiki/Voorvork",
+    "controle": "aan de bovenzijde draait de voorvork in het balhoofd",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het balhoofd is een buis met aan elk eind een lager. Daarin draait de as van het stuur.",
+    "bron": "https://nl.wikipedia.org/wiki/Balhoofd_(voertuigtechniek)",
+    "controle": "het balhoofd bestaat uit een buis waaraan aan de beide uiteinden een lager is aangebracht",
+    "gevonden": true
+   },
+   {
+    "tekst": "Is het balhoofd versleten, dan zit het stuur los en wiebelt het.",
+    "bron": "https://nl.wikipedia.org/wiki/Balhoofd_(voertuigtechniek)",
+    "controle": "als het balhoofd is versleten treedt speling op in het stuur.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een step lijkt op een fiets: de wielen en de schuine stuuras zijn bijna hetzelfde.",
+    "bron": "https://nl.wikipedia.org/wiki/Step",
+    "controle": "zoals wielgrootte en helling van de stuuras",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Vroeger hadden steps houten wieltjes van 7 tot 10 centimeter, met kogellagers van staal.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "with 3–4 inch (75–100 mm) wheels containing steel ball bearings",
+    "gevonden": true
+   },
+   {
+    "tekst": "In elk wiel zitten kogellagers. Daardoor draait het wiel makkelijk om de as.",
+    "bron": "https://nl.wikipedia.org/wiki/Kogellager",
+    "controle": "het wiel kan dan met weinig wrijving ronddraaien, ondanks het feit dat er een flink gewicht op de as drukt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Polyurethaan, het materiaal van de banden, gebruik je ook voor de wielen van een achtbaan.",
+    "bron": "https://nl.wikipedia.org/wiki/Polyurethaan",
+    "controle": "wielen en zwenkwielen voor industrieel intern transport en achtbanen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er bestaat ook een step met een groot fietswiel voor en een klein wiel achter. Daarmee ga je veel harder.",
+    "bron": "https://en.wikipedia.org/wiki/Kick_scooter",
+    "controle": "the kickbike has a large standard size bicycle front wheel and a much smaller rear wheel, which allows for a much faster ride.",
+    "gevonden": true
+   }
+  ],
+  "rem": [
+   {
+    "tekst": "Een spatbord vangt het water en de modder op die van de band spatten. Zo blijf je schoon.",
+    "bron": "https://en.wikipedia.org/wiki/Fender_(vehicle)",
+    "controle": "these catch and redirect road spray thrown up by the tires, allowing the rider to remain clean.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Heel oude fietsen hadden ook een rem die gewoon op de band drukte.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_brake",
+    "controle": "which were fitted with a spoon brake to press onto the rear wheel.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er bestond ook een fietsrem die je met je voet tegen de band drukte, net als bij een step.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_brake",
+    "controle": "this is depressed against the front tyre by the rider's foot.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een rem die op de band drukt, laat de band snel slijten.",
+    "bron": "https://en.wikipedia.org/wiki/Bicycle_brake",
+    "controle": "increases tyre wear dramatically.",
+    "gevonden": true
+   }
+  ]
+ }
+}

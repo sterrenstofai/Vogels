@@ -1,0 +1,91 @@
+{
+ "zon": [
+  {
+   "bestand": "https://space.physics.uiowa.edu/plasma-wave/space-audio/t2003_301_11.wav",
+   "pagina": "https://space.physics.uiowa.edu/plasma-wave/space-audio/typeIII.html",
+   "soort": "plasma",
+   "titel": "Radio-uitbarstingen van de zon",
+   "uitleg": "Uitbarstingen op de zon sturen elektrische golven de ruimte in. Een antenne van een ruimtesonde vangt ze op; hier zijn ze hoorbaar gemaakt.",
+   "credit": "Original space audio recordings provided courtesy of NASA and The University of Iowa. https://space-audio.org/",
+   "licentie": "CC BY 4.0",
+   "pad": "/klanken/zon.mp3",
+   "duur": 15.3,
+   "ingekort": false
+  }
+ ],
+ "aarde": [
+  {
+   "bestand": "https://space.physics.uiowa.edu/plasma-wave/space-audio/sounds/EarthChorus/earchor.mp3",
+   "pagina": "https://space.physics.uiowa.edu/plasma-wave/space-audio/sounds/",
+   "soort": "plasma",
+   "titel": "Het ochtendkoor rond de aarde",
+   "uitleg": "Elektrische golven hoog boven de aarde, in de stralingsgordels. Ze klinken als fluitende vogels, daarom heten ze 'chorus' (koor). Gemeten met een antenne, niet met een microfoon.",
+   "credit": "Original space audio recordings provided courtesy of NASA and The University of Iowa. https://space-audio.org/",
+   "licentie": "CC BY 4.0",
+   "pad": "/klanken/aarde.mp3",
+   "duur": 18.6,
+   "ingekort": false
+  }
+ ],
+ "mars": [
+  {
+   "bestand": "https://assets.science.nasa.gov/content/dam/science/psd/mars/downloadable_items/4/5/45857_FILTERED_HIGHLIGHTS_-_Sol16RoverDriveHighlights.mp3",
+   "pagina": "https://science.nasa.gov/resource/sounds-of-perseverance-mars-rover-driving-sol-16-90-second-highlights/",
+   "soort": "opname",
+   "titel": "Perseverance rijdt over Mars",
+   "uitleg": "Een echte opname met een microfoon op Mars, maart 2021: de wielen van de robotauto Perseverance op de stenen. NASA heeft drie stukjes achter elkaar gezet en ruis weggefilterd.",
+   "credit": "NASA/JPL-Caltech",
+   "licentie": "NASA-mediarichtlijnen",
+   "pad": "/klanken/mars.mp3",
+   "duur": 60.0,
+   "ingekort": true
+  }
+ ],
+ "jupiter": [
+  {
+   "bestand": "https://space.physics.uiowa.edu/plasma-wave/space-audio/sounds/JupiterChorus/jov-chor.mp3",
+   "pagina": "https://space.physics.uiowa.edu/plasma-wave/space-audio/sounds/",
+   "soort": "plasma",
+   "titel": "Het koor rond Jupiter",
+   "uitleg": "Elektrische golven rond Jupiter, opgevangen met een antenne van een ruimtesonde en hoorbaar gemaakt.",
+   "credit": "Original space audio recordings provided courtesy of NASA and The University of Iowa. https://space-audio.org/",
+   "licentie": "CC BY 4.0",
+   "pad": "/klanken/jupiter.mp3",
+   "duur": 58.5,
+   "ingekort": false
+  },
+  {
+   "host": false,
+   "pagina": "https://chandra.si.edu/sound/jupiter.html",
+   "soort": "sonificatie",
+   "titel": "Jupiter in röntgenlicht, als muziek (Chandra)",
+   "credit": "NASA/CXC/SAO/K.Arcand, SYSTEM Sounds",
+   "licentie": "Chandra"
+  }
+ ],
+ "saturnus": [
+  {
+   "bestand": "https://space.physics.uiowa.edu/plasma-wave/space-audio/cassini/SKR1/SKR-03-324.wav",
+   "pagina": "https://space.physics.uiowa.edu/plasma-wave/space-audio/cassini/SKR1/",
+   "soort": "plasma",
+   "titel": "Radiogolven van Saturnus",
+   "uitleg": "Radiogolven uit het noorderlicht van Saturnus, opgevangen door Cassini. Ze zijn zo hoog dat je ze niet hoort; ze zijn langzamer afgespeeld zodat ze lager klinken.",
+   "credit": "Original space audio recordings provided courtesy of NASA and The University of Iowa. https://space-audio.org/",
+   "licentie": "CC BY 4.0",
+   "pad": "/klanken/saturnus.mp3",
+   "duur": 60.2,
+   "ingekort": true
+  }
+ ],
+ "titan": [
+  {
+   "host": false,
+   "pagina": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens/Sounds_of_an_alien_world",
+   "soort": "reconstructie",
+   "titel": "Huygens valt door de lucht van Titan (ESA)",
+   "credit": "ESA",
+   "licentie": "ESA",
+   "uitleg": "ESA zegt zelf dat dit een reconstructie in het lab is van wat de microfoons van Huygens hoorden, geen ruwe opname."
+  }
+ ]
+}

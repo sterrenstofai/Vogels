@@ -1,0 +1,193 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "bus": [
+   {
+    "tekst": "Het woord bus komt van omnibus. Dat is Latijn en betekent: voor iedereen.",
+    "bron": "https://nl.wikipedia.org/wiki/Autobus",
+    "controle": "het latijnse woord \"omnibus\" betekent \"voor iedereen\"",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vroeger reed er een omnibus: een grote wagen die door paarden werd getrokken.",
+    "bron": "https://nl.wikipedia.org/wiki/Autobus",
+    "controle": "werd openbaar vervoer uitgevoerd met een omnibus",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een gewone stadsbus is 12 meter lang. Een bus met een knik in het midden is 18 meter.",
+    "bron": "https://nl.wikipedia.org/wiki/Autobus",
+    "controle": "de gelede bussen (18 meter, 3 assen)",
+    "gevonden": true
+   },
+   {
+    "tekst": "Buiten de stad mag een bus in Nederland meestal 80 kilometer per uur rijden.",
+    "bron": "https://nl.wikipedia.org/wiki/Autobus",
+    "controle": "in nederland is de maximumsnelheid van autobussen buiten de bebouwde kom in principe 80 km/h.",
+    "gevonden": true
+   }
+  ],
+  "deuren": [
+   {
+    "tekst": "Een stadsbus heeft meer of bredere deuren dan een bus die tussen dorpen rijdt.",
+    "bron": "https://nl.wikipedia.org/wiki/Stadsbus",
+    "controle": "de stadsbus heeft meestal ook meer of bredere deuren dan een streekbus",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij een bus met een lage vloer stap je in zonder trapje. De instap is ongeveer 34 centimeter hoog.",
+    "bron": "https://nl.wikipedia.org/wiki/Lagevloerbus",
+    "controle": "deze bussen hebben een verlaagde in- en uitstap van circa 34 centimeter waardoor er geen treden nodig zijn.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Sommige bussen kunnen knielen: ze zakken bij de halte een stukje omlaag.",
+    "bron": "https://nl.wikipedia.org/wiki/Autobus",
+    "controle": "sommige bussen beschikken over een knielfunctie.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Knielen maakt de stap naar binnen kleiner.",
+    "bron": "https://en.wikipedia.org/wiki/Air_suspension",
+    "controle": "this helps reduce the step height for easy passenger ingress.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Knielen kan alleen als de bus stilstaat.",
+    "bron": "https://en.wikipedia.org/wiki/Low-floor_bus",
+    "controle": "which can be used when the bus is not in motion, tilting it or lowering it at the front axle even further",
+    "gevonden": true
+   }
+  ],
+  "binnen": [
+   {
+    "tekst": "Een bus van 12 meter heeft ongeveer 30 zitplaatsen.",
+    "bron": "https://nl.wikipedia.org/wiki/Stadsbus",
+    "controle": "zo heeft een 12-meterbus zo'n 30 zitplaatsen",
+    "gevonden": true
+   },
+   {
+    "tekst": "In een stadsbus zijn minder stoelen en meer plek om te staan. Je rijdt er meestal maar een kort stukje mee.",
+    "bron": "https://nl.wikipedia.org/wiki/Stadsbus",
+    "controle": "stadsbussen hebben minder zitplaatsen en meer staanplaatsen in vergelijking tot streekbussen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Boven de wielen zit een bult in de vloer: de wielbak. Daarom staan niet alle stoelen op de lage vloer.",
+    "bron": "https://nl.wikipedia.org/wiki/Stadsbus",
+    "controle": "om álle zitplaatsen op de lage vloer te plaatsen",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met een plank die uitschuift, kan iemand in een rolstoel de bus in rijden.",
+    "bron": "https://nl.wikipedia.org/wiki/Lagevloerbus",
+    "controle": "uitgerust met een uitschuifbare oprijplaat om een rolstoel de bus in te kunnen rijden.",
+    "gevonden": true
+   }
+  ],
+  "chauffeur": [
+   {
+    "tekst": "De chauffeur bestuurt de bus en brengt mensen waar ze heen willen.",
+    "bron": "https://nl.wikipedia.org/wiki/Buschauffeur",
+    "controle": "een buschauffeur is de bestuurder van een touringcar of autobus die gebruikt wordt voor het verrichten van personenvervoer",
+    "gevonden": true
+   },
+   {
+    "tekst": "Voor een bus heb je een eigen rijbewijs nodig: rijbewijs D.",
+    "bron": "https://nl.wikipedia.org/wiki/Autobus",
+    "controle": "voor het besturen van een bus is een additioneel rijbewijs nodig: binnen de eu is dat rijbewijs d.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vlak voor een grote auto kan de chauffeur de straat niet goed zien. Kleine kinderen ziet hij daar soms niet.",
+    "bron": "https://nl.wikipedia.org/wiki/Dode_hoek_(voertuig)",
+    "controle": "kleine kinderen die vlak voor een stilstaande auto de straat oversteken, worden zo over het hoofd gezien.",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Om elk wiel zit een band van rubber, met lucht erin.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchtband",
+    "controle": "een luchtband is een (meestal van rubber gemaakte) opblaasbare omhulling gemonteerd op de velg van een wiel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een bus veert op lucht: tussen de wielen en de bus zitten kussens met lucht.",
+    "bron": "https://en.wikipedia.org/wiki/Air_suspension",
+    "controle": "air springs are used in bus suspensions due to a wide range of advantages over mechanical springs.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Stappen er veel mensen in, dan komt er meer lucht in de kussens. Zo blijft de bus even hoog.",
+    "bron": "https://en.wikipedia.org/wiki/Air_suspension",
+    "controle": "air suspension can adjust to different vehicle weights by increasing the pressure in the air bag",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bijna alle bussen met een lage vloer worden aangedreven door de achterwielen.",
+    "bron": "https://en.wikipedia.org/wiki/Low-floor_bus",
+    "controle": "almost all are rear-engine, rear-wheel-drive layout",
+    "gevonden": true
+   }
+  ],
+  "dak": [
+   {
+    "tekst": "Een elektrische bus rijdt op een elektromotor. De stroom komt uit een accu.",
+    "bron": "https://nl.wikipedia.org/wiki/Elektrische_bus",
+    "controle": "een elektrische bus is een autobus die wordt aangedreven door een elektromotor die van stroom voorzien wordt door een accu.",
+    "gevonden": true
+   },
+   {
+    "tekst": "'s Nachts staat de bus in de stalling. Dan wordt de accu weer helemaal vol geladen.",
+    "bron": "https://nl.wikipedia.org/wiki/Elektrische_bus",
+    "controle": "'s nachts in de stalling wordt de accu weer volledig opgeladen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Sommige elektrische bussen laden ook even bij aan het eind van een rit, als ze daar een tijdje stilstaan.",
+    "bron": "https://nl.wikipedia.org/wiki/Elektrische_bus",
+    "controle": "omdat de bus ook wordt opgeladen bij haltes waar de bus enige tijd stil staat, zoals eindpunten en overstaphaltes.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Als de bus remt, werkt de motor andersom. Dan maakt hij stroom en laadt hij de accu een beetje op.",
+    "bron": "https://en.wikipedia.org/wiki/Regenerative_braking",
+    "controle": "regenerative brakes work by driving an electric motor in reverse to recapture energy that would otherwise be lost as heat during braking",
+    "gevonden": true
+   }
+  ],
+  "lichten": [
+   {
+    "tekst": "De koplampen laten ander verkeer zien dat er een bus aankomt.",
+    "bron": "https://nl.wikipedia.org/wiki/Koplamp",
+    "controle": "een koplamp dient om ander verkeer te laten zien dat er een voertuig aan komt.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Opzij knippert het lampje oranje als de bus afslaat.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingaanwijzer",
+    "controle": "in de zijflanken moet de richtingaanwijzer oranjegeel knipperen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een knipperlicht knippert ongeveer 90 keer per minuut.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingaanwijzer",
+    "controle": "de knipperfrequentie moet 90 per minuut zijn met een tolerantie van 30.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Rond een groot voertuig zijn plekken die de chauffeur niet kan zien. Dat heet de dode hoek.",
+    "bron": "https://nl.wikipedia.org/wiki/Dode_hoek_(voertuig)",
+    "controle": "dode hoeken zijn die ruimten rond een voertuig die de chauffeur vanuit het voertuig niet kan waarnemen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Daarom zijn er extra spiegels, net onder of boven de gewone spiegel.",
+    "bron": "https://nl.wikipedia.org/wiki/Dode_hoek_(voertuig)",
+    "controle": "deze dodehoekspiegel wordt onder of boven de zijspiegel van het voertuig gemonteerd.",
+    "gevonden": true
+   }
+  ]
+ }
+}

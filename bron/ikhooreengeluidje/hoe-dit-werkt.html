@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hoe dit werkt · ikhooreengeluidje</title>
+  <meta name="description" content="Waar de gegevens vandaan komen, wat de site niet weet en wat er met je gegevens gebeurt.">
+  <meta name="color-scheme" content="only light">
+  <link rel="stylesheet" href="/css/stijl.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="kop-eenvoudig">
+    <a class="merk" href="/" aria-label="ikhooreengeluidje, naar het begin">
+      <svg class="merk-icoon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 13v6M11.5 9.5v13M16 6v20M20.5 10.5v11M25 14v4" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span class="merk-naam">ikhooreengeluidje</span>
+    </a>
+    <a class="knop-pil" href="/">Naar de nummers</a>
+  </header>
+  <main class="kolom tekst">
+    <p class="etiket">Hoe dit werkt</p>
+    <h1>Wat de site weet, en wat <span class="accent">niet</span></h1>
+
+    <h2>Wie speelt wat</h2>
+    <p>De credits komen uit twee open databases: <a href="https://musicbrainz.org">MusicBrainz</a> en <a href="https://www.discogs.com">Discogs</a>. Allebei worden ze bijgehouden door vrijwilligers, en allebei zijn ze vrij te gebruiken (CC0). Bij elke naam staat uit welke van de twee hij komt.</p>
+    <p>Wat je moet weten:</p>
+    <ul>
+      <li>Credits kunnen onvolledig zijn. Bij nieuwe nummers staan er vaak nog geen in.</li>
+      <li>Dezelfde muzikant staat soms onder twee namen, omdat de databases hem anders schrijven.</li>
+      <li>De databases zeggen meestal alleen "drumcomputer" of "synthesizer", niet welke. Welk apparaat precies (een Roland CR-78, een LinnDrum) zoeken we met de hand op, met een bron erbij.</li>
+      <li>Een klassiek stuk heeft geen credits per instrument. Daar staat de bezetting uit de partituur.</li>
+    </ul>
+
+    <h2>Zoeken in alle nummers</h2>
+    <p>Staat een nummer niet in onze lijst, dan kun je het zoeken. Je browser vraagt dan iTunes om het nummer en het fragment, en MusicBrainz om de credits en samples. Dat gaat rechtstreeks van jouw browser naar die twee; wij zitten er niet tussen en bewaren niets. Er zijn geen weetjes of apparaten met de hand bij gezet, en de credits kunnen ontbreken of fout zijn. Staat het nummer toch in onze lijst, dan gaat de site naar die nagekeken pagina.</p>
+
+    <h2>Nagekeken of niet</h2>
+    <p>Bij nummers met het label <span class="label">nagekeken</span> zijn de weetjes, apparaten en samples met de hand gecontroleerd. Elk weetje heeft een bron, meestal Wikipedia. Bij de andere nummers staat alleen wat de databases weten.</p>
+
+    <h2>Samples</h2>
+    <p>Een sample is een stukje uit een ouder nummer dat in een nieuw nummer is gezet. Soms is het geen knipsel, maar opnieuw ingespeeld: dan staat er "nagespeeld". De samples komen uit MusicBrainz en uit onze eigen controle. De meest complete lijst staat op WhoSampled; daar linken we naar, maar we halen er niets van op.</p>
+
+    <h2>Het fragment en het geluidsbeeld</h2>
+    <p>Het fragment van 30 seconden komt van iTunes en wordt alleen gestreamd: het staat niet op onze server en wordt niet bewaard. Welk stuk van het nummer je hoort, kiest iTunes. Het hele nummer luister je in Apple Music.</p>
+    <p>Het geluidsbeeld (een spectrogram) wordt in je eigen browser uitgerekend uit dat fragment. Onderin zitten de lage tonen, bovenin de hoge.</p>
+
+    <h2>Sporen</h2>
+    <p>Bij elk nummer zie je eerst een <strong>simulatie</strong> van de sporen: een baan per instrument, met blokjes zoals in een muziekprogramma. Welke instrumenten erin zitten, is echt: dat komt uit de credits en onze eigen controle. Hoe de blokjes staan, is nagemaakt: zo speelt zo'n instrument meestal (de bas laag op de tel, de zang in zinnetjes, strijkers lang aangehouden), niet precies in dit nummer. Afspelen gaat met klanken die je browser zelf maakt. Het tempo is echt als er "volgens Deezer" bij staat. Bij een paar nummers staat de opbouw erbij, met de hand nagekeken en met een bron: welke instrumenten er aan het begin zijn en wanneer de rest erbij komt. Die stappen zijn echt; de blokjes in elke stap blijven nagemaakt.</p>
+    <p>Een nummer wordt in de studio opgenomen op losse sporen: een voor de zang, een voor de drums, enzovoort. Die sporen zijn bijna nooit openbaar. Op <a href="/sporen">de pagina Sporen</a> kun je een muziekbestand van je eigen apparaat openen. Een computerprogramma probeert dan de zang, de drums, de bas en de rest los te halen. Dat is altijd een schatting.</p>
+    <ul>
+      <li>Het programma is HTDemucs, gemaakt door Meta en vrij te gebruiken (MIT). Het draait in je eigen browser, via ONNX Runtime Web (Microsoft, MIT) en demucs-web (MIT). Je bestand wordt niet geüpload.</li>
+      <li>De eerste keer downloadt je browser het rekenmodel: 181 MB, van Hugging Face. Je browser controleert of het precies het goede bestand is en bewaart het daarna op je apparaat. Hugging Face ziet daarbij je IP-adres, net als bij elke download.</li>
+      <li>We halen hooguit een minuut uit elkaar. Een heel nummer past niet in het geheugen van een telefoon. Op een computer duurt een minuut een paar minuten rekenen; met een grafische kaart (WebGPU) gaat het sneller.</li>
+      <li>Hoe goed is het? We vergeleken het met de gewone versie van Demucs op dezelfde opname. Zang, drums en bas lopen bijna precies gelijk op (samenhang 0,99, 0,96 en 0,90). "Overig" wijkt meer af (0,52): daar komt alles terecht wat geen zang, drums of bas is, en wat het programma niet zeker weet.</li>
+      <li>Fragmenten van iTunes mogen we niet bewerken. Daarom werkt dit alleen op je eigen bestanden.</li>
+    </ul>
+
+    <h2>Voor kinderen</h2>
+    <p>Op <a href="/kinderen">de kinderpagina</a> zie je een groot instrument. Tik erop en je toestel zegt de naam (met de stem die op je toestel staat). Met de grote knop hoor je het instrument: drie noten, do, mi en sol. Die klanken komen uit de <a href="https://theremin.music.uiowa.edu/MIS.html">Musical Instrument Samples</a> van de University of Iowa, die vrij te gebruiken zijn. Drums, basgitaar, elektrische gitaar, synthesizer en drumcomputer zitten daar niet in; die klanken komen van Wikimedia Commons, met de maker en licentie erbij. De foto's komen ook van Wikimedia Commons.</p>
+
+    <h2>Onderzoekjes met Fos</h2>
+    <p>Zes opdrachten om samen te doen: eerst op de site, dan zelf spelen. Het tempo bij "Tik de maat mee" komt van Deezer. De drumcomputer bij "Potten en pannen" maakt zijn klanken zelf na in je browser; het zijn geen opnames van een echt drumstel. Wat je in het logboek schrijft en welke stempels je hebt, blijft op je eigen apparaat.</p>
+
+    <h2>Wat de site niet kan</h2>
+    <ul>
+      <li>Niet elk nummer is nagekeken. De vaste lijst is met de hand gekozen. Andere nummers kun je zoeken: die halen we live op bij iTunes en MusicBrainz, en dan staat erbij dat het niet is nagekeken.</li>
+      <li>Geen echte studiosporen, alleen schattingen, en alleen voor een bestand dat je zelf opent.</li>
+      <li>Niet precies zeggen wanneer elk instrument speelt in het hele nummer.</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>Geen cookies, geen bezoekersstatistiek, geen tracking. Wat je zoekt, wordt niet bewaard. Voor het fragment en de hoes maakt je browser verbinding met Apple (iTunes); zonder dat kan de site geen geluid laten horen. Voor de sporen haalt je browser één keer het rekenmodel bij Hugging Face. Muziekbestanden die je opent, blijven op je apparaat. Sporen die je uit elkaar haalt, bewaart je browser op je eigen apparaat (hooguit drie stukken), zodat ze de volgende keer meteen klaar staan; je kunt ze daar ook laten vergeten. "Mijn nummers" staat alleen in je browser.</p>
+
+    <h2>Gemaakt met</h2>
+    <p>Statische HTML, CSS en JavaScript, zonder framework. Letters: Geist en Geist Mono (OFL). De broncode en de scripts die de gegevens ophalen staan op GitHub.</p>
+    <p><a class="knop-pil knop-accent" href="/ontdek">Ontdek een nummer</a></p>
+  </main>
+</body>
+</html>

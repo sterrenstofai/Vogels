@@ -1,0 +1,371 @@
+{
+ "drumstel": {
+  "bestand": "Bateria.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bateria.jpg",
+  "licentie": "CC BY-SA 2.5",
+  "maker": "Danel Solabarrieta",
+  "pad": "/fotos/drumstel.webp",
+  "breed": 1000,
+  "hoog": 665
+ },
+ "drumcomputer": {
+  "bestand": "Roland TR-808 drum machine.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Roland_TR-808_drum_machine.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Eriq at Dutch Wikipedia",
+  "pad": "/fotos/drumcomputer.webp",
+  "breed": 447,
+  "hoog": 271
+ },
+ "kleine-trom": {
+  "bestand": "2006-07-06 snare 14.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:2006-07-06_snare_14.jpg",
+  "licentie": "CC BY-SA 2.5",
+  "maker": "Stephan Czuratis (Jazz-face)",
+  "pad": "/fotos/kleine-trom.webp",
+  "breed": 1000,
+  "hoog": 630
+ },
+ "tamboerijn": {
+  "bestand": "Deff - Tambourine, p. 579 in Thomson, 1859.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Deff_-_Tambourine,_p._579_in_Thomson,_1859.jpg",
+  "licentie": "Public domain",
+  "maker": "onbekend",
+  "pad": "/fotos/tamboerijn.webp",
+  "breed": 522,
+  "hoog": 290
+ },
+ "congas": {
+  "bestand": "2006-06-03 Congas1.JPG",
+  "pagina": "https://commons.wikimedia.org/wiki/File:2006-06-03_Congas1.JPG",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Stephan Czuratis (Jazz-face at de.wikipedia",
+  "pad": "/fotos/congas.webp",
+  "breed": 831,
+  "hoog": 1000
+ },
+ "pauken": {
+  "bestand": "Munich - A standard set of timpani Percussion - 5647.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Munich_-_A_standard_set_of_timpani_Percussion_-_5647.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Jorge Royan",
+  "pad": "/fotos/pauken.webp",
+  "breed": 1000,
+  "hoog": 657
+ },
+ "basgitaar": {
+  "bestand": "MusicmanStingray.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:MusicmanStingray.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Th. Ott",
+  "pad": "/fotos/basgitaar.webp",
+  "breed": 333,
+  "hoog": 1000
+ },
+ "contrabas": {
+  "bestand": "AGK bass1 full.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:AGK_bass1_full.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "User:AndrewKepert",
+  "pad": "/fotos/contrabas.webp",
+  "breed": 710,
+  "hoog": 1000
+ },
+ "gitaar": {
+  "bestand": "Classical Guitar two views.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Classical_Guitar_two_views.jpg",
+  "licentie": "CC BY-SA 2.0 de",
+  "maker": "Martin Möller",
+  "pad": "/fotos/gitaar.webp",
+  "breed": 657,
+  "hoog": 1000
+ },
+ "elektrische-gitaar": {
+  "bestand": "Yngwie Malmsteen's electric guitar.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Yngwie_Malmsteen%27s_electric_guitar.jpg",
+  "licentie": "CC BY 2.0",
+  "maker": "francesco from Italia",
+  "pad": "/fotos/elektrische-gitaar.webp",
+  "breed": 195,
+  "hoog": 500
+ },
+ "akoestische-gitaar": {
+  "bestand": "Acoustic guitars in store 20180625.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Acoustic_guitars_in_store_20180625.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Santeri Viinamäki",
+  "pad": "/fotos/akoestische-gitaar.webp",
+  "breed": 1000,
+  "hoog": 723
+ },
+ "viool": {
+  "bestand": "Violin VL100.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Violin_VL100.png",
+  "licentie": "CC0",
+  "maker": "Just plain Bill",
+  "pad": "/fotos/viool.webp",
+  "breed": 700,
+  "hoog": 951
+ },
+ "altviool": {
+  "bestand": "Bratsche.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bratsche.jpg",
+  "licentie": "Public domain",
+  "maker": "Just plain Bill",
+  "pad": "/fotos/altviool.webp",
+  "breed": 636,
+  "hoog": 1000
+ },
+ "cello": {
+  "bestand": "Cello front side.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Cello_front_side.png",
+  "licentie": "CC BY 3.0",
+  "maker": "Georg Feitscher",
+  "pad": "/fotos/cello.webp",
+  "breed": 465,
+  "hoog": 705
+ },
+ "harp": {
+  "bestand": "A musical instrument. A harp.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:A_musical_instrument._A_harp.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Eacquahdennis",
+  "pad": "/fotos/harp.webp",
+  "breed": 608,
+  "hoog": 1000
+ },
+ "piano": {
+  "bestand": "Steinway & Sons concert grand piano, model D-274, manufactured at Steinway's factory in Hamburg, Germany.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Steinway_%26_Sons_concert_grand_piano,_model_D-274,_manufactured_at_Steinway%27s_factory_in_Hamburg,_Germany.png",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Steinway & Sons, 10 Rondenbarg, Hamburg D-22525, Germany, eu.steinway.com.Steinway & Sons, 1 Steinway Place, Lon",
+  "pad": "/fotos/piano.webp",
+  "breed": 1000,
+  "hoog": 963
+ },
+ "rhodes": {
+  "bestand": "Rhodes Mk II 73 cropped.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rhodes_Mk_II_73_cropped.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "onbekend",
+  "pad": "/fotos/rhodes.webp",
+  "breed": 480,
+  "hoog": 386
+ },
+ "elektrische-piano": {
+  "bestand": "6f 1.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:6f_1.png",
+  "licentie": "Public domain",
+  "maker": "The original uploader was Fetz at German Wikipedia.",
+  "pad": "/fotos/elektrische-piano.webp",
+  "breed": 400,
+  "hoog": 267
+ },
+ "orgel": {
+  "bestand": "Hammond b3 con leslie 122.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Hammond_b3_con_leslie_122.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "it:user:Salli",
+  "pad": "/fotos/orgel.webp",
+  "breed": 500,
+  "hoog": 337
+ },
+ "clavinet": {
+  "bestand": "Clavinet d6.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Clavinet_d6.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "onbekend",
+  "pad": "/fotos/clavinet.webp",
+  "breed": 770,
+  "hoog": 428
+ },
+ "keyboard": {
+  "bestand": "Masterkeyboard.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Masterkeyboard.png",
+  "licentie": "CC BY-SA 2.5",
+  "maker": "Masterkeyboard.jpg: André Karwath aka Aka",
+  "pad": "/fotos/keyboard.webp",
+  "breed": 800,
+  "hoog": 472
+ },
+ "synthesizer": {
+  "bestand": "Micromoog.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Micromoog.jpg",
+  "licentie": "Public domain",
+  "maker": "maker: zie de bestandspagina",
+  "pad": "/fotos/synthesizer.webp",
+  "breed": 781,
+  "hoog": 461
+ },
+ "sampler": {
+  "bestand": "Akai CD3000XL 9248.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Akai_CD3000XL_9248.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Ashley Pomeroy",
+  "pad": "/fotos/sampler.webp",
+  "breed": 1000,
+  "hoog": 584
+ },
+ "vocoder": {
+  "bestand": "Korg VC-10 Vocoder.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Korg_VC-10_Vocoder.jpg",
+  "licentie": "CC BY 2.0",
+  "maker": "Michael Calore",
+  "pad": "/fotos/vocoder.webp",
+  "breed": 1000,
+  "hoog": 750
+ },
+ "draaitafel": {
+  "bestand": "ALEX NILSON.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:ALEX_NILSON.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Darshan08",
+  "pad": "/fotos/draaitafel.webp",
+  "breed": 663,
+  "hoog": 1000
+ },
+ "trompet": {
+  "bestand": "Trumpet 1.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Trumpet_1.png",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "PJ, background cropped by EWikist",
+  "pad": "/fotos/trompet.webp",
+  "breed": 1000,
+  "hoog": 332
+ },
+ "trombone": {
+  "bestand": "Yamaha Tenor trombone YSL-891Z.tif",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Yamaha_Tenor_trombone_YSL-891Z.tif",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Yamaha Corporation",
+  "pad": "/fotos/trombone.webp",
+  "breed": 1000,
+  "hoog": 234
+ },
+ "saxofoon": {
+  "bestand": "A Saxophone.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:A_Saxophone.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Sally V",
+  "pad": "/fotos/saxofoon.webp",
+  "breed": 1000,
+  "hoog": 666
+ },
+ "altsaxofoon": {
+  "bestand": "Dinant altsax 2-02-2013 14-11-00.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Dinant_altsax_2-02-2013_14-11-00.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Paul Hermans",
+  "pad": "/fotos/altsaxofoon.webp",
+  "breed": 1000,
+  "hoog": 564
+ },
+ "tenorsaxofoon": {
+  "bestand": "Amati-Kraslice tenor saxophone.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Amati-Kraslice_tenor_saxophone.jpg",
+  "licentie": "Public domain",
+  "maker": "William J. Clinton Presidential Library",
+  "pad": "/fotos/tenorsaxofoon.webp",
+  "breed": 633,
+  "hoog": 1000
+ },
+ "baritonsaxofoon": {
+  "bestand": "Baritone Saxophone Amati.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Baritone_Saxophone_Amati.png",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Amati Kraslice",
+  "pad": "/fotos/baritonsaxofoon.webp",
+  "breed": 634,
+  "hoog": 1000
+ },
+ "dwarsfluit": {
+  "bestand": "Western concert flute (Yamaha).jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Western_concert_flute_(Yamaha).jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Petar Milošević",
+  "pad": "/fotos/dwarsfluit.webp",
+  "breed": 736,
+  "hoog": 1000
+ },
+ "hoorn": {
+  "bestand": "French-horn.png",
+  "pagina": "https://commons.wikimedia.org/wiki/File:French-horn.png",
+  "licentie": "Public domain",
+  "maker": "onbekend",
+  "pad": "/fotos/hoorn.webp",
+  "breed": 319,
+  "hoog": 175
+ },
+ "klarinet": {
+  "bestand": "Klarinetten von Herbert Wurlitzer 2.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Klarinetten_von_Herbert_Wurlitzer_2.jpg",
+  "licentie": "CC BY 4.0",
+  "maker": "Firma Herbert Wurlitzer Manufaktur für Holzblasinstrumente GmbH, D-91413 Neustadt an der Aisch,  bearbeitet von / edited",
+  "pad": "/fotos/klarinet.webp",
+  "breed": 676,
+  "hoog": 1000
+ },
+ "hobo": {
+  "bestand": "Mönnig, Oboe Modell 155 Albrecht Mayer.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:M%C3%B6nnig,_Oboe_Modell_155_Albrecht_Mayer.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Gebrüder Mönnig, Markneukirchen",
+  "pad": "/fotos/hobo.webp",
+  "breed": 1000,
+  "hoog": 1000
+ },
+ "fagot": {
+  "bestand": "Bassoon 001.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bassoon_001.jpg",
+  "licentie": "CC BY 2.0",
+  "maker": "mark.drummer",
+  "pad": "/fotos/fagot.webp",
+  "breed": 1000,
+  "hoog": 666
+ },
+ "apparaat:prophet-5": {
+  "bestand": "Sequential Circuits Prophet 5.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sequential_Circuits_Prophet_5.jpg",
+  "licentie": "Public domain",
+  "maker": "CPRdave at English Wikipedia",
+  "pad": "/fotos/prophet-5.webp",
+  "breed": 386,
+  "hoog": 163
+ },
+ "apparaat:linndrum": {
+  "bestand": "LinnDrum digital drum machine front panel .jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:LinnDrum_digital_drum_machine_front_panel_.jpg",
+  "licentie": "CC BY-SA 3.0",
+  "maker": "Linn Electronics. Successor: Forat Electronics - Bruce Forat, president",
+  "pad": "/fotos/linndrum.webp",
+  "breed": 1000,
+  "hoog": 548
+ },
+ "apparaat:roland-tr-808": {
+  "bestand": "Roland TR-808 (large).jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Roland_TR-808_(large).jpg",
+  "licentie": "CC BY-SA 2.0",
+  "maker": "Roland_TR-808_&_909.jpg: Brandon Daniel",
+  "pad": "/fotos/roland-tr-808.webp",
+  "breed": 1000,
+  "hoog": 584
+ },
+ "apparaat:oberheim-dmx": {
+  "bestand": "Oberheim DMX with factory MIDI.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Oberheim_DMX_with_factory_MIDI.jpg",
+  "licentie": "CC BY-SA 4.0",
+  "maker": "Alison",
+  "pad": "/fotos/oberheim-dmx.webp",
+  "breed": 1000,
+  "hoog": 639
+ },
+ "apparaat:moog": {
+  "bestand": "Bob Moog3.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bob_Moog3.jpg",
+  "licentie": "Public domain",
+  "maker": "Moog Music / Norlin",
+  "pad": "/fotos/moog.webp",
+  "breed": 1000,
+  "hoog": 745
+ }
+}

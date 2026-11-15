@@ -1,0 +1,199 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "vuilniswagen": [
+   {
+    "tekst": "Een vuilniswagen haalt het afval op bij huizen en bedrijven.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "is een vrachtauto die gebruikt wordt om afval in te zamelen bij bedrijven en huishoudens",
+    "gevonden": true
+   },
+   {
+    "tekst": "Het afval gaat naar een vuilnisbelt of een verbrandingsoven.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "het afval wordt getransporteerd naar een vuilnisbelt of een verbrandingsoven",
+    "gevonden": true
+   },
+   {
+    "tekst": "Vroeger werd het vuilnis opgehaald met karren. Paarden trokken die karren.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "gebruikte men karren voor het vervoer van vuilnis, getrokken door paarden.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Rond 1910 reden in Nederland de eerste vuilniswagens met een motor.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "in de jaren 1910 deden in nederland de eerste \"automobiele vuilniswagens\" hun intrede.",
+    "gevonden": true
+   }
+  ],
+  "cabine": [
+   {
+    "tekst": "De cabine zit laag. Zo stapt de ploeg makkelijk in en uit.",
+    "bron": "https://en.wikipedia.org/wiki/Cab_over",
+    "controle": "the low cab height eases driver entry and exit",
+    "gevonden": true
+   },
+   {
+    "tekst": "De wagen is kort tussen de wielen. Daardoor kan hij krappe bochten maken in smalle straten.",
+    "bron": "https://en.wikipedia.org/wiki/Cab_over",
+    "controle": "the short wheelbase allows a tight turning radius",
+    "gevonden": true
+   },
+   {
+    "tekst": "Rond een grote wagen zijn plekken die de chauffeur niet kan zien: de dode hoek. Bij vrachtwagens is die extra groot.",
+    "bron": "https://nl.wikipedia.org/wiki/Dode_hoek_(auto)",
+    "controle": "bij vrachtwagens is dit gebied groter.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Sommige vuilniswagens rijden half elektrisch. Die maken minder lawaai als ze vroeg in de ochtend het afval ophalen.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "ze produceren minder lawaai en veroorzaken daardoor minder overlast wanneer 's ochtends vroeg het afval wordt opgehaald.",
+    "gevonden": true
+   }
+  ],
+  "opbouw": [
+   {
+    "tekst": "Is de laadbak vol, dan gaat hij achter leeg. De hele achterkant kantelt dan omhoog.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "bij achterladers wordt de gehele beladingsinrichting omhoog gekanteld.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een grote plaat binnenin schuift naar achteren en duwt het afval eruit.",
+    "bron": "https://en.wikipedia.org/wiki/Garbage_truck",
+    "controle": "when the body is full, the compaction wall moves all the way to the rear of the body, ejecting it via an open tailgate.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Sommige wagens hebben een schuif om het afval er achter uit te duwen.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "anderen hebben een schuif om het afval aan de achterzijde eruit te duwen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Restafval is wat overblijft als je het afval hebt gescheiden.",
+    "bron": "https://nl.wikipedia.org/wiki/Restafval",
+    "controle": "dat overblijft nadat al het recyclebare afval is gescheiden",
+    "gevonden": true
+   },
+   {
+    "tekst": "Van gft-afval maken ze in Nederland vaak compost. Dat is goede grond voor planten.",
+    "bron": "https://nl.wikipedia.org/wiki/Gft-afval",
+    "controle": "wordt in nederland apart ingezameld en veelal verwerkt tot compost.",
+    "gevonden": true
+   }
+  ],
+  "kiep": [
+   {
+    "tekst": "Een minicontainer is een vuilnisbak van kunststof op twee wielen.",
+    "bron": "https://nl.wikipedia.org/wiki/Minicontainer",
+    "controle": "een minicontainer is een kunststof vuilnisbak op twee wielen waarin huishoudelijk afval wordt verzameld.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een minicontainer is ongeveer een meter hoog.",
+    "bron": "https://nl.wikipedia.org/wiki/Minicontainer",
+    "controle": "in de regel zijn ze ongeveer een meter hoog",
+    "gevonden": true
+   },
+   {
+    "tekst": "De groene container is vaak voor groente-, fruit- en tuinafval: gft.",
+    "bron": "https://nl.wikipedia.org/wiki/Minicontainer",
+    "controle": "een groene voor groente-, fruit- en tuinafval (gft)",
+    "gevonden": true
+   },
+   {
+    "tekst": "De grijze container is vaak voor restafval, de oranje voor plastic, blik en pakjes.",
+    "bron": "https://nl.wikipedia.org/wiki/Minicontainer",
+    "controle": "een oranje voor plastic, blik en drankverpakkingen en een grijze voor het restafval",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een kiepinrichting tilt de container op. Dan hoeft de ploeg het afval niet zelf op te tillen.",
+    "bron": "https://en.wikipedia.org/wiki/Garbage_truck",
+    "controle": "they have a lifting mechanism to automatically empty large carts without the operator having to lift the waste by hand.",
+    "gevonden": true
+   }
+  ],
+  "persplaat": [
+   {
+    "tekst": "De persplaat schept het afval uit de trog en drukt het tegen een wand.",
+    "bron": "https://en.wikipedia.org/wiki/Garbage_truck",
+    "controle": "employs a moving plate or shovel to scoop the waste out from the loading hopper and compress it against a moving wall.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met een pers past er twee keer zoveel afval in de wagen.",
+    "bron": "https://en.wikipedia.org/wiki/Garbage_truck",
+    "controle": "the first compactor could double a truck's capacity.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De persplaat heeft een scherpe rand. Zo breekt hij grote dingen in stukken.",
+    "bron": "https://en.wikipedia.org/wiki/Garbage_truck",
+    "controle": "the plate has a pointed edge",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bijna elke vuilniswagen heeft een pers. Die perst de zakken samen en schuift ze door.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "de wagen beschikt bijna altijd over een persmechanisme om de zakken te samen te persen en door te schuiven.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Rotterdam kocht in 1956 als eerste gemeente in Nederland een vuilniswagen die het afval kraakt en perst.",
+    "bron": "https://nl.wikipedia.org/wiki/Vuilniswagen",
+    "controle": "in nederland schafte de gemeente rotterdam de eerste kraakperswagen aan in 1956.",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Dubbellucht betekent: aan elke kant van de as twee wielen, dus vier in plaats van twee.",
+    "bron": "https://nl.wikipedia.org/wiki/Dubbellucht",
+    "controle": "waar vier in plaats van twee wielen op gemonteerd zijn: aan elke kant een stel.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij sommige wagens kan de as die niet aangedreven wordt omhoog, als de wagen bijna leeg is.",
+    "bron": "https://nl.wikipedia.org/wiki/Trekker_(vrachtwagen)",
+    "controle": "kan de niet-aangedreven achteras omhoog worden gebracht wanneer deze licht beladen is",
+    "gevonden": true
+   },
+   {
+    "tekst": "De assen van een vrachtwagen zijn stevige, rechte assen. Die zijn erg sterk.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchtvering",
+    "controle": "starre assen zijn over het algemeen een sterkere constructie vandaar de toepassing bij vrachtwagens",
+    "gevonden": true
+   }
+  ],
+  "lichten": [
+   {
+    "tekst": "Wagens die moeten opvallen, omdat ze langzaam rijden of werk doen op de weg, hebben een oranje of geel zwaailicht.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "voeren een oranje of geel zwaailicht.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een zwaailicht is een doorzichtige kap met een lamp die rond draait.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "een zwaailicht is een transparante kap met daarin een ronddraaiende, in één richting schijnende lamp",
+    "gevonden": true
+   },
+   {
+    "tekst": "Zo zie je de flits van alle kanten.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "hierdoor is een felle lichtflits te zien die naar alle kanten zichtbaar is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een knipperlicht knippert ongeveer 90 keer per minuut.",
+    "bron": "https://nl.wikipedia.org/wiki/Richtingaanwijzer",
+    "controle": "de knipperfrequentie moet 90 per minuut zijn met een tolerantie van 30.",
+    "gevonden": true
+   }
+  ]
+ }
+}

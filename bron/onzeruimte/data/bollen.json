@@ -1,0 +1,411 @@
+{
+ "zon": {
+  "pad": "/bollen/zon.jpg",
+  "groot": "/bollen/zon.jpg",
+  "label": "kaart · valse kleur",
+  "kleur": "vals",
+  "uitleg": "Valse kleur: ultraviolet licht (30,4 nanometer), dat je ogen niet zien; de kleur heeft NASA gekozen. Een kaart van één rondje van de zon, gemaakt door de satelliet SDO in mei 2026. De zon verandert elke dag.",
+  "maker": "NASA/SDO en de teams van AIA, EVE en HMI (Courtesy of NASA/SDO and the AIA, EVE, and HMI science teams)",
+  "licentie": "publiek domein (SDO: niet auteursrechtelijk beschermd)",
+  "bron": "https://sdo.gsfc.nasa.gov/data/synoptic/",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": true,
+  "gloed": 0.16
+ },
+ "venus": {
+  "pad": "/bollen/venus.jpg",
+  "groot": "/bollen/venus.jpg",
+  "label": "kaart · radar",
+  "kleur": "radar",
+  "uitleg": "Geen licht maar radar: de bodem onder de wolken, gemeten door Magellan. Zo zie je Venus nooit; met je ogen zie je alleen een lichte bol van wolken. Gedempt: geen meting.",
+  "maker": "NASA/JPL, radar van Magellan; PDS Geosciences Node; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/venus_magellan_global_c3_mdir_mosaic_2025m",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    240,
+    228,
+    200
+   ],
+   "dikte": 0.045
+  }
+ },
+ "maan": {
+  "pad": "/bollen/maan.jpg",
+  "groot": "/bollen/maan-groot.jpg",
+  "label": "kaart · echte kleur",
+  "kleur": "echt",
+  "uitleg": "Ongeveer de kleur die je ogen zien. Boven 70° noorder- en zuiderbreedte bijgevuld met een zwart-witkaart.",
+  "maker": "NASA Scientific Visualization Studio, foto's van Lunar Reconnaissance Orbiter",
+  "licentie": "publiek domein",
+  "bron": "https://svs.gsfc.nasa.gov/4720",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "aarde": {
+  "pad": "/bollen/aarde.jpg",
+  "groot": "/bollen/aarde-groot.jpg",
+  "label": "kaart · echte kleur",
+  "kleur": "echt",
+  "uitleg": "Echte kleur, maar zonder wolken: samengesteld uit een maand satellietfoto's. De diepe oceaan is één kleur blauw.",
+  "maker": "NASA Earth Observatory (Reto Stöckli), Blue Marble",
+  "licentie": "publiek domein (NASA)",
+  "bron": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/",
+  "kanteling": 23.4,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    110,
+    165,
+    255
+   ],
+   "dikte": 0.035
+  }
+ },
+ "mars": {
+  "pad": "/bollen/mars.jpg",
+  "groot": "/bollen/mars-groot.jpg",
+  "label": "kaart · kleur benaderd",
+  "kleur": "benaderd",
+  "uitleg": "Kleur benaderd: Viking fotografeerde met een rood en een violet filter, het groen is daaruit nagemaakt.",
+  "maker": "NASA Ames en USGS, foto's van Viking",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/mars_viking_colorized_global_mosaic_232m",
+  "kanteling": 25.2,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    235,
+    190,
+    160
+   ],
+   "dikte": 0.018
+  }
+ },
+ "jupiter": {
+  "pad": "/bollen/jupiter.jpg",
+  "groot": "/bollen/jupiter-groot.jpg",
+  "label": "kaart · kleur benaderd",
+  "kleur": "benaderd",
+  "uitleg": "Kleur benaderd, uit twee filters. De wolken van december 2000: ze veranderen steeds.",
+  "maker": "NASA/JPL/Space Science Institute, foto's van Cassini",
+  "licentie": "publiek domein (NASA)",
+  "bron": "https://photojournal.jpl.nasa.gov/catalog/PIA07782",
+  "kanteling": 3.1,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    235,
+    220,
+    195
+   ],
+   "dikte": 0.03
+  }
+ },
+ "mercurius": {
+  "pad": "/bollen/mercurius.jpg",
+  "groot": "/bollen/mercurius.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit. Een kaart in echte kleur bestaat niet.",
+  "maker": "NASA/JHUAPL/Carnegie Institution, foto's van MESSENGER; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/mercury_messenger_mdis_global_mosaic_250m",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "ceres": {
+  "pad": "/bollen/ceres.jpg",
+  "groot": "/bollen/ceres.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit.",
+  "maker": "NASA/JPL/DLR, foto's van Dawn; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/ceres_dawn_fc_global_mosaic_140m",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "pluto": {
+  "pad": "/bollen/pluto.jpg",
+  "groot": "/bollen/pluto.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit. Gedempt is nooit gefotografeerd: het zuiden lag in het donker toen New Horizons langsvloog. De kant die naar Charon kijkt is wazig.",
+  "maker": "NASA/JHUAPL/SwRI, foto's van New Horizons; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/pluto_new_horizons_lorri_mvic_global_mosaic_300m",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "charon": {
+  "pad": "/bollen/charon.jpg",
+  "groot": "/bollen/charon.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit. Gedempt is nooit gefotografeerd: het zuiden lag in het donker.",
+  "maker": "NASA/JHUAPL/SwRI, foto's van New Horizons; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/charon_new_horizons_lorri_mvic_global_mosaic_300m",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "io": {
+  "pad": "/bollen/io.jpg",
+  "groot": "/bollen/io.jpg",
+  "label": "kaart · kleur versterkt",
+  "kleur": "versterkt",
+  "uitleg": "Kleur versterkt: in het echt zijn de kleuren veel flauwer. De kant naar Jupiter is wazig.",
+  "maker": "NASA/JPL, foto's van Galileo en Voyager; USGS",
+  "licentie": "publiek domein (NASA)",
+  "bron": "https://astrogeology.usgs.gov/search/map/io_galileo_ssi_voyager_color_merged_global_mosaic_1km",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "europa": {
+  "pad": "/bollen/europa.jpg",
+  "groot": "/bollen/europa.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit. Grote stukken zijn alleen wazig gefotografeerd.",
+  "maker": "NASA/JPL, foto's van Voyager en Galileo; USGS",
+  "licentie": "publiek domein (NASA)",
+  "bron": "https://astrogeology.usgs.gov/search/map/europa_voyager_galileo_ssi_global_mosaic_500m",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "ganymedes": {
+  "pad": "/bollen/ganymedes.jpg",
+  "groot": "/bollen/ganymedes.jpg",
+  "label": "kaart · valse kleur",
+  "kleur": "vals",
+  "uitleg": "Valse kleur: rood is infrarood licht, dat je ogen niet zien.",
+  "maker": "NASA/JPL, foto's van Voyager en Galileo; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/ganymede_voyager_galileo_ssi_color_global_mosaic_1_4km",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "callisto": {
+  "pad": "/bollen/callisto.jpg",
+  "groot": "/bollen/callisto.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit.",
+  "maker": "NASA/JPL, foto's van Galileo en Voyager; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://astrogeology.usgs.gov/search/map/callisto_galileo_voyager_global_mosaic_1km",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "enceladus": {
+  "pad": "/bollen/enceladus.jpg",
+  "groot": "/bollen/enceladus.jpg",
+  "label": "kaart · zwart-wit",
+  "kleur": "zwart-wit",
+  "uitleg": "Zwart-wit.",
+  "maker": "NASA/JPL/Space Science Institute, foto's van Cassini; P. Schenk en W. McKinnon; USGS",
+  "licentie": "publiek domein (NASA)",
+  "bron": "https://astrogeology.usgs.gov/search/map/enceladus-cassini-global-mosaic-100m-schenk",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "triton": {
+  "pad": "/bollen/triton.jpg",
+  "groot": "/bollen/triton-groot.jpg",
+  "label": "kaart · kleur benaderd",
+  "kleur": "benaderd",
+  "uitleg": "Kleur benaderd en versterkt. Voyager 2 zag alleen het zuiden: gedempt is nooit gefotografeerd.",
+  "maker": "NASA/JPL-Caltech/Lunar and Planetary Institute (Paul Schenk), foto's van Voyager 2; USGS",
+  "licentie": "publiek domein",
+  "bron": "https://photojournal.jpl.nasa.gov/catalog/PIA18668",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "saturnus": {
+  "pad": "/bollen/saturnus.jpg",
+  "groot": "/bollen/saturnus.jpg",
+  "label": "kaart · kleur benaderd",
+  "kleur": "benaderd",
+  "uitleg": "Kaart van de ruimtetelescoop Hubble uit 2024, uit een violet, een groen en een rood filter. De kleurbalans is afgestemd op een Cassini-foto in echte kleur; de banden zijn zoals Hubble ze zag. Een strook van ongeveer 5 graden bij de evenaar zat achter de ringen; die is bijgevuld met de rijen erboven en eronder. De ringen: hoe dicht ze zijn, gemeten door Cassini.",
+  "maker": "NASA, ESA, A. Simon (NASA GSFC), M. H. Wong (UC Berkeley) en het OPAL-team, Hubble (Simon et al. 2015, doi:10.17909/T9G593); ringen: dichtheid gemeten door Cassini (NASA PDS)",
+  "licentie": "CC BY 4.0",
+  "bron": "https://archive.stsci.edu/hlsp/opal",
+  "kanteling": 26.7,
+  "helling": -22,
+  "begin": 0.5,
+  "gloeit": false,
+  "ringen": {
+   "pad": "/bollen/saturnus-ringen.png",
+   "binnen": 1.235979292493529,
+   "buiten": 2.269529435189487
+  },
+  "atmosfeer": {
+   "rgb": [
+    225,
+    210,
+    170
+   ],
+   "dikte": 0.03
+  }
+ },
+ "uranus": {
+  "pad": "/bollen/uranus.jpg",
+  "groot": "/bollen/uranus.jpg",
+  "label": "kaart · kleur benaderd",
+  "kleur": "benaderd",
+  "uitleg": "Kaart van de ruimtetelescoop Hubble uit 2023: ongeveer echte kleur, met de lichte kap om de noordpool. Het zuiden ligt nu in het donker: gedempt is niet gezien.",
+  "maker": "NASA, ESA, A. Simon (NASA GSFC), M. H. Wong (UC Berkeley) en het OPAL-team, Hubble (Simon et al. 2015, doi:10.17909/T9G593)",
+  "licentie": "CC BY 4.0",
+  "bron": "https://archive.stsci.edu/hlsp/opal",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    170,
+    225,
+    235
+   ],
+   "dikte": 0.045
+  }
+ },
+ "neptunus": {
+  "pad": "/bollen/neptunus.jpg",
+  "groot": "/bollen/neptunus.jpg",
+  "label": "kaart · kleur benaderd",
+  "kleur": "benaderd",
+  "uitleg": "Kaart van de ruimtetelescoop Hubble uit 2022: ongeveer echte kleur. Neptunus is lichter blauw dan op de bekende Voyager-foto's. Gedempt is niet gezien.",
+  "maker": "NASA, ESA, A. Simon (NASA GSFC), M. H. Wong (UC Berkeley) en het OPAL-team, Hubble (Simon et al. 2015, doi:10.17909/T9G593)",
+  "licentie": "CC BY 4.0",
+  "bron": "https://archive.stsci.edu/hlsp/opal",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    150,
+    200,
+    255
+   ],
+   "dikte": 0.045
+  }
+ },
+ "titan": {
+  "pad": "/bollen/titan.png",
+  "groot": "/bollen/titan.png",
+  "label": "egaal · kleur uit een foto",
+  "kleur": "egaal",
+  "uitleg": "Egaal, in de echte kleur van een Cassini-foto: je ziet alleen de oranje nevel, niet de grond.",
+  "maker": "kleur uit een foto van Cassini (NASA/JPL-Caltech/Space Science Institute)",
+  "licentie": "publiek domein (NASA)",
+  "bron": "https://images.nasa.gov/details/PIA14602",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false,
+  "atmosfeer": {
+   "rgb": [
+    235,
+    175,
+    90
+   ],
+   "dikte": 0.09
+  }
+ },
+ "eris": {
+  "pad": "/bollen/eris.png",
+  "groot": "/bollen/eris.png",
+  "label": "egaal · geen beeld bekend",
+  "kleur": "egaal",
+  "uitleg": "Niemand weet hoe Eris eruitziet: er is nooit een ruimtesonde geweest. Wel dat ze heel licht is. Daarom een egale, lichte bol.",
+  "maker": "geen beeld bekend",
+  "licentie": "eigen kleur",
+  "bron": "https://science.nasa.gov/dwarf-planets/eris/",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": false
+ },
+ "sirius": {
+  "pad": "/bollen/sirius.png",
+  "groot": "/bollen/sirius.png",
+  "label": "egaal · kleur uit metingen",
+  "kleur": "egaal",
+  "uitleg": "Een gloeiende bol in de kleur van zijn licht. Het oppervlak van Sirius heeft niemand gezien.",
+  "maker": "kleur uit de gemeten kleurindex (Hipparcos, via d3-celestial)",
+  "licentie": "eigen berekening",
+  "bron": "https://github.com/ofrohn/d3-celestial",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": true,
+  "gloed": 0.16
+ },
+ "betelgeuze": {
+  "pad": "/bollen/betelgeuze.png",
+  "groot": "/bollen/betelgeuze.png",
+  "label": "egaal · kleur uit metingen",
+  "kleur": "egaal",
+  "uitleg": "Een gloeiende bol in de kleur van haar licht. Van Betelgeuze bestaan een paar wazige foto's van het oppervlak (zie Foto); een kaart niet.",
+  "maker": "kleur uit de gemeten kleurindex (Hipparcos, via d3-celestial)",
+  "licentie": "eigen berekening",
+  "bron": "https://github.com/ofrohn/d3-celestial",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": true,
+  "gloed": 0.16
+ },
+ "vega": {
+  "pad": "/bollen/vega.png",
+  "groot": "/bollen/vega.png",
+  "label": "egaal · kleur uit metingen",
+  "kleur": "egaal",
+  "uitleg": "Een gloeiende bol in de kleur van haar licht. Het oppervlak van Wega heeft niemand gezien.",
+  "maker": "kleur uit de gemeten kleurindex (Hipparcos, via d3-celestial)",
+  "licentie": "eigen berekening",
+  "bron": "https://github.com/ofrohn/d3-celestial",
+  "kanteling": 0,
+  "helling": 0,
+  "begin": 0.5,
+  "gloeit": true,
+  "gloed": 0.16
+ }
+}

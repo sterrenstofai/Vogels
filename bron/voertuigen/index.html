@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voertuigen · Wat zit erin, en hoe werkt het?</title>
+<meta name="description" content="Voertuigen in 3D, getekend in code: draai ze rond, kijk wat erin zit en haal ze uit elkaar. Voor ouders en kinderen.">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#F1F0EE">
+<meta name="referrer" content="no-referrer">
+<meta property="og:title" content="Voertuigen">
+<meta property="og:description" content="Wat zit er in een skateboard, een trekker of een vliegtuig? Voertuigen in 3D, getekend in code. Voor ouders en kinderen.">
+<meta property="og:image" content="https://voertuigen.netlify.app/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/stijl.css">
+<link rel="stylesheet" href="/css/familie.css">
+<script type="module" src="/js/familie.js"></script>
+<script type="module" src="/js/overzicht.js"></script>
+</head>
+<body class="familie">
+<a class="naar-inhoud" href="#app">Naar de inhoud</a>
+<header class="balk" data-familie></header>
+<main id="app" tabindex="-1">
+  <section class="breed held" aria-labelledby="held-kop">
+    <div>
+      <p class="etiket">Voertuigen, voor ouders en kinderen</p>
+      <h1 id="held-kop">Wat zit er in <span data-held-naam>het skateboard</span>?</h1>
+      <p class="held-sub" data-held-zin>Draai hem rond, kijk wat erin zit en haal hem uit elkaar.</p>
+      <dl class="held-gegevens" data-held-gegevens></dl>
+      <div class="held-knoppen">
+        <a class="knop-pil knop-accent" href="/skateboard" data-held-link>Bekijk het skateboard</a>
+        <a class="knop-pil" href="/kinderen/skateboard" data-held-kind>Voor kinderen</a>
+        <a class="knop-pil" href="/fiets">Bouw een fiets</a>
+      </div>
+    </div>
+    <figure class="held-beeld">
+      <div class="held-3d" data-held-3d>
+        <img src="/beeld/skateboard-uiteen.webp" alt="Het skateboard uit elkaar: schroeven, griptape, plank, trucks, wielen en kogellagers" width="1200" height="900">
+        <iframe tabindex="-1" aria-hidden="true" src="/skateboard?held&amp;stil&amp;uiteen&amp;af" title="Het skateboard uit elkaar, in 3D. Sleep om te draaien, tik om het te openen." loading="eager"></iframe>
+      </div>
+      <figcaption><span class="label">tekening</span><span>Zelf getekend in code. Geen bestaand voertuig.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="breed blok" id="alle" aria-labelledby="alle-kop">
+    <div class="blok-kop"><h2 id="alle-kop">Alle voertuigen</h2><span class="mono zacht" data-teller></span></div>
+    <div class="index-filters">
+      <label class="sr" for="filterveld">Zoek op naam</label>
+      <input id="filterveld" class="veld" type="search" placeholder="Zoek op naam" autocomplete="off">
+      <div class="chips" data-chips></div>
+    </div>
+    <div class="raster" data-raster><noscript><p>Deze site heeft JavaScript nodig voor de voertuigen in 3D. Lees <a href="/hoe-dit-werkt">hoe dit werkt</a>.</p></noscript></div>
+    <p class="noot">Elk voertuig is een tekening: de maten zijn die van de tekening, wat er beweegt is een simulatie. Bij elk onderdeel staan weetjes met een bron die we nakijken. <a href="/hoe-dit-werkt">Hoe dit werkt</a></p>
+  </section>
+
+  <section class="breed blok"><a class="oz-teaser" href="/onderzoekjes">
+    <span class="oz-teaser-tekst"><span class="oz-boventitel">Elke week</span><strong>Onderzoekjes met Fos</strong><span>Zes keer samen op onderzoek: eerst op de site, dan bij een echte fiets. Met een certificaat als alles af is.</span></span>
+    <span class="knop-pil knop-donker">Begin</span></a></section>
+
+  <section class="breed over" id="over" aria-labelledby="over-kop">
+    <div class="over-twee">
+      <div>
+        <h2 id="over-kop">Over dit project</h2>
+        <p>Voertuigen laat zien wat er in een fiets, een trekker, een trein of een vliegtuig zit, en hoe het werkt. Elk voertuig is in code getekend: buis voor buis, wiel voor wiel. Je draait het rond, tikt op een onderdeel en haalt het uit elkaar.</p>
+        <p>Het is geen bestaand model en er staan geen merken op. De getallen zijn maten van de tekening. Wat beweegt, zoals de kleppen van het vliegtuig of de ladder van de brandweer, is een simulatie.</p>
+        <p>Voor kinderen is er een eigen stand: één groot woord, een rode knop en een stem die het onderdeel zegt. Bouwen, op het spoor of bij het water doe je altijd samen met een volwassene.</p>
+        <p><a class="knop-pil" href="/hoe-dit-werkt">Hoe dit werkt</a></p>
+      </div>
+      <figure><img src="/beeld/fiets.webp" alt="De getekende racefiets met motor, van schuin boven" loading="lazy" width="1200" height="800"><figcaption>De fiets, het eerste voertuig van de site. Hij gaat ook in negen stappen in elkaar.</figcaption></figure>
+    </div>
+  </section>
+</main>
+<footer class="voet" data-familie></footer>
+</body>
+</html>

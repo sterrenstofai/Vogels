@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voertuigen</title>
+<meta name="description" content="Een voertuig in 3D: draai het rond, bekijk de onderdelen en haal het uit elkaar.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="modulepreload" href="/js/vendor/three.core.min.js">
+<link rel="modulepreload" href="/js/vendor/three.module.min.js">
+<meta name="color-scheme" content="only light">
+<link rel="stylesheet" href="/css/stijl.css">
+<link rel="stylesheet" href="/css/familie.css">
+</head>
+<body class="familie-app">
+<header class="balk" data-familie></header>
+<main class="app">
+  <h1 class="sr" id="paginakop"></h1>
+  <section class="podium" aria-label="Het voertuig in 3D" data-aria-titel>
+    <p class="laden" id="laden" aria-live="polite"><span></span>Even het voertuig tekenen…</p>
+    <noscript><p class="laden">Voor de tekening in 3D is JavaScript nodig.</p></noscript>
+    <canvas id="doek" aria-label="Een getekend voertuig. Sleep om te draaien."></canvas>
+    <svg id="lijntjes" class="lijntjes" aria-hidden="true"></svg>
+    <div id="namen" class="namen" aria-hidden="true"></div>
+    <div class="stand" role="group" aria-label="Weergave">
+      <button type="button" data-stand="tekening" aria-pressed="true"><i></i>Tekening</button>
+      <button type="button" data-stand="echt" aria-pressed="false"><i class="donker"></i>Donker</button>
+    </div>
+    <button type="button" id="uiteenknop" class="uiteenknop" aria-pressed="false"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M2 7h4M14 7h4M10 1v3M10 10v3M7 4l-2-2M13 4l2-2M7 10l-2 2M13 10l2 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Uit elkaar <kbd>E</kbd></button>
+    <div id="kind" class="kind">
+      <a class="kindterug mono" id="kindterug" href="/">← Voor grote mensen</a><a class="kindwissel mono" href="/kinderen">Ander voertuig →</a>
+      <p id="kindnaam" class="kindnaam"></p>
+      <button type="button" id="kindvorige" class="kindpijl links" aria-label="Vorige">‹</button>
+      <button type="button" id="kindvolgende" class="kindpijl rechts" aria-label="Volgende">›</button>
+      <button type="button" id="kindknop" class="kindknop" aria-label="Luister"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      <span id="kindhand" class="kindhand" aria-hidden="true">👆</span>
+      <div id="kindstrook" class="kindstrook mono"></div>
+      <p class="kindbron mono">tekening · geluiden nagemaakt</p>
+    </div>
+    <p id="hint" class="hint mono">Sleep om te draaien</p>
+    <svg id="minifiets" class="minifiets" viewBox="0 0 120 70" aria-hidden="true"></svg>
+    <p id="minitekst" class="minitekst mono">Sleep om te draaien</p>
+  </section>
+  <aside class="paneel">
+    <nav class="voertuig" aria-label="Kies een voertuig" data-kiezer></nav>
+    <header class="paneelkop">
+      <p class="model mono" id="model"></p>
+      <div class="kopknoppen">
+        <button type="button" id="tour" class="klein" aria-pressed="false">▸ Tour</button>
+        <button type="button" id="geluid" class="klein" aria-pressed="true">Geluid</button>
+        <button type="button" id="stem" class="klein zwart" aria-pressed="false">● Stem</button>
+      </div>
+    </header>
+    <ol id="lijst" class="lijst mono"></ol>
+    <div id="inhoud" class="inhoud"></div>
+    <footer class="onder">
+      <div id="onderknoppen" class="onderknoppen"></div>
+      <p id="toetsen" class="toetsen mono"></p>
+    </footer>
+  </aside>
+</main>
+<footer class="appvoet mono"><span class="label-tekening">tekening</span> zelf getekend, geen bestaand voertuig · maten van de tekening · bewegingen zijn een simulatie · geen cookies · <a href="/hoe-dit-werkt">Hoe dit werkt</a></footer>
+<script type="module" src="/js/familie.js"></script>
+<script type="module" src="/js/kiezer.js"></script>
+<script type="module" src="/js/kern.js"></script>
+</body>
+</html>

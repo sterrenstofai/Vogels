@@ -1,0 +1,193 @@
+{
+ "datum": "2026-11-04",
+ "secties": {
+  "brandweerauto": [
+   {
+    "tekst": "Een tankautospuit is zo ingericht dat de brandweer bij een brand of een ongeluk meteen kan beginnen.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "het voertuig is zo ingericht dat de eerste slag geslagen kan worden bij brandbestrijding of ongevallen",
+    "gevonden": true
+   },
+   {
+    "tekst": "De brandweer in Nederland rijdt in vuurrode auto's.",
+    "bron": "https://nl.wikipedia.org/wiki/Brandweervoertuig",
+    "controle": "de nederlandse brandweer beschikt over een wagenpark dat vuurrood van kleur is",
+    "gevonden": true
+   },
+   {
+    "tekst": "De strepen op de auto zijn er zodat je goed ziet welke hulpdienst eraan komt.",
+    "bron": "https://nl.wikipedia.org/wiki/Brandweervoertuig",
+    "controle": "deze stripings zijn in het leven geroepen om de herkenbaarheid van de verschillende hulpverleningsdiensten te vergroten.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Is er brand? Bel dan 112. Dat nummer werkt in alle landen van de Europese Unie.",
+    "bron": "https://nl.wikipedia.org/wiki/Alarmnummer",
+    "controle": "geldt 112 als alarmnummer.",
+    "gevonden": true
+   }
+  ],
+  "cabine": [
+   {
+    "tekst": "In de cabine is plek voor een ploeg van zes mensen.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "in het algemeen is er aan boord plaats voor een standaardploeg van zes man",
+    "gevonden": true
+   },
+   {
+    "tekst": "De chauffeur zit linksvoor, de baas van de ploeg rechtsvoor en de anderen achterin.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "de chauffeur zit (in de meeste landen) linksvoor in het voertuig, de bv rechts voorin en de bemanning achterin.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De chauffeur bedient bij de brand ook de pomp.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "chauffeur (is tevens pompbediener)",
+    "gevonden": true
+   },
+   {
+    "tekst": "Omdat de cabine hoog zit, kan de chauffeur rond een grote auto minder goed zien. Die plekken heten de dode hoek.",
+    "bron": "https://nl.wikipedia.org/wiki/Dode_hoek_(voertuig)",
+    "controle": "vooral bij vrachtwagens is de dode hoek groter, wat het gevolg is van de hooggelegen positie van de cabine en de grootte van het voertuig.",
+    "gevonden": true
+   }
+  ],
+  "kasten": [
+   {
+    "tekst": "De meeste tankautospuiten hebben kasten met rolluiken. Sommige hebben klapdeuren.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "de meeste tankautospuiten zijn voorzien van bagageruimten met roldeuren, sommige hebben klapdeuren.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een rolluik is gemaakt van smalle stroken die aan elkaar vastzitten. Daardoor kan het oprollen.",
+    "bron": "https://nl.wikipedia.org/wiki/Rolluik",
+    "controle": "een rolluik bestaat uit metalen of houten lamellen (geprofileerde strippen) die verbonden zijn en daardoor een soepel geheel vormen dat oprolbaar is.",
+    "gevonden": true
+   },
+   {
+    "tekst": "In de flessen zit ademlucht. Die gebruiken brandweermensen in de rook, en ook duikers onder water.",
+    "bron": "https://nl.wikipedia.org/wiki/Ademlucht",
+    "controle": "ademlucht wordt gebruikt door onder anderen duikers en brandweerlieden",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er ligt ook gereedschap om mensen na een ongeluk uit een auto te halen, zoals een spreider en een schaar.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "redgereedschap om beknelde personen uit een voertuig of andere situatie te bevrijden zoals een spreider, schaar en ram",
+    "gevonden": true
+   },
+   {
+    "tekst": "Een brandslang van de brandweer is meestal 20 meter lang.",
+    "bron": "https://nl.wikipedia.org/wiki/Brandslang",
+    "controle": "75 mm, 110 mm, 150 mm of 200 mm en een lengte van 20 meter",
+    "gevonden": true
+   }
+  ],
+  "ladder": [
+   {
+    "tekst": "De ladders en de zuigslangen liggen vaak op het dak.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "op het dak worden vaak de ladders en zuigslangen opgeborgen.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Bij nieuwe brandweerauto's schuift het rek met de ladders naar achteren en omlaag.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "moderne tankautospuiten beschikken vaak over een arbo-ladderrek dat naar achter en beneden schuift",
+    "gevonden": true
+   },
+   {
+    "tekst": "Dan hoeft niemand meer op de auto te klimmen. Dat is veiliger en het gaat sneller.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "hierdoor is het niet meer nodig om op het voertuig te klimmen. dat is veiliger en kost minder tijd.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Met de zuigslangen haalt de brandweer water uit een sloot, een vijver of een zwembad.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "zuigslangen voor het aanzuigen van water uit open water (sloten, vijvers of zwembaden etc.)",
+    "gevonden": true
+   }
+  ],
+  "pomp": [
+   {
+    "tekst": "De pomp zit bijna altijd achter in de brandweerauto.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "de pomp is bijna altijd achter in het voertuig geplaatst",
+    "gevonden": true
+   },
+   {
+    "tekst": "De pomp werkt alleen als de auto stilstaat.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "de pomp kan alleen tijdens stilstand van het voertuig gebruikt worden",
+    "gevonden": true
+   },
+   {
+    "tekst": "Is het water uit de tank bijna op? Dan sluit de brandweer een slang aan op een brandkraan.",
+    "bron": "https://nl.wikipedia.org/wiki/Brandkraan",
+    "controle": "voordat de eigen watervoorraad op is, kan men op een brandkraan aansluiten",
+    "gevonden": true
+   },
+   {
+    "tekst": "Op de haspel zit een dikke slang van rubber voor kleine branden.",
+    "bron": "https://en.wikipedia.org/wiki/Fire_hose",
+    "controle": "booster hose is a rubber-covered, thick-walled, flexible hose used to fight small fires.",
+    "gevonden": true
+   },
+   {
+    "tekst": "Er zijn twee van die slangen. Elke slang is 60 meter lang, soms 90 meter.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "twee hogedrukslangen met een lengte van 60 (standaard) of 90 meter",
+    "gevonden": true
+   }
+  ],
+  "zwaailichten": [
+   {
+    "tekst": "Een brandweerauto in Nederland heeft blauwe zwaailichten die je van alle kanten ziet, en een hoorn met twee tonen.",
+    "bron": "https://nl.wikipedia.org/wiki/Brandweervoertuig",
+    "controle": "in nederland zijn brandweervoertuigen voorzien van rondom zichtbare blauwe zwaailichten en een tweetonige hoorn",
+    "gevonden": true
+   },
+   {
+    "tekst": "Staan de zwaailichten en de sirene aan? Dan moet het andere verkeer de brandweer voor laten gaan.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "het overige verkeer moet hen dan voor laten gaan.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De zwaailichten van politie, brandweer en ambulance zijn blauw.",
+    "bron": "https://nl.wikipedia.org/wiki/Zwaailicht",
+    "controle": "zwaailichten van hulpdiensten in nederland en belgië , zoals politie , brandweer en ambulancediensten zijn blauw.",
+    "gevonden": true
+   },
+   {
+    "tekst": "De eerste hulpauto's hadden nog geen sirene, maar een bel.",
+    "bron": "https://en.wikipedia.org/wiki/Siren_(alarm)",
+    "controle": "the first emergency vehicles relied on a bell.",
+    "gevonden": true
+   }
+  ],
+  "wielen": [
+   {
+    "tekst": "Om elk wiel zit een band van rubber, met lucht erin.",
+    "bron": "https://nl.wikipedia.org/wiki/Luchtband",
+    "controle": "een luchtband is een (meestal van rubber gemaakte) opblaasbare omhulling gemonteerd op de velg van een wiel",
+    "gevonden": true
+   },
+   {
+    "tekst": "Grote auto's zoals bussen en vrachtwagens veren vaak op lucht in plaats van op stalen veren.",
+    "bron": "https://en.wikipedia.org/wiki/Air_suspension",
+    "controle": "air suspension is used in place of conventional steel springs in heavy vehicle applications such as buses and trucks",
+    "gevonden": true
+   },
+   {
+    "tekst": "Brandweerauto's voor bos en heide staan hoger op hun wielen. Vaak worden alle vier de wielen aangedreven.",
+    "bron": "https://nl.wikipedia.org/wiki/Tankautospuit",
+    "controle": "staan hoger op hun wielen en beschikken vaak over 4×4 aandrijving",
+    "gevonden": true
+   }
+  ]
+ }
+}
