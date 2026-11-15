@@ -31,7 +31,7 @@ export async function stuurMail(aan: string, onderwerp: string, kop: string, ali
   let fout: string | undefined;
   if (process.env.RESEND_API_KEY) {
     try {
-      const res = await fetch('https://api.resend.com/emails', {
+      const res = await fetch(`${(process.env.RESEND_API || 'https://api.resend.com').replace(/\/$/, '')}/emails`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ from: process.env.MAIL_VAN || 'Hoofdrol <boeken@example.com>', to: [aan], subject: onderwerp, html, text: tekst }),

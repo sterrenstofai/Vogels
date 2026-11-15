@@ -1,5 +1,5 @@
 import { isPaid } from '@/lib/providers/payment';
-import { checkPayment, getOrder } from '@/lib/orders';
+import { getOrder, markPaid } from '@/lib/orders';
 import { withLock } from '@/lib/store';
 
 // Mollie meldt alleen een betaalnummer; de status halen we zelf bij Mollie op.
@@ -10,8 +10,11 @@ export async function POST(req: Request) {
   const p = await isPaid(paymentId);
   if (p.orderId) {
     await withLock(p.orderId, async () => {
+      // Ook een eerdere betaallink van dezelfde bestelling telt, als het bedrag klopt met wat er nu besteld is.
       const order = await getOrder(p.orderId!);
-      if (order && order.paymentId === paymentId) await checkPayment(order);
+      if (!order || !p.paid || p.amount !== (order.totaalCents / 100).toFixed(2)) return;
+      order.paymentId = paymentId;
+      await markPaid(order);
     });
   }
   return new Response('ok');

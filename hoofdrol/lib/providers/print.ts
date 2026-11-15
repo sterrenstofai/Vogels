@@ -4,7 +4,9 @@
 //
 // Let op: de Gelato-koppeling is geschreven naar hun documentatie (Order API v4)
 // en nog niet tegen een echt account getest.
-import type { Order } from '../store';
+import { getFile, putFile, type Order } from '../store';
+import { bouwOmslag, voegSamen, type OmslagMaten } from '../pdf';
+import { getStory } from '../stories';
 
 export type Offerte = { drukker: string; drukCents: number; verzendCents: number; werkdagen: number };
 export interface Drukker {
@@ -13,6 +15,8 @@ export interface Drukker {
   bestel(order: Order, paginas: number): Promise<string>;
 }
 
+const G_ORDER = () => (process.env.GELATO_ORDER_API || 'https://order.gelatoapis.com').replace(/\/$/, '');
+const G_PRODUCT = () => (process.env.GELATO_PRODUCT_API || 'https://product.gelatoapis.com').replace(/\/$/, '');
 const SITE = () => (process.env.SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
 
 const testdrukker = (naam: string, hard: number, zacht: number, verzend: number, werkdagen: number): Drukker => ({
@@ -25,15 +29,39 @@ const testdrukker = (naam: string, hard: number, zacht: number, verzend: number,
   },
 });
 
+const gelatoProduct = (order: Order) => {
+  const uid = order.format === 'hardcover' ? process.env.GELATO_PRODUCT_UID_HARDCOVER : process.env.GELATO_PRODUCT_UID_SOFTCOVER;
+  if (!uid) throw new Error('GELATO_PRODUCT_UID ontbreekt voor ' + order.format);
+  return uid;
+};
+
+// Gelato rekent de omslagmaten per product en aantal bladzijden uit. Kloppen de
+// velden niet met wat we verwachten, dan stoppen we: liever geen bestelling dan een scheve omslag.
+async function gelatoOmslagMaten(order: Order, paginas: number): Promise<OmslagMaten> {
+  const res = await fetch(`${G_PRODUCT()}/v3/products/${encodeURIComponent(gelatoProduct(order))}/cover-dimensions?pageCount=${paginas}`, { headers: { 'X-API-KEY': process.env.GELATO_API_KEY! } });
+  if (!res.ok) throw new Error(`Gelato omslagmaten ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  const d = await res.json();
+  const vlak = (v: { left?: number; top?: number; width?: number; height?: number } | undefined) => {
+    if (!v || [v.left, v.top, v.width, v.height].some((n) => typeof n !== 'number')) throw new Error('Gelato gaf onverwachte omslagmaten; de bestelling is niet geplaatst');
+    return { x: v.left!, y: v.top!, b: v.width!, h: v.height! };
+  };
+  const voor = vlak(d.contentFrontSize), achter = vlak(d.contentBackSize), rug = vlak(d.spineSize);
+  const alles = Object.values(d).filter((v): v is { left: number; top: number; width: number; height: number } => !!v && typeof v === 'object' && typeof (v as { left?: unknown }).left === 'number');
+  return {
+    breedte: Math.max(...alles.map((v) => v.left + v.width)),
+    hoogte: Math.max(...alles.map((v) => v.top + v.height)),
+    voor, achter, rug: { x: rug.x, b: rug.b },
+  };
+}
+
 function gelatoBody(order: Order, paginas: number) {
-  const productUid = order.format === 'hardcover' ? process.env.GELATO_PRODUCT_UID_HARDCOVER : process.env.GELATO_PRODUCT_UID_SOFTCOVER;
-  if (!productUid) throw new Error('GELATO_PRODUCT_UID ontbreekt voor ' + order.format);
+  const productUid = gelatoProduct(order);
   const [voornaam, ...rest] = order.shipping.naam.trim().split(/\s+/);
   return {
     orderReferenceId: order.id,
     customerReferenceId: order.id,
     currency: 'EUR',
-    items: [{ itemReferenceId: order.id + '-boek', productUid, pageCount: paginas, quantity: order.aantal, files: [{ type: 'default', url: `${SITE()}/api/orders/${order.id}/files/boek.pdf` }] }],
+    items: [{ itemReferenceId: order.id + '-boek', productUid, pageCount: paginas, quantity: order.aantal, files: [{ type: 'default', url: `${SITE()}/api/orders/${order.id}/files/druk-gelato.pdf` }] }],
     shippingAddress: { firstName: voornaam, lastName: rest.join(' ') || voornaam, addressLine1: order.shipping.straat, postCode: order.shipping.postcode, city: order.shipping.plaats, country: order.shipping.land, email: order.email },
   };
 }
@@ -42,7 +70,7 @@ const gelato: Drukker = {
   naam: 'gelato',
   async offerte(order, paginas) {
     const b = gelatoBody(order, paginas);
-    const res = await fetch('https://order.gelatoapis.com/v4/orders:quote', {
+    const res = await fetch(`${G_ORDER()}/v4/orders:quote`, {
       method: 'POST',
       headers: { 'X-API-KEY': process.env.GELATO_API_KEY!, 'Content-Type': 'application/json' },
       body: JSON.stringify({ orderReferenceId: b.orderReferenceId, customerReferenceId: b.customerReferenceId, currency: 'EUR', recipient: b.shippingAddress, products: b.items }),
@@ -55,7 +83,12 @@ const gelato: Drukker = {
     return { drukker: 'gelato', drukCents: Math.round(druk * 100), verzendCents: Math.round(verzend.price * 100), werkdagen: verzend.maxDeliveryDays ?? 7 };
   },
   async bestel(order, paginas) {
-    const res = await fetch('https://order.gelatoapis.com/v4/orders', {
+    // Gelato wil één bestand: omslag, leeg schutblad, binnenwerk, leeg schutblad.
+    const [binnen, plaat] = await Promise.all([getFile(order.id, 'boek.pdf'), getFile(order.id, 'pagina-0.jpg')]);
+    if (!binnen || !plaat) throw new Error('drukbestand ontbreekt');
+    const omslag = await bouwOmslag({ titel: getStory(order.storySlug)!.titel, naam: order.childName, plaat, maten: await gelatoOmslagMaten(order, paginas) });
+    await putFile(order.id, 'druk-gelato.pdf', await voegSamen(omslag, binnen));
+    const res = await fetch(`${G_ORDER()}/v4/orders`, {
       method: 'POST',
       headers: { 'X-API-KEY': process.env.GELATO_API_KEY!, 'Content-Type': 'application/json' },
       body: JSON.stringify({ orderType: 'order', shipmentMethodUid: 'standard', ...gelatoBody(order, paginas) }),

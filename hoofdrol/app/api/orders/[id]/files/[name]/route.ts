@@ -11,7 +11,7 @@ export async function GET(req: Request, ctx: { params: Promise<{ id: string; nam
   if (name === 'foto.jpg') {
     const k = new URL(req.url).searchParams.get('k') || '';
     if (!order.refKey || k.length !== order.refKey.length || !timingSafeEqual(Buffer.from(k), Buffer.from(order.refKey))) return nee();
-  } else if (!/^(pagina-\d{1,2}\.jpg|boek\.pdf|omslag\.pdf)$/.test(name)) return nee();
+  } else if (!/^(pagina-\d{1,2}\.jpg|boek\.pdf|omslag\.pdf|druk-[a-z]+\.pdf)$/.test(name)) return nee();
   const data = await getFile(id, name);
   if (!data) return nee();
   return new Response(new Uint8Array(data), {

@@ -15,29 +15,31 @@ Alle kosten hieronder zijn schattingen (november 2026), exclusief btw. Draai `np
 
 | Post | Schatting | Hoe zeker |
 | --- | --- | --- |
-| Drukken (20 × 20 cm, 30 pagina's) | € 13,50 | Onzeker: € 11 tot € 17, offerte nodig |
+| Drukken (20 × 20 cm, 30 bladzijden) | € 13,50 | Onzeker: € 11 tot € 17, offerte nodig |
 | Bezorgen in Nederland | € 4,50 | Redelijk |
-| Platen maken (26 beelden × € 0,12 × 1,4 herkansingen) | € 4,37 | Onzeker: hangt sterk af van het model |
+| Platen maken (12 platen × € 0,12 × 1,4 herkansingen) | € 2,02 | Onzeker: de API-prijs per plaat staat alleen in de console van Higgsfield |
 | Betaalkosten iDEAL | € 0,35 | Redelijk |
 | Hosting, opslag, mail | € 0,30 | Ruwe schatting |
 | Reserve voor herdruk en klantenservice (5%) | € 2,06 | Keuze |
-| **Totaal** | **€ 25,08** | |
+| **Totaal** | **€ 22,73** | |
 
-Omzet bij één boek met harde kaft: € 44,90 incl. btw, € 41,19 excl. 9% btw. Marge: € 16,12 (39%).
+Omzet bij één boek met harde kaft: € 44,90 incl. btw, € 41,19 excl. 9% btw. Marge: € 18,47 (45%).
 
 | Bestelling | Marge |
 | --- | --- |
-| Zachte kaft, 1 boek | € 13,40 (42%) |
-| Harde kaft, 2 boeken | € 20,05 (34%) |
-| Harde kaft, 3 boeken | € 28,29 (34%) |
+| Zachte kaft, 1 boek | € 15,75 (49%) |
+| Harde kaft, 2 boeken | € 22,40 (38%) |
+| Harde kaft, 3 boeken | € 30,64 (37%) |
+
+Het boek heeft twaalf platen; de omslag gebruikt de eerste plaat. Het voorbeeldboek kostte in het abonnement 2,5 credits per plaat van 2048 pixels, dus 30 credits voor een heel boek.
 
 ## Als het tegenzit
 
 | Geval (harde kaft, 1 boek) | Marge |
 | --- | --- |
-| Drukken kost € 17 | € 12,62 (31%) |
-| Beelden drie keer zo duur | € 7,38 (18%) |
-| Beide | € 3,88 (9%) |
+| Drukken kost € 17 | € 14,97 (36%) |
+| Platen drie keer zo duur | € 14,44 (35%) |
+| Beide | € 10,94 (27%) |
 
 ## Wat hier niet in zit
 
@@ -49,4 +51,4 @@ Omzet bij één boek met harde kaft: € 44,90 incl. btw, € 41,19 excl. 9% btw
 
 - Vergelijkbare boeken kosten € 35 tot € 45 (papergarden vraagt € 39 plus bezorgen voor een harde kaft).
 - Het extra exemplaar is de beste verdienste: daar zitten geen beeldkosten meer in.
-- Eerst betalen houdt de beeldkosten beheersbaar. Het nadeel is dat minder bezoekers bestellen dan wanneer ze eerst een voorbeeld met hun eigen kind zien. Een tussenweg: één gratis proefplaat (ongeveer € 0,15) vóór het afrekenen.
+- Eerst betalen houdt de beeldkosten beheersbaar. Het nadeel is dat minder bezoekers bestellen dan wanneer ze eerst een voorbeeld met hun eigen kind zien. Daarom staat er een voorbeeldboek met een verzonnen kind op de site, waar de klant vóór het bestellen doorheen bladert.

@@ -3,6 +3,7 @@ import { getStory } from '@/lib/stories';
 import type { Format } from '@/lib/pricing';
 import { newId, saveOrder, type Order } from '@/lib/store';
 import { magDoor } from '@/lib/limiet';
+import { drukbaar, nietDrukbaar } from '@/lib/letters';
 
 const tekst = (v: unknown, max: number) => (typeof v === 'string' ? v.trim().slice(0, max) : '');
 
@@ -15,6 +16,9 @@ export async function POST(req: Request) {
   if (!story?.beschikbaar) return NextResponse.json({ fout: 'Dit verhaal is nog niet te bestellen.' }, { status: 400 });
   const childName = tekst(b.childName, 20);
   if (!/^[\p{L}][\p{L} '-]*$/u.test(childName)) return NextResponse.json({ fout: 'Vul de voornaam van het kind in (alleen letters).' }, { status: 400 });
+  const opdracht = tekst(b.opdracht, 160).replace(/\s+/g, ' ');
+  for (const [wat, t] of [['de naam', childName], ['de opdracht', opdracht]])
+    if (!drukbaar(t)) return NextResponse.json({ fout: `In ${wat} staat een teken dat we nog niet kunnen drukken: ${nietDrukbaar(t)}` }, { status: 400 });
   const format: Format = b.format === 'softcover' ? 'softcover' : 'hardcover';
 
   const order: Order = {
@@ -24,7 +28,7 @@ export async function POST(req: Request) {
     format,
     aantal: 1,
     childName,
-    opdracht: tekst(b.opdracht, 160).replace(/\s+/g, ' '),
+    opdracht,
     email: '',
     shipping: { naam: '', straat: '', postcode: '', plaats: '', land: 'NL' },
     totaalCents: 0,

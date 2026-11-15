@@ -86,7 +86,7 @@ export function bouwPrompt(job: Pick<ImageJob, 'prompt' | 'stijl' | 'referenties
   ].filter(Boolean).join(' ');
 }
 
-const HF = 'https://api.higgsfield.ai';
+const HF = (process.env.HIGGSFIELD_API || 'https://api.higgsfield.ai').replace(/\/$/, '');
 const hfKop = () => ({ Authorization: `Key ${process.env.HIGGSFIELD_KEY_ID}:${process.env.HIGGSFIELD_KEY_SECRET}`, 'Content-Type': 'application/json' });
 
 const higgsfield: ImageProvider = {

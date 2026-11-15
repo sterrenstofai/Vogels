@@ -5,6 +5,7 @@ import { listAllOrders } from '@/lib/store';
 import { STATUS, cijfers } from '@/lib/beheer';
 import { getStory } from '@/lib/stories';
 import { euro } from '@/lib/pricing';
+import { koppelingen } from '@/lib/stand';
 
 export const metadata = { title: 'Beheer', robots: { index: false } };
 const dag = (iso: string) => new Date(iso).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' });
@@ -26,6 +27,7 @@ export default async function Beheer({ searchParams }: { searchParams: Promise<{
           <div className="cijfer"><b>{c.onderweg}</b><span>in de maak</span></div>
           <div className="cijfer"><b>{c.actie}</b><span>mislukt, actie nodig</span></div>
         </div>
+        <p className="noot" style={{ marginBottom: 26 }}>{Object.entries(koppelingen()).map(([k, v]) => `${k}: ${v}`).join(' · ')}</p>
         {toon.length === 0 ? <p className="grijs">Nog geen bestellingen.</p> : (
           <div className="tabelwrap">
             <table className="lijst">

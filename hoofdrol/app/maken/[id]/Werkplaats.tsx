@@ -62,6 +62,7 @@ export function Werkplaats({ id }: { id: string }) {
         data-stap="foto"
         onSubmit={(e) => { e.preventDefault(); doe('photo', { body: new FormData(e.currentTarget) }); }}
       >
+        <Stappen nu={3} />
         <span className="hand">Bedankt, de betaling is binnen</span>
         <h1>Stuur een foto van {v.childName}</h1>
         <label className="upload">
@@ -88,6 +89,7 @@ export function Werkplaats({ id }: { id: string }) {
   if (v.status === 'generating')
     return (
       <div className="status" aria-live="polite">
+        <Stappen nu={3} />
         <h1>We tekenen {v.childName} in het verhaal</h1>
         <p>{klaar} van de {v.pages.length} platen zijn klaar. Je kunt deze pagina open laten of later terugkomen via dezelfde link.</p>
         <div className="balk" role="progressbar" aria-valuemin={0} aria-valuemax={v.pages.length} aria-valuenow={klaar}><i style={{ width: `${(klaar / v.pages.length) * 100}%` }} /></div>

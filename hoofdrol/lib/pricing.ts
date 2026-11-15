@@ -7,9 +7,9 @@ export const BTW = 0.09; // gedrukte boeken vallen in Nederland onder het lage t
 
 export const AANNAMES = {
   paginas: 30,
-  beelden: 26, // illustraties per boek, inclusief omslag
+  beelden: 12, // platen per boek; de omslag gebruikt de eerste plaat
   kostenPerBeeld: 0.12, // ruim geschat; hangt af van model en resolutie
-  herkansingen: 1.4, // mislukte beelden en "maak opnieuw" door de klant
+  herkansingen: 1.4, // mislukte platen en de drie herkansingen van de klant
   druk: { hardcover: 13.5, softcover: 7.5 } as Record<Format, number>,
   verzendingNL: 4.5, // inkoop bij de drukker
   betaalkosten: 0.35, // iDEAL via Mollie, per transactie
