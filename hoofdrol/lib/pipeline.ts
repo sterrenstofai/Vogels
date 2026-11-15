@@ -58,7 +58,12 @@ export async function approve(order: Order): Promise<Order> {
   }
   const pdf = await bouwBoek({ titel: story.titel, naam: order.childName, opdracht: order.opdracht, paginas });
   await putFile(order.id, 'boek.pdf', pdf);
-  order.printOrderId = await placePrintOrder(order, paginas.length + 2);
+  const druk = await placePrintOrder(order, paginas.length + 2);
+  order.printOrderId = druk.id;
+  order.drukker = druk.offerte.drukker;
+  order.inkoopCents = druk.offerte.drukCents + druk.offerte.verzendCents;
+  console.log(`[drukker] ${order.id}: ${order.drukker}, inkoop ${(order.inkoopCents / 100).toFixed(2)} op een bestelling van ${(order.totaalCents / 100).toFixed(2)}`);
+  if (order.inkoopCents > order.totaalCents * 0.6) console.warn(`[drukker] let op: inkoop is meer dan 60% van de bestelling ${order.id}`);
   order.status = 'printing';
   await saveOrder(order);
   return order;

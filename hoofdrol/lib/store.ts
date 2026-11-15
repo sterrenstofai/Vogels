@@ -26,6 +26,8 @@ export type Order = {
   pages: PageState[];
   regenerationsLeft: number;
   printOrderId?: string;
+  drukker?: string;
+  inkoopCents?: number; // wat de drukker rekent, druk en verzending samen
   error?: string;
 };
 

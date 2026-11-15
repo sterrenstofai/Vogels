@@ -30,7 +30,7 @@ Open http://localhost:3000. Zonder sleutels draait alles op testproviders: de be
 | Betalen | `lib/providers/payment.ts` | Mollie geschreven, nog niet met een echte sleutel getest |
 | Platen maken | `lib/providers/images.ts` | Alleen de testmaker; Higgsfield of Magnific moet nog gekoppeld |
 | Drukbestand (pdf) | `lib/pdf.ts` | Werkt: 20 × 20 cm met 3 mm afloop; omslag ontbreekt nog |
-| Drukker | `lib/providers/print.ts` | Gelato geschreven naar de documentatie, niet getest |
+| Drukkers | `lib/providers/print.ts` | Meerdere drukkers geven een offerte, de goedkoopste krijgt de opdracht. Nu twee testdrukkers; Gelato geschreven naar de documentatie, niet getest |
 | Stappen na betaling | `lib/pipeline.ts` | Werkt |
 | Inloggen en portaal | `lib/auth.ts`, `app/mijn` | Werkt; de mail met de link wordt nog niet verstuurd (testversie toont de link) |
 | Opslag | `lib/store.ts` | Bestanden op schijf; voor productie een database en objectopslag |
