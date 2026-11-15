@@ -1,0 +1,1692 @@
+[
+  {
+    "id": "asr-letselschade-agents",
+    "naam": "AI-agents voor letselschadedossiers",
+    "organisatie": "a.s.r.",
+    "gebouwdMet": [
+      "Rewire"
+    ],
+    "sector": "Financiën",
+    "type": "Agent",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "AI-agents die omvangrijke letselschadedossiers lezen en ordenen voor de schadespecialisten van a.s.r.",
+    "beschrijving": "Bij letselschade bestaat een dossier uit grote hoeveelheden correspondentie, rapporten en andere stukken. Meerdere agents op basis van taalmodellen lezen hetzelfde dossier elk vanuit een eigen invalshoek, zoals juridisch, medisch en de thuissituatie. Een overkoepelende agent voegt hun bevindingen samen tot één overzicht. Alle 120 medewerkers van de afdeling letselschade werken er dagelijks mee; de specialist neemt de beslissing.",
+    "opvallend": "De agents zijn stap voor stap ingewerkt met feedback van ervaren behandelaars, zoals bij een nieuwe collega, en de prompts zijn samen met medewerkers geschreven. Medewerkers kunnen nagaan welke informatie van de agent afkomstig is.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Hoe maak je complexe financiële dienstverlening efficiënter en klantgerichter met AI-agents?",
+        "uitgever": "Banken.nl",
+        "url": "https://www.banken.nl/nieuws/27328/hoe-maak-je-complexe-financiele-dienstverlening-efficienter-en-klantgerichter-met-ai-agents",
+        "datum": "2026-08-24"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "abn-amro-anna",
+    "naam": "Anna",
+    "organisatie": "ABN AMRO",
+    "gebouwdMet": [
+      "Microsoft",
+      "Capgemini"
+    ],
+    "sector": "Financiën",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Digitale assistent die klanten van ABN AMRO via chat en telefoon te woord staat.",
+    "beschrijving": "Anna beantwoordt klantvragen in de chat en aan de telefoon, van een pinpas deblokkeren tot de weg vinden in de digitale bank. Aan de telefoon herkent ze waarvoor iemand belt, verbindt door naar de juiste afdeling en handelt een deel van de vragen zelf af. In 2024 heeft de bank Anna in ongeveer zes maanden overgezet naar Microsoft Copilot Studio, met Azure-taalherkenning voor het bepalen van de intentie. Voor medewerkers bestaat een vergelijkbare assistent, Abby, voor vragen over IT en facilitaire zaken.",
+    "opvallend": "Eén assistent bedient zowel het tekst- als het spraakkanaal, op een schaal van miljoenen gesprekken per jaar. De beveiligingstoets van de bank duurde drie maanden voordat het platform werd goedgekeurd.",
+    "resultaat": {
+      "tekst": "Anna voert per jaar ruim 2 miljoen tekstgesprekken en 1,5 miljoen spraakgesprekken; de herkenning van Nederlandse intenties verbeterde met 7 procent.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "ABN AMRO Bank migrates to Microsoft Copilot Studio to support over 3.5 million customer conversations",
+        "uitgever": "Microsoft Customer Stories",
+        "url": "https://www.microsoft.com/customers/story/19754-abn-amro-bank-microsoft-copilot-studio",
+        "datum": "2024-12-03"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "adyen-uplift",
+    "naam": "Adyen Uplift",
+    "organisatie": "Adyen",
+    "gebouwdMet": [],
+    "sector": "Financiën",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Betaalproduct van Adyen dat met AI per transactie conversie, fraudecontrole en kosten optimaliseert.",
+    "beschrijving": "Uplift is een reeks functies in het betaalplatform van Adyen. Modellen die zijn getraind op de betaaldata van het platform beoordelen per transactie het frauderisico en kiezen de betaalroute. Bedrijven krijgen aanbevelingen op basis van data en kunnen verschillende instellingen tegen elkaar testen. Voor de lancering in januari 2025 is het product getest door 60 grote bedrijven, waaronder Patagonia, On, Indeed en NordSecurity.",
+    "opvallend": "De modellen vervangen een groot deel van de handmatig onderhouden risicoregels: pilotklanten hadden er gemiddeld 86 procent minder nodig. Klanten noemen in het persbericht zelf hun cijfers, On meldt 2 procent meer conversie en NordSecurity 10 procent op betalingen door consumenten.",
+    "resultaat": {
+      "tekst": "Tijdens de pilot met 60 bedrijven zag Adyen tot 6 procent hogere conversie op betalingen.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Adyen lanceert nieuw product Uplift: de betaaloplossing die elke transactie optimaliseert met AI",
+        "uitgever": "Adyen",
+        "url": "https://www.adyen.com/nl_NL/press-and-media/adyen-lanceert-nieuw-product-uplift-de-betaaloplossing-die-elke-transactie-optimaliseert-met-ai",
+        "datum": "2025-01-09"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "afas-lefebvre-sdu-genia-l-in-jonas",
+    "naam": "GenIA-L in Jonas",
+    "organisatie": "AFAS en Lefebvre Sdu",
+    "gebouwdMet": [],
+    "sector": "Zakelijke software",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": "2026",
+    "kort": "Juridische en fiscale kennis van Lefebvre Sdu, op te vragen via assistent Jonas in de software van AFAS.",
+    "beschrijving": "Jonas is de AI-assistent in de bedrijfssoftware van AFAS. Stelt een gebruiker een juridische of fiscale vraag, dan raadpleegt Jonas op de achtergrond GenIA-L, de AI-dienst van uitgever Lefebvre Sdu. Jonas vraagt daar eerst toestemming voor en toont de gebruikte bronnen onder het antwoord. De koppeling is op 18 juni 2026 gelanceerd tijdens AFAS Open; elke omgeving krijgt maandelijks een aantal gratis vragen, daarna is een abonnement nodig.",
+    "opvallend": "Twee assistenten werken samen: de ene kent het werkproces, de andere levert gecontroleerde vakinhoud met bronvermelding. De gebruiker beslist per vraag of de externe bron mag worden geraadpleegd.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Lefebvre Sdu en AFAS Software versterken samenwerking: GenIA-L nu direct beschikbaar in Jonas",
+        "uitgever": "Taxence",
+        "url": "https://www.taxence.nl/?p=164909",
+        "datum": "2026-06-18"
+      },
+      {
+        "titel": "Sdu GenIA-L",
+        "uitgever": "AFAS Help Center",
+        "url": "https://help.afas.nl/help/nl/se/141281.htm",
+        "datum": null
+      },
+      {
+        "titel": "AFAS en Lefebvre Sdu maken juridische kennis toegankelijk voor iedereen op de werkvloer",
+        "uitgever": "Accountancy Vanmorgen",
+        "url": "https://www.accountancyvanmorgen.nl/2025/12/02/partner-afas-en-lefebvre-sdu-maken-juridische-kennis-toegankelijk-voor-iedereen-op-de-werkvloer/",
+        "datum": "2025-12-02"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "albert-heijn-klantenservice-assistent",
+    "naam": "Klantenservice-assistent",
+    "organisatie": "Albert Heijn",
+    "gebouwdMet": [
+      "Rasa"
+    ],
+    "sector": "Retail",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2019",
+    "kort": "Digitale klantenservice van Albert Heijn die vragen in vrije tekst afhandelt via web, app en WhatsApp.",
+    "beschrijving": "Albert Heijn werkt sinds 2019 met het platform van Rasa voor zijn klantenservice. De assistent begon met 20 tot 25 vaste gespreksroutes en is later overgezet naar Rasa CALM, waarmee klanten in vrije tekst kunnen schrijven en van onderwerp kunnen wisselen. Ongeveer dertig vaste routes dekken veelvoorkomende vragen en handelingen; voor de overige vragen stelt een taalmodel antwoorden op uit de bestaande veelgestelde vragen op site en app. De assistent kan ook zelf iets regelen, zoals ontbrekende digitale spaarzegels bijschrijven.",
+    "opvallend": "Generatieve AI is hier gecombineerd met vaste, controleerbare routes, en het geheel draait op eigen servers zodat Albert Heijn de regie over data en logica houdt. De assistent voert handelingen uit en beantwoordt niet alleen vragen.",
+    "resultaat": {
+      "tekst": "Volgens Rasa voorkomt de assistent 50% van de contacten met een medewerker; bij vragen over digitale spaarzegels daalde het aantal contacten met 80%.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Albert Heijn Reduces 50% of Customer Service Contacts with a Rasa Agent",
+        "uitgever": "Rasa",
+        "url": "https://info.rasa.com/hubfs/2026_Case_Studies/Rasa_AlbertHeijn_customerstory.pdf",
+        "datum": "2026"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "albert-heijn-steijn",
+    "naam": "Steijn",
+    "organisatie": "Albert Heijn",
+    "gebouwdMet": [
+      "Microsoft"
+    ],
+    "sector": "Retail",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Kook- en boodschappenhulp in de AH-app die recepten voorstelt, ook op basis van een foto van de koelkast.",
+    "beschrijving": "Steijn is de assistent in de app van Albert Heijn. Klanten stellen in een chat vragen over wat ze kunnen eten en krijgen recepten met een bijpassende boodschappenlijst, afgestemd op dieetwensen, beschikbare tijd of het aantal eters. De assistent put uit ruim 20.000 recepten uit het archief van Allerhande en kan op een foto van de koelkast ingrediënten herkennen. Hij is gebouwd op Azure AI Foundry met modellen van Azure OpenAI, plus een filter dat ongepaste inhoud tegenhoudt.",
+    "opvallend": "De assistent leunt op een eigen, geredigeerd receptenarchief in plaats van op algemene kennis van een taalmodel. Volgens Microsoft bouwde een team van acht ontwikkelaars hem in ongeveer drie maanden.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Steijn: The AI assistant transforming meal planning for millions in the Netherlands",
+        "uitgever": "Microsoft Source EMEA",
+        "url": "https://news.microsoft.com/source/emea/features/steijn-the-ai-assistant-transforming-meal-planning-for-millions-in-the-netherlands/",
+        "datum": "2025-06-16"
+      },
+      {
+        "titel": "Technology Record, Issue 37: Summer 2025 (case Albert Heijn)",
+        "uitgever": "Technology Record",
+        "url": "https://www.technologyrecord.com/digital/magazine/issue37/158",
+        "datum": "2025"
+      },
+      {
+        "titel": "Niederlande: Albert Heijn führt KI-Küchenassistenten ein",
+        "uitgever": "Lebensmittel Praxis",
+        "url": "https://lebensmittelpraxis.de/lp-international/189-lpinternational-nachrichten/44093-niederlande-albert-heijn-fuehrt-ki-kuechenassistenten-ein.html",
+        "datum": "2025-04-23"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "alliander-openstef",
+    "naam": "OpenSTEF",
+    "organisatie": "Alliander",
+    "gebouwdMet": [
+      "LF Energy"
+    ],
+    "sector": "Energie",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Open source voorspeller van de belasting op het stroomnet, waarmee Alliander overbelasting dagen vooruit ziet.",
+    "beschrijving": "OpenSTEF voorspelt de belasting van het elektriciteitsnet van uren tot dagen vooruit, op basis van historische metingen, weersverwachtingen en prijssignalen. Alliander gebruikt het om overbelasting een tot twee dagen van tevoren te zien, zodat netbeheerders op tijd flexibiliteit kunnen inschakelen. Het vult ook ontbrekende metingen aan, berekent vrije ruimte op het net voor laadpalen en levert TenneT dagelijks een verwachting per koppelpunt. Daarnaast schat het de netverliezen die een dag vooruit moeten worden ingekocht.",
+    "opvallend": "De software is open source en ondergebracht bij LF Energy, zodat andere netbeheerders en bedrijven haar kunnen gebruiken en verbeteren. Een Zweeds bedrijf heeft haar aangepast voor stadsverwarming en draagt verbeteringen terug bij.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "The Value of Open Source Short-term Energy Forecasting Demonstrated Through Real-world Use Cases",
+        "uitgever": "LF Energy",
+        "url": "https://lfenergy.org/the-value-of-open-source-short-term-energy-forecasting-demonstrated-through-real-world-use-cases/",
+        "datum": "2025"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "asml-ai-diagnostiek",
+    "naam": "AI-diagnostiek voor storingen",
+    "organisatie": "ASML",
+    "gebouwdMet": [
+      "Mistral AI"
+    ],
+    "sector": "Industrie",
+    "type": "Taalmodel",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Taalmodellen doorzoeken foutlogs en servicerapporten om de oorzaak van storingen in chipmachines te vinden.",
+    "beschrijving": "ASML test samen met Mistral AI hulpmiddelen die ongestructureerde gegevens analyseren, zoals foutlogs en servicerapporten van machines in het veld. Het doel is sneller de onderliggende oorzaak van een storing in een deelsysteem te vinden. Mistral noemt het redeneren over grote hoeveelheden logs als een van de eerste toepassingen in de samenwerking, naast agents voor softwarebetrouwbaarheid en het automatiseren van technische documentatie.",
+    "opvallend": "De toepassing richt zich op zeer specialistische servicedata. ASML vergelijkt de uitkomst met het oordeel van de eigen engineers en meldt gelijke nauwkeurigheid.",
+    "resultaat": {
+      "tekst": "In vroege proeven werden bepaalde fouten in deelsystemen meer dan 70 procent sneller gevonden, met dezelfde nauwkeurigheid als engineers.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "The machines behind the machines",
+        "uitgever": "ASML",
+        "url": "https://www.asml.com/en/news/stories/2026/machines-behind-machines",
+        "datum": "2026-06-12"
+      },
+      {
+        "titel": "ASML and Mistral",
+        "uitgever": "Mistral AI",
+        "url": "https://www.mistral.ai/customers/asml",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "bitvavo-vavo",
+    "naam": "Vavo",
+    "organisatie": "Bitvavo",
+    "gebouwdMet": [
+      "Freeday"
+    ],
+    "sector": "Financiën",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Digitale collega bij de klantenservice van Bitvavo die vragen beantwoordt via chat, e-mail en Telegram.",
+    "beschrijving": "Vavo is het eerste aanspreekpunt op de supportpagina van cryptobeurs Bitvavo. De assistent beantwoordt veelgestelde vragen uit de kennisbank in zes talen, legt de status van een account uit en controleert gegevens uit officiële documenten. Ingewikkelde of fraudegevoelige zaken draagt Vavo over aan een medewerker, met een samengevat ticket in Zendesk. Vavo begon in de chat en werkt inmiddels ook via e-mail en Telegram; telefonie is in ontwikkeling.",
+    "opvallend": "De overdracht naar mensen is onderdeel van het ontwerp: fraudegevoelige zaken gaan altijd door naar een medewerker, met samenvatting. De leverancier publiceert de cijfers per kanaal, ook waar die nog laag zijn.",
+    "resultaat": {
+      "tekst": "Volgens leverancier Freeday voert Vavo ongeveer 18.000 gesprekken per maand, wat overeenkomt met het werk van 26,8 fte; klanten geven gemiddeld een 3,7 op 5.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Bitvavo: 26.8 FTE across crypto support channels",
+        "uitgever": "Freeday",
+        "url": "https://freeday.ai/success-stories/vavo-bitvavo",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "bol-shophulp",
+    "naam": "Shophulp",
+    "organisatie": "bol",
+    "gebouwdMet": [],
+    "sector": "Retail",
+    "type": "Assistent voor klanten",
+    "status": "Pilot",
+    "sinds": "2026",
+    "kort": "Chatassistent in de bol-app die klanten in gewone taal helpt het juiste product te vinden.",
+    "beschrijving": "Shophulp is een AI-assistent in de app van bol. Klanten beschrijven in eigen woorden wat ze zoeken, de assistent stelt vervolgvragen, toont passende producten en legt uit waarom hij die aanraadt. Hij kan daarbij rekening houden met eerdere aankopen en het verlanglijstje. Na een test met een kleine groep klanten vanaf juli 2026 is de bètaversie in september 2026 breed beschikbaar gekomen in de app.",
+    "opvallend": "De assistent werkt op het bestaande assortiment en de bestaande productdata, verkopers hoeven niets aan te passen. Een vakjournalist vond hem in een praktijktest bruikbaar, maar merkte op dat bol niet aangeeft of gesponsorde producten voorrang krijgen.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "De AI Shophulp van Bol vertelt niet wat je moet doen als er een leeuw in je tent staat",
+        "uitgever": "Androidworld",
+        "url": "https://androidworld.nl/tips/de-ai-shophulp-van-bol-vertelt-niet-wat-je-moet-doen-als-er-een-leeuw-in-je-tent-staat/",
+        "datum": "2026-09-16"
+      },
+      {
+        "titel": "New: Shop assistant, bol's AI assistant",
+        "uitgever": "bol Partnerplatform",
+        "url": "https://partnerplatform.bol.com/en/nadp/shop-help",
+        "datum": "2026-07-15"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "booking-com-smart-messenger",
+    "naam": "Smart Messenger en zoekhulp",
+    "organisatie": "Booking.com",
+    "gebouwdMet": [],
+    "sector": "Reizen",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Functies met generatieve AI: zoeken in gewone taal voor reizigers en automatische antwoorden voor verhuurders.",
+    "beschrijving": "Booking.com heeft in zijn app zoeken in gewone taal toegevoegd, waarbij ook hoogtepunten van een bestemming worden getoond. In het derde kwartaal van 2025 kwamen daar Smart Messenger en Auto-Reply bij: de eerste helpt aanbieders van accommodaties bij het contact met gasten, de tweede geeft gasten direct een persoonlijk antwoord op hun vraag. Moederbedrijf Booking Holdings meet het effect aan zoeksnelheid, conversie, annuleringen en klanttevredenheid.",
+    "opvallend": "De functies zitten aan beide kanten van het platform: bij de reiziger die zoekt en bij de verhuurder die vragen beantwoordt. Het bedrijf noemt de signalen zelf nog pril en geeft geen cijfers.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Booking Holdings Says Gen AI Tools Increase Conversions and Reduce Cancellations",
+        "uitgever": "PYMNTS",
+        "url": "https://www.pymnts.com/earnings/2025/booking-holdings-says-gen-ai-tools-increase-conversions-and-reduce-cancellations/",
+        "datum": "2025-10-28"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "bunq-finn",
+    "naam": "Finn",
+    "organisatie": "bunq",
+    "gebouwdMet": [
+      "Amazon Web Services",
+      "Anthropic"
+    ],
+    "sector": "Financiën",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2023",
+    "kort": "Assistent in de bunq-app die vragen over uitgaven en transacties beantwoordt en klantvragen afhandelt.",
+    "beschrijving": "Finn kwam in december 2023 in de app van bunq als vervanger van de zoekfunctie: gebruikers vragen in gewone taal bijvoorbeeld hoeveel ze dit jaar bij een bepaalde winkel uitgaven. In 2024 werd Finn een volwaardige gesprekspartner die vervolgvragen aankan en ook supportvragen behandelt. Sinds een update eind 2025 werkt Finn in 38 talen en helpt hij bij kaarten, betalingen en sparen. Volgens een technische beschrijving van AWS verdeelt een centrale regisseur de vragen over gespecialiseerde agents, die draaien op Claude-modellen via Amazon Bedrock; vragen die meer kennis vergen gaan naar een medewerker.",
+    "opvallend": "Finn groeide in twee jaar van zoekbalk naar het eerste aanspreekpunt van de bank. De opbouw met een regisseur en gespecialiseerde agents is openbaar beschreven, wat zeldzaam is voor een bank.",
+    "resultaat": {
+      "tekst": "Volgens bunq handelt Finn ongeveer 97% van alle supportactiviteit af, met een gemiddelde afhandeltijd van 47 seconden en een klanttevredenheid van 90%.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Meet Finn: bunq's new GenAI chatbot",
+        "uitgever": "The Next Web",
+        "url": "https://thenextweb.com/news/bunq-new-generative-ai-chatbot-finn",
+        "datum": "2023-12-19"
+      },
+      {
+        "titel": "bunq makes its GenAI assistant Finn fully conversational",
+        "uitgever": "Retail Banker International",
+        "url": "https://www.retailbankerinternational.com/news/bunq-makes-its-ai-assistant-finn-fully-conversational/",
+        "datum": "2024-05-14"
+      },
+      {
+        "titel": "How bunq's Finn Evolved From AI Search to a Multilingual Financial Assistant",
+        "uitgever": "CX Today",
+        "url": "https://www.cxtoday.com/ai-automation-in-cx/bunq-finn-financial-ai-assistant/",
+        "datum": "2026-07-28"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "rechtspraak-rechtspraakgpt",
+    "naam": "RechtspraakGPT",
+    "organisatie": "De Rechtspraak",
+    "gebouwdMet": [],
+    "sector": "Juridisch",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Eigen taalmodel van de Rechtspraak voor ondersteunend werk, nadrukkelijk niet voor het oordeel in zaken.",
+    "beschrijving": "RechtspraakGPT is een generatief taalmodel dat de Rechtspraak in december 2025 voor de eigen organisatie heeft ingevoerd. Medewerkers krijgen pas toegang nadat zij een verplichte cursus over veilig en verantwoord gebruik hebben afgerond. Het is bedoeld voor ondersteunend werk, zoals het opstellen van mails, brieven en nieuwsberichten. Rechters en gerechtsjuristen mogen het niet gebruiken bij de beoordeling van individuele zaken.",
+    "opvallend": "De grens is scherp getrokken: zolang het systeem niet voldoet aan de eisen voor hoog-risico AI uit de Europese AI-verordening, blijft het buiten de rechterlijke oordeelsvorming. Toegang is gekoppeld aan een verplichte cursus.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "AI en rechtspraak. Een procesrechtelijk en rechtsfilosofisch perspectief (NJB 2026/1127)",
+        "uitgever": "Nederlands Juristenblad",
+        "url": "https://www.njb.nl/media/12jco13z/njb21_ai-en-rechtspraak.pdf",
+        "datum": "2026-06-19"
+      },
+      {
+        "titel": "AI en rechtspraak",
+        "uitgever": "Nederlands Juristenblad",
+        "url": "https://www.njb.nl/blogs/ai-en-rechtspraak/",
+        "datum": "2026-06-18"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "essent-agent-copilot",
+    "naam": "Agent Copilot",
+    "organisatie": "Essent",
+    "gebouwdMet": [
+      "Cognigy"
+    ],
+    "sector": "Energie",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Assistent die klantenservicemedewerkers van Essent tijdens het gesprek direct van antwoorden voorziet.",
+    "beschrijving": "De assistent draait in Microsoft Teams en is gevoed met ruim 1.100 kennisartikelen. Medewerkers van de klantenservice stellen er tijdens een klantgesprek hun vragen aan, waar ze eerder een interne helpdesk van zeven ervaren collega's belden. Essent gebruikt hetzelfde platform ook voor chat en telefonie: een chatassistent handelt binnenkomende chats eerst zelf af, een spraakassistent neemt meterstanden op en gesprekken worden automatisch samengevat in het klantsysteem.",
+    "opvallend": "Essent begon bij de eigen medewerker in plaats van bij de klant, en gebruikt daarna één platform voor chat, spraak en ondersteuning. De spraakassistent voor meterstanden slaagde volgens dezelfde bron in 22 procent van de gesprekken, wat laat zien dat niet alles even goed werkt.",
+    "resultaat": {
+      "tekst": "Ongeveer 85 procent van de vragen die eerder naar de interne helpdesk gingen, wordt door de assistent beantwoord; 55 procent van de klantchats wordt volledig automatisch afgehandeld.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Essent: Complete AI Coverage Voice, Chat, and Agent Copilot",
+        "uitgever": "Cognigy",
+        "url": "https://cognigy.com/en/case-study/essent",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "exact-financial-agent",
+    "naam": "Financial Agent",
+    "organisatie": "Exact",
+    "gebouwdMet": [],
+    "sector": "Zakelijke software",
+    "type": "Agent",
+    "status": "Pilot",
+    "sinds": "2026",
+    "kort": "AI-agent in de software van Exact die cijfers analyseert en trends, risico's en kansen aanwijst.",
+    "beschrijving": "De Financial Agent werkt met gegevens uit de balans en de winst-en-verliesrekening en legt verbanden tussen bijvoorbeeld kosten, omzet en marges. Gebruikers stellen vragen over opvallende ontwikkelingen; de agent beschrijft wat er verandert, noemt mogelijke oorzaken en doet aanbevelingen. Vakpers meldt dat de agent ruim zestig financiële kengetallen vergelijkt, de eigen site van Exact spreekt van ruim veertig. Exact kondigde de agent in september 2026 aan en voert hem op zijn site als bètaversie.",
+    "opvallend": "De agent beperkt zich tot één afgebakend domein en redeneert over samenhang in de cijfers in plaats van alleen grafieken te tonen. Dat past bij het werk van financieel adviseurs in het mkb.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Exact lanceert AI-agent voor financiële analyses",
+        "uitgever": "Accountancy Vanmorgen",
+        "url": "https://www.accountancyvanmorgen.nl/2026/09/03/exact-lanceert-ai-agent-voor-financiele-analyses/",
+        "datum": "2026-09-03"
+      },
+      {
+        "titel": "Pagina over artificial intelligence bij Exact",
+        "uitgever": "Exact",
+        "url": "https://exact.com/about-us/artificial-intelligence",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "gemeente-amsterdam-chatamsterdam",
+    "naam": "ChatAmsterdam",
+    "organisatie": "Gemeente Amsterdam",
+    "gebouwdMet": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "sector": "Overheid",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Eigen AI-assistent waarmee Amsterdamse ambtenaren teksten schrijven, samenvatten en documenten analyseren.",
+    "beschrijving": "ChatAmsterdam is door de gemeente zelf ontwikkeld als veilig alternatief voor openbare chatbots, die ambtenaren sinds februari 2025 niet meer mogen gebruiken. Gegevens blijven binnen de gemeente en worden niet gebruikt om het onderliggende model te trainen. Dat model is een GPT-4-model van OpenAI, maar het systeem is zo opgezet dat ook Europese taalmodellen kunnen worden aangesloten. Twee filters houden riskante invoer tegen: een van Microsoft voor schadelijke onderwerpen en een eigen filter voor onder meer gevoelige gegevens. Na een pilot van november 2024 tot mei 2025 is de assistent beschikbaar voor ambtenaren.",
+    "opvallend": "De gemeente heeft zelf een filter gebouwd op basis van wat ambtenaren in de praktijk invoerden, en heeft de assistent in het algoritmeregister gezet. Het onderliggende model is vervangbaar gehouden.",
+    "resultaat": {
+      "tekst": "Aan de pilot deden 800 ambtenaren mee, goed voor ruim 34.000 prompts in 10.000 chats; in een eerste onderzoek onder 150 ambtenaren gold ongeveer 7% van de prompts als riskant.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Eigen AI-assistent voor Amsterdamse ambtenaren",
+        "uitgever": "Binnenlands Bestuur",
+        "url": "https://www.binnenlandsbestuur.nl/digitaal/eigen-ai-assistent-voor-amsterdamse-ambtenaren",
+        "datum": "2025-05-07"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "gemeente-breda-ambtenaar-2-0",
+    "naam": "Ambtenaar 2.0",
+    "organisatie": "Gemeente Breda",
+    "gebouwdMet": [
+      "Microsoft"
+    ],
+    "sector": "Overheid",
+    "type": "Assistent voor medewerkers",
+    "status": "Pilot",
+    "sinds": "2023",
+    "kort": "Proef waarin ambtenaren van Breda een jaar lang administratief werk met een AI-assistent deden.",
+    "beschrijving": "Breda testte vanaf december 2023 een jaar lang Microsoft Copilot bij ambtenaren. Zij gebruikten de assistent onder meer voor het samenvatten van vergaderingen, het schrijven en vertalen van formele e-mails bij burgerzaken en het analyseren van enquêtes onder inwoners. De gemeente koos voor Copilot omdat informatie daarmee binnen de organisatie blijft. De proef was de eerste in een programma van de VNG; daarna zijn Losser, Tilburg en Zeist gestart.",
+    "opvallend": "De proef liet zien dat begeleiding het verschil maakt: medewerkers die intensief werden begeleid, boekten duidelijk meer winst in tijd, kwaliteit en tevredenheid.",
+    "resultaat": {
+      "tekst": "Medewerkers bespaarden gemiddeld 14 uur per maand, met uitschieters tot 28 uur.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "'Ambtenaar 2.0: AI en Breda een perfecte match' schaalt op",
+        "uitgever": "VNG",
+        "url": "https://vng.nl/nieuws/ambtenaar-20-ai-en-breda-een-perfecte-match-schaalt-op",
+        "datum": "2025-03-18"
+      },
+      {
+        "titel": "Pilot gemeente Breda: kan AI het werk van ambtenaren ook leuker maken?",
+        "uitgever": "HR Praktijk",
+        "url": "https://www.hrpraktijk.nl/topics/hr-tech/achtergrond/pilot-gemeente-breda-kan-ai-het-werk-van-ambtenaren-ook-leuker-maken",
+        "datum": "2024-11-13"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "gemeente-montferland-mai",
+    "naam": "Mai",
+    "organisatie": "Gemeente Montferland",
+    "gebouwdMet": [],
+    "sector": "Overheid",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Chatbot op de site van de gemeente Montferland die vragen van inwoners op elk moment beantwoordt.",
+    "beschrijving": "Mai staat voor Montferland AI en is door de gemeente in eigen beheer ontwikkeld. De chatbot beantwoordt vragen van inwoners, ook buiten kantoortijden, en draait op machines van de gemeente zelf zodat gegevens binnen de eigen omgeving blijven. Inwoners kunnen op antwoorden reageren, waarmee medewerkers de chatbot verbeteren. De software is waar mogelijk open source; via de VNG is 400.000 euro beschikbaar om andere gemeenten met dezelfde bouwstenen een eigen assistent te laten maken.",
+    "opvallend": "Een kleine gemeente die zelf bouwt, op eigen machines draait en de software deelt. De beschrijving van het algoritme stond al voor de lancering in het landelijke Algoritmeregister.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Montferland: klein, maar groot in AI",
+        "uitgever": "VNG",
+        "url": "https://vng.nl/artikelen/montferland-klein-maar-groot-in-ai",
+        "datum": "2025-03-25"
+      },
+      {
+        "titel": "Montferland koploper met huisgemaakte AI",
+        "uitgever": "Gemeente.nu",
+        "url": "https://gemeente.nu/bedrijfsvoering/ai/montferland-koploper-met-huisgemaakte-ai",
+        "datum": "2025-04-09"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "gemeente-rotterdam-stemdragers",
+    "naam": "Stemdragers",
+    "organisatie": "Gemeente Rotterdam",
+    "gebouwdMet": [
+      "Parai"
+    ],
+    "sector": "Overheid",
+    "type": "Taalmodel",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "AI-persona's die in de woorden van echte Rotterdammers spreken, als aanvulling op inwonerparticipatie.",
+    "beschrijving": "Stemdragers zijn interactieve AI-persona's die zijn gebaseerd op interviews met inwoners. Ambtenaren kunnen met zo'n persona in gesprek over een onderwerp in de wijk, bijvoorbeeld hittestress. In de proef van het Rotterdamse innovatiecentrum VONK zijn acht stemdragers gemaakt op basis van 66 interviews in Bospolder-Tussendijken. De Erasmus Universiteit doet onderzoek naar de proef.",
+    "opvallend": "Een ongebruikelijke toepassing van taalmodellen: het doel is stemmen uit de wijk langer aan tafel te houden. De gemeente presenteert de persona's als aanvulling op gesprekken met inwoners, niet als vervanging.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Zo zetten gemeenteambtenaren generatieve AI in",
+        "uitgever": "Binnenlands Bestuur",
+        "url": "https://www.binnenlandsbestuur.nl/digitaal/zo-zetten-gemeenteambtenaren-generatieve-ai-in",
+        "datum": "2026-06-05"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "havenbedrijf-rotterdam-ai-vaarwegplanning",
+    "naam": "AI-vaarwegplanning",
+    "organisatie": "Havenbedrijf Rotterdam",
+    "gebouwdMet": [
+      "BIT"
+    ],
+    "sector": "Logistiek",
+    "type": "Voorspelmodel",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Model dat aankomst en vertrek van schepen voorspelt en de Havenmeester adviseert over de vaarwegplanning.",
+    "beschrijving": "Het Havenbedrijf Rotterdam liet een hulpmiddel bouwen dat laat zien welke schepen de komende 24 uur in en uit varen. Een model dat is getraind op AIS-data, scheepsbezoeken, vaarbeperkingen en weergegevens voorspelt de werkelijke aankomst- en vertrektijden en geeft de Havenmeester een planningsadvies. In een proef is die planning gedeeld met de terminals APM Terminals Maasvlakte II en Rotterdam World Gateway. De mens blijft verantwoordelijk voor de beslissing.",
+    "opvallend": "Het Havenbedrijf beschrijft ook wat niet werkte: vertrektijden bleken uit open bronnen slecht te voorspellen en het model heeft meer gedeelde data nodig. Het inschatten van de diepgang van schepen ging wel goed.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Case study 2: Fairway traffic planning, AI support offers potential for the entire chain",
+        "uitgever": "Port of Rotterdam, Digital Report 2025",
+        "url": "https://publications.portofrotterdam.com/digital-report-2025/case-study-2",
+        "datum": "2025"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "heineken-hoppy",
+    "naam": "Hoppy",
+    "organisatie": "Heineken",
+    "gebouwdMet": [
+      "Microsoft"
+    ],
+    "sector": "Agri en food",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Interne assistent van Heineken voor kennis opzoeken, vragen stellen aan data en processen versnellen.",
+    "beschrijving": "Hoppy is een assistent voor medewerkers van Heineken, vooral bereikbaar via Microsoft Teams. Hij doorzoekt documenten uit onder meer SharePoint en Collibra, beantwoordt vragen in gewone taal over gegevens uit Power BI, Azure en SAP, en helpt bij processen zoals een melding in ServiceNow. Elke vraag gaat eerst langs de kennisindex en wordt daarna doorgestuurd naar de juiste agent of dienst. Antwoorden houden rekening met locatie en functie, en gebruikers zien alleen gegevens waarvoor ze in het bronsysteem rechten hebben.",
+    "opvallend": "Kennis, data en processen zitten achter één ingang, terwijl de bestaande toegangsrechten van de bronsystemen blijven gelden. Bij een servicevraag probeert Hoppy eerst de kennisbank en maakt pas daarna een ticket aan.",
+    "resultaat": {
+      "tekst": "Heineken meldt een nauwkeurigheid van ruim 95% bij vragen aan data, en de helft van de gebruikers zegt via de assistent iets nieuws te hebben geleerd. Hoe de nauwkeurigheid is gemeten staat er niet bij.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Enterprise AI Assistant Spanning Knowledge Management, Data Analytics, and Process Orchestration",
+        "uitgever": "ZenML LLMOps Database",
+        "url": "https://www.zenml.io/llmops-database/enterprise-ai-assistant-spanning-knowledge-management-data-analytics-and-process-orchestration",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "ing-generatieve-klantenchatbot",
+    "naam": "Generatieve klantenchatbot",
+    "organisatie": "ING",
+    "gebouwdMet": [
+      "McKinsey QuantumBlack"
+    ],
+    "sector": "Financiën",
+    "type": "Assistent voor klanten",
+    "status": "Pilot",
+    "sinds": "2023",
+    "kort": "Chatbot met generatieve AI die klanten van ING in de supportchat van de app direct antwoord geeft.",
+    "beschrijving": "ING bouwde samen met QuantumBlack, de AI-tak van McKinsey, in zeven weken een chatbot op basis van generatieve AI voor de klantenchat. Het systeem zoekt in meerdere stappen relevante informatie op, rangschikt die en formuleert daaruit een antwoord. Ingebouwde begrenzingen voorkomen dat de bot advies geeft over hypotheken of beleggen. De bot is eerst getest bij 10 procent van de Nederlandse gebruikers van de supportchat in de mobiele app.",
+    "opvallend": "Een bank die generatieve AI rechtstreeks met klanten laat praten en dat doet met vooraf gebouwde begrenzingen en een stapsgewijze uitrol. Risicospecialisten waren vanaf het begin betrokken.",
+    "resultaat": {
+      "tekst": "In de eerste zeven weken hielp de nieuwe chatbot 20% meer klanten dan de vorige oplossing; die oude chatbot handelde 40 tot 45% van de vragen af.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "How ING and McKinsey's Generative AI Chatbot Transformed Customer Service Efficiency?",
+        "uitgever": "Analytics Insight",
+        "url": "https://www.analyticsinsight.net/case-study/how-ing-and-mckinseys-generative-ai-chatbot-transformed-customer-service-efficiency",
+        "datum": "2025-03-17"
+      },
+      {
+        "titel": "Case Study: Generative AI at ING",
+        "uitgever": "AI Expert Network",
+        "url": "https://aiexpert.network/ai-at-ing/",
+        "datum": "2024-11-16"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "jeroen-bosch-ziekenhuis-spraakherkenning",
+    "naam": "Spraakherkenning in de spreekkamer",
+    "organisatie": "Jeroen Bosch Ziekenhuis",
+    "gebouwdMet": [
+      "Autoscriber"
+    ],
+    "sector": "Zorg",
+    "type": "Spraak en verslaglegging",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Zet het gesprek tussen zorgverlener en patiënt om in een samenvatting voor het patiëntendossier.",
+    "beschrijving": "De zorgverlener start de opname op de computer. Het systeem schrijft het gesprek uit en maakt daarvan een samenvatting, die de zorgverlener controleert en aan het elektronisch patiëntendossier toevoegt. Alleen de samenvatting wordt bewaard; de overige gegevens worden binnen een dag gewist en niet gebruikt om het model te trainen. De zorgverlener meldt aan het begin van de afspraak dat het systeem meeluistert en de patiënt kan weigeren. Het ziekenhuis beschrijft de inzet elders op zijn site als een pilot met Autoscriber.",
+    "opvallend": "Het ziekenhuis legt patiënten in gewone taal uit wat er met de opname gebeurt, welke gegevens blijven en dat weigeren altijd kan. Die openheid is bij dit soort toepassingen nog geen gewoonte.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "AI in de spreekkamer: automatische spraakherkenning",
+        "uitgever": "Jeroen Bosch Ziekenhuis",
+        "url": "https://www.jeroenboschziekenhuis.nl/ai-in-de-spreekkamer-automatische-spraakherkenning/pdf",
+        "datum": "2025-09-02"
+      },
+      {
+        "titel": "Slimme Zorg",
+        "uitgever": "Jeroen Bosch Ziekenhuis",
+        "url": "https://www.jeroenboschziekenhuis.nl/zorg-voor-jou/slimme-zorg/pdf",
+        "datum": "2025-08-28"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "juvoly-verslaglegging",
+    "naam": "Juvoly",
+    "organisatie": "Juvoly (onderdeel van Tandem Health)",
+    "gebouwdMet": [],
+    "sector": "Zorg",
+    "type": "Spraak en verslaglegging",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Luistert mee tijdens het consult en schrijft een gestructureerd verslag dat de zorgverlener goedkeurt.",
+    "beschrijving": "Juvoly zet het gesprek tussen zorgverlener en patiënt om in een gestructureerd medisch verslag. De software luistert passief mee tijdens het consult; de zorgverlener controleert het verslag en keurt het goed voordat het definitief wordt. De spraakherkenning is afgestemd op Nederlands en Fries en sluit aan op bestaande zorgsystemen. In januari 2026 is het bedrijf overgenomen door het Zweedse Tandem Health, waarbij het Nederlandse team verantwoordelijk blijft voor ondersteuning en gegevensbeveiliging.",
+    "opvallend": "Een Nederlandse toepassing die in korte tijd breed in de huisartsenzorg is ingevoerd, met spraakherkenning die ook Fries aankan. De zorgverlener houdt het laatste woord over elk verslag.",
+    "resultaat": {
+      "tekst": "Volgens Tandem Health gebruiken meer dan 1.500 huisartsenpraktijken Juvoly, 35% van de Nederlandse eerstelijnspraktijken, en verwerkt de software ruim 200.000 consulten per maand.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Tandem Health acquires leading Dutch AI medical scribe Juvoly to scale clinician-first AI documentation across Europe",
+        "uitgever": "Tandem Health",
+        "url": "https://tandemhealth.ai/resources/news/tandem-health-acquires-leading-dutch-ai-medical-scribe-juvoly-to-scale-clinician-first-ai-documentation-across-europe",
+        "datum": "2026-01-26"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "kadaster-vectorisatie-veldwerkschetsen",
+    "naam": "Vectorisatie van veldwerkschetsen",
+    "organisatie": "Kadaster",
+    "gebouwdMet": [
+      "Sioux Technologies"
+    ],
+    "sector": "Overheid",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "AI zet miljoenen met de hand getekende landmeetschetsen om in digitale geometrie voor de kadastrale kaart.",
+    "beschrijving": "Het Kadaster heeft ongeveer 5 miljoen historische veldwerkschetsen waarop gebouwen, wegen, water en perceelsgrenzen met de hand zijn ingetekend. Een reeks modellen schoont de scans op, herkent lijnen, gebouwen en kadastrale symbolen, leest handgeschreven en gedraaide notities en bouwt elk perceel op schaal na. Een specialist controleert en corrigeert het resultaat in een grafische werkomgeving. Daarna worden de schetsen wiskundig aan elkaar gepast tot één landsdekkende kaart.",
+    "opvallend": "Het is bewust geen volautomaat: het model doet het voorwerk en de expert houdt de eindcontrole. Bijzonder is ook de schaal van het archief en het lezen van handschrift in alle richtingen.",
+    "resultaat": {
+      "tekst": "Het vectoriseren van één schets ging van ongeveer 90 minuten handwerk naar 18 minuten.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "How Kadaster and Sioux are digitizing the Netherlands",
+        "uitgever": "Sioux Technologies",
+        "url": "https://ai-solutions.sioux.eu/how-kadaster-and-sioux-are-digitizing-the-netherlands",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "klm-trays",
+    "naam": "TRAYS",
+    "organisatie": "KLM",
+    "gebouwdMet": [
+      "Kickstart AI"
+    ],
+    "sector": "Reizen",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": "2023",
+    "kort": "Model dat per vlucht voorspelt hoeveel passagiers aan boord komen, zodat KLM minder maaltijden weggooit.",
+    "beschrijving": "TRAYS voorspelt op basis van historische gegevens hoeveel passagiers daadwerkelijk instappen, apart voor Business, Premium Comfort en Economy. De voorspellingen lopen van 17 dagen tot 20 minuten voor vertrek en gaan naar het systeem waarmee KLM het aantal maaltijden aan boord bepaalt. Zo sluit de hele keten van inkoop tot belading aan op het verwachte aantal reizigers. Het model is eind 2023 in gebruik genomen en is gebouwd via Kickstart AI, met mensen van KLM, bol, Ahold Delhaize, NS en ING.",
+    "opvallend": "Een sober voorspelmodel dat direct in een bestaand operationeel systeem is gekoppeld en daardoor elke vlucht effect heeft. Het is gebouwd door een team uit meerdere Nederlandse bedrijven.",
+    "resultaat": {
+      "tekst": "KLM meldt tot 63% minder voedselverspilling, gemeten tegen het verwachte aantal passagiers per vlucht; dat is ruim 100.000 kilo maaltijden per jaar.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "KLM continues investment in digital technology by deploying Artificial Intelligence to minimise food waste",
+        "uitgever": "Future Travel Experience",
+        "url": "https://www.futuretravelexperience.com/2024/02/klm-continues-investment-in-digital-technology-by-deploying-artificial-intelligence-to-minimise-food-waste/",
+        "datum": "2024"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "bam-ai-objectdetectie",
+    "naam": "AI-objectdetectie voor renovatie",
+    "organisatie": "Koninklijke BAM Groep",
+    "gebouwdMet": [
+      "Q42"
+    ],
+    "sector": "Industrie",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Haalt maten van onder meer kozijnen automatisch uit 3D-dronescans van woningen die worden gerenoveerd.",
+    "beschrijving": "Renovatieteams van BAM scannen een gebouw met drones tot een gedetailleerd 3D-model. Machine learning en maatwerkcode halen daar automatisch nauwkeurige maten uit, bijvoorbeeld van kozijnen. De uitkomsten staan in een interne webapplicatie die is gebouwd met het team Renovatieconcepten van BAM Wonen. BAM en uitvoerende partijen, zoals schilders, gebruiken dezelfde maten voor begroting, planning en uitvoering.",
+    "opvallend": "De toepassing vervangt het natekenen van bouwtekeningen, dat tot een week kon duren. Een prototype van twee weken, getest met eindgebruikers, toonde eerst aan dat het kon.",
+    "resultaat": {
+      "tekst": "Volgens de bouwer kan de doorlooptijd van een bouwproject drie weken korter worden; dit is een verwachting, geen meting.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "AI object detection tool for BAM",
+        "uitgever": "Q42",
+        "url": "https://q42.nl/en/work/royal-bam-group",
+        "datum": "2024"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "kpn-autosummary",
+    "naam": "Autosummary",
+    "organisatie": "KPN",
+    "gebouwdMet": [
+      "Genesys"
+    ],
+    "sector": "Zakelijke software",
+    "type": "Spraak en verslaglegging",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Maakt automatisch het verslag van telefoongesprekken voor medewerkers van de KPN-klantenservice.",
+    "beschrijving": "Na een telefoongesprek met een klant schrijft Autosummary het gespreksverslag. De servicemedewerker leest de tekst na, past die zo nodig aan en keurt haar met een vinkje goed. Daarnaast gebruikt de klantenservice een Digitale Coach die gesprekken analyseert en verbetertips geeft, en Janneke, een chatbot die vragen van medewerkers beantwoordt vanuit de interne kennisbank.",
+    "opvallend": "KPN houdt de medewerker aan het stuur: het verslag wordt altijd gecontroleerd en de Digitale Coach kan door de medewerker zelf aan of uit worden gezet. Volgens KPN worden de gegevens niet gebruikt om medewerkers te beoordelen.",
+    "resultaat": {
+      "tekst": "Autosummary bespaart volgens KPN gemiddeld 20 seconden per gesprek.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Klanten elke dag slimmer helpen met AI",
+        "uitgever": "KPN The Digital Dutch",
+        "url": "https://www.kpn.com/zakelijk/thedigitaldutch/blog/klanten-elke-dag-slimmer-helpen-met-ai",
+        "datum": "2026-02-11"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "mediahuis-ai-agents-eerstelijns-nieuws",
+    "naam": "AI-agents voor eerstelijns nieuws",
+    "organisatie": "Mediahuis",
+    "gebouwdMet": [],
+    "sector": "Media",
+    "type": "Agent",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Reeks samenwerkende AI-agents die eenvoudige nieuwsberichten voorbereidt, waarna een redacteur publiceert.",
+    "beschrijving": "Mediahuis onderzoekt hoeveel van het eerstelijns nieuws te automatiseren is. Een keten van eenvoudige agents verdeelt het werk: agents die per titel bepalen welke berichten relevant zijn, een schrijver, een agent voor beeld, een juridische controle en een feitencontrole. Een laatste agent volgt het debat rond een bericht en stuurt bij sterk uiteenlopende meningen een opzet voor een opiniestuk naar een redacteur. De agents werken met een databank van bronnen zoals parlementen, persbureaus en denktanks, en een mens beoordeelt elk bericht voor publicatie.",
+    "opvallend": "Het werk is opgeknipt in kleine, controleerbare stappen met aparte agents voor juridische toets en feitencontrole. Het doel is uitgesproken: de 2.000 journalisten meer tijd geven voor eigen journalistiek.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Mediahuis trials use of AI agents to carry out 'first-line' news reporting",
+        "uitgever": "Press Gazette",
+        "url": "https://pressgazette.co.uk/publishers/regional-newspapers/mediahuis-trials-use-of-ai-agents-to-carry-out-first-line-news-reporting/",
+        "datum": "2026-02-17"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "nationale-nederlanden-schadeafhandeling",
+    "naam": "Automatische schadeafhandeling",
+    "organisatie": "Nationale-Nederlanden",
+    "gebouwdMet": [],
+    "sector": "Financiën",
+    "type": "Agent",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "AI-agents die eenvoudige schadeclaims van particulieren zonder handwerk beoordelen en uitbetalen.",
+    "beschrijving": "Nationale-Nederlanden laat AI-agents stappen uitvoeren die schadebehandelaars eerder met de hand deden, zoals de oorzaak van de schade vaststellen en nagaan of de polis die dekt. Het gaat om veelvoorkomende, eenvoudige claims zoals schade in huis en gebroken autoruiten. Claims die buiten vooraf bepaalde criteria vallen of een afwijkend patroon laten zien, gaan naar een behandelaar. De oplossing is intern gebouwd.",
+    "opvallend": "Klanten krijgen te horen wanneer hun claim automatisch is afgehandeld en kunnen om een herbeoordeling vragen. Eigen datawetenschappers toetsen de modellen op veiligheid, nauwkeurigheid en wettelijke eisen.",
+    "resultaat": {
+      "tekst": "Een deel van de claims wordt in ongeveer zes minuten verwerkt en uitbetaald, zonder handmatige behandeling.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Digital where possible, personal where it matters: using AI to manage claims",
+        "uitgever": "NN Group",
+        "url": "https://www.nn-group.com/news/digital-where-possible-personal-where-it-matters-using-ai-to-manage-claims/",
+        "datum": "2026-07-06"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "nautadutilh-legora",
+    "naam": "Legora",
+    "organisatie": "NautaDutilh",
+    "gebouwdMet": [
+      "Legora"
+    ],
+    "sector": "Juridisch",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "AI-werkomgeving waarmee advocaten en staf van NautaDutilh stukken opstellen, beoordelen en onderzoek doen.",
+    "beschrijving": "NautaDutilh gebruikt het platform Legora voor het opstellen en beoordelen van documenten en voor juridisch onderzoek. Het kantoor begon met een proef onder 50 mensen die werkten met echte zaken uit de praktijkgroepen. Daarna is besloten tot uitrol in het hele kantoor, met teams in Amsterdam, Brussel, Londen, Rotterdam en Luxemburg. Ook kennisspecialisten en ondersteunende afdelingen werken ermee.",
+    "opvallend": "De proef draaide op echte dossiers in plaats van op oefenmateriaal, en meer dan 90 procent van de deelnemers ging het platform vanaf het begin daadwerkelijk gebruiken.",
+    "resultaat": {
+      "tekst": "Deelnemers aan de proef verschoven gemiddeld 5,5 uur per week naar werk met meer waarde, volgens een enquête die de leverancier publiceerde.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "The 5.5-hour shift: how NautaDutilh and Legora are elevating legal work together",
+        "uitgever": "Legora",
+        "url": "https://legora.com/newsroom/the-5.5-hour-shift-how-nautadutilh-and-legora-are-elevating-legal-work-together",
+        "datum": "2026-02-10"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "npo-teletekst-ondertiteling",
+    "naam": "Ondertiteling Teletekst 888",
+    "organisatie": "NPO",
+    "gebouwdMet": [],
+    "sector": "Media",
+    "type": "Spraak en verslaglegging",
+    "status": "In productie",
+    "sinds": "2002",
+    "kort": "Spraakherkenning en AI helpen de redactie programma's van de publieke omroep te ondertitelen.",
+    "beschrijving": "Bij live-uitzendingen luistert een redacteur mee en spreekt na wat er gezegd wordt; spraakherkenning zet dat om in een ondertitel die de redacteur nog kan bijstellen. Die werkwijze is voor het eerst gebruikt bij de Olympische Winterspelen van 2002. Bij een deel van de niet-live programma's maakt AI de eerste versie, waarna een redacteur controleert en geluidsbeschrijvingen en sprekerkleuren toevoegt. Op het themakanaal NPO Politiek en Nieuws loopt een proef met volledig automatische ondertiteling.",
+    "opvallend": "De NPO is open over de grenzen: AI heeft nog moeite met namen van Kamerleden en verzint soms tekst. Daarom blijft de inzet onder redactioneel toezicht.",
+    "resultaat": {
+      "tekst": "99 procent van de Nederlandstalige programma's van de publieke omroep wordt ondertiteld; ongeveer 4,5 miljoen mensen gebruiken de ondertiteling maandelijks.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "45 jaar Teletekst-ondertiteling: van de Velotype naar spraakherkenning en AI",
+        "uitgever": "NOS",
+        "url": "https://nos.nl/l/2585093",
+        "datum": "2025-10-04"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "olvg-pacmed-critical",
+    "naam": "Pacmed Critical",
+    "organisatie": "OLVG",
+    "gebouwdMet": [
+      "Pacmed"
+    ],
+    "sector": "Zorg",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": "2023",
+    "kort": "Schat voor intensivisten de kans op heropname of overlijden als een patiënt de IC verlaat.",
+    "beschrijving": "Pacmed Critical ondersteunt de arts bij de vraag of een patiënt van de intensive care naar de verpleegafdeling kan. Het model schat de kans dat de patiënt binnen zeven dagen opnieuw wordt opgenomen of onverwacht overlijdt. De software draait binnen het patiëntendossier en het monitoringsysteem van de IC en werkt met gegevens van hooguit een kwartier oud. Het OLVG nam haar in mei 2023 in gebruik, na onderzoek bij Amsterdam UMC; ook het Maasstad Ziekenhuis werkt ermee en andere Santeon-ziekenhuizen volgen.",
+    "opvallend": "De software is CE-gecertificeerd als medisch hulpmiddel klasse IIa en ontwikkeld op gegevens van 25.000 patiënten. De leverancier bewaakt doorlopend of de patiëntenpopulatie nog past bij de data waarop het model is getraind en traint het zo nodig opnieuw.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Amsterdam's OLVG Hospital adopts AI decision support for safer ICU discharges",
+        "uitgever": "I amsterdam",
+        "url": "https://iamsterdam.com/en/business/key-sectors-for-business/life-sciences-health/amsterdams-olvg-hospital-adopts-ai-decision-support-for-safer-icu-discharges",
+        "datum": "2023-05-31"
+      },
+      {
+        "titel": "Santeon Ziekenhuizen versterken IC Zorg met AI",
+        "uitgever": "SmartHealth",
+        "url": "https://smarthealth.live/2024/06/10/santeon-ziekenhuizen-versterken-ic-zorg-met-ai",
+        "datum": "2024-06-10"
+      },
+      {
+        "titel": "Artificial Intelligence adviseert Amsterdam UMC bij ontslag IC-patiënt",
+        "uitgever": "ICT&health",
+        "url": "https://icthealth.nl/magazine/editie-05-2022/artificial-intelligence-adviseert-amsterdam-umc-bij-ontslag-ic-patient",
+        "datum": "2022-10-20"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "omoda-stylist",
+    "naam": "Omoda Stylist",
+    "organisatie": "Omoda",
+    "gebouwdMet": [
+      "Google Cloud"
+    ],
+    "sector": "Retail",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Gespreksassistent die klanten van Omoda helpt een complete outfit samen te stellen.",
+    "beschrijving": "Omoda Stylist is een chatassistent in de webwinkel van modeketen Omoda. Klanten omschrijven de gewenste look in gewone taal en krijgen daarop afgestemde suggesties. De functie Discover the Look toont complete outfits in plaats van losse artikelen. De oplossing draait op Vertex AI van Google Cloud met Gemini-modellen, multimodale embeddings en vectorzoeken.",
+    "opvallend": "Het is een van de eerste Nederlandse modewinkels waar zoeken op stijl en gelegenheid echt live staat, gebouwd op de eigen gestructureerde productdata. Omoda noemt dit de eerste fase; outfits tonen op een avatar en koppelen aan de eigen garderobe moeten volgen.",
+    "resultaat": {
+      "tekst": "Klanten die Discover the Look gebruiken, kopen volgens tests 2,5 keer zo vaak als klanten die dat niet doen.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Google's AI tools power Omoda's online personal stylist platform",
+        "uitgever": "Marketing Dive",
+        "url": "https://www.marketingdive.com/news/omoda-google-cloud-ai-agent/737458/",
+        "datum": "2025-01-16"
+      },
+      {
+        "titel": "Omoda and Google Cloud Partner to Revolutionize Online Fashion Shopping with Generative AI",
+        "uitgever": "Google Cloud Press Corner",
+        "url": "https://www.googlecloudpresscorner.com/2025-01-13-Omoda-and-Google-Cloud-Partner-to-Revolutionize-Online-Fashion-Shopping-with-Generative-AI",
+        "datum": "2025-01-13"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "philips-deepsights",
+    "naam": "DeepSights",
+    "organisatie": "Philips",
+    "gebouwdMet": [
+      "Market Logic Software"
+    ],
+    "sector": "Zorg",
+    "type": "Assistent voor medewerkers",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Assistent die medewerkers van Philips antwoord geeft op marktvragen uit een eigen, beheerde kennisbank.",
+    "beschrijving": "Philips heeft DeepSights van Market Logic Software getest voor zijn afdeling marktinzichten. De assistent beantwoordt vragen met generatieve AI op basis van een beheerde kennisbank met eigen onderzoek, en geeft antwoorden die te controleren zijn. In de proef is DeepSights vergeleken met openbare AI-diensten en met het bestaande interne zoeksysteem van Philips.",
+    "opvallend": "Philips heeft de assistent eerst naast openbare AI-diensten en het eigen systeem gelegd, in plaats van hem op vertrouwen in te voeren. Voor een bedrijf in een streng gereguleerde sector telt dat antwoorden herleidbaar zijn.",
+    "resultaat": {
+      "tekst": "In de test beantwoordde DeepSights 64% van de vragen goed, tegen 50% voor openbare AI; de gemiddelde zoektijd daalde van 16,8 minuten naar minder dan één minuut.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Philips achieves faster, more reliable market insights with Market Logic Software's DeepSights",
+        "uitgever": "CaseStudies.com",
+        "url": "https://www.casestudies.com/company/market-logic-software/case-study/how-philips-deployed-generative-ai-across-their-enterprise-consumer-insights-function-and-compared-our-new-deepsightstm-solution-against-chatgpt-bing-and-existing-insights-management-platforms",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "picnic-vraagvoorspelling",
+    "naam": "Vraagvoorspelling per artikel",
+    "organisatie": "Picnic",
+    "gebouwdMet": [],
+    "sector": "Retail",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Model dat per artikel voorspelt hoeveel klanten gaan bestellen, zodat Picnic precies genoeg inkoopt.",
+    "beschrijving": "Picnic voorspelt de vraag per artikel met een Temporal Fusion Transformer, een neuraal netwerk voor tijdreeksen. Het model combineert verkoopgeschiedenis met vooraf bekende gegevens zoals feestdagen en vaste kenmerken zoals de regio. Het geeft geen enkel getal maar een bandbreedte, die Picnic gebruikt om verspilling af te wegen tegen misgrijpen. Een tweede model van hetzelfde type voorspelt het aantal bezorgingen, waarna planners de uitkomst nog handmatig bijstellen.",
+    "opvallend": "Picnic beschrijft openlijk hoe het model is opgebouwd en waar het eerder misging: de oudere beslisboommodellen konden plotselinge vraagpieken niet aan. Voor nieuwe artikelen zonder verkoopgeschiedenis gebruikt het team productbeschrijvingen en cijfers van vergelijkbare artikelen.",
+    "resultaat": {
+      "tekst": "Volgens Picnic werd de voorspelling 20 procent nauwkeuriger, met de grootste winst bij artikelen die weinig verkocht worden.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Under the hood of Picnic's demand forecasting model: A Deep Dive into the Temporal Fusion Transformer",
+        "uitgever": "Picnic Engineering",
+        "url": "https://jobs.picnic.app/en/blogs/yaml-developers-and-the-declarative-data-platforms-cloned-7241",
+        "datum": "2024-04-22"
+      },
+      {
+        "titel": "From Supplier to Doorstep: The Machine Learning Behind Your Delivery",
+        "uitgever": "Picnic Engineering",
+        "url": "https://jobs.picnic.app/blogs/from-supplier-to-doorstep-the-machine-learning-behind-your-delivery",
+        "datum": "2026-02-05"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "politie-al-capone",
+    "naam": "Al Capone",
+    "organisatie": "Politie",
+    "gebouwdMet": [
+      "KickstartAI"
+    ],
+    "sector": "Overheid",
+    "type": "Assistent voor medewerkers",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Prototype dat milieurechercheurs wijst op wetten en uitspraken die bij hun zaak van pas kunnen komen.",
+    "beschrijving": "Al Capone doorzoekt wetgeving en jurisprudentie vanuit meerdere juridische invalshoeken, op basis van een geanonimiseerd zaakdossier. Het hulpmiddel is bedoeld voor de vroege fase van ingewikkelde milieuzaken, zoals illegale houthandel of afvaltransporten, en doet suggesties die de rechercheur zelf beoordeelt. Een kleine groep milieurechercheurs heeft het prototype getest op echte zaken. KickstartAI en de politie werken techniek, bediening en de uitleg bij resultaten verder uit en beslissen daarna over een eerste operationele versie.",
+    "opvallend": "Het hulpmiddel geeft richtingen en geen antwoorden, en laat het oordeel bij de rechercheur. De naam verwijst naar de maffiabaas die werd veroordeeld voor belastingontduiking: de kansrijkste juridische route is soms een onverwachte.",
+    "resultaat": {
+      "tekst": "In de pilot vonden rechercheurs bijna twee derde van de suggesties relevant en kwamen ze per zaak op twee tot negen nieuwe onderzoekslijnen.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "AI helpt politie nieuwe onderzoekslijnen vinden in milieuzaken",
+        "uitgever": "Bijzonder Strafrecht",
+        "url": "https://www.bijzonderstrafrecht.nl/home/ai-helpt-politie-nieuwe-onderzoekslijnen-vinden-in-milieuzaken",
+        "datum": "2026-08-28"
+      },
+      {
+        "titel": "LUMC and the Police win national AI challenge 2025",
+        "uitgever": "Leiden Bio Science Park",
+        "url": "https://leidenbiosciencepark.nl/lumc-and-the-police-win-national-ai-challenge-2025/",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "prorail-beeldherkenning-dwarsliggers",
+    "naam": "Beeldherkenning spoorinspectie",
+    "organisatie": "ProRail",
+    "gebouwdMet": [
+      "Valcon"
+    ],
+    "sector": "Mobiliteit",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Model dat op treinbeelden scheuren in dwarsliggers vindt, zodat inspecteurs gericht kunnen ingrijpen.",
+    "beschrijving": "ProRail laat een beeldherkenningsmodel de opnames van videoschouwtreinen doorzoeken op scheuren in betonnen NS90-dwarsliggers. Het model schat ook de breedte van een scheur, omdat alleen scheuren vanaf drie millimeter een dwarsligger onbruikbaar maken. De vondsten staan met foto op een interactieve kaart en inspecteurs van ProRail bepalen wat er vervolgens gebeurt. Eerder zette ProRail al beeldherkenning in om verkeerd liggende klemmen op te sporen, waarbij twijfelgevallen naar een mens gaan.",
+    "opvallend": "Het model is stap voor stap opgebouwd vanuit een kleine set handmatig gelabelde voorbeelden en bijgetraind op zijn eigen fouten. De beslissing blijft bij de inspecteur.",
+    "resultaat": {
+      "tekst": "In november 2024 zijn alle circa 5 miljoen NS90-dwarsliggers in 11 dagen geïnspecteerd; ruim 95 procent van de gemelde scheuren bleek echt een scheur.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "ProRail en Valcon werken samen aan slimme beeldherkenning op het spoornetwerk",
+        "uitgever": "Consultancy.nl",
+        "url": "https://www.consultancy.nl/nieuws/60659/prorail-en-valcon-werken-samen-aan-slimme-beeldherkenning-op-het-spoornetwerk",
+        "datum": "2025-05-28"
+      },
+      {
+        "titel": "Ai helpt ProRail bij veilig houden van spoor",
+        "uitgever": "Computable",
+        "url": "https://www.computable.nl/?p=162690",
+        "datum": "2023-05-04"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "rijksmuseum-kunstverkenner",
+    "naam": "Kunstverkenner",
+    "organisatie": "Rijksmuseum",
+    "gebouwdMet": [],
+    "sector": "Media",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Website die bezoekers met AI door de collectie van het Rijksmuseum laat dwalen op basis van eigen interesses.",
+    "beschrijving": "De Kunstverkenner is een door AI aangedreven website die kunstwerken, objecten en onderzoek van het museum met elkaar verbindt. Bezoekers beantwoorden vragen zoals 'waar houd je van?' en krijgen daarop werken uit de collectie te zien. Ze kunnen stukken verzamelen, vergelijken en in een virtuele zaal ophangen. Het museum lanceerde de site in november 2024.",
+    "opvallend": "De tool maakt een collectie van 800.000 werken toegankelijk voor mensen die niet weten waarnaar ze moeten zoeken. Het museum presenteert dit uitdrukkelijk als een eerste stap met AI.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Rijksmuseum launches AI tool to help make connections in 800,000-strong collection",
+        "uitgever": "The Art Newspaper",
+        "url": "https://www.theartnewspaper.com/2024/11/29/rijksmuseum-takes-first-steps-in-ai-to-help-make-connections-in-800000-strong-collection",
+        "datum": "2024-11-29"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "rijkswaterstaat-monitoring-tunnels",
+    "naam": "Monitoring verkeersveiligheid tunnels",
+    "organisatie": "Rijkswaterstaat",
+    "gebouwdMet": [
+      "Teledyne FLIR"
+    ],
+    "sector": "Overheid",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Slimme camera's in tunnels herkennen stilstaand verkeer en waarschuwen de verkeersleider.",
+    "beschrijving": "In tunnels van Rijkswaterstaat schat een camera met ingebouwd algoritme de snelheid van voertuigen op basis van live beeld. Staat het verkeer stil, dan gaat er een melding naar de verkeerscentrale. De verkeersleider bekijkt zelf de beelden en beslist of er maatregelen nodig zijn, zoals signalering of het inschakelen van hulpdiensten. De camerabeelden worden niet opgeslagen.",
+    "opvallend": "De toepassing staat met werking, leverancier en menselijke controle beschreven in het openbare Algoritmeregister. Volgens Rijkswaterstaat geeft de camera minder onterechte meldingen dan detectielussen in het wegdek.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Monitoring verkeersveiligheid Tunnels",
+        "uitgever": "Algoritmeregister van de Nederlandse overheid",
+        "url": "https://algoritmes.overheid.nl/en/algoritme/49458464",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "schenkeveld-gearstation",
+    "naam": "GearStation",
+    "organisatie": "Schenkeveld",
+    "gebouwdMet": [
+      "Gearbox Innovations"
+    ],
+    "sector": "Agri en food",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Camera's en AI keuren elke gevulde doos tomaten op kwaliteit en gewicht in de verpakkingshal.",
+    "beschrijving": "Tomatenteler en verpakker Schenkeveld gebruikt in de verwerkingshal bij Schiphol vier controlestations in de lijn. Camera's fotograferen elke gevulde doos van 5 tot 10 kilo en een model beoordeelt de kwaliteit, terwijl ook het gewicht wordt gecontroleerd. De gegevens zijn te koppelen aan de individuele oogstmedewerker, zodat die gericht begeleiding krijgt. Na een korte testfase schaalde het bedrijf halverwege 2025 op en een vijfde station volgt op een andere locatie.",
+    "opvallend": "Elke doos wordt gekeurd in plaats van een steekproef. De koppeling met de oogstmedewerker maakt van kwaliteitscontrole ook een hulpmiddel voor begeleiding.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "AI quality control gains ground in Dutch tomato packing",
+        "uitgever": "HortiDaily",
+        "url": "https://www.hortidaily.com/article/9809871/ai-quality-control-gains-ground-in-dutch-tomato-packing",
+        "datum": "2026-02-12"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "schiphol-deep-turnaround",
+    "naam": "Deep Turnaround",
+    "organisatie": "Schiphol",
+    "gebouwdMet": [],
+    "sector": "Mobiliteit",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2019",
+    "kort": "Camera's en deep learning volgen de afhandeling van vliegtuigen aan de gate en maken vertraging voorspelbaar.",
+    "beschrijving": "Camera's bij de opstelplaats maken doorlopend beelden van het vliegtuig en alles eromheen. Een deep learning-model herkent daarin stappen uit de afhandeling, zoals de komst van een bagagewagen of het aankoppelen van een tankwagen, en legt begin en eind met een tijdstempel vast. Schiphol begon in 2019 met een proef onder de naam Turnaround Insights en breidde daarna uit over de pieren. Eindhoven Airport gebruikt het systeem sinds 2023 in samenwerking met Schiphol om te voorspellen wanneer een toestel kan vertrekken.",
+    "opvallend": "Het systeem maakt een proces meetbaar waar luchthavens tot dan toe nauwelijks automatisch zicht op hadden. Het is van proef uitgegroeid tot een dienst die ook een tweede luchthaven gebruikt.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Schiphol scoort nominatie met turnaround-proces",
+        "uitgever": "Computable",
+        "url": "https://www.computable.nl/?p=271979",
+        "datum": "2021-06-23"
+      },
+      {
+        "titel": "Eindhoven Airport uses AI to improve turnaround process",
+        "uitgever": "Eindhoven Airport",
+        "url": "https://www.eindhovenairport.nl/en/news-and-media/eindhoven-airport-uses-ai-to-improve-turnaround-process",
+        "datum": "2023-11-02"
+      },
+      {
+        "titel": "Deep Turnaround: Reducing Flight Delays with Tensorflow and Kubernetes",
+        "uitgever": "Xebia",
+        "url": "https://xebia.com/blog/deep-turnaround-reducing-flight-delays-with-tensorflow-and-kubernetes/",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "surf-edugenai",
+    "naam": "EduGenAI",
+    "organisatie": "SURF en Npuls",
+    "gebouwdMet": [],
+    "sector": "Onderwijs",
+    "type": "Taalmodel",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Landelijk AI-platform voor mbo, hbo en wo waarop docenten en studenten met taalmodellen werken.",
+    "beschrijving": "EduGenAI is een gezamenlijk platform van SURF en Npuls dat onderwijsinstellingen een beveiligde omgeving en een eenvoudige interface biedt voor het werken met taalmodellen, zowel open als commerciële. Instellingen testen het in een landelijke proef. De Universiteit Twente laat studenten het gebruiken als tutor voor vragen over een vak, de Universiteit Utrecht geeft docenten, ondersteuners en studenten toegang na aanmelding. Toepassingen met een hoog risico, zoals beoordelen of fraude opsporen, zijn uitgesloten.",
+    "opvallend": "Het platform is opgezet rond publieke waarden zoals zeggenschap over data en privacy, en wordt door de onderwijssector zelf gebouwd. Instellingen beperken het gebruik uitdrukkelijk tot onderwijs.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Meet EduGenAI: UT joins national pilot for safe AI in education",
+        "uitgever": "Universiteit Twente",
+        "url": "https://www.utwente.nl/en/eemcs/damut/news/2025/11/672120/meet-edugenai-ut-joins-national-pilot-for-safe-ai-in-education",
+        "datum": "2025-11-11"
+      },
+      {
+        "titel": "EduGenAI",
+        "uitgever": "Universiteit Utrecht",
+        "url": "https://www.uu.nl/organisatie/ai-beleid/docenten/edugenai",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "tata-steel-nederland-senseye",
+    "naam": "Senseye Predictive Maintenance",
+    "organisatie": "Tata Steel Nederland",
+    "gebouwdMet": [
+      "Siemens"
+    ],
+    "sector": "Industrie",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Voorspelt storingen aan machines in de koudwalserij in IJmuiden, zodat onderhoud vooraf kan gebeuren.",
+    "beschrijving": "In de gloeierij van de koudwalserij in IJmuiden volgt het systeem de data van de machines op de werkvloer. Algoritmes herkennen afwijkende patronen en waarschuwen het onderhoudsteam voordat een storing optreedt. Zo zag het systeem dat een ventilator harder ging draaien terwijl de luchtstroom afnam, wat op een verstopt filter wees. Een ingebouwde generatieve assistent helpt monteurs met ontbrekende kennis.",
+    "opvallend": "Het voorbeeld van het verstopte filter laat zien dat het systeem verbanden legt tussen meetwaarden die los van elkaar niet opvallen. Het vervangt een deel van de handmatige inspecties.",
+    "resultaat": {
+      "tekst": "Het aantal machinestoringen in de koudwalserij daalde van 18 naar 6, een afname van 67 procent; de investering was binnen zes maanden terugverdiend.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "The catalyst for steel transformation",
+        "uitgever": "Siemens",
+        "url": "https://www.siemens.com/en-gb/company/insights/tata-steel-digitalization/",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "gpt-nl",
+    "naam": "GPT-NL",
+    "organisatie": "TNO, SURF en NFI",
+    "gebouwdMet": [],
+    "sector": "Overheid",
+    "type": "Taalmodel",
+    "status": "Pilot",
+    "sinds": "2023",
+    "kort": "Nederlands taalmodel dat is gebouwd om aantoonbaar aan Europese en Nederlandse regels te voldoen.",
+    "beschrijving": "GPT-NL wordt sinds 2023 ontwikkeld door TNO, SURF en het Nederlands Forensisch Instituut, met 13,5 miljoen euro van het ministerie van Economische Zaken. Het model is alleen bedoeld voor organisaties. Begin 2026 zijn vijf eerste afnemers gestart met proeven in hun eigen omgeving, onder meer met de gemeentelijke assistent Gem, een assistent voor Overheid.nl, een hulpmiddel dat brieven van ambtenaren op moeilijke taal controleert en classificatie van forensische gegevens bij het NFI. TNO installeert het model daarbij op de eigen infrastructuur van de afnemer en vergelijkt het met de modellen die nu in gebruik zijn.",
+    "opvallend": "Het model is opgezet om aantoonbaar aan de privacyregels te voldoen; Nederlandse nieuwsmedia hebben toegezegd hun archieven als trainingsmateriaal te leveren. In de proeven wordt het rechtstreeks vergeleken met de commerciële modellen die nu in gebruik zijn.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Vijf organisaties testen GPT-NL in eigen context",
+        "uitgever": "Binnenlands Bestuur",
+        "url": "https://www.binnenlandsbestuur.nl/digitaal/vijf-organisaties-testen-gpt-nl-in-eigen-context",
+        "datum": "2026-03-02"
+      },
+      {
+        "titel": "Dutch government agencies to pilot homegrown AI model GPT-NL",
+        "uitgever": "NL Times",
+        "url": "https://nltimes.nl/2026/02/26/dutch-government-agencies-pilot-homegrown-ai-model-gpt-nl",
+        "datum": "2026-02-26"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "tui-lisa",
+    "naam": "Lisa",
+    "organisatie": "TUI Nederland",
+    "gebouwdMet": [
+      "Trojan Monkeys"
+    ],
+    "sector": "Reizen",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "AI-avatar op een scherm in de TUI-winkel die het eerste intakegesprek met de klant voert.",
+    "beschrijving": "Lisa verschijnt als avatar op een groot aanraakscherm in de reiswinkels van TUI. Ze vraagt naar bestemming, reisperiode en reisgezelschap en brengt wensen in kaart, zoals het type accommodatie. Daarna stuurt ze een samenvatting naar de winkel, zodat de reisadviseur direct inhoudelijk verder kan. De klant kan in de winkel wachten of zich laten terugbellen. Lisa is eerst getest door medewerkers van het hoofdkantoor en wordt sinds november 2025 in de winkels ingezet.",
+    "opvallend": "TUI zet de assistent in de fysieke winkel in en niet online: de AI doet de intake, het advies blijft bij de reisadviseur.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "TUI introduceert AI-retail assistent Lisa",
+        "uitgever": "TUI Nederland",
+        "url": "https://www.tui.nl/corporate/nl/newsroom/nieuws-en-persberichten/tui-introduceert-ai-retail-assistent-lisa",
+        "datum": "2025-11-10"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "umc-utrecht-concept-ontslagbrieven",
+    "naam": "Concept-ontslagbrieven",
+    "organisatie": "UMC Utrecht",
+    "gebouwdMet": [
+      "ChipSoft",
+      "Microsoft"
+    ],
+    "sector": "Zorg",
+    "type": "Assistent voor medewerkers",
+    "status": "Pilot",
+    "sinds": null,
+    "kort": "Stelt uit het patiëntendossier een concept-ontslagbrief op die de arts controleert en afmaakt.",
+    "beschrijving": "Het AI for Health-team van het UMC Utrecht bouwde een toepassing die met een GPT-taalmodel een concept maakt van de ontslagbrief, de samenvatting van een opname voor de huisarts of de volgende behandelaar. De arts controleert en voltooit de brief voordat die wordt verstuurd. De toepassing is gevalideerd voor de intensive care en de neonatologie en is bij cardiologie ingebouwd in het patiëntendossier HiX. Door AI geschreven tekst is gemarkeerd en wijzigingen van de arts worden vastgelegd om de prompts te verbeteren.",
+    "opvallend": "Het ziekenhuis heeft de kwaliteit systematisch gemeten en publiceert ook de zwakke punten, zoals weggelaten en verzonnen feiten. De code is als open source beschikbaar gesteld, zodat andere zorginstellingen haar kunnen gebruiken.",
+    "resultaat": {
+      "tekst": "In ongeveer 40 procent van de concepten ontbrak minstens één feit en in minder dan 30 procent stond minstens één verzonnen feit; de bruikbaarheid was vergelijkbaar met brieven van artsen.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "GPT pilot to write draft discharge letters at the UMC Utrecht",
+        "uitgever": "Universiteit Utrecht",
+        "url": "https://www.uu.nl/en/news/gpt-pilot-to-write-draft-discharge-letters-at-the-umc-utrecht",
+        "datum": "2024-09-12"
+      },
+      {
+        "titel": "Microsoft CEO Satya Nadella Showcases AI Collaboration Between UMCU and ChipSoft",
+        "uitgever": "ChipSoft",
+        "url": "https://www.chipsoft.com/en/news/microsoft-ceo-satya-nadella-showcases-ai-collaboration-between-umcu-and-chipsoft/",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "umc-utrecht-no-showvoorspelling",
+    "naam": "No-showvoorspelling",
+    "organisatie": "UMC Utrecht",
+    "gebouwdMet": [],
+    "sector": "Zorg",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Voorspelt welke patiënten een afspraak dreigen te missen, zodat het ziekenhuis hen vooraf belt.",
+    "beschrijving": "Het model is getraind op ongeveer tien jaar aan afspraakgegevens. Het kijkt naar eerdere gemiste afspraken, te laat komen en de afstand tussen huis en ziekenhuis. Patiënten met een hoog risico krijgen voor hun afspraak een vriendelijk telefoontje. Na een proef bij longgeneeskunde is het ziekenhuis in 2024 begonnen het model breder in te voeren, in navolging van een eerdere proef in het Erasmus MC.",
+    "opvallend": "De makers hebben bewust weinig persoonskenmerken gebruikt: leeftijd is het enige, en postcodes zijn weggelaten omdat die samenhangen met sociaaleconomische status.",
+    "resultaat": {
+      "tekst": "Bij longgeneeskunde daalde het aantal gemiste afspraken met 30 procent; ziekenhuisbreed verwacht het UMC Utrecht 15 tot 20 procent minder.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Minstens 130.000 patiënten komen jaarlijks niet opdagen bij ziekenhuisafspraak",
+        "uitgever": "NOS Nieuwsuur",
+        "url": "https://nos.nl/nieuwsuur/artikel/2521641-minstens-130-000-patienten-komen-jaarlijks-niet-opdagen-bij-ziekenhuisafspraak",
+        "datum": "2024-05-23"
+      },
+      {
+        "titel": "Hospitals turn to AI to identify potential patient no-shows",
+        "uitgever": "DutchNews",
+        "url": "https://www.dutchnews.nl/2024/05/hospitals-turn-to-ai-to-identify-potential-patient-no-shows",
+        "datum": "2024-05-24"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "umcg-conceptantwoorden-patientvragen",
+    "naam": "Conceptantwoorden op patiëntvragen",
+    "organisatie": "UMCG",
+    "gebouwdMet": [
+      "Epic"
+    ],
+    "sector": "Zorg",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": "2023",
+    "kort": "Schrijft in het patiëntendossier een conceptantwoord op schriftelijke vragen van patiënten.",
+    "beschrijving": "Patiënten van het UMCG stellen schriftelijk vragen aan hun zorgverlener, bijvoorbeeld over medicijnen, pijnbestrijding of het hervatten van sport en werk na een operatie. Een AI-functie in het elektronisch patiëntendossier van Epic leest de vraag en stelt een conceptantwoord op. Een arts of verpleegkundige controleert elk antwoord en past het aan voordat het wordt verstuurd. De proef liep in het UMCG en het ETZ in Tilburg.",
+    "opvallend": "Het UMCG was volgens eigen zeggen het eerste Europese ziekenhuis dat deze functie in het contact met patiënten inzette. Het systeem leert niet van patiëntgegevens en de gegevens blijven binnen het dossier.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "UMCG beantwoordt vragen patiënten met hulp van AI",
+        "uitgever": "Rijksuniversiteit Groningen",
+        "url": "https://www.rug.nl/news/2023/11/umcg-beantwoordt-vragen-patienten-met-hulp-van-ai",
+        "datum": "2023-11-13"
+      },
+      {
+        "titel": "Dutch hospital now uses AI chatbot to answer patient questions, a first in Europe",
+        "uitgever": "Techzine",
+        "url": "https://www.techzine.eu/news/applications/113251/dutch-hospital-now-uses-ai-chatbot-to-answer-patient-questions-a-first-in-europe/",
+        "datum": "2023-11-14"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "universiteit-van-amsterdam-uva-ai-chat",
+    "naam": "UvA AI Chat",
+    "organisatie": "Universiteit van Amsterdam",
+    "gebouwdMet": [
+      "SURF",
+      "Npuls"
+    ],
+    "sector": "Onderwijs",
+    "type": "Taalmodel",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Eigen AI-chatomgeving van de UvA waarin studenten en docenten veilig met taalmodellen werken.",
+    "beschrijving": "UvA AI Chat is een eigen omgeving voor generatieve AI, vergelijkbaar met commerciële chatdiensten. Wat gebruikers invoeren blijft binnen de technische infrastructuur van de universiteit en wordt niet zonder toestemming met derden gedeeld. Studenten kunnen er sinds 1 september 2025 mee werken en elke opleiding bepaalt zelf of en hoe AI in het onderwijs past. Begin 2026 kwam er een model met open gewichten bij dat op Nederlandse servers draait, in samenwerking met SURF.",
+    "opvallend": "De universiteit kiest zelf welke modellen beschikbaar zijn en biedt naast een commercieel model een open model op servers in Nederland. Het gebruik is gekoppeld aan e-learnings over AI-geletterdheid.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "UvA lanceert eigen AI Chat",
+        "uitgever": "Universiteit van Amsterdam",
+        "url": "https://www.uva.nl/content/nieuws/nieuwsberichten/2025/08/uva-lanceert-eigen-ai-chat.html",
+        "datum": "2025-08-28"
+      },
+      {
+        "titel": "New AI-modules, LLMs and local servers",
+        "uitgever": "Universiteit van Amsterdam",
+        "url": "https://www.uva.nl/shared-content/uva/en/news/news/2026/01/new-ai-modules-llms-and-local-servers.html",
+        "datum": "2026-01-21"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "vion-ai-cameratoezicht",
+    "naam": "AI-cameratoezicht dierenwelzijn",
+    "organisatie": "Vion",
+    "gebouwdMet": [
+      "Deloitte",
+      "De Dierenbescherming",
+      "Eyes on Animals"
+    ],
+    "sector": "Agri en food",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2021",
+    "kort": "Software selecteert uit camerabeelden in slachthuizen de momenten waarop de omgang met dieren mogelijk niet deugt.",
+    "beschrijving": "Camera's in de slachthuizen van Vion nemen doorlopend op. Software herkent de bewegingen van mensen, dieren en voorwerpen en hoe die op elkaar reageren. Een algoritme kiest de fragmenten die mogelijk afwijken van het dierenwelzijnsprotocol van Vion en toont ze op een dashboard. De dierenwelzijnsfunctionarissen van het bedrijf beoordelen die fragmenten en nemen maatregelen.",
+    "opvallend": "Het systeem is ontwikkeld samen met de Dierenbescherming en Eyes on Animals, twee organisaties die de sector kritisch volgen. Het vervangt steekproeven, waarbij het relevante moment gemakkelijk werd gemist.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Innovative camera surveillance for slaughterhouses",
+        "uitgever": "Vakblad Voedingsindustrie",
+        "url": "https://vakbladvoedingsindustrie.nl/en/article/innovative-camera-surveillance-for-slaugterhouses",
+        "datum": "2021-01-27"
+      },
+      {
+        "titel": "AI camera surveillance presented at Grüne Woche (Green Week)",
+        "uitgever": "Vion",
+        "url": "https://www.vionfoodgroup.com/en/ai-camera-surveillance-presented-at-grune-woche-green-week",
+        "datum": "2023-01-20"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "vodafoneziggo-gpt",
+    "naam": "VodafoneZiggo GPT",
+    "organisatie": "VodafoneZiggo",
+    "gebouwdMet": [],
+    "sector": "Zakelijke software",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": null,
+    "kort": "Afgeschermde AI-assistent waarmee alle medewerkers van VodafoneZiggo informatie opzoeken en sparren.",
+    "beschrijving": "VodafoneZiggo GPT is een eigen, afgeschermde assistent die lijkt op ChatGPT en voor iedereen in het bedrijf beschikbaar is. Medewerkers gebruiken hem om snel iets op te zoeken in interne protocollen, bijvoorbeeld verlofregels, of om mee te sparren. In het callcenter zoekt een aparte AI-toepassing tijdens een gesprek klantgegevens en eerdere contacten op en levert na afloop een samenvatting die de medewerker controleert.",
+    "opvallend": "Het bedrijf stuurt op gebruik met online trainingen, voorbeelden en collega's die als ambassadeur optreden. De gesprekssamenvatting in het callcenter is niet verplicht, en het bedrijf erkent dat sommige ervaren medewerkers er minder waarde in zien.",
+    "resultaat": {
+      "tekst": "80 procent van de medewerkers maakt gebruik van de assistent.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Experimenteren met AI: de weg naar een wendbare organisatie",
+        "uitgever": "AWVN",
+        "url": "https://www.awvn.nl/publicaties/experimenteren-met-ai-de-weg-naar-een-wendbare-organisatie/",
+        "datum": "2026-01-12"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "waterschap-limburg-aquasuite",
+    "naam": "Aquasuite",
+    "organisatie": "Waterschap Limburg",
+    "gebouwdMet": [
+      "Royal HaskoningDHV"
+    ],
+    "sector": "Overheid",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": "2021",
+    "kort": "Machine learning bewaakt alle rioolgemalen van het waterschap en signaleert afwijkingen en naderende storingen.",
+    "beschrijving": "Waterschap Limburg brengt de gegevens uit verschillende systemen samen op één dataplatform. Daarop draait een machine learning-toepassing die de data van alle 149 rioolgemalen doorlopend analyseert. Het systeem signaleert afwijkend gedrag van gemalen, herkent vroeg water dat niet in het riool thuishoort en voorspelt storingen en onderhoud. De invoering voor alle gemalen is in 2021 afgerond en de toepassingen worden sindsdien verder ontwikkeld.",
+    "opvallend": "De toepassing dekt het hele bestand aan rioolgemalen in plaats van een enkele proeflocatie. Het waterschap legde eerst een dataplatform aan en bouwde daar de AI op.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "AI met Aquasuite",
+        "uitgever": "Waterschap Limburg",
+        "url": "https://www.waterschaplimburg.nl/over-ons/innovaties/ai-met-aquasuite/",
+        "datum": null
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  },
+  {
+    "id": "waterveiligheid-en-ruimte-limburg-deepwaive",
+    "naam": "DeepWaive",
+    "organisatie": "Waterveiligheid en Ruimte Limburg",
+    "gebouwdMet": [
+      "FloodWaive"
+    ],
+    "sector": "Overheid",
+    "type": "Voorspelmodel",
+    "status": "Pilot",
+    "sinds": "2026",
+    "kort": "AI-model dat in het stroomgebied van de Selzerbeek binnen seconden overstromingskaarten berekent.",
+    "beschrijving": "Het programma Waterveiligheid en Ruimte Limburg test samen met de provincie en specialisten van het waterschap een model dat overstromingen inschat. Het combineert actuele en verwachte neerslag van het KNMI en de Duitse weerdienst DWD met gegevens over hoogte, landgebruik en het watersysteem. De uitkomst is een overstromingskaart met een nauwkeurigheid van één vierkante meter. De proef duurt een jaar en het model wordt nog niet gebruikt voor waarschuwingen of crisisbeheersing.",
+    "opvallend": "De proef is vooraf openbaar gemaakt in het Algoritmeregister, als impactvol algoritme in ontwikkeling. Het testgebied loopt door Duitsland en Zuid-Limburg, wat het een grensoverschrijdende toepassing maakt.",
+    "resultaat": {
+      "tekst": "Het model heeft volgens Waterveiligheid en Ruimte Limburg seconden nodig voor een voorspelling, waar traditionele modellen uren rekenen.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Limburg test AI om overstromingen te voorspellen",
+        "uitgever": "Binnenlands Bestuur",
+        "url": "https://www.binnenlandsbestuur.nl/digitaal/limburg-test-ai-om-overstromingen-te-voorspellen",
+        "datum": "2026-08-07"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-11-15"
+  }
+]
