@@ -1,0 +1,38 @@
+# Hoofdrol (werktitel)
+
+Webwinkel voor prentenboeken met je eigen kind in de hoofdrol. De klant kiest een verhaal, rekent af, stuurt daarna een foto in, kijkt het boek na en stuurt het naar de drukker.
+
+## Proberen
+
+```
+npm install
+npm run dev
+```
+
+Open http://localhost:3000. Zonder sleutels draait alles op testproviders: de betaling is nagemaakt, de platen worden zelf getekend (met de geüploade foto in de helm) en er wordt niets gedrukt. Bestellingen en bestanden staan in `.data/`.
+
+`npm run prijs` rekent de marge door met de aannames uit `lib/pricing.ts`. Zie ook `docs/prijsstelling.md`.
+
+## Hoe het in elkaar zit
+
+| Onderdeel | Bestand | Stand |
+| --- | --- | --- |
+| Verhalen en teksten | `lib/stories.ts` | Tekst van De ruimteschipper is een plaatshouder |
+| Prijzen en marge | `lib/pricing.ts` | Kosten zijn schattingen |
+| Betalen | `lib/providers/payment.ts` | Mollie geschreven, nog niet met een echte sleutel getest |
+| Platen maken | `lib/providers/images.ts` | Alleen de testmaker; Higgsfield of Magnific moet nog gekoppeld |
+| Drukbestand (pdf) | `lib/pdf.ts` | Werkt: 20 × 20 cm met 3 mm afloop; omslag ontbreekt nog |
+| Drukker | `lib/providers/print.ts` | Gelato geschreven naar de documentatie, niet getest |
+| Stappen na betaling | `lib/pipeline.ts` | Werkt |
+| Opslag | `lib/store.ts` | Bestanden op schijf; voor productie een database en objectopslag |
+
+De regel "eerst betalen, dan pas platen maken" zit in de server: `app/api/orders/[id]/photo/route.ts` weigert een foto zolang de bestelling niet betaald is, en de prijs rekent de server zelf uit.
+
+## Nog te doen voor de winkel open kan
+
+- Echte beeldkoppeling, en testen of het kind herkenbaar blijft op elke plaat.
+- Accounts en sleutels: Mollie, drukker, beelddienst (zie `.env.example`).
+- Omslag in het drukbestand, volgens de maten van de gekozen drukker.
+- Bevestigingsmail met de link naar `/maken/<code>`.
+- Opslag die een herstart en meerdere servers overleeft.
+- Privacytekst, voorwaarden en verwerkersovereenkomsten laten nakijken (foto's van kinderen).
