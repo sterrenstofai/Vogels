@@ -1,14 +1,17 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { Bladerboek } from '@/components/Bladerboek';
+import { Stappen } from '@/components/Stappen';
+import { getStory } from '@/lib/stories';
 
 type Page = { status: 'pending' | 'running' | 'done' | 'failed'; version: number; tekst: string };
-type View = { id: string; status: 'awaiting_payment' | 'paid' | 'generating' | 'review' | 'printing' | 'failed'; titel: string; childName: string; regenerationsLeft: number; error?: string; pages: Page[] };
+type View = { id: string; status: 'awaiting_payment' | 'paid' | 'generating' | 'review' | 'printing' | 'failed'; titel: string; childName: string; opdracht: string; storySlug: string; regenerationsLeft: number; error?: string; pages: Page[] };
 
 export function Werkplaats({ id }: { id: string }) {
   const [v, setV] = useState<View | null>(null);
   const [fout, setFout] = useState('');
   const [bezig, setBezig] = useState(false);
-  const [blad, setBlad] = useState(0);
+  const [open, setOpen] = useState<number[]>([]);
   const [voorbeeld, setVoorbeeld] = useState('');
   const fotoRef = useRef<HTMLInputElement>(null);
 
@@ -55,6 +58,7 @@ export function Werkplaats({ id }: { id: string }) {
     return (
       <form
         className="status"
+        data-stap="foto"
         onSubmit={(e) => { e.preventDefault(); doe('photo', { body: new FormData(e.currentTarget) }); }}
       >
         <span className="hand">Bedankt, de betaling is binnen</span>
@@ -99,24 +103,23 @@ export function Werkplaats({ id }: { id: string }) {
   if (v.status === 'review')
     return (
       <div className="blader">
+        <Stappen nu={4} />
         <div className="kop midden" style={{ marginBottom: 0 }}>
-          <span className="hand">Kijk het rustig na</span>
-          <h1>{v.titel}</h1>
+          <h1>Kijk het boek na.</h1>
+          <p>Blader er rustig doorheen. Niet tevreden over een plaat? Je mag er drie opnieuw laten maken.</p>
         </div>
-        <div className="blad">
-          <img src={src(blad)} alt={`Plaat ${blad + 1} van ${v.pages.length}`} />
-          <div className="onder">{v.pages[blad].tekst}</div>
-        </div>
-        <div className="bladnav">
-          <button className="rond" onClick={() => setBlad(blad - 1)} disabled={blad === 0} aria-label="Vorige bladzijde">←</button>
-          <span>{blad + 1} van {v.pages.length}</span>
-          <button className="rond" onClick={() => setBlad(blad + 1)} disabled={blad === v.pages.length - 1} aria-label="Volgende bladzijde">→</button>
-        </div>
+        <Bladerboek story={getStory(v.storySlug)!} naam={v.childName} opdracht={v.opdracht} onBlad={setOpen}
+          platen={v.pages.map((p, i) => ({ tekst: p.tekst, src: src(i) }))} />
         {fout && <p className="fout" role="alert">{fout}</p>}
         <div className="acties">
-          <button className="link" disabled={bezig || v.regenerationsLeft === 0} onClick={() => doe('regenerate', { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pagina: blad }) })}>
-            Maak deze plaat opnieuw ({v.regenerationsLeft} over)
-          </button>
+          {open.map((i) => (
+            <button key={i} className="link" disabled={bezig || v.regenerationsLeft === 0} onClick={() => doe('regenerate', { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pagina: i }) })}>
+              Maak plaat {i + 1} opnieuw
+            </button>
+          ))}
+          {open.length > 0 && <span className="noot">{v.regenerationsLeft} over</span>}
+        </div>
+        <div className="acties">
           <button className="btn" disabled={bezig} onClick={() => { if (window.confirm('Het boek gaat nu naar de drukker en kan daarna niet meer worden aangepast. Doorgaan?')) doe('approve', {}); }}>
             {bezig ? 'Even geduld…' : 'Ziet er goed uit, drukken maar'}
           </button>
@@ -130,7 +133,7 @@ export function Werkplaats({ id }: { id: string }) {
         <span className="hand">Gelukt</span>
         <h1>Het boek is naar de drukker</h1>
         <p>Over ongeveer een week valt het boek van {v.childName} op de mat. De foto hebben we verwijderd.</p>
-        <p><a href={`/api/orders/${id}/files/boek.pdf`} target="_blank">Bekijk het drukbestand (pdf)</a></p>
+        <p><a href={`/api/orders/${id}/files/boek.pdf`} target="_blank">Bekijk het drukbestand (pdf)</a> · <a href="/mijn">Mijn boeken</a></p>
       </div>
     );
 

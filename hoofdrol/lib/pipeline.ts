@@ -56,7 +56,7 @@ export async function approve(order: Order): Promise<Order> {
     if (!jpg) throw new Error(`pagina ${i + 1} ontbreekt`);
     paginas.push({ tekst: vulNaam(story.scenes[i].tekst, order.childName), jpg });
   }
-  const pdf = await bouwBoek({ titel: story.titel, naam: order.childName, paginas });
+  const pdf = await bouwBoek({ titel: story.titel, naam: order.childName, opdracht: order.opdracht, paginas });
   await putFile(order.id, 'boek.pdf', pdf);
   order.printOrderId = await placePrintOrder(order, paginas.length + 2);
   order.status = 'printing';

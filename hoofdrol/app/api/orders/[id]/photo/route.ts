@@ -11,7 +11,7 @@ export async function POST(req: Request, ctx: { params: Promise<{ id: string }> 
   if (Number(req.headers.get('content-length') || 0) > MAX + 4096) return NextResponse.json({ fout: 'De foto is te groot (maximaal 12 MB).' }, { status: 413 });
   const vooraf = await getOrder(id);
   if (!vooraf) return NextResponse.json({ fout: 'Bestelling niet gevonden.' }, { status: 404 });
-  if (vooraf.status === 'awaiting_payment') return NextResponse.json({ fout: 'Deze bestelling is nog niet betaald.' }, { status: 402 });
+  if (vooraf.status === 'awaiting_payment' || vooraf.status === 'draft') return NextResponse.json({ fout: 'Deze bestelling is nog niet betaald.' }, { status: 402 });
   const form = await req.formData().catch(() => null);
   const file = form?.get('foto');
   if (!(file instanceof File) || file.size === 0) return NextResponse.json({ fout: 'Kies eerst een foto.' }, { status: 400 });
@@ -29,7 +29,7 @@ export async function POST(req: Request, ctx: { params: Promise<{ id: string }> 
   return withLock(id, async () => {
     const order = await getOrder(id);
     if (!order) return NextResponse.json({ fout: 'Bestelling niet gevonden.' }, { status: 404 });
-    if (order.status === 'awaiting_payment') return NextResponse.json({ fout: 'Deze bestelling is nog niet betaald.' }, { status: 402 });
+    if (order.status === 'awaiting_payment' || order.status === 'draft') return NextResponse.json({ fout: 'Deze bestelling is nog niet betaald.' }, { status: 402 });
     if (order.status !== 'paid') return NextResponse.json({ fout: 'Voor deze bestelling is al een foto gebruikt.' }, { status: 409 });
     await putFile(id, 'foto.jpg', jpg);
     order.hasPhoto = true;

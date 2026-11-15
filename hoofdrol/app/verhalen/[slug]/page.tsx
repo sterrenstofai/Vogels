@@ -20,7 +20,7 @@ export default async function Verhaal({ params }: { params: Promise<{ slug: stri
           <h1>{story.titel}</h1>
           <p>{story.kort}</p>
           <p>{story.scenes.length} platen met jouw kind als held, in korte zinnen om zelf te lezen. Vanaf {euro(PRIJZEN.boek.softcover)}.</p>
-          <Link className="btn" href={`/bestellen/${story.slug}`}>Bestel dit boek</Link>
+          <Link className="btn" href={`/ontwerpen/${story.slug}`}>Ontwerp dit boek</Link>
         </div>
       </div>
       <div className="wrap" style={{ marginTop: 110 }}>

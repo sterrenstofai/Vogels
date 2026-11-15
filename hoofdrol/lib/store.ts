@@ -6,7 +6,7 @@ import { randomBytes } from 'node:crypto';
 import type { Format } from './pricing';
 
 export type PageState = { status: 'pending' | 'running' | 'done' | 'failed'; jobId?: string; attempts: number; version: number };
-export type OrderStatus = 'awaiting_payment' | 'paid' | 'generating' | 'review' | 'printing' | 'failed';
+export type OrderStatus = 'draft' | 'awaiting_payment' | 'paid' | 'generating' | 'review' | 'printing' | 'failed';
 export type Order = {
   id: string;
   createdAt: string;
@@ -14,6 +14,7 @@ export type Order = {
   format: Format;
   aantal: number;
   childName: string;
+  opdracht: string;
   email: string;
   shipping: { naam: string; straat: string; postcode: string; plaats: string; land: string };
   totaalCents: number;
@@ -73,6 +74,41 @@ export async function getFile(id: string, name: string): Promise<Buffer | null> 
 
 export async function deleteFile(id: string, name: string) {
   await fs.rm(filePath(id, name), { force: true });
+}
+
+export async function listOrders(email: string): Promise<Order[]> {
+  const dir = path.join(DIR, 'orders');
+  const namen = await fs.readdir(dir).catch(() => [] as string[]);
+  const uit: Order[] = [];
+  for (const n of namen) {
+    if (!n.endsWith('.json')) continue;
+    const o = await getOrder(n.slice(0, -5));
+    if (o && o.status !== 'draft' && o.email.toLowerCase() === email.toLowerCase()) uit.push(o);
+  }
+  return uit.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+}
+
+// Kleine losse gegevens: inloglinks en sessies.
+type Soort = 'logins' | 'sessions';
+export type Record_ = { email: string; exp: number };
+const recPath = (soort: Soort, id: string) => {
+  if (!/^[a-f0-9]{64}$/.test(id)) throw new Error('ongeldig pad');
+  return path.join(DIR, soort, `${id}.json`);
+};
+export async function putRecord(soort: Soort, id: string, data: Record_) {
+  await fs.mkdir(path.dirname(recPath(soort, id)), { recursive: true });
+  await fs.writeFile(recPath(soort, id), JSON.stringify(data));
+}
+export async function getRecord(soort: Soort, id: string): Promise<Record_ | null> {
+  try {
+    const r = JSON.parse(await fs.readFile(recPath(soort, id), 'utf8')) as Record_;
+    return r.exp > Date.now() ? r : null;
+  } catch {
+    return null;
+  }
+}
+export async function delRecord(soort: Soort, id: string) {
+  try { await fs.rm(recPath(soort, id), { force: true }); } catch {}
 }
 
 // Eén bewerking per bestelling tegelijk (binnen dit proces).

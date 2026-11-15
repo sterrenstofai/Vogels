@@ -25,7 +25,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link className="pill hide-s" href="/#zo-werkt-het">Zo werkt het</Link>
               <Link className="pill hide-s" href="/#prijs">Prijs</Link>
               <Link className="pill hide-s" href="/#vragen">Vragen</Link>
-              <Link className="pill koop" href={`/bestellen/${STORIES[0].slug}`}>Bestel</Link>
+              <Link className="pill" href="/mijn">Mijn boeken</Link>
+              <Link className="pill koop" href={`/ontwerpen/${STORIES[0].slug}`}>Maak een boek</Link>
             </nav>
           </div>
         </header>

@@ -25,7 +25,7 @@ function regels(tekst: string, f: PDFFont, grootte: number, breedte: number) {
   return uit;
 }
 
-export async function bouwBoek(opts: { titel: string; naam: string; paginas: { tekst: string; jpg: Buffer }[] }) {
+export async function bouwBoek(opts: { titel: string; naam: string; opdracht?: string; paginas: { tekst: string; jpg: Buffer }[] }) {
   const pdf = await PDFDocument.create();
   pdf.registerFontkit(fontkit);
   const vet = await pdf.embedFont(await font(700), { subset: true });
@@ -39,6 +39,7 @@ export async function bouwBoek(opts: { titel: string; naam: string; paginas: { t
   titel.drawRectangle({ x: 0, y: 0, width: KANT, height: KANT, color: PAPIER });
   midden(titel, opts.titel, vet, 44, KANT * 0.56);
   midden(titel, `met ${opts.naam} in de hoofdrol`, normaal, 22, KANT * 0.56 - 44);
+  regels(opts.opdracht || '', normaal, 16, KANT * 0.6).slice(0, 4).forEach((r, i) => midden(titel, r, normaal, 16, KANT * 0.3 - i * 22));
 
   for (const p of opts.paginas) {
     const page = pdf.addPage([KANT, KANT]);

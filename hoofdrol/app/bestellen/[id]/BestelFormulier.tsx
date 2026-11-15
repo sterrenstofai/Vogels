@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { PRIJZEN, euro, orderTotaal, type Format } from '@/lib/pricing';
 
-export function BestelFormulier({ slug }: { slug: string }) {
-  const [format, setFormat] = useState<Format>('hardcover');
+export function BestelFormulier({ id, start }: { id: string; start: Format }) {
+  const [format, setFormat] = useState<Format>(start);
   const [aantal, setAantal] = useState(1);
   const [fout, setFout] = useState('');
   const [bezig, setBezig] = useState(false);
@@ -15,10 +15,10 @@ export function BestelFormulier({ slug }: { slug: string }) {
     setFout(''); setBezig(true);
     const f = Object.fromEntries(new FormData(e.currentTarget));
     try {
-      const res = await fetch('/api/orders', {
+      const res = await fetch(`/api/orders/${id}/checkout`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...f, storySlug: slug, format, aantal, akkoord: f.akkoord === 'on' }),
+        body: JSON.stringify({ ...f, format, aantal, akkoord: f.akkoord === 'on' }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.fout);
@@ -33,9 +33,6 @@ export function BestelFormulier({ slug }: { slug: string }) {
     <form className="form" onSubmit={verstuur}>
       <fieldset>
         <legend>Het boek</legend>
-        <label>Voornaam van het kind
-          <input type="text" name="childName" required maxLength={20} autoComplete="off" placeholder="Zoals die in het boek komt" />
-        </label>
         <div className="keuze" role="radiogroup" aria-label="Uitvoering">
           {(['hardcover', 'softcover'] as Format[]).map((k) => (
             <label key={k}>

@@ -28,6 +28,8 @@ export function publicView(order: Order) {
     status: order.status,
     titel: story.titel,
     childName: order.childName,
+    opdracht: order.opdracht,
+    storySlug: order.storySlug,
     format: order.format,
     aantal: order.aantal,
     totaalCents: order.totaalCents,
@@ -38,3 +40,17 @@ export function publicView(order: Order) {
 }
 
 export { getOrder };
+
+// Waar een bestelling staat, in gewone woorden, en wat de klant nu kan doen.
+export const STAPPEN = ['Betaald', 'Foto', 'Platen', 'Nakijken', 'Drukker'];
+export function stand(order: Order): { stap: number; tekst: string; actie: string } {
+  switch (order.status) {
+    case 'awaiting_payment': return { stap: 0, tekst: 'Wacht op betaling', actie: 'Bekijk' };
+    case 'paid': return { stap: 1, tekst: 'Betaald. Stuur nu de foto in.', actie: 'Stuur de foto in' };
+    case 'generating': return { stap: 2, tekst: 'We maken de platen.', actie: 'Bekijk de voortgang' };
+    case 'review': return { stap: 3, tekst: 'Klaar om na te kijken.', actie: 'Kijk het boek na' };
+    case 'printing': return { stap: 5, tekst: 'Bij de drukker. Ongeveer een week onderweg.', actie: 'Bekijk het boek' };
+    case 'failed': return { stap: 2, tekst: 'Er ging iets mis. We kijken ernaar.', actie: 'Bekijk' };
+    default: return { stap: 0, tekst: 'Nog niet besteld', actie: 'Ga verder' };
+  }
+}

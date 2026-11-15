@@ -29,7 +29,7 @@ export default function Home() {
           <h1>Jouw kind is de held.</h1>
           <p className="lead">Een echt gedrukt prentenboek, met jouw kind op elke bladzijde.</p>
           <div className="cta">
-            <Link className="btn" href={`/bestellen/${eerste.slug}`}>Maak jullie boek</Link>
+            <Link className="btn" href={`/ontwerpen/${eerste.slug}`}>Maak jullie boek</Link>
             <Link className="pijl" href={`/verhalen/${eerste.slug}`}>Bekijk het verhaal</Link>
           </div>
           <div className="podium"><Boek story={eerste} naam="Fos" /></div>
@@ -120,7 +120,7 @@ export default function Home() {
       <section style={{ paddingTop: 0 }}>
         <div className="wrap kop midden op" style={{ marginBottom: 0 }}>
           <h2>Over een week op de mat.</h2>
-          <div className="cta" style={{ marginTop: 30 }}><Link className="btn" href={`/bestellen/${eerste.slug}`}>Maak jullie boek</Link></div>
+          <div className="cta" style={{ marginTop: 30 }}><Link className="btn" href={`/ontwerpen/${eerste.slug}`}>Maak jullie boek</Link></div>
         </div>
       </section>
     </main>
