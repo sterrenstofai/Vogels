@@ -22,7 +22,7 @@ try {
           <h3>${esc(j.naam)}</h3>
           <p class="jurylid-functie">${esc([j.functie, j.organisatie].filter(Boolean).join(", "))}</p>
           ${j.over ? `<p class="jurylid-over">${esc(j.over)}</p>` : ""}
-          <p class="jurylid-voet">${j.expertise ? `<span class="etiket">${esc(j.expertise)}</span>` : ""}<span class="meta">${aantal.get(j.id) ?? 0} beoordelingen</span>${profiel ? `<a href="${esc(profiel)}" rel="noopener nofollow">Profiel</a>` : ""}</p>
+          <p class="jurylid-voet">${j.expertise ? `<span class="etiket">${esc(j.expertise)}</span>` : ""}<span class="meta">${aantal.get(j.id) ?? 0} ${aantal.get(j.id) === 1 ? "beoordeling" : "beoordelingen"}</span>${profiel ? `<a href="${esc(profiel)}" rel="noopener nofollow">Profiel</a>` : ""}</p>
         </li>`;
       })
       .join("")}</ul>`;

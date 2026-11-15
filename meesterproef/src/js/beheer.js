@@ -76,7 +76,7 @@ function jury() {
         ? staat.jury
             .map(
               (j) => `<article class="beheer-item${j.actief === false ? " afgehandeld" : ""}">
-          <header><h3>${esc(j.naam)}</h3><span class="etiket${j.actief === false ? "" : " etiket-loopt"}">${j.actief === false ? "inactief" : "actief"}</span><span class="meta">${aantal.get(j.id) ?? 0} beoordelingen · laatste login ${j.laatsteLogin ? esc(datumTekst(j.laatsteLogin)) : "nooit"}</span></header>
+          <header><h3>${esc(j.naam)}</h3><span class="etiket${j.actief === false ? "" : " etiket-loopt"}">${j.actief === false ? "inactief" : "actief"}</span><span class="meta">${aantal.get(j.id) ?? 0} ${aantal.get(j.id) === 1 ? "beoordeling" : "beoordelingen"} · laatste login ${j.laatsteLogin ? esc(datumTekst(j.laatsteLogin)) : "nooit"}</span></header>
           <dl>${veld("Functie", [j.functie, j.organisatie].filter(Boolean).join(", "))}${veld("Vakgebied", j.expertise)}${veld("Over", j.over)}${veld("Profiel", j.profiel)}</dl>
           <div class="beheer-acties"><button class="knop knop-lijn knop-klein" type="button" data-code="${esc(j.id)}">Nieuwe inlogcode</button><button class="tekstknop" type="button" data-actief="${j.actief === false}" data-id="${esc(j.id)}">${j.actief === false ? "Zet actief" : "Zet inactief"}</button></div>
         </article>`

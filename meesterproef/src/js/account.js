@@ -143,6 +143,7 @@ async function start() {
   inlog.hidden = true;
   werk.hidden = false;
   document.title = "Mijn jurywerk · Meesterproef";
+  document.querySelector("[data-account]").textContent = "Mijn jurywerk";
   document.querySelector("#jury-naam").textContent = ik.data.jurylid.naam;
   const [data, mijnWerk] = await Promise.all([laadData(), api("/jury/werk")]);
   if (!mijnWerk.ok) {
