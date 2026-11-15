@@ -9,7 +9,7 @@ import pathlib
 import re
 import sys
 
-DATA = pathlib.Path(__file__).resolve().parent.parent / "site" / "data"
+DATA = pathlib.Path(__file__).resolve().parent.parent / "src" / "data"
 
 SECTOREN = {"Retail", "Financiën", "Zorg", "Overheid", "Mobiliteit", "Media", "Zakelijke software", "Industrie", "Onderwijs", "Juridisch", "Logistiek", "Energie", "Agri en food", "Reizen"}
 TYPES = {"Assistent voor klanten", "Assistent voor medewerkers", "Agent", "Voorspelmodel", "Beeldherkenning", "Spraak en verslaglegging", "Taalmodel"}

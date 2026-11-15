@@ -1,0 +1,397 @@
+[
+  {
+    "id": "voorbeeld-kassabon",
+    "naam": "Bonnetje",
+    "organisatie": "Supermarkt De Proef",
+    "gebouwdMet": [
+      "Bureau Voorbeeld"
+    ],
+    "sector": "Retail",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Verzonnen voorbeeld: assistent die klanten helpt een weekmenu te maken uit de aanbiedingen.",
+    "beschrijving": "Dit is een verzonnen oplossing in de voorbeeldomgeving. Bonnetje stelt een weekmenu voor op basis van de aanbiedingen en wat de klant eerder kocht, en zet de boodschappen in het mandje.",
+    "opvallend": "Het menu houdt rekening met wat er nog in huis is, omdat de klant dat in gewone taal kan vertellen.",
+    "resultaat": {
+      "tekst": "Klanten die de assistent gebruiken gooien naar eigen zeggen 18 procent minder eten weg.",
+      "herkomst": "onafhankelijk"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Bonnetje",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-01"
+  },
+  {
+    "id": "voorbeeld-polisuitleg",
+    "naam": "Polisuitleg",
+    "organisatie": "Verzekeraar Voorbeeld",
+    "gebouwdMet": [
+      "Bureau Voorbeeld"
+    ],
+    "sector": "Financiën",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Verzonnen voorbeeld: legt in gewone taal uit wat een polis wel en niet dekt.",
+    "beschrijving": "Dit is een verzonnen oplossing. Polisuitleg beantwoordt vragen over de eigen polis van de klant en verwijst bij elk antwoord naar het artikel in de voorwaarden.",
+    "opvallend": "Elk antwoord laat de bronpassage zien, zodat de klant kan nalezen waar het op steunt.",
+    "resultaat": {
+      "tekst": "Het aantal telefoontjes over dekking daalde met 31 procent.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Polisuitleg",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "inzending",
+    "toegevoegd": "2026-10-04"
+  },
+  {
+    "id": "voorbeeld-ontslagbrief",
+    "naam": "Briefhulp",
+    "organisatie": "Ziekenhuis Het Voorbeeld",
+    "gebouwdMet": [
+      "Studio Proefstuk"
+    ],
+    "sector": "Zorg",
+    "type": "Spraak en verslaglegging",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Verzonnen voorbeeld: maakt een concept van de ontslagbrief uit het dossier.",
+    "beschrijving": "Dit is een verzonnen oplossing. Briefhulp schrijft een eerste versie van de ontslagbrief op basis van het dossier. De arts leest, verbetert en ondertekent.",
+    "opvallend": "De arts ziet per zin uit welk deel van het dossier die komt.",
+    "resultaat": {
+      "tekst": "Artsen zijn per brief gemiddeld 6 minuten korter bezig.",
+      "herkomst": "onafhankelijk"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Briefhulp",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-05"
+  },
+  {
+    "id": "voorbeeld-vergunning",
+    "naam": "Vergunningwijzer",
+    "organisatie": "Gemeente Proefstad",
+    "gebouwdMet": [],
+    "sector": "Overheid",
+    "type": "Assistent voor medewerkers",
+    "status": "Pilot",
+    "sinds": "2026",
+    "kort": "Verzonnen voorbeeld: helpt ambtenaren de juiste regels te vinden bij een aanvraag.",
+    "beschrijving": "Dit is een verzonnen oplossing. Vergunningwijzer doorzoekt het omgevingsplan en laat de behandelaar zien welke regels op een aanvraag van toepassing zijn.",
+    "opvallend": "De gemeente publiceert elke maand welke vragen het systeem niet kon beantwoorden.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Vergunningwijzer",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-03"
+  },
+  {
+    "id": "voorbeeld-perron",
+    "naam": "Perronkijker",
+    "organisatie": "Vervoerder Voorbeeld",
+    "gebouwdMet": [],
+    "sector": "Mobiliteit",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Verzonnen voorbeeld: herkent drukte op perrons en stuurt reizigers naar rustige deuren.",
+    "beschrijving": "Dit is een verzonnen oplossing. Perronkijker telt reizigers op camerabeeld zonder gezichten op te slaan en toont op de borden waar het rustig is.",
+    "opvallend": "De beelden worden op het station zelf verwerkt en direct weggegooid.",
+    "resultaat": {
+      "tekst": "Het in- en uitstappen duurt op drukke stations 9 procent korter.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Perronkijker",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-08"
+  },
+  {
+    "id": "voorbeeld-eindredactie",
+    "naam": "Tegenlezer",
+    "organisatie": "Dagblad De Proef",
+    "gebouwdMet": [
+      "Studio Proefstuk"
+    ],
+    "sector": "Media",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Verzonnen voorbeeld: leest artikelen tegen op feiten die niet bij de bron passen.",
+    "beschrijving": "Dit is een verzonnen oplossing. Tegenlezer vergelijkt cijfers en citaten in een artikel met de bronnen die de journalist heeft toegevoegd, en markeert wat niet overeenkomt.",
+    "opvallend": "Het systeem verbetert niets zelf; het wijst alleen aan.",
+    "resultaat": {
+      "tekst": "Het aantal rectificaties halveerde in een jaar.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Tegenlezer",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-05"
+  },
+  {
+    "id": "voorbeeld-boekhouding",
+    "naam": "Sluitpost",
+    "organisatie": "Voorbeeld Software",
+    "gebouwdMet": [],
+    "sector": "Zakelijke software",
+    "type": "Agent",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Verzonnen voorbeeld: agent die de maandafsluiting voorbereidt en afwijkingen verklaart.",
+    "beschrijving": "Dit is een verzonnen oplossing. Sluitpost loopt de boekingen van een maand na, zoekt bij afwijkingen de onderliggende facturen op en legt een verklaring voor aan de boekhouder.",
+    "opvallend": "Elke stap van de agent is terug te lezen in een logboek dat de klant kan inzien.",
+    "resultaat": {
+      "tekst": "De maandafsluiting kost de leverancier naar eigen zeggen twee dagen minder.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Sluitpost",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "inzending",
+    "toegevoegd": "2026-10-04"
+  },
+  {
+    "id": "voorbeeld-lasnaad",
+    "naam": "Lasoog",
+    "organisatie": "Machinefabriek Proef",
+    "gebouwdMet": [
+      "Bureau Voorbeeld"
+    ],
+    "sector": "Industrie",
+    "type": "Beeldherkenning",
+    "status": "In productie",
+    "sinds": "2023",
+    "kort": "Verzonnen voorbeeld: keurt lasnaden op camerabeeld en zet twijfelgevallen apart.",
+    "beschrijving": "Dit is een verzonnen oplossing. Lasoog beoordeelt elke lasnaad op de lijn en stuurt twijfelgevallen naar een keurmeester.",
+    "opvallend": "De keurmeesters bepalen zelf de drempel waarboven het systeem mag goedkeuren.",
+    "resultaat": {
+      "tekst": "Het aandeel afgekeurde producten bij de eindcontrole daalde van 4 naar 1,5 procent.",
+      "herkomst": "onafhankelijk"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Lasoog",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "inzending",
+    "toegevoegd": "2026-10-09"
+  },
+  {
+    "id": "voorbeeld-studiehulp",
+    "naam": "Studiewijzer",
+    "organisatie": "Hogeschool Voorbeeld",
+    "gebouwdMet": [],
+    "sector": "Onderwijs",
+    "type": "Assistent voor klanten",
+    "status": "Pilot",
+    "sinds": "2026",
+    "kort": "Verzonnen voorbeeld: beantwoordt vragen van studenten over roosters en regelingen.",
+    "beschrijving": "Dit is een verzonnen oplossing. Studiewijzer beantwoordt praktische vragen op basis van de onderwijsregeling en verwijst door naar een decaan als het persoonlijk wordt.",
+    "opvallend": "Studenten zien bij elk antwoord wanneer de bron voor het laatst is bijgewerkt.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Studiewijzer",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-03"
+  },
+  {
+    "id": "voorbeeld-dossier",
+    "naam": "Dossierlezer",
+    "organisatie": "Kantoor Proef en Partners",
+    "gebouwdMet": [],
+    "sector": "Juridisch",
+    "type": "Assistent voor medewerkers",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Verzonnen voorbeeld: vat grote dossiers samen en vindt tegenstrijdige verklaringen.",
+    "beschrijving": "Dit is een verzonnen oplossing. Dossierlezer ordent stukken op datum en onderwerp en wijst passages aan die elkaar tegenspreken.",
+    "opvallend": "Elke bevinding verwijst naar pagina en regel in het stuk.",
+    "resultaat": {
+      "tekst": "Juristen besteden per dossier 30 procent minder tijd aan het eerste lezen.",
+      "herkomst": "leverancier"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Dossierlezer",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "inzending",
+    "toegevoegd": "2026-10-09"
+  },
+  {
+    "id": "voorbeeld-kade",
+    "naam": "Kadeplanner",
+    "organisatie": "Havenbedrijf Voorbeeld",
+    "gebouwdMet": [
+      "Studio Proefstuk"
+    ],
+    "sector": "Logistiek",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": "2024",
+    "kort": "Verzonnen voorbeeld: voorspelt aankomsttijden van schepen en plant de kade.",
+    "beschrijving": "Dit is een verzonnen oplossing. Kadeplanner voorspelt per schip de aankomsttijd en stelt een bezetting van de kade voor.",
+    "opvallend": "De planners kunnen elke voorspelling overschrijven, en het model leert daarvan.",
+    "resultaat": {
+      "tekst": "Schepen wachten gemiddeld 40 minuten korter op een ligplaats.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Kadeplanner",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-06"
+  },
+  {
+    "id": "voorbeeld-net",
+    "naam": "Netwacht",
+    "organisatie": "Netbeheerder Voorbeeld",
+    "gebouwdMet": [],
+    "sector": "Energie",
+    "type": "Voorspelmodel",
+    "status": "In productie",
+    "sinds": "2023",
+    "kort": "Verzonnen voorbeeld: voorspelt overbelasting van het stroomnet een dag vooruit.",
+    "beschrijving": "Dit is een verzonnen oplossing. Netwacht voorspelt per wijk de belasting van het net en waarschuwt de bedrijfsvoering.",
+    "opvallend": "De code en de meetmethode zijn openbaar.",
+    "resultaat": {
+      "tekst": "Negen van de tien overbelastingen werden een dag vooraf voorspeld.",
+      "herkomst": "onafhankelijk"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Netwacht",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "inzending",
+    "toegevoegd": "2026-10-05"
+  },
+  {
+    "id": "voorbeeld-kas",
+    "naam": "Kasgids",
+    "organisatie": "Kwekerij De Proef",
+    "gebouwdMet": [],
+    "sector": "Agri en food",
+    "type": "Voorspelmodel",
+    "status": "Pilot",
+    "sinds": "2026",
+    "kort": "Verzonnen voorbeeld: adviseert telers over water en licht per kasvak.",
+    "beschrijving": "Dit is een verzonnen oplossing. Kasgids combineert sensordata en het weerbericht tot een advies per kasvak.",
+    "opvallend": "De teler ziet waarom een advies wordt gegeven, in gewone taal.",
+    "resultaat": null,
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Kasgids",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "inzending",
+    "toegevoegd": "2026-10-05"
+  },
+  {
+    "id": "voorbeeld-reis",
+    "naam": "Reisvraag",
+    "organisatie": "Reisbureau Voorbeeld",
+    "gebouwdMet": [],
+    "sector": "Reizen",
+    "type": "Assistent voor klanten",
+    "status": "In productie",
+    "sinds": "2025",
+    "kort": "Verzonnen voorbeeld: helpt reizigers een reis samen te stellen in een gesprek.",
+    "beschrijving": "Dit is een verzonnen oplossing. Reisvraag stelt een reis samen op basis van wensen in gewone taal en laat steeds de prijs en de voorwaarden zien.",
+    "opvallend": "De assistent zegt het als een wens niet binnen het budget past.",
+    "resultaat": {
+      "tekst": "Een op de vijf gesprekken eindigt in een boeking.",
+      "herkomst": "organisatie"
+    },
+    "bronnen": [
+      {
+        "titel": "Voorbeeldartikel over Reisvraag",
+        "uitgever": "Voorbeeldbron",
+        "url": "https://example.com/voorbeeld",
+        "datum": "2026-09-01"
+      }
+    ],
+    "gecontroleerd": "2026-11-15",
+    "herkomst": "redactie",
+    "toegevoegd": "2026-10-06"
+  }
+]

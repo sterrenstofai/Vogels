@@ -1,0 +1,50 @@
+[
+  {
+    "id": "anna",
+    "naam": "Anna de Voorbeeld",
+    "functie": "Hoofd productontwikkeling",
+    "organisatie": "Voorbeeld BV",
+    "over": "Bouwt al tien jaar digitale producten.",
+    "expertise": "Product"
+  },
+  {
+    "id": "bram",
+    "naam": "Bram Proefstra",
+    "functie": "Onderzoeker",
+    "organisatie": "Universiteit Voorbeeld",
+    "over": "Onderzoekt de betrouwbaarheid van taalmodellen.",
+    "expertise": "Onderzoek"
+  },
+  {
+    "id": "carla",
+    "naam": "Carla van Proef",
+    "functie": "Privacyjurist",
+    "organisatie": "Kantoor Voorbeeld",
+    "over": "Adviseert over gegevens en toezicht.",
+    "expertise": "Privacy en toezicht"
+  },
+  {
+    "id": "daan",
+    "naam": "Daan Voorbeeldman",
+    "functie": "Ontwikkelaar",
+    "organisatie": "Studio Voorbeeld",
+    "over": "Maakt agents voor de zorg.",
+    "expertise": "Ontwikkeling"
+  },
+  {
+    "id": "esra",
+    "naam": "Esra Proefkens",
+    "functie": "Ontwerper",
+    "organisatie": "Zelfstandig",
+    "over": "Ontwerpt gesprekken tussen mens en machine.",
+    "expertise": "Ontwerp"
+  },
+  {
+    "id": "floor",
+    "naam": "Floor de Proef",
+    "functie": "Directeur innovatie",
+    "organisatie": "Voorbeeldgroep",
+    "over": "Voert AI in bij grote organisaties.",
+    "expertise": "Invoering"
+  }
+]

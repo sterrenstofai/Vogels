@@ -103,3 +103,47 @@ export function oordeel(beoordelingen) {
 export function toonCijfer(getal) {
   return getal.toFixed(1).replace(".", ",");
 }
+
+// Hoe hard is het bewijs voor het gemelde resultaat? Dit is geen oordeel
+// over de oplossing, alleen over wie het cijfer heeft vastgesteld.
+export const BEWIJS = [
+  { niveau: 0, naam: "Geen cijfers gemeld", uitleg: "In de bronnen staat geen gemeten resultaat." },
+  { niveau: 1, naam: "Cijfers van de leverancier", uitleg: "Het resultaat komt van de partij die de techniek levert." },
+  { niveau: 2, naam: "Eigen cijfers", uitleg: "De organisatie die de oplossing gebruikt meldt het resultaat zelf." },
+  { niveau: 3, naam: "Onafhankelijk vastgesteld", uitleg: "Een partij zonder belang heeft het resultaat gemeten of bevestigd." },
+];
+
+export function bewijs(oplossing) {
+  const niveau = { leverancier: 1, organisatie: 2, onafhankelijk: 3 }[oplossing?.resultaat?.herkomst] ?? 0;
+  return BEWIJS[niveau];
+}
+
+// De stand van een oplossing in het traject, als één woord.
+export function stand(oplossing) {
+  const d = oplossing.oordeel;
+  if (d?.compleet) return d.onderscheiding?.id ?? "beoordeeld";
+  return "genomineerd";
+}
+
+// Ranglijst: telt per naam de onderscheidingen en nominaties. `namenVan`
+// geeft per oplossing de namen waarvoor ze meetelt (de organisatie, of de
+// makers). Gesorteerd op Meesterproeven, dan eervolle vermeldingen, dan
+// het aantal oplossingen in de selectie.
+export function ranglijst(oplossingen, namenVan) {
+  const rijen = new Map();
+  for (const o of oplossingen) {
+    for (const naam of namenVan(o)) {
+      if (!rijen.has(naam)) rijen.set(naam, { naam, meesterproef: 0, eervol: 0, beoordeeld: 0, totaal: 0, oplossingen: [] });
+      const rij = rijen.get(naam);
+      rij.totaal += 1;
+      rij.oplossingen.push(o);
+      const s = stand(o);
+      if (s === "meesterproef") rij.meesterproef += 1;
+      else if (s === "eervol") rij.eervol += 1;
+      else if (s === "beoordeeld") rij.beoordeeld += 1;
+    }
+  }
+  return [...rijen.values()].sort(
+    (a, b) => b.meesterproef - a.meesterproef || b.eervol - a.eervol || b.totaal - a.totaal || a.naam.localeCompare(b.naam, "nl")
+  );
+}

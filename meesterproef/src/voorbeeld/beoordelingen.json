@@ -1,0 +1,483 @@
+[
+  {
+    "oplossing": "voorbeeld-ontslagbrief",
+    "jurylid": "anna",
+    "datum": "2026-11-12",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 8,
+      "ervaring": 7,
+      "verantwoord": 8,
+      "originaliteit": 6
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-ontslagbrief",
+    "jurylid": "bram",
+    "datum": "2026-11-12",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 9,
+      "ervaring": 8,
+      "verantwoord": 9,
+      "originaliteit": 7
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-ontslagbrief",
+    "jurylid": "carla",
+    "datum": "2026-11-12",
+    "scores": {
+      "impact": 10,
+      "betrouwbaarheid": 10,
+      "ervaring": 9,
+      "verantwoord": 10,
+      "originaliteit": 8
+    },
+    "toelichting": "Helder in het gebruik en eerlijk over wat het niet kan."
+  },
+  {
+    "oplossing": "voorbeeld-ontslagbrief",
+    "jurylid": "daan",
+    "datum": "2026-11-12",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 8,
+      "ervaring": 7,
+      "verantwoord": 8,
+      "originaliteit": 6
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-ontslagbrief",
+    "jurylid": "esra",
+    "datum": "2026-11-12",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 9,
+      "ervaring": 8,
+      "verantwoord": 9,
+      "originaliteit": 7
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-net",
+    "jurylid": "bram",
+    "datum": "2026-11-05",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 8,
+      "ervaring": 8,
+      "verantwoord": 9,
+      "originaliteit": 8
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-net",
+    "jurylid": "carla",
+    "datum": "2026-11-05",
+    "scores": {
+      "impact": 10,
+      "betrouwbaarheid": 9,
+      "ervaring": 9,
+      "verantwoord": 10,
+      "originaliteit": 9
+    },
+    "toelichting": "Helder in het gebruik en eerlijk over wat het niet kan."
+  },
+  {
+    "oplossing": "voorbeeld-net",
+    "jurylid": "daan",
+    "datum": "2026-11-05",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 7,
+      "ervaring": 7,
+      "verantwoord": 8,
+      "originaliteit": 7
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-net",
+    "jurylid": "esra",
+    "datum": "2026-11-05",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 8,
+      "ervaring": 8,
+      "verantwoord": 9,
+      "originaliteit": 8
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-lasnaad",
+    "jurylid": "carla",
+    "datum": "2026-10-21",
+    "scores": {
+      "impact": 10,
+      "betrouwbaarheid": 9,
+      "ervaring": 9,
+      "verantwoord": 9,
+      "originaliteit": 8
+    },
+    "toelichting": "Helder in het gebruik en eerlijk over wat het niet kan."
+  },
+  {
+    "oplossing": "voorbeeld-lasnaad",
+    "jurylid": "daan",
+    "datum": "2026-10-21",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 7,
+      "ervaring": 7,
+      "verantwoord": 7,
+      "originaliteit": 6
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-lasnaad",
+    "jurylid": "esra",
+    "datum": "2026-10-21",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 8,
+      "ervaring": 8,
+      "verantwoord": 8,
+      "originaliteit": 7
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-lasnaad",
+    "jurylid": "floor",
+    "datum": "2026-10-21",
+    "scores": {
+      "impact": 10,
+      "betrouwbaarheid": 9,
+      "ervaring": 9,
+      "verantwoord": 9,
+      "originaliteit": 8
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-kassabon",
+    "jurylid": "daan",
+    "datum": "2026-11-08",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 6,
+      "ervaring": 7,
+      "verantwoord": 6,
+      "originaliteit": 6
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-kassabon",
+    "jurylid": "esra",
+    "datum": "2026-11-08",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 7,
+      "ervaring": 8,
+      "verantwoord": 7,
+      "originaliteit": 7
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-kassabon",
+    "jurylid": "floor",
+    "datum": "2026-11-08",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 8,
+      "ervaring": 9,
+      "verantwoord": 8,
+      "originaliteit": 8
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-kassabon",
+    "jurylid": "anna",
+    "datum": "2026-11-08",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 6,
+      "ervaring": 7,
+      "verantwoord": 6,
+      "originaliteit": 6
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-eindredactie",
+    "jurylid": "esra",
+    "datum": "2026-10-28",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 8,
+      "ervaring": 7,
+      "verantwoord": 8,
+      "originaliteit": 8
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-eindredactie",
+    "jurylid": "floor",
+    "datum": "2026-10-28",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 9,
+      "ervaring": 8,
+      "verantwoord": 9,
+      "originaliteit": 9
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-eindredactie",
+    "jurylid": "anna",
+    "datum": "2026-10-28",
+    "scores": {
+      "impact": 6,
+      "betrouwbaarheid": 7,
+      "ervaring": 6,
+      "verantwoord": 7,
+      "originaliteit": 7
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-kade",
+    "jurylid": "floor",
+    "datum": "2026-10-14",
+    "scores": {
+      "impact": 9,
+      "betrouwbaarheid": 8,
+      "ervaring": 8,
+      "verantwoord": 8,
+      "originaliteit": 7
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-kade",
+    "jurylid": "anna",
+    "datum": "2026-10-14",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 6,
+      "ervaring": 6,
+      "verantwoord": 6,
+      "originaliteit": 5
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-kade",
+    "jurylid": "bram",
+    "datum": "2026-10-14",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 7,
+      "ervaring": 7,
+      "verantwoord": 7,
+      "originaliteit": 6
+    },
+    "toelichting": "Helder in het gebruik en eerlijk over wat het niet kan."
+  },
+  {
+    "oplossing": "voorbeeld-polisuitleg",
+    "jurylid": "anna",
+    "datum": "2026-10-09",
+    "scores": {
+      "impact": 6,
+      "betrouwbaarheid": 6,
+      "ervaring": 6,
+      "verantwoord": 6,
+      "originaliteit": 4
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-polisuitleg",
+    "jurylid": "bram",
+    "datum": "2026-10-09",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 7,
+      "ervaring": 7,
+      "verantwoord": 7,
+      "originaliteit": 5
+    },
+    "toelichting": "Helder in het gebruik en eerlijk over wat het niet kan."
+  },
+  {
+    "oplossing": "voorbeeld-polisuitleg",
+    "jurylid": "carla",
+    "datum": "2026-10-09",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 8,
+      "ervaring": 8,
+      "verantwoord": 8,
+      "originaliteit": 6
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-perron",
+    "jurylid": "bram",
+    "datum": "2026-11-02",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 7,
+      "ervaring": 6,
+      "verantwoord": 7,
+      "originaliteit": 7
+    },
+    "toelichting": "Helder in het gebruik en eerlijk over wat het niet kan."
+  },
+  {
+    "oplossing": "voorbeeld-perron",
+    "jurylid": "carla",
+    "datum": "2026-11-02",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 8,
+      "ervaring": 7,
+      "verantwoord": 8,
+      "originaliteit": 8
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-perron",
+    "jurylid": "daan",
+    "datum": "2026-11-02",
+    "scores": {
+      "impact": 6,
+      "betrouwbaarheid": 6,
+      "ervaring": 5,
+      "verantwoord": 6,
+      "originaliteit": 6
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-boekhouding",
+    "jurylid": "carla",
+    "datum": "2026-10-30",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 7,
+      "ervaring": 7,
+      "verantwoord": 7,
+      "originaliteit": 8
+    },
+    "toelichting": "Het resultaat overtuigt, de uitleg aan gebruikers kan beter."
+  },
+  {
+    "oplossing": "voorbeeld-boekhouding",
+    "jurylid": "daan",
+    "datum": "2026-10-30",
+    "scores": {
+      "impact": 5,
+      "betrouwbaarheid": 5,
+      "ervaring": 5,
+      "verantwoord": 5,
+      "originaliteit": 6
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-boekhouding",
+    "jurylid": "esra",
+    "datum": "2026-10-30",
+    "scores": {
+      "impact": 6,
+      "betrouwbaarheid": 6,
+      "ervaring": 6,
+      "verantwoord": 6,
+      "originaliteit": 7
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-dossier",
+    "jurylid": "daan",
+    "datum": "2026-10-18",
+    "scores": {
+      "impact": 5,
+      "betrouwbaarheid": 4,
+      "ervaring": 5,
+      "verantwoord": 5,
+      "originaliteit": 4
+    },
+    "toelichting": "Slim gebruik van bestaande techniek op een taai probleem."
+  },
+  {
+    "oplossing": "voorbeeld-dossier",
+    "jurylid": "esra",
+    "datum": "2026-10-18",
+    "scores": {
+      "impact": 6,
+      "betrouwbaarheid": 5,
+      "ervaring": 6,
+      "verantwoord": 6,
+      "originaliteit": 5
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-dossier",
+    "jurylid": "floor",
+    "datum": "2026-10-18",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 6,
+      "ervaring": 7,
+      "verantwoord": 7,
+      "originaliteit": 6
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  },
+  {
+    "oplossing": "voorbeeld-reis",
+    "jurylid": "esra",
+    "datum": "2026-11-13",
+    "scores": {
+      "impact": 7,
+      "betrouwbaarheid": 6,
+      "ervaring": 8,
+      "verantwoord": 6,
+      "originaliteit": 6
+    },
+    "toelichting": "Sterk bewijs en zorgvuldig ingevoerd. De mens houdt het laatste woord."
+  },
+  {
+    "oplossing": "voorbeeld-reis",
+    "jurylid": "floor",
+    "datum": "2026-11-13",
+    "scores": {
+      "impact": 8,
+      "betrouwbaarheid": 7,
+      "ervaring": 9,
+      "verantwoord": 7,
+      "originaliteit": 7
+    },
+    "toelichting": "Werkt goed in de praktijk; de randgevallen zijn nog dun getest."
+  }
+]
