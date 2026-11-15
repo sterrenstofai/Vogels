@@ -57,12 +57,12 @@ export function Werkplaats({ id }: { id: string }) {
         className="status"
         onSubmit={(e) => { e.preventDefault(); doe('photo', { body: new FormData(e.currentTarget) }); }}
       >
-        <span className="hand" style={{ justifySelf: 'start' }}>bedankt, de betaling is binnen</span>
+        <span className="hand">Bedankt, de betaling is binnen</span>
         <h1>Stuur een foto van {v.childName}</h1>
         <label className="upload">
           <input ref={fotoRef} type="file" name="foto" accept="image/jpeg,image/png,image/webp" required
             onChange={(e) => { const f = e.target.files?.[0]; setVoorbeeld(f ? URL.createObjectURL(f) : ''); }} />
-          {voorbeeld ? <img src={voorbeeld} alt="De gekozen foto" /> : <strong style={{ fontSize: '1.3rem' }}>Kies een foto</strong>}
+          {voorbeeld ? <img src={voorbeeld} alt="De gekozen foto" /> : <strong>Kies een foto</strong>}
           <span className="noot">{voorbeeld ? 'Tik om een andere foto te kiezen' : 'jpg, png of webp, maximaal 12 MB'}</span>
         </label>
         <ul className="tips">
@@ -75,7 +75,7 @@ export function Werkplaats({ id }: { id: string }) {
           <span>Ik ben ouder of verzorger van dit kind en geef toestemming om deze foto te gebruiken voor het maken van dit boek. De foto wordt daarna verwijderd.</span>
         </label>
         {fout && <p className="fout" role="alert">{fout}</p>}
-        <button className="btn" disabled={bezig}><span>{bezig ? 'Foto versturen…' : 'Maak de platen'}</span><b aria-hidden="true">→</b></button>
+        <button className="btn" disabled={bezig}>{bezig ? 'Foto versturen…' : 'Maak de platen'}</button>
         <p className="noot">Let op: de foto kun je één keer insturen. Kies dus een goede.</p>
       </form>
     );
@@ -99,8 +99,8 @@ export function Werkplaats({ id }: { id: string }) {
   if (v.status === 'review')
     return (
       <div className="blader">
-        <div className="kop" style={{ marginBottom: 6 }}>
-          <span className="hand">kijk het rustig na</span>
+        <div className="kop midden" style={{ marginBottom: 0 }}>
+          <span className="hand">Kijk het rustig na</span>
           <h1>{v.titel}</h1>
         </div>
         <div className="blad">
@@ -118,7 +118,7 @@ export function Werkplaats({ id }: { id: string }) {
             Maak deze plaat opnieuw ({v.regenerationsLeft} over)
           </button>
           <button className="btn" disabled={bezig} onClick={() => { if (window.confirm('Het boek gaat nu naar de drukker en kan daarna niet meer worden aangepast. Doorgaan?')) doe('approve', {}); }}>
-            <span>{bezig ? 'Even geduld…' : 'Ziet er goed uit, drukken maar'}</span><b aria-hidden="true">→</b>
+            {bezig ? 'Even geduld…' : 'Ziet er goed uit, drukken maar'}
           </button>
         </div>
       </div>
@@ -127,7 +127,7 @@ export function Werkplaats({ id }: { id: string }) {
   if (v.status === 'printing')
     return (
       <div className="status">
-        <span className="hand" style={{ justifySelf: 'start' }}>hoera</span>
+        <span className="hand">Gelukt</span>
         <h1>Het boek is naar de drukker</h1>
         <p>Over ongeveer een week valt het boek van {v.childName} op de mat. De foto hebben we verwijderd.</p>
         <p><a href={`/api/orders/${id}/files/boek.pdf`} target="_blank">Bekijk het drukbestand (pdf)</a></p>

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import { Cover } from '@/components/Cover';
-import { Knop } from '@/components/Knop';
+import Link from 'next/link';
+import { Boek } from '@/components/Cover';
 import { getStory, vulNaam } from '@/lib/stories';
 import { PRIJZEN, euro } from '@/lib/pricing';
 
@@ -14,17 +14,17 @@ export default async function Verhaal({ params }: { params: Promise<{ slug: stri
   return (
     <main className="pagina">
       <div className="wrap twee">
-        <Cover story={story} naam="jouw kind" />
-        <div style={{ display: 'grid', gap: 18 }}>
-          <span className="hand" style={{ justifySelf: 'start' }}>{story.leeftijd}</span>
+        <div className="toon"><Boek story={story} naam="jouw kind" /></div>
+        <div className="stel">
+          <span className="hand">{story.leeftijd}</span>
           <h1>{story.titel}</h1>
-          <p style={{ fontSize: '1.15rem' }}>{story.kort}</p>
+          <p>{story.kort}</p>
           <p>{story.scenes.length} platen met jouw kind als held, in korte zinnen om zelf te lezen. Vanaf {euro(PRIJZEN.boek.softcover)}.</p>
-          <div><Knop href={`/bestellen/${story.slug}`}>Bestel dit boek</Knop></div>
+          <Link className="btn" href={`/bestellen/${story.slug}`}>Bestel dit boek</Link>
         </div>
       </div>
-      <div className="wrap" style={{ marginTop: 60 }}>
-        <h2 style={{ fontSize: '2.2rem' }}>Zo begint het</h2>
+      <div className="wrap" style={{ marginTop: 110 }}>
+        <h2>Zo begint het.</h2>
         <div className="proefbladen">
           {story.scenes.slice(0, 6).map((s, i) => <div className="proefblad" key={i}>{vulNaam(s.tekst, 'Fos')}</div>)}
         </div>

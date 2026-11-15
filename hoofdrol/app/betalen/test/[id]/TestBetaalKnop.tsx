@@ -13,7 +13,7 @@ export function TestBetaalKnop({ id }: { id: string }) {
         window.location.href = `/maken/${id}`;
       }}
     >
-      <span>Doe alsof ik betaal</span><b aria-hidden="true">→</b>
+      Doe alsof ik betaal
     </button>
   );
 }

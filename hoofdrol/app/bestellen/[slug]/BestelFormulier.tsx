@@ -77,7 +77,7 @@ export function BestelFormulier({ slug }: { slug: string }) {
         <span>Ik ga akkoord met de <Link href="/voorwaarden" target="_blank">voorwaarden</Link>. Het boek wordt speciaal voor mij gemaakt, dus ik kan de bestelling na het betalen niet herroepen.</span>
       </label>
       {fout && <p className="fout" role="alert">{fout}</p>}
-      <button className="btn" disabled={bezig}><span>{bezig ? 'Even geduld…' : `Betaal ${euro(t.totaal)}`}</span><b aria-hidden="true">→</b></button>
+      <button className="btn" disabled={bezig}>{bezig ? 'Even geduld…' : `Betaal ${euro(t.totaal)}`}</button>
       <p className="noot">De foto stuur je pas in na het betalen.</p>
     </form>
   );

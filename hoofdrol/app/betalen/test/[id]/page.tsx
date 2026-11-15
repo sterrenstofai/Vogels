@@ -15,8 +15,8 @@ export default async function TestBetalen({ params }: { params: Promise<{ id: st
     <main className="pagina">
       <div className="wrap" style={{ maxWidth: 560 }}>
         <div className="status">
-          <span className="hand" style={{ justifySelf: 'start' }}>testbetaling</span>
-          <h1 style={{ fontSize: '2.6rem' }}>{euro(order.totaalCents)}</h1>
+          <span className="hand">Testbetaling</span>
+          <h1>{euro(order.totaalCents)}</h1>
           <p>Hier komt straks het betaalscherm van Mollie (iDEAL). In deze testversie wordt er niets afgeschreven.</p>
           <TestBetaalKnop id={id} />
         </div>
