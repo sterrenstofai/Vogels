@@ -3,8 +3,6 @@ name: Nu verversen
 # Elke ochtend de meldingen van de laatste 14 dagen ophalen voor de knop 'Nu' op de simulatiekaart.
 # Alleen als er iets veranderd is, komt er een commit; Netlify zet hem dan vanzelf live.
 on:
-  schedule:
-    - cron: "41 4 * * *"   # elke dag 04:41 UTC
   workflow_dispatch:
 
 permissions:

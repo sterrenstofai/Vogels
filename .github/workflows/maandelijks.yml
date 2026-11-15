@@ -3,8 +3,6 @@ name: Meldingen verversen
 # Elke maand de laatste vijf jaar meldingen van GBIF ophalen en de sitedata opnieuw bouwen.
 # Een push naar main zet de site via Netlify vanzelf live.
 on:
-  schedule:
-    - cron: "17 3 2 * *"   # de 2e van elke maand, 03:17 UTC
   workflow_dispatch:
 
 permissions:

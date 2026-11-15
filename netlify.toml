@@ -1,6 +1,14 @@
 [build]
   publish = "site"
 
+# Dit onderzoekje staat nu op fosje.com/voggels. Alles op het oude adres stuurt daarheen door.
+# De site en de scripts leven verder in de repo sterrenstofai/fosje.
+[[redirects]]
+  from = "/*"
+  to = "https://fosje.com/voggels/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/hier/*"
   to = "/index.html"
