@@ -37,3 +37,14 @@ export async function isPaid(paymentId: string): Promise<{ paid: boolean; orderI
   const p = await res.json();
   return { paid: p.status === 'paid', orderId: p.metadata?.orderId, amount: p.amount?.value };
 }
+
+// Geld terugstorten. In de testversie gebeurt er niets.
+export async function refund(order: Order): Promise<void> {
+  if (!KEY() || !order.paymentId || order.paymentId.startsWith('test_')) return;
+  const res = await fetch(`https://api.mollie.com/v2/payments/${encodeURIComponent(order.paymentId)}/refunds`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${KEY()}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ amount: { currency: 'EUR', value: (order.totaalCents / 100).toFixed(2) }, description: 'Terugbetaling Hoofdrol' }),
+  });
+  if (!res.ok) throw new Error(`Mollie ${res.status}: ${await res.text()}`);
+}

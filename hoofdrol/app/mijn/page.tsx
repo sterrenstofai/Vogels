@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { currentEmail } from '@/lib/auth';
+import { adminEmail, currentEmail } from '@/lib/auth';
 import { listOrders } from '@/lib/store';
 import { STAPPEN, stand } from '@/lib/orders';
 import { getStory } from '@/lib/stories';
@@ -33,7 +33,7 @@ export default async function Mijn({ searchParams }: { searchParams: Promise<{ v
       <div className="wrap" style={{ maxWidth: 860 }}>
         <div className="mijnkop">
           <div className="stel"><h1>Mijn boeken.</h1><p>{email}</p></div>
-          <form method="post" action="/api/logout"><button className="link">Uitloggen</button></form>
+          <div className="knoppen" style={{ gap: 22 }}>{(await adminEmail()) && <Link href="/beheer">Beheer</Link>}<form method="post" action="/api/logout"><button className="link">Uitloggen</button></form></div>
         </div>
         {orders.length === 0 && (
           <div className="status"><h3>Nog geen boeken.</h3><p>Zodra je een boek bestelt met dit e-mailadres, staat het hier.</p><Link className="btn" href="/#verhalen">Kies een verhaal</Link></div>

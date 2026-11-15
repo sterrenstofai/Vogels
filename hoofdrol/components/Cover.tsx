@@ -7,10 +7,11 @@ const TINTEN: Record<string, React.CSSProperties> = {
   boswachter: { '--k0': '#0a140c', '--k1': '#16301c', '--k2': '#4d8a45', '--k3': '#f1e6a8', '--stip': '.45' } as React.CSSProperties,
 };
 
-function Voorkant({ story, naam }: { story: Story; naam?: string }) {
+function Voorkant({ story, naam, foto }: { story: Story; naam?: string; foto?: string }) {
   return (
     <>
-      <i className="lucht" /><i className="stip" /><i className="bol" /><i className="vouw" />
+      {foto ? <><img src={foto} alt="" /><i className="sluier" /></> : <><i className="lucht" /><i className="stip" /><i className="bol" /></>}
+      <i className="vouw" />
       <div className="t">{story.titel}</div>
       {naam && <div className="n">met {naam} in de hoofdrol</div>}
       <div className="m">Hoofdrol</div>
@@ -19,18 +20,18 @@ function Voorkant({ story, naam }: { story: Story; naam?: string }) {
 }
 
 // Plat omslag, voor in een overzicht.
-export function Cover({ story, naam }: { story: Story; naam?: string }) {
-  return <div className="plat" style={TINTEN[story.slug]} aria-hidden="true"><Voorkant story={story} naam={naam} /></div>;
+export function Cover({ story, naam, foto }: { story: Story; naam?: string; foto?: string }) {
+  return <div className="plat" style={TINTEN[story.slug]} aria-hidden="true"><Voorkant story={story} naam={naam} foto={foto} /></div>;
 }
 
 // Het boek als voorwerp, schuin gezien.
-export function Boek({ story, naam }: { story: Story; naam?: string }) {
+export function Boek({ story, naam, foto }: { story: Story; naam?: string; foto?: string }) {
   return (
     <div className="boek" role="img" aria-label={`Het boek ${story.titel}`}>
       <div className="boek-in">
         <div className="achter" />
         <div className="blok" />
-        <div className="kaft" style={TINTEN[story.slug]}><Voorkant story={story} naam={naam} /></div>
+        <div className="kaft" style={TINTEN[story.slug]}><Voorkant story={story} naam={naam} foto={foto} /></div>
       </div>
     </div>
   );

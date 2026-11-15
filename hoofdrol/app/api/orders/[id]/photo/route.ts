@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import sharp from 'sharp';
 import { getOrder, publicView } from '@/lib/orders';
-import { putFile, saveOrder, withLock } from '@/lib/store';
+import { newId, putFile, saveOrder, withLock } from '@/lib/store';
 
 const MAX = 12 * 1024 * 1024;
 
@@ -33,6 +33,7 @@ export async function POST(req: Request, ctx: { params: Promise<{ id: string }> 
     if (order.status !== 'paid') return NextResponse.json({ fout: 'Voor deze bestelling is al een foto gebruikt.' }, { status: 409 });
     await putFile(id, 'foto.jpg', jpg);
     order.hasPhoto = true;
+    order.refKey = newId();
     order.consentAt = new Date().toISOString();
     order.status = 'generating';
     await saveOrder(order);

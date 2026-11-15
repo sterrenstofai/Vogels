@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { Boek, Cover } from '@/components/Cover';
-import { STORIES, vulNaam } from '@/lib/stories';
+import { STORIES, voorbeeldPlaten, vulNaam } from '@/lib/stories';
 import { PRIJZEN, euro } from '@/lib/pricing';
 
 const eerste = STORIES[0];
+const platen = voorbeeldPlaten(eerste)!;
+const kind = eerste.voorbeeld!.naam;
 
 const STAPPEN = [
   ['Kies een verhaal', 'Elk verhaal is geschreven om zelf te lezen, met korte zinnen en veel platen.'],
@@ -32,7 +34,7 @@ export default function Home() {
             <Link className="btn" href={`/ontwerpen/${eerste.slug}`}>Maak jullie boek</Link>
             <Link className="pijl" href={`/verhalen/${eerste.slug}`}>Bekijk het verhaal</Link>
           </div>
-          <div className="podium"><Boek story={eerste} naam="Fos" /></div>
+          <div className="podium"><Boek story={eerste} naam={kind} foto={platen[0]} /></div>
         </div>
       </div>
 
@@ -40,9 +42,12 @@ export default function Home() {
         <div className="wrap">
           <div className="kop op"><h2>Gemaakt om zelf te lezen.</h2></div>
           <div className="tegels">
-            <div className="tegel nacht t6 op">
-              <div className="zin">{vulNaam(eerste.scenes[0].tekst, 'Fos')}</div>
-              <p>Zo begint het boek. Met de naam van jouw kind.</p>
+            <div className="tegel spread t6 op">
+              <div className="bb-open">
+                <div className="bb-p papier"><div className="bb-zin">{vulNaam(eerste.scenes[6].tekst, kind)}</div></div>
+                <div className="bb-p"><img src={platen[6]} alt={`Plaat uit het voorbeeldboek: ${kind} springt op de maan`} loading="lazy" /></div>
+              </div>
+              <p>Links een zin om zelf te lezen, rechts een plaat met jouw kind. Dit is het voorbeeldboek van {kind}.</p>
             </div>
             <div className="tegel t2 op">
               <h3>Op elke plaat.</h3>
@@ -68,7 +73,7 @@ export default function Home() {
           <div className="kop midden op"><h2>Kies een avontuur.</h2><p>We beginnen met één boek. De volgende zijn onderweg.</p></div>
           <div className="reeks">
             {STORIES.map((s) => {
-              const inhoud = (<><Cover story={s} /><h3>{s.titel}</h3><p>{s.kort}</p></>);
+              const inhoud = (<><Cover story={s} foto={voorbeeldPlaten(s)?.[0]} /><h3>{s.titel}</h3><p>{s.kort}</p></>);
               return s.beschikbaar
                 ? <Link key={s.slug} href={`/verhalen/${s.slug}`} className="verhaal op">{inhoud}<span className="pijl">Bekijk</span></Link>
                 : <div key={s.slug} className="verhaal op">{inhoud}<span className="straks">Binnenkort</span></div>;

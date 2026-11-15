@@ -1,12 +1,24 @@
 // Beelden maken. Elke aanbieder werkt met "opdracht insturen, later ophalen",
 // dus dat is ook de vorm hier: submit geeft een jobId, poll geeft het beeld zodra het klaar is.
 //
-// Nu is er alleen de testmaker: die tekent zelf een plaat en zet de geüploade
+// Zonder sleutels werkt de testmaker: die tekent zelf een plaat en zet de geüploade
 // foto in de helm, zodat de hele keten te proberen is zonder kosten.
-// De echte koppeling (Higgsfield of Magnific) komt hier als tweede ImageProvider.
+// Met HIGGSFIELD_KEY_ID en HIGGSFIELD_KEY_SECRET gaan de platen via de Higgsfield-API
+// (model Grok Image 2.0, dat referentiefoto's aanneemt). Die koppeling is geschreven
+// naar de documentatie en nog niet met een echte sleutel getest; hetzelfde model is
+// wel met de hand geprobeerd en houdt een kind goed herkenbaar.
 import sharp from 'sharp';
 
-export type ImageJob = { prompt: string; stijl: string; foto: Buffer; pagina: number; naam: string };
+export type ImageJob = {
+  prompt: string;
+  stijl: string;
+  pagina: number;
+  naam: string;
+  foto: Buffer; // voor de testmaker
+  referenties: string[]; // openbare adressen: eerst de foto, daarna (als die er is) de eerste plaat
+};
+// Te veel opdrachten tegelijk: later opnieuw proberen, telt niet als mislukte poging.
+export class Druk extends Error {}
 export type PollResult = { status: 'running' } | { status: 'failed'; reden: string } | { status: 'done'; image: Buffer };
 export interface ImageProvider {
   naam: string;
@@ -14,7 +26,7 @@ export interface ImageProvider {
   poll(jobId: string): Promise<PollResult>;
 }
 
-export const PLAAT_PX = 1600;
+export const PLAAT_PX = 2048; // ruim 250 dpi op 20 cm
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 const LUCHTEN = ['#1d2b8f', '#3a1d8f', '#0b3d6e', '#5a189a', '#12355b', '#283593'];
@@ -63,4 +75,52 @@ const testProvider: ImageProvider = {
   },
 };
 
-export const imageProvider = (): ImageProvider => testProvider;
+export function bouwPrompt(job: Pick<ImageJob, 'prompt' | 'stijl' | 'referenties'>) {
+  const tweede = job.referenties.length > 1;
+  return [
+    job.stijl,
+    tweede ? 'Use the exact same illustration style and the same illustrated character as in the second reference image.' : '',
+    'The main character is the child from the reference photo, drawn as an illustrated character but clearly recognisable: same face shape, hair, skin and smile.',
+    `Scene: ${job.prompt}.`,
+    'Full square composition, the child\'s face clearly visible. No text, no letters, no captions in the image.',
+  ].filter(Boolean).join(' ');
+}
+
+const HF = 'https://api.higgsfield.ai';
+const hfKop = () => ({ Authorization: `Key ${process.env.HIGGSFIELD_KEY_ID}:${process.env.HIGGSFIELD_KEY_SECRET}`, 'Content-Type': 'application/json' });
+
+const higgsfield: ImageProvider = {
+  naam: 'higgsfield',
+  async submit(job) {
+    const res = await fetch(`${HF}/${process.env.HIGGSFIELD_MODEL || 'xai/grok-imagine-image-2.0'}`, {
+      method: 'POST',
+      headers: { ...hfKop(), 'Idempotency-Key': crypto.randomUUID() },
+      body: JSON.stringify({ prompt: bouwPrompt(job), image_urls: job.referenties, resolution: '2k', aspect_ratio: '1:1', quality: 'medium' }),
+    });
+    if (res.status === 429) throw new Druk('te veel opdrachten tegelijk');
+    if (!res.ok) throw new Error(`Higgsfield ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    const r = await res.json();
+    if (typeof r.status_url !== 'string' || !r.status_url.startsWith(HF + '/')) throw new Error('Higgsfield gaf geen status_url');
+    return r.status_url;
+  },
+  async poll(statusUrl) {
+    if (!statusUrl.startsWith(HF + '/')) return { status: 'failed', reden: 'onbekende opdracht' };
+    const res = await fetch(statusUrl, { headers: hfKop() });
+    if (res.status === 429 || res.status >= 500) return { status: 'running' };
+    if (!res.ok) return { status: 'failed', reden: `status ${res.status}` };
+    const r = await res.json();
+    if (r.status === 'completed') {
+      const url = r.images?.[0]?.url;
+      if (!url) return { status: 'failed', reden: 'geen beeld in het antwoord' };
+      const img = await fetch(url);
+      if (!img.ok) return { status: 'failed', reden: `beeld ophalen gaf ${img.status}` };
+      return { status: 'done', image: Buffer.from(await img.arrayBuffer()) };
+    }
+    if (r.status === 'nsfw') return { status: 'failed', reden: 'geweigerd door het beeldfilter' };
+    if (r.status === 'failed' || r.status === 'canceled') return { status: 'failed', reden: r.status };
+    return { status: 'running' };
+  },
+};
+
+export const imageMode = () => (process.env.HIGGSFIELD_KEY_ID && process.env.HIGGSFIELD_KEY_SECRET ? 'higgsfield' : 'test');
+export const imageProvider = (): ImageProvider => (imageMode() === 'higgsfield' ? higgsfield : testProvider);

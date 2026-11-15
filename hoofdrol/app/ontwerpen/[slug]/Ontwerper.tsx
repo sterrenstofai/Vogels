@@ -43,7 +43,7 @@ export function Ontwerper({ story }: { story: Story }) {
         <fieldset>
           <legend>Een opdracht voorin</legend>
           <label>Tekst op de eerste bladzijde (mag leeg blijven)
-            <textarea value={opdracht} onChange={(e) => setOpdracht(e.target.value)} maxLength={160} rows={3} placeholder="Voor Fos, van opa en oma. Lees maar lekker." />
+            <textarea value={opdracht} onChange={(e) => setOpdracht(e.target.value)} maxLength={160} rows={3} placeholder="Voor Sam, van opa en oma. Lees maar lekker." />
           </label>
           <span className="noot">{160 - opdracht.length} tekens over</span>
         </fieldset>

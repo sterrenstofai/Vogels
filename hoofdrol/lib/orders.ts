@@ -1,14 +1,14 @@
 import { getStory } from './stories';
 import { isPaid, paymentMode } from './providers/payment';
 import { getOrder, saveOrder, type Order } from './store';
+import { mailOver } from './mail';
 
 export async function markPaid(order: Order) {
   if (order.status !== 'awaiting_payment') return order;
   order.status = 'paid';
   order.paidAt = new Date().toISOString();
   await saveOrder(order);
-  // Hier hoort de bevestigingsmail met de link naar /maken/<id> (nog niet gekoppeld).
-  console.log(`[bestelling] betaald: ${order.id} — link voor de klant: /maken/${order.id}`);
+  await mailOver(order, 'betaald');
   return order;
 }
 
@@ -34,6 +34,7 @@ export function publicView(order: Order) {
     aantal: order.aantal,
     totaalCents: order.totaalCents,
     regenerationsLeft: order.regenerationsLeft,
+    track: order.track,
     error: order.status === 'failed' ? order.error ?? 'onbekende fout' : undefined,
     pages: order.pages.map((p, i) => ({ status: p.status, version: p.version, tekst: story.scenes[i].tekst.replaceAll('{naam}', order.childName) })),
   };
@@ -49,7 +50,9 @@ export function stand(order: Order): { stap: number; tekst: string; actie: strin
     case 'paid': return { stap: 1, tekst: 'Betaald. Stuur nu de foto in.', actie: 'Stuur de foto in' };
     case 'generating': return { stap: 2, tekst: 'We maken de platen.', actie: 'Bekijk de voortgang' };
     case 'review': return { stap: 3, tekst: 'Klaar om na te kijken.', actie: 'Kijk het boek na' };
-    case 'printing': return { stap: 5, tekst: 'Bij de drukker. Ongeveer een week onderweg.', actie: 'Bekijk het boek' };
+    case 'printing': return { stap: 4, tekst: 'Bij de drukker. Drukken en bezorgen duurt ongeveer een week.', actie: 'Bekijk je bestelling' };
+    case 'shipped': return { stap: 5, tekst: order.track?.code ? `Onderweg. Volgcode: ${order.track.code}` : 'Onderweg naar jou.', actie: 'Bekijk je bestelling' };
+    case 'refunded': return { stap: -1, tekst: 'Terugbetaald.', actie: 'Bekijk' };
     case 'failed': return { stap: 2, tekst: 'Er ging iets mis. We kijken ernaar.', actie: 'Bekijk' };
     default: return { stap: 0, tekst: 'Nog niet besteld', actie: 'Ga verder' };
   }

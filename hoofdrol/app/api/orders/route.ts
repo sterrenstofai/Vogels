@@ -2,11 +2,13 @@ import { NextResponse } from 'next/server';
 import { getStory } from '@/lib/stories';
 import type { Format } from '@/lib/pricing';
 import { newId, saveOrder, type Order } from '@/lib/store';
+import { magDoor } from '@/lib/limiet';
 
 const tekst = (v: unknown, max: number) => (typeof v === 'string' ? v.trim().slice(0, max) : '');
 
 // Stap 1: het ontwerp opslaan. Er is dan nog niets besteld en er worden nog geen platen gemaakt.
 export async function POST(req: Request) {
+  if (!magDoor(req, 'ontwerp', 30)) return NextResponse.json({ fout: 'Te veel ontwerpen achter elkaar. Probeer het over een paar minuten opnieuw.' }, { status: 429 });
   const b = await req.json().catch(() => null);
   if (!b) return NextResponse.json({ fout: 'Ongeldig verzoek.' }, { status: 400 });
   const story = getStory(tekst(b.storySlug, 40));

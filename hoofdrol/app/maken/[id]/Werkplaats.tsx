@@ -3,9 +3,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Bladerboek } from '@/components/Bladerboek';
 import { Stappen } from '@/components/Stappen';
 import { getStory } from '@/lib/stories';
+import { boekBladen } from '@/lib/boek';
 
 type Page = { status: 'pending' | 'running' | 'done' | 'failed'; version: number; tekst: string };
-type View = { id: string; status: 'awaiting_payment' | 'paid' | 'generating' | 'review' | 'printing' | 'failed'; titel: string; childName: string; opdracht: string; storySlug: string; regenerationsLeft: number; error?: string; pages: Page[] };
+type View = { id: string; status: 'draft' | 'awaiting_payment' | 'paid' | 'generating' | 'review' | 'printing' | 'shipped' | 'refunded' | 'failed'; track?: { code: string; url?: string }; titel: string; childName: string; opdracht: string; storySlug: string; regenerationsLeft: number; error?: string; pages: Page[] };
 
 export function Werkplaats({ id }: { id: string }) {
   const [v, setV] = useState<View | null>(null);
@@ -108,8 +109,8 @@ export function Werkplaats({ id }: { id: string }) {
           <h1>Kijk het boek na.</h1>
           <p>Blader er rustig doorheen. Niet tevreden over een plaat? Je mag er drie opnieuw laten maken.</p>
         </div>
-        <Bladerboek story={getStory(v.storySlug)!} naam={v.childName} opdracht={v.opdracht} onBlad={setOpen}
-          platen={v.pages.map((p, i) => ({ tekst: p.tekst, src: src(i) }))} />
+        <Bladerboek story={getStory(v.storySlug)!} naam={v.childName} onBlad={setOpen}
+          bladen={boekBladen(getStory(v.storySlug)!, v.childName, v.opdracht)} platen={v.pages.map((_, i) => src(i))} />
         {fout && <p className="fout" role="alert">{fout}</p>}
         <div className="acties">
           {open.map((i) => (
@@ -127,15 +128,26 @@ export function Werkplaats({ id }: { id: string }) {
       </div>
     );
 
-  if (v.status === 'printing')
+  if (v.status === 'printing' || v.status === 'shipped')
     return (
-      <div className="status">
-        <span className="hand">Gelukt</span>
-        <h1>Het boek is naar de drukker</h1>
-        <p>Over ongeveer een week valt het boek van {v.childName} op de mat. De foto hebben we verwijderd.</p>
-        <p><a href={`/api/orders/${id}/files/boek.pdf`} target="_blank">Bekijk het drukbestand (pdf)</a> · <a href="/mijn">Mijn boeken</a></p>
+      <div className="blader">
+        <div className="kop midden" style={{ marginBottom: 0 }}>
+          <span className="hand">{v.status === 'shipped' ? 'Onderweg' : 'Bij de drukker'}</span>
+          <h1>{v.status === 'shipped' ? 'Het boek is onderweg.' : 'Het boek is naar de drukker.'}</h1>
+          <p>{v.status === 'shipped'
+            ? (v.track?.code ? `De volgcode is ${v.track.code}.` : `Het boek van ${v.childName} is verstuurd.`)
+            : `Over ongeveer een week valt het boek van ${v.childName} op de mat. De foto hebben we verwijderd.`}</p>
+        </div>
+        <Bladerboek story={getStory(v.storySlug)!} naam={v.childName} bladen={boekBladen(getStory(v.storySlug)!, v.childName, v.opdracht)} platen={v.pages.map((_, i) => src(i))} />
+        <div className="acties">
+          {v.track?.url && <a className="btn" href={v.track.url} target="_blank" rel="noreferrer">Volg de bezorging</a>}
+          <a href="/mijn">Mijn boeken</a>
+        </div>
       </div>
     );
+
+  if (v.status === 'refunded') return <div className="status"><h1>Terugbetaald.</h1><p>Deze bestelling is terugbetaald. Het bedrag staat binnen enkele werkdagen op je rekening.</p></div>;
+  if (v.status === 'draft') return <div className="status"><h1>Nog niet besteld.</h1><p><a href={`/bestellen/${id}`}>Ga verder met bestellen</a></p></div>;
 
   return (
     <div className="status">

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getOrder, publicView } from '@/lib/orders';
 import { approve } from '@/lib/pipeline';
-import { deleteFile, withLock } from '@/lib/store';
+import { deleteFile, saveOrder, withLock } from '@/lib/store';
 
 export async function POST(_: Request, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
@@ -12,6 +12,8 @@ export async function POST(_: Request, ctx: { params: Promise<{ id: string }> })
     try {
       const klaar = await approve(order);
       await deleteFile(id, 'foto.jpg'); // de foto is niet meer nodig
+      klaar.hasPhoto = false; klaar.refKey = undefined;
+      await saveOrder(klaar);
       return NextResponse.json(publicView(klaar));
     } catch (e) {
       console.error('[drukker]', e);

@@ -1,11 +1,19 @@
+import { timingSafeEqual } from 'node:crypto';
 import { getFile, getOrder } from '@/lib/store';
 
-// Platen en het drukbestand. Het adres bevat de geheime code van de bestelling.
-export async function GET(_: Request, ctx: { params: Promise<{ id: string; name: string }> }) {
+// Platen en drukbestanden. Het adres bevat de geheime code van de bestelling.
+// De foto zelf is alleen op te halen met een aparte sleutel, die alleen de beelddienst krijgt.
+export async function GET(req: Request, ctx: { params: Promise<{ id: string; name: string }> }) {
   const { id, name } = await ctx.params;
-  if (!/^(pagina-\d{1,2}\.jpg|boek\.pdf)$/.test(name) || !(await getOrder(id))) return new Response('Niet gevonden', { status: 404 });
+  const order = await getOrder(id);
+  const nee = () => new Response('Niet gevonden', { status: 404 });
+  if (!order) return nee();
+  if (name === 'foto.jpg') {
+    const k = new URL(req.url).searchParams.get('k') || '';
+    if (!order.refKey || k.length !== order.refKey.length || !timingSafeEqual(Buffer.from(k), Buffer.from(order.refKey))) return nee();
+  } else if (!/^(pagina-\d{1,2}\.jpg|boek\.pdf|omslag\.pdf)$/.test(name)) return nee();
   const data = await getFile(id, name);
-  if (!data) return new Response('Niet gevonden', { status: 404 });
+  if (!data) return nee();
   return new Response(new Uint8Array(data), {
     headers: { 'Content-Type': name.endsWith('.pdf') ? 'application/pdf' : 'image/jpeg', 'Cache-Control': 'private, no-store', 'X-Robots-Tag': 'noindex' },
   });
