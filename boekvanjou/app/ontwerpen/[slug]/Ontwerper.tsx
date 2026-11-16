@@ -29,7 +29,7 @@ export function Ontwerper({ story }: { story: Story }) {
   return (
     <div className="twee">
       <div className="kleef">
-        <div className="toon"><Boek story={story} naam={toon} /></div>
+        <div className="toon"><Boek story={story} naam={toon} foto={story.omslag} /></div>
         <p className="zinproef">{vulNaam(story.scenes[0].tekst, toon)}</p>
       </div>
       <form className="form" onSubmit={verder}>

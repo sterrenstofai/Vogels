@@ -12,13 +12,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
   openGraph: { type: 'website', locale: 'nl_NL', siteName: MERK, images: ['/og.jpg'] },
 };
-export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#ffffff' };
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#c8c2cf' };
 export const dynamic = 'force-dynamic';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl">
       <body>
+        <div className="lucht" aria-hidden="true"><i /><i /><i /><i /></div>
         {testversie() && <div className="testband">Testversie. Er wordt niets afgeschreven en niets gedrukt.</div>}
         <header className="nav">
           <div>

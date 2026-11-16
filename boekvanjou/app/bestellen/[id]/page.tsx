@@ -21,7 +21,7 @@ export default async function Bestellen({ params }: { params: Promise<{ id: stri
           <div className="stel">
             <h1>Bestellen.</h1>
             <p>{story.titel}, met {order.childName} in de hoofdrol. Na het betalen stuur je de foto in en maken we de platen.</p>
-            <div className="toon" style={{ width: '100%' }}><Boek story={story} naam={order.childName} /></div>
+            <div className="toon" style={{ width: '100%' }}><Boek story={story} naam={order.childName} foto={story.omslag} /></div>
           </div>
           <BestelFormulier id={id} start={order.format} />
         </div>
