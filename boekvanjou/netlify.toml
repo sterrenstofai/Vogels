@@ -8,3 +8,7 @@
 
 [functions]
   directory = "netlify/functions"
+
+# Zonder deze regel uploadt Netlify de build zonder er een Next.js-site van te maken.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

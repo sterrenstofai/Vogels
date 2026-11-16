@@ -4,12 +4,13 @@ Alles hieronder is klaar in de code. Per onderdeel is één account met een sleu
 
 Doe ze in deze volgorde en probeer na elke stap één bestelling.
 
-## 1. Site online
+## 1. Site online (gedaan)
 
-- Maak in Netlify een site van deze repo met `boekvanjou` als basismap.
-- Registreer `boekvanjou.nl` en koppel het domein in Netlify.
-- Zet `SITE_URL` op het adres van de site, `ADMIN_EMAILS` op je eigen adres en `CRON_SECRET` op een lange willekeurige tekst.
-- Controleer: een testbestelling doorlopen, en kijken of die na een herstart nog bestaat. De opslag in Netlify Blobs is geschreven maar nog nooit op Netlify zelf gedraaid.
+- De testversie staat op https://boekvanjou.netlify.app, in het Netlify-team Sterrenstof, project `boekvanjou`.
+- Ingesteld: `SITE_URL`, `CRON_SECRET` en `STORE=blobs`. Een hele testbestelling is daar doorlopen, tot en met de drukbestanden.
+- De site wordt nu met de hand geüpload. Koppel het project in Netlify aan de repo (basismap `boekvanjou`) om bij elke wijziging vanzelf te publiceren.
+- Nog doen: `boekvanjou.nl` registreren en als domein aan het project hangen, daarna `SITE_URL` aanpassen. Zet `ADMIN_EMAILS` op je eigen adres om `/beheer` te zien.
+- Zolang betalen, platen of drukker nog nagemaakt zijn, vraagt de site zoekmachines om weg te blijven.
 
 ## 2. Mail (Resend)
 

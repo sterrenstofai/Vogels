@@ -74,7 +74,10 @@ function blobs(): KV {
   };
 }
 
-export const storeMode = () => (process.env.STORE === 'blobs' || (process.env.NETLIFY && process.env.STORE !== 'schijf') ? 'blobs' : 'schijf');
+// Op Netlify is de schijf alleen-lezen, dus daar moet het Blobs zijn. Tijdens het draaien
+// zet Netlify niet NETLIFY maar wel NETLIFY_BLOBS_CONTEXT; STORE=blobs dwingt het af.
+const opNetlify = () => !!(process.env.NETLIFY || process.env.NETLIFY_BLOBS_CONTEXT || (globalThis as { netlifyBlobsContext?: unknown }).netlifyBlobsContext);
+export const storeMode = () => (process.env.STORE === 'blobs' || (opNetlify() && process.env.STORE !== 'schijf') ? 'blobs' : 'schijf');
 let _kv: KV | undefined;
 const kv = () => (_kv ??= storeMode() === 'blobs' ? blobs() : schijf);
 
