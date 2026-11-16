@@ -50,9 +50,9 @@ img, svg { max-width: 100%; display: block; }
 .cta { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; justify-content: center; }
 
 /* hero */
-.hero { background: linear-gradient(#f5f5f7, #fff); text-align: center; padding: 84px 0 0; overflow: hidden; }
+.hero { background: linear-gradient(#f5f5f7, #fff); text-align: center; padding: 60px 0 0; overflow: hidden; }
 .hero .hand { margin-bottom: 14px; }
-.hero .lead { font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.25; letter-spacing: -0.02em; color: var(--grijs); max-width: 27ch; margin: 22px auto 30px; font-weight: 500; }
+.hero .lead { font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.25; letter-spacing: -0.02em; color: var(--grijs); max-width: 30ch; margin: 18px auto 26px; font-weight: 500; }
 .podium { margin: 76px auto 0; padding-bottom: 120px; width: min(430px, 64vw); }
 
 /* het boek */
@@ -302,3 +302,16 @@ table.lijst td.num, table.lijst th.num { text-align: right; font-variant-numeric
 .paneel { border-top: 1px solid var(--lijn); padding: 28px 0; display: grid; gap: 16px; }
 .paneel h2 { font-size: 1.3rem; letter-spacing: -0.02em; }
 pre.mailtekst { white-space: pre-wrap; font: inherit; font-size: .88rem; color: var(--grijs); margin: 6px 0 0; }
+
+/* zwevende boeken in de kop */
+.zweef { margin-top: 0; padding-bottom: 70px; }
+.zweef-vlak { position: relative; height: clamp(360px, 46vw, 600px); margin: 0 calc(50% - 50vw); touch-action: pan-y; }
+.zweef-vlak canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity .8s; cursor: grab; }
+.zweef-vlak.klaar canvas { opacity: 1; }
+.zweef-stil { position: absolute; inset: 0; display: grid; place-items: center; transition: opacity .4s; }
+.zweef-stil > * { width: min(400px, 60vw); }
+.zweef-vlak.klaar .zweef-stil { opacity: 0; pointer-events: none; }
+.zweef-onder { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 6px; }
+.zweef-onder > div { display: grid; gap: 2px; min-width: 210px; font-size: .95rem; }
+.zweef-onder strong { font-size: 1.12rem; font-weight: 600; letter-spacing: -0.02em; }
+.zweef-onder span { color: var(--grijs); }

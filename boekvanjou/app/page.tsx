@@ -1,11 +1,15 @@
 import Link from 'next/link';
 import { Boek, Cover } from '@/components/Cover';
+import { Zweefboeken } from '@/components/Zweefboeken';
+import { MERK } from '@/lib/merk';
 import { STORIES, voorbeeldPlaten, vulNaam } from '@/lib/stories';
 import { PRIJZEN, euro } from '@/lib/pricing';
 
 const eerste = STORIES[0];
 const platen = voorbeeldPlaten(eerste)!;
 const kind = eerste.voorbeeld!.naam;
+// In de kop staat het boek dat je nu kunt bestellen in het midden.
+const zweef = [STORIES[1], eerste, ...STORIES.slice(2)];
 
 const STAPPEN = [
   ['Kies een verhaal', 'Elk verhaal is geschreven om zelf te lezen, met korte zinnen en veel platen.'],
@@ -28,13 +32,15 @@ export default function Home() {
       <div className="hero">
         <div className="wrap">
           <span className="hand">Nieuw: {eerste.titel}</span>
-          <h1>Jouw kind is de held.</h1>
-          <p className="lead">Een echt gedrukt prentenboek, met jouw kind op elke bladzijde.</p>
+          <h1>Jouw kind in de hoofdrol.</h1>
+          <p className="lead">Een gedrukt prentenboek, met de foto van jouw kind op elke bladzijde.</p>
           <div className="cta">
             <Link className="btn" href={`/ontwerpen/${eerste.slug}`}>Maak jullie boek</Link>
             <Link className="pijl" href={`/verhalen/${eerste.slug}`}>Bekijk het verhaal</Link>
           </div>
-          <div className="podium"><Boek story={eerste} naam={kind} foto={platen[0]} /></div>
+          <Zweefboeken merk={MERK} start={zweef.findIndex((s) => s.slug === eerste.slug)} boeken={zweef.map((s) => ({ slug: s.slug, titel: s.titel, ondertitel: `met ${kind} in de hoofdrol`, omslag: s.omslag ?? platen[0], beschikbaar: s.beschikbaar }))}>
+            <Boek story={eerste} naam={kind} foto={platen[0]} />
+          </Zweefboeken>
         </div>
       </div>
 
@@ -73,7 +79,7 @@ export default function Home() {
           <div className="kop midden op"><h2>Kies een avontuur.</h2><p>We beginnen met één boek. De volgende zijn onderweg.</p></div>
           <div className="reeks">
             {STORIES.map((s) => {
-              const inhoud = (<><Cover story={s} foto={voorbeeldPlaten(s)?.[0]} /><h3>{s.titel}</h3><p>{s.kort}</p></>);
+              const inhoud = (<><Cover story={s} naam={kind} foto={s.omslag} /><h3>{s.titel}</h3><p>{s.kort}</p></>);
               return s.beschikbaar
                 ? <Link key={s.slug} href={`/verhalen/${s.slug}`} className="verhaal op">{inhoud}<span className="pijl">Bekijk</span></Link>
                 : <div key={s.slug} className="verhaal op">{inhoud}<span className="straks">Binnenkort</span></div>;

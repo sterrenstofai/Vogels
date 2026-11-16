@@ -15,6 +15,7 @@ export type Story = {
   accent: string;
   tags: string[];
   beschikbaar: boolean;
+  omslag?: string; // plaat voor op de omslag
   voorbeeld?: { naam: string }; // er staat een voorbeeldboek in public/voorbeeld/<slug>/
   stijl: string; // vaste stijlomschrijving voor alle beelden
   scenes: Scene[];
@@ -31,6 +32,7 @@ export const STORIES: Story[] = [
     accent: '#ffd23f',
     tags: ['Ruimte', 'Avontuur', 'Zelf lezen'],
     beschikbaar: true,
+    omslag: '/voorbeeld/ruimteschipper/plaat-0.jpg',
     voorbeeld: { naam: 'Sam' },
     stijl: "Children's picture book illustration, warm hand-painted gouache style with soft shapes and bright friendly colours, never scary. The child wears a white spacesuit with red details unless the scene says otherwise.",
     scenes: [
@@ -50,6 +52,7 @@ export const STORIES: Story[] = [
   },
   {
     slug: 'duikboot',
+    omslag: '/omslag/duikboot.jpg',
     titel: 'De duikbootkapitein',
     ondertitel: 'Diep onder de golven',
     kort: 'Een gele duikboot, een inktvis die verstoppertje speelt en een schat die anders is dan je denkt.',
@@ -63,6 +66,7 @@ export const STORIES: Story[] = [
   },
   {
     slug: 'boswachter',
+    omslag: '/omslag/boswachter.jpg',
     titel: 'De boswachter',
     ondertitel: 'Een nacht in het bos',
     kort: 'Met een zaklamp en een thermos warme chocomelk op zoek naar de uil die niet kan slapen.',
