@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import { Cover } from '@/components/Cover';
-import { Zweefboeken, type Kaart } from '@/components/Zweefboeken';
+import { Boek, Cover } from '@/components/Cover';
+import { Zweefboeken } from '@/components/Zweefboeken';
+import { Boekenband, type Kaart } from '@/components/Boekenband';
+import { opties } from '@/lib/opties';
 import { MERK } from '@/lib/merk';
 import { STORIES, voorbeeldPlaten, vulNaam } from '@/lib/stories';
 import { PRIJZEN, euro } from '@/lib/pricing';
@@ -10,7 +12,8 @@ const platen = voorbeeldPlaten(eerste)!;
 const kind = eerste.voorbeeld!.naam;
 // In de kop staat het boek dat je nu kunt bestellen in het midden.
 const zweef = [STORIES[1], eerste, ...STORIES.slice(2)];
-// De band in de kop: de omslagen, met platen uit het voorbeeldboek ertussen.
+
+// De andere kop: een band van omslagen, met platen uit het voorbeeldboek ertussen.
 const omslag = (s: (typeof STORIES)[number]): Kaart => ({ src: s.omslag ?? platen[0], label: s.beschikbaar ? 'Nu te bestellen' : 'Binnenkort', titel: s.titel, ondertitel: `met ${kind} in de hoofdrol`, href: s.beschikbaar ? `/verhalen/${s.slug}` : undefined });
 const plaat = (i: number): Kaart => ({ src: platen[i], label: `Plaat ${i + 1} van ${platen.length}`, href: `/verhalen/${eerste.slug}` });
 const band: Kaart[] = [plaat(3), omslag(STORIES[1]), plaat(6), omslag(eerste), plaat(9), omslag(STORIES[2]), plaat(7), plaat(11)];
@@ -30,7 +33,8 @@ const VRAGEN = [
   ['Kan ik het boek terugsturen?', 'Het boek wordt speciaal voor jou gemaakt en kan daarom niet retour. Is er iets mis met de druk of de bezorging, dan maken we kosteloos een nieuw boek.'],
 ];
 
-export default function Home() {
+export default async function Home() {
+  const { kop } = await opties();
   return (
     <main>
       <div className="hero">
@@ -42,13 +46,19 @@ export default function Home() {
             <Link className="btn" href={`/ontwerpen/${eerste.slug}`}>Maak jullie boek</Link>
             <Link className="pijl" href={`/verhalen/${eerste.slug}`}>Bekijk het verhaal</Link>
           </div>
-          <Zweefboeken merk={MERK} kaarten={band} start={3}>
-            <div className="stille-rij">{zweef.map((s) => <Cover key={s.slug} story={s} naam={kind} foto={s.omslag} />)}</div>
+          {kop === 'band' ? (
+            <Boekenband merk={MERK} kaarten={band} start={3}>
+              <div className="stille-rij">{zweef.map((s) => <Cover key={s.slug} story={s} naam={kind} foto={s.omslag} />)}</div>
+            </Boekenband>
+          ) : (
+          <Zweefboeken merk={MERK} start={zweef.findIndex((s) => s.slug === eerste.slug)} boeken={zweef.map((s) => ({ slug: s.slug, titel: s.titel, ondertitel: `met ${kind} in de hoofdrol`, omslag: s.omslag ?? platen[0], beschikbaar: s.beschikbaar }))}>
+            <Boek story={eerste} naam={kind} foto={platen[0]} />
           </Zweefboeken>
+          )}
         </div>
       </div>
 
-      <section>
+      <section className="mist">
         <div className="wrap">
           <div className="kop op"><h2>Gemaakt om zelf te lezen.</h2></div>
           <div className="tegels">
@@ -103,7 +113,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="prijs">
+      <section id="prijs" className="mist">
         <div className="wrap">
           <div className="kop midden op"><h2>Eén prijs. Geen abonnement.</h2></div>
           <div className="prijzen" style={{ maxWidth: 820, margin: '0 auto' }}>

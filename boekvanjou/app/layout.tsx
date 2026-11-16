@@ -4,6 +4,7 @@ import '@fontsource-variable/inter';
 import './globals.css';
 import { testversie } from '@/lib/stand';
 import { STORIES } from '@/lib/stories';
+import { opties } from '@/lib/opties';
 import { MERK } from '@/lib/merk';
 
 export const metadata: Metadata = {
@@ -12,14 +13,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
   openGraph: { type: 'website', locale: 'nl_NL', siteName: MERK, images: ['/og.jpg'] },
 };
-export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#c8c2cf' };
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#ffffff' };
 export const dynamic = 'force-dynamic';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default async function Layout({ children }: { children: React.ReactNode }) {
+  const { kleur } = await opties();
   return (
-    <html lang="nl">
+    <html lang="nl" data-kleur={kleur}>
       <body>
-        <div className="lucht" aria-hidden="true"><i /><i /><i /><i /></div>
+        {kleur === 'pastel' && <div className="lucht" aria-hidden="true"><i /><i /><i /><i /></div>}
         {testversie() && <div className="testband">Testversie. Er wordt niets afgeschreven en niets gedrukt.</div>}
         <header className="nav">
           <div>

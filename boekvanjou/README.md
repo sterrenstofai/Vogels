@@ -28,6 +28,18 @@ De echte koppelingen proberen zonder accounts kan met nagemaakte diensten: `node
 
 `npm run prijs` rekent de marge door. Zie `docs/prijsstelling.md`. Wat er nog moet gebeuren voor de winkel open kan, staat in `docs/livegang.md`.
 
+## Twee vormgevingen
+
+Er zijn twee koppen en twee kleurstellingen, los van elkaar te kiezen:
+
+| | Standaard | Andere optie |
+| --- | --- | --- |
+| Kop | `boeken`: drie zwevende boeken | `band`: gebogen band van omslagen en platen |
+| Kleur | `licht`: wit en lichtgrijs | `pastel`: lila-grijs met bewegende wolken kleur |
+
+Bekijken in je eigen browser: `/optie?kop=band&kleur=pastel` (elke combinatie kan). Terug naar de standaard: `/optie`.
+De standaard voor iedereen wijzig je met de instellingen `KOP` en `KLEUR`.
+
 ## Hoe het in elkaar zit
 
 | Onderdeel | Bestand | Stand |
