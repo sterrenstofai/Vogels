@@ -1,3 +1,5 @@
+import { MERK } from '@/lib/merk';
+
 export const metadata = { title: 'Privacy en foto’s' };
 
 export default function Privacy() {
@@ -8,7 +10,7 @@ export default function Privacy() {
         <p><em>Concepttekst. Laat deze nakijken en vul de bedrijfsgegevens in voordat de winkel opengaat.</em></p>
 
         <h2>Wie we zijn</h2>
-        <p>Hoofdrol is van [bedrijfsnaam], [adres], KvK [nummer]. Vragen over je gegevens? Mail [e-mailadres].</p>
+        <p>{MERK} is van [bedrijfsnaam], [adres], KvK [nummer]. Vragen over je gegevens? Mail [e-mailadres].</p>
 
         <h2>De foto van je kind</h2>
         <p>We gebruiken de foto alleen om de platen voor jouw boek te maken. Daarvoor sturen we de foto naar de dienst die de platen tekent. Zodra het boek naar de drukker gaat, verwijderen we de foto. Bestel je wel maar maak je het boek niet af, dan verwijderen we de foto uiterlijk na 90 dagen.</p>

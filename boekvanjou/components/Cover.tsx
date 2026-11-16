@@ -1,4 +1,5 @@
 import type { Story } from '@/lib/stories';
+import { MERK } from '@/lib/merk';
 
 // Eén omslagontwerp voor de hele reeks: een horizon van licht in de kleur van het verhaal.
 const TINTEN: Record<string, React.CSSProperties> = {
@@ -14,7 +15,7 @@ function Voorkant({ story, naam, foto }: { story: Story; naam?: string; foto?: s
       <i className="vouw" />
       <div className="t">{story.titel}</div>
       {naam && <div className="n">met {naam} in de hoofdrol</div>}
-      <div className="m">Hoofdrol</div>
+      <div className="m">{MERK}</div>
     </>
   );
 }

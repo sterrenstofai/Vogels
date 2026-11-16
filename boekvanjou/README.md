@@ -1,4 +1,6 @@
-# Hoofdrol (werktitel)
+# Boek van jou
+
+De winkel komt op boekvanjou.nl.
 
 Webwinkel voor prentenboeken met je eigen kind in de hoofdrol.
 

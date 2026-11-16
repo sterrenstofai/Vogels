@@ -65,7 +65,7 @@ const schijf: KV = {
 };
 
 function blobs(): KV {
-  const store = async () => (await import('@netlify/blobs')).getStore({ name: 'hoofdrol', consistency: 'strong' });
+  const store = async () => (await import('@netlify/blobs')).getStore({ name: 'boekvanjou', consistency: 'strong' });
   return {
     async get(key) { const d = await (await store()).get(key, { type: 'arrayBuffer' }); return d ? Buffer.from(d) : null; },
     async set(key, data) { await (await store()).set(key, typeof data === 'string' ? data : new Uint8Array(data).buffer as ArrayBuffer); },

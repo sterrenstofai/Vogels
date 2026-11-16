@@ -7,6 +7,7 @@ import sharp from 'sharp';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import type { Blad } from './boek';
+import { MERK } from './merk';
 
 const MM = 72 / 25.4;
 const BLAD_MM = 200;
@@ -66,7 +67,7 @@ export async function bouwBinnenwerk(opts: { bladen: Blad[]; platen: Buffer[] })
       blok(page, 'Einde', vet, 40, m, m, KANT * 0.7);
     } else if (b.soort === 'colofon') {
       blok(page, `Dit boek is speciaal gemaakt voor ${b.naam}.`, normaal, 13, m, AFLOOP + 30 * MM, KANT * 0.6, GRIJS);
-      blok(page, `Hoofdrol, ${new Date().getFullYear()}`, normaal, 11, m, AFLOOP + 18 * MM, KANT * 0.6, GRIJS);
+      blok(page, `${MERK}, ${new Date().getFullYear()}`, normaal, 11, m, AFLOOP + 18 * MM, KANT * 0.6, GRIJS);
     }
   }
   return Buffer.from(await pdf.save());
@@ -116,7 +117,7 @@ export async function bouwOmslag(opts: { titel: string; naam: string; plaat: Buf
   const ax = (mt.achter.x + mt.achter.b / 2) * MM;
   const onder = H - (mt.achter.y + mt.achter.h) * MM;
   blok(page, `Een avontuur met ${opts.naam} in de hoofdrol.`, normaal, 16, ax, onder + mt.achter.h * MM * 0.56, mt.achter.b * MM * 0.6, WIT);
-  blok(page, 'HOOFDROL', vet, 11, ax, onder + 16 * MM, mt.achter.b * MM, rgb(0.7, 0.72, 0.8));
+  blok(page, MERK.toUpperCase(), vet, 11, ax, onder + 16 * MM, mt.achter.b * MM, rgb(0.7, 0.72, 0.8));
   if (mt.rug.b >= 5) {
     const t = `${opts.titel} · ${opts.naam}`;
     const g = 9;

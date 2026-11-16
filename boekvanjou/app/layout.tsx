@@ -4,12 +4,13 @@ import '@fontsource-variable/inter';
 import './globals.css';
 import { testversie } from '@/lib/stand';
 import { STORIES } from '@/lib/stories';
+import { MERK } from '@/lib/merk';
 
 export const metadata: Metadata = {
-  title: { default: 'Hoofdrol. Een boek met jouw kind als held.', template: '%s · Hoofdrol' },
+  title: { default: `${MERK}. Een boek met jouw kind als held.`, template: `%s · ${MERK}` },
   description: 'Kies een verhaal, stuur een foto en krijg een gedrukt prentenboek met jouw kind in de hoofdrol.',
   metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
-  openGraph: { type: 'website', locale: 'nl_NL', siteName: 'Hoofdrol', images: ['/og.jpg'] },
+  openGraph: { type: 'website', locale: 'nl_NL', siteName: MERK, images: ['/og.jpg'] },
 };
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#ffffff' };
 export const dynamic = 'force-dynamic';
@@ -21,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {testversie() && <div className="testband">Testversie. Er wordt niets afgeschreven en niets gedrukt.</div>}
         <header className="nav">
           <div>
-            <Link href="/" className="logo">Hoofdrol</Link>
+            <Link href="/" className="logo">{MERK}</Link>
             <nav className="pills" aria-label="Hoofdmenu">
               <Link className="pill hide-s" href="/#verhalen">Verhalen</Link>
               <Link className="pill hide-s" href="/#zo-werkt-het">Zo werkt het</Link>
@@ -35,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <footer>
           <div className="wrap">
-            <span>© 2026 Hoofdrol</span>
+            <span>© 2026 {MERK}</span>
             <nav aria-label="Voettekst">
               <Link href="/privacy">Privacy en foto’s</Link>
               <Link href="/voorwaarden">Voorwaarden</Link>

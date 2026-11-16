@@ -1,5 +1,6 @@
 // Betalen. Met MOLLIE_API_KEY loopt het via Mollie, anders via een testbetaling op de site.
 import type { Order } from '../store';
+import { MERK } from '../merk';
 
 const SITE = () => (process.env.SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
 const KEY = () => process.env.MOLLIE_API_KEY || '';
@@ -45,7 +46,7 @@ export async function refund(order: Order): Promise<void> {
   const res = await fetch(`${MOLLIE()}/v2/payments/${encodeURIComponent(order.paymentId)}/refunds`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${KEY()}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ amount: { currency: 'EUR', value: (order.totaalCents / 100).toFixed(2) }, description: 'Terugbetaling Hoofdrol' }),
+    body: JSON.stringify({ amount: { currency: 'EUR', value: (order.totaalCents / 100).toFixed(2) }, description: `Terugbetaling ${MERK}` }),
   });
   if (!res.ok) throw new Error(`Mollie ${res.status}: ${await res.text()}`);
 }

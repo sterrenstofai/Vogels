@@ -1,4 +1,5 @@
 import { PRIJZEN, euro } from '@/lib/pricing';
+import { MERK } from '@/lib/merk';
 
 export const metadata = { title: 'Voorwaarden' };
 
@@ -10,7 +11,7 @@ export default function Voorwaarden() {
         <p><em>Concepttekst. Laat deze nakijken en vul de bedrijfsgegevens in voordat de winkel opengaat.</em></p>
 
         <h2>Met wie je een overeenkomst sluit</h2>
-        <p>Hoofdrol is van [bedrijfsnaam], [adres], KvK [nummer], btw [nummer]. Bereikbaar via [e-mailadres].</p>
+        <p>{MERK} is van [bedrijfsnaam], [adres], KvK [nummer], btw [nummer]. Bereikbaar via [e-mailadres].</p>
 
         <h2>Prijs en betalen</h2>
         <p>Alle prijzen zijn in euro’s en inclusief btw. Bezorgen kost {euro(PRIJZEN.verzending)}; bij twee boeken of meer bezorgen we gratis. Je betaalt vooraf. Daarna stuur je de foto in en maken we de platen.</p>

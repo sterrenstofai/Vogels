@@ -1,4 +1,4 @@
-# Instellingen voor Netlify. Kies in Netlify de map `hoofdrol` als basismap van de site.
+# Instellingen voor Netlify. Kies in Netlify de map `boekvanjou` als basismap van de site.
 [build]
   command = "npm run build"
   publish = ".next"

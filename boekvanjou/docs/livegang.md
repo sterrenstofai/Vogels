@@ -6,7 +6,8 @@ Doe ze in deze volgorde en probeer na elke stap één bestelling.
 
 ## 1. Site online
 
-- Maak in Netlify een site van deze repo met `hoofdrol` als basismap.
+- Maak in Netlify een site van deze repo met `boekvanjou` als basismap.
+- Registreer `boekvanjou.nl` en koppel het domein in Netlify.
 - Zet `SITE_URL` op het adres van de site, `ADMIN_EMAILS` op je eigen adres en `CRON_SECRET` op een lange willekeurige tekst.
 - Controleer: een testbestelling doorlopen, en kijken of die na een herstart nog bestaat. De opslag in Netlify Blobs is geschreven maar nog nooit op Netlify zelf gedraaid.
 
@@ -40,7 +41,7 @@ Doe ze in deze volgorde en probeer na elke stap één bestelling.
 
 - De echte tekst van het boekje in `lib/stories.ts` zetten, met per plaat een beeldopdracht, en het voorbeeldboek opnieuw laten maken.
 - Bedrijfsgegevens invullen in de privacytekst en de voorwaarden, en beide laten nakijken. Met de beelddienst, de drukker, Mollie en Resend een verwerkersovereenkomst sluiten; foto's van kinderen zijn gevoelig.
-- Naam en domein kiezen. "Hoofdrol" is een werktitel.
+- De naam Boek van jou nakijken in het merkenregister (BOIP).
 - De prijs vastzetten zodra de echte drukprijs en de prijs per plaat bekend zijn (`lib/pricing.ts`, daarna `npm run prijs`).
 
 ## Bekende beperkingen
